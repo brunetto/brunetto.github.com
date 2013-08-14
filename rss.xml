@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>brunetto's blog</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Wed, 14 Aug 2013 13:47:05 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>First ipynb post with Nikola</title><link>brunetto.github.io/posts/first-ipynb-post-with-nikola.html</link><description>&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4&gt;
+First (succesfully) attempt to create a blog with Nikola and Ipython
+&lt;/h4&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;blablabla&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input hbox"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In []:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</description><guid>brunetto.github.io/posts/first-ipynb-post-with-nikola.html</guid><pubDate>Wed, 14 Aug 2013 13:39:22 GMT</pubDate></item></channel></rss>
