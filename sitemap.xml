@@ -10,16 +10,6 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2013/</loc>
-  <lastmod>2013-08-14</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/2013/index.html</loc>
-  <lastmod>2013-08-14</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>brunetto.github.io/archive.html</loc>
   <lastmod>2013-08-14</lastmod>
   <priority>0.5000</priority>
@@ -60,7 +50,17 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/first-ipynb-post-with-nikola.html</loc>
+  <loc>brunetto.github.io/stories/about.html</loc>
+  <lastmod>2013-08-14</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/my-preferred-quotes.html</loc>
+  <lastmod>2013-08-14</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/my-travels.html</loc>
   <lastmod>2013-08-14</lastmod>
   <priority>0.5000</priority>
  </url>
