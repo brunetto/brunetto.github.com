@@ -119,7 +119,7 @@
              Posted: 2011-11-04 00:00
         </big></p>
         <hr>
-        <p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.<br>
+        <p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  <br>
 <!-- TEASER_END --></p>
 <p>At this step, however, I didn't know how to manage the different processes in a comfortable way. 
 My requirements were:    </p>
@@ -150,81 +150,90 @@ analysys code to the data starting it with a bash command using Popen
 </pre></div>
 
 
-<p>Here we set some parameters: the number of processes to start (set by hand), the two files to use in the analysis, how many random particles we use more than the data particles and the limits in the data slice to analyze. In this case we want to correlate the data in <code>mill2_fof_sorted.h5</code> with the data contained in the slices between slice 0 and slice 99. file_1 will be replaced after with the right name. This analysis will be carry out using 10 processes at each time. As a process end the code will take care of starting a new process.<br>
-</p><pre>def starter(input, output):
-    """Start the code processes one after the other"""
-    while input.qsize() != 0:
-        item = input.get()
-        file_1 = "mill2sort-"+str(item[0])     <br>
-        cmd = "/opt/epd-7.0-2-rh5-x86_64/bin/python -u \
-              ../serial.py --file_1 "+file_1+" --file_2 "+file_2+\
-            " -l 400 -n 0 --m_factor "+str(m_factor)+" \
-             --slicing --log ../logs/"+file_1+"-"+file_2
-<div class="code"><pre>    <span class="nl">try:</span>
-        <span class="n">pid</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">getpid</span><span class="p">()</span>
-        <span class="n">pid_cmd</span> <span class="o">=</span> <span class="err">'</span><span class="n">echo</span> <span class="s">"'+str(item[0])+'"</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="err">'</span><span class="o">+</span><span class="n">str</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span><span class="o">+</span><span class="err">'</span><span class="p">.</span><span class="n">log</span><span class="err">'</span>
-        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">pid_cmd</span><span class="p">)</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="n">True</span><span class="p">,</span> <span class="n">close_fds</span><span class="o">=</span><span class="n">True</span><span class="p">).</span><span class="n">wait</span><span class="p">()</span>
+<p>Here we set some parameters: the number of processes to start (set by hand), the two files to use in the analysis, how many random particles we use more than the data particles and the limits in the data slice to analyze. In this case we want to correlate the data in <code>mill2_fof_sorted.h5</code> with the data contained in the slices between slice 0 and slice 99. file_1 will be replaced after with the right name. This analysis will be carry out using 10 processes at each time. As a process end the code will take care of starting a new process.    </p>
+<div class="code"><pre><span class="k">def</span> <span class="nf">starter</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+    <span class="sd">"""Start the code processes one after the other"""</span>
+    <span class="k">while</span> <span class="nb">input</span><span class="o">.</span><span class="n">qsize</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+    <span class="n">file_1</span> <span class="o">=</span> <span class="s">"mill2sort-"</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>       
+    <span class="n">cmd</span> <span class="o">=</span> <span class="s">"/opt/epd-7.0-2-rh5-x86_64/bin/python -u </span><span class="se">\</span>
+<span class="s">            ../serial.py --file_1 "</span><span class="o">+</span><span class="n">file_1</span><span class="o">+</span><span class="s">" --file_2 "</span><span class="o">+</span><span class="n">file_2</span><span class="o">+</span>\
+        <span class="s">" -l 400 -n 0 --m_factor "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">m_factor</span><span class="p">)</span><span class="o">+</span><span class="s">" </span><span class="se">\</span>
+<span class="s">            --slicing --log ../logs/"</span><span class="o">+</span><span class="n">file_1</span><span class="o">+</span><span class="s">"-"</span><span class="o">+</span><span class="n">file_2</span>
 
-    <span class="nl">except:</span>
-        <span class="n">print</span> <span class="s">"Popen/os.system not done, exit..."</span>
-        <span class="n">sys</span><span class="p">.</span><span class="n">exit</span><span class="p">()</span><span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">pid</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()</span>
+        <span class="n">pid_cmd</span> <span class="o">=</span> <span class="s">'echo "'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s">'" &amp;gt;&amp;gt; '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span><span class="o">+</span><span class="s">'.log'</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">pid_cmd</span><span class="p">)</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">close_fds</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Popen/os.system not done, exit..."</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
 
 
-<p><br>
-<br>
-This piece of code defines the function that will start the processes. It's called <code>started</code> and it takes <code>input</code> and <code>output</code> as arguments. These are two "queue objects", they can be filled and emptied in the FIFO way. The starter has a while loop that check if the queue is empty, if not it takes the next elements. This is the number of the slice to be used by the analysis code and with it we build the name of the file to be opened. <code>cmd</code> is the string we use to start the analysis code with some options (<code>serial.py</code> is the actual "cool" name I gave to my code!:P).<br>
-The <code>try-exept</code> syntax is the particular Python way to manage the possible errors in the execution, giving the ability to the programmer to handle possible problems (exceptions).<br>
-So we catch the pid of the starter and save into its log the number of sliced it start and pass to the <code>Popen</code> (process-open) command the string to start the analysis process telling it to wait the end of the process. If something goes wrong we print that there were some errors and exit the code in a clean way.<br>
-</p><pre></pre>
-<pre>def fill_queue(task_queue, start_slice, end_slice):
-    """Fill the queue"""
-    for i in range(start_slice, end_slice, 1):
-        task_queue.put([i])
-    return task_queue</pre>
-<br>
-This functions only fill the queue with the number of the sliced to be used.<br>
-<pre></pre>
-<pre>def status(proc):
-    """Check for processes status"""
-    if proc.is_alive()==True:
-        return 'alive'
-    elif proc.is_alive()==False:
-        return 'dead'
-    else:
-        return proc.is_alive()</pre>
-<br>
-This piece of code check the status (dead or alive) of one process (<code>proc</code> is the process object... yeah, in Python everything is an object!)<br>
-<pre>input_queue = Queue()
-output_queue = Queue()
-<p>try:
-    input_queue = fill_queue(input_queue, start_slice, end_slice)
-except:
-    print "Queue not filled, exit..."
-    sys.exit()</p>
-<p>procs = []    # processes container</p></pre>
-<br>
-Now we create the empty queues and (try to) fill them, and create the container for the processes objects.<br>
-<pre>try:
-    for i in range(n_procs):
-        print "Process loop ", i
-        procs.append(Process(target=starter, args=(input_queue, output_queue)))
-except:
-    print "Creating processes not complete, exit..."
-    sys.exit()
-<p>try:
-    for i in procs:
-        i.start()
-except:
-    print "Start processes not complete, exit..."
-    sys.exit()</p>
-<p>for i in procs:
-    print "Process ", i," @ " , i.pid, " is ", status(i)</p></pre>
-<br>
-This is the central part of this code: we create the processes objects and put them into the container, start them and check for their status. Everything is inside the <code>try-except</code> environment to check for possible errors and handle them.<br>
-In practice we start "n" processes and every process take the number of a slice from the queue and use it to start the analysis code, waiting for its end. When the analysis is finished it takes another number from the queue and start again the code. When the queue is empty everything is automatically switched off.<br>
-Future improvements will consider the automatically detection of the hardware resources and the possibility to mail the status of the code.</pre>
+<p>This piece of code defines the function that will start the processes. It's called <code>started</code> and it takes <code>input</code> and <code>output</code> as arguments. These are two "queue objects", they can be filled and emptied in the FIFO way. The starter has a while loop that check if the queue is empty, if not it takes the next elements. This is the number of the slice to be used by the analysis code and with it we build the name of the file to be opened. <code>cmd</code> is the string we use to start the analysis code with some options (<code>serial.py</code> is the actual "cool" name I gave to my code!:P).  <br>
+The <code>try-exept</code> syntax is the particular Python way to manage the possible errors in the execution, giving the ability to the programmer to handle possible problems (exceptions).  <br>
+So we catch the pid of the starter and save into its log the number of sliced it start and pass to the <code>Popen</code> (process-open) command the string to start the analysis process telling it to wait the end of the process. If something goes wrong we print that there were some errors and exit the code in a clean way.    </p>
+<div class="code"><pre><span class="k">def</span> <span class="nf">fill_queue</span><span class="p">(</span><span class="n">task_queue</span><span class="p">,</span> <span class="n">start_slice</span><span class="p">,</span> <span class="n">end_slice</span><span class="p">):</span>
+    <span class="sd">"""Fill the queue"""</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_slice</span><span class="p">,</span> <span class="n">end_slice</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">task_queue</span><span class="o">.</span><span class="n">put</span><span class="p">([</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">task_queue</span>
+</pre></div>
+
+
+<p>This functions only fill the queue with the number of the sliced to be used.    </p>
+<div class="code"><pre><span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="n">proc</span><span class="p">):</span>
+    <span class="sd">"""Check for processes status"""</span>
+    <span class="k">if</span> <span class="n">proc</span><span class="o">.</span><span class="n">is_alive</span><span class="p">()</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'alive'</span>
+    <span class="k">elif</span> <span class="n">proc</span><span class="o">.</span><span class="n">is_alive</span><span class="p">()</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'dead'</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">proc</span><span class="o">.</span><span class="n">is_alive</span><span class="p">()</span>
+</pre></div>
+
+
+<p>This piece of code check the status (dead or alive) of one process (<code>proc</code> is the process object... yeah, in Python everything is an object!)    </p>
+<div class="code"><pre><span class="n">input_queue</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
+<span class="n">output_queue</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">input_queue</span> <span class="o">=</span> <span class="n">fill_queue</span><span class="p">(</span><span class="n">input_queue</span><span class="p">,</span> <span class="n">start_slice</span><span class="p">,</span> <span class="n">end_slice</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Queue not filled, exit..."</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+<span class="n">procs</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c"># processes container</span>
+</pre></div>
+
+
+<p>Now we create the empty queues and (try to) fill them, and create the container for the processes objects.    </p>
+<div class="code"><pre><span class="k">try</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_procs</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s">"Process loop "</span><span class="p">,</span> <span class="n">i</span>
+        <span class="n">procs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Process</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">starter</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">input_queue</span><span class="p">,</span> <span class="n">output_queue</span><span class="p">)))</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Creating processes not complete, exit..."</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">procs</span><span class="p">:</span>
+        <span class="n">i</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Start processes not complete, exit..."</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">procs</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Process "</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span><span class="s">" @ "</span> <span class="p">,</span> <span class="n">i</span><span class="o">.</span><span class="n">pid</span><span class="p">,</span> <span class="s">" is "</span><span class="p">,</span> <span class="n">status</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This is the central part of this code: we create the processes objects and put them into the container, start them and check for their status. Everything is inside the <code>try-except</code> environment to check for possible errors and handle them.  <br>
+In practice we start "n" processes and every process take the number of a slice from the queue and use it to start the analysis code, waiting for its end. When the analysis is finished it takes another number from the queue and start again the code. When the queue is empty everything is automatically switched off.  <br>
+Future improvements will consider the automatically detection of the hardware resources and the possibility to mail the status of the code.</p>
         <p>
         
             <a href="posts/python-parallel-job-manager.html#disqus_thread" data-disqus-identifier="cache/posts/python-parallel-job-manager.html">Comments</a>
