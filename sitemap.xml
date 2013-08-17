@@ -160,6 +160,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/posts/python-cli-and-configuration-file-parser.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/posts/python-parallel-job-manager.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
