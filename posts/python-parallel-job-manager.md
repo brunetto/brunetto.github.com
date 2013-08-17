@@ -17,7 +17,7 @@ My requirements were:
 * the possibility to start "n" processes depending on the number of processors and memory available (in the actual code this is done by hand)
 * the code should be able to start a new process when one of the previous processes end
 
-Hereafter I expose and comment the complete "template" for this Python code as I wrote it.
+Hereafter I expose and comment the complete "template" for this Python code as I wrote it.    
 
 ```python
 #!/bin/env python
@@ -32,7 +32,7 @@ analysys code to the data starting it with a bash command using Popen
 """
 ````
 
-The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.
+The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.    
 
 ````python
 n_procs = 10 # number of processes to be started
@@ -42,7 +42,9 @@ m_factor = 1    # How many random more than data
 start_slice = 0 
 end_slice = 99
 ````
+
 Here we set some parameters: the number of processes to start (set by hand), the two files to use in the analysis, how many random particles we use more than the data particles and the limits in the data slice to analyze. In this case we want to correlate the data in `mill2_fof_sorted.h5` with the data contained in the slices between slice 0 and slice 99. file_1 will be replaced after with the right name. This analysis will be carry out using 10 processes at each time. As a process end the code will take care of starting a new process.    
+
 ````python
 def starter(input, output):
 	"""Start the code processes one after the other"""
@@ -65,7 +67,6 @@ def starter(input, output):
 		sys.exit()
 ````
     
-    
 This piece of code defines the function that will start the processes. It's called `started` and it takes `input` and `output` as arguments. These are two "queue objects", they can be filled and emptied in the FIFO way. The starter has a while loop that check if the queue is empty, if not it takes the next elements. This is the number of the slice to be used by the analysis code and with it we build the name of the file to be opened. `cmd` is the string we use to start the analysis code with some options (`serial.py` is the actual "cool" name I gave to my code!:P).    
 The `try-exept` syntax is the particular Python way to manage the possible errors in the execution, giving the ability to the programmer to handle possible problems (exceptions).    
 So we catch the pid of the starter and save into its log the number of sliced it start and pass to the `Popen` (process-open) command the string to start the analysis process telling it to wait the end of the process. If something goes wrong we print that there were some errors and exit the code in a clean way.    
@@ -77,7 +78,7 @@ def fill_queue(task_queue, start_slice, end_slice):
 		task_queue.put([i])
 	return task_queue
 ````
-    
+
 This functions only fill the queue with the number of the sliced to be used.    
 
 ````python
@@ -90,8 +91,9 @@ def status(proc):
 	else:
 		return proc.is_alive()
 ````
-    
+
 This piece of code check the status (dead or alive) of one process (`proc` is the process object... yeah, in Python everything is an object!)    
+
 ````python
 input_queue = Queue()
 output_queue = Queue()
@@ -106,6 +108,7 @@ procs = []    # processes container
 ````
     
 Now we create the empty queues and (try to) fill them, and create the container for the processes objects.    
+
 ````python
 try:
     for i in range(n_procs):
