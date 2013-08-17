@@ -45,6 +45,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/cosmic_structure.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/cosmology.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
@@ -126,6 +131,16 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-2-how.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/loadleveler-quick-howto.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/phd-question-1-m.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
