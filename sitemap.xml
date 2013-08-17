@@ -35,6 +35,16 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/code.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/computer.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/cosmology.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
@@ -55,6 +65,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/master-thesis.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/n-body.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
@@ -66,6 +81,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/phd.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/python.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -106,6 +126,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-2-how.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/python-parallel-job-manager.html</loc>
   <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>

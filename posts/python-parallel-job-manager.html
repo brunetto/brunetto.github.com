@@ -147,31 +147,29 @@
 
     </small>
     <hr>
-    <p>he final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.<br>
-<!--more--><br>
-At this step, however, I didn't know how to manage the different processes in a comfortable way. My requirements were:<br>
-</p><ul>
+    <p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.<br>
+<!-- TEASER_END --></p>
+<p>At this step, however, I didn't know how to manage the different processes in a comfortable way. 
+My requirements were:    </p>
+<ul>
 <li>to start only one process that will take care of starting the right code on the right data-slice</li>
 <li>the possibility to start "n" processes depending on the number of processors and memory available (in the actual code this is done by hand)</li>
 <li>the code should be able to start a new process when one of the previous processes end</li>
 </ul>
-<div>
-<span style="font-size: small;"><span class="Apple-style-span" style="line-height: 24px;">Hereafter I expose and comment the complete "template" for this Python code as I wrote it.</span></span></div>
-<br>
-<div>
-<pre>#!/bin/env python
+<p>Hereafter I expose and comment the complete "template" for this Python code as I wrote it.</p>
+<p>```python</p>
+<h2>!/bin/env python</h2>
 <p>import sys, os
 from subprocess import Popen, PIPE
 from multiprocessing import Process, Queue</p>
 <p>"""This script starts n_procs processes that in parallel take the
 number of the data file from a common queue and with a loop apply the
 analysys code to the data starting it with a bash command using Popen
-"""</p></pre>
-<br></div>
-<div>
-The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.</div>
+"""
+````</p>
+<p>The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.
 <br>
-<div>
+</p><div>
 n_procs = 10 # number of processes to be started<br>
 <pre>file_1 = None
 file_2 =  "mill2_fof_sorted.h5"
