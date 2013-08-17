@@ -3,8 +3,8 @@
 .. description: 
 .. tags: personal
 .. date: 2013/08/14 17:26:00
-.. title: My preferred quotes
-.. slug: my-preferred-quotes
+.. title: My favourite quotes
+.. slug: my-favourite-quotes
 -->
 
 * Try again, fail again, fail better.

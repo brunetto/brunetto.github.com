@@ -3,8 +3,8 @@
 .. description: 
 .. tags: personal
 .. date: 2013/08/17 00:09:29
-.. title: My preferred PhD Comics
-.. slug: my-preferred-phd-comics
+.. title: My favourite PhD Comics
+.. slug: my-favourite-phd-comics
 -->
 
 * [PhD Comics Archive](http://www.phdcomics.com/comics/archive_list.php)
