@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>brunetto's blog (old)</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Sat, 17 Aug 2013 15:09:40 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cosmological simulations #2: how?</title><link>brunetto.github.io/posts/cosmological-simulations-2-how.html</link><description>&lt;p&gt;Let's try now to understand how simulations can be set up.&lt;br&gt;
-&lt;br&gt;
-First of all note that dark matter density dominates over ordinary (baryonic) matter at all times and we expect that ordinary matter follows the gravity of dark matter on large scales, so we can start considering only dark matter in our simulation.&lt;br&gt;
-Moreover, cosmological simulations differ from other N-body simulations because they should to be able to manage comoving coordinates, i.e. coordinates that expand with the universe, since the universe is expanding.&lt;br&gt;
-&lt;!--more--&gt;&lt;br&gt;
-In a cosmological simulation every particle represents a large number of dark matter particles, so the interaction between two particles represents the interaction between two "fluid elements", and this must be collisionless.&lt;br&gt;
-Moreover, a point mass in the simulation represents a mass in a certain volume, and this volume change during the simulation due to the universe expansion and the clustering. This also imply that, at scales comparable to their physical size, they should feel less gravitational force than two point particles. When the two particles are separated by a distance comparable to the dimension of the fluid elements they represents, these would not feel the gravity of all the mass associated with the particles, as suggested by the Gauss theorem. This is because when you are into a spherical distribution of mass you only experience the gravitational force of the mass inside the radius corresponding to your distance from the center.&lt;br&gt;
-To take care of this we decrease the strength of the force at small scales.&lt;br&gt;
-Some example:&lt;br&gt;
-&lt;/p&gt;&lt;ul&gt;&lt;br&gt;
-&lt;li&gt;GIF2: 6.6 kpc/h softening with a mean interparticle separation 110 Mpc/h / 400 particles = 275 kpc/h&lt;/li&gt;
-&lt;br&gt;
-&lt;li&gt;Millennium: 5 kpc/h softening with a mean interparticle separation 500 Mpc/h / 2160 particles = 231 kpc/h&lt;/li&gt;
-&lt;br&gt;
-&lt;li&gt;Millennium II: 1 kpc/h softening with a mean interparticle separation 100 Mpc/h / 2160 particles = 46 kpc/h&lt;/li&gt;
-&lt;/ul&gt;
-This is called "force softening". There are several ways to implement this and one should pay attention because a softening length smaller than the interparticle separation would lead to two-body relaxation problems. With the term "two-body relaxation" we mean the effects that arise when to particles mainly feels each other instead of feeling the global field, or feel more mass than what they should (they feel the mass of the entire fluid elements instead of the mass inside the radius corresponding to their distance). Usually the effects are of two types: the two particles can start to orbit faster and faster with decreasing separation, or they can experience a gravitational sling and be pulled apart (two-body scattering).&lt;br&gt;
-The two-body relaxation modifies the density profiles of dark matter haloes (the dark matter structures formed by gravitational collapse of dark matter) making them smoother. The form of the softening is also important: historically there are two main softening, one is Gaussian and the other is a cubic spline.  &lt;br&gt;
-&lt;br&gt;
-Now we can start analyzing the structure of a cosmological N-body code. It consists in two main parts: the first computes the force field for a given configuration of particles, the second moves the particles according to the computed force field. The two modules are called at each step to ensure that the force field and the particles trajectories evolve in a self-consistent manner. Before starting the simulation we also need to set up the initial conditions and afterwards we have to write the output.&lt;br&gt;
-&lt;br&gt;
-In setting up our simulation there are some things we should consider.&lt;br&gt;
-Our simulation represents a small box in the whole universe, but it isn't an isolated system so it feels the gravitational field of the rest of the universe. To take account of these we can set up periodic boundary conditions. This implies that space outside the simulation box is tiled it with copies (images) of the box. In this way particles near the edges are attracted not only by the matter in the box but also by the particles in its images.&lt;br&gt;
-&lt;br&gt;
-&lt;table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"&gt;&lt;tbody&gt;
-&lt;tr&gt;&lt;td style="text-align: center;"&gt;&lt;img alt="" height="500" src="http://isaacs.sourceforge.net/phys/images/these-seb/pbc-seb.png" style="margin-left: auto; margin-right: auto;" title="Periodic boundary conditions example" width="500"&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class="tr-caption" style="text-align: center;"&gt;&lt;span style="font-size: small; text-align: -webkit-auto;"&gt;Periodic boundary conditions example taken from &lt;a href="http://isaacs.sourceforge.net/phys/pbc.html"&gt;http://isaacs.sourceforge.net/phys/pbc.html&lt;/a&gt;.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;br&gt;
-With periodic boundary conditions one should make sure that there isn't a dominant object in its volume to avoid too large influence by its periodic copies.&lt;br&gt;
-&lt;br&gt;
-As written above, we need cosmological simulations to study scales where perturbations are not linear, to compare results with the real universe. To do this we must probe a large range of scales, so the mass of individual particles must be smaller than the mass of the smallest structure of interest. On the other hand the number of particles must be sufficient to cover the range of   masses involved in galaxy clustering. As of 2011 a typical large simulation have of order of billion of particles.&lt;br&gt;
-&lt;br&gt;
-With such large number of particles the most time consuming operation in the simulation is force calculation; therefore a number of algorithms  have been developed to avoid direct calculations, unfeasible even on the most powerful computer.&lt;br&gt;
-&lt;br&gt;
-&lt;em&gt;References&lt;/em&gt;:&lt;br&gt;
-&lt;ul&gt;&lt;br&gt;
-&lt;li&gt;&lt;a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status"&gt;J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status&lt;/a&gt;&lt;/li&gt;
-&lt;br&gt;
-&lt;li&gt;&lt;a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations"&gt;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>astro/physics</category><category>Cosmology</category><category>N-body</category><category>PhD</category><category>simulation</category><category>old</category><guid>brunetto.github.io/posts/cosmological-simulations-2-how.html</guid><pubDate>Wed, 02 Nov 2011 00:00:00 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>brunetto's blog (old)</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Sat, 17 Aug 2013 15:21:12 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cosmological simulations #2: how?</title><link>brunetto.github.io/posts/cosmological-simulations-2-how.html</link><description>&lt;div&gt;&lt;p&gt;Let's try now to understand how simulations can be set up.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;First of all note that dark matter density dominates over ordinary (baryonic) matter at all times and we expect that ordinary matter follows the gravity of dark matter on large scales, so we can start considering only dark matter in our simulation.&lt;br&gt;
+Moreover, cosmological simulations differ from other N-body simulations because they should to be able to manage comoving coordinates, i.e. coordinates that expand with the universe, since the universe is expanding.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/cosmological-simulations-2-how.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>Cosmology</category><category>N-body</category><category>PhD</category><category>simulation</category><category>old</category><guid>brunetto.github.io/posts/cosmological-simulations-2-how.html</guid><pubDate>Wed, 02 Nov 2011 00:00:00 GMT</pubDate></item></channel></rss>
