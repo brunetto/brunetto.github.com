@@ -129,22 +129,24 @@ My requirements were:    </p>
 <li>the code should be able to start a new process when one of the previous processes end</li>
 </ul>
 <p>Hereafter I expose and comment the complete "template" for this Python code as I wrote it.    </p>
-<p>```python</p>
-<h2>!/bin/env python</h2>
-<p>import sys, os
-from subprocess import Popen, PIPE
-from multiprocessing import Process, Queue</p>
-<p>"""This script starts n_procs processes that in parallel take the
-number of the data file from a common queue and with a loop apply the
-analysys code to the data starting it with a bash command using Popen
-"""</p>
-<div class="code"><pre><span class="n">The</span> <span class="n">first</span> <span class="n">line</span> <span class="n">is</span> <span class="n">the</span> <span class="n">declaration</span> <span class="n">of</span> <span class="n">the</span> <span class="n">interpreter</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="k">for</span> <span class="n">this</span> <span class="n">script</span><span class="p">,</span> <span class="n">in</span> <span class="n">this</span> <span class="k">case</span> <span class="n">Python</span><span class="p">.</span> <span class="n">After</span> <span class="n">that</span> <span class="n">we</span> <span class="n">import</span> <span class="n">some</span> <span class="n">libraries</span> <span class="n">and</span> <span class="n">modules</span> <span class="n">used</span> <span class="n">in</span> <span class="n">this</span> <span class="n">code</span><span class="p">.</span> <span class="n">The</span> <span class="n">last</span> <span class="n">lines</span><span class="p">,</span> <span class="n">inside</span> <span class="n">the</span> <span class="n">triple</span> <span class="n">quotes</span><span class="p">,</span> <span class="n">are</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">string</span> <span class="n">of</span> <span class="n">the</span> <span class="n">code</span><span class="p">.</span> <span class="n">Python</span> <span class="n">in</span> <span class="n">fact</span> <span class="n">has</span> <span class="n">a</span> <span class="n">self</span><span class="o">-</span><span class="n">doc</span> <span class="n">system</span> <span class="n">that</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">understand</span> <span class="n">what</span> <span class="n">a</span> <span class="n">piece</span> <span class="n">of</span> <span class="n">code</span> <span class="n">does</span> <span class="n">and</span> <span class="n">how</span> <span class="n">it</span> <span class="n">works</span><span class="p">.</span>    
+<div class="code"><pre><span class="c">#!/bin/env python</span>
 
-<span class="err">````</span><span class="n">python</span>
-<span class="n">n_procs</span> <span class="o">=</span> <span class="mi">10</span> <span class="err">#</span> <span class="n">number</span> <span class="n">of</span> <span class="n">processes</span> <span class="n">to</span> <span class="n">be</span> <span class="n">started</span>
-<span class="n">file_1</span> <span class="o">=</span> <span class="n">None</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
+<span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Queue</span>
+
+<span class="sd">"""This script starts n_procs processes that in parallel take the</span>
+<span class="sd">number of the data file from a common queue and with a loop apply the</span>
+<span class="sd">analysys code to the data starting it with a bash command using Popen</span>
+<span class="sd">"""</span>
+</pre></div>
+
+
+<p>The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.    </p>
+<div class="code"><pre><span class="n">n_procs</span> <span class="o">=</span> <span class="mi">10</span> <span class="c"># number of processes to be started</span>
+<span class="n">file_1</span> <span class="o">=</span> <span class="bp">None</span>
 <span class="n">file_2</span> <span class="o">=</span>  <span class="s">"mill2_fof_sorted.h5"</span>
-<span class="n">m_factor</span> <span class="o">=</span> <span class="mi">1</span>    <span class="err">#</span> <span class="n">How</span> <span class="n">many</span> <span class="n">random</span> <span class="n">more</span> <span class="n">than</span> <span class="n">data</span>
+<span class="n">m_factor</span> <span class="o">=</span> <span class="mi">1</span>    <span class="c"># How many random more than data</span>
 <span class="n">start_slice</span> <span class="o">=</span> <span class="mi">0</span> 
 <span class="n">end_slice</span> <span class="o">=</span> <span class="mi">99</span>
 </pre></div>
