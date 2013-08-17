@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Cosmological simulations #3: force calculation! | brunetto's blog</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/xkcd.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            brunetto's blog
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Cosmological simulations #3: force calculation!</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-11-13T00:00:00">2011-11-13 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        
+            <a class="tag" href="../categories/cosmic_structure.html"><span class="badge badge-info">cosmic_structure</span></a>
+        
+            <a class="tag" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
+        
+            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
+Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.</p>
+<!-- TEASER_END -->
+
+<h4>Direct summation: PP method</h4>
+<p>The raw approach is to calculate forces between all pairs in the simulation. This works well for less than $10^3$. The number of pairs, and therefore the computational time, scales as $N^2$, so this method that is usually unacceptable given the number of particles in a simulation.  <br>
+It's difficult to implement periodic boundary conditions in this method (because you have to manage it by hand) and the only convenient way to do this is to use the Ewald summation.  <br>
+This method is mostly used to test other methods.</p>
+<h4>Tree method</h4>
+<p>The disadvantage of the pp-method comes from having to compute the interaction of any new particle with all the others. The tree method, on the contrary, approximate the force of a distant group of particles with the force exerted by only one particle, in the center of mass of the group, with mass equal the total mass of the group. In this way the computation scales as $N\log N$.  <br>
+To create the groups the particles are divided and arranged in a tree structure, that is, the initial volume is divided, and every resulting volume divided again. This procedure goes on until in the resulting volumes there's only one particle. In this situation it's very important the "cell acceptance criterion" that decide whether or not a cell is far enough to be used as it is or if it has to be divided into its subvolumes.  <br>
+The accuracy and the speed of this method can be improved storing some information about the particles in the volumes (such as moments of the mass distribution, usually the quadrupole).  <br>
+Moreover, close particles can share information about distant groups because the force is very similar, and the tree can be parallelized efficiently. However, it's not so easy to consider periodic boundary conditions.</p>
+<h4>Fast multipole method</h4>
+<p>This method is an improved version of the tree method. It is based on including higher moments of the mass distribution in cells and some other optimizations. This method has a computational costs which scales as $N$.    </p>
+<p>However all these method has problems with the open boundary conditions and it's difficult to adapt it to the cosmological needs. An extension of the tree method with explicit momentum conservation has been also developed.</p>
+<h4>Particle-mesh method</h4>
+<p>This is the first method used extensively for cosmological simulations and the first used for simulation with order of $10^5$ particles. The PM method solve the Poisson equation (partial differential equation that links the gravitational field with the mass distribution) in the Fourier space, where it is a simple algebraic equation, using the FFT (Fast Fourier Transform) routine to change from coordinate space to the Fourier space and viceversa . FFT requires to sample the functions at uniformly spaced points and here we use a grid (mesh). We compute density at the grid points using weight functions on the particles representing the density and velocity fields.  <br>
+The use of Fourier methods automatically include periodic boundary conditions without no additional effort (because of the nature of periodic function in the Fourier space) and the use of the mesh automatically soften the force at small scales (because of the interpolation needed to compute the gravitational field on the grid) but it underestimate the force at scales larger (toughly up to 3 times) than the softening length.  <br>
+This method is parallelized using parallel FFT and dividing the volume among the processors.  <br>
+Softening at the mesh scale give collisionless evolution but the code cannot resolve structure at scales smaller than the mesh scale, moreover the mesh makes the force anisotropic at small scales. This happens because the grid points don't sample very well the filed on such small scales.</p>
+<h4>Adaptive-mesh refinement</h4>
+<p>In AMR methods the mesh is refined in high density regions using a finer grid, but it's important to pay attention to the conservation of momentum and angular momentum switching from a grid to another.</p>
+<h4>P3M: particle-particle+particle-mesh</h4>
+<p>The idea is to add a correction to the force calculated with the PM method by using the PP method on the closest particles. The correction is assumed to be isotropic and depend only upon the distance. Usually it's considered a distance of the order of 2 times the internode mesh distance. This method has been parallelized but with some problems, also because load balancing is quite difficult to achieve.</p>
+<p>Some other problems are:    </p>
+<ul>
+<li>the correction to the force is isotropic but the PM method has anisotropies at small scales</li>
+<li>the correction is at scales up to 2 times the grid scale but the PM method underestimate the force on scales larger than these</li>
+<li>the refined interparticle softening is at scales smaller than the interparticle separation and this can lead to two-body scattering and relaxation</li>
+<li>P3M simulations slow down at late times when the distribution of particles becomes highly clustered because the short range force dominate the compute operations</li>
+</ul>
+<h4>Tree+PM: TPM</h4>
+<p>Some hybrid codes has been developed trying to combine the PM and the Tree methods:    </p>
+<ul>
+<li>The Grid of Trees PM (GOTPM)replaces the PP part of P3M with a local tree in each region. This resolve only the last problem of the P3M.</li>
+<li>TPM correct the short range force only if the particle is in a highly dense region and with a tree to compute the forces.</li>
+<li>TreePM divide the force in long-range and short-range instead of correcting the PM force at a certain scale, greater than that of the P3M. The short-range forces are calculated with a global tree.</li>
+<li>The Adaptive TreePM (ATreePM) try to resolve the two-body relaxation and scattering using an adaptive softening length, determined by the local density. To ensure momentum conservation force is simmetrized for particles closer than the softening length. The softening correspond to consider the particles with a density profile and not only mass points and if the softening length is different for two close particles, the force they feel is different between them. This happens  because particle A feel a force due to its entire mass and a certain fraction of particle B mass, but particle B feels a force due to its own mass and a different fraction of the mass of particle A. In this case the forces are symmetrized taking the mean of the two forces.</li>
+</ul>
+<p>To compare different methods we can consider:    </p>
+<ul>
+<li>The dynamic range, that is the range of scales over which the force is computed reliably. Usually the limit is at small scales rather than at large scales.</li>
+<li>The code should integrate the equation of motion in a reproducible way and momentum should be conserved.</li>
+<li>The code should be efficient and run with the minimum possible time</li>
+<li>Requirement of memory and other resources.</li>
+</ul>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+<li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="phd-question-1-m.html">← Previous post</a>
+        </li>
+    
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/cosmological-simulations-3-force-calculation.html";
+        
+        var disqus_title="Cosmological simulations #3: force calculation!";
+        var disqus_identifier="cache/posts/cosmological-simulations-3-force-calculation.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
