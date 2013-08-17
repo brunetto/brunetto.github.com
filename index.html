@@ -120,28 +120,28 @@
         </big></p>
         <hr>
         <p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
-Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.</p>
+Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.    </p>
 <!-- TEASER_END -->
 
 <h4>Direct summation: PP method</h4>
 <p>The raw approach is to calculate forces between all pairs in the simulation. This works well for less than $10^3$. The number of pairs, and therefore the computational time, scales as $N^2$, so this method that is usually unacceptable given the number of particles in a simulation.  <br>
 It's difficult to implement periodic boundary conditions in this method (because you have to manage it by hand) and the only convenient way to do this is to use the Ewald summation.  <br>
-This method is mostly used to test other methods.</p>
+This method is mostly used to test other methods.    </p>
 <h4>Tree method</h4>
 <p>The disadvantage of the pp-method comes from having to compute the interaction of any new particle with all the others. The tree method, on the contrary, approximate the force of a distant group of particles with the force exerted by only one particle, in the center of mass of the group, with mass equal the total mass of the group. In this way the computation scales as $N\log N$.  <br>
 To create the groups the particles are divided and arranged in a tree structure, that is, the initial volume is divided, and every resulting volume divided again. This procedure goes on until in the resulting volumes there's only one particle. In this situation it's very important the "cell acceptance criterion" that decide whether or not a cell is far enough to be used as it is or if it has to be divided into its subvolumes.  <br>
 The accuracy and the speed of this method can be improved storing some information about the particles in the volumes (such as moments of the mass distribution, usually the quadrupole).  <br>
-Moreover, close particles can share information about distant groups because the force is very similar, and the tree can be parallelized efficiently. However, it's not so easy to consider periodic boundary conditions.</p>
+Moreover, close particles can share information about distant groups because the force is very similar, and the tree can be parallelized efficiently. However, it's not so easy to consider periodic boundary conditions.    </p>
 <h4>Fast multipole method</h4>
 <p>This method is an improved version of the tree method. It is based on including higher moments of the mass distribution in cells and some other optimizations. This method has a computational costs which scales as $N$.    </p>
-<p>However all these method has problems with the open boundary conditions and it's difficult to adapt it to the cosmological needs. An extension of the tree method with explicit momentum conservation has been also developed.</p>
+<p>However all these method has problems with the open boundary conditions and it's difficult to adapt it to the cosmological needs. An extension of the tree method with explicit momentum conservation has been also developed.    </p>
 <h4>Particle-mesh method</h4>
 <p>This is the first method used extensively for cosmological simulations and the first used for simulation with order of $10^5$ particles. The PM method solve the Poisson equation (partial differential equation that links the gravitational field with the mass distribution) in the Fourier space, where it is a simple algebraic equation, using the FFT (Fast Fourier Transform) routine to change from coordinate space to the Fourier space and viceversa . FFT requires to sample the functions at uniformly spaced points and here we use a grid (mesh). We compute density at the grid points using weight functions on the particles representing the density and velocity fields.  <br>
 The use of Fourier methods automatically include periodic boundary conditions without no additional effort (because of the nature of periodic function in the Fourier space) and the use of the mesh automatically soften the force at small scales (because of the interpolation needed to compute the gravitational field on the grid) but it underestimate the force at scales larger (toughly up to 3 times) than the softening length.  <br>
 This method is parallelized using parallel FFT and dividing the volume among the processors.  <br>
-Softening at the mesh scale give collisionless evolution but the code cannot resolve structure at scales smaller than the mesh scale, moreover the mesh makes the force anisotropic at small scales. This happens because the grid points don't sample very well the filed on such small scales.</p>
+Softening at the mesh scale give collisionless evolution but the code cannot resolve structure at scales smaller than the mesh scale, moreover the mesh makes the force anisotropic at small scales. This happens because the grid points don't sample very well the filed on such small scales.    </p>
 <h4>Adaptive-mesh refinement</h4>
-<p>In AMR methods the mesh is refined in high density regions using a finer grid, but it's important to pay attention to the conservation of momentum and angular momentum switching from a grid to another.</p>
+<p>In AMR methods the mesh is refined in high density regions using a finer grid, but it's important to pay attention to the conservation of momentum and angular momentum switching from a grid to another.    </p>
 <h4>P3M: particle-particle+particle-mesh</h4>
 <p>The idea is to add a correction to the force calculated with the PM method by using the PP method on the closest particles. The correction is assumed to be isotropic and depend only upon the distance. Usually it's considered a distance of the order of 2 times the internode mesh distance. This method has been parallelized but with some problems, also because load balancing is quite difficult to achieve.</p>
 <p>Some other problems are:    </p>
@@ -149,7 +149,7 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
 <li>the correction to the force is isotropic but the PM method has anisotropies at small scales</li>
 <li>the correction is at scales up to 2 times the grid scale but the PM method underestimate the force on scales larger than these</li>
 <li>the refined interparticle softening is at scales smaller than the interparticle separation and this can lead to two-body scattering and relaxation</li>
-<li>P3M simulations slow down at late times when the distribution of particles becomes highly clustered because the short range force dominate the compute operations</li>
+<li>P3M simulations slow down at late times when the distribution of particles becomes highly clustered because the short range force dominate the compute operations    </li>
 </ul>
 <h4>Tree+PM: TPM</h4>
 <p>Some hybrid codes has been developed trying to combine the PM and the Tree methods:    </p>
@@ -174,6 +174,44 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
         <p>
         
             <a href="posts/cosmological-simulations-3-force-calculation.html#disqus_thread" data-disqus-identifier="cache/posts/cosmological-simulations-3-force-calculation.html">Comments</a>
+        
+        </p></div>
+    
+        <div class="postbox">
+        <h1><a href="posts/cosmological-simulations-4-moving-the-particles.html">Cosmological simulations: #4: Moving the particles!</a></h1>
+        <p style="text-align:right"><big>
+             Posted: 2011-11-13 00:00
+        </big></p>
+        <hr>
+        <h4>Equations of motion</h4>
+<p>Once we have learned how to calculate gravitational forces and decided which way is best for us, it's time to move particles according to the force field.  <br>
+To have an idea of what happens we can look at a simplified version of the pp-method, where the new coordinates and velocities are expressed starting from the previous values:    </p>
+<p>$\mathbf{v}_i^{new}=\mathbf{v}_i^{old}+\frac{\mathbf{F}_i}{m_i}\Delta t$
+$\mathbf{x}_i^{new}=\mathbf{x}_i^{old}+\mathbf{v}_i\Delta t$</p>
+<p>More in general we start from the Newtonian equation of motion for a set of particles interacting only through gravity, in particular we consider the Euler and Poisson equations. We express these in comoving coordinates because in this way we can focus on density and velocity perturbations, while the expansion of the universe is included in the scale factor $a$ (obtained from the Friedmann equations):    </p>
+<p>$\frac{\mathrm{d}^2\mathbf{x}}{\mathrm{d}t^2}+2\frac{\mathrm{d}a/\mathrm{d}t}{a}\frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}=-\frac{1}{a^2}\nabla_x\phi$</p>
+<p>$\nabla_x^2\phi=4\pi Ga^2\bar \rho\delta = \frac{3}{2}H_0^2\Omega_0\frac{\delta}{a}$</p>
+<!-- TEASER_END -->
+
+<p>Here $\mathbf{x}=\frac{\mathbf{r}}{a(t)}$ is the comoving coordinate of a particle, with $\mathbf{r}$ the physical coordinate; $\phi$ is the gravitational potential due to the density perturbations, $H_0$ the Hubble constant and $\Omega_0$ the density parameter at the present time. In real simulations these equations are modified changing variables to simplify the integration but the idea remain the same. They are valid for non-relativistic matter and on scales smaller than the Hubble radius $c/H_0$. The expansion of the universe act as a viscous force that opposes to the gravitational infall slowing down the growth of perturbations.  <br>
+Usually to integrate (read it as "to solve"!:P) the equations and obtain the new positions and velocities we use the Leap-Frog method because it minimizes the number of force evaluations. This is the most time consuming part of the code: Leap-Frog only requires one evaluation and the corresponding error is of the order of $\Delta t^3$. In this method positions and accelerations are computed at integer time steps and velocities at half time step: for example, positions are calculated at $t$ and velocities at $t+\Delta t/2$.    </p>
+<h4>Time stepping</h4>
+<p>Choosing the simulation time step, that is the intervals between two calculation of positions and/or velocities, is crucial both for performances of the code and errors generation. Shorter time steps give smaller errors, but slow down the simulation.  <br>
+Time steps depend on the distribution of particles and may change during the evolution of the simulation. Use of individual time steps for each particle may speed up calculations, because we can tune the time step on for different particles, increasing the time resolution for particles in denser regions and decreasing it in low density regions. In this way larger $\Delta t$ are sufficient. When we decide the time step we have also to take care of the conservation of momentum and evolution of energy if it's not conserved (it can evolve according to the Irvine-Layzer equation).  <br>
+There are different possibility for how to calculate the time step, for example:    </p>
+<ul>
+<li>we can take care of the validity of the Irvine-Layzer during the simulation; in this case we have to compute the force at mesh points and then interpolate it at particles positions but, because the force doesn't equal the gradient of the potential and the correction requires a direct sum on all the particles, this is not a good method</li>
+<li>we can look at the convergence of velocities and final positions of particles using different time steps: reducing their duration we should approach the correct values</li>
+<li>the reproducibility of initial conditions may be it's the most stringent criterion because it ensures that the results are correct: under certain conditions (linearity) running the particles forward and then back again we should get back the initial positions    </li>
+</ul>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+<li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
+</ul>
+        <p>
+        
+            <a href="posts/cosmological-simulations-4-moving-the-particles.html#disqus_thread" data-disqus-identifier="cache/posts/cosmological-simulations-4-moving-the-particles.html">Comments</a>
         
         </p></div>
     
