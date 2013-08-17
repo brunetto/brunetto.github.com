@@ -114,6 +114,50 @@
     
     
         <div class="postbox">
+        <h1><a href="posts/loadleveler-quick-howto.html">Loadleveler quick howto</a></h1>
+        <p style="text-align:right"><big>
+             Posted: 2011-11-04 00:00
+        </big></p>
+        <hr>
+        <p>Some useful commands to manage jobs with IBM <code>loadleveler</code> (<code>ll</code>).</p>
+<p>First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) "test_run.cmd". With this file you tell <code>ll</code> what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
+It would look like this:    </p>
+<div class="code"><pre><span class="c">#!/bin/bash</span>
+<span class="c"># @ initialdir = /path-to-your-folder</span>
+<span class="c"># @ job_name = test_run</span>
+<span class="c"># @ output = test_run.$(jobid).out</span>
+<span class="c"># @ error = test_run.$(jobid).err</span>
+<span class="c"># @ notification = error</span>
+<span class="c"># @ class = long</span>
+<span class="c"># @ total_tasks = 20</span>
+<span class="c"># @ job_type = parallel</span>
+<span class="c"># @ queue</span>
+
+<span class="nb">ulimit</span> -s 65536
+
+python ./start.py
+</pre></div>
+
+
+<!-- TEASER_END -->
+
+<p>After that you can submit your job with <code>llsubmit test_run.cmd</code>.    </p>
+<p>Other useful commands are    </p>
+<ul>
+<li><code>llq -u $USER</code>: Return information about your jobs only in the queues</li>
+<li><code>llq -l &amp;lt;job&amp;gt;</code>: Return detailed information about the specific</li>
+<li><code>llq -s &amp;lt;job&amp;gt;</code>: Return information about why the job remains queued</li>
+<li><code>llcancel &amp;lt;job&amp;gt;</code>: Cancel a job from the queues, either it is waiting or running</li>
+<li><code>llstatus</code>: Return information about the status of the machine</li>
+</ul>
+<p><em>Reference</em>: <a href="http://hpc.cineca.it/content/batch-scheduler-loadleveler" target="_blank" title="Cineca LoadLeveler howto">Cineca LoadLeveler howto</a></p>
+        <p>
+        
+            <a href="posts/loadleveler-quick-howto.html#disqus_thread" data-disqus-identifier="cache/posts/loadleveler-quick-howto.html">Comments</a>
+        
+        </p></div>
+    
+        <div class="postbox">
         <h1><a href="posts/python-parallel-job-manager.html">Python parallel job manager</a></h1>
         <p style="text-align:right"><big>
              Posted: 2011-11-04 00:00

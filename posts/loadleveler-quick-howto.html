@@ -2,9 +2,9 @@
 <head>
     
     <meta charset="utf-8">
-    <meta name="description" content="This is a demo site for Nikola.">
+    <meta name="description" content="">
     <meta name="author" content="brunetto">
-    <title>Tags | brunetto's blog</title>
+    <title>Loadleveler quick howto | brunetto's blog</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -43,7 +43,11 @@
     
 
     
+
+
     
+
+
     
 </head>
 <body>
@@ -72,7 +76,7 @@
         
     
         
-            </li><li class="active"><a href="#">Tags</a>
+            </li><li><a href="../categories/index.html">Tags</a>
         
     
         
@@ -113,38 +117,102 @@
     <div class="span8">
     
     <div class="postbox">
-        <!--Body content-->
-        <h1>Tags</h1>
-        <ul class="unstyled bricks">
+    
+    <h1>Loadleveler quick howto</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-11-04T00:00:00">2011-11-04 00:00</time>
         
-            <li><a href="astrophysics.html">astro/physics</a></li>
+    
+
         
-            <li><a href="code.html">code</a></li>
+    
+          |  More posts about
         
-            <li><a href="code.html">Code</a></li>
+            <a class="tag" href="../categories/code.html"><span class="badge badge-info">Code</span></a>
         
-            <li><a href="computer.html">Computer</a></li>
+            <a class="tag" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
         
-            <li><a href="cosmology.html">Cosmology</a></li>
+            <a class="tag" href="../categories/master-thesis.html"><span class="badge badge-info">Master Thesis</span></a>
         
-            <li><a href="imported.html">imported</a></li>
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
         
-            <li><a href="latex.html">latex</a></li>
+    
+
+    </small>
+    <hr>
+    <p>Some useful commands to manage jobs with IBM <code>loadleveler</code> (<code>ll</code>).</p>
+<p>First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) "test_run.cmd". With this file you tell <code>ll</code> what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
+It would look like this:    </p>
+<div class="code"><pre><span class="c">#!/bin/bash</span>
+<span class="c"># @ initialdir = /path-to-your-folder</span>
+<span class="c"># @ job_name = test_run</span>
+<span class="c"># @ output = test_run.$(jobid).out</span>
+<span class="c"># @ error = test_run.$(jobid).err</span>
+<span class="c"># @ notification = error</span>
+<span class="c"># @ class = long</span>
+<span class="c"># @ total_tasks = 20</span>
+<span class="c"># @ job_type = parallel</span>
+<span class="c"># @ queue</span>
+
+<span class="nb">ulimit</span> -s 65536
+
+python ./start.py
+</pre></div>
+
+
+<!-- TEASER_END -->
+
+<p>After that you can submit your job with <code>llsubmit test_run.cmd</code>.    </p>
+<p>Other useful commands are    </p>
+<ul>
+<li><code>llq -u $USER</code>: Return information about your jobs only in the queues</li>
+<li><code>llq -l &amp;lt;job&amp;gt;</code>: Return detailed information about the specific</li>
+<li><code>llq -s &amp;lt;job&amp;gt;</code>: Return information about why the job remains queued</li>
+<li><code>llcancel &amp;lt;job&amp;gt;</code>: Cancel a job from the queues, either it is waiting or running</li>
+<li><code>llstatus</code>: Return information about the status of the machine</li>
+</ul>
+<p><em>Reference</em>: <a href="http://hpc.cineca.it/content/batch-scheduler-loadleveler" target="_blank" title="Cineca LoadLeveler howto">Cineca LoadLeveler howto</a></p>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="python-parallel-job-manager.html">← Previous post</a>
+        </li>
+    
+    
+    </ul>
+
+    
         
-            <li><a href="master-thesis.html">Master Thesis</a></li>
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
         
-            <li><a href="n-body.html">N-body</a></li>
+            var disqus_url="brunetto.github.io/posts/loadleveler-quick-howto.html";
         
-            <li><a href="old.html">old</a></li>
-        
-            <li><a href="phd.html">PhD</a></li>
-        
-            <li><a href="python.html">Python</a></li>
-        
-            <li><a href="simulation.html">simulation</a></li>
-        
-        </ul>
-        <!--End of body content-->
+        var disqus_title="Loadleveler quick howto";
+        var disqus_identifier="cache/posts/loadleveler-quick-howto.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
     </div>
 
     </div>

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>brunetto's blog</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Sat, 17 Aug 2013 16:43:47 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python parallel job manager</title><link>brunetto.github.io/posts/python-parallel-job-manager.html</link><description>&lt;div&gt;&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  &lt;br&gt;
+<rss version="2.0"><channel><title>brunetto's blog</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Sat, 17 Aug 2013 16:49:00 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Loadleveler quick howto</title><link>brunetto.github.io/posts/loadleveler-quick-howto.html</link><description>&lt;div&gt;&lt;p&gt;Some useful commands to manage jobs with IBM &lt;code&gt;loadleveler&lt;/code&gt; (&lt;code&gt;ll&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) "test_run.cmd". With this file you tell &lt;code&gt;ll&lt;/code&gt; what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
+It would look like this:    &lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="c"&gt;# @ initialdir = /path-to-your-folder&lt;/span&gt;
+&lt;span class="c"&gt;# @ job_name = test_run&lt;/span&gt;
+&lt;span class="c"&gt;# @ output = test_run.$(jobid).out&lt;/span&gt;
+&lt;span class="c"&gt;# @ error = test_run.$(jobid).err&lt;/span&gt;
+&lt;span class="c"&gt;# @ notification = error&lt;/span&gt;
+&lt;span class="c"&gt;# @ class = long&lt;/span&gt;
+&lt;span class="c"&gt;# @ total_tasks = 20&lt;/span&gt;
+&lt;span class="c"&gt;# @ job_type = parallel&lt;/span&gt;
+&lt;span class="c"&gt;# @ queue&lt;/span&gt;
+
+&lt;span class="nb"&gt;ulimit&lt;/span&gt; -s 65536
+
+python ./start.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="/posts/loadleveler-quick-howto.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Code</category><category>Computer</category><category>Master Thesis</category><category>imported</category><guid>brunetto.github.io/posts/loadleveler-quick-howto.html</guid><pubDate>Fri, 04 Nov 2011 00:00:00 GMT</pubDate></item><item><title>Python parallel job manager</title><link>brunetto.github.io/posts/python-parallel-job-manager.html</link><description>&lt;div&gt;&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  &lt;br&gt;
 &lt;/p&gt;&lt;p&gt;&lt;a href="/posts/python-parallel-job-manager.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>code</category><category>Computer</category><category>Master Thesis</category><category>Python</category><category>imported</category><guid>brunetto.github.io/posts/python-parallel-job-manager.html</guid><pubDate>Fri, 04 Nov 2011 00:00:00 GMT</pubDate></item><item><title>Cosmological simulations #1: why and what?</title><link>brunetto.github.io/posts/cosmological-simulations-1-why-and-what.html</link><description>&lt;div&gt;&lt;p&gt;This is the first of a series of posts dedicated to cosmological simulations!&lt;br&gt;
 &lt;br&gt;
 I do this because, as stressed by my PhD advisor, I need to practice in explaining in a clear way specialized knowledge and in linking it with its background and motivations. Also I would like to keep track of my progress and of what I'm learning!&lt;br&gt;
