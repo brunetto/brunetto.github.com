@@ -6,62 +6,127 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>brunetto.github.io/</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-16</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/2011/</loc>
+  <lastmod>2013-08-16</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/2011/index.html</loc>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/archive.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/categories/</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-16</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/astrophysics.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/cosmology.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/imported.html</loc>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/categories/index.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/latex.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/n-body.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/phd.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/simulation.html</loc>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/galleries/</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-16</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/galleries/index.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/index.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/listings/</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-16</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/listings/index.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/cosmological-simulations-1-why-and-what.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/subfile-package-for-latex.html</loc>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/stories/about.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/curriculum-vitae.html</loc>
+  <lastmod>2013-08-17</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/my-preferred-phd-comics.html</loc>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/stories/my-preferred-quotes.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/stories/my-travels.html</loc>
-  <lastmod>2013-08-14</lastmod>
+  <lastmod>2013-08-17</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>

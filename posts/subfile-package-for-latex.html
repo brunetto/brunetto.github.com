@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="brunetto">
-    <title>My preferred quotes | brunetto's blog</title>
+    <title>Subfile package for latex | brunetto's blog</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -79,7 +79,7 @@
         
     
         
-            </li><li><a href="about.html">About</a>
+            </li><li><a href="../stories/about.html">About</a>
         
     
         
@@ -115,79 +115,95 @@
     <div class="span2"></div>
     <div class="span8">
     
+    <div class="postbox">
+    
+    <h1>Subfile package for latex</h1>
+    
 
-    <h1>My preferred quotes</h1>
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-05-13T00:00:00">2011-05-13 00:00</time>
+        
+    
 
-    <ul>
-<li>
-<p>Try again, fail again, fail better.
-[Samuel Beckett]</p>
-</li>
-<li>
-<p>Tell me and I'll forget, show me and I may remember, involve me and I'll understand.
-[from the QT website]</p>
-</li>
-<li>
-<p>Be hungry, be foolish.
-[Steve Jobs]</p>
-</li>
-<li>
-<p>Prima di diagnosticarti una depressione o bassa autostima, assicurati di non essere semplicemente circondato da stronzi.
-[W.Gibson]</p>
-</li>
-<li>
-<p>Nulla vale l'odore di quel fuoco.
-[BP]</p>
-</li>
-<li>
-<p>La distanza tra teoria e pratica è più grande in pratica che in teoria.</p>
-</li>
-<li>
-<p>Occorre lavorare su se stessi per imparare ad ASCOLTARE DAVVERO. Imparare a non interrompere, imparare a sospendere il giudizio, imparare ad aprire davvero la mente ed il cuore, prima ancora che le orecchie.
-[Giovanni Annunziata]</p>
-</li>
-<li>
-<p>The best way to predict the future is to invent it
-[Alan Kay]</p>
-</li>
-<li>
-<p>Less is (exponentially) more
-[Rob Pike on Go]</p>
-</li>
-<li>
-<p>La differenza tra dire e fare è implementare
-[Andrea Negri]</p>
-</li>
-<li>
-<p>Beware of the man who won’t be bothered with details.
-[William Feather, Sr.]</p>
-</li>
-<li>
-<p>Sceglierò sempre una persona pigra per svolgere un compito difficile, perché troverà un modo semplice per risolverlo.
-[...]</p>
-</li>
-<li>
-<p>Hai mai pensato che è davvero un genio chi rende semplice ciò che non sai...
-[Rio, Il Sognatore]</p>
-</li>
-<li>
-<p>Hai mai pensato che sei piccolo o grande in base al coraggio che hai?
-[Rio, Il Sognatore]</p>
-</li>
-<li>
-<p>Hai mai pensato che il destino e` nelle scelte e le scelte sei tu che le fai?
-[Rio, Il sognatore]</p>
-</li>
-<li>
-<p>Visto da vicino nessuno è normale
-[Franco Basaglia]</p>
-</li>
-<li>
-<p>Un vincente trova la strada un perdente trova una scusa
-[...]</p>
-</li>
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/latex.html"><span class="badge badge-info">latex</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>If you have a complex Latex document and you want to split it in several files, the <a href="http://ctan.org/tex-archive/macros/latex/contrib/subfiles">subfile</a> package can help you.  <br>
+The main difference between this and the <code>\input</code> or <code>\import</code> methods is that with <code>subfile</code> you can compile also each file, without need to copy the preamble.    </p>
+<!-- TEASER_END -->
+
+<p>What you have to do is to add</p>
+<div class="code"><pre><span class="k">\usepackage</span><span class="nb">{</span>subfiles<span class="nb">}</span>
+</pre></div>
+
+
+<p>in the preamble of the master file and</p>
+<div class="code"><pre><span class="k">\documentclass</span><span class="na">[tesi.tex]</span><span class="nb">{</span>subfiles<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+...
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+
+
+<p>in your subfiles.  <br>
+Now you can import your subfiles in the master file with
+````latex
+\subfile{subfile.tex}
+<br>  <br>
+Sources:<br>
+</p><ul><br>
+<li><a href="http://en.wikibooks.org/wiki/LaTeX/Multiple_files">http://en.wikibooks.org/wiki/LaTeX/Multiple_files</a></li>
+<li><a href="https://help.ubuntu.com/community/LaTeX">How to install in Ubuntu</a></li>
 </ul>
+    
+    <ul class="pager">
+    
+    
+        <li class="next">
+            <a href="cosmological-simulations-1-why-and-what.html">Next post →</a>
+        </li>
+    
+    </ul>
 
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/subfile-package-for-latex.html";
+        
+        var disqus_title="Subfile package for latex";
+        var disqus_identifier="cache/posts/subfile-package-for-latex.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
 
     </div>
     </div>
