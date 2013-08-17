@@ -32,16 +32,16 @@ analysys code to the data starting it with a bash command using Popen
 """
 ````
 
-The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.</div>
-<br />
-<div>
-n_procs = 10 # number of processes to be started<br />
-<pre>file_1 = None
+The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.
+
+````python
+n_procs = 10 # number of processes to be started
+file_1 = None
 file_2 =  "mill2_fof_sorted.h5"
 m_factor = 1    # How many random more than data
 start_slice = 0 
-end_slice = 99</pre>
-<br />
+end_slice = 99
+````
 Here we set some parameters: the number of processes to start (set by hand), the two files to use in the analysis, how many random particles we use more than the data particles and the limits in the data slice to analyze. In this case we want to correlate the data in <code>mill2_fof_sorted.h5</code> with the data contained in the slices between slice 0 and slice 99. file_1 will be replaced after with the right name. This analysis will be carry out using 10 processes at each time. As a process end the code will take care of starting a new process.<br />
 <pre>def starter(input, output):
     """Start the code processes one after the other"""
