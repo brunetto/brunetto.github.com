@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: astro/physics, Cosmology, N-body, PhD, simulation, old
+.. tags: astro/physics, Cosmology, N-body, PhD, simulation
 .. date: 2011-11-02
 .. title: Cosmological simulations #2: how?
 .. slug: cosmological-simulations-2-how

@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: astro/physics, body simulations, Cosmology, N-body, PhD, simulation, imported
+.. tags: astro/physics, n-body simulations, Cosmology, N-body, PhD, simulation, imported
 .. date: 2011-11-29
 .. title: Cosmological simulations #6: adding gas!
 .. slug: cosmological-simulations-6-adding-gas

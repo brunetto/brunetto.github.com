@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: Code, Computer, Master Thesis, imported
+.. tags: code, Master Thesis, imported
 .. date: 2011-11-04
 .. title: Loadleveler quick howto
 .. slug: loadleveler-quick-howto
