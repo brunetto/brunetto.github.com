@@ -170,6 +170,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/posts/from-csv-to-hdf5-in-python.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/posts/loadleveler-quick-howto.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>

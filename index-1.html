@@ -29,7 +29,6 @@
         <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
         <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/xkcd.css" rel="stylesheet" type="text/css">
         
     
     <!--[if lt IE 9]>
@@ -112,6 +111,39 @@
     <div class="span2"></div>
     <div class="span8">
     
+    
+        <div class="postbox">
+        <h1><a href="posts/loadleveler-quick-howto.html">Loadleveler quick howto</a></h1>
+        <p style="text-align:right"><big>
+             Posted: 2011-11-04 00:00
+        </big></p>
+        <hr>
+        <div><p>Some useful commands to manage jobs with IBM <code>loadleveler</code> (<code>ll</code>).</p>
+<p>First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) "test_run.cmd". With this file you tell <code>ll</code> what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
+It would look like this:    </p>
+<div class="code"><pre><span class="c">#!/bin/bash</span>
+<span class="c"># @ initialdir = /path-to-your-folder</span>
+<span class="c"># @ job_name = test_run</span>
+<span class="c"># @ output = test_run.$(jobid).out</span>
+<span class="c"># @ error = test_run.$(jobid).err</span>
+<span class="c"># @ notification = error</span>
+<span class="c"># @ class = long</span>
+<span class="c"># @ total_tasks = 20</span>
+<span class="c"># @ job_type = parallel</span>
+<span class="c"># @ queue</span>
+
+<span class="nb">ulimit</span> -s 65536
+
+python ./start.py
+</pre></div>
+
+
+<p><a href="posts/loadleveler-quick-howto.html">Read more...</a></p></div>
+        <p>
+        
+            <a href="posts/loadleveler-quick-howto.html#disqus_thread" data-disqus-identifier="cache/posts/loadleveler-quick-howto.html">Comments</a>
+        
+        </p></div>
     
         <div class="postbox">
         <h1><a href="posts/python-parallel-job-manager.html">Python parallel job manager</a></h1>

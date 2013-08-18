@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>From .csv to HDF5 in Python | brunetto's blog</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            brunetto's blog
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>From .csv to HDF5 in Python</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-12-02T00:00:00">2011-12-02 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/code.html"><span class="badge badge-info">code</span></a>
+        
+            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, ...). To the library presentation and documentation, for now refers, to the <a href="http://www.pytables.org/moin" target="_blank" title="site">site</a>.  <br>
+I used it a lot during my master thesis to manage the dataset from the Millennium database.  <br>
+Here I provide a brief review of how I used it to store data obtained in .csv (comma separated values) format.    </p>
+<!-- TEASER_END -->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<div class="code"><pre><span class="c">#!/usr/bin/env python</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">tables</span> <span class="kn">as</span> <span class="nn">tb</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</pre></div>
+
+
+<p>As usual, we have the initial import of the modules we need and start the timing of the code.    </p>
+<div class="code"><pre><span class="n">fofhdf5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="s">'mill2_fof_snap67.h5'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This create the HDF5-file object we use to work on the file, in write (<code>'w'</code>) mode. Read-only (<code>'r'</code>) mode is also possible.    </p>
+<div class="code"><pre><span class="n">fof_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s">'fof0.csv'</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'fofId'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'np'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'mass'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'x'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'y'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'z'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'ix'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'iy'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'iz'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'m_crit_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'r_crit_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'m_mean_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'r_meam_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'m_tophat'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'r_tophat'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'numSubs'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">)]),</span> <span class="n">comments</span><span class="o">=</span><span class="s">'#'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Here we read the .csv/ASCII table and from this we create a table of numpy arrays, each of them with its own name and type. It's also possible to specify the character for the comments in the file (<code>#</code>), the character separating the values (commas, spaces, ...) and the number of line to be skipped (file header).    </p>
+<div class="code"><pre><span class="n">table</span> <span class="o">=</span> <span class="n">fofhdf5</span><span class="o">.</span><span class="n">createTable</span><span class="p">(</span><span class="n">fofhdf5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">fof_data</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'fof_data_snap67'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"fof_data_snap67"</span><span class="p">,</span> <span class="n">expectedrows</span><span class="o">=</span><span class="mi">11697806</span><span class="p">)</span>
+</pre></div>
+
+
+<p>create the HDF5-table with the proper hierarchy, some metadata (description and title). Specify the number of rows one expects to put into the table helps the library to optimize the operations and the space.    </p>
+<div class="code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
+    <span class="n">fof_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s">'fof'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s">'.csv'</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'fofId'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'np'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'mass'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'x'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'y'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'z'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'ix'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'iy'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'iz'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'m_crit_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'r_crit_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'m_mean_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'r_meam_200'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'m_tophat'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'r_tophat'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'numSubs'</span><span class="p">,</span> <span class="s">'i4'</span><span class="p">)]),</span> <span class="n">comments</span><span class="o">=</span><span class="s">'#'</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+
+    <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fof_data</span><span class="p">)</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+    <span class="k">print</span> <span class="s">"Loop "</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">" done."</span>
+
+<span class="n">fofhdf5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">print</span> <span class="s">"Done in "</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t</span><span class="p">,</span> <span class="s">"seconds !!!"</span>
+</pre></div>
+
+
+<p>The <code>for</code> loop opens other ASCII tables and append them to the existing HDF5-table. The <code>table.flush()</code> command let the library physically write the data on the disk instead of maintaining them in memory and write them periodically. After that we close the file object.</p>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="cosmological-simulations-6-adding-gas.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="from-binaries-to-hdf5-using-python.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/from-csv-to-hdf5-in-python.html";
+        
+        var disqus_title="From .csv to HDF5 in Python";
+        var disqus_identifier="cache/posts/from-csv-to-hdf5-in-python.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
