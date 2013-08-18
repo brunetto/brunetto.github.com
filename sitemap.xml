@@ -70,6 +70,16 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/delta.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/derivation.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/gadget2.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
@@ -126,6 +136,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/simulation.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/spherical-collapse.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -226,6 +241,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/phd-question-1-m.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/phd-question-2-spherical-collapse.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
