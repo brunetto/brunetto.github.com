@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>GIF2 substructures coordinates correction | brunetto's blog</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            brunetto's blog
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>GIF2 substructures coordinates correction</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-12-04T00:00:00">2011-12-04 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        
+            <a class="tag" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
+        
+            <a class="tag" href="../categories/master-thesis.html"><span class="badge badge-info">Master Thesis</span></a>
+        
+            <a class="tag" href="../categories/millennium.html"><span class="badge badge-info">millennium</span></a>
+        
+            <a class="tag" href="../categories/n-body.html"><span class="badge badge-info">N-body</span></a>
+        
+            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
+        
+            <a class="tag" href="../categories/simulation.html"><span class="badge badge-info">simulation</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>I used this script to change the coordinates of the substructures in the GIF2 simulation output from the center of mass coordinates to the global ones. The substructures were stored in our server in files referring to the index of the halo to which they belong and their coordinates were respect to the center of the halo. For each halo this script read the subhaloes center of mass coordinates in kpc and change them to global coordinates in Mpc managing the periodic boundary conditions .    </p>
+<!-- TEASER_END -->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<div class="code"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">tables</span> <span class="kn">as</span> <span class="nn">tb</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="sd">"""Legge il file con id e centri degli aloni con sottostrutture, per</span>
+<span class="sd">ogni alone (id) apre il file Sub.3..053.gv, legge le coordinate</span>
+<span class="sd">alle colonne 8, 9, 10 (in kpc!!!) e le corregge (tenendo conto delle</span>
+<span class="sd">condizioni periodiche) con le coordinate del centro prese dalla lista</span>
+<span class="sd">degli aloni iniziale.  Le coordinate vengono aggiunte ad un vettore</span>
+<span class="sd">che alla fine viene salvato in un file hdf5.</span>
+<span class="sd">"""</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">print</span> <span class="s">"Start"</span>
+</pre></div>
+
+
+<p>As usual: imports, documentation and timing initialization.    </p>
+<div class="code"><pre><span class="n">halo_centers_file</span> <span class="o">=</span> <span class="s">'haloes_with_substructures_centers.h5'</span>
+
+<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">halo_centers_file</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="n">haloes</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">haloes</span> <span class="o">=</span> <span class="n">haloes</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This piece of code reads the halo centers from a file.    </p>
+<div class="code"><pre><span class="n">substructure_coord</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">files_num</span> <span class="o">=</span> <span class="n">haloes</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">void_files</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+
+
+<p>Here we create the first (void) record of the substructures coordinates table, find the number of haloes and create a variable which will tell us how many haloes without subtructures we have.    </p>
+<p>Now, for each halo we    </p>
+<div class="code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">files_num</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">"Loop "</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">" di "</span><span class="p">,</span> <span class="n">files_num</span> 
+    <span class="n">sub_file</span> <span class="o">=</span> <span class="s">"cm/Sub.3."</span><span class="o">+</span><span class="s">'</span><span class="si">%07d</span><span class="s">'</span><span class="o">%</span><span class="nb">int</span><span class="p">(</span><span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s">".053.gv"</span>
+    <span class="sb">````</span>
+
+<span class="nb">open</span> <span class="n">the</span> <span class="n">related</span> <span class="n">substructures</span> <span class="nb">file</span>     
+<span class="sb">````</span><span class="n">python</span>
+<span class="k">try</span><span class="p">:</span>
+        <span class="n">sub_coord</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">sub_file</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">'float'</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+        <span class="n">file_check</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Void file "</span><span class="p">,</span> <span class="n">sub_file</span>
+        <span class="n">file_check</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="n">void_files</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>try to read the substructures coordinates, if it fails, we assume that the file is empty (and the halo has no substructures). In this case we increment the counter of the empy files.    </p>
+<div class="code"><pre><span class="k">if</span> <span class="n">file_check</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sub_coord</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">sub_coord</span> <span class="o">=</span> <span class="n">sub_coord</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">sub_coord</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+            <span class="c">#print "sh min ", np.amin(sub_coord, 0)</span>
+            <span class="c">#print "sh min ", np.amax(sub_coord, 0)</span>
+</pre></div>
+
+
+<p>This reshape the array in case we have only one subhalo: in this case (I hope I remember correct!:P) instead of one row and three columns we should have three values, so we have to reshape the array to pass it to the rest of the code.    </p>
+<div class="code"><pre><span class="k">try</span><span class="p">:</span>
+            <span class="n">sub_x</span> <span class="o">=</span> <span class="n">sub_coord</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mf">1000.</span> <span class="o">+</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_x</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="n">sub_x</span><span class="p">[</span><span class="n">sub_x</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">0</span><span class="p">]</span><span class="o">+=</span><span class="mi">110</span> <span class="c"># condizioni periodiche</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_x</span> <span class="mi">110</span><span class="p">]</span><span class="o">-=</span><span class="mi">110</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_x</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_x</span>  <span class="mi">0</span><span class="p">)</span>
+                <span class="k">print</span> <span class="n">sub_x</span> 
+                <span class="k">print</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="n">sub_y</span> <span class="o">=</span> <span class="n">sub_coord</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mf">1000.</span> <span class="o">+</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_y</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="n">sub_y</span><span class="p">[</span><span class="n">sub_y</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">0</span><span class="p">]</span><span class="o">+=</span><span class="mi">110</span> <span class="c"># condizioni periodiche</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_y</span> <span class="mi">110</span><span class="p">]</span><span class="o">-=</span><span class="mi">110</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_y</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_y</span>  <span class="mi">0</span><span class="p">)</span>
+                <span class="k">print</span> <span class="n">sub_y</span>
+                <span class="k">print</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="n">sub_z</span> <span class="o">=</span> <span class="n">sub_coord</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mf">1000.</span> <span class="o">+</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_z</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="n">sub_z</span><span class="p">[</span><span class="n">sub_z</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">0</span><span class="p">]</span><span class="o">+=</span><span class="mi">110</span> <span class="c"># condizioni periodiche</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_z</span> <span class="mi">110</span><span class="p">]</span><span class="o">-=</span><span class="mi">110</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_z</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">sub_z</span>  <span class="mi">0</span><span class="p">)</span>
+                <span class="k">print</span> <span class="n">sub_z</span> 
+                <span class="k">print</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="n">substructure_coord</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">substructure_coord</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">sub_x</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">sub_x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">)),</span> 
+                                                                           <span class="n">sub_y</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">sub_y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">)),</span> 
+                                                                           <span class="n">sub_z</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">sub_z</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))))))</span>
+</pre></div>
+
+
+<p>This corrects the coordinates keeping in mind the periodic boundary conditions and add the new substructures coordinates to the corrected substructures array.    </p>
+<div class="code"><pre><span class="k">except</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">"file "</span><span class="p">,</span> <span class="n">sub_file</span>
+            <span class="k">print</span> <span class="s">"sub_coord.shape "</span><span class="p">,</span> <span class="n">sub_coord</span><span class="o">.</span><span class="n">shape</span>
+            <span class="k">print</span> <span class="s">"sub_coord "</span><span class="p">,</span> <span class="n">sub_coord</span>
+            <span class="k">print</span> <span class="s">"haloes coord "</span><span class="p">,</span> <span class="n">haloes</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span>
+            <span class="k">print</span> <span class="s">"exit"</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+
+
+<p>If something goes wrong, we handle the failure printing some information.    </p>
+<div class="code"><pre><span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="s">'sub_haloes_global_coords.h5'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="s">'data'</span><span class="p">,</span> <span class="n">substructure_coord</span><span class="p">)</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">print</span> <span class="s">"Done in "</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t</span><span class="p">,</span> <span class="s">" with "</span><span class="p">,</span> <span class="n">void_files</span><span class="p">,</span> <span class="s">" void files"</span>
+</pre></div>
+
+
+<p>In the end, we save the array in an HDF5 file!:)</p>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="from-binaries-to-hdf5-using-python.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="cosmological-simulations-7-limitations-and-some-considerations.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/gif2-substructures-coordinates-correction.html";
+        
+        var disqus_title="GIF2 substructures coordinates correction";
+        var disqus_identifier="cache/posts/gif2-substructures-coordinates-correction.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>

@@ -80,6 +80,16 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/millennium.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/n-body-simulations.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/n-body.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
@@ -165,12 +175,22 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/posts/cosmological-simulations-7-limitations-and-some-considerations.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/posts/from-binaries-to-hdf5-using-python.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/from-csv-to-hdf5-in-python.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/gif2-substructures-coordinates-correction.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
