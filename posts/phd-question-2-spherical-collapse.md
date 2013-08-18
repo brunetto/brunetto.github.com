@@ -12,5 +12,5 @@ form some of the various analytical derivation of the spherical collapse
 model, in particular the challenge was to find how to obtain the famous
 $\delta_{lin}\sim1.686$.
 
-[Here](files/spherical_collapse2.pdf) you can find a pdf file with the analytic computation.
+[Here](../files/spherical_collapse2.pdf) you can find a pdf file with the analytic computation.
 
