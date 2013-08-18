@@ -26,11 +26,16 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/</loc>
-  <lastmod>2013-08-17</lastmod>
+  <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/categories/astrophysics.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/body-simulations.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -151,6 +156,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-5-initial-conditions.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/cosmological-simulations-6-adding-gas.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>

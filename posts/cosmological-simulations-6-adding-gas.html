@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Cosmological simulations #6: adding gas! | brunetto's blog</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/xkcd.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            brunetto's blog
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Cosmological simulations #6: adding gas!</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-11-29T00:00:00">2011-11-29 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        
+            <a class="tag" href="../categories/body-simulations.html"><span class="badge badge-info">body simulations</span></a>
+        
+            <a class="tag" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
+        
+            <a class="tag" href="../categories/n-body.html"><span class="badge badge-info">N-body</span></a>
+        
+            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+        
+            <a class="tag" href="../categories/simulation.html"><span class="badge badge-info">simulation</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>As we have seen, cosmological N-body simulations consider only gravitational interactions. This is good for large scale distribution of matter such as galaxy distribution or cluster formation, but if we are interested in smaller details we have to add gas physics.  <br>
+There are two main approaches, completely different one from the other.    </p>
+<!--TEASER_END-->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<p>The first approach uses a grid to solve fluid equations. Fluid interactions are short range ones so we can use information from few nearby points to compute and evolve the quantities we are interested in at a point. Fluid must also respond to the gravitational field of the matter distribution. One can easily study shocks and discontinuities with this type of code.  <br>
+It is also possible to improve the resolution using mesh refinement but it's important to bear in mind that the resolution of mass particles and of hydrodynamics should be improved together. Grid codes can be expanded to include other effects such as magnetohydrodynamics.  <br>
+The second way is the Smoothed Particles Hydrodynamics (SPH). In these type of algorithms the fluid properties (pressure, density, temperature, ...) at any point can be found by averaging over particles in a region using a weight function. Because of this smoothing functions it has poor resolution of shocks and discontinuities and low resolution in low density regions. However these codes are quite easily to implement and has high resolution in high density regions.    </p>
+<p>In both types of codes effects such as elementary chemical reactions, e.g. formation of hydrogen, molecules, cooling, heating, etc can be added because they are local effects. On the contrary star formation, feedback from stellar and other source, radiation transport, and so on are non-local and include a big range of scales so are difficult to implement.    </p>
+<p><em>References</em>:  <br>
+</p><ul>  <br>
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+<li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="python-slicing-rebinning-and-indexing.html">← Previous post</a>
+        </li>
+    
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/cosmological-simulations-6-adding-gas.html";
+        
+        var disqus_title="Cosmological simulations #6: adding gas!";
+        var disqus_identifier="cache/posts/cosmological-simulations-6-adding-gas.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
