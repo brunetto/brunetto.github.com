@@ -6,17 +6,17 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>brunetto.github.io/</loc>
-  <lastmod>2013-08-17</lastmod>
+  <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/2011/</loc>
-  <lastmod>2013-08-17</lastmod>
+  <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/2011/index.html</loc>
-  <lastmod>2013-08-17</lastmod>
+  <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -110,6 +110,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/index-1.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/index.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
@@ -165,7 +170,17 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/posts/python-logging.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/posts/python-parallel-job-manager.html</loc>
+  <lastmod>2013-08-18</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/python-slicing-rebinning-and-indexing.html</loc>
   <lastmod>2013-08-18</lastmod>
   <priority>0.5000</priority>
  </url>
