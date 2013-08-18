@@ -7,7 +7,13 @@
 .. slug: about
 -->
 
-#Me
+# For further reference...
+
+... is the main reason because I try to keep this blog alive! Just to save knowledge about things I find usefull to have them when they are needed again.    
+The second is just... to do it because I like the "technology" behind it!:P
+
+
+# Me
 
 I'm a PhD student in Astronomy ([CV](curriculum-vitae.html)).    
 My PhD project is about the formation and evolution of compact objects (id white dwarf, neutron stars and black holes) binaries in young stellar clusters. These binaries are thought to be the most promising sources of detectable gravitational waves.    
@@ -26,7 +32,7 @@ Here you can also find a link to [my trips](my-travels.html), [my favourite quot
 
 <!--<details>
 <summary>-->
-#License
+# License
 <!--</summary>-->
 I'm quite a lazy person in some things. One of these is the license question.
 
