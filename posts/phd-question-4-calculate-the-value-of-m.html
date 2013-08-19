@@ -1,0 +1,440 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>PhD question #4: calculate the value of M* | for further reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for further reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>PhD question #4: calculate the value of M*</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2012-04-03T00:00:00">2012-04-03 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        
+            <a class="tag" href="../categories/code.html"><span class="badge badge-info">code</span></a>
+        
+            <a class="tag" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
+        
+            <a class="tag" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
+        
+            <a class="tag" href="../categories/n-body.html"><span class="badge badge-info">N-body</span></a>
+        
+            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+        
+            <a class="tag" href="../categories/simulation.html"><span class="badge badge-info">simulation</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>Some post ago <a href="phd-question-1-m.html">I've written about M*</a>, the typical non-linear mass collapsing at the redshift we are considering. Now I have to find a value for it.     </p>
+<!-- TEASER_END -->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<p>I said that $M^*$ is the typical mass of a perturbation that, at the time we are looking, has the associated liner density contrast $\delta(\mathbf{x})\sim1$, or, in the formalism of the excursion set, pass the barrier of  $\delta_c=1.686$.   <br>
+This means that we are looking for a perturbation with $\sigma\simeq1.686$ and trying to quantify the mass it contains.    </p>
+<p><strong>$\sigma$ and R</strong>    </p>
+<p>First of all we need to find the radius of a perturbation whose $\sigma$ reached the value of 1.686. To do this we can use the <a href="http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/" target="_blank" title="The “Initial Conditions” saga">code</a> developed to manage the CAMB files in order to find the matter power spectrum and its normalization. Then we add few lines to "sample" the$\sigma(R)$ distribution and find the radius of the perturbation reaching the excursion set barrier for the collapse.     </p>
+<p><strong>$M^*$</strong>    </p>
+<p>Once we have the radius for which $\sigma = \delta_c$ we need to know the mean density in the universe to find $M^*$ with:    </p>
+<p>$M^<em> = \frac{4}{3}\pi R_</em>^3\rho_m$    </p>
+<p><del>I don't know why we only need to use $\rho_m$ and not $\rho_m\delta$ or something similar is not clear to me, but it's correct.</del>We use this formula because $M^<em>$ is a quantity related to the linear perturbations. It's correct because the difference between a linear and a non-linear perturbation is the value of the density contrast, but the mass is the same. In other words, the mass of a perturbation is the same both in the linear and in the non-linear evolution, but linear perturbations have smaller density contrasts and larger radii, non-linear perturbations instead have larger density contrasts and smaller radii. To be precise, the previous equation can be written:  <br>
+$M^</em> = \frac{4}{3}\pi R_*^3\rho_{bg}(1+1.686) = \frac{4}{3}\pi R_{vir}^3\rho_{bg}(1+200)$.  <br>
+To obtain $\rho_m$ we find the value of the critical density $\rho_c$ and multiply it for $\Omega = \rho_m / \rho_c$. These two values can be obtained from books (<a href="http://www.amazon.com/Cosmology-Prof-Peter-Coles/dp/0471489093/ref=ntt_at_ep_dpt_2" target="_blank" title="Coles &amp; Lucchin">Lucchin</a>, <a href="http://www.amazon.com/Galaxy-Formation-Evolution-Houjun-Mo/dp/0521857937/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1333458377&amp;sr=1-1" target="_blank" title="Mo, van den Bosch &amp; White">Mo&amp;White</a> for example) or in the <a href="http://lambda.gsfc.nasa.gov/product/map/dr2/params/lcdm_wmap.cfm" target="_blank" title="WMAP data page">WMAP data page</a>. In the second case we prefer to use the single data fit because it's simpler to refer to it.    </p>
+<p>Here's the code:    </p>
+<div class="code"><pre><span class="c">#!/use/bin/env python</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">random</span> <span class="kn">as</span> <span class="nn">rnd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">integrate</span>
+
+<span class="sd">""" Calculate M* . M* is propto the mass contained in the radius for which </span>
+<span class="sd">s_8=delta_c refer to: </span>
+<span class="sd">http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/</span>
+<span class="sd">http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-calculate-the-value-of-m/</span>
+<span class="sd">"""</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c">#===============================================================================</span>
+<span class="c">#    Compute sigma</span>
+<span class="c">#===============================================================================</span>
+
+<span class="c">### Load data from the nasa-CAMB file </span>
+
+<span class="c"># matterpower is the file with the k and the total matter spectrum</span>
+<span class="c"># transfer is the file with the k and the transfer function for the various </span>
+<span class="c">#species, the 6th column is for the total matter (baryons+DM)</span>
+<span class="n">transfer</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s">'camb_88704620_transfer_out_z0.dat'</span><span class="p">,</span> <span class="n">usecols</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="c">#matterpower = np.genfromtxt('2012-01-30_data/camb_88704620_matterpower_z0.dat')</span>
+
+<span class="c"># CAMB CDM transfer output</span>
+<span class="n">camb_k</span> <span class="o">=</span> <span class="n">transfer</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">camb_tf</span> <span class="o">=</span> <span class="n">transfer</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> 
+
+<span class="n">R</span> <span class="o">=</span> <span class="mi">8</span> <span class="c">#Mpc/h</span>
+<span class="n">s_8</span> <span class="o">=</span> <span class="mf">0.9</span><span class="c">#0.8118405 #from WMAP7 but we need the values for the Millennium-2, so </span>
+<span class="c"># we use its s_8</span>
+<span class="n">sp_ind</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">delta_c</span> <span class="o">=</span> <span class="mf">1.686</span>
+
+<span class="c">### Calculate the amplitude to normalize the spectrum:</span>
+<span class="c">### P(k) = Ak^nT^2(k) </span>
+
+<span class="c"># FT of the window function (spherical top-hat)</span>
+<span class="k">def</span> <span class="nf">FTW</span><span class="p">(</span><span class="n">R</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span> 
+    <span class="sd">""" Return the Fourier transform of the window function </span>
+<span class="sd">    (spherical top-hat)</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="mf">3.</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">R</span><span class="p">)</span><span class="o">-</span><span class="n">k</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">R</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">R</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="k">def</span> <span class="nf">spectrum</span><span class="p">():</span>
+    <span class="sd">"""Calculate the power spectrum given the transfer function and the FT of the window </span>
+<span class="sd">    function.</span>
+<span class="sd">    """</span>
+    <span class="c"># camb_k**(2+sp_ind) that is k^(2+n) because d^3k=4pi k^2dk</span>
+    <span class="n">amp_integrand</span> <span class="o">=</span> <span class="n">camb_k</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="n">sp_ind</span><span class="p">)</span><span class="o">*</span><span class="n">camb_tf</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">FTW</span><span class="p">(</span><span class="n">R</span><span class="p">,</span> <span class="n">camb_k</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">amp_integral</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">amp_integrand</span><span class="p">,</span> <span class="n">camb_k</span><span class="p">)</span>
+    <span class="c"># Amplitude for s_8 = 1</span>
+    <span class="n">amp_0</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">amp_integral</span>
+    <span class="c"># Amplitude</span>
+    <span class="n">amp</span> <span class="o">=</span> <span class="n">amp_0</span><span class="o">*</span><span class="n">s_8</span><span class="o">**</span><span class="mi">2</span>  <span class="c"># 9.9197881817e-09</span>
+    <span class="c">#print amp</span>
+    <span class="c"># Calculate the power spectrum</span>
+    <span class="k">return</span> <span class="n">camb_k</span><span class="o">**</span><span class="n">sp_ind</span><span class="o">*</span><span class="n">camb_tf</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">amp</span>
+
+<span class="c"># Calculate the power spectrum</span>
+<span class="n">ps</span> <span class="o">=</span> <span class="n">spectrum</span><span class="p">()</span>
+
+<span class="c"># Calculate sigma on the radii</span>
+<span class="k">def</span> <span class="nf">sigma</span><span class="p">(</span><span class="n">R</span><span class="p">):</span>
+    <span class="sd">"""Return the sigma for the current radius.</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="nb">pow</span><span class="p">(</span><span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">camb_k</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">ps</span> <span class="o">*</span> <span class="n">FTW</span><span class="p">(</span><span class="n">R</span><span class="p">,</span> <span class="n">camb_k</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">camb_k</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span> <span class="mf">0.5</span><span class="p">)</span>
+
+<span class="c">#===============================================================================</span>
+<span class="c">#    Find the radius containing M*</span>
+<span class="c">#===============================================================================</span>
+
+<span class="c"># Initialize some variables</span>
+<span class="n">neigh</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c"># two nearest neighbours sigmas</span>
+<span class="n">r_min</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="c"># min r to sample</span>
+<span class="n">r_max</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">2</span> <span class="c"># max r ti sample</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="c"># loop counter</span>
+
+<span class="c"># While stops when the computed sigma is less then 0.001 from delta_c</span>
+<span class="k">while</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amin</span><span class="p">(</span><span class="n">delta_c</span><span class="o">+</span><span class="n">neigh</span><span class="p">))</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mf">0.001</span><span class="p">:</span>
+<span class="k">print</span> <span class="s">"Loop "</span><span class="p">,</span> <span class="n">i</span>
+<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+<span class="k">print</span> <span class="s">"Condition start "</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amin</span><span class="p">(</span><span class="n">delta_c</span><span class="o">+</span><span class="n">neigh</span><span class="p">))</span>
+<span class="c"># radii to be sampled</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">r_min</span><span class="p">,</span> <span class="n">r_max</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="c"># Compute sigma for those radii, the minus sign is to avoid resorting of the</span>
+<span class="c"># array to be used by np.searchsorted</span>
+<span class="n">s_r</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">sigma</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span>
+<span class="c"># Find the two nearest neighbours</span>
+<span class="n">neigh</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">s_r</span><span class="p">[</span><span class="n">s_r</span>  <span class="o">-</span><span class="n">delta_c</span><span class="p">])</span>
+<span class="c"># Find the corresponding radii</span>
+<span class="n">r_min</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">s_r</span><span class="p">,</span> <span class="n">neigh</span><span class="p">)</span><span class="o">.</span><span class="n">min</span><span class="p">()]</span>
+<span class="n">r_max</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">s_r</span><span class="p">,</span> <span class="n">neigh</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span>
+<span class="k">print</span> <span class="s">"Sigmas"</span><span class="p">,</span> <span class="o">-</span><span class="n">neigh</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="n">neigh</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span> <span class="s">"Radii [Mpc/h] "</span><span class="p">,</span> <span class="n">r_min</span><span class="p">,</span> <span class="n">r_max</span>
+<span class="k">print</span> <span class="s">"Condition end "</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amin</span><span class="p">(</span><span class="n">delta_c</span><span class="o">+</span><span class="n">neigh</span><span class="p">))</span>
+
+<span class="c"># Selected values</span>
+<span class="n">s_star</span> <span class="o">=</span> <span class="n">neigh</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">delta_c</span><span class="o">+</span><span class="n">neigh</span><span class="p">)]</span>
+<span class="n">r_star</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">s_r</span><span class="p">,</span> <span class="n">s_star</span><span class="p">)]</span>
+<span class="n">deviation</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amin</span><span class="p">(</span><span class="n">delta_c</span><span class="o">+</span><span class="n">neigh</span><span class="p">))</span>
+
+<span class="k">print</span> <span class="s">"############################################"</span>
+
+<span class="k">print</span> <span class="s">"Selected sigma "</span><span class="p">,</span> <span class="o">-</span><span class="n">s_star</span>
+<span class="k">print</span> <span class="s">"Selected radius [Mpc/h] "</span><span class="p">,</span> <span class="n">r_star</span>
+
+<span class="k">print</span> <span class="s">"Calculate M* using:"</span>
+<span class="k">print</span> <span class="s">"Gt4.299 x 10^(-9) Mpc /M_sun (km/s)^2tfrom Mo&amp;amp;White"</span>
+<span class="k">print</span> <span class="s">"Ht100*h^2"</span>
+<span class="k">print</span> <span class="s">"Omega_mt0.25tfrom the Millennium-2 simulation"</span>
+<span class="k">print</span> <span class="s">"Omega_mt0.241tfrom WMAP7"</span>
+
+<span class="c">#===============================================================================</span>
+<span class="c">#    Cosmological parameters and find the mean density in the Universe</span>
+<span class="c">#===============================================================================</span>
+
+<span class="n">H</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">0.732</span> <span class="c">#WMAP http://lambda.gsfc.nasa.gov/product/map/dr2/params/lcdm_wmap.cfm</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">4.299</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span>
+<span class="n">omega_m_mill</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">omega_m_WMAP</span> <span class="o">=</span> <span class="mf">0.241</span>
+
+<span class="c"># Until here it's correct</span>
+<span class="n">rho_c</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">H</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">G</span><span class="p">)</span> <span class="c"># 2.7766040316101764 * h**2 x 10^11 M_sun/Mpc^3</span>
+    <span class="c"># 2.778 from Lucchin book</span>
+    <span class="c"># 2.775 from Mo&amp;amp;White book</span>
+
+<span class="n">rho_mean_mill</span> <span class="o">=</span> <span class="n">rho_c</span> <span class="o">*</span> <span class="n">omega_m_mill</span> <span class="c"># 6.94151007903 * h**2 x 10^10 M_sun/Mpc^3 = 3.71942769658 x 10^10 M_sun/Mpc^3</span>
+    <span class="n">rho_mean_WMAP</span> <span class="o">=</span> <span class="n">rho_c</span> <span class="o">*</span> <span class="n">omega_m_WMAP</span> <span class="c"># 6.69161571618 * h**2 x 10^10 M_sun/Mpc^3 = 3.58552829951 x 10^10 M_sun/Mpc^3</span>
+
+<span class="k">print</span> <span class="s">"rho_c = 3H^2/8 pi G = "</span><span class="p">,</span> <span class="n">rho_c</span><span class="p">,</span><span class="s">" h^2 M_sun/Mpc^3"</span>
+<span class="k">print</span> <span class="s">"Millennium-2 rho_mean = omega_m_mill * rho_c = "</span><span class="p">,</span> <span class="n">rho_mean_mill</span><span class="p">,</span> <span class="s">" h^2 M_sun/Mpc^3 = "</span><span class="p">,</span> <span class="n">rho_mean_mill</span><span class="o">*</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span>
+<span class="k">print</span> <span class="s">"WMAP7 rho_mean = omega_m_WMAP * rho_c = "</span><span class="p">,</span> <span class="n">rho_mean_WMAP</span><span class="p">,</span> <span class="s">" h^2 M_sun/Mpc^3 = "</span><span class="p">,</span> <span class="n">rho_mean_WMAP</span><span class="o">*</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span> 
+
+<span class="c">#===============================================================================</span>
+<span class="c">#    Compute M*</span>
+<span class="c">#===============================================================================</span>
+
+<span class="n">M_star_mill</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">r_star</span><span class="o">**</span><span class="mi">3</span> <span class="o">*</span> <span class="n">rho_mean_mill</span> <span class="o">*</span> <span class="mf">4.</span><span class="o">/</span><span class="mi">3</span><span class="c">#* (delta_c + 1)</span>
+<span class="n">M_star_WMAP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">r_star</span><span class="o">**</span><span class="mi">3</span> <span class="o">*</span> <span class="n">rho_mean_WMAP</span> <span class="o">*</span> <span class="mf">4.</span><span class="o">/</span><span class="mi">3</span><span class="c">#* (delta_c + 1)</span>
+
+<span class="k">print</span> <span class="s">"M* Millennium-2 "</span><span class="p">,</span> <span class="n">M_star_mill</span><span class="p">,</span> <span class="s">" M_sun/h"</span> <span class="c"># 4.81467115575e+12 M_sun/h</span>
+<span class="k">print</span> <span class="s">"M* WMAP "</span><span class="p">,</span> <span class="n">M_star_WMAP</span><span class="p">,</span> <span class="s">" M_sun/h"</span> <span class="c"># 4.64134299414e+12 M_sun/h</span>
+
+<span class="c">#===============================================================================</span>
+<span class="c">#    Compare with Hayashi&amp;amp;White 2008 article</span>
+<span class="c">#===============================================================================</span>
+
+<span class="k">print</span> <span class="s">"Hayashi&amp;amp;White's value:"</span>
+
+<span class="n">M_star_white</span> <span class="o">=</span> <span class="mf">6.15</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">omega_m_white</span> <span class="o">=</span> <span class="mf">3.</span><span class="o">*</span><span class="n">M_star_white</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">r_star</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">rho_c</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"M*: "</span><span class="p">,</span> <span class="n">M_star_white</span>
+<span class="k">print</span> <span class="s">"Omega_m"</span><span class="p">,</span> <span class="n">omega_m_white</span>
+
+<span class="n">r_s</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">3.</span><span class="o">*</span><span class="n">M_star_white</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">rho_mean_mill</span><span class="p">),</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">s_white</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="n">r_s</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">"As alternative:"</span>
+<span class="k">print</span> <span class="s">"R* "</span><span class="p">,</span> <span class="n">r_s</span>
+<span class="k">print</span> <span class="s">"Sigma "</span><span class="p">,</span> <span class="n">s_white</span>
+
+<span class="c">#===============================================================================</span>
+<span class="c">#    Summary</span>
+<span class="c">#===============================================================================</span>
+
+<span class="k">print</span> <span class="s">""</span>
+<span class="k">print</span> <span class="s">"##############################################################################################################"</span>
+<span class="k">print</span> <span class="s">"SUMMARY"</span>
+<span class="k">print</span> <span class="s">"##############################################################################################################"</span>
+<span class="k">print</span> <span class="s">""</span>
+<span class="k">print</span> <span class="s">"WhottttM*ttR*ttOmegattSigmattSigma-delta_c"</span>
+<span class="k">print</span> <span class="s">"--------------------------------------------------------------------------------------------------------------"</span>
+<span class="k">print</span> <span class="s">"Hayashi&amp;amp;White given Rtt{:e}t{:e}t{:e}t{:e}t{:e}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M_star_white</span><span class="p">,</span><span class="n">r_star</span><span class="p">,</span><span class="n">omega_m_white</span><span class="p">,</span><span class="o">-</span><span class="n">s_star</span><span class="p">,</span><span class="n">deviation</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">"Hayashi&amp;amp;White given Omegat{:e}t{:e}t{:e}t{:e}t{:e}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M_star_white</span><span class="p">,</span><span class="n">r_s</span><span class="p">,</span><span class="n">omega_m_mill</span><span class="p">,</span><span class="n">s_white</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">s_white</span><span class="o">-</span><span class="n">delta_c</span><span class="p">))</span>
+<span class="k">print</span> <span class="s">'Me WMAP datattt{:e}t{:e}t{:e}t{:e}t{:e}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M_star_WMAP</span><span class="p">,</span><span class="n">r_star</span><span class="p">,</span><span class="n">omega_m_WMAP</span><span class="p">,</span><span class="o">-</span><span class="n">s_star</span><span class="p">,</span><span class="n">deviation</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">"Me Millennium-2 datatt{:e}t{:e}t{:e}t{:e}t{:e}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">M_star_mill</span><span class="p">,</span><span class="n">r_star</span><span class="p">,</span><span class="n">omega_m_mill</span><span class="p">,</span><span class="o">-</span><span class="n">s_star</span><span class="p">,</span><span class="n">deviation</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">""</span>
+<span class="k">print</span> <span class="s">"##############################################################################################################"</span>
+<span class="k">print</span> <span class="s">"##############################################################################################################"</span>
+<span class="k">print</span> <span class="s">""</span>
+<span class="k">print</span> <span class="s">"Done in "</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t</span>
+</pre></div>
+
+
+<p>The differences between the different values of $M^*$ are acceptable and probably depends on different integration boundaries for $\sigma$.</p>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="never-never-never.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="infographics-attempts.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/phd-question-4-calculate-the-value-of-m.html";
+        
+        var disqus_title="PhD question #4: calculate the value of M*";
+        var disqus_identifier="cache/posts/phd-question-4-calculate-the-value-of-m.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>

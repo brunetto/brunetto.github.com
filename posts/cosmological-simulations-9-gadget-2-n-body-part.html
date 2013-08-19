@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Cosmological simulations #9: Gadget-2 (N-body part) | for further reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for further reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Cosmological simulations #9: Gadget-2 (N-body part)</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2012-02-20T00:00:00">2012-02-20 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        
+            <a class="tag" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
+        
+            <a class="tag" href="../categories/domain-decomposition.html"><span class="badge badge-info">domain decomposition</span></a>
+        
+            <a class="tag" href="../categories/gadget2.html"><span class="badge badge-info">Gadget2</span></a>
+        
+            <a class="tag" href="../categories/integrator.html"><span class="badge badge-info">integrator</span></a>
+        
+            <a class="tag" href="../categories/leapfrog.html"><span class="badge badge-info">leapfrog</span></a>
+        
+            <a class="tag" href="../categories/mpi.html"><span class="badge badge-info">MPI</span></a>
+        
+            <a class="tag" href="../categories/n-body.html"><span class="badge badge-info">N-body</span></a>
+        
+            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+        
+            <a class="tag" href="../categories/pm.html"><span class="badge badge-info">PM</span></a>
+        
+            <a class="tag" href="../categories/simulation.html"><span class="badge badge-info">simulation</span></a>
+        
+            <a class="tag" href="../categories/springel.html"><span class="badge badge-info">springel</span></a>
+        
+            <a class="tag" href="../categories/time-step.html"><span class="badge badge-info">time-step</span></a>
+        
+            <a class="tag" href="../categories/tree.html"><span class="badge badge-info">tree</span></a>
+        
+            <a class="tag" href="../categories/treepm.html"><span class="badge badge-info">TreePM</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>Here I would like to do a brief presentation of the main features of Gadget-2.  <br>
+Gadget-2 (<a href="http://www.mpa-garching.mpg.de/gadget/" target="_blank" title="Gadget2 homepage">here</a>, <a href="http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/" target="_blank" title="My first Gadget-2 tests">here</a> and <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03" target="_blank" title="Gadget-2 paper">here</a>) is a cosmological simulation code developed primarily by <a href="http://www.mpa-garching.mpg.de/~volker/" target="_blank" title="Volker Springel's homepage">Volker Springel</a>. It is a <a href="http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/" target="_blank" title="Cosmological simulations #3: force calculation!">TreePM</a> code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).    </p>
+<!-- TEASER_END-->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<p><strong>The tree</strong>    </p>
+<p>Gadget-2 uses a<a href="http://en.wikipedia.org/wiki/Octree" target="_blank" title="oct-tree"> BH oct-tree</a> (see also <a href="http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" target="_blank" title="Barnes&amp;Hut simulation on wikipedia">here</a>, <a href="http://www.artcompsci.org/~makino/softwares/C++tree/index.html" target="_blank" title="NBODY, an implementation of Barnes-Hut treecode">here</a>, <a href="http://ifa.hawaii.edu/~barnes/software.html" target="_blank" title="Barnes' page">here</a>, <a href="http://www.cita.utoronto.ca/~dubinski/treecode/treecode.html" target="_blank" title="A parallel tree code explenation">here</a> and <a href="http://www.prism.gatech.edu/~gth716h/BNtree/" target="_blank" title="Barnes-Hut Implementation in HTML/Javascript">here</a>) to calculate the short-range forces in the real space. This choice was done because this type of tree, compared to other types (KD-Tree, ...), requires the creation of less nodes, that imply that less memory is used. It's characterized by eight sub-nodes for each node and has only one particle in each leaf. The code decides to open a leaf according to a certain leaf opening criterion based on the estimated force error. The force for distant groups of particles is approximated with the multipole (here octopole) of the tree node and the error depends on the dimensions and the distances of the node considered.    </p>
+<p><strong>PM part</strong>    </p>
+<p>The PM part of the code is used to calculate the long-range forces. The algorithm is something like:    </p>
+<ul>
+<li>
+<p>CIC (cloud-in-cell) assignment is used to construct the mass density field on to the mesh from the information on the particles</p>
+</li>
+<li>
+<p>the discrete FT of the mesh is multiplied for the Green function for the potential in periodic boundaries (modified with the exponential truncation for the force splitting)</p>
+</li>
+<li>
+<p>deconvolution for the CIC kernel twice: the first for the smoothing effect of CIC assignment, the second for the force interpolation</p>
+</li>
+<li>
+<p>$\mathrm{FT}^{-1}$ to obtain the potential on the mesh</p>
+</li>
+<li>
+<p>finite differentiate the potential to obtain the forces</p>
+</li>
+<li>
+<p>interpolate the forces to the particles positions using CIC</p>
+</li>
+</ul>
+<p>Note: real-to-complex FT are used to save times and memory respect to full complex transforms.    </p>
+<p><strong>Time step</strong>    </p>
+<p>This type of code has a large dynamic range in time scale, from the denser regions where the evolution is rapid to the less denser regions in which the evolution occur slower so we can describe it with larger time resolution. In this scenario evolving all particles with the smallest time-scale is a waste of time and computational resources. Because using different time-steps for each particle add instabilities to the system, Gadget-2 separates time-step between long-range (longer time step) and short-range (shorter time step) force computations. The perturbation of the system for different time-steps is related to the symplectic nature of the system, but I still have not understood what it really means and implies! I know that it refers to the phase space volume and has effect on the information conservation. May be in the future I'll write a post about this!  <br>
+Despite these arguments, sometimes individual time step are allowed because they perturb the system but not the symplecticity of the single particle.  <br>
+In the normal integration mode time-steps are discretized in a power of two hierarchy and particles can always move to smaller time steps but to longer time steps only in subsequent step, synchronized with higher time-steps. Alternatively the code can populate time-steps discretizeing them as integer multiples of the minimum time-step among the particles set. This lead to a more homogeneous distribution of particles across the time-line which can simplify work load balancing.  <br>
+The integration is performed using the <a href="http://en.wikipedia.org/wiki/Leapfrog_integration" target="_blank" title="Leapfrog method">leapfrog method</a>.    </p>
+<p><strong>Parallelization</strong>    </p>
+<p>Usually the parallelization distributes particles across the CPUs using an orthogonal domain decomposition but in this way the trees built-in each domain depend on the domain geometry. Because the force depend on the tree (through the multipole expansion of the mass distribution) the force can be different if you change the number of processors.  <br>
+Gadget-2 introduce a space-filling fractal, the Peano-Hilber (PH) curve to map 3D space into a 1D curve that encompasses all the particles. Now the PH curve can be cut and each piece assigned to a CPU and in this way the force is independent of the processors number. If you cut every segment in eight pieces recursively you find again the tree decomposition, so there is a close correspondence between the decomposition obtained with the BH oct-tree and that of the PH curve.  <br>
+The PH curve has some remarkably properties, for example points that are close along the 1D PH curve are in general close in 3D space, so the mapping preserves locality and if we cut the PH curve into segments of a certain length we obtain a domain decomposition which has the property that the spatial domains are simply connected and quite "compact" (i.e., they tend to have small surface-to-volume ratios and low aspect ratio, a highly desirable property for reducing communication costs with neighbouring domains and for speeding up the local computation).    </p>
+<p><strong>Operations scheme</strong>  <br>
+Here a brief scheme on how the short range force calculation works on multiple processors. The PM computation uses the <a href="http://www.fftw.org/fftw2_doc/fftw_4.html" target="_blank" title="Parallel FFTWs">parallel FFTWs</a>.    </p>
+<ul>
+<li>
+<p>Compute the PH key for each particle</p>
+</li>
+<li>
+<p>Sort the keys locally and split the PH curve into segments</p>
+</li>
+<li>
+<p>Adjust the sorted segments to a global sort, splitting and joining segments if needed, with little communication</p>
+</li>
+<li>
+<p>Assign the particles to the processes</p>
+</li>
+<li>
+<p>Construct a BH tree for the particles of each processors representing particles on other processors with pseudo-particles (acting like placeholders)</p>
+</li>
+<li>
+<p>During the tree traverse (e.g. in processor A) these pseudo-particles cannot be opened, the are flagged and inserted into a list that collects all the particles that are to be sent (=requested) to the other processors (e.g. to processor B)</p>
+</li>
+<li>
+<p>Processor B traverse again its local tree and send back the resulting force contribution to processor A</p>
+</li>
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="learning-c-from-simulations-1.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="phd-question-3-monte-carlo-markov-chain.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/cosmological-simulations-9-gadget-2-n-body-part.html";
+        
+        var disqus_title="Cosmological simulations #9: Gadget-2 (N-body part)";
+        var disqus_identifier="cache/posts/cosmological-simulations-9-gadget-2-n-body-part.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
