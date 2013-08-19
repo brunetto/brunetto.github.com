@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="brunetto">
-    <title>Asterisks and Python | for further reference...</title>
+    <title>Nvidia drivers | for further reference...</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -117,75 +117,29 @@
     
     <div class="postbox">
     
-    <h1>Asterisks and Python</h1>
+    <h1>Nvidia drivers</h1>
     
 
     <hr>
     <small>
-        Posted: <time class="published" datetime="2012-05-07T00:00:00">2012-05-07 00:00</time>
+        Posted: <time class="published" datetime="2013-08-19T10:17:08">2013-08-19 10:17</time>
         
     
 
-        
-    
-          |  More posts about
-        
-            <a class="tag" href="../categories/asterisk.html"><span class="badge badge-info">asterisk</span></a>
-        
-            <a class="tag" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
-        
-            <a class="tag" href="../categories/function.html"><span class="badge badge-info">function</span></a>
-        
-            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
-        
-            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
-        
-            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
         
     
 
     </small>
     <hr>
-    <p>There are many possible uses of the "*" in Python, to be not confused, this is a brief summary of them.  <br>
-<!-- TEASER_END -->  <br>
-<strong>Math</strong>  <br>
-As usual, one asterisk means multiplication, two asterisks mean power with integer index:    </p>
-<div class="code"><pre><span class="mi">2</span><span class="o">*</span><span class="mi">3</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="mi">2</span><span class="o">**</span><span class="mi">3</span> <span class="o">=</span> <span class="mi">8</span>
-</pre></div>
-
-
-<p><strong>Functions</strong>  <br>
-In functions declarations "a parameter preceded by * in the parameter list for a function will result in any extra positional parameters being aggregated into a tuple [...] and likewise in Python a parameter preceded by ** will result in any extra keyword parameters being aggregated into a dictionary." (from <a href="http://en.wikipedia.org/wiki/Asterisk#Programming_languages" target="_blank">Wikipedia</a>). In a function call the asterisk before a (list or tuple) parameter expand it as the arguments of that function. You can find some examples <a href="http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/" target="_blank">here</a>.  <br>
-Just to give a little example, consider this:    </p>
-<div class="code"><pre><span class="n">In</span><span class="p">:</span> <span class="k">def</span> <span class="nf">pippo</span><span class="p">(</span>\<span class="o">*</span><span class="n">args</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">i</span>
-<span class="n">In</span><span class="p">:</span> <span class="n">pippo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">Out</span><span class="p">:</span>
-<span class="mi">1</span>
-<span class="mi">2</span>
-<span class="mi">3</span>
-<span class="mi">4</span>
-
-<span class="n">In</span><span class="p">:</span> <span class="k">def</span> <span class="nf">pippo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span>
-<span class="n">In</span><span class="p">:</span> <span class="n">pluto</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">In</span><span class="p">:</span> <span class="n">pippo</span><span class="p">(</span><span class="o">*</span><span class="n">pluto</span><span class="p">)</span>
-<span class="n">Out</span><span class="p">:</span>
-<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span>
-</pre></div>
+    <p>sudo service lightdm stop
+aptitude search '~i' | grep nvidia</p>
     
     <ul class="pager">
     
         <li class="previous">
-            <a href="phd-students-journal-clubs-and-sozi.html">← Previous post</a>
+            <a href="imagemagick-pcal-calendar.html">← Previous post</a>
         </li>
     
-    
-        <li class="next">
-            <a href="second-pelican-attempt-creating-a-blog-on-github-with-pelican.html">Next post →</a>
-        </li>
     
     </ul>
 
@@ -196,10 +150,10 @@ Just to give a little example, consider this:    </p>
         <script type="text/javascript">
         var disqus_shortname ="brunettosblog";
         
-            var disqus_url="brunetto.github.io/posts/asterisks-and-python.html";
+            var disqus_url="brunetto.github.io/posts/nvidia-drivers.html";
         
-        var disqus_title="Asterisks and Python";
-        var disqus_identifier="cache/posts/asterisks-and-python.html";
+        var disqus_title="Nvidia drivers";
+        var disqus_identifier="cache/posts/nvidia-drivers.html";
         var disqus_config = function () {
             this.language = "";
         };

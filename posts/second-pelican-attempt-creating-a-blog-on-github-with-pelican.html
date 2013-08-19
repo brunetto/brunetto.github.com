@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="brunetto">
-    <title>Asterisks and Python | for further reference...</title>
+    <title>Second Pelican attempt: creating a blog on GitHub with Pelican | for further reference...</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -117,12 +117,12 @@
     
     <div class="postbox">
     
-    <h1>Asterisks and Python</h1>
+    <h1>Second Pelican attempt: creating a blog on GitHub with Pelican</h1>
     
 
     <hr>
     <small>
-        Posted: <time class="published" datetime="2012-05-07T00:00:00">2012-05-07 00:00</time>
+        Posted: <time class="published" datetime="2013-03-08T00:00:00">2013-03-08 00:00</time>
         
     
 
@@ -130,61 +130,71 @@
     
           |  More posts about
         
-            <a class="tag" href="../categories/asterisk.html"><span class="badge badge-info">asterisk</span></a>
-        
-            <a class="tag" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
-        
-            <a class="tag" href="../categories/function.html"><span class="badge badge-info">function</span></a>
-        
-            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+            <a class="tag" href="../categories/blogging.html"><span class="badge badge-info">blogging</span></a>
         
             <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
         
-            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+            <a class="tag" href="../categories/pelikan.html"><span class="badge badge-info">Pelikan</span></a>
         
     
 
     </small>
     <hr>
-    <p>There are many possible uses of the "*" in Python, to be not confused, this is a brief summary of them.  <br>
-<!-- TEASER_END -->  <br>
-<strong>Math</strong>  <br>
-As usual, one asterisk means multiplication, two asterisks mean power with integer index:    </p>
-<div class="code"><pre><span class="mi">2</span><span class="o">*</span><span class="mi">3</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="mi">2</span><span class="o">**</span><span class="mi">3</span> <span class="o">=</span> <span class="mi">8</span>
+    <h2>How to create a blog with GitHub and Pelican (Python)</h2>
+<h4>Suppose that you are curios about GitHub pages... but I don't understand their guide.</h4>
+<h4>And suppose that you don't like Ruby but prefer Python...</h4>
+<p>First of all create a repo named <code>youname.github.com</code> on your GitHub account 
+(ok, maybe, before this, you have to create a GitHub account!).  <br>
+Then set the remote origin locally with    </p>
+<div class="code"><pre>    <span class="c"># I use ssh because I can log in without a password saving my key at https://github.com/settings/ssh    </span>
+    git remote add origin ssh://git@github.com/yourname/yourname.github.com.git    
 </pre></div>
 
 
-<p><strong>Functions</strong>  <br>
-In functions declarations "a parameter preceded by * in the parameter list for a function will result in any extra positional parameters being aggregated into a tuple [...] and likewise in Python a parameter preceded by ** will result in any extra keyword parameters being aggregated into a dictionary." (from <a href="http://en.wikipedia.org/wiki/Asterisk#Programming_languages" target="_blank">Wikipedia</a>). In a function call the asterisk before a (list or tuple) parameter expand it as the arguments of that function. You can find some examples <a href="http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/" target="_blank">here</a>.  <br>
-Just to give a little example, consider this:    </p>
-<div class="code"><pre><span class="n">In</span><span class="p">:</span> <span class="k">def</span> <span class="nf">pippo</span><span class="p">(</span>\<span class="o">*</span><span class="n">args</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">i</span>
-<span class="n">In</span><span class="p">:</span> <span class="n">pippo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">Out</span><span class="p">:</span>
-<span class="mi">1</span>
-<span class="mi">2</span>
-<span class="mi">3</span>
-<span class="mi">4</span>
-
-<span class="n">In</span><span class="p">:</span> <span class="k">def</span> <span class="nf">pippo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span>
-<span class="n">In</span><span class="p">:</span> <span class="n">pluto</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">In</span><span class="p">:</span> <span class="n">pippo</span><span class="p">(</span><span class="o">*</span><span class="n">pluto</span><span class="p">)</span>
-<span class="n">Out</span><span class="p">:</span>
-<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span>
+<p>Now you can follow the excellent guide by <a href="http://martinbrochhaus.com/2012/02/pelican.html">Martin</a>.</p>
+<p>Maybe you need to change     </p>
+<div class="code"><pre>    mkvirtualenv -p python2.7 blog    
 </pre></div>
+
+
+<p>with something like     </p>
+<div class="code"><pre>    mkvirtualenv -p /usr/bin/python blog    
+</pre></div>
+
+
+<p>If you need to write equation, use <a href="http://www.mathjax.org/">MathJax</a> is straightforward.
+Following <a href="http://www.ceremade.dauphine.fr/~amic/en/blog/mathjax-and-pelican.html">this post</a>
+you only need to add few lines to the <code>base.html</code> of your theme and write latex-style equation like
+<code>$$\frac{x_n}{x_{n+1}}$$</code> to obtain    </p>
+<p>$$\frac{x_n}{x_{n+1}}$$    </p>
+<p>If you want to show code you only need to indent it with four spaces and put the 
+languade identifier (<code>:::python</code>) on the top, indented in the same way (.=space):</p>
+<div class="code"><pre><span class="p">....</span><span class="o">:::</span><span class="n">python</span>    
+<span class="p">....</span><span class="n">def</span> <span class="n">print_python</span><span class="p">()</span><span class="o">:</span>    
+<span class="p">........</span><span class="n">print</span> <span class="s">"Python:)"</span>    
+</pre></div>
+
+
+<p>produces</p>
+<div class="code"><pre><span class="k">def</span> <span class="nf">print_python</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s">"Python:)"</span>
+</pre></div>
+
+
+<p>Now, if can also blog from the <a href="http://ipython.org/notebook.html">IPython Notebook</a>
+following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipython-notebook-plugin/">guide by Daniel</a>.    </p>
+<p>And That's all Folks!:P</p>
+<p>PS: see also <a href="http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/">this</a> great guide</p>
     
     <ul class="pager">
     
         <li class="previous">
-            <a href="phd-students-journal-clubs-and-sozi.html">← Previous post</a>
+            <a href="asterisks-and-python.html">← Previous post</a>
         </li>
     
     
         <li class="next">
-            <a href="second-pelican-attempt-creating-a-blog-on-github-with-pelican.html">Next post →</a>
+            <a href="imagemagick-pcal-calendar.html">Next post →</a>
         </li>
     
     </ul>
@@ -196,10 +206,10 @@ Just to give a little example, consider this:    </p>
         <script type="text/javascript">
         var disqus_shortname ="brunettosblog";
         
-            var disqus_url="brunetto.github.io/posts/asterisks-and-python.html";
+            var disqus_url="brunetto.github.io/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html";
         
-        var disqus_title="Asterisks and Python";
-        var disqus_identifier="cache/posts/asterisks-and-python.html";
+        var disqus_title="Second Pelican attempt: creating a blog on GitHub with Pelican";
+        var disqus_identifier="cache/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html";
         var disqus_config = function () {
             this.language = "";
         };
