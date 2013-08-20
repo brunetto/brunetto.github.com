@@ -50,6 +50,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/agn.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/alternatives.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
@@ -141,6 +146,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/domain-decomposition.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/for-dummies.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -466,6 +476,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/listings/index.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/agn-for-dummies.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
  </url>
