@@ -67,4 +67,5 @@ LaTeX, Inkscape (+Sozi, TexText), LibreOffice, ImageMagick, Gimp, Blender, Bazaa
 * Digital Photograpy
 * Piano and guitar
 * Travelling by moto and by foot
-* [Mapping](http://(www.openstreetmap.org) and geo-data manipulation
+* [Mapping](http://(www.openstreetmap.org) and geo-data manipulation 
+(I took part in [OsmIt2010](http://www.dicat.unige.it/osmit2010/))

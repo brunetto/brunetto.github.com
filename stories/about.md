@@ -16,9 +16,13 @@ The second is just... to do it because I like the "technology" behind it!:P
 # Me
 
 I'm a PhD student in Astronomy ([CV](curriculum-vitae.html)).    
-My PhD project is about the formation and evolution of compact objects (id white dwarf, neutron stars and black holes) binaries in young stellar clusters. These binaries are thought to be the most promising sources of detectable gravitational waves.    
-My master thesis was about creating a Python code to calculate the two point correlation function for dark matter haloes, subhaloes and dark matter, and apply it to the Millenium II simulation outputs.    
-I'm also a [scout](scout.html) leader in the AGESCI association, a traveller (by moto, feet, by airplane, ...) and a failed musician.
+My PhD project is about the formation and evolution of compact objects 
+(id white dwarf, neutron stars and black holes) binaries in young stellar clusters. 
+These binaries are thought to be the most promising sources of detectable gravitational waves.    
+My master thesis was about creating a Python code to calculate the two point correlation 
+function for dark matter haloes, subhaloes and dark matter, and apply it to the Millenium II simulation outputs.    
+I'm also a [scout](scout.html) leader in the AGESCI association, a traveller 
+(by moto, feet, by airplane, ...) and a failed musician.
 
 I like:
 
@@ -36,7 +40,10 @@ Here you can also find a link to [my travels and trips](travels.html), [my favou
 <!--</summary>-->
 I'm quite a lazy person in some things. One of these is the license question.
 
-For now you can think about all the material I post here as covered by some kind of the GPLx or the CC licenses, that is, you can use and modify what you find here for free but I would like if you cite me as reference!
+For now you can think about all the material I post here as covered by some kind 
+of the GPLx or the CC licenses, that is, you can use and modify what you find here 
+for free but I would like if you cite me as reference!
 
-Moreover, I try to put references for things I found anywhere and post here, if you have any doubt or you find my citations wrong, feel free to ask me!:)
+Moreover, I try to put references for things I found anywhere and post here, 
+if you have any doubt or you find my citations wrong, feel free to ask me!:)
 <!--</details>-->
