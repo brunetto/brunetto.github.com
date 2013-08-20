@@ -76,7 +76,7 @@ nikola new_post -f ipynb
 or `-f markdown` to use the markdown syntax
 
 * then, `nikola build` to build the site and `nikola serve` to see it
-locally at `localhost:8000`
+locally at [`localhost:8000`](localhost:8000)
 
 ## GitHub
 
