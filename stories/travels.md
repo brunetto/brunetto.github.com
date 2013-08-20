@@ -71,7 +71,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * Dolomiti di Brenta rifugi
 * Sappada - Val Visdende
 * Trans-Civetta
-* Monti Laari - Sentiero degli dei (Costiera Amalfitana)
+* Monti Lattari - Sentiero degli dei (Costiera Amalfitana)
 * 2010 - Foreste casentinesi, Tracce del Wild
 * Rifiugio Citta` di Fiume
 * 2012 - Rifugio Roma
