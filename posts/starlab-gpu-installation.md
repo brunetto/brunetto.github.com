@@ -87,11 +87,11 @@ ranlib libsapporo.a
 * to test the compilation run 
 ````bash 
 test_gravity_N2ngb 900
-```
+````
 and
-```bash 
-test_geravity_block 900
-```
+````bash 
+test_gravity_block 900
+````
 where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.
 

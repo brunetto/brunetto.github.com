@@ -160,19 +160,19 @@ ranlib libsapporo.a
 
 <ul><li>to test the compilation run </li>
 </ul><div class="code"><pre>test_gravity_N2ngb 900
-<span class="sb">```</span>
-and
-<span class="sb">```</span>bash 
-test_geravity_block 900
-<span class="sb">```</span>
-where 900 is the number of particles involved in the test. You can choose the number you prefer
-but the <span class="nb">test </span>fail <span class="k">if </span>the number is less than ~800.
+</pre></div>
 
-<span class="c">## StarLab</span>
 
-* change configure CUDA lines:
-<span class="sb">````</span>bash
-<span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost"</span> 
+<p>and</p>
+<div class="code"><pre>test_gravity_block 900
+</pre></div>
+
+
+<p>where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the test fail if the number is less than ~800.</p>
+<h3>StarLab</h3>
+<ul><li>change configure CUDA lines:</li>
+</ul><div class="code"><pre><span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost"</span> 
 <span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/libx86_64-linux-gnu/ -lcudart"</span>
 <span class="nv">LIBS</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB"</span>
 </pre></div>
