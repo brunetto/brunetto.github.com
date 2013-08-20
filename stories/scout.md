@@ -23,13 +23,15 @@ My scout life
 * 2010 CFA (Val Codera, Colico)
 * 2010 - 2011 Aiuto Capo Clan
 * 2010-10-02_03 - Bracciano, FIS Jamboree meeting
-* 2011 - Bari, Staff Jamboree
 * 2011 - 2013 Capo Clan
+* 2011 - Bari, Staff Jamboree
+* 2011-05-09 - Venezia, PapaDay
 * 2011-07-27_08-09 - Sweden, Rinkaby, [22nd WSJ Jamboree](http://en.wikipedia.org/wiki/22nd_World_Scout_Jamboree) (Summer/Vimmerby sub-camp)
 * 2011 - Route Altavia dei Silenzi (AV 6)
 * 2012 - Nomina a Capo
 * 2012 - Forum nazionale R/S - Lancio route nazionale (Brescia)
 * 2012 - Route Cammino Inglese (Ferrol -> Santiago de Compostela)
+* 2012-07-28_08-04 - Finale Emilia, Emergenza terremoto EmiRo, servizio con PC (magazzino centrale Finale Emilia)
 * Convegno Regionale Santa Maria di Piave
 * Convegno Regionale Vicenza
 * Assemblee Generali

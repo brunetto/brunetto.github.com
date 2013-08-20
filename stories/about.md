@@ -18,7 +18,7 @@ The second is just... to do it because I like the "technology" behind it!:P
 I'm a PhD student in Astronomy ([CV](curriculum-vitae.html)).    
 My PhD project is about the formation and evolution of compact objects (id white dwarf, neutron stars and black holes) binaries in young stellar clusters. These binaries are thought to be the most promising sources of detectable gravitational waves.    
 My master thesis was about creating a Python code to calculate the two point correlation function for dark matter haloes, subhaloes and dark matter, and apply it to the Millenium II simulation outputs.    
-I'm also a scout leader in the AGESCI association, a traveller (by moto, feet, by airplane, ...) and a failed musician (failed until now!:P).
+I'm also a [scout](scout.html) leader in the AGESCI association, a traveller (by moto, feet, by airplane, ...) and a failed musician.
 
 I like:
 
@@ -28,7 +28,7 @@ I like:
 * riding my motorbike across the Europe with the DDteam
 * to be continued...:P
 
-Here you can also find a link to [my travels and trips](my-travels.html), [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
+Here you can also find a link to [my travels and trips](travels.html), [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
 
 <!--<details>
 <summary>-->
