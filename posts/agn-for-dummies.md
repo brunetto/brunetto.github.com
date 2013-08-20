@@ -9,7 +9,7 @@
 
 Another infographic attempt from one of my PhD exams!
 
-<--! TEASER_END -->
+<!-- TEASER_END -->
 
 See the the [other ones too](infographics-attempts.html)!
 
