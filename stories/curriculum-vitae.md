@@ -17,7 +17,7 @@
 **Position** PhD student since 01/2012 at Università degli Studi di Padova - Dipartimento di Fisica e Astronomia    
 PhD advisors: Dr. Michela Mapelli (INAF-OAPd) and Prof. Giuseppe Tormen (University of Padova)
 
-##Teachingexperience
+##Teaching experience
 ###2012-2013
 Teaching assistant - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova), Mathematical
 analysis    
@@ -52,19 +52,19 @@ High school degree of Scientific studies
 * Introduction to GPGPU and CUDA programming, 27 April 2011 @ CINECA computing center (Bologna, Italy)
 
 ##Language skills
-Italian (Mother tongue), English (good)
+Italian (mother tongue), English (good)
 
 ##Computer skills
 ###OSs
-[Linux](www.ubuntu.org), MacOSX, Windows
+[Linux](http://www.ubuntu.org), MacOSX, Windows
 ###Scripting/Programming Languages
-Python, [Go](golang.org), Bash, Matlab/Octave, Fortran, C/C++, IDL, ...
+Python, [Go](http://golang.org), Bash, Matlab/Octave, Fortran, C/C++, IDL, ...
 ###Softwares
 LaTeX, Inkscape (+Sozi, TexText), LibreOffice, ImageMagick, Gimp, Blender, Bazaar, Git, ...
 
 ##Other interests
-* Volunteering with [A.G.E.S.C.I.](www.agesci.org) and Protezione Civile
+* Volunteering with [A.G.E.S.C.I.](http://www.agesci.org) and Protezione Civile
 * Digital Photograpy
 * Piano and guitar
 * Travelling by moto and by foot
-* [Mapping](www.openstreetmap.org) and geo-data manipulation
+* [Mapping]http://(www.openstreetmap.org) and geo-data manipulation
