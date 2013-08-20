@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: blogging, code, ipython, Nikola, Git, GitHub, draft
+.. tags: blogging, code, ipython, Nikola, Git, GitHub
 .. date: 2013/08/18 01:29:57
 .. title: Blogging with Nikola + Ipython + Git(Hub)
 .. slug: blogging-with-nikola-ipython-github

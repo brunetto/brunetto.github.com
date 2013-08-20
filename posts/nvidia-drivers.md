@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: linux, draft
+.. tags: linux
 .. date: 2013/08/19 10:17:08
 .. title: Nvidia drivers
 .. slug: nvidia-drivers

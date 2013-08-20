@@ -160,6 +160,16 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/categories/git.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/github.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/categories/ics.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
@@ -191,6 +201,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/integrator.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/ipython.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -261,6 +276,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/n-genic.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/categories/nikola.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -450,6 +470,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/posts/blogging-with-nikola-ipython-github.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-1-why-and-what.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
@@ -546,6 +571,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/never-never-never.html</loc>
+  <lastmod>2013-08-20</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/posts/nvidia-drivers.html</loc>
   <lastmod>2013-08-20</lastmod>
   <priority>0.5000</priority>
  </url>
