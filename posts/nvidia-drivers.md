@@ -57,6 +57,7 @@ sudo aptitude --purge <packages names>
 * blacklist all the modules that can interfere:    
 
 1. in /etc/modprobe.d/blacklist.conf insert
+
 ````bash
 blacklist amd76x_edac
 blacklist vga16fb
@@ -65,7 +66,7 @@ blacklist lbm-nouveau
 blacklist rivafb
 blacklist nvidiafb
 blacklist rivatv
-```
+````
 
 2. in /etc/modprobe.d/blacklist-nouveau.conf insert
 ````bash

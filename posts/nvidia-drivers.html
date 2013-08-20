@@ -139,11 +139,11 @@ blacklist lbm-nouveau
 blacklist rivafb
 blacklist nvidiafb
 blacklist rivatv
-<span class="sb">```</span>
+</pre></div>
 
-2. in /etc/modprobe.d/blacklist-nouveau.conf insert
-<span class="sb">````</span>bash
-blacklist nouveau
+
+<ol><li>in /etc/modprobe.d/blacklist-nouveau.conf insert</li>
+</ol><div class="code"><pre>blacklist nouveau
 options nouveau <span class="nv">modeset</span><span class="o">=</span>0
 blacklist lbm-nouveau
 <span class="nb">alias </span>nouveau off
