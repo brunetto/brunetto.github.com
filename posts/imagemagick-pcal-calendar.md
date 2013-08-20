@@ -2,7 +2,7 @@
 .. link: 
 .. description: 
 .. tags: calendar, code, linux, pcal, scout, imported
-.. date: 2013/08/18 22:34:15
+.. date: 2012/08/18 22:34:15
 .. title: Imagemagick + pcal = calendar
 .. slug: imagemagick-pcal-calendar
 -->
