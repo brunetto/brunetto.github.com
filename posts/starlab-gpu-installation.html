@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><title>StarLab-GPU installation | for further reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for further reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>StarLab-GPU installation</h1>
+    
+
+    <hr><small>
+        Posted: <time class="published" datetime="2013-08-20T09:34:11">2013-08-20 09:34</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/gpu.html"><span class="badge badge-info">GPU</span></a>
+        
+            <a class="tag" href="../categories/simulations.html"><span class="badge badge-info">simulations</span></a>
+        
+            <a class="tag" href="../categories/n-body.html"><span class="badge badge-info">n-body</span></a>
+        
+    
+
+    </small>
+    <hr><h3>To install CUDA you can try with the CUDA packages in the Ubuntu repositories.</h3>
+<p>If they fail, you have to download CUDA from ****</p>
+<p>To locate the CUDA files you can try:</p>
+<ul><li><code>locate cuda | grep nvcc</code></li>
+<li><code>locate cuda | grep include</code></li>
+<li><code>locate cuda | grep include | grep toolkit</code> (for the SDK files of the new release)</li>
+<li><code>locate cuda | grep lib | grep cudaart</code></li>
+</ul><!-- TEASER_END --><h3>Sapporo</h3>
+<ul><li>in setup_sapporo.sh change </li>
+</ul><div class="code"><pre><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
+</pre></div>
+
+
+<p>(installation of the binary drivers from the NVIDIA site) to</p>
+<div class="code"><pre><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
+</pre></div>
+
+
+<p>(ubuntu CUDA distro packages)</p>
+<ul><li>in Makefile put the right path in <code>NVCC := /usr/bin/nvcc</code> and be sure to have the right 
+paths in </li>
+</ul><div class="code"><pre>CUDAPATH    :<span class="o">=</span> /usr/include/
+<span class="c">#/usr/local/cuda-5.0</span>
+CUDASDKPATH :<span class="o">=</span> /usr/lib/nvidia-cuda-toolkit/include/
+<span class="c">#/usr/local/cuda-5.0/samples/common/inc</span>
+CUDAINCLUDE :<span class="o">=</span> -I<span class="k">$(</span>CUDAPATH<span class="k">)</span>/include -I<span class="k">$(</span>CUDASDKPATH<span class="k">)</span>
+<span class="c"># RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)</span>
+BOOSTPATH :<span class="o">=</span> /usr/include/boost 
+BOOSTINCLUDE :<span class="o">=</span> -I<span class="k">$(</span>BOOSTPATH<span class="k">)</span>
+</pre></div>
+
+
+<p>the commented path refers to the binary installation from the NVIDIA site.</p>
+<ul><li>Launch <code>bash ./setup_sapporo.sh</code> and if you get</li>
+</ul><div class="code"><pre>host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
+</pre></div>
+
+
+<p>puth <code>multithreading.h</code> in the sapporo folder and then in <code>host_evaluate_gravity.cu</code> change </p>
+<div class="code"><pre><span class="cp">#include &lt;multithreading.h&gt;</span>
+</pre></div>
+
+
+<p>to </p>
+<div class="code"><pre><span class="cp">#include &lt;multithreading.h&gt;</span>
+</pre></div>
+
+
+<p>so c++ can find the header in the current directory.</p>
+<ul><li>if all is going right, by running again <code>bash setup_sapporo.sh</code> you should
+obtain something like </li>
+</ul><div class="code"><pre>/bin/rm -rf *.o *.cu_o libsapporo.a
+/bin/rm -rf test_gravity_block test_gravity_N2ngb
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
+sapporo.cpp: In member <span class="k">function</span> ‘int sapporo::open<span class="o">(</span>int<span class="o">)</span>’:
+sapporo.cpp:40:25: warning: ignoring <span class="k">return </span>value of ‘char* fgets<span class="o">(</span>char*, int, FILE*<span class="o">)</span>’, declared with attribute warn_unused_result <span class="o">[</span>-Wunused-result<span class="o">]</span>
+sapporo.cpp:42:25: warning: ignoring <span class="k">return </span>value of ‘char* fgets<span class="o">(</span>char*, int, FILE*<span class="o">)</span>’, declared with attribute warn_unused_result <span class="o">[</span>-Wunused-result<span class="o">]</span>
+sapporo.cpp:67:24: warning: ignoring <span class="k">return </span>value of ‘char* fgets<span class="o">(</span>char*, int, FILE*<span class="o">)</span>’, declared with attribute warn_unused_result <span class="o">[</span>-Wunused-result<span class="o">]</span>
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+
+*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount<span class="o">=</span>64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+ Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
+ar: creating libsapporo.a
+a - GPUWorker.o
+a - sapporo.o
+a - send_fetch_data.o
+a - sapporoG6lib.o
+a - host_evaluate_gravity.cu_o
+ranlib libsapporo.a
+</pre></div>
+
+
+<ul><li>to test the compilation run </li>
+</ul><div class="code"><pre>test_gravity_N2ngb 900
+<span class="sb">```</span>
+and
+<span class="sb">```</span>bash 
+test_geravity_block 900
+<span class="sb">```</span>
+where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the <span class="nb">test </span>fail <span class="k">if </span>the number is less than ~800.
+
+<span class="c">## StarLab</span>
+
+* change configure CUDA lines:
+<span class="sb">````</span>bash
+<span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost"</span> 
+<span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/libx86_64-linux-gnu/ -lcudart"</span>
+<span class="nv">LIBS</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB"</span>
+</pre></div>
+
+
+<ul><li>and change local/grape.sh</li>
+</ul><div class="code"><pre><span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost"</span> 
+<span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/libx86_64-linux-gnu/ -lcudart"</span>
+
+<span class="c"># CUDAINC="-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost" </span>
+<span class="c"># CUDALIB="-L/usr/local/cuda-5.0/lib64/ -lcudart" </span>
+
+<span class="nv">LIBS1</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB"</span>
+
+<span class="c">#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread</span>
+g++ -O3 <span class="nv">$flags</span> -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo <span class="nv">$CUDAINC</span> <span class="nv">$CUDALIB</span> <span class="nv">$LIBS1</span>
+
+<span class="c"># Where to find GRAPE libraries:</span>
+<span class="c"># GRAPE_LDFLAGS_='-L/home/mapelli/MICMAP/programmi/sapporo161_release/'</span>
+<span class="nv">GRAPE_LDFLAGS_</span><span class="o">=</span><span class="s1">'-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release'</span>
+</pre></div>
+
+
+<ul><li>
+<p>run <code>make clean</code></p>
+</li>
+<li>
+<p>run <code>./configure --without-fortran</code> (<code>--without-f77</code>)</p>
+</li>
+<li>
+<p><code>make</code></p>
+</li>
+<li>
+<p><code>make install</code></p>
+</li>
+<li>
+<p>now you can find the <code>kira</code> binary in <code>/usr/local/bin</code> or<code>/usr/bin</code></p>
+</li>
+<li>
+<p>run </p>
+</li>
+</ul><div class="code"><pre>./kira -t 500 -d 1 -D 1 -b 1 <span class="se">\</span>
+             -n 10 -e 0.000 -B   <span class="se">\</span>
+     &lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt <span class="se">\</span>
+     &gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt <span class="se">\</span>
+     2&gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
+</pre></div>
+    
+    <ul class="pager"></ul><div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/starlab-gpu-installation.html";
+        
+        var disqus_title="StarLab-GPU installation";
+        var disqus_identifier="cache/posts/starlab-gpu-installation.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
