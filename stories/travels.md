@@ -78,8 +78,13 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * Tre Cime di Lavaredo
 * Passo Tre Croci - Rifugio Vandelli - Lago Sorapiss
 * Altavia dei Silenzi (AV 6)
-* Dolomiti di Brenta
-
+* 2013-08-03_09 - Dolomiti di Brenta (Lago Tovel -> Malga Flavona -> Passo Groste'
+-> Rifugio Stoppani -> Rifugio Groste' 
+-> lago di Spinale e malghe di Boch -> Rifugio Brentei
+-> Bocca di Brenta -> Rifugi Tosa/Pedrotti -> 
+Rifugio della Selvata -> Malga Andalo -> Molveno -> rifugio Montanara -> Malga Spora
+-> Sella del Montoz -> Malga Campa -> Lago Tovel)
+* 2013-08-15 - Rifugio Scotter-Palatini -> Rifugio San Marco -> Rifugio Galassi
 
 
 
