@@ -9,7 +9,7 @@
 
 Work in progress...
 
-# Travels&Holydays
+# Travels&Holidays
 
 * Gargano (x n, Vieste, Peschici, ...)
 * Egitto, Giordania, Israele

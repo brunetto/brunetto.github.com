@@ -28,7 +28,7 @@ I like:
 * riding my motorbike across the Europe with the DDteam
 * to be continued...:P
 
-Here you can also find a link to [my trips](my-travels.html), [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
+Here you can also find a link to [my travels and trips](my-travels.html), [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
 
 <!--<details>
 <summary>-->
