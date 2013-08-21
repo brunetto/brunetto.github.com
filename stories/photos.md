@@ -13,8 +13,9 @@ Some links regarding the world of photography...
 
 * [Juza Photo](http://www.juzaphoto.com/home.php?l=it)
 * [Sigfrido Corradi](http://www.sigfridocorradi.net/)
-* [Gergo](http://www.flickr.com/photos/pgaalien/) [Antal](http://500px.com/alienart)
-
+<!--* [Gergo](http://www.flickr.com/photos/pgaalien/) [Antal](http://500px.com/alienart)
+[John Tisbury](johntisbury.deviantart.com)
+-->
 ## Sites
 
 + [500px](http://500px.com/)
