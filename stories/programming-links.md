@@ -12,6 +12,7 @@
 * [Main site](http://golang.org/)
 * [Tutorial](http://golangtutorials.blogspot.it/2011/05/table-of-contents.html)
 * [Book](http://www.golang-book.com/)
+* [Go Mailing List](https://groups.google.com/forum/#!forum/golang-nuts)
 * [Why](http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html)
 * [my Go references](golang-references.html)
 
