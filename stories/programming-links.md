@@ -23,10 +23,28 @@
 
 ## Python
 
+* [Ipython](http://ipython.org/)
+* [Ipython nbviewer](http://nbviewer.ipython.org/)
+* [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 * [my Python references](python-references.html)
 
 ## Versioning
 # Git
+
+## Blogging
+
+* http://nikola.ralsina.com.ar/
+* http://pages.github.com/
+* http://www.damian.oquanta.info/
+* http://docs.getpelican.com/en/3.2/
+* http://scriptogr.am/
+
+
+## Latex
+
+* https://www.writelatex.com/
+
+
 
 
 ## HTML/CSS/javascript
