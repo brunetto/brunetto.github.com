@@ -1,4 +1,12 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><title>Learning C from simulations, #1 | for further reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Learning C from simulations, #1 | for further reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,9 +17,39 @@
             styles: {'.MathJax_Display': {"margin": 0}}
         }
     });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -29,7 +67,11 @@
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../archive.html">Archives</a>
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
         
     
         
@@ -45,12 +87,24 @@
         
     
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunetto.github.io"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
                 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -66,7 +120,8 @@
     <h1>Learning C from simulations, #1</h1>
     
 
-    <hr><small>
+    <hr>
+    <small>
         Posted: <time class="published" datetime="2012-02-20T00:00:00">2012-02-20 00:00</time>
         
     
@@ -96,7 +151,8 @@
     
 
     </small>
-    <hr><p>Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I'm doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I'm learning for my and maybe other's usefulness and fun!    </p>
+    <hr>
+    <p>Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I'm doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I'm learning for my and maybe other's usefulness and fun!    </p>
 <!-- TEASER_END -->
 
 <div class="code"><pre>
@@ -105,12 +161,15 @@
 
 <p><strong>The IDE</strong>  <br>
 When I write little pieces of code I usually find <a href="http://kate-editor.org/" target="_blank" title="Kate Editor">Kate</a> comfortable enough but to explore projects like <a href="http://www.mpa-garching.mpg.de/gadget/" target="_blank" title="Gadget2">Gadget2</a> I prefer to use something like <a href="http://kdevelop.org/" target="_blank" title="KDevelop">KDevelop</a> because it's easier to manage where a variable is defined, declared and used. And it do this only by positioning the mouse on the variable name. If you put the mouse on a known function (from the standard library for example), KDevelop will open the documentation for you.    </p>
-<p><strong>Doxygen</strong>  <br><a href="http://www.stack.nl/~dimitri/doxygen" target="_blank" title="Doxygen">Doxygen</a> is a documentation system. It allows you to produce documentation for a project from the comments in the code. With no additional work you can <a href="http://www.stack.nl/~dimitri/doxygen/docblocks.html#specialblock" target="_blank" title="Comment in Doxigen">comment</a> your code and be ready to produce the documentation. In KDevelop Doxygen style for comments has a different (and nice) coloring.    </p>
+<p><strong>Doxygen</strong>  <br>
+<a href="http://www.stack.nl/~dimitri/doxygen" target="_blank" title="Doxygen">Doxygen</a> is a documentation system. It allows you to produce documentation for a project from the comments in the code. With no additional work you can <a href="http://www.stack.nl/~dimitri/doxygen/docblocks.html#specialblock" target="_blank" title="Comment in Doxigen">comment</a> your code and be ready to produce the documentation. In KDevelop Doxygen style for comments has a different (and nice) coloring.    </p>
 <p><strong>Single file compilation</strong>  <br>
-I your C program is simple and short, and fit in a single file you can compile it to produce the executable file with  <br></p><pre>gcc -O3 -Wall sort.c -o sort.exe</pre>
+I your C program is simple and short, and fit in a single file you can compile it to produce the executable file with  <br>
+</p><pre>gcc -O3 -Wall sort.c -o sort.exe</pre>
 <p>where <code>gcc</code> is the GNU compiler, <code>-O3</code> is the level of optimization, <code>-Wall</code> activate the print of all the warnings, <code>sort.c</code> is your source code file and <code>-o sort.exe</code> specify the output file (default is "a.out").    </p>
 <p>I've also learned some other things, but a good combination of my laziness and the fact that it's not always useful to rewrite things already well-written let me give you the links to those resources!:)    </p>
-<ul><li>
+<ul>
+<li>
 <p><a href="http://www.network-theory.co.uk/docs/gccintro/gccintro_16.html" target="_blanck" title="Makefile">Makefile</a></p>
 </li>
 <li>
@@ -119,18 +178,26 @@ I your C program is simple and short, and fit in a single file you can compile i
 <li>
 <p><a href="http://www.cprogramming.com/tutorial/cpreprocessor.html" target="_blank" title="Macros">Macros</a></p>
 </li>
-</ul><p>Maybe in the next episodes I will understand how to manage <a href="http://www.cplusplus.com/forum/articles/10627/" target="_blank" title="headers">headers</a>, implementations, object files and other funny things!:P</p>
+</ul>
+<p>Maybe in the next episodes I will understand how to manage <a href="http://www.cplusplus.com/forum/articles/10627/" target="_blank" title="headers">headers</a>, implementations, object files and other funny things!:P</p>
     
-    <ul class="pager"><li class="previous">
-            <a href="cosmological-simulations-9-gadget-2-n-body-part.html">← Previous post</a>
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="learning-c-from-simulations-3-c-horrors.html">← Previous post</a>
         </li>
     
     
         <li class="next">
-            <a href="learning-c-from-simulations-3-c-horrors.html">Next post →</a>
+            <a href="cosmological-simulations-9-gadget-2-n-body-part.html">Next post →</a>
         </li>
     
-    </ul><div id="disqus_thread"></div>
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="brunettosblog";
         
@@ -146,7 +213,8 @@ I your C program is simple and short, and fit in a single file you can compile i
             dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
@@ -172,5 +240,22 @@ I your C program is simple and short, and fit in a single file you can compile i
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
