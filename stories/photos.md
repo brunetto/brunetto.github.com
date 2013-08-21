@@ -3,7 +3,7 @@
 .. description: 
 .. tags: 
 .. date: 2013/08/21 12:00:15
-.. title: photos
+.. title: Photos
 .. slug: photos
 -->
 
