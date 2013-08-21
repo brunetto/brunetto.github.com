@@ -730,7 +730,17 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/stories/timelapses.html</loc>
+  <lastmod>2013-08-21</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/stories/travels.html</loc>
+  <lastmod>2013-08-21</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/videos.html</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
