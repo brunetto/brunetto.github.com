@@ -86,7 +86,11 @@ Rifugio della Selvata -> Malga Andalo -> Molveno -> rifugio Montanara -> Malga S
 -> Sella del Montoz -> Malga Campa -> Lago Tovel)
 * 2013-08-15 - Rifugio Scotter-Palatini -> Rifugio San Marco -> Rifugio Galassi
 
+## Upcoming travels or places I would like to visit
 
+* Australia
+* States
+* Japan (maybe in [2015](http://www.23wsj.jp/)?)
 
 
 
