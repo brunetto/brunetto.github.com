@@ -15,7 +15,8 @@ The second is just... to do it because I like the "technology" behind it!:P
 
 # Me
 
-I'm a [PhD student in Astronomy](http://www.dfa.unipd.it/index.php?id=1051) ([CV](curriculum-vitae.html)).    
+I'm a [PhD student in Astronomy](http://www.dfa.unipd.it/index.php?id=1051) ([CV](curriculum-vitae.html))
+at the [Department of Physics and Astronomy](http://www.dfa.unipd.it/) of the [University of Padua](http://www.unipd.it/).    
 My PhD project is about the formation and evolution of compact objects 
 (id white dwarf, neutron stars and black holes) binaries in young stellar clusters. 
 These binaries are thought to be the most promising sources of detectable gravitational waves.    
