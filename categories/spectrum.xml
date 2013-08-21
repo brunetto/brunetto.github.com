@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for further reference... (spectrum)</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Wed, 21 Aug 2013 18:17:49 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The "initial condition" saga</title><link>brunetto.github.io/posts/the-initial-condition-saga.html</link><description>&lt;div&gt;&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!  &lt;br&gt;
+<rss version="2.0"><channel><title>for further reference... (spectrum)</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Thu, 22 Aug 2013 01:45:42 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The "initial condition" saga</title><link>brunetto.github.io/posts/the-initial-condition-saga.html</link><description>&lt;div&gt;&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!  &lt;br&gt;
 The first things I have understood banging against them were:    &lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;Gadget requires initial conditions (ICs) generate by (for example) N-GenIC&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -16,4 +17,5 @@ The first things I have understood banging against them were:    &lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;the &lt;a href="http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm" target="_blank" title="CAMB online interface"&gt;CAMB interface&lt;/a&gt; is terrible and not very documentated&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;&lt;a href="/posts/the-initial-condition-saga.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>CAMB</category><category>Cosmology</category><category>gadget</category><category>ICs</category><category>initial conditions</category><category>N-GenIC</category><category>PhD</category><category>power spectrum</category><category>Python</category><category>spectrum</category><category>imported</category><guid>brunetto.github.io/posts/the-initial-condition-saga.html</guid><pubDate>Tue, 31 Jan 2012 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="/posts/the-initial-condition-saga.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>CAMB</category><category>Cosmology</category><category>gadget</category><category>ICs</category><category>initial conditions</category><category>N-GenIC</category><category>PhD</category><category>power spectrum</category><category>Python</category><category>spectrum</category><category>imported</category><guid>brunetto.github.io/posts/the-initial-condition-saga.html</guid><pubDate>Tue, 31 Jan 2012 00:00:00 GMT</pubDate></item></channel></rss>
