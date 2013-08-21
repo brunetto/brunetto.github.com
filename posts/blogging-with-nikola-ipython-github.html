@@ -251,7 +251,27 @@ using your G+ profile link instead of <code>[profile_url]</code>.</p>
 <ul><li><a href="https://support.google.com/webmasters/answer/1708844?hl=en">How to link a Google+ page to your website</a></li>
 <li><a href="https://support.google.com/plus/answer/1711199?hl=en">Google Direct Connect</a></li>
 <li><a href="https://support.google.com/plus/contact/page_verification">Google+ page verification</a></li>
-</ul><ul class="pager"><li class="previous">
+</ul><h3>CNAME and personal domain</h3>
+<p>If you have a personal domain you can let github serve that domain.
+In brief, following <a href="http://blog.sathomas.me/post/custom-domains-with-github-pages">this post</a>
+you have to put in the output folder a file named <code>CNAME</code> containing your domain name and to
+create a DNS record on your domain host without</p>
+<div class="code"><pre><span class="err">@</span> <span class="mf">204.232.175.78</span> <span class="n">A</span>
+</pre></div>
+
+
+<p>where 204.232.175.78 is GitHub ip4 and <code>A</code> is the type of the record (address).
+You can also create a record for the <code>www</code> version of your domain resambling</p>
+<div class="code"><pre><span class="n">www</span> <span class="n">yourname</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">com</span> <span class="n">CNAME</span>
+</pre></div>
+
+
+<p>and wait for the information to propagate (1 hour to 3 days).  <br>
+Note that the output folder can be deleted so it's better to create the <code>CNAME</code> file
+in the main or <code>files</code> directory and to copy or "<code>rsync</code>" it within the <code>nikola deploy</code>
+command workflow.</p>
+    
+    <ul class="pager"><li class="previous">
             <a href="second-pelican-attempt-creating-a-blog-on-github-with-pelican.html">← Previous post</a>
         </li>
     

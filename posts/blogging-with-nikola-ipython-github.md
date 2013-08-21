@@ -169,3 +169,25 @@ See also
 * [How to link a Google+ page to your website](https://support.google.com/webmasters/answer/1708844?hl=en)
 * [Google Direct Connect](https://support.google.com/plus/answer/1711199?hl=en)
 * [Google+ page verification](https://support.google.com/plus/contact/page_verification)
+
+## CNAME and personal domain
+
+If you have a personal domain you can let github serve that domain.
+In brief, following [this post](http://blog.sathomas.me/post/custom-domains-with-github-pages)
+you have to put in the output folder a file named `CNAME` containing your domain name and to
+create a DNS record on your domain host without
+````
+@ 204.232.175.78 A
+````
+where 204.232.175.78 is GitHub ip4 and `A` is the type of the record (address).
+You can also create a record for the `www` version of your domain resambling
+````
+www yourname.github.com CNAME
+````
+and wait for the information to propagate (1 hour to 3 days).    
+Note that the output folder can be deleted so it's better to create the `CNAME` file
+in the main or `files` directory and to copy or "`rsync`" it within the `nikola deploy`
+command workflow.
+
+
+
