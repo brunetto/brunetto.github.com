@@ -14,11 +14,20 @@
 * [Book](http://www.golang-book.com/)
 * [Go Mailing List](https://groups.google.com/forum/#!forum/golang-nuts)
 * [Why](http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html)
+* [GoLEM: Go Launch on Every Machine](https://code.google.com/p/golem/)
+* [Numerical Go](https://github.com/gonum)
+* [Go(lang) official G+ page](https://plus.google.com/+golang/posts)
+* [Go(lang) community on G+](https://plus.google.com/communities/102841007618944990081)
+* [Go science community on G+](https://plus.google.com/communities/115354877257015196825)
 * [my Go references](golang-references.html)
 
 ## Python
 
 * [my Python references](python-references.html)
+
+## Versioning
+# Git
+
 
 ## HTML/CSS/javascript
 
