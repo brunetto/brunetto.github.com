@@ -236,8 +236,22 @@ nikola build
 nikola serve <span class="c"># optionally to check the output locally</span>
 nikola deploy
 </pre></div>
-    
-    <ul class="pager"><li class="previous">
+
+
+<h3>Google Authorship</h3>
+<p>It's possible to let Google recognize and connect your contribution to the blog, 
+that is, the posts will appear with your G+ profile photos and some information in the search results.</p>
+<p>Following </p>
+<ul><li><a href="https://support.google.com/webmasters/answer/1408986?expand=option2">Author information in search results</a></li>
+<li><a href="http://www.google.com/webmasters/tools/richsnippets">Structured Data Testing Tool</a></li>
+</ul><p>the only thing you need to do is to insert the line <code>&lt;a href="[profile_url]?rel=author"&gt;Google&lt;/a&gt;</code>
+in the index.html file, for example inserting it in the <code>CONTENT_FOOTER =</code> string, 
+using your G+ profile link instead of <code>[profile_url]</code>.</p>
+<p>See also</p>
+<ul><li><a href="https://support.google.com/webmasters/answer/1708844?hl=en">How to link a Google+ page to your website</a></li>
+<li><a href="https://support.google.com/plus/answer/1711199?hl=en">Google Direct Connect</a></li>
+<li><a href="https://support.google.com/plus/contact/page_verification">Google+ page verification</a></li>
+</ul><ul class="pager"><li class="previous">
             <a href="second-pelican-attempt-creating-a-blog-on-github-with-pelican.html">← Previous post</a>
         </li>
     

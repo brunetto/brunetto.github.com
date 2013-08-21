@@ -149,3 +149,23 @@ nikola build
 nikola serve # optionally to check the output locally
 nikola deploy
 ````
+
+## Google Authorship
+
+It's possible to let Google recognize and connect your contribution to the blog, 
+that is, the posts will appear with your G+ profile photos and some information in the search results.
+
+Following 
+
+* [Author information in search results](https://support.google.com/webmasters/answer/1408986?expand=option2)
+* [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets)
+
+the only thing you need to do is to insert the line `<a href="[profile_url]?rel=author">Google</a>`
+in the index.html file, for example inserting it in the `CONTENT_FOOTER =` string, 
+using your G+ profile link instead of `[profile_url]`.
+
+See also
+
+* [How to link a Google+ page to your website](https://support.google.com/webmasters/answer/1708844?hl=en)
+* [Google Direct Connect](https://support.google.com/plus/answer/1711199?hl=en)
+* [Google+ page verification](https://support.google.com/plus/contact/page_verification)
