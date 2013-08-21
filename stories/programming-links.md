@@ -33,16 +33,17 @@
 
 ## Blogging
 
-* http://nikola.ralsina.com.ar/
-* http://pages.github.com/
-* http://www.damian.oquanta.info/
-* http://docs.getpelican.com/en/3.2/
-* http://scriptogr.am/
+* [Nikola](http://nikola.ralsina.com.ar/)
+* [GitHub Pages](http://pages.github.com/)
+* [Damian Avila Blog](http://www.damian.oquanta.info/)
+* [Pelikan](http://docs.getpelican.com/en/3.2/)
+* [Scriptogr, Dropbox blogging](http://scriptogr.am/)
+* [Custom domains with github pages](http://blog.sathomas.me/post/custom-domains-with-github-pages)
 
 
 ## Latex
 
-* https://www.writelatex.com/
+<!--* https://www.writelatex.com/-->
 
 
 
