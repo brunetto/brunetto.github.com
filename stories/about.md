@@ -31,6 +31,7 @@ I like:
 * wooden and glass surfaces
 * obviously, to dip my hand into a sack of beans
 * riding my motorbike across the Europe with the DDteam
+* [make the computer work for me](programming-links.html)
 * to be continued...:P
 
 Here you can also find a link to [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
