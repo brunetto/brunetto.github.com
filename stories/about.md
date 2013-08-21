@@ -23,8 +23,8 @@ These binaries are thought to be the most promising sources of detectable gravit
 My master thesis was about creating a Python code to calculate the two point correlation 
 function for dark matter haloes, subhaloes and dark matter, and apply it to the Millenium II simulation outputs.    
 I'm also a [scout](scout.html) leader in the AGESCI association, a [traveller](travels.html)
-(by [moto](moto.html), feet, by airplane, ...) and a failed [musician](music.html).
-I am also a [registered linux user](https://linuxcounter.net) 
+(by [moto](moto.html), feet, by airplane, ...), a "failed" [musician](music.html)
+ and a [registered linux user](https://linuxcounter.net) 
 with registration number [508678](http://linuxcounter.net/user/508678.html).
 
 I like:
