@@ -17,11 +17,11 @@ Work in progress...
 * Croatia (x n)
 * Greece
 * Corsica
-* England (school)
-* England (school)
+* 2002 - England (school)
+* 2003 - England (school)
 * Israele
 * Barcelona 
-* Barcelona (school trip)
+* 2004 - Barcelona (school trip)
 * London
 * Netherlands (Breda, Amsterdam, Rotterdam)
 * 2004-08 - Kenya, Nairobi - Ol Moran - Isiolo
@@ -59,6 +59,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * 2005 - Reggio Emilia, Concerto Ligabue @ Campovolo
 * 2009 - Asiago -> Passo dello Stelvio -> Varese
 * 2010-10-02_03 - Bracciano, FIS Jamboree meeting
+* 2010 - Colico
 * 2011 - Bari, Staff Jamboree
 * 2012 - Brescia, Forum nazionale R/S - Lancio route nazionale
 * 2012 - ???, New Year Eve
@@ -66,17 +67,19 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 
 # Trekking
 
-* Val Visdende
-* Dolomiti di Brenta
-* Dolomiti di Brenta rifugi
+* 2001 - Val Visdende
+* 2004 - Dolomiti di Brenta
+* 2004 - Dolomiti di Brenta rifugi
 * Sappada - Val Visdende
 * Trans-Civetta
 * Monti Lattari - Sentiero degli dei (Costiera Amalfitana)
 * 2010 - Foreste casentinesi, Tracce del Wild
+* 2010 - Val Codera
 * Rifiugio Citta` di Fiume
 * 2012 - Rifugio Roma
 * Tre Cime di Lavaredo
 * Passo Tre Croci - Rifugio Vandelli - Lago Sorapiss
+* Ferrata Lipella
 * Altavia dei Silenzi (AV 6)
 * 2013-08-03_09 - Dolomiti di Brenta (Lago Tovel -> Malga Flavona -> Passo Groste'
 -> Rifugio Stoppani -> Rifugio Groste' 
