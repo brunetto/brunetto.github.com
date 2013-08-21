@@ -7,4 +7,10 @@
 .. slug: research
 -->
 
-Write your post here.
+## PhD Project
+
+## Master Thesis
+
+## Bachelor Thesis
+
+## Exam works
