@@ -16,7 +16,7 @@ My scout life
 * 2000 - 2002 Noviziato (CM: Val Visdende, Monti Lattari)
 * 2002 - 2005 Clan (Campi: Lourdes, Dolomiti di Brenta, GMG Colonia)
 * 2004 - 2005 RS in servizio in LC
-* 2005 Partenza
+* 2005 Partenza (Zianigo)
 * 2005 - 2010 Aiuto Capo Reparto (CE: )
 * 2009 CFM (Costigiola)
 * 2010 Stage Tracce del Wild (Foreste Casentinesi)
