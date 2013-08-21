@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Easy and fast dust removal in Digikam+Gimp | for further reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for further reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Easy and fast dust removal in Digikam+Gimp</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2012-09-04T00:00:00">2012-09-04 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/digikam.html"><span class="badge badge-info">digikam</span></a>
+        
+            <a class="tag" href="../categories/dust.html"><span class="badge badge-info">dust</span></a>
+        
+            <a class="tag" href="../categories/gimp.html"><span class="badge badge-info">gimp</span></a>
+        
+            <a class="tag" href="../categories/mask.html"><span class="badge badge-info">mask</span></a>
+        
+            <a class="tag" href="../categories/photography.html"><span class="badge badge-info">photography</span></a>
+        
+            <a class="tag" href="../categories/removal.html"><span class="badge badge-info">removal</span></a>
+        
+            <a class="tag" href="../categories/spot.html"><span class="badge badge-info">spot</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>It's a long time I was searching for an easy and fast way to remove dust spot from my photos.  <br>
+Unfortunately it seem that until now no tools like "dust removal mask" or something similar are present in the open-source/linux panorama.  <br>
+But yesterday I've found a <a href="http://dodonov.net/blog/2009/12/29/cleaning-dust-on-photos-or-in-gimp-we-trust/" target="_blank">post</a> explaining how to use a Gimp plugin to easy clean photos from dust spot.  <br>
+It was not exactly what I was searching for but it worked really well.  <br>
+The only thing to to it was to find a way to automatize the task.    </p>
+<!-- TEASER_END -->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<p>After some thinking I've found this way:    </p>
+<ol>
+<li>In Digikam, right-click on the photo and select "Open in Gimp"</li>
+<li>In Gimp:</li>
+<li>Add a new transparent layer (reduce opacity to see the photo's layer)</li>
+<li>Paint on the spots with the brush (this will be our "mask")</li>
+<li>In the layer window select the new layer and click on "Alpha to selection"</li>
+<li>In the layer window selectthe photo's layer</li>
+<li>Ctrl+x to remove dust spot</li>
+<li>Selection-&gt;Grow selection</li>
+<li>Filters-&gt;Map-&gt;Resynthetize</li>
+<li>Save with postfix "_v1" (non destructive editing supported in Digikam)</li>
+<li>Enjoy you photo:)</li>
+</ol>
+<p>This is the result:    </p>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v1.jpg" style="margin-left: auto; margin-right: auto;"><img alt="" class="size-medium wp-image-886" height="200" src="../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v1.jpg" title="JAM-2011-07-27_08-07-Svezia-Jamboree-1432_v1" width="300"></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Image before dust removal</td></tr>
+</tbody></table>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v2.jpg" style="margin-left: auto; margin-right: auto;"><img alt="" class="size-medium wp-image-887" height="200" src="../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v2.jpg" title="JAM-2011-07-27_08-07-Svezia-Jamboree-1432_v2" width="300"></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Image after dust removal</td></tr>
+</tbody></table>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="imagemagick-pcal-calendar.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="second-pelican-attempt-creating-a-blog-on-github-with-pelican.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/easy-and-fast-dust-removal-in-digikamgimp.html";
+        
+        var disqus_title="Easy and fast dust removal in Digikam+Gimp";
+        var disqus_identifier="cache/posts/easy-and-fast-dust-removal-in-digikamgimp.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>

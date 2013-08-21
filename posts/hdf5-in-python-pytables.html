@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>HDF5 in Python: PyTables | for further reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for further reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>HDF5 in Python: PyTables</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2012-05-25T00:00:00">2012-05-25 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/code.html"><span class="badge badge-info">code</span></a>
+        
+            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
+        
+            <a class="tag" href="../categories/hdf5.html"><span class="badge badge-info">HDF5</span></a>
+        
+            <a class="tag" href="../categories/storage.html"><span class="badge badge-info">storage</span></a>
+        
+            <a class="tag" href="../categories/pytables.html"><span class="badge badge-info">PyTables</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p><a href="http://www.hdfgroup.org/HDF5/" target="_blank" title="HDF5 Group homepage">HDF5</a> is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.  <br>
+Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.  <br>
+It's also possible to navigate into a file graphically with <a href="http://vitables.org/" target="_blank" title="ViTables homepage">ViTables</a>.  <br>
+Here I would like to present some of the features I use more often.  <br>
+<!--more-->  <br>
+Open, flush and close a file    </p>
+<div class="code"><pre><span class="kn">import</span> <span class="nn">tables</span> <span class="kn">as</span> <span class="nn">tb</span>
+
+<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openfile</span><span class="p">(</span><span class="s">"filename.h5"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>where <code>'r'</code> means "open the file in read-only mode". It's also possible to open it as <code>'w'</code> (create a new file: it overwrites the file if it still exists) and <code>'a'</code> (append: create if it does not exist, if it exists, read and modify it).    </p>
+<p>Create a group to contain some data    </p>
+<div class="code"><pre><span class="n">group</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createGroup</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="s">"group"</span><span class="p">)</span>
+</pre></div>
+
+
+<p>where <code>h5.root</code> is the location of the new object created (where we want to create the group) and can also be passe as string ("/") and <code>"group"</code> is the string with the name.    </p>
+<p>Store an array    </p>
+<div class="code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">....</span><span class="p">])</span>
+<span class="n">array</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="n">array_to_store</span><span class="p">,</span> <span class="s">'title'</span><span class="p">)</span>
+<span class="n">array</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="n">array_to_store</span><span class="p">,</span> <span class="s">'title'</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Create a table (from <a href="create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</a> or <a href="from-csv-to-hdf5-in-python.html">From .csv to HDF5 in Python</a>    </p>
+<div class="code"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"filename.csv"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c"># or in an equivalent way, if the file dimensions permit to lad the entire file:</span>
+<span class="c"># values = np.genfromtxt("filename.csv", dtype=([('column_1', 'i8'), ('column_2', 'f4'), ('column_3', # 'f4')]), delimiter=',')</span>
+
+<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="s">'filename.h5'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createTable</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">values</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'table_name'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"table_description"</span><span class="p">,</span> <span class="n">expectedrows</span><span class="o">=</span><span class="mi">12158536</span><span class="p">)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+    <span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>It's also possible to walk all the nodes under a group:    </p>
+<div class="code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">h5</span><span class="o">.</span><span class="n">walkNodes</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">i</span>
+</pre></div>
+
+
+<p>and to delete a node/array/table:    </p>
+<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">removeNode</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="s">'name'</span><span class="p">)</span>
+</pre></div>
+
+
+<p>All the nodes are available through their path:    </p>
+<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">)</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+
+<p>to read a table or an array, you can use the function <code>read()</code>    </p>
+<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="essential-guide-to-binning.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="latex-together-with-matplotlib.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="brunettosblog";
+        
+            var disqus_url="brunetto.github.io/posts/hdf5-in-python-pytables.html";
+        
+        var disqus_title="HDF5 in Python: PyTables";
+        var disqus_identifier="cache/posts/hdf5-in-python-pytables.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013         <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by         <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>

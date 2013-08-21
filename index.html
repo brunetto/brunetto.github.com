@@ -237,6 +237,24 @@ following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipyth
         </p></div>
     
         <div class="postbox">
+        <h1><a href="posts/easy-and-fast-dust-removal-in-digikamgimp.html">Easy and fast dust removal in Digikam+Gimp</a></h1>
+        <p style="text-align:right"><big>
+             Posted: 2012-09-04 00:00
+        </big></p>
+        <hr>
+        <div><p>It's a long time I was searching for an easy and fast way to remove dust spot from my photos.  <br>
+Unfortunately it seem that until now no tools like "dust removal mask" or something similar are present in the open-source/linux panorama.  <br>
+But yesterday I've found a <a href="http://dodonov.net/blog/2009/12/29/cleaning-dust-on-photos-or-in-gimp-we-trust/" target="_blank">post</a> explaining how to use a Gimp plugin to easy clean photos from dust spot.  <br>
+It was not exactly what I was searching for but it worked really well.  <br>
+The only thing to to it was to find a way to automatize the task.    </p>
+<p><a href="posts/easy-and-fast-dust-removal-in-digikamgimp.html">Read more...</a></p></div>
+        <p>
+        
+            <a href="posts/easy-and-fast-dust-removal-in-digikamgimp.html#disqus_thread" data-disqus-identifier="cache/posts/easy-and-fast-dust-removal-in-digikamgimp.html">Comments</a>
+        
+        </p></div>
+    
+        <div class="postbox">
         <h1><a href="posts/imagemagick-pcal-calendar.html">Imagemagick + pcal = calendar</a></h1>
         <p style="text-align:right"><big>
              Posted: 2012-08-18 22:34
@@ -251,70 +269,129 @@ following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipyth
         </p></div>
     
         <div class="postbox">
-        <h1><a href="posts/learning-not-to-hate-c-things-worth-nothing.html">Learning not to hate C: things worth nothing</a></h1>
+        <h1><a href="posts/latex-together-with-matplotlib.html">Latex together with matplotlib!</a></h1>
         <p style="text-align:right"><big>
-             Posted: 2012-05-21 00:00
+             Posted: 2012-06-01 00:00
         </big></p>
         <hr>
-        <div><p>Here I would like to post some of the ideas, tricks, truths, and so on I've learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.    </p>
-<p><a href="posts/learning-not-to-hate-c-things-worth-nothing.html">Read more...</a></p></div>
-        <p>
-        
-            <a href="posts/learning-not-to-hate-c-things-worth-nothing.html#disqus_thread" data-disqus-identifier="cache/posts/learning-not-to-hate-c-things-worth-nothing.html">Comments</a>
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2012-05-14 00:00
-        </big></p>
-        <hr>
-        <div><p>I would like to "pin" here a pair of quick solution to everyday problems I encounter manipulating arrays.    </p>
-<p><a href="posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Read more...</a></p></div>
-        <p>
-        
-            <a href="posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html#disqus_thread" data-disqus-identifier="cache/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Comments</a>
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/asterisks-and-python.html">Asterisks and Python</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2012-05-07 00:00
-        </big></p>
-        <hr>
-        <div><p>There are many possible uses of the "*" in Python, to be not confused, this is a brief summary of them.  <br>
-</p><p><a href="posts/asterisks-and-python.html">Read more...</a></p></div>
-        <p>
-        
-            <a href="posts/asterisks-and-python.html#disqus_thread" data-disqus-identifier="cache/posts/asterisks-and-python.html">Comments</a>
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/phd-students-journal-clubs-and-sozi.html">PhD students' Journal Clubs and Sozi</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2012-05-07 00:00
-        </big></p>
-        <hr>
-        <p>Some times ago I have been intrigued by <a href="http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/" title="Infographics attempts!">infographics</a> and different ways of communicating. The first software that catchad my attention was <a href="http://prezi.com/" target="_blank" title="Prezi Homepage">Prezi</a> but its technology (Flash) and the fact that it's no opensource and has a lot of limitations let me move to <a href="http://sozi.baierouge.fr/wiki/en:welcome" target="_blank" title="Sozi Homepage">Sozi</a>, an <a href="http://inkscape.org/" target="_blank" title="Inkscape Homepage">Inkscape</a> extension.   <br>
-I've tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It's purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.    </p>
-<!--more-->
-
-<div class="code"><pre>
+        <p>Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.  <br>
+Everything you need is to add to your script    </p>
+<div class="code"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rc</span>
+<span class="n">rc</span><span class="p">(</span><span class="s">'font'</span><span class="p">,</span><span class="o">**</span><span class="p">{</span><span class="s">'family'</span><span class="p">:</span><span class="s">'sans-serif'</span><span class="p">,</span><span class="s">'sans-serif'</span><span class="p">:[</span><span class="s">'Helvetica'</span><span class="p">]})</span>
+<span class="c">## for Palatino and other serif fonts use:</span>
+<span class="c">#rc('font',**{'family':'serif','serif':['Palatino']))</span>
+<span class="n">rc</span><span class="p">(</span><span class="s">'text'</span><span class="p">,</span> <span class="n">usetex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 
-<p>I've also ported my first JC presentation (that on my PhD project) to Inkscape but loosing part of the beauty of the <a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX)" target="_blank">Beamer</a> original theme.    </p>
-<p>These are the two presentations. Right click and "Open in new tab" will let you able to view the presentations, navigatin with left and right arrows. Mid-click to view the summary and up/down arrow to navigate without any effect.    </p>
-<ul>
-<li><a href="files/first_JC_with_proposal.svg">PhD project presentation</a></li>
-<li><a href="files/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg">JC on the ACT</a></li>
-</ul>
+<p>and write you text label like    </p>
+<div class="code"><pre><span class="n">label</span> <span class="o">=</span> <span class="s">r'theoretical $f(nu)$'</span><span class="p">)</span>
+</pre></div>
         <p>
         
-            <a href="posts/phd-students-journal-clubs-and-sozi.html#disqus_thread" data-disqus-identifier="cache/posts/phd-students-journal-clubs-and-sozi.html">Comments</a>
+            <a href="posts/latex-together-with-matplotlib.html#disqus_thread" data-disqus-identifier="cache/posts/latex-together-with-matplotlib.html">Comments</a>
+        
+        </p></div>
+    
+        <div class="postbox">
+        <h1><a href="posts/hdf5-in-python-pytables.html">HDF5 in Python: PyTables</a></h1>
+        <p style="text-align:right"><big>
+             Posted: 2012-05-25 00:00
+        </big></p>
+        <hr>
+        <p><a href="http://www.hdfgroup.org/HDF5/" target="_blank" title="HDF5 Group homepage">HDF5</a> is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.  <br>
+Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.  <br>
+It's also possible to navigate into a file graphically with <a href="http://vitables.org/" target="_blank" title="ViTables homepage">ViTables</a>.  <br>
+Here I would like to present some of the features I use more often.  <br>
+<!--more-->  <br>
+Open, flush and close a file    </p>
+<div class="code"><pre><span class="kn">import</span> <span class="nn">tables</span> <span class="kn">as</span> <span class="nn">tb</span>
+
+<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openfile</span><span class="p">(</span><span class="s">"filename.h5"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>where <code>'r'</code> means "open the file in read-only mode". It's also possible to open it as <code>'w'</code> (create a new file: it overwrites the file if it still exists) and <code>'a'</code> (append: create if it does not exist, if it exists, read and modify it).    </p>
+<p>Create a group to contain some data    </p>
+<div class="code"><pre><span class="n">group</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createGroup</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="s">"group"</span><span class="p">)</span>
+</pre></div>
+
+
+<p>where <code>h5.root</code> is the location of the new object created (where we want to create the group) and can also be passe as string ("/") and <code>"group"</code> is the string with the name.    </p>
+<p>Store an array    </p>
+<div class="code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">....</span><span class="p">])</span>
+<span class="n">array</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="n">array_to_store</span><span class="p">,</span> <span class="s">'title'</span><span class="p">)</span>
+<span class="n">array</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="n">array_to_store</span><span class="p">,</span> <span class="s">'title'</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Create a table (from <a href="posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</a> or <a href="posts/from-csv-to-hdf5-in-python.html">From .csv to HDF5 in Python</a>    </p>
+<div class="code"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"filename.csv"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c"># or in an equivalent way, if the file dimensions permit to lad the entire file:</span>
+<span class="c"># values = np.genfromtxt("filename.csv", dtype=([('column_1', 'i8'), ('column_2', 'f4'), ('column_3', # 'f4')]), delimiter=',')</span>
+
+<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="s">'filename.h5'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createTable</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">values</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'table_name'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"table_description"</span><span class="p">,</span> <span class="n">expectedrows</span><span class="o">=</span><span class="mi">12158536</span><span class="p">)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+    <span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>It's also possible to walk all the nodes under a group:    </p>
+<div class="code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">h5</span><span class="o">.</span><span class="n">walkNodes</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">i</span>
+</pre></div>
+
+
+<p>and to delete a node/array/table:    </p>
+<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">removeNode</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="s">'name'</span><span class="p">)</span>
+</pre></div>
+
+
+<p>All the nodes are available through their path:    </p>
+<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">)</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+
+<p>to read a table or an array, you can use the function <code>read()</code>    </p>
+<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+        <p>
+        
+            <a href="posts/hdf5-in-python-pytables.html#disqus_thread" data-disqus-identifier="cache/posts/hdf5-in-python-pytables.html">Comments</a>
+        
+        </p></div>
+    
+        <div class="postbox">
+        <h1><a href="posts/essential-guide-to-binning.html">Essential guide to binning</a></h1>
+        <p style="text-align:right"><big>
+             Posted: 2012-05-25 00:00
+        </big></p>
+        <hr>
+        <div><p>Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.  <br>
+It's time to write down some consideration and snippet!    </p>
+<p><a href="posts/essential-guide-to-binning.html">Read more...</a></p></div>
+        <p>
+        
+            <a href="posts/essential-guide-to-binning.html#disqus_thread" data-disqus-identifier="cache/posts/essential-guide-to-binning.html">Comments</a>
         
         </p></div>
     
@@ -323,7 +400,7 @@ I've tried it in making my presentation for the PhD students Journal Club, that 
   
   
     <li class="next">
-        <a href="index-3.html">Older posts  →</a>
+        <a href="index-4.html">Older posts  →</a>
   
 </li></ul>
 
