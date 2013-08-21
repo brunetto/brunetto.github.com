@@ -94,6 +94,9 @@ Rifugio della Selvata -> Malga Andalo -> Molveno -> rifugio Montanara -> Malga S
 * Australia
 * States
 * Japan (maybe in [2015](http://www.23wsj.jp/)?)
+* North Cape
+* Nepal
+* Tahiland
 
 
 
