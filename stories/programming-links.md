@@ -7,6 +7,10 @@
 .. slug: programming-links
 -->
 
+## My system tricks
+
+* [Here](system-tricks.html)
+
 ## Go(lang)
 
 * [Main site](http://golang.org/)
@@ -29,7 +33,7 @@
 * [my Python references](python-references.html)
 
 ## Versioning
-# Git
+## Git
 
 ## Blogging
 
