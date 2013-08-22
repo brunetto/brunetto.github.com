@@ -47,6 +47,7 @@ High school degree of Scientific studies
 the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf))
 * 2007 - Digital data analysis lab. (FSE)
 * 2009 - Photometric and spectroscopic digital analysis lab. (FSE)
+* 2011 - Internship: Technical characterization of the Astrophysical Observatory of Asiago
 * 2012 - "La notte dei ricercatori" (Researcer's night), Padua
 
 ##Schools and Workshops
