@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference...</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Thu, 22 Aug 2013 12:27:26 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AGN for Dummies</title><link>brunetto.github.io/posts/agn-for-dummies.html</link><description>&lt;div&gt;&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
+<rss version="2.0"><channel><title>for future reference...</title><link>brunetto.github.io</link><description>This is a demo site for Nikola.</description><lastBuildDate>Thu, 22 Aug 2013 14:46:17 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AGN for Dummies</title><link>brunetto.github.io/posts/agn-for-dummies.html</link><description>&lt;div&gt;&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/agn-for-dummies.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>AGN</category><category>for Dummies</category><category>infographics</category><category>PhD</category><guid>brunetto.github.io/posts/agn-for-dummies.html</guid><pubDate>Tue, 20 Aug 2013 17:53:15 GMT</pubDate></item><item><title>StarLab-GPU installation</title><link>brunetto.github.io/posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;h3&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h3&gt;
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 &lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;&lt;a href="/posts/starlab-gpu-installation.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>GPU</category><category>simulations</category><category>n-body</category><guid>brunetto.github.io/posts/starlab-gpu-installation.html</guid><pubDate>Tue, 20 Aug 2013 09:34:11 GMT</pubDate></item><item><title>Nvidia drivers</title><link>brunetto.github.io/posts/nvidia-drivers.html</link><description>&lt;div&gt;&lt;p&gt;If you need to install the NVIDIA drivers in your linux box you can encounter 
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="/posts/starlab-gpu-installation.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>GPU</category><category>simulations</category><category>n-body</category><guid>brunetto.github.io/posts/starlab-gpu-installation.html</guid><pubDate>Tue, 20 Aug 2013 09:34:11 GMT</pubDate></item><item><title>Nvidia drivers</title><link>brunetto.github.io/posts/nvidia-drivers.html</link><description>&lt;div&gt;&lt;p&gt;If you need to install the NVIDIA drivers in your linux box you can encounter 
 several problems.  &lt;br&gt;
 Here I try to summarize some useful step.&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/nvidia-drivers.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><guid>brunetto.github.io/posts/nvidia-drivers.html</guid><pubDate>Mon, 19 Aug 2013 10:17:08 GMT</pubDate></item><item><title>Blogging with Nikola + Ipython + Git(Hub)</title><link>brunetto.github.io/posts/blogging-with-nikola-ipython-github.html</link><description>&lt;div&gt;&lt;p&gt;After a lot of different attempts now it seems that I'm able to run a static 
@@ -77,7 +79,8 @@ Everything you need is to add to your script    &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;</description><category>latex</category><category>matplotlib</category><category>Python</category><category>plot</category><category>imported</category><guid>brunetto.github.io/posts/latex-together-with-matplotlib.html</guid><pubDate>Fri, 01 Jun 2012 00:00:00 GMT</pubDate></item><item><title>HDF5 in Python: PyTables</title><link>brunetto.github.io/posts/hdf5-in-python-pytables.html</link><description>&lt;p&gt;&lt;a href="http://www.hdfgroup.org/HDF5/" target="_blank" title="HDF5 Group homepage"&gt;HDF5&lt;/a&gt; is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.  &lt;br&gt;
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.  &lt;br&gt;
 It's also possible to navigate into a file graphically with &lt;a href="http://vitables.org/" target="_blank" title="ViTables homepage"&gt;ViTables&lt;/a&gt;.  &lt;br&gt;
-Here I would like to present some of the features I use more often.  &lt;br&gt;&lt;!--more--&gt;&lt;br&gt;
+Here I would like to present some of the features I use more often.  &lt;br&gt;
+&lt;!--more--&gt;  &lt;br&gt;
 Open, flush and close a file    &lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;tables&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;tb&lt;/span&gt;
 

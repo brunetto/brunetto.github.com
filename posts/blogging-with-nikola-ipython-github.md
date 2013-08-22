@@ -117,6 +117,7 @@ git commit --allow-empty -am "first commit"
 ````bash
 git branch AllBlog
 git checkout AllBlog
+git branch --set-upstream AllBlog origin/AllBlog
 ````
 
 * add, commit and push the blog
