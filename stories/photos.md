@@ -10,12 +10,19 @@
 Some links regarding the world of photography...    
 
 ## Photographers
-
+### Professional
 * [Juza Photo](http://www.juzaphoto.com/home.php?l=it)
 * [Sigfrido Corradi](http://www.sigfridocorradi.net/)
+* [Garry](http://www.flickr.com/photos/garry61/)
 <!--* [Gergo](http://www.flickr.com/photos/pgaalien/) [Antal](http://500px.com/alienart)
 [John Tisbury](johntisbury.deviantart.com)
 -->
+
+### Amateur
+
+* [Enrico Prenna](http://www.flickr.com/photos/enricoprenna/)
+* [Giorgio Ruberti](http://www.flickr.com/photos/giorgio_ruberti/)
+
 ## Sites
 
 + [500px](http://500px.com/)
