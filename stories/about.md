@@ -44,8 +44,8 @@ Here you can also find a link to [my favourite quotes](my-favourite-quotes.html)
 
 This blog is mainly written in [markdown](http://daringfireball.net/projects/markdown/) 
 and [ipynb](http://ipython.org/notebook.html), built with [Nikola](http://nikola.ralsina.com.ar/)
- and served by [GitHub Pages](http://pages.github.com/) at my own domain. 
- Fore more information see [here](../posts/blogging-with-nikola-ipython-github.html).
+ and served by [GitHub Pages](http://pages.github.com/) at my own domain.    
+Fore more information see [here](../posts/blogging-with-nikola-ipython-github.html).
 
 # License
 

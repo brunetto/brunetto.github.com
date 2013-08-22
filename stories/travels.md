@@ -12,14 +12,16 @@ Work in progress...
 # Travels&Holidays
 
 * Gargano (x n, Vieste, Peschici, ...)
-* Egitto, Giordania, Israele
-* 2000-12 - Angola, Luanda
-* Croatia (x n)
-* Greece
-* Corsica
+* 1996 Egitto, Giordania, Israele
+* 1997 Portugal
+* 1999 - Israele
+* 1999-12_2000-01 - Angola, Luanda
+* 2001 - Croatia (x n)
+* 2002 - Greece
+* 2002-08 - Landshut, Medieval Festival
 * 2002 - England (school)
+* 2003 - Corsica
 * 2003 - England (school)
-* Israele
 * Barcelona 
 * 2004 - Barcelona (school trip)
 * London
@@ -40,7 +42,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * 2013- Vietri sul Mare, PhD school - [INFN SOS 2013 - School Of Statistics](http://agenda.infn.it/event/infn-stat-2013)
 
 
-* Landshut, Medieval festival (x2)
+* Landshut, Medieval festival
 * 2012 - Cammino Inglese (Ferrol -> Santiago de Compostela)
 
 # Trips

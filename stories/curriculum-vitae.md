@@ -43,12 +43,12 @@ High school degree of Scientific studies
 
 ## Other
 
-* 2004 - ["Il cielo come laboratorio"](http://www.astro.unipd.it/progettoeducativo/) (Sky as a lab), in collaboration with 
-the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf))
-* 2007 - Digital data analysis lab. (FSE)
-* 2009 - Photometric and spectroscopic digital analysis lab. (FSE)
-* 2011 - Internship: Technical characterization of the Astrophysical Observatory of Asiago
 * 2012 - "La notte dei ricercatori" (Researcer's night), Padua
+* 2011 - Internship: Technical characterization of the Astrophysical Observatory of Asiago
+the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf))
+* 2009 - Photometric and spectroscopic digital analysis lab. (FSE)
+* 2007 - Digital data analysis lab. (FSE)
+* 2004 - ["Il cielo come laboratorio"](http://www.astro.unipd.it/progettoeducativo/) (Sky as a lab), in collaboration with 
 
 ##Schools and Workshops
 * IMPRS Summer School on Computational Astrophysics, 10-14 September 2012, Heidelberg, Germany
@@ -67,7 +67,7 @@ Italian (mother tongue), English (good)
 ###OSs
 [Linux](http://www.ubuntu.org), MacOSX, Windows
 ###Scripting/Programming Languages
-Python, [Go](http://golang.org), Bash, Matlab/Octave, Fortran, C/C++, IDL, ...
+Python, Bash, Matlab/Octave, [Go](http://golang.org), C/C++, Fortran, IDL, ...
 ###Softwares
 LaTeX, Inkscape (+Sozi, TexText), LibreOffice, ImageMagick, Gimp, Blender, Bazaar, Git, ...
 
