@@ -3,7 +3,7 @@
 .. description: 
 .. tags: 
 .. date: 2013/08/22 10:42:45
-.. title: bachelor
+.. title: Bachelor
 .. slug: bachelor
 -->
 
