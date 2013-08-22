@@ -34,7 +34,7 @@ I like:
 * wooden and glass surfaces
 * obviously, to dip my hand into a sack of beans
 * [riding my motorbike](moto.html) [across the Europe with the DDteam](travels.html)
-* [make the computer](system_tricks.html) (work for me](programming-links.html)
+* [make the computer](system_tricks.html) [work for me](programming-links.html)
 * [take photos and experiment with them](photos.html), maybe [create videos](videos.html) or [timelapses](timelapses.html)
 * to be continued...:P
 
