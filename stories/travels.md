@@ -72,6 +72,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * 2004 - Dolomiti di Brenta rifugi
 * Sappada - Val Visdende
 * Trans-Civetta
+* Cascata delle Pile
 * Monti Lattari - Sentiero degli dei (Costiera Amalfitana)
 * 2010 - Foreste casentinesi, Tracce del Wild
 * 2010 - Val Codera
