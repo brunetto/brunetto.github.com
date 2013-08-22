@@ -7,7 +7,7 @@
 .. slug: nvidia-drivers
 -->
 
-If you need to install the NVIDIA drivers in your linux box yourcan encounter 
+If you need to install the NVIDIA drivers in your linux box you can encounter 
 several problems.    
 Here I try to summarize some useful step.
 
