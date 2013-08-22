@@ -13,23 +13,22 @@
 * Mathematical analysis 2 <!--20-->
 * Mathematical analysis 3 <!--21-->
 * Astronomy 1 (sperical astronomy, coordinates, ...) <!--29-->
+* Astronomy 2 (observational astronomy, photometry, ...) <!--27-->
 * Historical astronomy <!--27-->
-* Physics lab 1 <!--28-->
 * Physics 1 <!--30-->
 * Physics 2 <!--30-->
 * Physics 3 <!--30-->
+* Physics lab 1 <!--28-->
+* Physics lab 2 <!--27-->
 * Geometry <!--30-->
 * Computer science
 * Scientific English
 * Descriptive statistics <!--20-->
 * Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, ...) <!--30-->
-* Astronomy 2 (observational astronomy, photometry, ...) <!--27-->
+* Astrophysics 2 (A: spectroscopy, B: stellar structure) <!--27-->
 * Chemistry 1 <!--25-->
 * Chemistry 2 <!--28-->
-* Physics lab 2 <!--27-->
-* Physics 2 <!--30-->
 * Analytical mechanics <!--28-->
-* Astrophysics 2 (A: spectroscopy, B: stellar structure) <!--27-->
 * Complementary astrophysics <!--30-->
 * Cosmology <!--28-->
 * Plasma physics fundamentals <!--26-->
