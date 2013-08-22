@@ -30,16 +30,24 @@ course
 **Research project title:** “The impact of stellar evolution and dynamics on the formation of compact-
 object binaries” under the supervision of Dr. Michela Mapelli and Prof. Giuseppe Tormen
 ###2007-2011
-**Master Thesis in Astronomy** - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
-(108/110): ‘‘Halo-matter cross-correlation in cosmological simulation” under the supervision of
+[**Master Thesis in Astronomy**](master.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
+(108/110): ["Halo-matter cross-correlation in cosmological simulation"](../files/masterThesis.pdf) under the supervision of
 Prof. Giuseppe Tormen and Prof. Ravi K. Sheth
 ###2004-2007
-**Bachelor Thesis in Astronomy** - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
-(103/110): “Studio del profilo dei vortici ottici con diverso momento angolare” (Characterization of
+[**Bachelor Thesis in Astronomy**](bachelor.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
+(103/110): ["Studio del profilo dei vortici ottici con diverso momento angolare"](../files/bachelorThesis.pdf) (Characterization of
 optical vortexes with different angular momentum), under the supervision of Prof. Cesare Barbieri, Dott.
 Fabrizio Tamburini, Gabriele Anzolin
 ###2004
 High school degree of Scientific studies
+
+## Other
+
+* 2004 - ["Il cielo come laboratorio"](http://www.astro.unipd.it/progettoeducativo/) (Sky as a lab), in collaboration with 
+the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf))
+* 2007 - Digital data analysis lab. (FSE)
+* 2009 - Photometric and spectroscopic digital analysis lab. (FSE)
+* 2012 - "La notte dei ricercatori" (Researcer's night), Padua
 
 ##Schools and Workshops
 * IMPRS Summer School on Computational Astrophysics, 10-14 September 2012, Heidelberg, Germany

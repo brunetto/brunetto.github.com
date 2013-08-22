@@ -40,10 +40,15 @@ I like:
 
 Here you can also find a link to [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
 
-<!--<details>
-<summary>-->
+# This blog
+
+This blog is mainly written in [markdown](http://daringfireball.net/projects/markdown/) 
+and [ipynb](http://ipython.org/notebook.html), built with [Nikola](http://nikola.ralsina.com.ar/)
+ and served by [GitHub Pages](http://pages.github.com/) at my own domain. 
+ Fore more information see [here](../posts/blogging-with-nikola-ipython-github.html).
+
 # License
-<!--</summary>-->
+
 I'm quite a lazy person in some things. One of these is the license question.
 
 For now you can think about all the material I post here as covered by some kind 
@@ -52,4 +57,3 @@ for free but I would like if you cite me as reference!
 
 Moreover, I try to put references for things I found anywhere and post here, 
 if you have any doubt or you find my citations wrong, feel free to ask me!:)
-<!--</details>-->

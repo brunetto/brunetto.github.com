@@ -11,7 +11,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2011/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -21,7 +21,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2012/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2013/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -506,7 +506,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/galleries/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -541,7 +541,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/listings/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -561,7 +561,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/blogging-with-nikola-ipython-github.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -576,27 +576,27 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-3-force-calculation.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-4-moving-the-particles.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-5-initial-conditions.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-6-adding-gas.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/cosmological-simulations-7-limitations-and-some-considerations.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -611,7 +611,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/create-your-own-wikipedia.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -626,22 +626,22 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/from-binaries-to-hdf5-using-python.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/from-csv-to-hdf5-in-python.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/gif2-files-python-reader.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/gif2-substructures-coordinates-correction.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -656,7 +656,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/infographics-attempts.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -681,37 +681,37 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/loadleveler-quick-howto.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/my-first-gadget2-tests.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/never-never-never.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/nvidia-drivers.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/parameter-space-parallel-exploration-in-python.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/phd-question-1-m.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/phd-question-2-spherical-collapse.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -721,22 +721,22 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/phd-question-4-calculate-the-value-of-m.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/phd-students-journal-clubs-and-sozi.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/python-cli-and-configuration-file-parser.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/posts/python-logging.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -746,7 +746,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/posts/python-slicing-rebinning-and-indexing.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -775,13 +775,18 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunetto.github.io/stories/bachelor.html</loc>
+  <lastmod>2013-08-22</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunetto.github.io/stories/c-references.html</loc>
   <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/stories/curriculum-vitae.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -791,6 +796,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/stories/golang-references.html</loc>
+  <lastmod>2013-08-22</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/master.html</loc>
   <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -806,12 +816,12 @@
  </url>
  <url>
   <loc>brunetto.github.io/stories/my-favourite-phd-comics.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/stories/my-favourite-quotes.html</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
