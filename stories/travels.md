@@ -89,7 +89,7 @@ Rifugio della Selvata -> Malga Andalo -> Molveno -> rifugio Montanara -> Malga S
 -> Sella del Montoz -> Malga Campa -> Lago Tovel)
 * 2013-08-15 - Rifugio Scotter-Palatini -> Rifugio San Marco -> Rifugio Galassi
 
-## Upcoming travels or places I would like to visit
+# Upcoming travels or places I would like to visit
 
 * Australia
 * States
@@ -98,6 +98,9 @@ Rifugio della Selvata -> Malga Andalo -> Molveno -> rifugio Montanara -> Malga S
 * Nepal
 * Thailand
 
-
-
+# Sites
+* [4 passi e un click](http://4passie1click.jimdo.com/)
+* [Rifugi e bivacchi](http://www.rifugi-bivacchi.com/it/default.aspx)
+* [Magico Veneto](http://www.magicoveneto.it/)
+ 
 
