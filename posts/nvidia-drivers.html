@@ -1,4 +1,12 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><title>Nvidia drivers | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Nvidia drivers | for future reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,9 +17,39 @@
             styles: {'.MathJax_Display': {"margin": 0}}
         }
     });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -29,7 +67,11 @@
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../archive.html">Archives</a>
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
         
     
         
@@ -45,12 +87,24 @@
         
     
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunetto.github.io"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
                 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -66,7 +120,8 @@
     <h1>Nvidia drivers</h1>
     
 
-    <hr><small>
+    <hr>
+    <small>
         Posted: <time class="published" datetime="2013-08-19T10:17:08">2013-08-19 10:17</time>
         
     
@@ -80,13 +135,15 @@
     
 
     </small>
-    <hr><p>If you need to install the NVIDIA drivers in your linux box you can encounter 
+    <hr>
+    <p>If you need to install the NVIDIA drivers in your linux box you can encounter 
 several problems.  <br>
 Here I try to summarize some useful step.</p>
 <!-- TEASER_END -->
 
 <p>First of all try to install the distribution packages, likely something like:    </p>
-<ul><li>libcublas4                      - NVIDIA CUDA BLAS runtime library</li>
+<ul>
+<li>libcublas4                      - NVIDIA CUDA BLAS runtime library</li>
 <li>libcudart4                      - NVIDIA CUDA runtime library</li>
 <li>libcufft4                       - NVIDIA CUDA FFT runtime library</li>
 <li>libcurand4                      - NVIDIA CUDA Random Numbers Generation runt</li>
@@ -102,37 +159,46 @@ Here I try to summarize some useful step.</p>
 <li>nvidia-opencl-dev               - NVIDIA OpenCL development files</li>
 <li>nvidia-settings                 - Transitional package for nvidia-settings</li>
 <li>nvidia-settings-updates         - Transitional package for nvidia-settings-u     </li>
-</ul><p>If this fails, ty remove all the installed packages and driver and install that 
+</ul>
+<p>If this fails, ty remove all the installed packages and driver and install that 
 from the NVIDIA site:    </p>
-<ul><li>
+<ul>
+<li>
 <p>Download the <a href="http://www.nvidia.com/object/linux-display-amd64-310.40-driver.html">NVIDIA drivers</a>
 and the <a href="https://developer.nvidia.com/cuda-downloads">latest CUDA installers</a></p>
 </li>
 <li>
 <p>stop the X server with    </p>
 </li>
-</ul><div class="code"><pre>sudo service lightdm stop
+</ul>
+<div class="code"><pre>sudo service lightdm stop
 </pre></div>
 
 
-<ul><li>find them with     </li>
-</ul><div class="code"><pre>aptitude search <span class="s1">'~i'</span> | grep <span class="s2">"nvidia\|cuda\|libcu"</span> | grep -v <span class="s2">"kwin\|cups\|curl"</span>
+<ul>
+<li>find them with     </li>
+</ul>
+<div class="code"><pre>aptitude search <span class="s1">'~i'</span> | grep <span class="s2">"nvidia\|cuda\|libcu"</span> | grep -v <span class="s2">"kwin\|cups\|curl"</span>
 </pre></div>
 
 
 <p>and check they are the installed packages and there are no other packages</p>
-<ul><li>remove them with     </li>
-</ul><div class="code"><pre>sudo aptitude --purge &lt;packages names&gt;
+<ul>
+<li>remove them with     </li>
+</ul>
+<div class="code"><pre>sudo aptitude --purge &lt;packages names&gt;
 </pre></div>
 
 
-<ul><li>
+<ul>
+<li>
 <p>blacklist all the modules that can interfere:    </p>
 </li>
 <li>
 <p>in /etc/modprobe.d/blacklist.conf insert</p>
 </li>
-</ul><div class="code"><pre>blacklist amd76x_edac
+</ul>
+<div class="code"><pre>blacklist amd76x_edac
 blacklist vga16fb
 blacklist nouveau
 blacklist lbm-nouveau
@@ -142,8 +208,10 @@ blacklist rivatv
 </pre></div>
 
 
-<ol><li>in /etc/modprobe.d/blacklist-nouveau.conf insert</li>
-</ol><div class="code"><pre>blacklist nouveau
+<ol>
+<li>in /etc/modprobe.d/blacklist-nouveau.conf insert</li>
+</ol>
+<div class="code"><pre>blacklist nouveau
 options nouveau <span class="nv">modeset</span><span class="o">=</span>0
 blacklist lbm-nouveau
 <span class="nb">alias </span>nouveau off
@@ -151,18 +219,23 @@ blacklist lbm-nouveau
 </pre></div>
 
 
-<ol><li>in /etc/default/grub insert</li>
-</ol><div class="code"><pre><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">"quiet splash nomodeset"</span>
+<ol>
+<li>in /etc/default/grub insert</li>
+</ol>
+<div class="code"><pre><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">"quiet splash nomodeset"</span>
 </pre></div>
 
 
-<ol><li>then run </li>
-</ol><div class="code"><pre>sudo update-grub
+<ol>
+<li>then run </li>
+</ol>
+<div class="code"><pre>sudo update-grub
 sudo update-initramfs -u
 </pre></div>
 
 
-<ul><li>
+<ul>
+<li>
 <p>see also <a href="http://blog.bloemsaat.com/2013/03/17/installing-cuda-on-ubuntu-13-04-raring-ringtail/">here</a></p>
 </li>
 <li>
@@ -172,18 +245,26 @@ instructions</p>
 <li>
 <p>in /etc/modprobe.d/nvidia-installer-disable-nouveau.conf the NVIDIA installer should insert</p>
 </li>
-</ul><div class="code"><pre>blacklist nouveau
+</ul>
+<div class="code"><pre>blacklist nouveau
 options nouveau <span class="nv">modeset</span><span class="o">=</span>0
 </pre></div>
 
 
-<ul><li>install some more libs</li>
-</ul><div class="code"><pre>sudo apt-get install freeglut3-dev libxi-dev libxmu-dev
+<ul>
+<li>install some more libs</li>
+</ul>
+<div class="code"><pre>sudo apt-get install freeglut3-dev libxi-dev libxmu-dev
 </pre></div>
 
 
-<ul><li>reboot</li>
-</ul><ul class="pager"><li class="previous">
+<ul>
+<li>reboot</li>
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
             <a href="blogging-with-nikola-ipython-github.html">← Previous post</a>
         </li>
     
@@ -192,7 +273,12 @@ options nouveau <span class="nv">modeset</span><span class="o">=</span>0
             <a href="starlab-gpu-installation.html">Next post →</a>
         </li>
     
-    </ul><div id="disqus_thread"></div>
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="brunettosblog";
         
@@ -208,7 +294,8 @@ options nouveau <span class="nv">modeset</span><span class="o">=</span>0
             dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
@@ -234,5 +321,22 @@ options nouveau <span class="nv">modeset</span><span class="o">=</span>0
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>

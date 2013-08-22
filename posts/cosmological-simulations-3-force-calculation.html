@@ -1,4 +1,12 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><title>Cosmological simulations #3: force calculation! | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Cosmological simulations #3: force calculation! | for future reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,9 +17,39 @@
             styles: {'.MathJax_Display': {"margin": 0}}
         }
     });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -29,7 +67,11 @@
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../archive.html">Archives</a>
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
         
     
         
@@ -45,12 +87,24 @@
         
     
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunetto.github.io"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
                 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -66,7 +120,8 @@
     <h1>Cosmological simulations #3: force calculation!</h1>
     
 
-    <hr><small>
+    <hr>
+    <small>
         Posted: <time class="published" datetime="2011-11-13T00:00:00">2011-11-13 00:00</time>
         
     
@@ -88,7 +143,8 @@
     
 
     </small>
-    <hr><p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
+    <hr>
+    <p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
 Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.    </p>
 <!-- TEASER_END -->
 
@@ -114,25 +170,36 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
 <h4>P3M: particle-particle+particle-mesh</h4>
 <p>The idea is to add a correction to the force calculated with the PM method by using the PP method on the closest particles. The correction is assumed to be isotropic and depend only upon the distance. Usually it's considered a distance of the order of 2 times the internode mesh distance. This method has been parallelized but with some problems, also because load balancing is quite difficult to achieve.</p>
 <p>Some other problems are:    </p>
-<ul><li>the correction to the force is isotropic but the PM method has anisotropies at small scales</li>
+<ul>
+<li>the correction to the force is isotropic but the PM method has anisotropies at small scales</li>
 <li>the correction is at scales up to 2 times the grid scale but the PM method underestimate the force on scales larger than these</li>
 <li>the refined interparticle softening is at scales smaller than the interparticle separation and this can lead to two-body scattering and relaxation</li>
 <li>P3M simulations slow down at late times when the distribution of particles becomes highly clustered because the short range force dominate the compute operations    </li>
-</ul><h4>Tree+PM: TPM</h4>
+</ul>
+<h4>Tree+PM: TPM</h4>
 <p>Some hybrid codes has been developed trying to combine the PM and the Tree methods:    </p>
-<ul><li>The Grid of Trees PM (GOTPM)replaces the PP part of P3M with a local tree in each region. This resolve only the last problem of the P3M.</li>
+<ul>
+<li>The Grid of Trees PM (GOTPM)replaces the PP part of P3M with a local tree in each region. This resolve only the last problem of the P3M.</li>
 <li>TPM correct the short range force only if the particle is in a highly dense region and with a tree to compute the forces.</li>
 <li>TreePM divide the force in long-range and short-range instead of correcting the PM force at a certain scale, greater than that of the P3M. The short-range forces are calculated with a global tree.</li>
 <li>The Adaptive TreePM (ATreePM) try to resolve the two-body relaxation and scattering using an adaptive softening length, determined by the local density. To ensure momentum conservation force is simmetrized for particles closer than the softening length. The softening correspond to consider the particles with a density profile and not only mass points and if the softening length is different for two close particles, the force they feel is different between them. This happens  because particle A feel a force due to its entire mass and a certain fraction of particle B mass, but particle B feels a force due to its own mass and a different fraction of the mass of particle A. In this case the forces are symmetrized taking the mean of the two forces.</li>
-</ul><p>To compare different methods we can consider:    </p>
-<ul><li>The dynamic range, that is the range of scales over which the force is computed reliably. Usually the limit is at small scales rather than at large scales.</li>
+</ul>
+<p>To compare different methods we can consider:    </p>
+<ul>
+<li>The dynamic range, that is the range of scales over which the force is computed reliably. Usually the limit is at small scales rather than at large scales.</li>
 <li>The code should integrate the equation of motion in a reproducible way and momentum should be conserved.</li>
 <li>The code should be efficient and run with the minimum possible time</li>
 <li>Requirement of memory and other resources.</li>
-</ul><p><em>References</em>:</p>
-<ul><li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+</ul>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
 <li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
-</ul><ul class="pager"><li class="previous">
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
             <a href="cosmological-simulations-4-moving-the-particles.html">← Previous post</a>
         </li>
     
@@ -141,7 +208,12 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
             <a href="cosmological-simulations-5-initial-conditions.html">Next post →</a>
         </li>
     
-    </ul><div id="disqus_thread"></div>
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="brunettosblog";
         
@@ -157,7 +229,8 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
             dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
@@ -183,5 +256,22 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>

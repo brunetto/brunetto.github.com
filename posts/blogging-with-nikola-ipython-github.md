@@ -119,6 +119,7 @@ git branch AllBlog
 git checkout AllBlog
 git branch --set-upstream AllBlog origin/AllBlog
 ````
+the last passage is taken from [here](http://stackoverflow.com/questions/13886042/git-branches-tracking-upstream)
 
 * add, commit and push the blog
 ````bash

@@ -1,4 +1,12 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><title>Cosmological simulations: #4: Moving the particles! | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <title>Cosmological simulations: #4: Moving the particles! | for future reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,9 +17,39 @@
             styles: {'.MathJax_Display': {"margin": 0}}
         }
     });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -29,7 +67,11 @@
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../archive.html">Archives</a>
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
         
     
         
@@ -45,12 +87,24 @@
         
     
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunetto.github.io"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunetto.github.io">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
                 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -66,9 +120,18 @@
     <h1>Cosmological simulations: #4: Moving the particles!</h1>
     
 
-    <hr><small>
-        Posted: <time class="published" datetime="2011-11-13T00:00:00">2011-11-13 00:00</time></small>
-    <hr><h4>Equations of motion</h4>
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2011-11-13T00:00:00">2011-11-13 00:00</time>
+        
+    
+
+        
+    
+
+    </small>
+    <hr>
+    <h4>Equations of motion</h4>
 <p>Once we have learned how to calculate gravitational forces and decided which way is best for us, it's time to move particles according to the force field.  <br>
 To have an idea of what happens we can look at a simplified version of the pp-method, where the new coordinates and velocities are expressed starting from the previous values:    </p>
 <p>$\mathbf{v}_i^{new}=\mathbf{v}_i^{old}+\frac{\mathbf{F}_i}{m_i}\Delta t$
@@ -84,13 +147,20 @@ Usually to integrate (read it as "to solve"!:P) the equations and obtain the new
 <p>Choosing the simulation time step, that is the intervals between two calculation of positions and/or velocities, is crucial both for performances of the code and errors generation. Shorter time steps give smaller errors, but slow down the simulation.  <br>
 Time steps depend on the distribution of particles and may change during the evolution of the simulation. Use of individual time steps for each particle may speed up calculations, because we can tune the time step on for different particles, increasing the time resolution for particles in denser regions and decreasing it in low density regions. In this way larger $\Delta t$ are sufficient. When we decide the time step we have also to take care of the conservation of momentum and evolution of energy if it's not conserved (it can evolve according to the Irvine-Layzer equation).  <br>
 There are different possibility for how to calculate the time step, for example:    </p>
-<ul><li>we can take care of the validity of the Irvine-Layzer during the simulation; in this case we have to compute the force at mesh points and then interpolate it at particles positions but, because the force doesn't equal the gradient of the potential and the correction requires a direct sum on all the particles, this is not a good method</li>
+<ul>
+<li>we can take care of the validity of the Irvine-Layzer during the simulation; in this case we have to compute the force at mesh points and then interpolate it at particles positions but, because the force doesn't equal the gradient of the potential and the correction requires a direct sum on all the particles, this is not a good method</li>
 <li>we can look at the convergence of velocities and final positions of particles using different time steps: reducing their duration we should approach the correct values</li>
 <li>the reproducibility of initial conditions may be it's the most stringent criterion because it ensures that the results are correct: under certain conditions (linearity) running the particles forward and then back again we should get back the initial positions    </li>
-</ul><p><em>References</em>:</p>
-<ul><li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+</ul>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
 <li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
-</ul><ul class="pager"><li class="previous">
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
             <a href="phd-question-1-m.html">← Previous post</a>
         </li>
     
@@ -99,7 +169,12 @@ There are different possibility for how to calculate the time step, for example:
             <a href="cosmological-simulations-3-force-calculation.html">Next post →</a>
         </li>
     
-    </ul><div id="disqus_thread"></div>
+    </ul>
+
+    
+        
+    
+        <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="brunettosblog";
         
@@ -115,7 +190,8 @@ There are different possibility for how to calculate the time step, for example:
             dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
@@ -141,5 +217,22 @@ There are different possibility for how to calculate the time step, for example:
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
