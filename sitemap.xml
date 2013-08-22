@@ -11,7 +11,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2011/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -21,7 +21,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2012/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2013/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -506,7 +506,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/galleries/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -541,7 +541,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/listings/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -781,6 +781,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/stories/c-references.html</loc>
+  <lastmod>2013-08-22</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/cooking.html</loc>
   <lastmod>2013-08-22</lastmod>
   <priority>0.5000</priority>
  </url>
