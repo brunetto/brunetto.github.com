@@ -25,7 +25,8 @@ Some links regarding the world of photography...
 
 ## Sites
 
-+ [500px](http://500px.com/)
+* [Flickr](http://www.flickr.com/)
+* [500px](http://500px.com/)
 
 ## HDR/blending
 
