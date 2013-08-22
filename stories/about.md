@@ -9,7 +9,7 @@
 
 # For further reference...
 
-... is the main reason because I try to keep this blog alive! Just to save knowledge about things I find usefull to have them when they are needed again.    
+... is the main reason because I try to keep this blog alive! Just to save knowledge about things I find useful to have them when they are needed again.    
 The second is just... to do it because I like the "technology" behind it!:P
 
 
