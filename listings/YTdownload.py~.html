@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><title>System tricks | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content="YTdownload.py~"><meta name="author" content="brunetto"><title>YTdownload.py~ | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -37,7 +37,7 @@
         
     
         
-            </li><li><a href="about.html">About</a>
+            </li><li><a href="../stories/about.html">About</a>
         
     
         
@@ -61,24 +61,57 @@
     <div class="span2"></div>
     <div class="span8">
     
-
-    <h1>System tricks</h1>
-
-    <h3>Searching</h3>
-<ul><li><code>grep -H '&lt;string&gt;' *.&lt;ext&gt;</code></li>
-<li><code>grep -r "&lt;strings&gt;" ./</code></li>
-<li><code>sudo updatedb &amp;&amp; locate &lt;nomefile&gt;</code></li>
-</ul><h3>Download</h3>
-<ul><li>download music from youtube</li>
-</ul><div class="code"><pre>youtube-dl --extract-audio --audio-format<span class="o">=</span>mp3 &lt;youtubeLink&gt;
+<ul class="breadcrumb"><li><a href=".">/ listings</a>
+    
+        </li><li><a href="#">/ YTdownload.py~.html</a>
+    
+</li></ul><table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="YTdownload.py~.html#ytdownloadpy-1"> 1</a>
+<a href="YTdownload.py~.html#ytdownloadpy-2"> 2</a>
+<a href="YTdownload.py~.html#ytdownloadpy-3"> 3</a>
+<a href="YTdownload.py~.html#ytdownloadpy-4"> 4</a>
+<a href="YTdownload.py~.html#ytdownloadpy-5"> 5</a>
+<a href="YTdownload.py~.html#ytdownloadpy-6"> 6</a>
+<a href="YTdownload.py~.html#ytdownloadpy-7"> 7</a>
+<a href="YTdownload.py~.html#ytdownloadpy-8"> 8</a>
+<a href="YTdownload.py~.html#ytdownloadpy-9"> 9</a>
+<a href="YTdownload.py~.html#ytdownloadpy-10">10</a>
+<a href="YTdownload.py~.html#ytdownloadpy-11">11</a>
+<a href="YTdownload.py~.html#ytdownloadpy-12">12</a>
+<a href="YTdownload.py~.html#ytdownloadpy-13">13</a>
+<a href="YTdownload.py~.html#ytdownloadpy-14">14</a>
+<a href="YTdownload.py~.html#ytdownloadpy-15">15</a>
+<a href="YTdownload.py~.html#ytdownloadpy-16">16</a>
+<a href="YTdownload.py~.html#ytdownloadpy-17">17</a>
+<a href="YTdownload.py~.html#ytdownloadpy-18">18</a>
+<a href="YTdownload.py~.html#ytdownloadpy-19">19</a>
+<a href="YTdownload.py~.html#ytdownloadpy-20">20</a>
+<a href="YTdownload.py~.html#ytdownloadpy-21">21</a>
+<a href="YTdownload.py~.html#ytdownloadpy-22">22</a>
+<a href="YTdownload.py~.html#ytdownloadpy-23">23</a></pre></div></td><td class="code"><div class="code"><pre><a name="ytdownloadpy-1"></a>#!/usr/bin/env python
+<a name="ytdownloadpy-2"></a># -*- coding: utf8 -*- 
+<a name="ytdownloadpy-3"></a>
+<a name="ytdownloadpy-4"></a>import os, time
+<a name="ytdownloadpy-5"></a>tt = time.time()
+<a name="ytdownloadpy-6"></a>inFileName = "videos.dat"
+<a name="ytdownloadpy-7"></a>inFile = open(inFileName, 'r')
+<a name="ytdownloadpy-8"></a>
+<a name="ytdownloadpy-9"></a>print "Start video download loop"
+<a name="ytdownloadpy-10"></a>print "Serial version, parallel is work in progress!:P"
+<a name="ytdownloadpy-11"></a>for line in inFile:
+<a name="ytdownloadpy-12"></a>	name, video = line.split(',')
+<a name="ytdownloadpy-13"></a>	print "========================================"
+<a name="ytdownloadpy-14"></a>	#print "Downloading ", name
+<a name="ytdownloadpy-15"></a>	print "========================================"
+<a name="ytdownloadpy-16"></a>	downloadCmd = 'youtube-dl --extract-audio --audio-format=mp3 '+ videos
+<a name="ytdownloadpy-17"></a>	
+<a name="ytdownloadpy-18"></a>	#downloadCmd = 'youtube-dl -o ./videos/'+name+'.flv "'+video+'"'
+<a name="ytdownloadpy-19"></a>	#os.system(downloadCmd)
+<a name="ytdownloadpy-20"></a>	#print "Converting to mp3..."
+<a name="ytdownloadpy-21"></a>	#convertCommand = 'avconv -i ./videos/'+name+'.flv ./mp3/'+name+'.mp3'
+<a name="ytdownloadpy-22"></a>	#os.system(convertCommand)
+<a name="ytdownloadpy-23"></a>print "Done in ", time.time()-tt
 </pre></div>
-
-
-<p>for example:  <br>
-.. listing:: YTdownload.py python</p>
-
-
-    </div>
+</td></tr></table></div>
     </div>
     <!--End of body content-->
 </div>
