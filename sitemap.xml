@@ -541,7 +541,17 @@
  </url>
  <url>
   <loc>brunetto.github.io/listings/</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-08-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/listings/YTdownload.py.html</loc>
+  <lastmod>2013-08-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/listings/YTdownload.py~.html</loc>
+  <lastmod>2013-08-23</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -856,7 +866,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/stories/system-tricks.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-23</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
