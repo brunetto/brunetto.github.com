@@ -61,7 +61,6 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * 2005 - Reggio Emilia, Concerto Ligabue @ Campovolo
 * 2009 - Asiago -> Passo dello Stelvio -> Varese
 * 2010-10-02_03 - Bracciano, FIS Jamboree meeting
-* 2010 - Colico
 * 2011 - Bari, Staff Jamboree
 * 2012 - Brescia, Forum nazionale R/S - Lancio route nazionale
 * 2012 - ???, New Year Eve
@@ -80,7 +79,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * Cascata delle Pile
 * [Monti Lattari - Sentiero degli dei (Costiera Amalfitana)](monti-lattari.html)
 * 2010 - Foreste casentinesi, Tracce del Wild
-* 2010 - Val Codera
+* 2010 - Val Codera/Colico
 * Rifiugio Citta` di Fiume
 * 2012 - Rifugio Roma
 * Tre Cime di Lavaredo
