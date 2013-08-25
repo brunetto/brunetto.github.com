@@ -19,16 +19,16 @@ Work in progress...
 * 2001 - Croatia (x n)
 * 2002 - Greece
 * 2002-08 - Landshut, Medieval Festival
-* 2002 - England (school)
+* 2002 - [England (school)](london.html)
 * 2003 - Corsica
-* 2003 - England (school)
-* Barcelona 
-* 2004 - Barcelona (school trip)
-* London
-* Netherlands (Breda, Amsterdam, Rotterdam)
+* 2003 - [England (school)](london.html)
+* [Barcelona](barcelona.html)
+* 2004 - [Barcelona (school trip)](barcelona.html)
+* [London](london.html)
+* [Netherlands (Breda, Amsterdam, Rotterdam)](netherlands.html)
 * 2004-08 - Kenya, Nairobi - Ol Moran - Isiolo
 * 2005 - GMG Koln
-* 2005-07 - Spain, Camino de Santiago (Burgos -> Santiago de Compostela)
+* 2005-07 - [Spain, Camino de Santiago](camino-de-santiago.html) (Burgos -> Santiago de Compostela)
 * 2010? Paris-Mont Saint-Michel (scout)
 * 2010 - DDT on the Orient Express Path, Venezia -> Lubjana -> Belgrado -> Sofia -> Istanbul -> Meteore -> Igoumenitsa
 * 2011-06 - Hatfield, St. Albans, London, Oxford
@@ -68,14 +68,14 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * 2012 - Reggio Emilia, Campovolo, Italia Loves Emilia concert
 
 # Trekking
-
-* 2001 - Val Visdende
+([Routes](routes.html))
+* 2001 - [Val Visdende](italia-austria.html)
 * 2004 - Dolomiti di Brenta
 * 2004 - Dolomiti di Brenta rifugi
 * Sappada - Val Visdende
 * Trans-Civetta
 * Cascata delle Pile
-* Monti Lattari - Sentiero degli dei (Costiera Amalfitana)
+* [Monti Lattari - Sentiero degli dei (Costiera Amalfitana)](monti-lattari.html)
 * 2010 - Foreste casentinesi, Tracce del Wild
 * 2010 - Val Codera
 * Rifiugio Citta` di Fiume
@@ -84,7 +84,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * Passo Tre Croci - Rifugio Vandelli - Lago Sorapiss
 * Ferrata Lipella
 * Altavia dei Silenzi (AV 6)
-* 2013-08-03_09 - Dolomiti di Brenta (Lago Tovel -> Malga Flavona -> Passo Groste'
+* 2013-08-03_09 - [Dolomiti di Brenta](dolomiti-di-brenta-lago-di-tovel.html) (Lago Tovel -> Malga Flavona -> Passo Groste'
 -> Rifugio Stoppani -> Rifugio Groste' 
 -> lago di Spinale e malghe di Boch -> Rifugio Brentei
 -> Bocca di Brenta -> Rifugi Tosa/Pedrotti -> 
@@ -100,6 +100,7 @@ Rifugio della Selvata -> Malga Andalo -> Molveno -> rifugio Montanara -> Malga S
 * North Cape
 * Nepal
 * Thailand
+* India
 
 # Sites
 * [4 passi e un click](http://4passie1click.jimdo.com/)

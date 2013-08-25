@@ -24,9 +24,9 @@ See the [research](research.html) page for more information.
 My master thesis was about creating a Python code to calculate the two point correlation 
 function for dark matter haloes, subhaloes and dark matter, and apply it to the Millenium II simulation outputs.    
 I'm also a [scout](scout.html) leader in the AGESCI association, a [traveller](travels.html)
-(by [moto](moto.html), feet, by airplane, ...), a "failed" [musician](music.html)
- and a [registered linux user](https://linuxcounter.net) 
+(by [moto](moto.html), feet, by airplane, ...) and a [registered linux user](https://linuxcounter.net) 
 with registration number [508678](http://linuxcounter.net/user/508678.html).    
+I'm still try to [play an instrument](music.html)!:P
 Sometimes I [try to do something in the kitchen](cooking.html) without create a black hole
 or violating any nature law!:P
 
@@ -40,7 +40,8 @@ I like:
 * [take photos and experiment with them](photos.html), maybe [create videos](videos.html) or [timelapses](timelapses.html)
 * to be continued...:P
 
-Here you can also find a link to [my favourite quotes](my-favourite-quotes.html) and [PhD Comics](my-favourite-phd-comics.html).
+Here you can also find a link to [my favourite quotes](my-favourite-quotes.html), [PhD Comics](my-favourite-phd-comics.html)
+ and my [wish-list.html].
 
 # This blog
 
