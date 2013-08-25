@@ -18,7 +18,7 @@ Work in progress...
 * 1999-12_2000-01 - Angola, Luanda
 * 2001 - Croatia (x n)
 * 2002 - Greece
-* 2002-08 - Landshut, Medieval Festival
+* 2002-08 - [Landshut, Medieval Festival](http://www.landshuter-hochzeit.de/en/)
 * 2002 - [England (school)](london.html)
 * 2003 - Corsica
 * 2003 - [England (school)](london.html)
@@ -66,9 +66,12 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * 2012 - Brescia, Forum nazionale R/S - Lancio route nazionale
 * 2012 - ???, New Year Eve
 * 2012 - Reggio Emilia, Campovolo, Italia Loves Emilia concert
+* 2013-08-24_25 - Bergamo
 
 # Trekking
-([Routes](routes.html))
+
+([Routes](routes.html))    
+
 * 2001 - [Val Visdende](italia-austria.html)
 * 2004 - Dolomiti di Brenta
 * 2004 - Dolomiti di Brenta rifugi
