@@ -69,8 +69,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 
 # Trekking
 
-([Routes](routes.html))    
-
+* ([Routes page](routes.html))
 * 2001 - [Val Visdende](italia-austria.html)
 * 2004 - Dolomiti di Brenta
 * 2004 - Dolomiti di Brenta rifugi
