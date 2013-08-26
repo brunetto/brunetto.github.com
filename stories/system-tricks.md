@@ -7,6 +7,12 @@
 .. slug: system-tricks
 -->
 
+## System
+
+Now I'm working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
+ and a Ubuntu 13.04 Dell Laptop.    
+See [here](system.html) for a list of installed packages and settings.
+
 ## Searching
 
 * `grep -H '<string>' *.<ext>`

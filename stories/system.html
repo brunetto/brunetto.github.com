@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>System tricks | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>System | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -62,47 +62,15 @@
     <div class="span8">
     
 
-    <h1>System tricks</h1>
+    <h1>System</h1>
 
-    <h3>System</h3>
-<p>Now I'm working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
- and a Ubuntu 13.04 Dell Laptop.  <br>
-See <a href="system.html">here</a> for a list of installed packages and settings.</p>
-<h3>Searching</h3>
-<ul><li><code>grep -H '&lt;string&gt;' *.&lt;ext&gt;</code></li>
-<li><code>grep -r "&lt;strings&gt;" ./</code></li>
-<li><code>sudo updatedb &amp;&amp; locate &lt;nomefile&gt;</code></li>
-</ul><h3>Download</h3>
-<ul><li>download music from youtube</li>
-</ul><div class="code"><pre>youtube-dl --extract-audio --audio-format<span class="o">=</span>mp3 &lt;youtubeLink&gt;
-</pre></div>
-
-
-<p>for example:    </p>
-<div class="code"><pre><span class="c">#!/usr/bin/env python</span>
-<span class="c"># -*- coding: utf8 -*- </span>
-
-<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">time</span>
-<span class="n">tt</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="n">inFileName</span> <span class="o">=</span> <span class="s">"videos.dat"</span>
-<span class="n">inFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">inFileName</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
-
-<span class="k">print</span> <span class="s">"Start video download loop"</span>
-<span class="k">print</span> <span class="s">"Serial version, parallel is work in progress!:P"</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">inFile</span><span class="p">:</span>
-    <span class="n">name</span><span class="p">,</span> <span class="n">video</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">','</span><span class="p">)</span>
-    <span class="k">print</span> <span class="s">"========================================"</span>
-    <span class="c">#print "Downloading ", name</span>
-    <span class="k">print</span> <span class="s">"========================================"</span>
-    <span class="n">downloadCmd</span> <span class="o">=</span> <span class="s">'youtube-dl --extract-audio --audio-format=mp3 '</span><span class="o">+</span> <span class="n">videos</span>
-
-    <span class="c">#downloadCmd = 'youtube-dl -o ./videos/'+name+'.flv "'+video+'"'</span>
-    <span class="c">#os.system(downloadCmd)</span>
-    <span class="c">#print "Converting to mp3..."</span>
-    <span class="c">#convertCommand = 'avconv -i ./videos/'+name+'.flv ./mp3/'+name+'.mp3'</span>
-    <span class="c">#os.system(convertCommand)</span>
-<span class="k">print</span> <span class="s">"Done in "</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">tt</span>
-</pre></div>
+    <h3>Installed packages (from repos)</h3>
+<h3>External packages</h3>
+<h3>Settings</h3>
+<h4>.bashrc</h4>
+<h4>Inkscape</h4>
+<h4>Git</h4>
+<h4>Go(lang)</h4>
 
 
     </div>
