@@ -9,42 +9,42 @@
 
 ## Installed software (from repos)
 
-#### Nvidia and CUDA    
-#### Compilers    
+### Nvidia and CUDA    
+### Compilers    
 
 * gcc
 * g++
 * gfortran
 
-#### Editors    
+### Editors    
 
 * Kate
 * Emacs
 
-#### Python    
+### Python    
 
 * Ipython
 * NumPy
 * SciPy
 * PyTables
 
-#### Graphics    
+### Graphics    
 
 * Digikam
 * Inkscape
 * Gimp
 
-#### Multimedia    
+### Multimedia    
 
 * VLC
 * avconv (ffmpeg)
 * mencoder
 
-#### Other    
+### Other    
 
 * texlive
 
-#### Reistallation CLI
+### Reistallation CLI
 
 ## External packages
 
