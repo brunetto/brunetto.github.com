@@ -18,6 +18,7 @@
 * Dropbox
 * Facebook
 * Foursquare
+* (GialloZafferano)(https://play.google.com/store/apps/details?id=it.banzai.media.gzricette)
 * Google+
 * gStrings
 * GZafferano
