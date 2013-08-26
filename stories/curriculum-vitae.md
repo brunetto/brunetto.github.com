@@ -30,11 +30,11 @@ course
 **Research project title:** “The impact of stellar evolution and dynamics on the formation of compact-
 object binaries” under the supervision of Dr. Michela Mapelli and Prof. Giuseppe Tormen
 ###2007-2011
-[**Master Thesis in Astronomy**](master.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
+[**Master Thesis in Astronomy**](research/master.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
 (108/110): ["Halo-matter cross-correlation in cosmological simulation"](../files/masterThesis.pdf) under the supervision of
 Prof. Giuseppe Tormen and Prof. Ravi K. Sheth
 ###2004-2007
-[**Bachelor Thesis in Astronomy**](bachelor.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
+[**Bachelor Thesis in Astronomy**](research/bachelor.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
 (103/110): ["Studio del profilo dei vortici ottici con diverso momento angolare"](../files/bachelorThesis.pdf) (Characterization of
 optical vortexes with different angular momentum), under the supervision of Prof. Cesare Barbieri, Dott.
 Fabrizio Tamburini, Gabriele Anzolin

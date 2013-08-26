@@ -14,7 +14,8 @@ The second is just... to do it because I like the "technology" behind it!:P
 
 # Me
 
-My name is [Brunetto Ziosi](https://plus.google.com/117554238100031566866) and I'm a [PhD student in Astronomy](http://www.dfa.unipd.it/index.php?id=1051) ([CV](curriculum-vitae.html))
+My name is [Brunetto Ziosi](https://plus.google.com/117554238100031566866) 
+and I'm a [PhD student in Astronomy](http://www.dfa.unipd.it/index.php?id=1051) ([CV](curriculum-vitae.html))
 at the [Department of Physics and Astronomy](http://www.dfa.unipd.it/) of the [University of Padua](http://www.unipd.it/).    
 My [PhD project](research.html) is about the formation and evolution of compact objects 
 (id white dwarf, neutron stars and black holes) binaries in young stellar clusters. 
@@ -22,13 +23,13 @@ These binaries are thought to be the most promising sources of detectable gravit
 See the [research](research.html) page for more information.    
 My master thesis was about creating a Python code to calculate the two point correlation 
 function for dark matter haloes, subhaloes and dark matter, and apply it to the Millenium II simulation outputs.    
-I'm also a [scout](scout.html) leader in the AGESCI association, a [traveller](travels.html)
+I'm also a [scout](personal/scout.html) leader in the AGESCI association, a [traveller](travels/travels.html)
 (by [moto](moto.html), feet, by airplane, ...) and a [registered linux user](https://linuxcounter.net) 
 with registration number [508678](http://linuxcounter.net/user/508678.html).    
-I'm still try to [play an instrument](music.html)!:P    
-Sometimes I [try to do something in the kitchen](cooking.html) without create a black hole
+I'm still try to [play an instrument](personal/music.html)!:P    
+Sometimes I [try to do something in the kitchen](personal/cooking.html) without create a black hole
 or violating any nature law!:P    
-Of course, I own an [Android](android.html) phone.    
+Of course, I own an [Android](tech/android.html) phone.    
     
 I like:    
     
@@ -36,13 +37,13 @@ I like:
 * wooden and glass surfaces
 * obviously, to dip my hand into a sack of beans
 * [riding my motorbike](moto.html) [across the Europe with the DDteam](travels.html)
-* [make the computer](system-tricks.html) [work for me](programming-links.html)
+* [make the computer](tech/system-tricks.html) [work for me](tech/programming-links.html)
 * [take photos and experiment with them](photos.html), maybe [create videos](videos.html) or [timelapses](timelapses.html)
 * to be continued...:P
 
-Here you can also find a link to [my favourite quotes](my-favourite-quotes.html), [PhD Comics](my-favourite-phd-comics.html)
- and my [wish-list](wish-list.html).    
-[Here](sites-making-notes.html) some notes on making sites.    
+Here you can also find a link to [my favourite quotes](personal/my-favourite-quotes.html), [PhD Comics](personal/my-favourite-phd-comics.html)
+ and my [wish-list](personal/wish-list.html).    
+[Here](tech/sites-making-notes.html) some notes on making sites.    
 I am not good in languages, neverthless sometimes I found 
 [something worth remembering](languages.html).
 
