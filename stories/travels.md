@@ -41,9 +41,7 @@ Work in progress...
 and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html)
 * 2013- Vietri sul Mare, PhD school - [INFN SOS 2013 - School Of Statistics](http://agenda.infn.it/event/infn-stat-2013)
 
-
-* Landshut, Medieval festival
-* 2012 - Cammino Inglese (Ferrol -> Santiago de Compostela)
+* 2012 - [Cammino Inglese](camino-de-santiago.html) (Ferrol -> Santiago de Compostela)
 
 # Trips
 
