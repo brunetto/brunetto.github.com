@@ -7,7 +7,44 @@
 .. slug: system
 -->
 
-## Installed packages (from repos)
+## Installed software (from repos)
+
+#### Nvidia and CUDA    
+#### Compilers    
+
+* gcc
+* g++
+* gfortran
+
+#### Editors    
+
+* Kate
+* Emacs
+
+#### Python    
+
+* Ipython
+* NumPy
+* SciPy
+* PyTables
+
+#### Graphics    
+
+* Digikam
+* Inkscape
+* Gimp
+
+#### Multimedia    
+
+* VLC
+* avconv (ffmpeg)
+* mencoder
+
+#### Other    
+
+* texlive
+
+#### Reistallation CLI
 
 ## External packages
 
