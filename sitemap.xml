@@ -5,942 +5,947 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>brunetto.github.io/</loc>
+  <loc>brunettoziosi.eu/</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2011/</loc>
+  <loc>brunettoziosi.eu/2011/</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2011/index.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/2011/index.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2012/</loc>
+  <loc>brunettoziosi.eu/2012/</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2012/index.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/2012/index.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2013/</loc>
+  <loc>brunettoziosi.eu/2013/</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/2013/index.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/archive.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/</loc>
+  <loc>brunettoziosi.eu/2013/index.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/agn.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/alternatives.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/array.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/asterisk.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/astroparticles.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/astrophysics.html</loc>
+  <loc>brunettoziosi.eu/archive.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/atacama.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/binning.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/blogging.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/c.html</loc>
+  <loc>brunettoziosi.eu/categories/</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/calendar.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/camb.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/code.html</loc>
+  <loc>brunettoziosi.eu/categories/agn.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/computer.html</loc>
+  <loc>brunettoziosi.eu/categories/alternatives.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/cosmic_structure.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/cosmology.html</loc>
+  <loc>brunettoziosi.eu/categories/array.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/data_reduction.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/delta.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/derivation.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/diary.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/digikam.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/domain-decomposition.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/dust.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/for-dummies.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/function.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/gadget.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/gadget2.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/gimp.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/git.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/github.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/gpu.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/hdf5.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/histogram.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/ics.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/imported.html</loc>
+  <loc>brunettoziosi.eu/categories/asterisk.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/index.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/infographics.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/initial-conditions.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/inkscape.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/integrator.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/ipython.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/jc.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/journal_club.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/latex.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/leapfrog.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/linux.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/markov_chain.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/mask.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/master-thesis.html</loc>
+  <loc>brunettoziosi.eu/categories/astroparticles.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/matplotlib.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/mcmc.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/mediawiki.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/millennium.html</loc>
+  <loc>brunettoziosi.eu/categories/astrophysics.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/mpi.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/n-body-simulations.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/n-body.html</loc>
+  <loc>brunettoziosi.eu/categories/atacama.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/n-genic.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/nikola.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/numerical.html</loc>
+  <loc>brunettoziosi.eu/categories/binning.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/parallel.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/parameter.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/pcal.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/pelikan.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/phd.html</loc>
+  <loc>brunettoziosi.eu/categories/blogging.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/photography.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/plot.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/pm.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/power-spectrum.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/presentaiton.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/prezi.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/program.html</loc>
+  <loc>brunettoziosi.eu/categories/c.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/pytables.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/python.html</loc>
+  <loc>brunettoziosi.eu/categories/calendar.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/removal.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/scout.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/categories/simulation.html</loc>
+  <loc>brunettoziosi.eu/categories/camb.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/simulations.html</loc>
+  <loc>brunettoziosi.eu/categories/code.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/sozi.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/computer.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/spectrum.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/cosmic_structure.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/spherical-collapse.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/cosmology.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/spot.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/data_reduction.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/springel.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/delta.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/storage.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/derivation.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/svg.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/diary.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/telescope.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/digikam.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/time-step.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/domain-decomposition.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/tree.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/dust.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/treepm.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/for-dummies.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/vector_image.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/function.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/wikimedia.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/gadget.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/categories/wikipedia.html</loc>
-  <lastmod>2013-08-22</lastmod>
+  <loc>brunettoziosi.eu/categories/gadget2.html</loc>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/galleries/</loc>
+  <loc>brunettoziosi.eu/categories/gimp.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/git.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/github.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/gpu.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/hdf5.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/histogram.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/ics.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/imported.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/index.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/infographics.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/initial-conditions.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/inkscape.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/integrator.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/ipython.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/jc.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/journal_club.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/latex.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/leapfrog.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/linux.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/markov_chain.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/mask.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/master-thesis.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/matplotlib.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/mcmc.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/mediawiki.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/millennium.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/mpi.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/n-body-simulations.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/n-body.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/n-genic.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/nikola.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/numerical.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/parallel.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/parameter.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/pcal.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/pelikan.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/phd.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/photography.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/plot.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/pm.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/power-spectrum.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/presentaiton.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/prezi.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/program.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/pytables.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/python.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/removal.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/scout.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/simulation.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/simulations.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/sozi.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/spectrum.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/spherical-collapse.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/spot.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/springel.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/storage.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/svg.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/telescope.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/time-step.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/tree.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/treepm.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/vector_image.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/wikimedia.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/categories/wikipedia.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/galleries/</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/galleries/index.html</loc>
+  <loc>brunettoziosi.eu/galleries/index.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/google033a68bebc1f4a7f.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/index-1.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/index-2.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/index-3.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/index-4.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/index.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/listings/</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/listings/YTdownload.py.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/listings/YTdownload.py~.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/listings/index.html</loc>
   <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/index-1.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/index-2.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/index-3.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/index-4.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/index.html</loc>
-  <lastmod>2013-08-22</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/listings/</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/listings/YTdownload.py.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/listings/YTdownload.py~.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/listings/index.html</loc>
-  <lastmod>2013-08-21</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunetto.github.io/posts/agn-for-dummies.html</loc>
+  <loc>brunettoziosi.eu/posts/agn-for-dummies.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/asterisks-and-python.html</loc>
+  <loc>brunettoziosi.eu/posts/asterisks-and-python.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/blogging-with-nikola-ipython-github.html</loc>
+  <loc>brunettoziosi.eu/posts/blogging-with-nikola-ipython-github.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-1-why-and-what.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-2-how.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-2-how.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-3-force-calculation.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-4-moving-the-particles.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-5-initial-conditions.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-6-adding-gas.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-7-limitations-and-some-considerations.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/cosmological-simulations-9-gadget-2-n-body-part.html</loc>
+  <loc>brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html</loc>
+  <loc>brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/create-your-own-wikipedia.html</loc>
+  <loc>brunettoziosi.eu/posts/create-your-own-wikipedia.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/easy-and-fast-dust-removal-in-digikamgimp.html</loc>
+  <loc>brunettoziosi.eu/posts/easy-and-fast-dust-removal-in-digikamgimp.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/essential-guide-to-binning.html</loc>
+  <loc>brunettoziosi.eu/posts/essential-guide-to-binning.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/from-binaries-to-hdf5-using-python.html</loc>
+  <loc>brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/from-csv-to-hdf5-in-python.html</loc>
+  <loc>brunettoziosi.eu/posts/from-csv-to-hdf5-in-python.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/gif2-files-python-reader.html</loc>
+  <loc>brunettoziosi.eu/posts/gif2-files-python-reader.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/gif2-substructures-coordinates-correction.html</loc>
+  <loc>brunettoziosi.eu/posts/gif2-substructures-coordinates-correction.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/hdf5-in-python-pytables.html</loc>
+  <loc>brunettoziosi.eu/posts/hdf5-in-python-pytables.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/imagemagick-pcal-calendar.html</loc>
+  <loc>brunettoziosi.eu/posts/imagemagick-pcal-calendar.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/infographics-attempts.html</loc>
+  <loc>brunettoziosi.eu/posts/infographics-attempts.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/latex-together-with-matplotlib.html</loc>
+  <loc>brunettoziosi.eu/posts/latex-together-with-matplotlib.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/learning-c-from-simulations-1.html</loc>
+  <loc>brunettoziosi.eu/posts/learning-c-from-simulations-1.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/learning-c-from-simulations-3-c-horrors.html</loc>
+  <loc>brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/learning-not-to-hate-c-things-worth-nothing.html</loc>
+  <loc>brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/loadleveler-quick-howto.html</loc>
+  <loc>brunettoziosi.eu/posts/loadleveler-quick-howto.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/my-first-gadget2-tests.html</loc>
+  <loc>brunettoziosi.eu/posts/my-first-gadget2-tests.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/never-never-never.html</loc>
+  <loc>brunettoziosi.eu/posts/never-never-never.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/nvidia-drivers.html</loc>
+  <loc>brunettoziosi.eu/posts/nvidia-drivers.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/parameter-space-parallel-exploration-in-python.html</loc>
+  <loc>brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/phd-question-1-m.html</loc>
+  <loc>brunettoziosi.eu/posts/phd-question-1-m.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/phd-question-2-spherical-collapse.html</loc>
+  <loc>brunettoziosi.eu/posts/phd-question-2-spherical-collapse.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/phd-question-3-monte-carlo-markov-chain.html</loc>
+  <loc>brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/phd-question-4-calculate-the-value-of-m.html</loc>
+  <loc>brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/phd-students-journal-clubs-and-sozi.html</loc>
+  <loc>brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/python-cli-and-configuration-file-parser.html</loc>
+  <loc>brunettoziosi.eu/posts/python-cli-and-configuration-file-parser.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/python-logging.html</loc>
+  <loc>brunettoziosi.eu/posts/python-logging.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/python-parallel-job-manager.html</loc>
+  <loc>brunettoziosi.eu/posts/python-parallel-job-manager.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/python-slicing-rebinning-and-indexing.html</loc>
+  <loc>brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</loc>
+  <loc>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/starlab-gpu-installation.html</loc>
+  <loc>brunettoziosi.eu/posts/starlab-gpu-installation.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/subfile-package-for-latex.html</loc>
+  <loc>brunettoziosi.eu/posts/subfile-package-for-latex.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/posts/the-initial-condition-saga.html</loc>
+  <loc>brunettoziosi.eu/posts/the-initial-condition-saga.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/about.html</loc>
+  <loc>brunettoziosi.eu/stories/about.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/android.html</loc>
+  <loc>brunettoziosi.eu/stories/android.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/bachelor.html</loc>
+  <loc>brunettoziosi.eu/stories/bachelor.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/barcelona.html</loc>
+  <loc>brunettoziosi.eu/stories/barcelona.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/c-references.html</loc>
+  <loc>brunettoziosi.eu/stories/c-references.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/camino-de-santiago.html</loc>
+  <loc>brunettoziosi.eu/stories/camino-de-santiago.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/cooking.html</loc>
+  <loc>brunettoziosi.eu/stories/cooking.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/curriculum-vitae.html</loc>
+  <loc>brunettoziosi.eu/stories/curriculum-vitae.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/dolomiti-di-brenta-lago-di-tovel.html</loc>
+  <loc>brunettoziosi.eu/stories/dolomiti-di-brenta-lago-di-tovel.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/events.html</loc>
+  <loc>brunettoziosi.eu/stories/events.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/golang-references.html</loc>
+  <loc>brunettoziosi.eu/stories/golang-references.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/italia-austria.html</loc>
+  <loc>brunettoziosi.eu/stories/italia-austria.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/london.html</loc>
+  <loc>brunettoziosi.eu/stories/london.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/master.html</loc>
+  <loc>brunettoziosi.eu/stories/master.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/monte-rosa-cervino.html</loc>
+  <loc>brunettoziosi.eu/stories/monte-rosa-cervino.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/monti-lattari.html</loc>
+  <loc>brunettoziosi.eu/stories/monti-lattari.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/moto.html</loc>
+  <loc>brunettoziosi.eu/stories/moto.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/music.html</loc>
+  <loc>brunettoziosi.eu/stories/music.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/my-favourite-phd-comics.html</loc>
+  <loc>brunettoziosi.eu/stories/my-favourite-phd-comics.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/my-favourite-quotes.html</loc>
+  <loc>brunettoziosi.eu/stories/my-favourite-quotes.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/netherlands.html</loc>
+  <loc>brunettoziosi.eu/stories/netherlands.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/photos.html</loc>
+  <loc>brunettoziosi.eu/stories/photos.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/programming-links.html</loc>
+  <loc>brunettoziosi.eu/stories/programming-links.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/python-references.html</loc>
+  <loc>brunettoziosi.eu/stories/python-references.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/research.html</loc>
+  <loc>brunettoziosi.eu/stories/research.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/routes.html</loc>
+  <loc>brunettoziosi.eu/stories/routes.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/sasso-lungo-sasso-piatto.html</loc>
+  <loc>brunettoziosi.eu/stories/sasso-lungo-sasso-piatto.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/scout.html</loc>
+  <loc>brunettoziosi.eu/stories/scout.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/system-tricks.html</loc>
+  <loc>brunettoziosi.eu/stories/system-tricks.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/timelapses.html</loc>
+  <loc>brunettoziosi.eu/stories/timelapses.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/travels.html</loc>
+  <loc>brunettoziosi.eu/stories/travels.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/videos.html</loc>
+  <loc>brunettoziosi.eu/stories/videos.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunetto.github.io/stories/wish-list.html</loc>
+  <loc>brunettoziosi.eu/stories/wish-list.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
