@@ -30,9 +30,9 @@ I'm still try to [play an instrument](music.html)!:P
 Sometimes I [try to do something in the kitchen](cooking.html) without create a black hole
 or violating any nature law!:P    
 Of course, I own an [Android](android.html) phone.    
-
+    
 I like:    
-
+    
 * the nice smell of the wood in the mountain forest
 * wooden and glass surfaces
 * obviously, to dip my hand into a sack of beans

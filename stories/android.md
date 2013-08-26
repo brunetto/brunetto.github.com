@@ -35,6 +35,7 @@
 
 ## Settings
 
+* set data usage warning to a low value
 * restrict background data for G+
 * restrict background data for Gallery
 * Turn off G+ photos sync
