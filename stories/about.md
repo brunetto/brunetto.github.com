@@ -26,7 +26,7 @@ function for dark matter haloes, subhaloes and dark matter, and apply it to the 
 I'm also a [scout](scout.html) leader in the AGESCI association, a [traveller](travels.html)
 (by [moto](moto.html), feet, by airplane, ...) and a [registered linux user](https://linuxcounter.net) 
 with registration number [508678](http://linuxcounter.net/user/508678.html).    
-I'm still try to [play an instrument](music.html)!:P
+I'm still try to [play an instrument](music.html)!:P    
 Sometimes I [try to do something in the kitchen](cooking.html) without create a black hole
 or violating any nature law!:P    
 Of course, I own an [Android](android.html) phone.
