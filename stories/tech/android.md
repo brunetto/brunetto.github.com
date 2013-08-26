@@ -7,7 +7,7 @@
 .. slug: android
 -->
 
-## Apps I use or like
+## Apps I use or like   
 
 * Flashlight
 * ASTRO File Manager
@@ -34,9 +34,14 @@
 * VLC
 * Whatsapp
 
-## Settings
+## Settings   
 
 * set data usage warning to a low value
 * restrict background data for G+
 * restrict background data for Gallery
 * Turn off G+ photos sync
+
+## Useful links   
+
+* [Android Manager](https://www.google.com/android/devicemanager)
+* [Google Dashboard](https://www.google.com/settings/dashboard?hl=en)
