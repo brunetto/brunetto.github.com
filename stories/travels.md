@@ -18,7 +18,7 @@ Work in progress...
 * 1999-12_2000-01 - Angola, Luanda
 * 2001 - Croatia (x n)
 * 2002 - Greece
-* 2002-08 - [Landshut, Medieval Festival](http://www.landshuter-hochzeit.de/en/)
+* 2002-08 and ???? - [Landshut, Medieval Festival](http://www.landshuter-hochzeit.de/en/)
 * 2002 - [England (school)](london.html)
 * 2003 - Corsica
 * 2003 - [England (school)](london.html)
@@ -57,7 +57,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 * Rome (post-CFA meeting)
 * San Gimignano, Siena
 * Asiago (x n)
-* ?? Forno di Zoldo, New Year Eve
+* Forno di Zoldo, New Year Eve
 * 2005 - Reggio Emilia, Concerto Ligabue @ Campovolo
 * 2009 - Asiago -> Passo dello Stelvio -> Varese
 * 2010-10-02_03 - Bracciano, FIS Jamboree meeting

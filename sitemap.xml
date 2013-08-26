@@ -6,12 +6,12 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>brunetto.github.io/</loc>
-  <lastmod>2013-08-23</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunetto.github.io/2011/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -21,7 +21,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2012/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/2013/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,7 +46,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/categories/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -506,7 +506,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/galleries/</loc>
-  <lastmod>2013-08-22</lastmod>
+  <lastmod>2013-08-21</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -541,7 +541,7 @@
  </url>
  <url>
   <loc>brunetto.github.io/listings/</loc>
-  <lastmod>2013-08-23</lastmod>
+  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -781,6 +781,11 @@
  </url>
  <url>
   <loc>brunetto.github.io/stories/about.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunetto.github.io/stories/android.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
