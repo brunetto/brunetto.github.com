@@ -42,7 +42,9 @@ I like:
 
 Here you can also find a link to [my favourite quotes](my-favourite-quotes.html), [PhD Comics](my-favourite-phd-comics.html)
  and my [wish-list](wish-list.html).    
-[Here](sites-making-notes.html) some notes on making sites.
+[Here](sites-making-notes.html) some notes on making sites.    
+I am not good in languages, neverthless sometimes I found 
+[something worth remembering](languages.html).
 
 # This blog
 
