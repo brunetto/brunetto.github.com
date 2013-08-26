@@ -13,7 +13,7 @@ My scout life
 
 * 1993 - 1996 Lupetti (VdB: Caracoi)
 * 1996 - 2000 Reparto (CE: )
-* 2000 - 2002 Noviziato (CM: Val Visdende, Monti Lattari)
+* 2000 - 2002 Noviziato (CM: [Val Visdende](../travels/routes/italia-austria.html), [Monti Lattari](../travels/routes/monti-lattari.html))
 * 2002 - 2005 Clan (Campi: Lourdes, Dolomiti di Brenta, GMG Colonia)
 * 2004 - 2005 RS in servizio in LC
 * 2005 Partenza (Zianigo)
@@ -36,4 +36,5 @@ My scout life
 * Convegno Regionale Vicenza
 * Assemblee Generali
 * Assemblee di zona
-* 2013 Route Dolomiti di Brenta
+* 2013 Route [Dolomiti di Brenta](../travels/routes/dolomiti-di-brenta-lago-di-tovel.html)
+
