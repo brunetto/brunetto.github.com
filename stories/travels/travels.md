@@ -19,16 +19,16 @@ Work in progress...
 * 2001 - Croatia (x n)
 * 2002 - Greece
 * 2002-08 and ???? - [Landshut, Medieval Festival](http://www.landshuter-hochzeit.de/en/)
-* 2002 - [England (school)](travels/london.html)
+* 2002 - [England (school)](london.html)
 * 2003 - Corsica
-* 2003 - [England (school)](travels/london.html)
+* 2003 - [England (school)](london.html)
 * [Barcelona](barcelona.html)
-* 2004 - [Barcelona (school trip)](travels/barcelona.html)
+* 2004 - [Barcelona (school trip)](barcelona.html)
 * [London](london.html)
-* [Netherlands (Breda, Amsterdam, Rotterdam)](travels/netherlands.html)
+* [Netherlands (Breda, Amsterdam, Rotterdam)](netherlands.html)
 * 2004-08 - Kenya, Nairobi - Ol Moran - Isiolo
 * 2005 - GMG Koln
-* 2005-07 - [Spain, Camino de Santiago](travels/camino-de-santiago.html) (Burgos -> Santiago de Compostela)
+* 2005-07 - [Spain, Camino de Santiago](camino-de-santiago.html) (Burgos -> Santiago de Compostela)
 * 2010? Paris-Mont Saint-Michel (scout)
 * 2010 - DDT on the Orient Express Path, Venezia -> Lubjana -> Belgrado -> Sofia -> Istanbul -> Meteore -> Igoumenitsa
 * 2011-06 - Hatfield, St. Albans, London, Oxford
@@ -43,7 +43,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 
 
 * Landshut, Medieval festival
-* 2012 - [Cammino Inglese](travels/camino-de-santiago.html) (Ferrol -> Santiago de Compostela)
+* 2012 - [Cammino Inglese](camino-de-santiago.html) (Ferrol -> Santiago de Compostela)
 
 # Trips
 
