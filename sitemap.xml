@@ -900,6 +900,46 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunettoziosi.eu/stories/personal/cooking.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/events.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/interior-design.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/music.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/my-favourite-phd-comics.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/my-favourite-quotes.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/scout.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/wish-list.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunettoziosi.eu/stories/photos.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
@@ -916,6 +956,16 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/research.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/research/bachelor.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/research/master.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -950,12 +1000,107 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunettoziosi.eu/stories/tech/android.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/c-references.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/golang-references.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/programming-links.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/python-references.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/sites-making-notes.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/system-tricks.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/tech/system.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunettoziosi.eu/stories/timelapses.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/travels.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/barcelona.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/camino-de-santiago.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/london.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/netherlands.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/routes/dolomiti-di-brenta-lago-di-tovel.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/routes/italia-austria.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/routes/monte-rosa-cervino.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/routes/monti-lattari.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/routes/routes.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/routes/sasso-lungo-sasso-piatto.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/travels.html</loc>
   <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
