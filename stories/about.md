@@ -29,9 +29,9 @@ with registration number [508678](http://linuxcounter.net/user/508678.html).
 I'm still try to [play an instrument](music.html)!:P    
 Sometimes I [try to do something in the kitchen](cooking.html) without create a black hole
 or violating any nature law!:P    
-Of course, I own an [Android](android.html) phone.
+Of course, I own an [Android](android.html) phone.    
 
-I like:
+I like:    
 
 * the nice smell of the wood in the mountain forest
 * wooden and glass surfaces
@@ -42,7 +42,7 @@ I like:
 * to be continued...:P
 
 Here you can also find a link to [my favourite quotes](my-favourite-quotes.html), [PhD Comics](my-favourite-phd-comics.html)
- and my [wish-list.html].
+ and my [wish-list](wish-list.html).
 
 # This blog
 
