@@ -7,8 +7,6 @@
 .. slug: research
 -->
 
-[TOC]
-
 ## PhD Project
 
 ## Master Thesis
