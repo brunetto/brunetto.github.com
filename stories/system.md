@@ -48,7 +48,10 @@
 
 ## External packages
 
-## Settings
+## Settings    
+
+* Inkscape: latex formulas (
+[here](http://pav.iki.fi/software/textext/) and [here](http://www.timteatro.net/2010/08/05/textext-for-math-in-inkscape/))
 
 ### .bashrc
 
