@@ -19,6 +19,7 @@
 ## Visiting
 
 * Purchase a [London Pass](http://www.londonpass.it/)
+* [London Planner](http://www.visitlondon.com/traveller-information/getting-around-london/london-maps-and-guides/london-planner)
 * London Bridge
 * Tower of London
 * Windsor Castle
