@@ -51,3 +51,7 @@ for line in inFile:
 	#os.system(convertCommand)
 print "Done in ", time.time()-tt
 ````
+
+## Goodies
+
+* visualize git history `gource ./ -o /dev/null`
