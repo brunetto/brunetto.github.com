@@ -45,10 +45,29 @@ Some links regarding the world of photography...
 ## CLI tricks
 
 * Align images
+````bash
+align_image_stack -a <aligned images prefix> -p <.pto file name for hugin> -o <hdr file name>
 * Blend images
+````bash
+enfuse -o <output file> <input files, also as prefix???.ext>
+````
 * Create GIF
+````bash
+convert -delay <delay between frames in 1/100 secs> -loop <number of loops, 0==infinite> -size <w>x<h> <output>.gif
+````
 * Resize
+
 * Mosaic
+1. [ShapeCollage](http://pollycoke.org/2009/02/19/%C2%ABfacce-da-pollycoke%C2%B2%C2%BB-con-shape-collage-howto/)
+2. Metapixel, [site](http://www.complang.tuwien.ac.at/schani/metapixel/), [repo](https://github.com/schani/metapixel/blob/master/README)
+````bash
+metapixel-prepare -r <photos source> <thumbnails dest> --width=<width, eg 32> --height=<height, eg 32>
+metapixel --metapixel <input photo> <output mosaic> --library <thumbnails dir> \
+--scale=<original scale factor, eg 10> \
+--distance=<distance between replicated thumbnails, eg 300> \
+--cheat=<original image overlay percentage>
+````
+you can use the `--collage` option instead --metapixel for a slower but better result and 
 
 ## My galleries
 

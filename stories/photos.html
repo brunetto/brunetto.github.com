@@ -91,11 +91,36 @@
 <li><a href="http://haloramics.tiedtheleader.com/PlanetoidHowTo/PlanetoidHowTo.html">Create planetoids</a></li>
 </ul><h3>CLI tricks</h3>
 <ul><li>Align images</li>
-<li>Blend images</li>
-<li>Create GIF</li>
-<li>Resize</li>
-<li>Mosaic</li>
-</ul><h3>My galleries</h3>
+</ul><div class="code"><pre>align_image_stack -a &lt;aligned images prefix&gt; -p &lt;.pto file name <span class="k">for </span>hugin&gt; -o &lt;hdr file name&gt;
+* Blend images
+<span class="sb">````</span>bash
+enfuse -o &lt;output file&gt; &lt;input files, also as prefix???.ext&gt;
+</pre></div>
+
+
+<ul><li>Create GIF</li>
+</ul><div class="code"><pre>convert -delay &lt;delay between frames in 1/100 secs&gt; -loop &lt;number of loops, <span class="nv">0</span><span class="o">==</span>infinite&gt; -size &lt;w&gt;x&lt;h&gt; &lt;output&gt;.gif
+</pre></div>
+
+
+<ul><li>
+<p>Resize</p>
+</li>
+<li>
+<p>Mosaic</p>
+</li>
+<li><a href="http://pollycoke.org/2009/02/19/%C2%ABfacce-da-pollycoke%C2%B2%C2%BB-con-shape-collage-howto/">ShapeCollage</a></li>
+<li>Metapixel, <a href="http://www.complang.tuwien.ac.at/schani/metapixel/">site</a>, <a href="https://github.com/schani/metapixel/blob/master/README">repo</a></li>
+</ul><div class="code"><pre>metapixel-prepare -r &lt;photos <span class="nb">source</span>&gt; &lt;thumbnails dest&gt; --width<span class="o">=</span>&lt;width, eg 32&gt; --height<span class="o">=</span>&lt;height, eg 32&gt;
+metapixel --metapixel &lt;input photo&gt; &lt;output mosaic&gt; --library &lt;thumbnails dir&gt; <span class="se">\</span>
+--scale<span class="o">=</span>&lt;original scale factor, eg 10&gt; <span class="se">\</span>
+--distance<span class="o">=</span>&lt;distance between replicated thumbnails, eg 300&gt; <span class="se">\</span>
+--cheat<span class="o">=</span>&lt;original image overlay percentage&gt;
+</pre></div>
+
+
+<p>you can use the <code>--collage</code> option instead --metapixel for a slower but better result and </p>
+<h3>My galleries</h3>
 <ul><li>
 </li><li>
 </li></ul></div>
