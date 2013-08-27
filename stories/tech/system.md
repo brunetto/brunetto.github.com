@@ -21,6 +21,12 @@
 * Kate
 * Emacs
 
+### Terminals
+
+* ipython
+* konsole
+* terminator
+
 ### Python    
 
 * Ipython

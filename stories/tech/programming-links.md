@@ -24,6 +24,7 @@
 * [Go(lang) community on G+](https://plus.google.com/communities/102841007618944990081)
 * [Go science community on G+](https://plus.google.com/communities/115354877257015196825)
 * [my Go references](golang-references.html)
+* [Go at Google: Language Design in the Service of Software Engineering](http://talks.golang.org/2012/splash.article)
 
 ## Python
 
