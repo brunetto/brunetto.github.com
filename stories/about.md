@@ -39,6 +39,8 @@ I like:
 * [riding my motorbike](moto.html) [across the Europe with the DDteam](travels/travels.html)
 * [make the computer](tech/system-tricks.html) [work for me](tech/programming-links.html)
 * [take photos and experiment with them](photos.html), maybe [create videos](videos.html) or [timelapses](timelapses.html)
+* Eating [piadina](https://www.facebook.com/LaTuaPiadina), [pizza](http://www.ai4elementi.com/) and [ice cream](http://www.cremeriafunivia.com/)
+and drinking [beer](http://www.birrachimera.com/)
 * to be continued...:P
 
 Here you can also find a link to [my favourite quotes](personal/my-favourite-quotes.html), [PhD Comics](personal/my-favourite-phd-comics.html)
