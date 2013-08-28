@@ -18,7 +18,26 @@ Some links regarding the world of photography...
 * [Anton Jankovoy](http://500px.com/jankovoy)
 <!--* [Gergo](http://www.flickr.com/photos/pgaalien/) [Antal](http://500px.com/alienart)
 [John Tisbury](johntisbury.deviantart.com)
+* [John Suler](http://www.flickr.com/photos/jsuler)
 -->
+#### Lightpainting
+
+* [10 Amazing Light Painting Photographers You Should Start Following Right Now](http://petapixel.com/2013/08/27/10-amazing-light-painting-photographers/)
+* [tackyshack](http://www.tackyshack.net/), [on Flickr](http://www.flickr.com/photos/tackyshack/), 
+* [Jan Leonardo](http://www.lightart-photography.de/)
+* [Hannu Huhtamo](http://www.flickr.com/photos/hhuhtamo/)
+* [Trevor Williams](http://fiz-iks.com/)
+* [Light Junkies Flickr group](http://www.flickr.com/groups/lightjunkies/)
+* [Dana Maltby](http://twincitiesbrightest.com/)
+* [Brian Matthew Hart](https://sites.google.com/site/brianmatthewhart/recentextrapolations)
+* [Janne Parviainen](http://jannepaint.wix.com/jannepaint)
+* [Patrick Rochon](http://www.patrickrochon.com/), [RedBull collaboration](http://petapixel.com/2013/04/11/experimental-light-painting-photographs-with-lights-strapped-to-wakeboards/)
+* [Michael Ross](http://mrossphoto.com/wordpress32/)
+* [Dennis Calvert](http://denniscalvert.net/blog/)
+
+
+
+
 
 ### Amateur
 
@@ -29,6 +48,11 @@ Some links regarding the world of photography...
 
 * [Flickr](http://www.flickr.com/)
 * [500px](http://500px.com/)
+
+### Strangeness etc.
+
+* [Lego bloks camera](http://petapixel.com/2012/07/31/a-nifty-panoramic-pinhole-camera-made-with-lego-blocks/)
+* [Lego bloks camera 2] (http://petapixel.com/2011/03/31/working-4x5-camera-created-with-lego/)
 
 ## HDR/blending
 
