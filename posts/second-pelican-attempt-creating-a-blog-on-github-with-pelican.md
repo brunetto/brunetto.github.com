@@ -14,6 +14,7 @@
 
 First of all create a repo named `youname.github.com` on your GitHub account 
 (ok, maybe, before this, you have to create a GitHub account!).    
+<!--TEASER_END-->
 Then set the remote origin locally with    
 ````bash
     # I use ssh because I can log in without a password saving my key at https://github.com/settings/ssh    

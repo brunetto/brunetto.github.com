@@ -120,51 +120,11 @@ blog with Python, Nikola and Git.    </p>
         <p style="text-align:right"><big>
              Posted: 2013-03-08 00:00
         </big></p>
-        <hr><h2>How to create a blog with GitHub and Pelican (Python)</h2>
+        <hr><div><h2>How to create a blog with GitHub and Pelican (Python)</h2>
 <h4>Suppose that you are curios about GitHub pages... but I don't understand their guide.</h4>
 <h4>And suppose that you don't like Ruby but prefer Python...</h4>
 <p>First of all create a repo named <code>youname.github.com</code> on your GitHub account 
-(ok, maybe, before this, you have to create a GitHub account!).  <br>
-Then set the remote origin locally with    </p>
-<div class="code"><pre>    <span class="c"># I use ssh because I can log in without a password saving my key at https://github.com/settings/ssh    </span>
-    git remote add origin ssh://git@github.com/yourname/yourname.github.com.git    
-</pre></div>
-
-
-<p>Now you can follow the excellent guide by <a href="http://martinbrochhaus.com/2012/02/pelican.html">Martin</a>.</p>
-<p>Maybe you need to change     </p>
-<div class="code"><pre>    mkvirtualenv -p python2.7 blog    
-</pre></div>
-
-
-<p>with something like     </p>
-<div class="code"><pre>    mkvirtualenv -p /usr/bin/python blog    
-</pre></div>
-
-
-<p>If you need to write equation, use <a href="http://www.mathjax.org/">MathJax</a> is straightforward.
-Following <a href="http://www.ceremade.dauphine.fr/~amic/en/blog/mathjax-and-pelican.html">this post</a>
-you only need to add few lines to the <code>base.html</code> of your theme and write latex-style equation like
-<code>$$\frac{x_n}{x_{n+1}}$$</code> to obtain    </p>
-<p>$$\frac{x_n}{x_{n+1}}$$    </p>
-<p>If you want to show code you only need to indent it with four spaces and put the 
-languade identifier (<code>:::python</code>) on the top, indented in the same way (.=space):</p>
-<div class="code"><pre><span class="p">....</span><span class="o">:::</span><span class="n">python</span>    
-<span class="p">....</span><span class="n">def</span> <span class="n">print_python</span><span class="p">()</span><span class="o">:</span>    
-<span class="p">........</span><span class="n">print</span> <span class="s">"Python:)"</span>    
-</pre></div>
-
-
-<p>produces</p>
-<div class="code"><pre><span class="k">def</span> <span class="nf">print_python</span><span class="p">():</span>
-    <span class="k">print</span> <span class="s">"Python:)"</span>
-</pre></div>
-
-
-<p>Now, if can also blog from the <a href="http://ipython.org/notebook.html">IPython Notebook</a>
-following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipython-notebook-plugin/">guide by Daniel</a>.    </p>
-<p>And That's all Folks!:P</p>
-<p>PS: see also <a href="http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/">this</a> great guide</p>
+(ok, maybe, before this, you have to create a GitHub account!).  <br></p><p><a href="posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html">Read more...</a></p></div>
         <p>
         
         </p></div>

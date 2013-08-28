@@ -1,49 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference... (Python)</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Wed, 28 Aug 2013 18:55:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Second Pelican attempt: creating a blog on GitHub with Pelican</title><link>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</link><description>&lt;h2&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h2&gt;
+<rss version="2.0"><channel><title>for future reference... (Python)</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Wed, 28 Aug 2013 18:57:26 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Second Pelican attempt: creating a blog on GitHub with Pelican</title><link>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</link><description>&lt;div&gt;&lt;h2&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h2&gt;
 &lt;h4&gt;Suppose that you are curios about GitHub pages... but I don't understand their guide.&lt;/h4&gt;
 &lt;h4&gt;And suppose that you don't like Ruby but prefer Python...&lt;/h4&gt;
 &lt;p&gt;First of all create a repo named &lt;code&gt;youname.github.com&lt;/code&gt; on your GitHub account 
-(ok, maybe, before this, you have to create a GitHub account!).  &lt;br&gt;
-Then set the remote origin locally with    &lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre&gt;    &lt;span class="c"&gt;# I use ssh because I can log in without a password saving my key at https://github.com/settings/ssh    &lt;/span&gt;
-    git remote add origin ssh://git@github.com/yourname/yourname.github.com.git    
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Now you can follow the excellent guide by &lt;a href="http://martinbrochhaus.com/2012/02/pelican.html"&gt;Martin&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Maybe you need to change     &lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre&gt;    mkvirtualenv -p python2.7 blog    
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;with something like     &lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre&gt;    mkvirtualenv -p /usr/bin/python blog    
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;If you need to write equation, use &lt;a href="http://www.mathjax.org/"&gt;MathJax&lt;/a&gt; is straightforward.
-Following &lt;a href="http://www.ceremade.dauphine.fr/~amic/en/blog/mathjax-and-pelican.html"&gt;this post&lt;/a&gt;
-you only need to add few lines to the &lt;code&gt;base.html&lt;/code&gt; of your theme and write latex-style equation like
-&lt;code&gt;$$\frac{x_n}{x_{n+1}}$$&lt;/code&gt; to obtain    &lt;/p&gt;
-&lt;p&gt;$$\frac{x_n}{x_{n+1}}$$    &lt;/p&gt;
-&lt;p&gt;If you want to show code you only need to indent it with four spaces and put the 
-languade identifier (&lt;code&gt;:::python&lt;/code&gt;) on the top, indented in the same way (.=space):&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="p"&gt;....&lt;/span&gt;&lt;span class="o"&gt;:::&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;    
-&lt;span class="p"&gt;....&lt;/span&gt;&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;print_python&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;    
-&lt;span class="p"&gt;........&lt;/span&gt;&lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="s"&gt;"Python:)"&lt;/span&gt;    
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;produces&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;print_python&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;"Python:)"&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Now, if can also blog from the &lt;a href="http://ipython.org/notebook.html"&gt;IPython Notebook&lt;/a&gt;
-following the &lt;a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipython-notebook-plugin/"&gt;guide by Daniel&lt;/a&gt;.    &lt;/p&gt;
-&lt;p&gt;And That's all Folks!:P&lt;/p&gt;
-&lt;p&gt;PS: see also &lt;a href="http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/"&gt;this&lt;/a&gt; great guide&lt;/p&gt;</description><category>blogging</category><category>Python</category><category>Pelikan</category><guid>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</guid><pubDate>Fri, 08 Mar 2013 00:00:00 GMT</pubDate></item><item><title>Latex together with matplotlib!</title><link>brunettoziosi.eu/posts/latex-together-with-matplotlib.html</link><description>&lt;p&gt;Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.  &lt;br&gt;
+(ok, maybe, before this, you have to create a GitHub account!).  &lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>blogging</category><category>Python</category><category>Pelikan</category><guid>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</guid><pubDate>Fri, 08 Mar 2013 00:00:00 GMT</pubDate></item><item><title>Latex together with matplotlib!</title><link>brunettoziosi.eu/posts/latex-together-with-matplotlib.html</link><description>&lt;p&gt;Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.  &lt;br&gt;
 Everything you need is to add to your script    &lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;matplotlib&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;rc&lt;/span&gt;
 &lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'font'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;'family'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s"&gt;'sans-serif'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'sans-serif'&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="s"&gt;'Helvetica'&lt;/span&gt;&lt;span class="p"&gt;]})&lt;/span&gt;
