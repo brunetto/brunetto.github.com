@@ -222,80 +222,10 @@ Everything you need is to add to your script    </p>
         <p style="text-align:right"><big>
              Posted: 2012-05-25 00:00
         </big></p>
-        <hr><p><a href="http://www.hdfgroup.org/HDF5/" target="_blank" title="HDF5 Group homepage">HDF5</a> is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.  <br>
+        <hr><div><p><a href="http://www.hdfgroup.org/HDF5/" target="_blank" title="HDF5 Group homepage">HDF5</a> is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.  <br>
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.  <br>
 It's also possible to navigate into a file graphically with <a href="http://vitables.org/" target="_blank" title="ViTables homepage">ViTables</a>.  <br>
-Here I would like to present some of the features I use more often.  <br><!--more--><br>
-Open, flush and close a file    </p>
-<div class="code"><pre><span class="kn">import</span> <span class="nn">tables</span> <span class="kn">as</span> <span class="nn">tb</span>
-
-<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openfile</span><span class="p">(</span><span class="s">"filename.h5"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-
-<p>where <code>'r'</code> means "open the file in read-only mode". It's also possible to open it as <code>'w'</code> (create a new file: it overwrites the file if it still exists) and <code>'a'</code> (append: create if it does not exist, if it exists, read and modify it).    </p>
-<p>Create a group to contain some data    </p>
-<div class="code"><pre><span class="n">group</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createGroup</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="s">"group"</span><span class="p">)</span>
-</pre></div>
-
-
-<p>where <code>h5.root</code> is the location of the new object created (where we want to create the group) and can also be passe as string ("/") and <code>"group"</code> is the string with the name.    </p>
-<p>Store an array    </p>
-<div class="code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">....</span><span class="p">])</span>
-<span class="n">array</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="n">array_to_store</span><span class="p">,</span> <span class="s">'title'</span><span class="p">)</span>
-<span class="n">array</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createArray</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="n">array_to_store</span><span class="p">,</span> <span class="s">'title'</span><span class="p">)</span>
-</pre></div>
-
-
-<p>Create a table (from <a href="posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</a> or <a href="posts/from-csv-to-hdf5-in-python.html">From .csv to HDF5 in Python</a>    </p>
-<div class="code"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"filename.csv"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
-<span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
-<span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="c"># or in an equivalent way, if the file dimensions permit to lad the entire file:</span>
-<span class="c"># values = np.genfromtxt("filename.csv", dtype=([('column_1', 'i8'), ('column_2', 'f4'), ('column_3', # 'f4')]), delimiter=',')</span>
-
-<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="s">'filename.h5'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
-<span class="n">table</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createTable</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">values</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'table_name'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"table_description"</span><span class="p">,</span> <span class="n">expectedrows</span><span class="o">=</span><span class="mi">12158536</span><span class="p">)</span>
-<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
-    <span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-
-<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-
-<p>It's also possible to walk all the nodes under a group:    </p>
-<div class="code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">h5</span><span class="o">.</span><span class="n">walkNodes</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">):</span>
-    <span class="k">print</span> <span class="n">i</span>
-</pre></div>
-
-
-<p>and to delete a node/array/table:    </p>
-<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">removeNode</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="p">,</span> <span class="s">'name'</span><span class="p">)</span>
-</pre></div>
-
-
-<p>All the nodes are available through their path:    </p>
-<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">)</span>
-<span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">name</span>
-</pre></div>
-
-
-<p>to read a table or an array, you can use the function <code>read()</code>    </p>
-<div class="code"><pre><span class="n">h5</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="s">"/group"</span><span class="p">,</span> <span class="s">"name"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</pre></div>
+Here I would like to present some of the features I use more often.  <br></p><p><a href="posts/hdf5-in-python-pytables.html">Read more...</a></p></div>
         <p>
         
         </p></div>
