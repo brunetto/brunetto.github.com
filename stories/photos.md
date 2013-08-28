@@ -92,6 +92,11 @@ metapixel --metapixel <input photo> <output mosaic> --library <thumbnails dir> \
 --cheat=<original image overlay percentage>
 ````
 you can use the `--collage` option instead --metapixel for a slower but better result and 
+* stich two images
+````bash
+convert one.png two.png -append stiched.png
+````
+to stich the images vertically, `+append` to stich them horizontally
 
 ## My galleries
 
