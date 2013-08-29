@@ -107,7 +107,14 @@ See <a href="system.html">here</a> for a list of installed packages and settings
 
 <h3>Goodies</h3>
 <ul><li>visualize git history <code>gource ./ -o /dev/null</code></li>
-</ul></div>
+<li>grab an image from the webcam with CLI VLC</li>
+</ul><div class="code"><pre>cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
+/home/ziosi/Pictures/webcam --scene-prefix img<span class="k">$(</span>date <span class="s1">'+%y%m%d%h%m%s'</span><span class="k">)</span> 
+--scene-format png vlc://quit --run-time<span class="o">=</span>1
+</pre></div>
+
+
+    </div>
     </div>
     <!--End of body content-->
 </div>

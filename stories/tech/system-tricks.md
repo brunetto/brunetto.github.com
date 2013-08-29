@@ -55,3 +55,9 @@ print "Done in ", time.time()-tt
 ## Goodies
 
 * visualize git history `gource ./ -o /dev/null`
+* grab an image from the webcam with CLI VLC
+````bash
+cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
+/home/ziosi/Pictures/webcam --scene-prefix img$(date '+%y%m%d%h%m%s') 
+--scene-format png vlc://quit --run-time=1
+````
