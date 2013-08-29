@@ -15,3 +15,6 @@
 * Yamaha Keyboard and Ubuntu
 
 ## Links
+
+* [bmp database](http://www.bpmdatabase.com/)
+* [jog.fm](http://jog.fm)
