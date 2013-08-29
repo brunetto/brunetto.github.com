@@ -56,3 +56,6 @@
 
 * Un vincente trova la strada un perdente trova una scusa
 [...]
+
+* Try not. Do or do not!! There is no try
+[Yoda, Star Wars: Episode V - The Empire Strikes Back (1980)]
