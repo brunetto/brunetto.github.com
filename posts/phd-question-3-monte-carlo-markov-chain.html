@@ -1,4 +1,13 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>PhD question #3: Monte Carlo Markov chain | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+    <title>PhD question #3: Monte Carlo Markov chain | for future reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,9 +18,39 @@
             styles: {'.MathJax_Display': {"margin": 0}}
         }
     });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    
+</head>
+<body>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -29,7 +68,11 @@
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../archive.html">Archives</a>
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../archive.html">Archives</a>
         
     
         
@@ -45,12 +88,24 @@
         
     
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
                 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -66,7 +121,8 @@
     <h1>PhD question #3: Monte Carlo Markov chain</h1>
     
 
-    <hr><small>
+    <hr>
+    <small>
         Posted: <time class="published" datetime="2012-03-15T00:00:00">2012-03-15 00:00</time>
         
     
@@ -94,7 +150,8 @@
     
 
     </small>
-    <hr><p>After <a href="http://www.brunettoziosi.eu/blog/wordpress/phd-question-1-latexm_latex/" target="_blank" title="PhD question #1: M*"></a> and <a href="http://www.brunettoziosi.eu/blog/wordpress/phd-question-2-spherical-collapse/" target="_blank" title="PhD question #2: spherical collapse"></a>, in thisp post I write about the Monte Carlo Markov chain. This post is the Wordpress transposition of a page in my private and local Mediawiki installation, so maybe has not a perfect structure and look&amp;feel. Also, the Latex formulas embedded in <a href="http://www.mediawiki.org/wiki/MediaWiki" target="_blank" title="Mediawiki homepage">Mediawiki</a> and <a href="http://wordpress.com/" target="_blank" title="Wordpress homepage">Wordpress</a> look horrible.  <br>
+    <hr>
+    <p>After <a href="http://www.brunettoziosi.eu/blog/wordpress/phd-question-1-latexm_latex/" target="_blank" title="PhD question #1: M*"></a> and <a href="http://www.brunettoziosi.eu/blog/wordpress/phd-question-2-spherical-collapse/" target="_blank" title="PhD question #2: spherical collapse"></a>, in thisp post I write about the Monte Carlo Markov chain. This post is the Wordpress transposition of a page in my private and local Mediawiki installation, so maybe has not a perfect structure and look&amp;feel. Also, the Latex formulas embedded in <a href="http://www.mediawiki.org/wiki/MediaWiki" target="_blank" title="Mediawiki homepage">Mediawiki</a> and <a href="http://wordpress.com/" target="_blank" title="Wordpress homepage">Wordpress</a> look horrible.  <br>
 Most of this post is made by paragraphs from <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank" title="Wikipedia homepage">Wikipedia</a> and from <a href="http://arxiv.org/abs/0712.3028" target="_blank" title="Licia Verde's article page">A practical guide to Basic Statistical Techniques for Data Analysis in Cosmology</a> by <a href="http://icc.ub.edu/~liciaverde/Home%20Page.html" target="_blank" title="Licia Verde homepage">Licia Verde</a> that I rearranged or try to explain and summarize.    </p>
 <p>Essentially you can think a Markov chain as a set of states of physical system, or a series of values, depending on some parameters, in which every step/status depends only on the present status and not on the past. A Monte Carlo Markov chain is a Markov chain that proceeds trying random steps and tends to converge to an equilibrium that should be the best set of parameters we are looking for.  <br>
 To improve performances and precision usually more chains are used, starting from different and well-separated points, for a single estimation and a convergence criterion define when to stop.  <br>
@@ -114,12 +171,14 @@ Formally, given a sequence of random variables $X_1, X_2, X_3, \dots$ we have   
 <p>The possible values$x_i$ of $X_i$ form a countable set $S$ called the <strong>state space</strong> of the chain.     </p>
 <p>The changes of state of the system are called transitions, and the probabilities associated with various state-changes are called transition probabilities. The set of all states and transition probabilities for a given step form the <strong>transition matrix</strong> $p_{ij}$. The transition matrices completely characterizes a Markov chain.     </p>
 <p><strong>Types of chains</strong>    </p>
-<ul><li><strong>Time-homogeneous Markov chains</strong> (or <strong>stationary Markov chains</strong>) are processes where    $Pr(X_{n+1}=x|X_n=y) = Pr(X_n=x|X_{n-1}=y)$    for all $n$. The probability of the transition is independent of $n$.</li>
+<ul>
+<li><strong>Time-homogeneous Markov chains</strong> (or <strong>stationary Markov chains</strong>) are processes where    $Pr(X_{n+1}=x|X_n=y) = Pr(X_n=x|X_{n-1}=y)$    for all $n$. The probability of the transition is independent of $n$.</li>
 <li>A <strong>Markov chain of order </strong> $m$ (or a Markov chain with memory $m$ , where $m$ is finite, is a process satisfying    $Pr(X_n=x_n|X_{n-1}=x_{n-1}, X_{n-2}=x_{n-2}, dots , X_1=x_1)$    that is    $Pr(X_n=x_n|X_{n-1}=x_{n-1}, X_{n-2}=x_{n-2}, dots, X_{n-m}=x_{n-m})text{ for }n &gt; m$    In other words, the future state depends on the past [latex]m[/latex] states.</li>
 <li>An <strong>additive Markov chain</strong> </li>
 <li>of order $m$ is a sequence of random variables $X_1, X_2, X_3, dots$, possessing the following property: the probability that a random variable $X_n$ has a certain value $x_n$ under the condition that the values of all previous variables are fixed depends on the values of $m$ previous variables only (Markov chain of order $m$), and the influence of previous variables on a generated one is additive,</li>
 <li>$Pr(X_n=x_n|X_{n-1}=x_{n-1}, X_{n-2}=x_{n-2}, \dots, X_{n-m}=x_{n-m}) = \sum_{r=1}^{m} f(x_n,x_{n-r},r)$.</li>
-</ul><p><strong>Predictions</strong>    </p>
+</ul>
+<p><strong>Predictions</strong>    </p>
 <p>Since the system changes randomly, it is generally impossible to predict with certainty the state of a Markov chain at a given point in the future. However, the statistical properties of the system's future can be predicted.  <br>
 The probability of going from state $i$ to state $j$ in $n$ time steps is  <br>
 $p_{ij}^{(n)} = Pr(X_n=j mid X_0=i) ,$  <br>
@@ -157,7 +216,8 @@ or  <br>
 $ \mathbf{x}^{(2)} =\mathbf{x}^{(1)} P = \begin{bmatrix}0.9 &amp; 0.1\end{bmatrix} \begin{bmatrix}0.9 &amp; 0.1 .5 &amp; 0.5\end{bmatrix}= \begin{bmatrix} 0.86 &amp; 0.14 \end{bmatrix} $  <br>
 General rules for day $n$ are:  <br>
 $ \mathbf{x}^{(n)} = \mathbf{x}^{(n-1)} P $  <br>
-$ \mathbf{x}^{(n)} = \mathbf{x}^{(0)} P^n $  <br></p><div>
+$ \mathbf{x}^{(n)} = \mathbf{x}^{(0)} P^n $  <br>
+</p><div>
     </div>
 <p><strong>Steady state of the weather</strong>    </p>
 <p>In this example, predictions for the weather on more distant days are increasingly  <br>
@@ -194,17 +254,21 @@ Typical use of MCMC sampling can only approximate the target distribution, as th
 The most common application of these algorithms is numerically calculating multi-dimensional integrals. In these methods, an ensemble of "walkers" moves around randomly. At each point where the walker steps, the integrand value at that point is counted towards the integral. The walker then may make a number of tentative steps around the area, looking for a place with reasonably high contribution to the integral to move into next. Random walk methods are a kind of random simulation or Monte Carlo method. However, whereas the random samples of the integrand used in a conventional Monte Carlo integration are statistically independent, those used in MCMC are correlated. A Markov chain is constructed in such a way as to have the integrand as its equilibrium distribution. Surprisingly, this is often easy to do.    </p>
 <p><strong>Random walk algorithms</strong>  <br>
 Many Markov chain Monte Carlo methods move around the equilibrium distribution in relatively small steps, with no tendency for the steps to proceed in the same direction. These methods are easy to implement and analyze, but unfortunately it can take a long time for the walker to explore all of the space. The walker will often double back and cover ground already covered.  Here are some random walk MCMC methods:    </p>
-<ul><li>Metropolis–Hastings algorithm: Generates a random walk using a proposal density and a method for rejecting proposed moves.</li>
+<ul>
+<li>Metropolis–Hastings algorithm: Generates a random walk using a proposal density and a method for rejecting proposed moves.</li>
 <li>Gibbs sampling: Requires that all the conditional distributions of the target distribution can be sampled exactly.  Popular partly because when this is so, the method does not require any 'tuning'.</li>
 <li>Slice sampling: Depends on the principle that one can sample from a distribution by sampling uniformly from the region under the plot of its density function.  This method alternates uniform sampling in the vertical direction with uniform sampling from the horizontal 'slice' defined by the current vertical position.</li>
 <li>Multiple-try Metropolis: A variation of the Metropolis–Hastings algorithm that allows multiple trials at each point. This allows the algorithm to generally take larger steps at each iteration, which helps combat problems intrinsic to large dimensional problems.</li>
-</ul><p><strong>Avoiding random walks</strong>    </p>
+</ul>
+<p><strong>Avoiding random walks</strong>    </p>
 <p>More sophisticated algorithms use some method of preventing the walker from doubling back. These algorithms may be harder to implement, but may exhibit faster convergence (i.e. fewer steps for an accurate result).    </p>
-<ul><li>Successive over-relaxation: A Monte Carlo version of this technique can be seen as a variation on Gibbs sampling; it sometimes avoids random walks.</li>
+<ul>
+<li>Successive over-relaxation: A Monte Carlo version of this technique can be seen as a variation on Gibbs sampling; it sometimes avoids random walks.</li>
 <li>Hybrid Monte Carlo (HMC): Tries to avoid random walk behaviour by introducing an auxiliary momentum vector and implementing Hamiltonian dynamics where the potential function is the target density.  The momentum samples are discarded after sampling.  The end result of Hybrid MCMC is that proposals move across the sample space in larger steps and are therefore less correlated and converge to the target distribution more rapidly.</li>
 <li>Some variations on slice sampling also avoid random walks.</li>
 <li>Langevin MCMC and other methods that rely on the gradient (and possibly second derivative) of the log posterior avoid random walks by making proposals that are more likely to be in the direction of higher probability density.</li>
-</ul><p><strong>Monte Carlo Markov chain in Cosmology: CMB example</strong>    </p>
+</ul>
+<p><strong>Monte Carlo Markov chain in Cosmology: CMB example</strong>    </p>
 <p>In some cases, mapping the likelihood or the posterior distribution can be very time-expensive, so a MCMC can be used to investigate the likelihood space. The MCMC generates random draws (simulations) from the posterior distribution that are a “fair” sample of the likelihood surface. A properly derived and implemented MCMC draws from the joint posterior density  <br>
 $P(\alpha|x)$ once it has converged to the stationary distribution. The primary consideration in  <br>
 implementing MCMC is determining when the chain has converged. After an initial “burn-in” period, all further samples can be thought of as coming from the stationary distribution.  <br>
@@ -224,11 +288,13 @@ spectrum. It is straightforward to generalize these instructions to include the 
 polarization power spectrum and other datasets. The MCMC is essentially a random walk in  <br>
 parameter space, where the probability of being at any position in the space is proportional  <br>
 to the posterior probability.    </p>
-<ol><li>Start with a set of cosmological parameters ${\alpha_1}$, compute the $Cl$ and the likelihood    $L_1 = L(Cl |Cl )$.</li>
+<ol>
+<li>Start with a set of cosmological parameters ${\alpha_1}$, compute the $Cl$ and the likelihood    $L_1 = L(Cl |Cl )$.</li>
 <li>Take a random step in parameter space to obtain a new set of cosmological parameters    ${alpha_2 }$. The probability distribution of the step is taken to be Gaussian in each direction    i with r.m.s given by $\sigma_1$ . We will refer below to σi as the “step size”. The choice of    the step size is important to optimize the chain efficiency</li>
 <li>Compute the $Cl$ for the new set of cosmological parameters and their likelihood $L_2$.    4.a) If $L_2 /L_1 \geq 1$, “take the step” i.e. save the new set of cosmological parameters ${\alpha_2}$    as part of the chain, then go to step 2 after the substitution ${\alpha_1 } \rightarrow {\alpha2 }$.    4.b) If $L_2 /L_1 &lt; 1$, draw a random number x from a uniform distribution from 0 to 1. If    $x \geq L_2 /L_1$ “do not take the step”, i.e. save the parameter set ${alpha_1 }$ as part of the    chain and return to step 2. If $x &lt; L_2 /L_1$, “ take the step”, i.e. do as in 4.a).</li>
 <li>For each cosmological model run four chains starting at randomly chosen, well-    separated points in parameter space. When the convergence criterion is satisfied and    the chains have enough points to provide reasonable samples from the a posteriori    distributions (i.e. enough points to be able to reconstruct the 1- and 2-σ levels of the    marginalized likelihood for all the parameters) stop the chains.</li>
-</ol><p><strong>Appendix</strong>    </p>
+</ol>
+<p><strong>Appendix</strong>    </p>
 <p><strong>Random process</strong>  <br>
 In probability theory, a stochastic process, or sometimes random process, is the counterpart to a deterministic process (or deterministic system). Instead of dealing with only one possible way the process might develop over time (as in the case, for example, of solutions of an ordinary differential equation), in a stochastic or random process there is some indeterminacy described by probability distributions. This means that even if the initial condition (or starting point) is known, there are many possibilities the process might go to, but some paths may be more probable and others less so.    </p>
 <p><strong>Bayesian statistic, likelihood, priori and posteriori distribution</strong>    </p>
@@ -236,13 +302,16 @@ In probability theory, a stochastic process, or sometimes random process, is the
 We have a theory and some data, the Bayesian approach says that  <br>
 $P(T;D)=\frac{P(D;T)P(T)}{P(D)}$  <br>
 where:    </p>
-<ul><li>$P(T;D)$ is the "conditional" probability of having the theory (theoretical parameters) given the data (that is the probability distribution of the parameters given the data observed and the prior knowledge on the parameters themselves) and it is called <strong>posterior distribution</strong> or sometimes likelihood</li>
+<ul>
+<li>$P(T;D)$ is the "conditional" probability of having the theory (theoretical parameters) given the data (that is the probability distribution of the parameters given the data observed and the prior knowledge on the parameters themselves) and it is called <strong>posterior distribution</strong> or sometimes likelihood</li>
 <li>$P(D;T)$ is the "conditional" probability of having the data given the theory and it is also called <strong>likelihood</strong></li>
 <li>$P(T)$ is the probability of having the theory, that is the prior knowledge we have on the parameters, it's the <strong>prior distribution</strong></li>
 <li>$P(D)$ is the probability of find the data, that is a normalization, it does not help in finding the parameters</li>
-</ul><p>The prior distribution is often unknown but can be of two kind: it can come from previous experiments or it can be the exclusion of some regions of the parameter space. The final result strongly depends on it.    </p>
+</ul>
+<p>The prior distribution is often unknown but can be of two kind: it can come from previous experiments or it can be the exclusion of some regions of the parameter space. The final result strongly depends on it.    </p>
 <p><strong>References</strong>    </p>
-<ul><li>http://www.lorisbazzani.info/papers/old_projects/HMM_MPES.pdf</li>
+<ul>
+<li>http://www.lorisbazzani.info/papers/old_projects/HMM_MPES.pdf</li>
 <li>http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/book</li>
 <li>www.mathce.it/archivio/markov.pdf</li>
 <li>http://en.wikipedia.org/wiki/Markov_chain</li>
@@ -250,8 +319,12 @@ where:    </p>
 <li>http://www.vinz.info/catene-di-markov%3a-spam-che-piace-ai-motori-pt-1-4e1b78613a5d29b75200000a.html/li&gt;      </li>
 <li>http://www.thphys.uni-heidelberg.de/~amendola/statistics-ws2011.html</li>
 <li>http://arxiv.org/abs/0712.3028</li>
-</ul><ul class="pager"><li class="previous">
-            <a href="learning-c-from-simulations-1.html">← Previous post</a>
+</ul>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="learning-c-from-simulations-3-c-horrors.html">← Previous post</a>
         </li>
     
     
@@ -259,7 +332,17 @@ where:    </p>
             <a href="create-your-own-wikipedia.html">Next post →</a>
         </li>
     
-    </ul></div>
+    </ul>
+
+    
+        
+    
+
+    
+    
+    
+
+    </div>
 
     </div>
     </div>
@@ -277,5 +360,22 @@ where:    </p>
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
