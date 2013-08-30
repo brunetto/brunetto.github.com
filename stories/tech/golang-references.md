@@ -7,4 +7,4 @@
 .. slug: golang-references
 -->
 
-Write your post here.
+* [Go installation from source](../../posts/go-installation-from-source.html)
