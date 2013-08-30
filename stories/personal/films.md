@@ -9,6 +9,7 @@
 
 ## To see
 
+* Pitch Perfect
 * [Tracks](http://en.wikipedia.org/wiki/Tracks_(2013_film))
 * Sin City
 * Mezzogiorno e mezzo di fuoco
