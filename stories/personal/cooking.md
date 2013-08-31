@@ -7,6 +7,6 @@
 .. slug: cooking
 -->
 
-
+* Piadine rucola, stracchino, pomodorini e crudo/arrosto
 
 
