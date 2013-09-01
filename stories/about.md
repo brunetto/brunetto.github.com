@@ -10,7 +10,7 @@
 # For future reference...
 
 ... is the main reason because I try to keep this blog alive! Just to save knowledge about things I find useful to have them when they are needed again.    
-The second is just... to do it because I like the "[technology]"(../posts/blogging-with-nikola-ipython-github.html) behind it!:P
+The second is just... to do it because I like the "[technology](../posts/blogging-with-nikola-ipython-github.html)" behind it!:P
 
 # Me
 
@@ -26,7 +26,7 @@ function for dark matter haloes, subhaloes and dark matter, and apply it to the 
 I'm also a [scout](personal/scout.html) leader in the AGESCI association, a [traveller](travels/travels.html)
 (by [moto](moto.html), feet, by airplane, ...) and a [registered linux user](https://linuxcounter.net) 
 with registration number [508678](http://linuxcounter.net/user/508678.html).    
-I'm still try to [play an instrument](personal/music.html)!:P    
+I'm still try to [play an instrument](personal/music/music.html)!:P    
 Sometimes I [try to do something in the kitchen](personal/cooking.html) without create a black hole
 or violating any nature law!:P    
 Of course, I own an [Android](tech/android.html) phone.    
