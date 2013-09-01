@@ -24,6 +24,6 @@ hg clone -u release https://code.google.com/p/go
 cd go/src
 ./all.bash
 echo "export PATH=$PATH:/usr/local/go/bin" >> $HOME/.bashrc
-"export GOPATH=$HOME/Code/go/" >> $HOME/.bashrc
+echo "export GOPATH=$HOME/Code/go/" >> $HOME/.bashrc
 ````
 

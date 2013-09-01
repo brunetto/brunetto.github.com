@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Fri, 30 Aug 2013 17:09:38 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Go installation from source</title><link>brunettoziosi.eu/posts/go-installation-from-source.html</link><description>&lt;div&gt;&lt;p&gt;Summary of the Go installation instruction from source as presented in:    &lt;/p&gt;
+<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Sun, 01 Sep 2013 02:32:09 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Go installation from source</title><link>brunettoziosi.eu/posts/go-installation-from-source.html</link><description>&lt;div&gt;&lt;p&gt;Summary of the Go installation instruction from source as presented in:    &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://golang.org/doc/install"&gt;Go installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://golang.org/doc/install/source"&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
