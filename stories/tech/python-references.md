@@ -7,6 +7,7 @@
 .. slug: python-references
 -->
 
+- [Super Python Guide](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
 * [Astropy](http://www.astropy.org/)
 * [Astrocompute](http://astrocompute.wordpress.com/)
 * [Astropython](http://www.astropython.org/)

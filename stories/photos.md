@@ -20,6 +20,8 @@ Some links regarding the world of photography...
 [John Tisbury](johntisbury.deviantart.com)
 * [John Suler](http://www.flickr.com/photos/jsuler)
 -->
+* [Lincoln Harrison](http://500px.com/Hakka), [on Flickr](http://www.flickr.com/photos/hakka69), [personal site](http://www.lincolnharrison.com/)
+
 #### Lightpainting
 
 * [10 Amazing Light Painting Photographers You Should Start Following Right Now](http://petapixel.com/2013/08/27/10-amazing-light-painting-photographers/)
