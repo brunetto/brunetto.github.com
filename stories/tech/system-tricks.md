@@ -13,6 +13,9 @@ Now I'm working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a 
  and a Ubuntu 13.04 Dell Laptop.    
 See [here](system.html) for a list of installed packages and settings.
 
+* in case of kwin problems
+`kquitapp plasma-desktop` + in case, `plasma-desktop`
+
 ## Searching
 
 * `grep -H '<string>' *.<ext>`

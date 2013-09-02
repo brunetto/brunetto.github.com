@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>Binaries hardness | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for future reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Binaries hardness</h1>
+    
+
+    <hr><small>
+        Posted: <time class="published" datetime="2013-09-02T17:49:38">2013-09-02 17:49</time></small>
+    <hr><div class="text_cell_render border-box-sizing rendered_html">
+<p>Trying to compute the hardness of the binaries and the hard/soft transition. The hard/soft transition is when \[\frac{Gm_1m_2}{2a}=\frac{1}{2}\langle m\rangle\sigma^2\]</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>if we substitute</p>
+<ul><li>\(\langle m \rangle = 1 M_{\odot} = (1.98855 ± 0.00025)\times 10^{30}kg \sim 2\times 10^{30} kg\)</li>
+<li>\(\sigma\sim 10 km/s = 10000 m/s\)</li>
+<li>\(a\sim 10^6 AU = 149.6\times10^6 km = 150\times10^6 m\)</li>
+<li>\(G = 6.67384(80) \times 10^{-11} \ \mbox{m}^3 \ \mbox{kg}^{-1} \ \mbox{s}^{-2} = 6.67384(80) \times 10^{-11} \ {\rm N}\, {\rm (m/kg)^2}\)</li>
+</ul></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">m</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">30</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">150</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">E1</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">m</span> <span class="o">*</span> <span class="n">sigma</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [2]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">E1</span><span class="p">,</span> <span class="s">" J, that traslates into "</span><span class="p">,</span> <span class="n">E1</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">,</span> <span class="s">" erg"</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+1e+38  J, that traslates into  1e+45  erg
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [3]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">E2</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">a</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [4]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">E2</span><span class="p">,</span> <span class="s">" J, that traslates into "</span><span class="p">,</span> <span class="n">E2</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">,</span> <span class="s">" erg"</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+8.89333333333e+41  J, that traslates into  8.89333333333e+48  erg
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So there might be something wrong or it may be just the approximation effect... Let's try to find the \(a\) for E1</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [5]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="n">sigma</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In [6]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">a</span><span class="p">,</span> <span class="s">" m that traslates into "</span><span class="p">,</span> <span class="n">a</span> <span class="o">/</span> <span class="p">(</span><span class="mi">150</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">),</span> <span class="s">" AU"</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+1.334e+12  m that traslates into  8893.33333333  AU
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In []:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre> 
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    
+    <ul class="pager"></ul></div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul></div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
