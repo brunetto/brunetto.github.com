@@ -75,112 +75,11 @@
         <p style="text-align:right"><big>
              Posted: 2013-09-03 16:59
         </big></p>
-        <hr><p>This is the first attempt to check the external ip of a linux box. 
+        <hr><div><p>This is the first attempt to check the external ip of a linux box. 
 This means, for example, the public ip address of our modem if we are connected
 to the home Wi-Fi.  <br>
 I will try to do this in Python and Go. Of course these are raw attempts.</p>
-<h4>Python</h4>
-<div class="code"><pre><span class="c">#!/usr/bin/env python</span>
-<span class="kn">import</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">time</span>
-
-<span class="c"># In internet they say that</span>
-<span class="c"># ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$</span>
-<span class="c"># is better but I find this useful</span>
-
-<span class="k">print</span> <span class="s">"Check external ip"</span>
-<span class="k">print</span> <span class="s">"This script need curl and the Python modules re, os and time"</span>
-
-<span class="c"># Compile regex</span>
-<span class="n">reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'</span><span class="p">)</span>
-
-<span class="c"># Query until stop, hoping the site won't stop us</span>
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="c"># Ask the site for ip</span>
-    <span class="n">string</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s">"curl -s 'http://checkip.dyndns.org'"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="n">reg</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">res</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s">"Error, ip not found, continue, ..."</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">ip</span>
-        <span class="n">ip</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="c"># Recreate the ip file and write the ip</span>
-        <span class="n">ipFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"ip.dat"</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
-        <span class="n">ipFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
-        <span class="n">ipFile</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
-        <span class="n">ipFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="c"># Wait</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-
-
-<h4>Go</h4>
-<div class="code"><pre><span class="kn">package</span> <span class="nx">main</span>
-
-<span class="kn">import</span> <span class="p">(</span>
-    <span class="c1">//"io/ioutil"</span>
-    <span class="s">"os"</span>
-    <span class="s">"log"</span>
-    <span class="s">"fmt"</span>
-    <span class="s">"time"</span>
-    <span class="s">"os/exec"</span>
-    <span class="s">"regexp"</span>
-<span class="p">)</span>
-
-<span class="c1">// check the errors</span>
-<span class="kd">func</span> <span class="nx">check</span><span class="p">(</span><span class="nx">e</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="nx">e</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-        <span class="nb">panic</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-
-    <span class="c1">// set ip download command</span>
-
-    <span class="nx">command</span> <span class="o">:=</span> <span class="s">"/usr/bin/curl"</span>
-    <span class="nx">args</span> <span class="o">:=</span> <span class="s">"http://checkip.dyndns.org"</span>
-
-    <span class="c1">// compile regexp</span>
-    <span class="kd">var</span> <span class="nx">digitsRegexp</span> <span class="p">=</span> <span class="nx">regexp</span><span class="p">.</span><span class="nx">MustCompile</span><span class="p">(</span><span class="s">`\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}`</span><span class="p">)</span>
-
-    <span class="c1">// infinite loop to update the ip</span>
-    <span class="k">for</span> <span class="p">;;{</span>
-        <span class="c1">// download ip string</span>
-        <span class="nx">out</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">exec</span><span class="p">.</span><span class="nx">Command</span><span class="p">(</span><span class="nx">command</span><span class="p">,</span> <span class="nx">args</span><span class="p">).</span><span class="nx">Output</span><span class="p">()</span>
-        <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-            <span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-        <span class="p">}</span>
-
-        <span class="c1">// out is a binary buffer, convert into string</span>
-        <span class="nx">ipString</span> <span class="o">:=</span> <span class="nb">string</span><span class="p">(</span><span class="nx">out</span><span class="p">)</span>
-
-        <span class="c1">// search for ip</span>
-        <span class="nx">ipRes</span> <span class="o">:=</span> <span class="nx">digitsRegexp</span><span class="p">.</span><span class="nx">FindString</span><span class="p">(</span><span class="nx">ipString</span><span class="p">)</span>
-        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">ipRes</span><span class="p">)</span>
-
-        <span class="c1">// convert string to byte (found a better method)</span>
-        <span class="c1">//ipByte := []byte(ipRes)</span>
-        <span class="c1">//ioutil.WriteFile("ip.dat", ipByte, 0644)</span>
-
-        <span class="c1">// create a file, it implements the Writer interface</span>
-        <span class="nx">f</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nx">Create</span><span class="p">(</span><span class="s">"ip.dat"</span><span class="p">)</span>
-
-        <span class="c1">// check for errors</span>
-        <span class="nx">check</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-
-        <span class="c1">// close file before exit in case of problems</span>
-        <span class="k">defer</span> <span class="nx">f</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
-
-        <span class="c1">// write the string, discard (_) the number of bytes written</span>
-        <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">f</span><span class="p">.</span><span class="nx">WriteString</span><span class="p">(</span><span class="nx">ipRes</span><span class="p">)</span>
-        <span class="c1">// flush </span>
-        <span class="nx">f</span><span class="p">.</span><span class="nx">Sync</span><span class="p">()</span>
-        <span class="nx">f</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
-        <span class="c1">// wait</span>
-        <span class="nx">time</span><span class="p">.</span><span class="nx">Sleep</span><span class="p">(</span><span class="mi">5</span> <span class="o">*</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
+<p><a href="posts/check-external-ip.html">Read more...</a></p></div>
         <p>
         
         </p></div>
