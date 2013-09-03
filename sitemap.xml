@@ -525,6 +525,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunettoziosi.eu/google033a68bebc1f4a7f.html</loc>
+  <lastmod>2013-08-26</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunettoziosi.eu/index-1.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
@@ -1012,6 +1017,16 @@
  <url>
   <loc>brunettoziosi.eu/stories/videos.html</loc>
   <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/upsidedown/</loc>
+  <lastmod>2013-08-30</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/upsidedown/index.html</loc>
+  <lastmod>2013-08-30</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
