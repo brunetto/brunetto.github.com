@@ -21,6 +21,7 @@ Some links regarding the world of photography...
 * [John Suler](http://www.flickr.com/photos/jsuler)
 -->
 * [Lincoln Harrison](http://500px.com/Hakka), [on Flickr](http://www.flickr.com/photos/hakka69), [personal site](http://www.lincolnharrison.com/)
+* [Peter Greig](http://www.flickr.com/photos/st1nkypete/)
 
 #### Lightpainting
 
