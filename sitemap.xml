@@ -6,12 +6,12 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>brunettoziosi.eu/</loc>
-  <lastmod>2013-09-01</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/2011/</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -21,7 +21,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/2012/</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/2013/</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,7 +46,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/</loc>
-  <lastmod>2013-09-01</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -516,17 +516,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/galleries/</loc>
-  <lastmod>2013-08-21</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/galleries/index.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/google033a68bebc1f4a7f.html</loc>
-  <lastmod>2013-08-26</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -556,22 +551,22 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/listings/</loc>
-  <lastmod>2013-08-26</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/listings/YTdownload.py.html</loc>
-  <lastmod>2013-08-26</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/listings/YTdownload.py~.html</loc>
-  <lastmod>2013-08-26</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/listings/index.html</loc>
-  <lastmod>2013-08-26</lastmod>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -800,38 +795,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/stories/about.html</loc>
+  <loc>brunettoziosi.eu/stories/</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/stories/android.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/bachelor.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/barcelona.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/c-references.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/camino-de-santiago.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/cooking.html</loc>
-  <lastmod>2013-08-26</lastmod>
+  <loc>brunettoziosi.eu/stories/about.html</loc>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -840,33 +810,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/stories/dolomiti-di-brenta-lago-di-tovel.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/events.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/golang-references.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>brunettoziosi.eu/stories/goodies.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/stories/interior-design.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/italia-austria.html</loc>
-  <lastmod>2013-08-26</lastmod>
+  <loc>brunettoziosi.eu/stories/index.html</loc>
+  <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -875,48 +825,8 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/stories/london.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/master.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/monte-rosa-cervino.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/monti-lattari.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>brunettoziosi.eu/stories/moto.html</loc>
   <lastmod>2013-09-03</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/music.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/my-favourite-phd-comics.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/my-favourite-quotes.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/netherlands.html</loc>
-  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -937,11 +847,6 @@
  <url>
   <loc>brunettoziosi.eu/stories/personal/interior-design.html</loc>
   <lastmod>2013-09-03</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/personal/music.html</loc>
-  <lastmod>2013-08-30</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -980,21 +885,6 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/stories/programming-links.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/python-references.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/research.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>brunettoziosi.eu/stories/research/bachelor.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
@@ -1007,41 +897,6 @@
  <url>
   <loc>brunettoziosi.eu/stories/research/research.html</loc>
   <lastmod>2013-09-03</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/routes.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/sasso-lungo-sasso-piatto.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/scout.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/site-index.html</loc>
-  <lastmod>2013-09-03</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/sites-making-notes.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/system-tricks.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/system.html</loc>
-  <lastmod>2013-08-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -1157,21 +1012,6 @@
  <url>
   <loc>brunettoziosi.eu/stories/videos.html</loc>
   <lastmod>2013-09-03</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/stories/wish-list.html</loc>
-  <lastmod>2013-08-26</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/upsidedown/</loc>
-  <lastmod>2013-08-30</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>brunettoziosi.eu/upsidedown/index.html</loc>
-  <lastmod>2013-08-30</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
