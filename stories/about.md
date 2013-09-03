@@ -55,7 +55,8 @@ I am not good in languages, neverthless sometimes I found
 This blog is mainly written in [markdown](http://daringfireball.net/projects/markdown/) 
 and [ipynb](http://ipython.org/notebook.html), built with [Nikola](http://nikola.ralsina.com.ar/)
  and served by [GitHub Pages](http://pages.github.com/) at my own domain.    
-Fore more information see [here](../posts/blogging-with-nikola-ipython-github.html).
+Fore more information see [here](../posts/blogging-with-nikola-ipython-github.html).    
+For a site summary, see [here](http://brunettoziosi.eu/stories/index.html)
 
 # License
 
