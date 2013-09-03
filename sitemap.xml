@@ -855,6 +855,36 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunettoziosi.eu/stories/personal/multimedia/multimedia.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/multimedia/music.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/multimedia/photos.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/multimedia/songbook.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/multimedia/timelapses.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/multimedia/videos.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunettoziosi.eu/stories/personal/music/music.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
@@ -871,6 +901,11 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/personal/my-favourite-quotes.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/personal/personal.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -901,6 +936,11 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/research/research.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/research/units-of-measurement-and-conversions.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
@@ -945,6 +985,11 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunettoziosi.eu/stories/tech/tech.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunettoziosi.eu/stories/timelapses.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
@@ -966,6 +1011,11 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/travels/london.html</loc>
+  <lastmod>2013-09-03</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/moto.html</loc>
   <lastmod>2013-09-03</lastmod>
   <priority>0.5000</priority>
  </url>
