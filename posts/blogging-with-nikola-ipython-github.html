@@ -256,7 +256,15 @@ that is, the posts will appear with your G+ profile photos and some information 
 <li><a href="http://www.google.com/webmasters/tools/richsnippets">Structured Data Testing Tool</a></li>
 </ul><p>the only thing you need to do is to insert the line <code>&lt;a href="[profile_url]?rel=author"&gt;Google&lt;/a&gt;</code>
 in the index.html file, for example inserting it in the <code>CONTENT_FOOTER =</code> string, 
-using your G+ profile link instead of <code>[profile_url]</code>.</p>
+using your G+ profile link instead of <code>[profile_url]</code>.    </p>
+<p>If you own a Google+ page you can also link your site using</p>
+<div class="code"><pre><span class="n">EXTRA_HEAD_DATA</span> <span class="o">=</span> <span class="s">'&lt;link href="https://plus.google.com/&lt;your page id&gt;" rel="publisher" /&gt;'</span>
+</pre></div>
+
+
+<p>key in the <code>conf.py</code> configuration file.  <br>
+If you need some more html configuration you can add them there or you can copy the
+template folder from the parent theme folder to your theme and modify the template index.html.</p>
 <p>See also</p>
 <ul><li><a href="https://support.google.com/webmasters/answer/1708844?hl=en">How to link a Google+ page to your website</a></li>
 <li><a href="https://support.google.com/plus/answer/1711199?hl=en">Google Direct Connect</a></li>

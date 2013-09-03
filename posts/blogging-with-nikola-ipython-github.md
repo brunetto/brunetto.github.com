@@ -164,7 +164,16 @@ Following
 
 the only thing you need to do is to insert the line `<a href="[profile_url]?rel=author">Google</a>`
 in the index.html file, for example inserting it in the `CONTENT_FOOTER =` string, 
-using your G+ profile link instead of `[profile_url]`.
+using your G+ profile link instead of `[profile_url]`.    
+
+If you own a Google+ page you can also link your site using
+````python
+EXTRA_HEAD_DATA = '<link href="https://plus.google.com/<your page id>" rel="publisher" />'
+````
+
+key in the `conf.py` configuration file.    
+If you need some more html configuration you can add them there or you can copy the
+template folder from the parent theme folder to your theme and modify the template index.html.
 
 See also
 
