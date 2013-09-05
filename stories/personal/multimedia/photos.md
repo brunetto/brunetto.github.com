@@ -68,6 +68,7 @@ Some links regarding the world of photography...
 * Hugin
 * [Planetoids Gallery](http://www.visualswirl.com/inspiration/22-amazing-planetoid-photographs/)
 * [Create planetoids](http://haloramics.tiedtheleader.com/PlanetoidHowTo/PlanetoidHowTo.html)
+* [krpano](http://krpano.com/)
 
 ## CLI tricks
 
