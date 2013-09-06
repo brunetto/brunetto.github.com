@@ -16,10 +16,7 @@ Some links regarding the world of photography...
 * [Garry](http://www.flickr.com/photos/garry61/)
 * [Jonathan Besler](http://500px.com/JonathanBesler)
 * [Anton Jankovoy](http://500px.com/jankovoy)
-<!--* [Gergo](http://www.flickr.com/photos/pgaalien/) [Antal](http://500px.com/alienart)
-[John Tisbury](johntisbury.deviantart.com)
-* [John Suler](http://www.flickr.com/photos/jsuler)
--->
+<!--* [Gergo](http://www.flickr.com/photos/pgaalien/) [Antal](http://500px.com/alienart)[John Tisbury](johntisbury.deviantart.com)* [John Suler](http://www.flickr.com/photos/jsuler)-->
 * [Lincoln Harrison](http://500px.com/Hakka), [on Flickr](http://www.flickr.com/photos/hakka69), [personal site](http://www.lincolnharrison.com/)
 * [Peter Greig](http://www.flickr.com/photos/st1nkypete/)
 * [Sébastien GABORIT](http://www.flickr.com/photos/90291911@N08/)
