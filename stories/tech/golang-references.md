@@ -22,3 +22,8 @@
 * https://github.com/gonum 
 * https://plus.google.com/+golang/posts 
 * https://plus.google.com/communities/115354877257015196825 
+* [Progress bar](http://www.darkcoding.net/software/pretty-command-line-console-output-on-unix-in-python-and-go-lang/)
+* [Advanced logging](https://code.google.com/p/log4go/)
+* [Zen Slide](http://talks.golang.org/2012/zen.slide)
+* [What Python developers need to know before migrating to Go(lang)](http://blog.repustate.com/migrating-code-from-python-to-golang-what-you-need-to-know/2013/04/23/)
+* [Why I’m not leaving Python for Go](http://uberpython.wordpress.com/2012/09/23/why-im-not-leaving-python-for-go/)
