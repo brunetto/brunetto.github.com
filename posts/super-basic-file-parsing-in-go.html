@@ -119,7 +119,7 @@ throw an error.    </p>
 We would also like to know the time needed to execute the program so we use
 <code>tGlob0 := time.Now()</code> to keep track of the time we launch the program.  <br>
 We also print a help message in case the number of arguments provided
-do not match the needed ones.... id they are wrong, googd luck!:P</p>
+do not match the needed ones.... id they are wrong, googd luck!:P    </p>
 <div class="code"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
 
     <span class="nx">helpMessage</span> <span class="o">:=</span><span class="s">`Hi! To use this program you must provide</span>
@@ -141,7 +141,7 @@ do not match the needed ones.... id they are wrong, googd luck!:P</p>
 To have a clearer view of what is going on I will declare the variables before except
 for <code>tGlob0</code> and <code>tGlob1</code>. If you want to know the type of a variable, you can 
 create it by assignement and then inspect its type with the reflect package, 
-using <code>reflect.TypeOf(variable)</code>.</p>
+using <code>reflect.TypeOf(variable)</code>.    </p>
 <div class="code"><pre>    <span class="kd">var</span> <span class="nx">inPath</span> <span class="kt">string</span>
     <span class="kd">var</span> <span class="nx">prefix</span> <span class="kt">string</span>
     <span class="kd">var</span> <span class="nx">searchString</span> <span class="kt">string</span>
@@ -157,10 +157,10 @@ using <code>reflect.TypeOf(variable)</code>.</p>
     <span class="kd">var</span> <span class="nx">fZip</span> <span class="o">*</span><span class="nx">gzip</span><span class="p">.</span><span class="nx">Reader</span>
     <span class="kd">var</span> <span class="nx">nReader</span> <span class="o">*</span><span class="nx">bufio</span><span class="p">.</span><span class="nx">Reader</span>
     <span class="kd">var</span> <span class="nx">read_line</span> <span class="kt">string</span>
-<span class="s">```</span>
+<span class="s">```    </span>
 
 <span class="s">The `</span><span class="nx">os</span><span class="s">` package provides the tools to interact with the OS, so we can retrieve the process</span>
-<span class="s">PID and the CLI arguments.</span>
+<span class="s">PID and the CLI arguments.    </span>
 
 <span class="s">```</span><span class="err">`</span><span class="k">go</span>
     <span class="nx">PID</span> <span class="p">=</span> <span class="nx">os</span><span class="p">.</span><span class="nx">Getpid</span><span class="p">()</span>
@@ -176,7 +176,7 @@ using <code>reflect.TypeOf(variable)</code>.</p>
 
 
 <p>The <code>Glob</code> function allows to search for the filenames matching a certain 
- wildcard pattern.  <br><code>defer</code> is used to mark functions to be executed on function exit.</p>
+ wildcard pattern.  <br><code>defer</code> is used to mark functions to be executed on function exit.    </p>
 <div class="code"><pre>    <span class="nx">inFiles</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">filepath</span><span class="p">.</span><span class="nx">Glob</span><span class="p">(</span><span class="nx">filepath</span><span class="p">.</span><span class="nx">Join</span><span class="p">(</span><span class="nx">inPath</span><span class="p">,</span> <span class="nx">prefix</span><span class="p">))</span>
     <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
         <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
@@ -197,7 +197,7 @@ using <code>reflect.TypeOf(variable)</code>.</p>
 <ul><li>work on strings</li>
 <li>write a counter that updates </li>
 <li>use the switch construct</li>
-<li>make an assignement in the if construct</li>
+<li>make an assignement in the if construct    </li>
 </ul><div class="code"><pre>    <span class="nx">log</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">"Starting main loop on file list of lenght "</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">inFiles</span><span class="p">))</span>
     <span class="k">for</span> <span class="nx">fileIdx</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">inFiles</span> <span class="p">{</span>
 
@@ -239,31 +239,29 @@ using <code>reflect.TypeOf(variable)</code>.</p>
 
 <p>And yes, no <code>while</code> but infinite loops with <code>for</code>.  <br>
 Then we read the file line by line and write the line if we find a certain 
-string inside it.</p>
-<p>````go
-        for {
-            if read_line, err = nReader.ReadString('\n'); err != nil {
-            log.Println("Done reading file with err", err)
-            break
-            }
-//          if (strings.Contains(read_line, "name =") || strings.Contains(read_line, "i =")) {//&amp;&amp; strings.Contains(read_line, "&lt;"){
-                if strings.Contains(read_line, searchString){
-                _, err = fOut.WriteString(read_line)
-                }
-        }</p>
-<div class="code"><pre>    <span class="c1">// flush </span>
-    <span class="n">fOut</span><span class="p">.</span><span class="n">Sync</span><span class="p">()</span>
-    <span class="n">fOut</span><span class="p">.</span><span class="n">Close</span><span class="p">()</span>
+string inside it.    </p>
+<div class="code"><pre>        <span class="k">for</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="nx">read_line</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">nReader</span><span class="p">.</span><span class="nx">ReadString</span><span class="p">(</span><span class="sc">'\n'</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+            <span class="nx">log</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">"Done reading file with err"</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+            <span class="k">break</span>
+            <span class="p">}</span>
+<span class="c1">//          if (strings.Contains(read_line, "name =") || strings.Contains(read_line, "i =")) {//&amp;&amp; strings.Contains(read_line, "&lt;"){</span>
+                <span class="k">if</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">Contains</span><span class="p">(</span><span class="nx">read_line</span><span class="p">,</span> <span class="nx">searchString</span><span class="p">){</span>
+                <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">fOut</span><span class="p">.</span><span class="nx">WriteString</span><span class="p">(</span><span class="nx">read_line</span><span class="p">)</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="c1">// flush </span>
+        <span class="nx">fOut</span><span class="p">.</span><span class="nx">Sync</span><span class="p">()</span>
+        <span class="nx">fOut</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">log</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="nx">tGlob1</span> <span class="o">:=</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Now</span><span class="p">()</span>
+    <span class="nx">log</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">"Wall time for all "</span><span class="p">,</span> <span class="nx">tGlob1</span><span class="p">.</span><span class="nx">Sub</span><span class="p">(</span><span class="nx">tGlob0</span><span class="p">))</span>
 <span class="p">}</span>
-
-
-<span class="n">log</span><span class="p">.</span><span class="n">Println</span><span class="p">()</span>
-<span class="n">tGlob1</span> <span class="o">:=</span> <span class="n">time</span><span class="p">.</span><span class="n">Now</span><span class="p">()</span>
-<span class="n">log</span><span class="p">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"Wall time for all "</span><span class="p">,</span> <span class="n">tGlob1</span><span class="p">.</span><span class="n">Sub</span><span class="p">(</span><span class="n">tGlob0</span><span class="p">))</span>
 </pre></div>
-
-
-<p>}</p>
     
     <ul class="pager"><li class="previous">
             <a href="check-external-ip.html">← Previous post</a>
