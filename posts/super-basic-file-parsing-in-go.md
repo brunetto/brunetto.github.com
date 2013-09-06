@@ -17,7 +17,7 @@ searching for the lines containing a certain string.
 Then, we import the packages we need. If a package is not still needed, go will 
 throw an error.    
 
-`//` or `/* */` are, respectively, the one-line and multi-line comments.    
+`//` or `/* */` are, respectively, the one-line and multi-line comments.        
 
 
 ````go
@@ -33,13 +33,13 @@ import (
 	"path/filepath" // path handling
 	"fmt" // basic printing
 )
-````    
+````        
 
 The main body of the program has to be in the `main` function.
 We would also like to know the time needed to execute the program so we use
 `tGlob0 := time.Now()` to keep track of the time we launch the program.    
 We also print a help message in case the number of arguments provided
-do not match the needed ones.... id they are wrong, googd luck!:P    
+do not match the needed ones.... id they are wrong, googd luck!:P        
 
 ````go
 func main() {
@@ -57,13 +57,13 @@ func main() {
 
 	tGlob0 := time.Now()
  
-````    
+````        
 
 Go can create variables in two ways, by declaring them before or by assignement directly.
 To have a clearer view of what is going on I will declare the variables before except
 for `tGlob0` and `tGlob1`. If you want to know the type of a variable, you can 
 create it by assignement and then inspect its type with the reflect package, 
-using `reflect.TypeOf(variable)`.    
+using `reflect.TypeOf(variable)`.        
 
 ````go	
 	var inPath string
@@ -81,10 +81,10 @@ using `reflect.TypeOf(variable)`.
 	var fZip *gzip.Reader
 	var nReader *bufio.Reader
 	var read_line string
-```    
+```        
 
 The `os` package provides the tools to interact with the OS, so we can retrieve the process
-PID and the CLI arguments.    
+PID and the CLI arguments.        
 	
 ````go
 	PID = os.Getpid()
@@ -96,11 +96,11 @@ PID and the CLI arguments.
 	searchString = os.Args[4]
 	
 	log.Println("Parsing files in folder ", inPath, " selecting ", os.Args[2])
-````    
+````        
 
 The `Glob` function allows to search for the filenames matching a certain 
  wildcard pattern.    
- `defer` is used to mark functions to be executed on function exit.    
+ `defer` is used to mark functions to be executed on function exit.        
 
 ````go
 	inFiles, err = filepath.Glob(filepath.Join(inPath, prefix))
@@ -116,14 +116,14 @@ The `Glob` function allows to search for the filenames matching a certain
 		panic(err)
 	}
 	defer fOut.Close()
-````    
+````        
 
 In the following piece of code is possible to see how to     
 
 * work on strings
 * write a counter that updates 
 * use the switch construct
-* make an assignement in the if construct    
+* make an assignement in the if construct        
 
 ````go
 	log.Println("Starting main loop on file list of lenght ", len(inFiles))
@@ -162,11 +162,11 @@ In the following piece of code is possible to see how to
 				log.Fatal("Unrecognized file ", inFile)
 			}
 		}
-````    
+````        
 
 And yes, no `while` but infinite loops with `for`.    
 Then we read the file line by line and write the line if we find a certain 
-string inside it.    
+string inside it.        
 
 ````go
 		for {
