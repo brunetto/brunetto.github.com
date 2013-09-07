@@ -40,7 +40,7 @@ Work in progress...
 * 2013-04-10_15 - Monteporzio Catone, [School on Gravitational Waves, neutrinos 
 and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html)
 * 2013- Vietri sul Mare, PhD school - [INFN SOS 2013 - School Of Statistics](http://agenda.infn.it/event/infn-stat-2013)
-
+* 2013-12-12_2014-01-16 (Australia)[australia/toward-upsidedown.html]
 
 * Landshut, Medieval festival
 * 2012 - [Cammino Inglese](camino-de-santiago.html) (Ferrol -> Santiago de Compostela)

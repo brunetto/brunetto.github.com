@@ -42,6 +42,7 @@
 	* [System](tech/system.html)
 	* [System tricks](tech/system-tricks.html)
 * [Travels](travels/travels.html)
+	* [Australia](travels/australia/toward-upsidedown.html)
 	* [Barcelona](travels/barcelona.html)
 	* [Camino de Santiago](travels/camino-de-santiago.html)
 	* [London](travels/london.html)
