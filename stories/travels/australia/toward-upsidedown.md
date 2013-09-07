@@ -7,7 +7,7 @@
 .. slug: toward-upsidedown
 -->
 
-<script src="countdown.js" type="text/javascript"></script>
+<script src="../../../countdown.js" type="text/javascript"></script>
 <script type="application/javascript">
 var myCountdown4 = new Countdown({
 								 	year: 2013,
