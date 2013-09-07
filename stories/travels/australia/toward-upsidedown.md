@@ -33,7 +33,7 @@ var myCountdown4 = new Countdown({
 </td></tr>
 </tbody></table>
 
-## The blog
+<!--## The blog
 
 You can follow our (little) adventure at
 
@@ -58,4 +58,4 @@ You can follow our (little) adventure at
 
 
 
-
+-->
