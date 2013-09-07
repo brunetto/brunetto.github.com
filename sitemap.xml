@@ -1025,6 +1025,21 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>brunettoziosi.eu/stories/travels/australia/</loc>
+  <lastmod>2013-09-07</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/australia/__toward-upsidedown.html</loc>
+  <lastmod>2013-09-07</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/stories/travels/australia/index.html</loc>
+  <lastmod>2013-09-07</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>brunettoziosi.eu/stories/travels/australia/toward-upsidedown.html</loc>
   <lastmod>2013-09-07</lastmod>
   <priority>0.5000</priority>
@@ -1105,13 +1120,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>brunettoziosi.eu/upsidedown/__index.html</loc>
-  <lastmod>2013-08-30</lastmod>
+  <loc>brunettoziosi.eu/upsidedown/cd.html</loc>
+  <lastmod>2013-09-07</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/upsidedown/index.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-08-30</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
