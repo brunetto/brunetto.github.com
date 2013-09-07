@@ -33,6 +33,13 @@ var myCountdown4 = new Countdown({
 </td></tr>
 </tbody></table>
 
+## The blog
+
+You can follow our (little) adventure at
+
+* [The not so loved and not so updated blog](http://upsidedown.brunettoziosi.eu/)
+* [Our more updated Google+ page](https://plus.google.com/u/0/111247854072185245270/posts)
+
 ## The trip
 
 ## The backpack
