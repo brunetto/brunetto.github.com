@@ -48,6 +48,10 @@ You can follow our (little) adventure at
 
 ## Guides
 
+* [Lonely Planet Site](http://www.lonelyplanet.com/australia)
+* [Lonely planet guide](http://shop.lonelyplanet.com/pacific/australia-travel-guide-16/)
+
+
 ## Friends
 
 ## Tips&Tricks
