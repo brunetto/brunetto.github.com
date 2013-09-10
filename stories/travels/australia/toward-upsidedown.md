@@ -14,7 +14,7 @@
 
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
 <tr><td style="text-align: center;">
-<script src="../../../files/countdown.js" type="text/javascript"></script>
+<script src="countdown.js" type="text/javascript"></script>
 <script type="application/javascript">
 var myCountdown4 = new Countdown({
 								 	year: 2013,

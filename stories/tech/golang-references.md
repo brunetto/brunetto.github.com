@@ -27,3 +27,6 @@
 * [Zen Slide](http://talks.golang.org/2012/zen.slide)
 * [What Python developers need to know before migrating to Go(lang)](http://blog.repustate.com/migrating-code-from-python-to-golang-what-you-need-to-know/2013/04/23/)
 * [Why I’m not leaving Python for Go](http://uberpython.wordpress.com/2012/09/23/why-im-not-leaving-python-for-go/)
+* [Golang for Python programmers](http://golang-for-python-programmers.readthedocs.org/en/latest/)
+* [Go for Pythonistas](http://s3.amazonaws.com/golangweekly/go_for_pythonistas.pdf)
+* [Go by example](https://gobyexample.com/)

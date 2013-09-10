@@ -51,8 +51,11 @@ the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin
 * 2004 - ["Il cielo come laboratorio"](http://www.astro.unipd.it/progettoeducativo/) (Sky as a lab), in collaboration with 
 
 ##Schools and Workshops
-* IMPRS Summer School on Computational Astrophysics, 10-14 September 2012, Heidelberg, Germany
-* International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky, 11-15 June 2012, Teramo, Italy
+* [INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)](http://agenda.infn.it/conferenceDisplay.py?confId=5719)
+* [School on Gravitational Waves, neutrinos 
+and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html), 10-15 April 2013, Monteporzio Catone (Rome)
+* [IMPRS Summer School on Computational Astrophysics](http://www.mpia.de/imprs-hd/SummerSchools/2012/), 10-14 September 2012, Heidelberg, Germany
+* [International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky](http://isa2012.oa-teramo.inaf.it/index.php/home), 11-15 June 2012, Teramo, Italy
 * Summer School of Parallel Computing, 2-13 July 2012 @ CINECA
 * Introduction to C language for scientific programming, 17-18 May 2012 @ CINECA
 * PhD Summer School on Algorithms and Architectures for Computational Science and Engineering, 12-16 Semptember 2011 @ Departement of Information Engineering, Padua
