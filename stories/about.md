@@ -48,7 +48,15 @@ Here you can also find a link to [my favourite quotes](personal/my-favourite-quo
  and my [wish-list](personal/wish-list.html).    
 [Here](tech/sites-making-notes.html) some notes on making sites.    
 I am not good in languages, neverthless sometimes I found 
-[something worth remembering](languages.html).
+[something worth remembering](languages.html).    
+
+Sometimes, someone says that I'm quite nerd.....!:P    
+<a href="http://www.nerdtests.com/ft_nq.php">
+<img src="http://www.nerdtests.com/images/ft/nq/ed909c1383.gif" 
+alt="I am nerdier than 86% of all people. 
+Are you a nerd? Click here to take the Nerd Test, 
+get nerdy images and jokes, and talk on the nerd forum!"></a>
+
 
 # This blog
 

@@ -30,3 +30,4 @@
 * [Golang for Python programmers](http://golang-for-python-programmers.readthedocs.org/en/latest/)
 * [Go for Pythonistas](http://s3.amazonaws.com/golangweekly/go_for_pythonistas.pdf)
 * [Go by example](https://gobyexample.com/)
+* [Going Go](http://www.goinggo.net/)

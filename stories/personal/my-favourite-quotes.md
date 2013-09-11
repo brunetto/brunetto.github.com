@@ -59,3 +59,5 @@
 
 * Try not. Do or do not!! There is no try
 [Yoda, Star Wars: Episode V - The Empire Strikes Back (1980)]
+
+* “Life begins at the end of your comfort zone.” - Neale Donald Walsch
