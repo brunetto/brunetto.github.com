@@ -31,3 +31,10 @@
 * [Go for Pythonistas](http://s3.amazonaws.com/golangweekly/go_for_pythonistas.pdf)
 * [Go by example](https://gobyexample.com/)
 * [Going Go](http://www.goinggo.net/)
+* [The Go Programming Language, or: Why all C-like languages except one suck.](http://www.syntax-k.de/projekte/go-review)
+* [c2go](http://crypto.stanford.edu/~blynn/c2go/index.html)
+* [Golang: The Way To Go](http://devcry.heiho.net/2012/04/golang-way-to-go.html?m=1)
+* [Go after four months #golang](http://www.darkcoding.net/software/go-lang-after-four-months/)
+
+
+
