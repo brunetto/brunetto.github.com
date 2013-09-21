@@ -35,6 +35,6 @@
 * [c2go](http://crypto.stanford.edu/~blynn/c2go/index.html)
 * [Golang: The Way To Go](http://devcry.heiho.net/2012/04/golang-way-to-go.html?m=1)
 * [Go after four months #golang](http://www.darkcoding.net/software/go-lang-after-four-months/)
-
+* [GoDeb](http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go)
 
 
