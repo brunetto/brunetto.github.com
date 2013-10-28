@@ -6,10 +6,12 @@
 .. title: AstroFelpa
 .. slug: astrofelpa
 -->
-### License
+
+### License    
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" property="dct:title" rel="dct:type">AstroFelpa</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="brunettoziosi.eu" property="cc:attributionName" rel="cc:attributionURL">BrunettoZiosi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="www.brunettoziosi.eu/stories/research/astrofelpa.html" rel="cc:morePermissions">www.brunettoziosi.eu/stories/research/astrofelpa.html</a>.    
 
-### AstroP(h)D
+### AstroP(h)D    
 
 AstroFelpa is an indipendent initiative with the purpose to represent
 the Padua astronomers and all their friends and supporters.    
