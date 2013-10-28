@@ -40,8 +40,11 @@ Then some new ideas!:P
     
 
 <img alt="AstroFelpe" src="../../files/AstroFelpa/keepCalmAnd.png"></br>
+----
 <img alt="AstroFelpe" src="../../files/AstroFelpa/goGo.png"></br>
+----
 <img alt="AstroFelpe" src="../../files/AstroFelpa/f77.png"></br>
+----
 <img alt="AstroFelpe" src="../../files/AstroFelpa/goSM.png">
 
 <!--![AstroFelpe](../../files/AstroFelpa/keepCalmAnd.png) 
