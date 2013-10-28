@@ -18,3 +18,6 @@
 * [AstroML](http://www.astroml.org/)
 * [Why Astronomers Should Program in Python](http://bellm.org/blog/2011/05/27/why-astronomers-should-program-in-python/)
 
+* [Ipython presentations](http://damianavila.github.io/scipy2013_talks/index.html#/)
+* http://nbviewer.ipython.org/urls/raw.github.com/ipython/ipython/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb
+* http://scipy-lectures.github.io/

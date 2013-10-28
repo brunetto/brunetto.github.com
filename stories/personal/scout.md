@@ -22,6 +22,8 @@ My scout life
 * 2010 Stage Tracce del Wild (Foreste Casentinesi)
 * 2010 CFA (Val Codera, Colico)
 * 2010 - 2011 Aiuto Capo Clan
+* 2010-04-10_11 Campetto di specializzazione di Astronomia (Asiago)
+* 2010-06-12_13 Campetto di specializzazione di Natura (Padova)
 * 2010-10-02_03 - Bracciano, FIS Jamboree meeting
 * 2011 - 2013 Capo Clan
 * 2011 - Bari, Staff Jamboree

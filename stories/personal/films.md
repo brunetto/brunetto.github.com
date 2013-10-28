@@ -16,6 +16,22 @@
 * Fahrenheit 9/11 
 * Fahrenheit 451
 * Mission
+* Dune
+* Star Trek
+* Real Steel
+* Robot&Frank
+* Pacific RIM
+* Elysium
+* gravity
+* corpi da reato
+* Escape Plan - Fuga dall'inferno
+* Redemption - Identità nascoste
+* Ender's Game
+* After Earth
+* Il grande Gatsby
+* Educazione siberiana
+* Hunger Games
+* Hunger Games: La ragazza di fuoco
 
 
 
@@ -60,6 +76,10 @@
 * Star Wars
 * 300
 * Resident Evil
+* Io robot
+* L'uomo bicentenario
+* Wall-E
+* Il mondo dei replicanti
 
 
 ### Series
@@ -74,6 +94,7 @@
 * Scrubs
 * E.R. 
 * Big bang theory
+* Game of thrones
 
 
 

@@ -198,7 +198,9 @@ www yourname.github.com CNAME
 and wait for the information to propagate (1 hour to 3 days).    
 Note that the output folder can be deleted so it's better to create the `CNAME` file
 in the main or `files` directory and to copy or "`rsync`" it within the `nikola deploy`
-command workflow.
+command workflow.    
 
+If you use Tophost and want both the `www` and the `non-www` version of your site
+available, follow [this post](http://www.tophost.it/aiuto/cat2/11/199/).
 
 

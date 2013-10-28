@@ -60,4 +60,15 @@
 * Try not. Do or do not!! There is no try
 [Yoda, Star Wars: Episode V - The Empire Strikes Back (1980)]
 
-* “Life begins at the end of your comfort zone.” - Neale Donald Walsch
+* Life begins at the end of your comfort zone. - Neale Donald Walsch
+
+* Se un milione di persone crede ad una cosa stupida la cosa non smette di essere stupida - Anatole france 
+
+* Any sufficiently advanced technology is indistinguishable from magic. - Clarke's Third Law
+
+* Ricordare il passato serve per il futuro, così non ripeterai gli stessi errori: ne inventerai di nuovi. - Groucho Marx
+
+* Non, ho fallito…Ho solo trovato 10.000 modi per non far funzionare una lampadina - Edison
+
+* Con le mani, allora? Allora non mi stupisce che siate cosi' tristi. - GoT2x07
+

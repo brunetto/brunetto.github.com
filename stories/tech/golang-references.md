@@ -15,7 +15,7 @@
 * [Examples](https://gobyexample.com/)
 * http://golang.org/
 * http://golangtutorials.blogspot.it/2011/05/table-of-contents.html
-* http://www.golang-book.com/  11:02
+* http://www.golang-book.com/
 * [Why it was creates](http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html)
 * https://groups.google.com/forum/#!forum/golang-nuts 
 * https://code.google.com/p/golem/ 
@@ -36,5 +36,6 @@
 * [Golang: The Way To Go](http://devcry.heiho.net/2012/04/golang-way-to-go.html?m=1)
 * [Go after four months #golang](http://www.darkcoding.net/software/go-lang-after-four-months/)
 * [GoDeb](http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go)
-
+* [Reflection example](http://merbist.com/2011/06/27/golang-reflection-exampl/)
+* [Golang notes](http://log.zyxar.com/blog/2012/04/08/go-lang-notes/)
 

@@ -24,3 +24,8 @@
 ## Dream list
 
 * 
+
+## Amazon
+
+* [Amazon.it Wish List](http://www.amazon.it/registry/wishlist/2M78R4SVWDPFF)
+* [Amazon.com Wish List](http://amzn.com/w/GU96RWE3H5B0)
