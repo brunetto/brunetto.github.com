@@ -51,6 +51,12 @@ the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin
 * 2004 - ["Il cielo come laboratorio"](http://www.astro.unipd.it/progettoeducativo/) (Sky as a lab), in collaboration with 
 
 ##Schools and Workshops
+* [Dynamics & Kinetic theory of self-gravitating systems Workshop](http://uma.ensta-paristech.fr/conf/gravasco/W2.html) @ [Gravasco IHP trimester "N body gravitational dynamical systems From N=2 to infinity..."](http://uma.ensta-paristech.fr/conf/gravasco/home.html), Paris, 4-8 November 2013
+
+* [Galactic Dynamics Seminar](http://uma.ensta-paristech.fr/conf/gravasco/P3.html) @ [Gravasco IHP trimester "N body gravitational 
+dynamical systems From N=2 to infinity..."](http://uma.ensta-paristech.fr/conf/gravasco/home.html), Paris, 21th October-1st November 2013
+* Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua
+* PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua
 * [INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)](http://agenda.infn.it/conferenceDisplay.py?confId=5719)
 * [School on Gravitational Waves, neutrinos 
 and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html), 10-15 April 2013, Monteporzio Catone (Rome)
