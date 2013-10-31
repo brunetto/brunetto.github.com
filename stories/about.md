@@ -14,7 +14,7 @@ The second is just... to do it because I like the "[technology](../posts/bloggin
 
 # Me
 
-My name is [Brunetto Ziosi](https://plus.google.com/117554238100031566866) 
+My name is [Brunetto Ziosi](https://plus.google.com/+BrunettoZiosi)<!--(https://plus.google.com/117554238100031566866)--> 
 and I'm a [PhD student in Astronomy](http://www.dfa.unipd.it/index.php?id=1051) ([CV](curriculum-vitae.html))
 at the [Department of Physics and Astronomy](http://www.dfa.unipd.it/) of the [University of Padua](http://www.unipd.it/).    
 My [PhD project](research/research.html) is about the formation and evolution of compact objects 

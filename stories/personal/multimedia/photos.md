@@ -20,6 +20,7 @@ Some links regarding the world of photography...
 * [Lincoln Harrison](http://500px.com/Hakka), [on Flickr](http://www.flickr.com/photos/hakka69), [personal site](http://www.lincolnharrison.com/)
 * [Peter Greig](http://www.flickr.com/photos/st1nkypete/)
 * [Sébastien GABORIT](http://www.flickr.com/photos/90291911@N08/)
+* [Javier Pérez](http://instagram.com/cintascotch)
 
 #### Lightpainting
 
