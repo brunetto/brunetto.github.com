@@ -73,3 +73,5 @@
 * Con le mani, allora? Allora non mi stupisce che siate cosi' tristi. - GoT2x07
 
 * Che tu creda di farcela o non farcela, hai ragione - Henry Ford
+
+* Fake it till you make it

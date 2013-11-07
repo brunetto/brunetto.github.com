@@ -8,3 +8,5 @@
 -->
 
 * [99 Life hacks](http://sarcasticcharm.com/99-life-hacks-that-could-make-your-life-easier)
+* [Fake it till you make it](http://en.wikipedia.org/wiki/Fake_it_till_you_make_it)
+* [Self-fulfilling prophecy](http://en.wikipedia.org/wiki/Self-fulfilling_prophecy)
