@@ -16,6 +16,8 @@ See [here](system.html) for a list of installed packages and settings.
 * in case of kwin problems
 `kquitapp plasma-desktop` + in case, `plasma-desktop`
 
+* System monitoring: htop, iotop, saidar
+
 ## Searching
 
 * `grep -H '<string>' *.<ext>`

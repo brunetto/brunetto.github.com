@@ -75,3 +75,7 @@
 * Che tu creda di farcela o non farcela, hai ragione - Henry Ford
 
 * Fake it till you make it
+
+* A journey is best measured in friends than in miles - Tim Cahill 
+
+* La bellezza salverà il mondo. - Cvetan Todorov
