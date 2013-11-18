@@ -18,6 +18,7 @@ What you have to do is to add
 \usepackage{subfiles}
 ````
 in the preamble of the master file and
+
 ````latex
 \documentclass[tesi.tex]{subfiles}
 \begin{document}
@@ -26,8 +27,10 @@ in the preamble of the master file and
 ````
 in your subfiles.    
 Now you can import your subfiles in the master file with
+
 ````latex
 \subfile{subfile.tex}
+````
 <br />    
 Sources:<br />
 <ul><br />
