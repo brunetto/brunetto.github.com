@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>brunettoziosi.eu/</loc>
-  <lastmod>2013-11-11</lastmod>
+  <lastmod>2013-11-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,7 +46,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/</loc>
-  <lastmod>2013-11-11</lastmod>
+  <lastmod>2013-11-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -56,7 +56,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/alternatives.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -76,7 +76,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/astrophysics.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -91,17 +91,17 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/blogging.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/c.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/calendar.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -111,12 +111,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/code.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/computer.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -126,7 +126,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/cosmology.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -146,12 +146,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/diary.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/digikam.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -176,7 +176,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/gadget.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -191,7 +191,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/git.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -201,7 +201,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/go.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -211,12 +211,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/gpu.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/hdf5.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -231,7 +231,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/imported.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -241,7 +241,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/infographics.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -251,7 +251,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/inkscape.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -271,7 +271,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/jc.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -286,7 +286,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/leapfrog.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -306,7 +306,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/master-thesis.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -321,12 +321,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/mediawiki.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/millennium.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -341,12 +341,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/n-body.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/n-genic.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -361,7 +361,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/numerical.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -386,7 +386,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/phd.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -406,22 +406,22 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/power-spectrum.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/presentaiton.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/prezi.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/program.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -431,12 +431,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/python.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/removal.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -446,12 +446,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/simulation.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/simulations.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -491,12 +491,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/telescope.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/time-step.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -506,12 +506,12 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/treepm.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/categories/vector_image.html</loc>
-  <lastmod>2013-09-07</lastmod>
+  <lastmod>2013-10-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -826,7 +826,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/</loc>
-  <lastmod>2013-11-11</lastmod>
+  <lastmod>2013-11-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -861,7 +861,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/personal/eating.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -921,7 +921,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/personal/my-favourite-quotes.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -1021,7 +1021,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/travels/australia/</loc>
-  <lastmod>2013-11-11</lastmod>
+  <lastmod>2013-11-18</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -1091,7 +1091,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/stories/travels/travels.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-22</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>

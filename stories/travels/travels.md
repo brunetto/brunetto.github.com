@@ -9,6 +9,10 @@
 
 Work in progress...
 
+# Ideas
+
+* [Paris-London by bike](http://avenuevertelondonparis.co.uk/)
+
 # Travels&Holidays
 
 * Gargano (x n, Vieste, Peschici, ...)

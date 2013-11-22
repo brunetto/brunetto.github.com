@@ -79,3 +79,11 @@
 * A journey is best measured in friends than in miles - Tim Cahill 
 
 * La bellezza salverà il mondo. - Cvetan Todorov
+
+* Physics is like sex: sure, it may give some practical results, but that's not why we do it. - Richard Feynmann 
+
+* Ad ogni uomo viene data la chiave del paradiso, la stessa chiave apre le porte dell'inferno. - Massima buddhista, riportata da Richard Feynmann 
+
+* Ho un amico artista, e non sempre sono d’accordo con le sue opinioni. Magari prende in mano un fiore e dice: “Guarda com’è bello!” e sono d’accordo. Poi aggiunge: “Io, in quanto artista, riesco a vedere com’è bello un fiore. Voialtri scienziati lo fate a pezzi e diventa noioso”.
+E io penso che sragioni.
+Prima di tutto la bellezza che vede lui è a disposizione di tutti – anche della mia. Forse non avrò la sua estetica raffinata, ma so apprezzare la bellezza di un fiore. Per di più vedo nel fiore qualcosa, anzi molto, che lui non riesce a vedere: posso immaginare le cellule, anch’esse con una loro bellezza. La bellezza non si ferma alla dimensione dei centimetri, ma si trova anche su scale più piccole. - Richard Feynman
