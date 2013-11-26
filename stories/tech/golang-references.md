@@ -38,4 +38,6 @@
 * [GoDeb](http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go)
 * [Reflection example](http://merbist.com/2011/06/27/golang-reflection-exampl/)
 * [Golang notes](http://log.zyxar.com/blog/2012/04/08/go-lang-notes/)
+* [http://learnxinyminutes.com/docs/go/](http://learnxinyminutes.com/docs/go/)
+* [Sonia Codes] (http://soniacodes.wordpress.com/)
 
