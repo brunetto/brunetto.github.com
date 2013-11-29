@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="brunetto">
     <link href="https://plus.google.com/117796240971605586205" rel="publisher">
-    <title>Popeconomix | for future reference...</title>
+    <title>Asterisks and Python | for future reference...</title>
     <!-- mathjax_config -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -126,12 +126,12 @@
     
     <div class="postbox">
     
-    <h1>Popeconomix</h1>
+    <h1>Asterisks and Python</h1>
     
 
     <hr>
     <small>
-        Posted: <time class="published" datetime="2013-11-28T00:00:00">2013-11-28 00:00</time>
+        Posted: <time class="published" datetime="2012-05-07T00:00:00">2012-05-07 00:00</time>
         
     
 
@@ -139,31 +139,62 @@
     
           |  More posts about
         
-            <a class="tag" href="../categories/economy.html"><span class="badge badge-info">economy</span></a>
+            <a class="tag" href="../categories/asterisk.html"><span class="badge badge-info">asterisk</span></a>
+        
+            <a class="tag" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
+        
+            <a class="tag" href="../categories/function.html"><span class="badge badge-info">function</span></a>
+        
+            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+        
+            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
         
     
 
     </small>
     <hr>
-    <ul>
-<li>il capo della Federal reserve vede che l'economia stagna</li>
-<li>immette denaro a tassi di interesse basso</li>
-<li>si induce la gente a compare</li>
-<li>la gente si indebita usando come garanzia il valore della casa che sale grazie alla domanda</li>
-<li>le banche prestano a chiunque</li>
-<li>cartolarizzazione e finanza creativa: le banche vendono i debiti impastandoli in titoli incasinati dall'apparenza buona</li>
-<li>le agenzie di rating li approvano perché pagate dalle banche</li>
-<li>tutti prendono tutto</li>
-<li>la gente inizia a non pagare</li>
-<li>le case vengono confiscate</li>
-<li>la domanda crolla e così il valore</li>
-<li>le banche falliscono</li>
-<li>chiedono aiuto agli stati che sotto ricatto aiutano</li>
-<li>e falliscono pure loro</li>
-</ul>
+    <p>There are many possible uses of the "*" in Python, to be not confused, this is a brief summary of them.  <br>
+<!-- TEASER_END -->  <br>
+<strong>Math</strong>  <br>
+As usual, one asterisk means multiplication, two asterisks mean power with integer index:    </p>
+<div class="code"><pre><span class="mi">2</span><span class="o">*</span><span class="mi">3</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="mi">2</span><span class="o">**</span><span class="mi">3</span> <span class="o">=</span> <span class="mi">8</span>
+</pre></div>
+
+
+<p><strong>Functions</strong>  <br>
+In functions declarations "a parameter preceded by * in the parameter list for a function will result in any extra positional parameters being aggregated into a tuple [...] and likewise in Python a parameter preceded by ** will result in any extra keyword parameters being aggregated into a dictionary." (from <a href="http://en.wikipedia.org/wiki/Asterisk#Programming_languages" target="_blank">Wikipedia</a>). In a function call the asterisk before a (list or tuple) parameter expand it as the arguments of that function. You can find some examples <a href="http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/" target="_blank">here</a>.  <br>
+Just to give a little example, consider this:    </p>
+<div class="code"><pre><span class="n">In</span><span class="p">:</span> <span class="k">def</span> <span class="nf">pippo</span><span class="p">(</span>\<span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">i</span>
+<span class="n">In</span><span class="p">:</span> <span class="n">pippo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">:</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+
+<span class="n">In</span><span class="p">:</span> <span class="k">def</span> <span class="nf">pippo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+        <span class="k">print</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span>
+<span class="n">In</span><span class="p">:</span> <span class="n">pluto</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">In</span><span class="p">:</span> <span class="n">pippo</span><span class="p">(</span><span class="o">*</span><span class="n">pluto</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">:</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span>
+</pre></div>
     
     <ul class="pager">
     
+        <li class="previous">
+            <a href="phd-students-journal-clubs-and-sozi.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">Next post →</a>
+        </li>
     
     </ul>
 

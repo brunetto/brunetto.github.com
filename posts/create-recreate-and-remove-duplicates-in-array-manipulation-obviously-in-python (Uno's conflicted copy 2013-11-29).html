@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+    <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:) | for future reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        },
+        displayAlign: 'left', // Change this to 'center' to center equations.
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}}
+        }
+    });
+    </script>
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            for future reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../stories/about.html">About</a>
+        
+    
+        
+            </li><li><a href="../index.html">Blog</a>
+        
+    
+        
+            </li><li><a href="../stories/index.html">SiteIndex</a>
+        
+    
+        
+            </li><li><a href="../archive.html">Archives</a>
+        
+    
+        
+            </li><li><a href="../categories/index.html">Tags</a>
+        
+    
+        
+            </li><li><a href="../rss.xml">RSS</a>
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <div class="postbox">
+    
+    <h1>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2012-05-14T00:00:00">2012-05-14 00:00</time>
+        
+    
+
+        
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/array.html"><span class="badge badge-info">array</span></a>
+        
+            <a class="tag" href="../categories/code.html"><span class="badge badge-info">code</span></a>
+        
+            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+        
+            <a class="tag" href="../categories/pytables.html"><span class="badge badge-info">pytables</span></a>
+        
+            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
+        
+            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+        
+    
+
+    </small>
+    <hr>
+    <p>I would like to "pin" here a pair of quick solution to everyday problems I encounter manipulating arrays.    </p>
+<!-- TEASER_END -->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<p><strong>Create</strong>    </p>
+<p>First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with <code>np.genfromtxt</code>. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.    </p>
+<div class="code"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">tables</span> <span class="kn">as</span> <span class="nn">tb</span>
+<span class="kn">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"filename.csv"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">h5</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="s">'filename.h5'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createTable</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">values</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">table_name</span><span class="s">', title="table_description", expectedrows=12158536)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="p">([(</span><span class="s">'column_1'</span><span class="p">,</span> <span class="s">'i8'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_2'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">),</span> <span class="p">(</span><span class="s">'column_3'</span><span class="p">,</span> <span class="s">'f4'</span><span class="p">)]),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+    <span class="n">values</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>The use of <code>StringIO</code> is necessary to convert the string containing the line read in a "I/O" object that <code>np.genfromtxt</code> can eat.    </p>
+<p><strong>Remove duplicates</strong>  <br>
+Consider the previous file, if there are duplicates row, <code>np.unique</code> can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.    </p>
+<div class="code"><pre><span class="n">new_indexes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="s">'column_1'</span><span class="p">],</span> <span class="n">return_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="bp">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">new_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">new_indexes</span><span class="p">])</span>
+</pre></div>
+
+
+<p>In general, <code>numpy.unique(array, return_index=True, return_inverse=True)</code>  <br>
+returns an array sorted and without duplicates, the indexes of the original array to create the new array and the indexes of the new one to recreate the old one:    </p>
+<div class="code"><pre><span class="n">In</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">In</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">return_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">:</span> 
+<span class="p">(</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]),</span>
+    <span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]),</span>
+    <span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+
+
+<p><strong>Recreate</strong>    </p>
+<p>Sometimes it's useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.   <br>
+To do this a possible solution is:    </p>
+<div class="code"><pre><span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">zip</span><span class="p">([</span><span class="n">column_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="p">[</span><span class="n">column_2</span><span class="p">[</span><span class="mi">0</span><span class="p">]]))</span>
+<span class="k">print</span> <span class="s">"Creating table..."</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">createTable</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">values</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'fof_data_snap67'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"fof_data_snap67"</span><span class="p">,</span> <span class="n">expectedrows</span><span class="o">=</span><span class="mi">11697806</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fof</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">zip</span><span class="p">([</span><span class="n">column_1</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="n">column_2</span><span class="p">[</span><span class="n">i</span><span class="p">]]))</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+<span class="n">table</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+<span class="n">h5</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>It's also possible to zip the entire arrays if they fit into memory:    </p>
+<div class="code"><pre><span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">column_1</span><span class="p">,</span> <span class="n">column_2</span><span class="p">))</span>
+</pre></div>
+    
+    <ul class="pager">
+    
+        <li class="previous">
+            <a href="asterisks-and-python.html">← Previous post</a>
+        </li>
+    
+    
+        <li class="next">
+            <a href="learning-not-to-hate-c-things-worth-nothing.html">Next post →</a>
+        </li>
+    
+    </ul>
+
+    
+        
+    
+
+    
+    
+    
+
+    </div>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2013 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+
+    <!-- Social buttons -->
+    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+    <a class="addthis_button_more">Share</a>
+    <ul><li><a class="addthis_button_facebook"></a>
+    </li><li><a class="addthis_button_google_plusone_share"></a>
+    </li><li><a class="addthis_button_linkedin"></a>
+    </li><li><a class="addthis_button_twitter"></a>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
