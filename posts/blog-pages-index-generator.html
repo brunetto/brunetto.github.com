@@ -76,7 +76,107 @@
 
     <hr><small>
         Posted: <time class="published" datetime="2013-11-29T12:18:00">2013-11-29 12:18</time></small>
-    <hr><p>Write your post here.</p>
+    <hr><p>Since some time I was looking for a way to automatically generate an 
+<a href="../stories/index.html">index</a> for the 
+pages of this blog! 
+This would rebuild my index every time keeping automatically track of new or
+deleted pages.    </p>
+<p>Eventually I had time to try, and I tried in Go!:)    </p>
+<p>This is the first attempt, it could be better, but it works!</p>
+<p>Filesystem walk from 
+<a href="http://stackoverflow.com/questions/12657365/extracting-directory-hierarchy-using-go-language">here</a>.    </p>
+<div class="code"><pre><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">"path/filepath"</span>
+    <span class="s">"fmt"</span>
+    <span class="s">"log"</span>
+    <span class="s">"os"</span>
+    <span class="s">"strings"</span>
+    <span class="s">"time"</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">tGlob0</span> <span class="o">:=</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Now</span><span class="p">()</span>
+
+    <span class="c1">// Create output file</span>
+    <span class="nx">fOut</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nx">Create</span><span class="p">(</span><span class="s">"index.md"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">defer</span> <span class="nx">fOut</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
+
+    <span class="c1">// Define and implement what to do with path pieces</span>
+    <span class="nx">visit</span> <span class="o">:=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">path</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">info</span> <span class="nx">os</span><span class="p">.</span><span class="nx">FileInfo</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+        <span class="c1">// Split dir path from file name</span>
+        <span class="nx">dir</span><span class="p">,</span> <span class="nx">file</span> <span class="o">:=</span> <span class="nx">filepath</span><span class="p">.</span><span class="nx">Split</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span>
+        <span class="c1">// Init list line string</span>
+        <span class="nx">line</span> <span class="o">:=</span> <span class="s">""</span>
+        <span class="c1">// Init and compute the level of indentation based on dit level </span>
+        <span class="nx">indent</span> <span class="o">:=</span> <span class="s">""</span>
+        <span class="k">for</span> <span class="nx">i</span><span class="o">:=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">strings</span><span class="p">.</span><span class="nx">Split</span><span class="p">(</span><span class="nx">dir</span><span class="p">,</span> <span class="s">"/"</span><span class="p">))</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+            <span class="nx">indent</span> <span class="p">=</span> <span class="nx">indent</span> <span class="o">+</span> <span class="s">"    "</span>
+        <span class="p">}</span>
+        <span class="c1">// If I reach a new dir</span>
+        <span class="k">if</span> <span class="nx">info</span><span class="p">.</span><span class="nx">IsDir</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// Ignore local dir (exit function)</span>
+            <span class="k">if</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">Contains</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="s">"."</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="kc">nil</span>
+            <span class="p">}</span>
+            <span class="c1">// Create line for page with name == dirName</span>
+            <span class="nx">line</span> <span class="p">=</span> <span class="nx">indent</span> <span class="o">+</span> <span class="s">"* ["</span><span class="o">+</span><span class="nx">strings</span><span class="p">.</span><span class="nx">Title</span><span class="p">(</span><span class="nx">filepath</span><span class="p">.</span><span class="nx">Base</span><span class="p">(</span><span class="nx">path</span><span class="p">))</span><span class="o">+</span><span class="s">"]("</span><span class="o">+</span><span class="nx">filepath</span><span class="p">.</span><span class="nx">Join</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span> <span class="nx">filepath</span><span class="p">.</span><span class="nx">Base</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span><span class="o">+</span><span class="s">".html)"</span><span class="p">)</span><span class="o">+</span><span class="s">"\n"</span>
+        <span class="c1">// If I found a new file</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// Only consider md files</span>
+            <span class="k">if</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">HasSuffix</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="s">"md"</span><span class="p">){</span>
+                <span class="nx">fileBase</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">TrimSuffix</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="s">".md"</span><span class="p">)</span>
+                <span class="c1">// Ignore files with name == dirName</span>
+                <span class="k">if</span> <span class="nx">fileBase</span> <span class="o">==</span> <span class="nx">filepath</span><span class="p">.</span><span class="nx">Base</span><span class="p">(</span><span class="nx">dir</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="kc">nil</span>
+                <span class="p">}</span>
+                <span class="c1">// Create line</span>
+                <span class="nx">linkName</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">Replace</span><span class="p">(</span><span class="nx">strings</span><span class="p">.</span><span class="nx">Title</span><span class="p">(</span><span class="nx">strings</span><span class="p">.</span><span class="nx">Replace</span><span class="p">(</span><span class="nx">fileBase</span><span class="p">,</span> <span class="s">"-"</span><span class="p">,</span> <span class="s">"_"</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)),</span> <span class="s">"_"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="nx">line</span> <span class="p">=</span> <span class="nx">indent</span> <span class="o">+</span> <span class="s">"* ["</span><span class="o">+</span> <span class="nx">linkName</span> <span class="o">+</span><span class="s">"]("</span><span class="o">+</span><span class="nx">filepath</span><span class="p">.</span><span class="nx">Join</span><span class="p">(</span><span class="nx">dir</span><span class="p">,</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">Replace</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="s">".md"</span><span class="p">,</span> <span class="s">".html"</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">+</span><span class="s">")\n"</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>    
+                <span class="k">return</span> <span class="kc">nil</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="c1">// Print line to file</span>
+<span class="c1">//         fmt.Print(line)</span>
+        <span class="k">if</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">fOut</span><span class="p">.</span><span class="nx">WriteString</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+            <span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="kc">nil</span>
+    <span class="p">}</span>
+
+    <span class="nx">header</span> <span class="o">:=</span> <span class="s">`&lt;!-- </span>
+<span class="s">.. link: </span>
+<span class="s">.. description: </span>
+<span class="s">.. tags: </span>
+<span class="s">.. date: 2013/09/03 12:24:24</span>
+<span class="s">.. title: for future references summary</span>
+<span class="s">.. slug: index</span>
+<span class="s">--&gt;</span>
+
+<span class="s">* [Blog](../index.html)</span>
+<span class="s">`</span>
+
+    <span class="k">if</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">fOut</span><span class="p">.</span><span class="nx">WriteString</span><span class="p">(</span><span class="nx">header</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+            <span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Walk through folders</span>
+    <span class="nx">err</span> <span class="p">=</span> <span class="nx">filepath</span><span class="p">.</span><span class="nx">Walk</span><span class="p">(</span><span class="s">"./"</span><span class="p">,</span> <span class="nx">visit</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">tGlob1</span> <span class="o">:=</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Now</span><span class="p">()</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+    <span class="nx">log</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">"Recreated pages index in "</span><span class="p">,</span> <span class="nx">tGlob1</span><span class="p">.</span><span class="nx">Sub</span><span class="p">(</span><span class="nx">tGlob0</span><span class="p">))</span>
+<span class="p">}</span> <span class="c1">//END MAIN</span>
+</pre></div>
     
     <ul class="pager"><li class="previous">
             <a href="latex-conditional-compilation.html">← Previous post</a>
