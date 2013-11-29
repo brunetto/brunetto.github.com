@@ -541,27 +541,27 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/index-1.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index-2.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index-3.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index-4.html</loc>
-  <lastmod>2013-11-18</lastmod>
+  <lastmod>2013-11-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index.html</loc>
-  <lastmod>2013-10-28</lastmod>
+  <lastmod>2013-11-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -591,6 +591,11 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/posts/asterisks-and-python.html</loc>
+  <lastmod>2013-11-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/posts/blog-pages-index-generator.html</loc>
   <lastmod>2013-11-29</lastmod>
   <priority>0.5000</priority>
  </url>
