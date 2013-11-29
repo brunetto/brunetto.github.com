@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>Latex conditional compilation | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>Blog pages index generator | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -71,40 +71,17 @@
     
     <div class="postbox">
     
-    <h1>Latex conditional compilation</h1>
+    <h1>Blog pages index generator</h1>
     
 
     <hr><small>
-        Posted: <time class="published" datetime="2013-09-13T11:24:45">2013-09-13 11:24</time></small>
-    <hr><p>It's a long time I'm looking for a way to conditional-compiling my 
-<a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX)">Beamer</a> presentation in order to 
-decide on the fly if I want to print an handout version of the presentation.</p>
-<!--TEASER_END-->
-
-<p>Inside the <code>.tex</code> file you have to write</p>
-<div class="code"><pre><span class="k">\ifdefined\HANDOUT</span>
-  <span class="k">\setbeameroption</span><span class="nb">{</span>show notes<span class="nb">}</span> <span class="c">%un-comment to see the notes</span>
-  <span class="k">\usepackage</span><span class="nb">{</span>pgfpages<span class="nb">}</span>
-  <span class="k">\pgfpagesuselayout</span><span class="nb">{</span>8 on 1<span class="nb">}</span>[a4paper]<span class="c">%, landscape]</span>
-<span class="k">\fi</span>
-</pre></div>
-
-
-<p>where the <code>pgfpages</code> package is used to print 8 slide per page.  <br>
-Before this if you want you can put <code>\newcommand*{\HANDOUT}{}%</code>
-to decide in the source if you want the handout version or not...  <br>
-... or you can decide it via command line:</p>
-<div class="code"><pre>pdflatex -jobname<span class="o">=</span>handout.pdf  <span class="s2">"\def\HANDOUT{}\input{sourcefile.tex}"</span>
-</pre></div>
+        Posted: <time class="published" datetime="2013-11-29T12:18:00">2013-11-29 12:18</time></small>
+    <hr><p>Write your post here.</p>
     
     <ul class="pager"><li class="previous">
-            <a href="super-basic-file-parsing-in-go.html">← Previous post</a>
+            <a href="latex-conditional-compilation.html">← Previous post</a>
         </li>
     
-    
-        <li class="next">
-            <a href="blog-pages-index-generator.html">Next post →</a>
-        </li>
     
     </ul></div>
 
