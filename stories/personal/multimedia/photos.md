@@ -37,10 +37,6 @@ Some links regarding the world of photography...
 * [Michael Ross](http://mrossphoto.com/wordpress32/)
 * [Dennis Calvert](http://denniscalvert.net/blog/)
 
-
-
-
-
 ### Amateur
 
 * [Enrico Prenna](http://www.flickr.com/photos/enricoprenna/)
@@ -55,6 +51,10 @@ Some links regarding the world of photography...
 
 * [Lego bloks camera](http://petapixel.com/2012/07/31/a-nifty-panoramic-pinhole-camera-made-with-lego-blocks/)
 * [Lego bloks camera 2] (http://petapixel.com/2011/03/31/working-4x5-camera-created-with-lego/)
+
+## Tricks
+
+* [Snowflakes Photography](http://chaoticmind75.blogspot.ru/2013/08/my-technique-for-snowflakes-shooting.html)
 
 ## HDR/blending
 

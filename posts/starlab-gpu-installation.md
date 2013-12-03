@@ -55,7 +55,7 @@ puth `multithreading.h` in the sapporo folder and then in `host_evaluate_gravity
 ````
 to 
 ````c
-#include <multithreading.h>
+#include "multithreading.h"
 ````
 so c++ can find the header in the current directory.
 

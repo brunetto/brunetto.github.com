@@ -40,4 +40,5 @@
 * [Golang notes](http://log.zyxar.com/blog/2012/04/08/go-lang-notes/)
 * [http://learnxinyminutes.com/docs/go/](http://learnxinyminutes.com/docs/go/)
 * [Sonia Codes] (http://soniacodes.wordpress.com/)
+* [http://www.pheelicks.com/](http://www.pheelicks.com/)
 

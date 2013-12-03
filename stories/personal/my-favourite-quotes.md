@@ -93,3 +93,6 @@ tutto funziona e nessuno sa il perché. Noi abbiamo messo insieme la teoria e la
 pratica: non c'è niente che funzioni... e nessuno sa il perché! - A. Einstein
 
 * La differenza tra la teoria e la pratica e` molto piu` grande in pratica che in teoria
+
+* L’ottimista è colui che vede nella grandine una buona partenza per un mojito. - 
+C. Sauna (via one-none100000masks)
