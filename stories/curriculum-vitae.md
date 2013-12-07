@@ -62,7 +62,7 @@ dynamical systems From N=2 to infinity..."](http://uma.ensta-paristech.fr/conf/g
 and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html), 10-15 April 2013, Monteporzio Catone (Rome)
 * [IMPRS Summer School on Computational Astrophysics](http://www.mpia.de/imprs-hd/SummerSchools/2012/), 10-14 September 2012, Heidelberg, Germany
 * [International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky](http://isa2012.oa-teramo.inaf.it/index.php/home), 11-15 June 2012, Teramo, Italy
-* Summer School of Parallel Computing, 2-13 July 2012 @ CINECA
+* [Summer School of Parallel Computing](http://www.cineca.it/it/content/summer-school-parallel-computing), 2-13 July 2012 @ CINECA
 * Introduction to C language for scientific programming, 17-18 May 2012 @ CINECA
 * PhD Summer School on Algorithms and Architectures for Computational Science and Engineering, 12-16 Semptember 2011 @ Departement of Information Engineering, Padua
 * Workshop on Visualization of Large scientific Data, 14-15 June 2011 @ CINECA
