@@ -96,3 +96,6 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché! - A. Einstein
 
 * L’ottimista è colui che vede nella grandine una buona partenza per un mojito. - 
 C. Sauna (via one-none100000masks)
+
+* Fear is not real. The only place that fear can exist is in our thoughts of the future. It is a product of our imagination, causing us to fear things that do not at present and may not ever exist. That is near insanity. Do not misunderstand me danger is very real but fear is a choice.
+- Will Smith

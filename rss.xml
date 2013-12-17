@@ -1,105 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Tue, 03 Dec 2013 15:54:35 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog pages index generator</title><link>brunettoziosi.eu/posts/blog-pages-index-generator.html</link><description>&lt;p&gt;Since some time I was looking for a way to automatically generate an 
+<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Tue, 17 Dec 2013 04:56:58 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog pages index generator</title><link>brunettoziosi.eu/posts/blog-pages-index-generator.html</link><description>&lt;div&gt;&lt;p&gt;Since some time I was looking for a way to automatically generate an 
 &lt;a href="/stories/index.html"&gt;index&lt;/a&gt; for the 
 pages of this blog! 
 This would rebuild my index every time keeping automatically track of new or
 deleted pages.    &lt;/p&gt;
 &lt;p&gt;Eventually I had time to try, and I tried in Go!:)    &lt;/p&gt;
-&lt;p&gt;This is the first attempt, it could be better, but it works!&lt;/p&gt;
-&lt;p&gt;Filesystem walk from 
-&lt;a href="http://stackoverflow.com/questions/12657365/extracting-directory-hierarchy-using-go-language"&gt;here&lt;/a&gt;.    &lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="kn"&gt;package&lt;/span&gt; &lt;span class="nx"&gt;main&lt;/span&gt;
-
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
-    &lt;span class="s"&gt;"path/filepath"&lt;/span&gt;
-    &lt;span class="s"&gt;"fmt"&lt;/span&gt;
-    &lt;span class="s"&gt;"log"&lt;/span&gt;
-    &lt;span class="s"&gt;"os"&lt;/span&gt;
-    &lt;span class="s"&gt;"strings"&lt;/span&gt;
-    &lt;span class="s"&gt;"time"&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nx"&gt;tGlob0&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-    &lt;span class="c1"&gt;// Create output file&lt;/span&gt;
-    &lt;span class="nx"&gt;fOut&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nx"&gt;os&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"index.md"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="nb"&gt;panic&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;defer&lt;/span&gt; &lt;span class="nx"&gt;fOut&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-    &lt;span class="c1"&gt;// Define and implement what to do with path pieces&lt;/span&gt;
-    &lt;span class="nx"&gt;visit&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt; &lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="nx"&gt;os&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;FileInfo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="kt"&gt;error&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="kt"&gt;error&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="c1"&gt;// Split dir path from file name&lt;/span&gt;
-        &lt;span class="nx"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;file&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="c1"&gt;// Init list line string&lt;/span&gt;
-        &lt;span class="nx"&gt;line&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;
-        &lt;span class="c1"&gt;// Init and compute the level of indentation based on dit level &lt;/span&gt;
-        &lt;span class="nx"&gt;indent&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="nx"&gt;indent&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;indent&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"    "&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt;
-        &lt;span class="c1"&gt;// If I reach a new dir&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;IsDir&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="c1"&gt;// Ignore local dir (exit function)&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Contains&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt;
-            &lt;span class="p"&gt;}&lt;/span&gt;
-            &lt;span class="c1"&gt;// Create line for page with name == dirName&lt;/span&gt;
-            &lt;span class="nx"&gt;line&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;indent&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"* ["&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;"]("&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;".html)"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;"\n"&lt;/span&gt;
-        &lt;span class="c1"&gt;// If I found a new file&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="c1"&gt;// Only consider md files&lt;/span&gt;
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;HasSuffix&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"md"&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-                &lt;span class="nx"&gt;fileBase&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;TrimSuffix&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;".md"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-                &lt;span class="c1"&gt;// Ignore files with name == dirName&lt;/span&gt;
-                &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;fileBase&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-                    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt;
-                &lt;span class="p"&gt;}&lt;/span&gt;
-                &lt;span class="c1"&gt;// Create line&lt;/span&gt;
-                &lt;span class="nx"&gt;linkName&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;fileBase&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"_"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="s"&gt;"_"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-                &lt;span class="nx"&gt;line&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;indent&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"* ["&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;linkName&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;"]("&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;".md"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;".html"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;")\n"&lt;/span&gt;
-            &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;    
-                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt;
-            &lt;span class="p"&gt;}&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt;
-        &lt;span class="c1"&gt;// Print line to file&lt;/span&gt;
-&lt;span class="c1"&gt;//         fmt.Print(line)&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;fOut&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;WriteString&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;line&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Fatal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-
-    &lt;span class="nx"&gt;header&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="s"&gt;`&amp;lt;!-- &lt;/span&gt;
-&lt;span class="s"&gt;.. link: &lt;/span&gt;
-&lt;span class="s"&gt;.. description: &lt;/span&gt;
-&lt;span class="s"&gt;.. tags: &lt;/span&gt;
-&lt;span class="s"&gt;.. date: 2013/09/03 12:24:24&lt;/span&gt;
-&lt;span class="s"&gt;.. title: for future references summary&lt;/span&gt;
-&lt;span class="s"&gt;.. slug: index&lt;/span&gt;
-&lt;span class="s"&gt;--&amp;gt;&lt;/span&gt;
-
-&lt;span class="s"&gt;* [Blog](../index.html)&lt;/span&gt;
-&lt;span class="s"&gt;`&lt;/span&gt;
-
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;fOut&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;WriteString&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;header&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Fatal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-
-    &lt;span class="c1"&gt;// Walk through folders&lt;/span&gt;
-    &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;filepath&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Walk&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"./"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;visit&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;err&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;nil&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Fatal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-
-
-    &lt;span class="nx"&gt;tGlob1&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-    &lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-    &lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Recreated pages index in "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;tGlob1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;tGlob0&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;//END MAIN&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><guid>brunettoziosi.eu/posts/blog-pages-index-generator.html</guid><pubDate>Fri, 29 Nov 2013 12:18:00 GMT</pubDate></item><item><title>Latex conditional compilation</title><link>brunettoziosi.eu/posts/latex-conditional-compilation.html</link><description>&lt;div&gt;&lt;p&gt;It's a long time I'm looking for a way to conditional-compiling my 
+&lt;p&gt;This is the first attempt, it could be better, but it works!    &lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/blog-pages-index-generator.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>brunettoziosi.eu/posts/blog-pages-index-generator.html</guid><pubDate>Fri, 29 Nov 2013 12:18:00 GMT</pubDate></item><item><title>Latex conditional compilation</title><link>brunettoziosi.eu/posts/latex-conditional-compilation.html</link><description>&lt;div&gt;&lt;p&gt;It's a long time I'm looking for a way to conditional-compiling my 
 &lt;a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX)"&gt;Beamer&lt;/a&gt; presentation in order to 
 decide on the fly if I want to print an handout version of the presentation.&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/latex-conditional-compilation.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>brunettoziosi.eu/posts/latex-conditional-compilation.html</guid><pubDate>Fri, 13 Sep 2013 11:24:45 GMT</pubDate></item><item><title>Super-basic file parsing in Go</title><link>brunettoziosi.eu/posts/super-basic-file-parsing-in-go.html</link><description>&lt;div&gt;&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix 

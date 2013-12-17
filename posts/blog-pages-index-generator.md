@@ -15,12 +15,14 @@ deleted pages.
 
 Eventually I had time to try, and I tried in Go!:)    
 
-This is the first attempt, it could be better, but it works!
+This is the first attempt, it could be better, but it works!    
+
+<!-- TEASER_END -->
 
 Filesystem walk from 
 [here](http://stackoverflow.com/questions/12657365/extracting-directory-hierarchy-using-go-language).    
-
-
+    
+    
 ````go
 package main
 
