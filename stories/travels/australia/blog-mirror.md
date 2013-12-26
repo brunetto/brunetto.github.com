@@ -11,6 +11,8 @@
 <!-- 24/12 -->
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/hfhaviHLcgg"></div>
 
+<br/> <br/>
+
 <!-- 20/12 -->
 
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/8GNRzdWuTKn"></div>
