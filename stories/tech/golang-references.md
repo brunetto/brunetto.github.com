@@ -41,4 +41,5 @@
 * [http://learnxinyminutes.com/docs/go/](http://learnxinyminutes.com/docs/go/)
 * [Sonia Codes] (http://soniacodes.wordpress.com/)
 * [http://www.pheelicks.com/](http://www.pheelicks.com/)
+* [Chatroulette like mini demo in Go](http://talks.golang.org/2012/chat.slide#1)
 
