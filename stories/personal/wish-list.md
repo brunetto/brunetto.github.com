@@ -19,7 +19,7 @@
 * [Pantaloni Alpinism Man](http://www.decathlon.it/pantaloni-alpinism-man-id_8010075.html)
 * Roller Blade
 * [Even a Geek Can Speak: ](http://www.amazon.it/Even-Geek-Can-Speak-Presentation/dp/0978577604/ref=wl_it_dp_o_pC_nS_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IBB6XPF74B57X)
-
+* Parrot AR drone o simili! :P 
 
 ## Dream list
 

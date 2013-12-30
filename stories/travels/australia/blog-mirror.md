@@ -6,25 +6,115 @@
 .. title: G+ UpsideDown page mirror
 .. slug: blog-mirror
 -->
-
-
-<!-- 24/12 -->
-<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/hfhaviHLcgg"></div>
-
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/A5T6yzsLujF"></div>
 <br/> <br/>
-
-<!-- 20/12 -->
-
-<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/8GNRzdWuTKn"></div>
-
-
-
-
-
-
-
-
-
-
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/aLQ2iPieHuA"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/gRoq4p8o94y"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/9rEpMGw8FCw"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/b6bEkrVb5G9"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/6kRDJeE4cGG"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/GAee5fho19G"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/XwaP4TC8GUd"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/3Td8PDRpsTU"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/BybaD7Hg6RS"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/CqHTBsjjV1M"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/MHGi6zTY4LZ"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/bXQksk2Eawd"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/K4ukzSSF5uF"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/GKiNYgPuvCc"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/FK5U4y6J9vf"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/hfhaviHLcgg"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/N54MRMrnJfk"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/j1M2tsdm6HB"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/e5fhuQ5iQ3P"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/KS4yWCii2cK"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/11mengFCHqK"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/GHNuf13ANzs"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/ULFBAX2Bkfm"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/3ArEP1EGenB"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/QgR33nEoSxf"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/K5BofLn2iRo"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/ipcTLatTLB4"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/FEicJP62uHB"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/gBpKoi1vzP4"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/GVyJCUE6QLc"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/6tnHPvULFTS"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/6jKauL8s4ex"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/FA8CbuopeYC"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/K933bTsQWmU"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/DPTSpHaddQt"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/jfaVcresUJq"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/7cHEVwwKQ6V"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/eHjP7PfGK7n"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/NrjcJmk2RHS"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/6mZcTyw8GeA"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/T1Juc3xUY13"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/1ygzir6WALa"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/Fk1wERbZLgV"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/L5vNAF4BWM5"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/JnB42by8fUF"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/bM5JDKo5EdA"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/LJeqqkVfnWx"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/eMV1HwGMZS3"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/J2pXBtSBNNU"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/M9XjPSEpo7P"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/ZpAJ2p17Vfx"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/MFWwkUiWMj3"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/FXfDGjTVFKM"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/aeEiptHKESv"></div>
+<br/> <br/>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
