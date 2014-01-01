@@ -6,6 +6,24 @@
 .. title: G+ UpsideDown page mirror
 .. slug: blog-mirror
 -->
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/hm4ChedjjWP"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/XvteN79QcaS"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/iSxw7QSosiT"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/1FwHwH9Tf3F"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/Xie2s9FDFeP"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/V9yug3vR52T"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/3kDSjbuvK2o"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/FDhgASF9Yjn"></div>
+<br/> <br/>
+<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/YjdGE6ZYW4q"></div>
+<br/> <br/>
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/A5T6yzsLujF"></div>
 <br/> <br/>
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/aLQ2iPieHuA"></div>
@@ -39,8 +57,6 @@
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/FK5U4y6J9vf"></div>
 <br/> <br/>
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/hfhaviHLcgg"></div>
-<br/> <br/>
-<div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/N54MRMrnJfk"></div>
 <br/> <br/>
 <div class="g-post" data-href="https://plus.google.com/111247854072185245270/posts/j1M2tsdm6HB"></div>
 <br/> <br/>
