@@ -1,4 +1,13 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>System tricks | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="brunetto">
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+    <title>System tricks | for future reference...</title>
+    <!-- mathjax_config -->
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -9,9 +18,39 @@
             styles: {'.MathJax_Display': {"margin": 0}}
         }
     });
-    </script><link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+    </script>
+    
+        
+            <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml"><link href="https://plus.google.com/117796240971605586205" rel="publisher"></head><body>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+        
+    
+    
+
+    
+
+
+    
+
+
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
 <!-- Menubar -->
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -29,7 +68,11 @@
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../about.html">About</a>
+                <ul class="nav">
+                    
+    
+        
+            <li><a href="../about.html">About</a>
         
     
         
@@ -53,12 +96,24 @@
         
     
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
                 
-                <ul class="nav pull-right"></ul></div>
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -76,20 +131,26 @@
 <p>Now I'm working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
  and a Ubuntu 13.04 Dell Laptop.  <br>
 See <a href="system.html">here</a> for a list of installed packages and settings.</p>
-<ul><li>
+<ul>
+<li>
 <p>in case of kwin problems
 <code>kquitapp plasma-desktop</code> + in case, <code>plasma-desktop</code></p>
 </li>
 <li>
 <p>System monitoring: htop, iotop, saidar</p>
 </li>
-</ul><h3>Searching</h3>
-<ul><li><code>grep -H '&lt;string&gt;' *.&lt;ext&gt;</code></li>
+</ul>
+<h3>Searching</h3>
+<ul>
+<li><code>grep -H '&lt;string&gt;' *.&lt;ext&gt;</code></li>
 <li><code>grep -r "&lt;strings&gt;" ./</code></li>
 <li><code>sudo updatedb &amp;&amp; locate &lt;nomefile&gt;</code></li>
-</ul><h3>Download</h3>
-<ul><li>download music from youtube</li>
-</ul><div class="code"><pre>youtube-dl --extract-audio --audio-format<span class="o">=</span>mp3 &lt;youtubeLink&gt;
+</ul>
+<h3>Download</h3>
+<ul>
+<li>download music from youtube</li>
+</ul>
+<div class="code"><pre>youtube-dl --extract-audio --audio-format<span class="o">=</span>mp3 &lt;youtubeLink&gt;
 </pre></div>
 
 
@@ -121,9 +182,11 @@ See <a href="system.html">here</a> for a list of installed packages and settings
 
 
 <h3>Goodies</h3>
-<ul><li>visualize git history <code>gource ./ -o /dev/null</code></li>
+<ul>
+<li>visualize git history <code>gource ./ -o /dev/null</code></li>
 <li>grab an image from the webcam with CLI VLC</li>
-</ul><div class="code"><pre>cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
+</ul>
+<div class="code"><pre>cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
 /home/ziosi/Pictures/webcam --scene-prefix img<span class="k">$(</span>date <span class="s1">'+%y%m%d%h%m%s'</span><span class="k">)</span> 
 --scene-format png vlc://quit --run-time<span class="o">=</span>1
 </pre></div>
@@ -145,5 +208,22 @@ See <a href="system.html">here</a> for a list of installed packages and settings
     </li><li><a class="addthis_button_google_plusone_share"></a>
     </li><li><a class="addthis_button_linkedin"></a>
     </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+    </li></ul>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+    <!-- End of social buttons -->
+
+
+
+    
+        
+            <script src="../../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script>
+</body></html>
