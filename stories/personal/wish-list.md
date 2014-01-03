@@ -7,6 +7,7 @@
 .. slug: wish-list
 -->
 
+* [BeastGrip](http://www.beastgrip.com/)
 * Guanti da moto estivi
 * Guanti da moto invernali
 * Zaino 65+10l
