@@ -50,6 +50,7 @@
     * [System](tech/system.html)
 * [Travels](travels/travels.html)
     * [Australia](travels/australia/australia.html)
+        * [Blog backup](travels/australia/blog-backup.html)
         * [Blog mirror](travels/australia/blog-mirror.html)
         * [Toward upsidedown](travels/australia/toward-upsidedown.html)
     * [Barcelona](travels/barcelona.html)
