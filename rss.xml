@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Sun, 05 Jan 2014 22:50:56 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog pages index generator</title><link>brunettoziosi.eu/posts/blog-pages-index-generator.html</link><description>&lt;div&gt;&lt;p&gt;Since some time I was looking for a way to automatically generate an 
+<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Sun, 05 Jan 2014 23:11:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog pages index generator</title><link>brunettoziosi.eu/posts/blog-pages-index-generator.html</link><description>&lt;div&gt;&lt;p&gt;Since some time I was looking for a way to automatically generate an 
 &lt;a href="/stories/index.html"&gt;index&lt;/a&gt; for the 
 pages of this blog! 
 This would rebuild my index every time keeping automatically track of new or
