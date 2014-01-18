@@ -27,6 +27,8 @@
 * Educazione siberiana
 * Hunger Games
 * Hunger Games: La ragazza di fuoco
+* [Memento](http://en.wikipedia.org/wiki/Memento_(film))
+* [The Aviator](http://en.wikipedia.org/wiki/The_Aviator_(2004_film))
 
 ### New 2014    
 
@@ -94,21 +96,30 @@
 * Escape Plan - Fuga dall'inferno
 * After Earth
 * Lo Hobbit 1, 2 e 3
+* [Next](http://en.wikipedia.org/wiki/Next_(2007_film))
+* [The family man](http://en.wikipedia.org/wiki/The_Family_Man)
+* [Lord of War](http://en.wikipedia.org/wiki/Lord_of_War)
+* [L'ultimo dei templari](http://it.wikipedia.org/wiki/L%27ultimo_dei_Templari_(film_2011))
+* Le crociate
+* [L'apprendista stregone](http://it.wikipedia.org/wiki/L%27apprendista_stregone_(film_2010))
 
 ### Series
 
-* NCIS
-* CSI
-* Suits
-* Persons of interest
+* [NCIS](http://serietvsubita.org/category/ncis/)
+* (Criminal Minds)[http://serietvsubita.org/category/criminal-minds/]
+* [CSI](http://serietvsubita.org/category/csi/)
+* [Suits](http://serietvsubita.org/category/suits/)
+* [Persons of interest](http://serietvsubita.org/category/person-of-interest/)
 * Jarod
 * The sentinel
 * Dr. House
 * Scrubs
-* E.R. 
 * Big bang theory
-* Game of thrones
-
+* [Game of thrones](http://serietvsubita.org/category/game-of-thrones/)
+* [Masters of sex](http://serietvsubita.org/category/masters-of-sex/)
+* [Arrow](http://serietvsubita.org/category/arrow/)
+* [Alcatraz](http://it.wikipedia.org/wiki/Alcatraz_(serie_televisiva))
+* [Fringe](http://serietvsubita.org/category/fringe/)
 
 
 

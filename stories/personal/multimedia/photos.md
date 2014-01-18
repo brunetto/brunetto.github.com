@@ -13,6 +13,7 @@ Some links regarding the world of photography...
 ### Professional
 * [Juza Photo](http://www.juzaphoto.com/home.php?l=it)
 * [Sigfrido Corradi](http://www.sigfridocorradi.net/)
+* [Sigfrido Corradi blog](http://sigfridocorradi.wordpress.com/)
 * [Garry](http://www.flickr.com/photos/garry61/)
 * [Jonathan Besler](http://500px.com/JonathanBesler)
 * [Anton Jankovoy](http://500px.com/jankovoy)

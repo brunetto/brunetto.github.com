@@ -99,3 +99,11 @@ C. Sauna (via one-none100000masks)
 
 * Fear is not real. The only place that fear can exist is in our thoughts of the future. It is a product of our imagination, causing us to fear things that do not at present and may not ever exist. That is near insanity. Do not misunderstand me danger is very real but fear is a choice.
 - Will Smith
+
+* Don't cry because it's over, smile because it happened. - Theodor Seuss Geisel
+
+* Today is the tomorrow you expected yesterday. - Shaun Tan (The Lost Thing)
+
+
+
+
