@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Sat, 18 Jan 2014 23:22:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog pages index generator</title><link>brunettoziosi.eu/posts/blog-pages-index-generator.html</link><description>&lt;div&gt;&lt;p&gt;Since some time I was looking for a way to automatically generate an 
+<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Sun, 19 Jan 2014 09:06:23 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blog pages index generator</title><link>brunettoziosi.eu/posts/blog-pages-index-generator.html</link><description>&lt;div&gt;&lt;p&gt;Since some time I was looking for a way to automatically generate an 
 &lt;a href="/stories/index.html"&gt;index&lt;/a&gt; for the 
 pages of this blog! 
 This would rebuild my index every time keeping automatically track of new or
@@ -16,22 +16,18 @@ This means, for example, the public ip address of our modem if we are connected
 to the home Wi-Fi.  &lt;br&gt;
 I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/check-external-ip.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>go</category><category>golang</category><category>python</category><category>netword</category><category>ip</category><guid>brunettoziosi.eu/posts/check-external-ip.html</guid><pubDate>Tue, 03 Sep 2013 16:59:56 GMT</pubDate></item><item><title>Go installation from source</title><link>brunettoziosi.eu/posts/go-installation-from-source.html</link><description>&lt;div&gt;&lt;p&gt;Summary of the Go installation instruction from source as presented in:    &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://golang.org/doc/install"&gt;Go installation&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://golang.org/doc/install"&gt;Go installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://golang.org/doc/install/source"&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://golang.org/doc/code.html"&gt;Write Go code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="/posts/go-installation-from-source.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>code</category><category>go</category><category>golang</category><guid>brunettoziosi.eu/posts/go-installation-from-source.html</guid><pubDate>Fri, 30 Aug 2013 16:59:36 GMT</pubDate></item><item><title>AGN for Dummies</title><link>brunettoziosi.eu/posts/agn-for-dummies.html</link><description>&lt;div&gt;&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a href="/posts/go-installation-from-source.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>code</category><category>go</category><category>golang</category><guid>brunettoziosi.eu/posts/go-installation-from-source.html</guid><pubDate>Fri, 30 Aug 2013 16:59:36 GMT</pubDate></item><item><title>AGN for Dummies</title><link>brunettoziosi.eu/posts/agn-for-dummies.html</link><description>&lt;div&gt;&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/agn-for-dummies.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>AGN</category><category>for Dummies</category><category>infographics</category><category>PhD</category><guid>brunettoziosi.eu/posts/agn-for-dummies.html</guid><pubDate>Tue, 20 Aug 2013 17:53:15 GMT</pubDate></item><item><title>StarLab-GPU installation</title><link>brunettoziosi.eu/posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;h3&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h3&gt;
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 &lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="/posts/starlab-gpu-installation.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>GPU</category><category>simulations</category><category>n-body</category><guid>brunettoziosi.eu/posts/starlab-gpu-installation.html</guid><pubDate>Tue, 20 Aug 2013 09:34:11 GMT</pubDate></item><item><title>Nvidia drivers</title><link>brunettoziosi.eu/posts/nvidia-drivers.html</link><description>&lt;div&gt;&lt;p&gt;If you need to install the NVIDIA drivers in your linux box you can encounter 
+&lt;/ul&gt;&lt;p&gt;&lt;a href="/posts/starlab-gpu-installation.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>GPU</category><category>simulations</category><category>n-body</category><guid>brunettoziosi.eu/posts/starlab-gpu-installation.html</guid><pubDate>Tue, 20 Aug 2013 09:34:11 GMT</pubDate></item><item><title>Nvidia drivers</title><link>brunettoziosi.eu/posts/nvidia-drivers.html</link><description>&lt;div&gt;&lt;p&gt;If you need to install the NVIDIA drivers in your linux box you can encounter 
 several problems.  &lt;br&gt;
 Here I try to summarize some useful step.&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/nvidia-drivers.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><guid>brunettoziosi.eu/posts/nvidia-drivers.html</guid><pubDate>Mon, 19 Aug 2013 10:17:08 GMT</pubDate></item><item><title>Blogging with Nikola + Ipython + Git(Hub)</title><link>brunettoziosi.eu/posts/blogging-with-nikola-ipython-github.html</link><description>&lt;div&gt;&lt;p&gt;After a lot of different attempts now it seems that I'm able to run a static 
@@ -40,5 +36,4 @@ blog with Python, Nikola and Git.    &lt;/p&gt;
 &lt;h4&gt;Suppose that you are curios about GitHub pages... but I don't understand their guide.&lt;/h4&gt;
 &lt;h4&gt;And suppose that you don't like Ruby but prefer Python...&lt;/h4&gt;
 &lt;p&gt;First of all create a repo named &lt;code&gt;youname.github.com&lt;/code&gt; on your GitHub account 
-(ok, maybe, before this, you have to create a GitHub account!).  &lt;br&gt;
-&lt;/p&gt;&lt;p&gt;&lt;a href="/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>blogging</category><category>Python</category><category>Pelikan</category><guid>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</guid><pubDate>Fri, 08 Mar 2013 00:00:00 GMT</pubDate></item></channel></rss>
+(ok, maybe, before this, you have to create a GitHub account!).  &lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>blogging</category><category>Python</category><category>Pelikan</category><guid>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</guid><pubDate>Fri, 08 Mar 2013 00:00:00 GMT</pubDate></item></channel></rss>
