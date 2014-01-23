@@ -42,4 +42,5 @@
 * [Sonia Codes] (http://soniacodes.wordpress.com/)
 * [http://www.pheelicks.com/](http://www.pheelicks.com/)
 * [Chatroulette like mini demo in Go](http://talks.golang.org/2012/chat.slide#1)
+* [Welcome to the nice world of Golang](http://blog.menfin.info/Presentations/20120709_Golang_introduction/#slide1)
 
