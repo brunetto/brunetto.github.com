@@ -74,7 +74,8 @@ Some links regarding the world of photography...
 
 * Align images
 ````bash
-align_image_stack -a <aligned images prefix> -p <.pto file name for hugin> -o <hdr file name>
+align_image_stack -a <aligned images prefix> -p <.pto file name for hugin> -o <hdr file name> *.jpg
+````
 * Blend images
 ````bash
 enfuse -o <output file> <input files, also as prefix???.ext>

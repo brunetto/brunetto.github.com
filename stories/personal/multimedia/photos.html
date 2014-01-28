@@ -121,10 +121,12 @@
 <li><a href="http://krpano.com/">krpano</a></li>
 </ul><h3>CLI tricks</h3>
 <ul><li>Align images</li>
-</ul><div class="code"><pre>align_image_stack -a &lt;aligned images prefix&gt; -p &lt;.pto file name <span class="k">for </span>hugin&gt; -o &lt;hdr file name&gt;
-* Blend images
-<span class="sb">````</span>bash
-enfuse -o &lt;output file&gt; &lt;input files, also as prefix???.ext&gt;
+</ul><div class="code"><pre>align_image_stack -a &lt;aligned images prefix&gt; -p &lt;.pto file name <span class="k">for </span>hugin&gt; -o &lt;hdr file name&gt; *.jpg
+</pre></div>
+
+
+<ul><li>Blend images</li>
+</ul><div class="code"><pre>enfuse -o &lt;output file&gt; &lt;input files, also as prefix???.ext&gt;
 </pre></div>
 
 
