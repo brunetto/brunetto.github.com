@@ -7,14 +7,10 @@
 % handout
 % \newcommand*{\HANDOUT}{}%
 
-\ifdefined\HANDOUT
-  \setbeameroption{show notes} %un-comment to see the notes
-   % print 8 slide per page
-  \usepackage{pgfpages}
-  \pgfpagesuselayout{8 on 1}[a4paper]%, landscape]
-% \else
-% alternativa
-\fi
+% \setbeameroption{show notes} %un-comment to see the notes
+% % print 8 slide per page
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{8 on 1}[a4paper]%, landscape]
 
 \usepackage[utf8]{inputenc}
 

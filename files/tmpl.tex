@@ -1,0 +1,231 @@
+\documentclass[xcolor=svgnames]{beamer}
+%
+% PACKAGES
+%
+
+
+%\setbeameroption{show notes} %un-comment to see the notes
+   % print 8 slide per page
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{8 on 1}[a4paper]%, landscape]
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{colourchange}
+% \usepackage{subfiles}
+%
+% THEME MODIFICATIONS
+%
+
+% clean note template
+\setbeamertemplate{note page}{%
+  \insertnote%
+}
+
+\newlength{\parskipbackup}
+\setlength{\parskipbackup}{\parskip}
+\newlength{\parindentbackup}
+\setlength{\parindentbackup}{\parindent}
+
+% fix the pagenumber
+\let\notebackup\note
+\renewcommand{\note}[1]{\notebackup{%
+	\mode<handout>{\addtocounter{page}{-1}}%
+	\setlength{\parindent}{0ex}%
+	\setlength{\parskip}{10pt}%
+	\noindent%
+	{\normalsize{}#1}%
+	\setlength{\parskip}{\parskipbackup}%
+	\setlength{\parindent}{\parindentbackup}%
+}%
+}
+
+
+\mode<presentation>
+{\usetheme{Boadilla}}
+\subject{C-O binaries in YoDeCs}
+\usecolortheme[]{default}
+
+%
+% NEWCOMMANDS
+%
+
+\newcommand{\del}[1]{\textcolor{gray}{\sout{#1}}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\tonde}[1]{\left(#1\right)}
+\newcommand{\quadre}[1]{\left[#1\right]}
+\newcommand{\graffe}[1]{\left\{#1\right\}}
+\newcommand{\totale}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\newcommand{\mean}[1]{\langle #1\rangle}
+\newcommand{\sun}{\odot}
+\newcommand{\Msun}{\,\mathrm{M}_\sun}
+\newcommand{\kyr}{\mathrm{\,kyr}}
+\newcommand{\Myr}{\mathrm{\,Myr}}
+\newcommand{\Gyr}{\mathrm{\,Gyr}}
+\newcommand{\pc}{\mathrm{pc}}
+
+\newcommand{\blue}[1]{\textcolor{BeamerBlue}{\textbf{#1}}}
+
+%
+% TITLES
+%
+
+
+\title[short title]{Long title}
+\subtitle{Subtitle}
+
+\institute[Dept. of Physics and Astronomy]{%
+Dept. of Physics and Astronomy G. Galilei\\
+University of Padua
+}
+\author[B. Ziosi]{%Advisor: Prof. Giuseppe Tormen\\
+%PhD student: 
+Brunetto Marco Ziosi}
+
+\date[short event]{long event, \\ \today}
+%\logo{\includegraphics[width=10mm]{%
+%/home/brunetto/Uni/tesi-specialistica%
+%/testo/immagini/unipd-logo.jpg}}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+% items style
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[circle]
+\setbeamertemplate{section in toc}[circle]
+
+\definecolor{BeamerBlue}{RGB}{50, 50, 178}  
+
+\begin{document}
+
+% \tiny
+\small
+
+%
+% FOOTER
+%
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+
+\begin{frame}
+  \titlepage
+\note{}
+\end{frame} 
+
+%
+% HEADER
+%
+
+\setbeamertemplate{headline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=1em]{section in head/foot}%
+    \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=1em]{subsection in head/foot}%
+    \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\note{}
+\end{frame} 
+
+\addtocounter{framenumber}{-2}
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+\section{First section}
+
+\setbeamercolor{structure}{fg=DarkGreen}{
+\begin{frame}{Already know things}
+ 
+ \note{}
+\end{frame}
+}
+
+\section{Second section}
+\setbeamercolor{structure}{fg=BeamerBlue}{
+\begin{frame}{News}
+ 
+ \note{}
+\end{frame}
+}
+
+\section{Third section}
+
+\setbeamercolor{structure}{fg=DarkRed}{
+\begin{frame}{Critical}
+ 
+ \note{}
+\end{frame}
+}
+
+\section{Third section}
+
+\setbeamercolor{structure}{fg=Black}{
+\begin{frame}{Technical details and code}
+ 
+ \note{}
+\end{frame}
+}
+ 
+ 
+\section{Fourth section}
+
+\setbeamercolor{structure}{fg=Purple}{
+\begin{frame}{Further work}
+ 
+ \note{}
+\end{frame}
+}
+ 
+ 
+ \appendix
+ \newcounter{finalframe}
+ \setcounter{finalframe}{\value{framenumber}}
+ 
+ \setbeamercolor{structure}{fg=BeamerBlue}{
+ \begin{frame}{Appendix frame}
+  
+  \note{}
+ \end{frame}
+ }
+ 
+ 
+ \setcounter{framenumber}{\value{finalframe}}
+ 
+\end{document}
