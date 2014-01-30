@@ -48,6 +48,11 @@ Some links regarding the world of photography...
 * [Flickr](http://www.flickr.com/)
 * [500px](http://500px.com/)
 
+## Interesting    
+
+* [Se I Grandi Fotografi Postassero Sui Forum](http://www.nikonclub.it/forum/index.php?showtopic=149299&st=0)
+* [Great Photographers on the Internet, Part II](http://theonlinephotographer.typepad.com/the_online_photographer/2009/11/great-photographers-on-the-internet-part-ii.html)
+
 ### Strangeness etc.
 
 * [Lego bloks camera](http://petapixel.com/2012/07/31/a-nifty-panoramic-pinhole-camera-made-with-lego-blocks/)
