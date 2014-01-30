@@ -22,6 +22,7 @@ Some links regarding the world of photography...
 * [Peter Greig](http://www.flickr.com/photos/st1nkypete/)
 * [Sébastien GABORIT](http://www.flickr.com/photos/90291911@N08/)
 * [Javier Pérez](http://instagram.com/cintascotch)
+* [Caleb Charland](http://calebcharland.com/)
 
 #### Lightpainting
 
