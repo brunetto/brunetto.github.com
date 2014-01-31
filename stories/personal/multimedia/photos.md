@@ -23,6 +23,7 @@ Some links regarding the world of photography...
 * [Sébastien GABORIT](http://www.flickr.com/photos/90291911@N08/)
 * [Javier Pérez](http://instagram.com/cintascotch)
 * [Caleb Charland](http://calebcharland.com/)
+* [Nicola Bernardi](http://www.nicola-bernardi.squarespace.com)
 
 #### Lightpainting
 

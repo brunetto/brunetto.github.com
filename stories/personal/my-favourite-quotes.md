@@ -104,6 +104,7 @@ C. Sauna (via one-none100000masks)
 
 * Today is the tomorrow you expected yesterday. - Shaun Tan (The Lost Thing)
 
-
+* Sapete, un giorno un giornalista chiese a Bruno Lauzi:”Perché scrivi solo canzoni malinconiche?”. 
+La risposta fu: “Perché quando sto bene esco”. - Ligabue
 
 
