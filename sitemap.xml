@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>brunettoziosi.eu/</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -16,7 +16,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/2011/index.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -26,7 +26,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/2012/index.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -36,12 +36,22 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/2013/index.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/2014/</loc>
+  <lastmod>2014-01-31</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/2014/index.html</loc>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/archive.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -531,27 +541,27 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/index-1.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index-2.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index-3.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index-4.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>brunettoziosi.eu/index.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -581,7 +591,7 @@
  </url>
  <url>
   <loc>brunettoziosi.eu/posts/blog-pages-index-generator.html</loc>
-  <lastmod>2014-01-29</lastmod>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -792,6 +802,11 @@
  <url>
   <loc>brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</loc>
   <lastmod>2014-01-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>brunettoziosi.eu/posts/ssh-keys-exchange.html</loc>
+  <lastmod>2014-01-31</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
