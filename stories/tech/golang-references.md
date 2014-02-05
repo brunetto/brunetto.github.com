@@ -43,4 +43,5 @@
 * [http://www.pheelicks.com/](http://www.pheelicks.com/)
 * [Chatroulette like mini demo in Go](http://talks.golang.org/2012/chat.slide#1)
 * [Welcome to the nice world of Golang](http://blog.menfin.info/Presentations/20120709_Golang_introduction/#slide1)
+* [10 things you (probably) don't know about Go](http://nf.wh3rd.net/10things/)
 

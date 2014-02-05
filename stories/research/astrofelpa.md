@@ -11,6 +11,10 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" property="dct:title" rel="dct:type">AstroFelpa</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="brunettoziosi.eu" property="cc:attributionName" rel="cc:attributionURL">BrunettoZiosi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="www.brunettoziosi.eu/stories/research/astrofelpa.html" rel="cc:morePermissions">www.brunettoziosi.eu/stories/research/astrofelpa.html</a>.    
 
+### Shop available now!!!
+
+You can purchase the t-shirt and other materia from [here](http://astrophd.spreadshirt.it/)
+
 ### AstroP(h)D    
 
 AstroFelpa is an indipendent initiative with the purpose to represent
@@ -19,7 +23,7 @@ AstroP(h)D was born within the astronomy PhD students community of Padua but
 also covers all the astro-workers of the University and the Observatory.    
 The draw tries to bring together most of the fields we are working on:
 
-* "Specola" is our headquarter and out symbol
+* "Specola" is our headquarter and our symbol
 * The stars all around the picture for all of us working on stellar evolution and both observational
 and numerical approaches are included, as anyone working on every kind of star cluster
 * The Saturn shape remembers all the (exo-)planets guys
@@ -39,13 +43,13 @@ Then some new ideas!:P
     
     
 
-<img alt="AstroFelpe" src="../../files/AstroFelpa/keepCalmAnd.png"></br>
+<img alt="AstroFelpe" src="../../files/AstroFelpa/keepCalmAnd.png" width="50%" height="50%">
 ----
-<img alt="AstroFelpe" src="../../files/AstroFelpa/goGo.png"></br>
+<img alt="AstroFelpe" src="../../files/AstroFelpa/goGo.png"width="50%" height="50%" ></br>
 ----
-<img alt="AstroFelpe" src="../../files/AstroFelpa/f77.png"></br>
+<img alt="AstroFelpe" src="../../files/AstroFelpa/f77.png" width="50%" height="50%">
 ----
-<img alt="AstroFelpe" src="../../files/AstroFelpa/goSM.png">
+<img alt="AstroFelpe" src="../../files/AstroFelpa/goSM.png" width="50%" height="50%">
 
 <!--![AstroFelpe](../../files/AstroFelpa/keepCalmAnd.png) 
 ![AstroFelpe](../../files/AstroFelpa/goGo.png) 
