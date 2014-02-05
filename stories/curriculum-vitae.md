@@ -45,10 +45,10 @@ High school degree of Scientific studies
 
 * 2012 - "La notte dei ricercatori" (Researcer's night), Padua
 * 2011 - Internship: Technical characterization of the Astrophysical Observatory of Asiago
-the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf))
 * 2009 - Photometric and spectroscopic digital analysis lab. (FSE)
 * 2007 - Digital data analysis lab. (FSE)
 * 2004 - ["Il cielo come laboratorio"](http://www.astro.unipd.it/progettoeducativo/) (Sky as a lab), in collaboration with 
+the Astronomy Department of Padua ([Composition](../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf))
 
 ##Schools and Workshops
 * [Dynamics & Kinetic theory of self-gravitating systems Workshop](http://uma.ensta-paristech.fr/conf/gravasco/W2.html) @ [Gravasco IHP trimester "N body gravitational dynamical systems From N=2 to infinity..."](http://uma.ensta-paristech.fr/conf/gravasco/home.html), Paris, 4-8 November 2013
