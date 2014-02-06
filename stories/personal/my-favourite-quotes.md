@@ -107,4 +107,4 @@ C. Sauna (via one-none100000masks)
 * Sapete, un giorno un giornalista chiese a Bruno Lauzi:”Perché scrivi solo canzoni malinconiche?”. 
 La risposta fu: “Perché quando sto bene esco”. - Ligabue
 
-
+* Un giorno senza un sorriso è un giorno perso. - Charlie Chaplin
