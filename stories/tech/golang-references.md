@@ -46,5 +46,5 @@
 * [10 things you (probably) don't know about Go](http://nf.wh3rd.net/10things/)
 * [Present package docs](http://godoc.org/code.google.com/p/go.tools/present)
 * [Some talks](https://github.com/lagomeetup/talks)
-
-
+* [Going go programming](http://www.goinggo.net/)
+* [Golang(Go Language) Examples](http://golang-examples.tumblr.com/)
