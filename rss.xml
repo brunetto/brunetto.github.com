@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Fri, 31 Jan 2014 16:48:43 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ssh keys exchange</title><link>brunettoziosi.eu/posts/ssh-keys-exchange.html</link><description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without 
+<rss version="2.0"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><lastBuildDate>Fri, 21 Feb 2014 00:31:06 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ssh keys exchange</title><link>brunettoziosi.eu/posts/ssh-keys-exchange.html</link><description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without 
 the need to remember a password.&lt;/p&gt;
 &lt;p&gt;On both the computer (&lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;ssh-keygen
