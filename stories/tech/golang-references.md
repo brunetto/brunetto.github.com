@@ -48,3 +48,30 @@
 * [Some talks](https://github.com/lagomeetup/talks)
 * [Going go programming](http://www.goinggo.net/)
 * [Golang(Go Language) Examples](http://golang-examples.tumblr.com/)
+* [GoLang Samples](https://github.com/golang-samples)
+* [GolangBootCamp Book](http://www.golangbootcamp.com/book/frontmatter)
+
+### Web Server
+
+* http://golang.org/doc/articles/wiki/
+* http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image
+* https://github.com/ljgww/web_server_example_in_Go_-golang-
+* http://robfig.github.io/revel/
+* http://thechangelog.com/on-go-web-application-ecosystem/
+
+
+### Goroutines and Pooling
+
+* http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0
+* https://gobyexample.com/worker-pools
+* http://dancallahan.info/journal/go-concurrency/
+* http://blog.labix.org/2011/10/09/death-of-goroutines-under-control
+* http://blog.golang.org/share-memory-by-communicating
+* http://golang.org/doc/codewalk/sharemem/
+* http://stackoverflow.com/questions/18267460/golang-goroutine-pool
+* http://dave.cheney.net/tag/golang-3
+* http://golang.org/pkg/log/#Logger
+* http://www.goinggo.net/2013/11/using-log-package-in-go.html
+
+
+
