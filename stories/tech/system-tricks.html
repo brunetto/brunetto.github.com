@@ -129,6 +129,16 @@ See <a href="system.html">here</a> for a list of installed packages and settings
 </pre></div>
 
 
+<ul><li>To see live output from the webcam:</li>
+</ul><div class="code"><pre> mplayer -tv <span class="nv">driver</span><span class="o">=</span>v4l2 -vo xv tv://
+</pre></div>
+
+
+<ul><li>To record from the webcam:</li>
+</ul><div class="code"><pre> mencoder -oac mp3lame -ovc lavc -o foo.avi -tv <span class="nv">driver</span><span class="o">=</span>v4l2  tv://
+</pre></div>
+
+
     </div>
     </div>
     <!--End of body content-->

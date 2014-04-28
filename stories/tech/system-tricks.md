@@ -66,3 +66,12 @@ cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path
 /home/ziosi/Pictures/webcam --scene-prefix img$(date '+%y%m%d%h%m%s') 
 --scene-format png vlc://quit --run-time=1
 ````
+
+* To see live output from the webcam:
+````bash
+ mplayer -tv driver=v4l2 -vo xv tv://
+````
+* To record from the webcam:
+````bash
+ mencoder -oac mp3lame -ovc lavc -o foo.avi -tv driver=v4l2  tv://
+````

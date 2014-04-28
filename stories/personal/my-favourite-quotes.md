@@ -108,3 +108,7 @@ C. Sauna (via one-none100000masks)
 La risposta fu: “Perché quando sto bene esco”. - Ligabue
 
 * Un giorno senza un sorriso è un giorno perso. - Charlie Chaplin
+
+* Si educa molto con quel che si dice, ancor più con quel che si fa, ma molto di più con quel che si è. - Sant'Ignazio di Antiochia (scheda)
+
+

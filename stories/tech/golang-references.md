@@ -50,6 +50,7 @@
 * [Golang(Go Language) Examples](http://golang-examples.tumblr.com/)
 * [GoLang Samples](https://github.com/golang-samples)
 * [GolangBootCamp Book](http://www.golangbootcamp.com/book/frontmatter)
+* [Slice of structs vs map o structs](https://groups.google.com/forum/#!topic/golang-nuts/FCcLsuWsF_U)
 
 ### Web Server
 
@@ -72,6 +73,11 @@
 * http://dave.cheney.net/tag/golang-3
 * http://golang.org/pkg/log/#Logger
 * http://www.goinggo.net/2013/11/using-log-package-in-go.html
+* [Go Concurrency Patterns](http://talks.golang.org/2012/concurrency.slide)
+* [Advanced Go Concurrency Patterns](http://talks.golang.org/2013/advconc.slide)
+* [Concurrency is not Parallelism](http://talks.golang.org/2012/waza.slide)
 
+### Efficiency
 
+* [The Most Powerful Feature of Go Is The Least Sexy](http://dennisforbes.ca/index.php/2013/07/23/the-most-powerful-feature-of-go-is-the-least-sexy)
 

@@ -44,6 +44,8 @@
 * [The monuments men](http://en.wikipedia.org/wiki/The_Monuments_Men)
 * [The Winter soldier](http://en.wikipedia.org/wiki/Captain_America:_The_Winter_Soldier)
 * [The wolf of Wall Street](http://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film))
+* [300: the rise of an Empire](http://en.wikipedia.org/wiki/300:_Rise_of_an_Empire)
+* [The Sessions](http://en.wikipedia.org/wiki/The_Sessions_(film))
 
 ## Nice
 
