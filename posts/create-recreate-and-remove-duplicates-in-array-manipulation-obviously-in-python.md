@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: array, code, PhD, pytables, Python, imported
+.. tags: array, code, PhD, PyTables, Python, imported
 .. date: 2012-05-14
 .. title: Create, recreate and remove duplicates in array manipulation, obviously in Python!:)
 .. slug: create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python

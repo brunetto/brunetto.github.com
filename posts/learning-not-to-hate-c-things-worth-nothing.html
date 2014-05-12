@@ -1,19 +1,47 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>Learning not to hate C: things worth nothing | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-        },
-        displayAlign: 'left', // Change this to 'center' to center equations.
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}}
-        }
-    });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="author" content="brunetto">
+    <title>Learning not to hate C: things worth nothing | for future reference...</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+   tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+   },
+   displayAlign: 'left', // Change this to 'center' to center equations.
+   "HTML-CSS": {
+       styles: {'.MathJax_Display': {"margin": 0}}
+   }
+});
+</script>
+
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="posts/learning-not-to-hate-c-things-worth-nothing.html">
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"><link href="https://plus.google.com/117796240971605586205" rel="publisher"></head><body>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+    
+
+
+
+
+
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top" id="navbar">
     <div class="navbar-inner">
         <div class="container">
 
@@ -24,41 +52,34 @@
             <span class="icon-bar"></span>
         </a>
 
-            <a class="brand" href="../">
+            <a class="brand" href="brunettoziosi.eu">
             for future reference...
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../stories/about.html">About</a>
-        
-    
-        
-            </li><li><a href="../index.html">Blog</a>
-        
-    
-        
-            </li><li><a href="../stories/index.html">SiteIndex</a>
-        
-    
-        
-            </li><li><a href="../archive.html">Archives</a>
-        
-    
-        
-            </li><li><a href="../categories/index.html">Tags</a>
-        
-    
-        
-            </li><li><a href="../rss.xml">RSS</a>
-        
-    
+                <ul class="nav">
+                    
+                <li><a href="../stories/about.html">About</a>
+                </li><li><a href="../index.html">Blog</a>
+                </li><li><a href="../stories/index.html">SiteIndex</a>
+                </li><li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
+                <ul class="nav pull-right">
                 
-                <ul class="nav pull-right"></ul></div>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -69,30 +90,32 @@
     <div class="span2"></div>
     <div class="span8">
     
-    <div class="postbox">
+    <article class="postbox post-text">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1>Learning not to hate C: things worth nothing</h1>
-    
+    <h1 class="p-name" itemprop="headline name">Learning not to hate C: things worth nothing</h1>
 
-    <hr><small>
-        Posted: <time class="published" datetime="2012-05-21T00:00:00">2012-05-21 00:00</time>
+    <hr>
+    <small>
+        Posted: <time class="published dt-published" datetime="2012-05-21T00:00:00+00:00" itemprop="datePublished">2012-05-21 00:00</time>
         
-    
 
-        
-    
-          |  More posts about
-        
-            <a class="tag" href="../categories/c.html"><span class="badge badge-info">C</span></a>
-        
-            <a class="tag" href="../categories/code.html"><span class="badge badge-info">code</span></a>
-        
-            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
-        
-    
+		
+          |  
+        More posts about 
+    <span itemprop="keywords">
+        <a class="tag p-category" href="../categories/c.html"><span class="badge badge-info">C</span></a>
+        <a class="tag p-category" href="../categories/code.html"><span class="badge badge-info">code</span></a>
+        <a class="tag p-category" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+    </span>
 
+
+          |  
+		
     </small>
-    <hr><p>Here I would like to post some of the ideas, tricks, truths, and so on I've learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.    </p>
+    <hr>
+    <div class="e-content" itemprop="articleBody text">
+    <div><p>Here I would like to post some of the ideas, tricks, truths, and so on I've learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.    </p>
 <!-- TEASER_END -->
 
 <div class="code"><pre>
@@ -114,14 +137,16 @@ A better way is to include some flags    </p>
 
 
 <p>where    </p>
-<ul><li><code>-std=gnu99</code> forces the compiler to the C99 standard (it includes some new features)</li>
+<ul>
+<li><code>-std=gnu99</code> forces the compiler to the C99 standard (it includes some new features)</li>
 <li><code>-Wall</code> to print all the compiler warnings</li>
 <li><code>-pedantic</code> "Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use forbidden extensions, and some other programs that do not follow ISO C and ISO C++" (from the <code>gcc</code> manual)</li>
 <li><code>-Werror</code> transform the warnings into errors</li>
 <li><code>-O0</code> no optimization</li>
 <li><code>-g</code> produces debugging informations</li>
 <li><code>-o</code> to specify the output</li>
-</ul><p><strong>MACROS &amp; preprocessor</strong>    </p>
+</ul>
+<p><strong>MACROS &amp; preprocessor</strong>    </p>
 <p>The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define "constant" values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it    </p>
 <div class="code"><pre><span class="cp">#define PI 3.14</span>
 <span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="n">PI</span><span class="p">;</span>
@@ -200,10 +225,12 @@ Before a global variable means that the variable is private of the file, and oth
 </pre></div>
 
 
-<ul><li><code>i</code> is global inside the file but can not be called outside</li>
+<ul>
+<li><code>i</code> is global inside the file but can not be called outside</li>
 <li>the function <code>foo</code> is private of the file and can not be called outside</li>
 <li><code>j</code> survive after the termination of the function and maintains its value until the next call.</li>
-</ul><p><strong>Pointers</strong>    </p>
+</ul>
+<p><strong>Pointers</strong>    </p>
 <p>Pointers are special integer values that contains addresses of other values, for example:    </p>
 <div class="code"><pre><span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
 <span class="kt">int</span><span class="o">*</span> <span class="n">p</span><span class="p">;</span>
@@ -338,18 +365,26 @@ Because of this, the two expression that follows are equivalent:    </p>
 </pre></div>
 
 
-<p>is equivalent to the expressions in the previous paragraph.</p>
+<p>is equivalent to the expressions in the previous paragraph.</p></div>
+    </div>
+    </div>
     
-    <ul class="pager"><li class="previous">
-            <a href="create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html">← Previous post</a>
-        </li>
+        <ul class="pager">
+            <li class="previous">
+                <a href="create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html" rel="prev">← Previous post</a>
+            </li>
+            <li class="next">
+                <a href="essential-guide-to-binning.html" rel="next">Next post →</a>
+            </li>
+        </ul>
+
+        
+        
+
+
     
-    
-        <li class="next">
-            <a href="hdf5-in-python-pytables.html">Next post →</a>
-        </li>
-    
-    </ul></div>
+
+    </article>
 
     </div>
     </div>
@@ -359,13 +394,34 @@ Because of this, the two expression that follows are equivalent:    </p>
     Contents © 2014 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
 </div>
 
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
 
-    <!-- Social buttons -->
-    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-    <a class="addthis_button_more">Share</a>
-    <ul><li><a class="addthis_button_facebook"></a>
-    </li><li><a class="addthis_button_google_plusone_share"></a>
-    </li><li><a class="addthis_button_linkedin"></a>
-    </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+    
+    
+</body>
+</html>

@@ -1,19 +1,44 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content="My digital backuo!:)."><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>for future reference... (old posts page 1) | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-        },
-        displayAlign: 'left', // Change this to 'center' to center equations.
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}}
-        }
-    });
-    </script><link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="assets/css/rst.css" rel="stylesheet" type="text/css"><link href="assets/css/code.css" rel="stylesheet" type="text/css"><link href="assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="assets/css/theme.css" rel="stylesheet" type="text/css"><link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="description" content="My digital backuo!:).">
+    <meta name="author" content="brunetto">
+    <title>for future reference... (old posts, page 1) | for future reference...</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+   tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+   },
+   displayAlign: 'left', // Change this to 'center' to center equations.
+   "HTML-CSS": {
+       styles: {'.MathJax_Display': {"margin": 0}}
+   }
+});
+</script>
+
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="#">
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml"><link href="https://plus.google.com/117796240971605586205" rel="publisher"></head><body>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+    
+    
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top" id="navbar">
     <div class="navbar-inner">
         <div class="container">
 
@@ -24,41 +49,34 @@
             <span class="icon-bar"></span>
         </a>
 
-            <a class="brand" href=".">
+            <a class="brand" href="brunettoziosi.eu">
             for future reference...
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="stories/about.html">About</a>
-        
-    
-        
-            </li><li><a href="index.html">Blog</a>
-        
-    
-        
-            </li><li><a href="stories/index.html">SiteIndex</a>
-        
-    
-        
-            </li><li><a href="archive.html">Archives</a>
-        
-    
-        
-            </li><li><a href="categories/index.html">Tags</a>
-        
-    
-        
-            </li><li><a href="rss.xml">RSS</a>
-        
-    
+                <ul class="nav">
+                    
+                <li><a href="stories/about.html">About</a>
+                </li><li><a href="index.html">Blog</a>
+                </li><li><a href="stories/index.html">SiteIndex</a>
+                </li><li><a href="archive.html">Archives</a>
+                </li><li><a href="categories/index.html">Tags</a>
+                </li><li><a href="rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
+                <ul class="nav pull-right">
                 
-                <ul class="nav pull-right"></ul></div>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -69,45 +87,63 @@
     <div class="span2"></div>
     <div class="span8">
     
-    
-        <div class="postbox">
-        <h1><a href="posts/python-cli-and-configuration-file-parser.html">Python CLI and configuration file parser</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-17 00:00
-        </big></p>
-        <hr><div><p>One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at <a href="http://www.decalage.info/" target="_blank" title="http://www.decalage.info">http://www.decalage.info</a>) a file parser to read a configuration file and the Python library <a href="http://docs.python.org/dev/library/argparse.html" target="_blank" title="argparse">argparse</a> for the command line parsing. In addition I have modified the file parser and I've added a "variable container" object, inspired by some snippets found somewhere on the web.  <br></p><p><a href="posts/python-cli-and-configuration-file-parser.html">Read more...</a></p></div>
-        <p>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/python-logging.html" class="u-url">Python logging</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-17T00:00:00+00:00">2011-11-17 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>After I had a <a href="http://brunettoziosi.blogspot.it/2011/11/python-parallel-job-manager.html" target="_blank" title="Python parallel job manager">Python parallel job manager</a> I realize that all the attempts I have done to log what happen in my code weren't satisfying. It was not comfortable to manage every output when I want to change something and it was impossible to switch off some of logs without changing the code. The Python logging library is a great piece of code that permits to personalize most of the aspect of the logging in a program but maintaining a standard and comfortable interface. It also allows an easy management of many different outputs (file, screen, ...) and different levels of logging (error, info, ...) indipendent one from each other. It also allows to handle the logging of the imported modules.  <br>
+</p><p class="more"><a href="posts/python-logging.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/cosmological-simulations-5-initial-conditions.html">Cosmological simulations #5: initial conditions!</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-16 00:00
-        </big></p>
-        <hr><div><p>After we had a look on why we need cosmological simulations, what they are and how they are performed, it's time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.  <br></p><p><a href="posts/cosmological-simulations-5-initial-conditions.html">Read more...</a></p></div>
-        <p>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/cosmological-simulations-5-initial-conditions.html" class="u-url">Cosmological simulations #5: initial conditions!</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-16T00:00:00+00:00">2011-11-16 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>After we had a look on why we need cosmological simulations, what they are and how they are performed, it's time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.  <br>
+</p><p class="more"><a href="posts/cosmological-simulations-5-initial-conditions.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/cosmological-simulations-3-force-calculation.html">Cosmological simulations #3: force calculation!</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-13 00:00
-        </big></p>
-        <hr><div><p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/cosmological-simulations-3-force-calculation.html" class="u-url">Cosmological simulations #3: force calculation!</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-13T00:00:00+00:00">2011-11-13 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
 Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.    </p>
-<p><a href="posts/cosmological-simulations-3-force-calculation.html">Read more...</a></p></div>
-        <p>
+<p class="more"><a href="posts/cosmological-simulations-3-force-calculation.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/cosmological-simulations-4-moving-the-particles.html">Cosmological simulations: #4: Moving the particles!</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-13 00:00
-        </big></p>
-        <hr><div><h4>Equations of motion</h4>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/cosmological-simulations-4-moving-the-particles.html" class="u-url">Cosmological simulations: #4: Moving the particles!</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-13T00:00:00+00:00">2011-11-13 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><h5>Equations of motion</h5>
 <p>Once we have learned how to calculate gravitational forces and decided which way is best for us, it's time to move particles according to the force field.  <br>
 To have an idea of what happens we can look at a simplified version of the pp-method, where the new coordinates and velocities are expressed starting from the previous values:    </p>
 <p>$\mathbf{v}_i^{new}=\mathbf{v}_i^{old}+\frac{\mathbf{F}_i}{m_i}\Delta t$
@@ -115,27 +151,54 @@ $\mathbf{x}_i^{new}=\mathbf{x}_i^{old}+\mathbf{v}_i\Delta t$</p>
 <p>More in general we start from the Newtonian equation of motion for a set of particles interacting only through gravity, in particular we consider the Euler and Poisson equations. We express these in comoving coordinates because in this way we can focus on density and velocity perturbations, while the expansion of the universe is included in the scale factor $a$ (obtained from the Friedmann equations):    </p>
 <p>$\frac{\mathrm{d}^2\mathbf{x}}{\mathrm{d}t^2}+2\frac{\mathrm{d}a/\mathrm{d}t}{a}\frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}=-\frac{1}{a^2}\nabla_x\phi$</p>
 <p>$\nabla_x^2\phi=4\pi Ga^2\bar \rho\delta = \frac{3}{2}H_0^2\Omega_0\frac{\delta}{a}$</p>
-<p><a href="posts/cosmological-simulations-4-moving-the-particles.html">Read more...</a></p></div>
-        <p>
+<p class="more"><a href="posts/cosmological-simulations-4-moving-the-particles.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/phd-question-1-m.html">PhD question #1: M*</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-11 00:00
-        </big></p>
-        <hr><div><p>In parallel with the series "Cosmological simulations" I'm starting now another series of posts about cosmology, astro/physics and related arguments. It may happen that your PhD advisor ask you a question about something and you are supposed to know the answer... but you don't! Or it may happen that you have to pass an admittance/qualification exam to enter your PhD student career on general astrophysical knowledge but you can't even remember some arguments exist! Because of these consideration and for my remembrance I will  write down some of these questions and I will try to answer.<br></p><p><a href="posts/phd-question-1-m.html">Read more...</a></p></div>
-        <p>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/phd-question-1-m.html" class="u-url">PhD question #1: M*</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-11T00:00:00+00:00">2011-11-11 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>In parallel with the series "Cosmological simulations" I'm starting now another series of posts about cosmology, astro/physics and related arguments. It may happen that your PhD advisor ask you a question about something and you are supposed to know the answer... but you don't! Or it may happen that you have to pass an admittance/qualification exam to enter your PhD student career on general astrophysical knowledge but you can't even remember some arguments exist! Because of these consideration and for my remembrance I will  write down some of these questions and I will try to answer.<br>
+</p><p class="more"><a href="posts/phd-question-1-m.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/loadleveler-quick-howto.html">Loadleveler quick howto</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-04 00:00
-        </big></p>
-        <hr><div><p>Some useful commands to manage jobs with IBM <code>loadleveler</code> (<code>ll</code>).</p>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/python-parallel-job-manager.html" class="u-url">Python parallel job manager</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-04T00:00:00+00:00">2011-11-04 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  <br>
+</p><p class="more"><a href="posts/python-parallel-job-manager.html">Read more…</a></p></div>
+        </div>
+            
+        
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/loadleveler-quick-howto.html" class="u-url">Loadleveler quick howto</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-04T00:00:00+00:00">2011-11-04 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>Some useful commands to manage jobs with IBM <code>loadleveler</code> (<code>ll</code>).</p>
 <p>First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) "test_run.cmd". With this file you tell <code>ll</code> what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
 It would look like this:    </p>
 <div class="code"><pre><span class="c">#!/bin/bash</span>
@@ -155,66 +218,87 @@ python ./start.py
 </pre></div>
 
 
-<p><a href="posts/loadleveler-quick-howto.html">Read more...</a></p></div>
-        <p>
+<p class="more"><a href="posts/loadleveler-quick-howto.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/python-parallel-job-manager.html">Python parallel job manager</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-04 00:00
-        </big></p>
-        <hr><div><p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  <br></p><p><a href="posts/python-parallel-job-manager.html">Read more...</a></p></div>
-        <p>
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/cosmological-simulations-1-why-and-what.html">Cosmological simulations #1: why and what?</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-02 00:00
-        </big></p>
-        <hr><div><p>This is the first of a series of posts dedicated to cosmological simulations!<br><br>
-I do this because, as stressed by my PhD advisor, I need to practice in explaining in a clear way specialized knowledge and in linking it with its background and motivations. Also I would like to keep track of my progress and of what I'm learning!<br><br>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/cosmological-simulations-1-why-and-what.html" class="u-url">Cosmological simulations #1: why and what?</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-02T00:00:00+00:00">2011-11-02 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>This is the first of a series of posts dedicated to cosmological simulations!<br>
+<br>
+I do this because, as stressed by my PhD advisor, I need to practice in explaining in a clear way specialized knowledge and in linking it with its background and motivations. Also I would like to keep track of my progress and of what I'm learning!<br>
+<br>
 So, let's start with "Why we need cosmological simulations? What are they?"!<br></p>
-<p><a href="posts/cosmological-simulations-1-why-and-what.html">Read more...</a></p></div>
-        <p>
+<p class="more"><a href="posts/cosmological-simulations-1-why-and-what.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/cosmological-simulations-2-how.html">Cosmological simulations #2: how?</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-11-02 00:00
-        </big></p>
-        <hr><div><p>Let's try now to understand how simulations can be set up.<br><br></p>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/cosmological-simulations-2-how.html" class="u-url">Cosmological simulations #2: how?</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-11-02T00:00:00+00:00">2011-11-02 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>Let's try now to understand how simulations can be set up.<br>
+<br></p>
 <p>First of all note that dark matter density dominates over ordinary (baryonic) matter at all times and we expect that ordinary matter follows the gravity of dark matter on large scales, so we can start considering only dark matter in our simulation.<br>
 Moreover, cosmological simulations differ from other N-body simulations because they should to be able to manage comoving coordinates, i.e. coordinates that expand with the universe, since the universe is expanding.<br></p>
-<p><a href="posts/cosmological-simulations-2-how.html">Read more...</a></p></div>
-        <p>
+<p class="more"><a href="posts/cosmological-simulations-2-how.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/subfile-package-for-latex.html">Subfile package for latex</a></h1>
-        <p style="text-align:right"><big>
-             Posted: 2011-05-13 00:00
-        </big></p>
-        <hr><div><p>If you have a complex Latex document and you want to split it in several files, the <a href="http://ctan.org/tex-archive/macros/latex/contrib/subfiles">subfile</a> package can help you.  <br>
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/subfile-package-for-latex.html" class="u-url">Subfile package for latex</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2011-05-13T00:00:00+00:00">2011-05-13 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>If you have a complex Latex document and you want to split it in several files, the <a href="http://ctan.org/tex-archive/macros/latex/contrib/subfiles">subfile</a> package can help you.  <br>
 The main difference between this and the <code>\input</code> or <code>\import</code> methods is that with <code>subfile</code> you can compile also each file, without need to copy the preamble.    </p>
-<p><a href="posts/subfile-package-for-latex.html">Read more...</a></p></div>
-        <p>
+<p class="more"><a href="posts/subfile-package-for-latex.html">Read more…</a></p></div>
+        </div>
+            
         
-        </p></div>
+    <p>
+
+
+        </p></article>
     
-    <div>
-<ul class="pager"><li class="previous">
-        <a href="index-2.html">← Newer posts</a>
-  
-  
-</li></ul></div>
-    <hr></div>
+        <div>
+        <ul class="pager">
+            <li class="previous">
+                <a href="index-2.html" rel="prev">← Newer posts</a>
+            </li>
+        </ul>
+        </div>
+
+    
+        
+
+
+	
+
+
+    </div>
     </div>
     <!--End of body content-->
 </div>
@@ -222,13 +306,34 @@ The main difference between this and the <code>\input</code> or <code>\import</c
     Contents © 2014 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
 </div>
 
+            <script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
 
-    <!-- Social buttons -->
-    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-    <a class="addthis_button_more">Share</a>
-    <ul><li><a class="addthis_button_facebook"></a>
-    </li><li><a class="addthis_button_google_plusone_share"></a>
-    </li><li><a class="addthis_button_linkedin"></a>
-    </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="assets/js/bootstrap.min.js" type="text/javascript"></script><script src="assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+    
+    
+</body>
+</html>

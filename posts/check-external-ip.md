@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: go, golang, python, netword, ip
+.. tags: go, golang, Python, netword, ip
 .. date: 2013/09/03 16:59:56
 .. title: Check external ip
 .. slug: check-external-ip

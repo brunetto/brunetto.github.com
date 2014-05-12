@@ -1,19 +1,47 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>Cosmological simulations #5: initial conditions! | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-        },
-        displayAlign: 'left', // Change this to 'center' to center equations.
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}}
-        }
-    });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="author" content="brunetto">
+    <title>Cosmological simulations #5: initial conditions! | for future reference...</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+   tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+   },
+   displayAlign: 'left', // Change this to 'center' to center equations.
+   "HTML-CSS": {
+       styles: {'.MathJax_Display': {"margin": 0}}
+   }
+});
+</script>
+
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="posts/cosmological-simulations-5-initial-conditions.html">
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"><link href="https://plus.google.com/117796240971605586205" rel="publisher"></head><body>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+    
+
+
+
+
+
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top" id="navbar">
     <div class="navbar-inner">
         <div class="container">
 
@@ -24,41 +52,34 @@
             <span class="icon-bar"></span>
         </a>
 
-            <a class="brand" href="../">
+            <a class="brand" href="brunettoziosi.eu">
             for future reference...
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../stories/about.html">About</a>
-        
-    
-        
-            </li><li><a href="../index.html">Blog</a>
-        
-    
-        
-            </li><li><a href="../stories/index.html">SiteIndex</a>
-        
-    
-        
-            </li><li><a href="../archive.html">Archives</a>
-        
-    
-        
-            </li><li><a href="../categories/index.html">Tags</a>
-        
-    
-        
-            </li><li><a href="../rss.xml">RSS</a>
-        
-    
+                <ul class="nav">
+                    
+                <li><a href="../stories/about.html">About</a>
+                </li><li><a href="../index.html">Blog</a>
+                </li><li><a href="../stories/index.html">SiteIndex</a>
+                </li><li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
+                <ul class="nav pull-right">
                 
-                <ul class="nav pull-right"></ul></div>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -69,65 +90,82 @@
     <div class="span2"></div>
     <div class="span8">
     
-    <div class="postbox">
+    <article class="postbox post-text">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1>Cosmological simulations #5: initial conditions!</h1>
-    
+    <h1 class="p-name" itemprop="headline name">Cosmological simulations #5: initial conditions!</h1>
 
-    <hr><small>
-        Posted: <time class="published" datetime="2011-11-16T00:00:00">2011-11-16 00:00</time>
+    <hr>
+    <small>
+        Posted: <time class="published dt-published" datetime="2011-11-16T00:00:00+00:00" itemprop="datePublished">2011-11-16 00:00</time>
         
-    
 
-        
-    
-          |  More posts about
-        
-            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
-        
-            <a class="tag" href="../categories/cosmic_structure.html"><span class="badge badge-info">cosmic_structure</span></a>
-        
-            <a class="tag" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
-        
-            <a class="tag" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
-        
-    
+		
+          |  
+        More posts about 
+    <span itemprop="keywords">
+        <a class="tag p-category" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        <a class="tag p-category" href="../categories/cosmic_structure.html"><span class="badge badge-info">cosmic_structure</span></a>
+        <a class="tag p-category" href="../categories/cosmology.html"><span class="badge badge-info">Cosmology</span></a>
+        <a class="tag p-category" href="../categories/phd.html"><span class="badge badge-info">PhD</span></a>
+    </span>
 
+
+          |  
+		
     </small>
-    <hr><p>After we had a look on why we need cosmological simulations, what they are and how they are performed, it's time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.  <br><!-- TEASER_END -->
+    <hr>
+    <div class="e-content" itemprop="articleBody text">
+    <div><p>After we had a look on why we need cosmological simulations, what they are and how they are performed, it's time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.  <br>
+<!-- TEASER_END -->
 Usually, for a cosmological simulation, all the fields are linear so we can use linear theory to compute them. In linear theory the density contrast evolves as a combination of a growing and a decaying mode, but only the first survives, so we can set the initial system considering only the growing mode, and because until linearity is verified the density field and velocities are related to the gravitational potential we only need to generate the gravitational field and with it we can produce density and velocity fields.  <br>
 Once we have the initial potential there are two ways to generate the initial conditions:    </p>
-<ol><li>
+<ol>
+<li>
 <p>we can uniformly distribute the particles in the simulation box and choose the masses according to the gravitational field; velocities can be zero, in which case we increase the potential to account for the decaying mode, or non-zero and appropriate for the growing mode</p>
 </li>
 <li>
 <p>we can displace uniformly distributed particles using the velocities of the linear theory; the displacement should be smaller than the interparticle separation or we can obtain a wrong power spectrum because a bigger displacement would lead the trajectories to cross and in this case, formally, the density contrast grows to infinite (this is not acceptable in linear approximation) and after that it decreases while the particles go away and this is not physical    </p>
 </li>
-</ol><p>The relation that linking velocity and gravitational potential in the second entry:  <br>
+</ol>
+<p>The relation that linking velocity and gravitational potential in the second entry:  <br>
 $\frac{\mathrm{d}\mathbf{v}}{\mathrm{d}t}+2\frac{\mathrm{d}a/\mathrm{d}t}{a}\mathbf{v}\propto \mathbf{g}=-\frac{\nabla\phi}{a}$
 is the same both in linear theory and in the Zel'dovich approximation (this takes the non-linear equations together with the acceleration given by the linear theory to obtain results in the quasi-linear regime), so it's often said that the Zel'dovich approximation is used to set up initial conditions.    </p>
 <p>Given that, the homogeneity of the initial unperturbed distribution it's very important because any inhomogeneity would combine with density perturbations modifying initial conditions. This homogeneity can be thought in different ways:</p>
-<ul><li>a homogeneous but not random way is to put particles on a cubic grid but it could produce visible features due to the regular distribution</li>
+<ul>
+<li>a homogeneous but not random way is to put particles on a cubic grid but it could produce visible features due to the regular distribution</li>
 <li>we can consider putting particles at random positions but the $\sqrt{n}$ fluctuations will result in spurious clustering that will eventually dominate the fluctuations we want to simulate</li>
 <li>a good compromise could be placing particles in lattice cells with a random displacement from the center: this remove regularity but maintain uniformity</li>
 <li>the last possibility are "glass initial conditions" obtained by evolving an arbitrary distribution of particles in an n-body simulation with a repulsive force; it was invented by Simon White and the name refers to the molecular structure of glass, uniform but not regular    </li>
-</ul><p>Considering the last two possibilities, it's worth noting that the former still has a lot of noise, and the second is better than the grid only for aesthetic reasons.    </p>
+</ul>
+<p>Considering the last two possibilities, it's worth noting that the former still has a lot of noise, and the second is better than the grid only for aesthetic reasons.    </p>
 <p><strong>The initial gravitational potential</strong></p>
 <p>In standard cosmological models the initial perturbations density field is Gaussian. Since the linear evolution doesn't modify the statistics of density fields except for evolving the amplitude of perturbations, and because the potential and the density contrast are linked by a linear relation, the gravitational potential is also a Gaussian random field, and such a field is completely described in terms of the power spectrum of density perturbations. The Fourier components of a Gaussian random field (both real and imaginary part) are random numbers with a normal distribution and variance proportional to the power spectrum at that wave number. Also the phase of this random numbers has to be random, and changing it the resulting field is completely different.
 We can generate the gravitational field in the Fourier space just using these properties and inverse transform it (or the force) to obtain the initial potential in real space. If we use adaptive mesh refinement codes we need Gaussian random fields with a variable resolution.    </p>
 <p><em>References</em>:</p>
-<ul><li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+<ul>
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
 <li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
-</ul><ul class="pager"><li class="previous">
-            <a href="cosmological-simulations-3-force-calculation.html">← Previous post</a>
-        </li>
+</ul></div>
+    </div>
+    </div>
     
+        <ul class="pager">
+            <li class="previous">
+                <a href="cosmological-simulations-3-force-calculation.html" rel="prev">← Previous post</a>
+            </li>
+            <li class="next">
+                <a href="python-logging.html" rel="next">Next post →</a>
+            </li>
+        </ul>
+
+        
+        
+
+
     
-        <li class="next">
-            <a href="python-cli-and-configuration-file-parser.html">Next post →</a>
-        </li>
-    
-    </ul></div>
+
+    </article>
 
     </div>
     </div>
@@ -137,13 +175,34 @@ We can generate the gravitational field in the Fourier space just using these pr
     Contents © 2014 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
 </div>
 
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
 
-    <!-- Social buttons -->
-    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-    <a class="addthis_button_more">Share</a>
-    <ul><li><a class="addthis_button_facebook"></a>
-    </li><li><a class="addthis_button_google_plusone_share"></a>
-    </li><li><a class="addthis_button_linkedin"></a>
-    </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+    
+    
+</body>
+</html>

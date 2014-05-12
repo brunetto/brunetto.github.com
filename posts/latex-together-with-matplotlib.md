@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: latex, matplotlib, Python, plot, imported
+.. tags: Latex, matplotlib, Python, plot, imported
 .. date: 2012-06-01
 .. title: Latex together with matplotlib!
 .. slug: latex-together-with-matplotlib

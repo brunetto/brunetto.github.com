@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: latex, imported
+.. tags: Latex, imported
 .. date: 2011-05-13
 .. title: Subfile package for latex
 .. slug: subfile-package-for-latex

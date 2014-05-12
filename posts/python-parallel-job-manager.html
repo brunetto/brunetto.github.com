@@ -1,19 +1,47 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="brunetto"><link href="https://plus.google.com/117796240971605586205" rel="publisher"><title>Python parallel job manager | for future reference...</title><!-- mathjax_config --><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-        },
-        displayAlign: 'left', // Change this to 'center' to center equations.
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}}
-        }
-    });
-    </script><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="author" content="brunetto">
+    <title>Python parallel job manager | for future reference...</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+   tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+   },
+   displayAlign: 'left', // Change this to 'center' to center equations.
+   "HTML-CSS": {
+       styles: {'.MathJax_Display': {"margin": 0}}
+   }
+});
+</script>
+
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="posts/python-parallel-job-manager.html">
+    <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"><link href="https://plus.google.com/117796240971605586205" rel="publisher"></head><body>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+    
+
+
+
+
+
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top" id="navbar">
     <div class="navbar-inner">
         <div class="container">
 
@@ -24,41 +52,34 @@
             <span class="icon-bar"></span>
         </a>
 
-            <a class="brand" href="../">
+            <a class="brand" href="brunettoziosi.eu">
             for future reference...
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="../stories/about.html">About</a>
-        
-    
-        
-            </li><li><a href="../index.html">Blog</a>
-        
-    
-        
-            </li><li><a href="../stories/index.html">SiteIndex</a>
-        
-    
-        
-            </li><li><a href="../archive.html">Archives</a>
-        
-    
-        
-            </li><li><a href="../categories/index.html">Tags</a>
-        
-    
-        
-            </li><li><a href="../rss.xml">RSS</a>
-        
-    
+                <ul class="nav">
+                    
+                <li><a href="../stories/about.html">About</a>
+                </li><li><a href="../index.html">Blog</a>
+                </li><li><a href="../stories/index.html">SiteIndex</a>
+                </li><li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
 
-                </li></ul><!-- Custom search with google--><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:brunettoziosi.eu"><input type="text" name="q" maxlength="255" results="0" placeholder="Search"></form>
+                </li></ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
 <!-- End of custom search -->
 
+                <ul class="nav pull-right">
                 
-                <ul class="nav pull-right"></ul></div>
+                
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -69,42 +90,44 @@
     <div class="span2"></div>
     <div class="span8">
     
-    <div class="postbox">
+    <article class="postbox post-text">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1>Python parallel job manager</h1>
-    
+    <h1 class="p-name" itemprop="headline name">Python parallel job manager</h1>
 
-    <hr><small>
-        Posted: <time class="published" datetime="2011-11-04T00:00:00">2011-11-04 00:00</time>
+    <hr>
+    <small>
+        Posted: <time class="published dt-published" datetime="2011-11-04T00:00:00+00:00" itemprop="datePublished">2011-11-04 00:00</time>
         
-    
 
-        
-    
-          |  More posts about
-        
-            <a class="tag" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
-        
-            <a class="tag" href="../categories/code.html"><span class="badge badge-info">code</span></a>
-        
-            <a class="tag" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
-        
-            <a class="tag" href="../categories/master-thesis.html"><span class="badge badge-info">Master Thesis</span></a>
-        
-            <a class="tag" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
-        
-            <a class="tag" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
-        
-    
+		
+          |  
+        More posts about 
+    <span itemprop="keywords">
+        <a class="tag p-category" href="../categories/astrophysics.html"><span class="badge badge-info">astro/physics</span></a>
+        <a class="tag p-category" href="../categories/code.html"><span class="badge badge-info">code</span></a>
+        <a class="tag p-category" href="../categories/computer.html"><span class="badge badge-info">Computer</span></a>
+        <a class="tag p-category" href="../categories/master-thesis.html"><span class="badge badge-info">Master Thesis</span></a>
+        <a class="tag p-category" href="../categories/python.html"><span class="badge badge-info">Python</span></a>
+        <a class="tag p-category" href="../categories/imported.html"><span class="badge badge-info">imported</span></a>
+    </span>
 
+
+          |  
+		
     </small>
-    <hr><p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  <br><!-- TEASER_END --></p>
+    <hr>
+    <div class="e-content" itemprop="articleBody text">
+    <div><p>The final version of the code for my master thesis was the most embarrassing parallel code you can think... just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, ...) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.  <br>
+<!-- TEASER_END --></p>
 <p>At this step, however, I didn't know how to manage the different processes in a comfortable way. 
 My requirements were:    </p>
-<ul><li>to start only one process that will take care of starting the right code on the right data-slice</li>
+<ul>
+<li>to start only one process that will take care of starting the right code on the right data-slice</li>
 <li>the possibility to start "n" processes depending on the number of processors and memory available (in the actual code this is done by hand)</li>
 <li>the code should be able to start a new process when one of the previous processes end</li>
-</ul><p>Hereafter I expose and comment the complete "template" for this Python code as I wrote it.    </p>
+</ul>
+<p>Hereafter I expose and comment the complete "template" for this Python code as I wrote it.    </p>
 <div class="code"><pre><span class="c">#!/bin/env python</span>
 
 <span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
@@ -211,18 +234,26 @@ So we catch the pid of the starter and save into its log the number of sliced it
 
 <p>This is the central part of this code: we create the processes objects and put them into the container, start them and check for their status. Everything is inside the <code>try-except</code> environment to check for possible errors and handle them.  <br>
 In practice we start "n" processes and every process take the number of a slice from the queue and use it to start the analysis code, waiting for its end. When the analysis is finished it takes another number from the queue and start again the code. When the queue is empty everything is automatically switched off.  <br>
-Future improvements will consider the automatically detection of the hardware resources and the possibility to mail the status of the code.</p>
+Future improvements will consider the automatically detection of the hardware resources and the possibility to mail the status of the code.</p></div>
+    </div>
+    </div>
     
-    <ul class="pager"><li class="previous">
-            <a href="cosmological-simulations-1-why-and-what.html">← Previous post</a>
-        </li>
+        <ul class="pager">
+            <li class="previous">
+                <a href="loadleveler-quick-howto.html" rel="prev">← Previous post</a>
+            </li>
+            <li class="next">
+                <a href="phd-question-1-m.html" rel="next">Next post →</a>
+            </li>
+        </ul>
+
+        
+        
+
+
     
-    
-        <li class="next">
-            <a href="loadleveler-quick-howto.html">Next post →</a>
-        </li>
-    
-    </ul></div>
+
+    </article>
 
     </div>
     </div>
@@ -232,13 +263,34 @@ Future improvements will consider the automatically detection of the hardware re
     Contents © 2014 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
 </div>
 
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
 
-    <!-- Social buttons -->
-    <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-    <a class="addthis_button_more">Share</a>
-    <ul><li><a class="addthis_button_facebook"></a>
-    </li><li><a class="addthis_button_google_plusone_share"></a>
-    </li><li><a class="addthis_button_linkedin"></a>
-    </li><li><a class="addthis_button_twitter"></a>
-    </li></ul></div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/mathjax-onload.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
+
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+    
+    
+</body>
+</html>

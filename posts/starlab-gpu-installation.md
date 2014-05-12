@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: GPU, simulations, n-body
+.. tags: GPU, simulations, N-body
 .. date: 2013/08/20 09:34:11
 .. title: StarLab-GPU installation
 .. slug: starlab-gpu-installation

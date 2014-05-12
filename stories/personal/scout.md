@@ -34,9 +34,8 @@ My scout life
 * 2012 - Forum nazionale R/S - Lancio route nazionale (Brescia)
 * 2012 - Route Cammino Inglese (Ferrol -> Santiago de Compostela)
 * 2012-07-28_08-04 - Finale Emilia, Emergenza terremoto EmiRo, servizio con PC (magazzino centrale Finale Emilia)
-* Convegno Regionale Santa Maria di Piave
-* Convegno Regionale Vicenza
-* Assemblee Generali
+* 2009-04-18_19 Convegno Regionale Santa Maria di Piave
+* 2013-04-13_14 Convegno Regionale Cerea
 * Assemblee di zona
 * 2013 Route [Dolomiti di Brenta](../travels/routes/dolomiti-di-brenta-lago-di-tovel.html)
 
