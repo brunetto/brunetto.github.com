@@ -132,3 +132,12 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * Erra sia chi sbaglia che chi e` vagabondo, ma se io non erro poi non so com'e` il mondo 
 [Jovannotti]
+
+* Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it...    
+[Dan Ariely]
+
+* They've done studies, you know. 60% of the time, it works every time.
+[Brian Fantana]
+
+* There are only two types of peolple in the world: those who can extrapolate from incomplete data...
+[???]
