@@ -7,6 +7,8 @@
 .. slug: starlab-gpu-installation
 -->
 
+[Click here for a new and more complete guide!!!](../stories/research/utils/starlab-gpu-guide.html)
+
 ## To install CUDA you can try with the CUDA packages in the Ubuntu repositories.
 If they fail, you have to download CUDA from ****
 
