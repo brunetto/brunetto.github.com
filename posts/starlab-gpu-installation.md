@@ -38,7 +38,7 @@ library you can run it on GPUs.
 
 Now we will try to install a GPU-ready version of StarLab. To be honest, we run 
 a **private** version of StarLab for GPU with some customizations (if you are interested, 
-see [Mapelli et al. 2013](); [Mapelli & Bressan 2013]()).    
+see [Mapelli et al. 2013](http://arxiv.org/abs/1211.6441); [Mapelli & Bressan 2013](http://arxiv.org/abs/1301.4227)).    
 Unfortunately you can't download it now, but I hope the differences in the installation 
 process are negligible. Otherwise ask us for our StarLab version.    
 Because I'm not sure about what you will find in the public version os Sapporo and StarLab, 
