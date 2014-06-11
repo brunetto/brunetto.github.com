@@ -127,8 +127,8 @@ You can try to check them using </p>
 <li><code>locate cuda | grep include</code></li>
 <li><code>locate cuda | grep include | grep toolkit</code> (for the SDK files of the new release)</li>
 <li><code>locate cuda | grep lib | grep cudart</code> (CUDA runtime)</li>
-<li><code>locate cuda | grep lib</code></li>
-<li><code>locate cuda | grep include</code></li>
+<li><code>locate cuda | boost lib</code></li>
+<li><code>locate cuda | boost include</code></li>
 </ul>
 <p>It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it's a mess, 
 but it's not my fault!:P</p>
@@ -182,6 +182,8 @@ its presence in your computer. If <code>compile.sh</code> fail, StarLab won't in
 </pre></div>
 
 
+<p>This is to make Sapporo read the local version of <code>cutil.h</code> and <code>multithreading.h</code> 
+in case your CUDA version does not support them anymore.     </p>
 <p>Now open <code>Makefile</code> and fit </p>
 <div class="code"><pre><span class="n">CXX</span>  <span class="o">:=</span> <span class="n">g</span><span class="o">++</span>
 <span class="n">CC</span>   <span class="o">:=</span> <span class="n">gcc</span>
@@ -309,7 +311,7 @@ Some of the things that can happen are:</p>
 <li>you can find binaries with eccentricity greater than one (StarLab does 
 not update some binaries after they are disrupted? flybyes seen as binaries? don't know)</li>
 <li>StarLab can crash if you try to simulate a number of centers of mass greater than 
-$5*10^4$ together with a fraction of primordial binaries $\geq0.1$</li>
+5*10^4 together with a fraction of primordial binaries &gt;=0.1</li>
 <li>boost problems? check the correct flags for your version (choose among some combination of 
 <code>-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread</code>)</li>
 <li>check you put all the <code>_</code>, "-I", "-l", "-L" in the right places</li>

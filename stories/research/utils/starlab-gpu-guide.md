@@ -55,8 +55,8 @@ You can try to check them using
 * `locate cuda | grep include`
 * `locate cuda | grep include | grep toolkit` (for the SDK files of the new release)
 * `locate cuda | grep lib | grep cudart` (CUDA runtime)
-* `locate cuda | grep lib`
-* `locate cuda | grep include`
+* `locate cuda | boost lib`
+* `locate cuda | boost include`
 
 It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it's a mess, 
 but it's not my fault!:P
@@ -116,6 +116,9 @@ to
 #include "cutil.h"
 #include "multithreading.h"
 ````
+This is to make Sapporo read the local version of `cutil.h` and `multithreading.h` 
+in case your CUDA version does not support them anymore.     
+
 Now open `Makefile` and fit 
 
 ````Makefile
@@ -264,7 +267,7 @@ Some of the things that can happen are:
 * you can find binaries with eccentricity greater than one (StarLab does 
 not update some binaries after they are disrupted? flybyes seen as binaries? don't know)
 * StarLab can crash if you try to simulate a number of centers of mass greater than 
-$5*10^4$ together with a fraction of primordial binaries $\geq0.1$
+5*10^4 together with a fraction of primordial binaries >=0.1
 * boost problems? check the correct flags for your version (choose among some combination of 
 `-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread`)
 * check you put all the `_`, "-I", "-l", "-L" in the right places
