@@ -115,163 +115,244 @@ MathJax.Hub.Config({
     </small>
     <hr>
     <div class="e-content" itemprop="articleBody text">
-    <div><p><a href="../stories/research/utils/starlab-gpu-guide.html">Click here for a new and more complete guide!!!</a></p>
-<h3>To install CUDA you can try with the CUDA packages in the Ubuntu repositories.</h3>
-<p>If they fail, you have to download CUDA from ****</p>
-<p>To locate the CUDA files you can try:</p>
+    <div><p><a href="../stories/research/utils/starlab-gpu-old-guide.html">Click here for the old guide!!!</a></p>
+<p>Well, probably you landed here searching information about StarLab, how to 
+install it, how to run it, how prevent it to harm your cat.</p>
+<p><strong>DISCLAIMER 1:</strong> I won't promise anything about your cat but I will try to help you having a 
+reasonable well running installation of StarLab.</p>
+<p><strong>DISCLAIMER 2:</strong> I'm not a programmer, I'm not a system administrator and I don't even 
+know how to program in CUDA (yet). Maybe something here is wrong ore outdated. 
+I'm only giving you some of the experienced I collected in $n+1$ times I installed StarLab. 
+Nothin less, nothing more.  <br>
+Also note that most of the knowledge I put here come 
+from my <a href="http://web.pd.astro.it/mapelli/">supervisor</a>.</p>
+<h3>StarLab</h3>
+<p><a href="http://www.sns.ias.edu/~starlab/">StarLab</a> is "A Software Environment for Collisional Stellar Dynamics".
+<a href="http://www.sns.ias.edu/~starlab/">Here</a> you can find useful information about it that 
+is not useful to rewrite here, so have a look and then come back!:)</p>
+<h3>StarLab-GPU</h3>
+<p>Welcome back!!  <br>
+Next step: StarLab was designed to run on <a href="http://en.wikipedia.org/wiki/Gravity_Pipe">GRAPE</a> 
+but thanks to the <a href="http://castle.strw.leidenuniv.nl/software/sapporo.html">Sapporo</a> 
+library you can run it on GPUs.    </p>
+<p>Now we will try to install a GPU-ready version of StarLab. To be honest, we run 
+a <strong>private</strong> version of StarLab for GPU with some customizations (if you are interested, 
+see <a href="#">Mapelli et al. 2013</a>; <a href="#">Mapelli &amp; Bressan 2013</a>).  <br>
+Unfortunately you can't download it now, but I hope the differences in the installation 
+process are negligible. Otherwise ask us for our StarLab version.  <br>
+Because I'm not sure about what you will find in the public version os Sapporo and StarLab, 
+I will show my version of the relevant files you need to install everything. 
+The installation is done on a Ubuntu 14.04 workstation so change them accordingly to 
+your OS. I will also provide some examples on what you need to install StarLab on 
+the clusters I tested.    </p>
+<p>Let's start!!</p>
+<h5>Download</h5>
+<p>Be sure you have boost libraries, nVidia driver and CUDA correctly installed. 
+You can try to check them using </p>
 <ul>
-<li><code>locate cuda | grep nvcc</code></li>
+<li><code>locate cuda | grep nvcc</code> (cuda compiler)</li>
 <li><code>locate cuda | grep include</code></li>
 <li><code>locate cuda | grep include | grep toolkit</code> (for the SDK files of the new release)</li>
-<li><code>locate cuda | grep lib | grep cudaart</code></li>
+<li><code>locate cuda | grep lib | grep cudart</code> (CUDA runtime)</li>
+<li><code>locate cuda | boost lib</code></li>
+<li><code>locate cuda | boost include</code></li>
 </ul>
-<!-- TEASER_END -->
-
-<h3>Sapporo</h3>
+<p>It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it's a mess, 
+but it's not my fault!:P</p>
+<p>Download </p>
 <ul>
-<li>in setup_sapporo.sh change </li>
+<li><a href="http://www.sns.ias.edu/~starlab/download/starlab.tar.gz">StarLab</a></li>
+<li><a href="http://castle.strw.leidenuniv.nl/documents/Sapporo/sapporo161.tgz">Sapporo</a></li>
 </ul>
-<div class="code"><pre><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
-</pre></div>
-
-
-<p>(installation of the binary drivers from the NVIDIA site) to</p>
-<div class="code"><pre><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
-</pre></div>
-
-
-<p>(ubuntu CUDA distro packages)</p>
+<p>and decompress the archives with <code>tar -xvf archiveName</code>.  <br>
+Try to have the following folder tree:    </p>
 <ul>
-<li>in Makefile put the right path in <code>NVCC := /usr/bin/nvcc</code> and be sure to have the right 
-paths in </li>
+<li><code>$SLPATH/slpack</code></li>
+<li><code>$SLPATH/slpack/NVIDIA</code></li>
+<li><code>$SLPATH/slpack/NVIDIA/NVIDIA_CUDA-5.0_Samples</code></li>
+<li><code>$SLPATH/slpack/NVIDIA/NVIDIA_GPU_Computing_SDK</code></li>
+<li><code>$SLPATH/slpack/sapporo</code></li>
+<li><code>$SLPATH/slpack/starlab</code></li>
 </ul>
-<div class="code"><pre>CUDAPATH    :<span class="o">=</span> /usr/include/
-<span class="c">#/usr/local/cuda-5.0</span>
-CUDASDKPATH :<span class="o">=</span> /usr/lib/nvidia-cuda-toolkit/include/
-<span class="c">#/usr/local/cuda-5.0/samples/common/inc</span>
-CUDAINCLUDE :<span class="o">=</span> -I<span class="k">$(</span>CUDAPATH<span class="k">)</span>/include -I<span class="k">$(</span>CUDASDKPATH<span class="k">)</span>
-<span class="c"># RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)</span>
-BOOSTPATH :<span class="o">=</span> /usr/include/boost 
-BOOSTINCLUDE :<span class="o">=</span> -I<span class="k">$(</span>BOOSTPATH<span class="k">)</span>
-</pre></div>
-
-
-<p>the commented path refers to the binary installation from the NVIDIA site.</p>
+<p>The NVIDIA folder is optional, but I would sugest to have with you alle the NVIDIA 
+file you can find, soon or later you will need them. CUDA is continuosly changing, 
+SDK is not toolkit, dependencies are different and broken between different versions.
+We will try to survive and to have the most standard installation we can.    </p>
+<p><code>$SLPATH</code> should be the path where you put your StarLab installation.   <br>
+I'm not sure about what you will find in the public version of StarLab and Sapporo.</p>
+<h4>Sapporo</h4>
+<p>Enter in the sapporo folder, and to be sure to start a clean installation run 
+<code>make clean</code>. 
+Here you need to find:</p>
 <ul>
-<li>Launch <code>bash ./setup_sapporo.sh</code> and if you get</li>
+<li><code>Makefile</code></li>
+<li><code>compile.sh</code></li>
+<li><code>host_evaluate_gravity.cu</code></li>
 </ul>
-<div class="code"><pre>host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
-</pre></div>
-
-
-<p>puth <code>multithreading.h</code> in the sapporo folder and then in <code>host_evaluate_gravity.cu</code> change </p>
-<div class="code"><pre><span class="cp">#include &lt;multithreading.h&gt;</span>
+<p><code>compile.sh</code> is the script StarLab will run later to decide if you are worthy of 
+its presence in your computer. If <code>compile.sh</code> fail, StarLab won't install.    </p>
+<p>You also need to find somewhere (= in an old CUDA SKD?) </p>
+<ul>
+<li><code>cutil.h</code></li>
+<li><code>multithreading.h</code></li>
+</ul>
+<p>and to copy them in this folder.    </p>
+<p>Open <code>host_evaluate_gravity.cu</code> and change </p>
+<div class="code"><pre><span class="c">#include &lt;cutil.h&gt;</span>
+<span class="c">#include &lt;multithreading.h&gt;</span>
 </pre></div>
 
 
 <p>to </p>
-<div class="code"><pre><span class="cp">#include "multithreading.h"</span>
+<div class="code"><pre><span class="c">#include "cutil.h"</span>
+<span class="c">#include "multithreading.h"</span>
 </pre></div>
 
 
-<p>so c++ can find the header in the current directory.</p>
+<p>This is to make Sapporo read the local version of <code>cutil.h</code> and <code>multithreading.h</code> 
+in case your CUDA version does not support them anymore.     </p>
+<p>Now open <code>Makefile</code> and fit </p>
+<div class="code"><pre><span class="n">CXX</span>  <span class="o">:=</span> <span class="n">g</span><span class="o">++</span>
+<span class="n">CC</span>   <span class="o">:=</span> <span class="n">gcc</span>
+<span class="n">NVCC</span> <span class="o">:=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">nvcc</span>
+<span class="n">CUDAPATH</span>    <span class="o">:=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span>
+<span class="n">CUDAINCLUDE</span> <span class="o">:=</span> <span class="o">-</span><span class="n">I</span><span class="err">$</span><span class="p">(</span><span class="n">CUDAPATH</span><span class="p">)</span> 
+<span class="n">BOOSTPATH</span> <span class="o">:=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">boost</span> 
+<span class="n">BOOSTINCLUDE</span> <span class="o">:=</span> <span class="o">-</span><span class="n">I</span><span class="err">$</span><span class="p">(</span><span class="n">BOOSTPATH</span><span class="p">)</span>
+</pre></div>
+
+
+<p>to your case.  <br>
+Open <code>compile.sh</code> and be sure to have something like this:</p>
+<div class="code"><pre><span class="c">#!/bin/sh</span>
+
+<span class="nv">flags</span><span class="o">=</span>-DNGB
+
+<span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/"</span>
+<span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/lib/x86_64-linux-gnu/"</span>
+<span class="nv">CUDAFLAG</span><span class="o">=</span><span class="s1">'-lcudart'</span>
+<span class="nv">BOOSTINC</span><span class="o">=</span><span class="s1">'-I/usr/include/boost'</span>
+<span class="nv">BOOSTLIB</span><span class="o">=</span><span class="s1">'-L/usr/lib/x86_64-linux-gnu/'</span>
+<span class="nv">BOOSTFLAG</span><span class="o">=</span><span class="s1">'-lboost_system -lboost_thread -lpthread'</span>
+
+
+g++ -O3 <span class="nv">$flags</span> -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo <span class="nv">$CUDAINC</span> <span class="nv">$CUDALIB</span> <span class="nv">$CUDAFLAG</span> <span class="nv">$BOOSTINC</span> <span class="nv">$BOOSTLIB</span> <span class="nv">$BOOSTFLAG</span>
+g++ -O3 <span class="nv">$flags</span> -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo <span class="nv">$CUDAINC</span> <span class="nv">$CUDALIB</span> <span class="nv">$CUDAFLAG</span> <span class="nv">$BOOSTINC</span> <span class="nv">$BOOSTLIB</span> <span class="nv">$BOOSTFLAG</span>
+</pre></div>
+
+
+<p>Try to compile with <code>make</code>. If it works, try to tun <code>bash compile.sh</code>. If this works too, 
+then test sapporo with </p>
 <ul>
-<li>if all is going right, by running again <code>bash setup_sapporo.sh</code> you should
-obtain something like </li>
+<li><code>./test_gravity_block 800</code></li>
+<li><code>./test_gravity_block 800</code></li>
 </ul>
-<div class="code"><pre>/bin/rm -rf *.o *.cu_o libsapporo.a
-/bin/rm -rf test_gravity_block test_gravity_N2ngb
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
-sapporo.cpp: In member <span class="k">function</span> ‘int sapporo::open<span class="o">(</span>int<span class="o">)</span>’:
-sapporo.cpp:40:25: warning: ignoring <span class="k">return </span>value of ‘char* fgets<span class="o">(</span>char*, int, FILE*<span class="o">)</span>’, declared with attribute warn_unused_result <span class="o">[</span>-Wunused-result<span class="o">]</span>
-sapporo.cpp:42:25: warning: ignoring <span class="k">return </span>value of ‘char* fgets<span class="o">(</span>char*, int, FILE*<span class="o">)</span>’, declared with attribute warn_unused_result <span class="o">[</span>-Wunused-result<span class="o">]</span>
-sapporo.cpp:67:24: warning: ignoring <span class="k">return </span>value of ‘char* fgets<span class="o">(</span>char*, int, FILE*<span class="o">)</span>’, declared with attribute warn_unused_result <span class="o">[</span>-Wunused-result<span class="o">]</span>
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
-
-*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount<span class="o">=</span>64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
- Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
-ar: creating libsapporo.a
-a - GPUWorker.o
-a - sapporo.o
-a - send_fetch_data.o
-a - sapporoG6lib.o
-a - host_evaluate_gravity.cu_o
-ranlib libsapporo.a
-</pre></div>
-
-
+<p>Be aware that a number (of particles) too small would crash the tests.</p>
+<p>Assuming <code>sapporo</code> is ready, let's move to starlab.</p>
+<h4>StarLab</h4>
+<p>In StarLab the relevant files you have to worry about are </p>
 <ul>
-<li>to test the compilation run </li>
+<li><code>sbin/sqrt.c</code></li>
+<li><code>configure</code></li>
+<li><code>local/grape.sh</code></li>
 </ul>
-<div class="code"><pre>test_gravity_N2ngb 900
+<p>Rename <code>sbin/sqrt.c</code> to <code>sbin/sqrt.C</code> otherwise 
+you could have linker problems again the C math library.  <br>
+Now open <code>configure</code> and search for CUDA. Probably you won't find anything.   <br>
+Search for <code>Check all named libraries for g6_open</code>, you should find something like </p>
+<div class="code"><pre><span class="c">#   Check all named libraries for g6_open() (GRAPE-6).</span>
+
+    <span class="nv">grape6</span><span class="o">=</span>no
+
+    <span class="k">for </span>gl in <span class="nv">$GRAPE_LIBS_</span>; <span class="k">do</span>
+<span class="k">        </span><span class="nv">as_ac_Lib</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">"ac_cv_lib_${gl/-l/}''_g6_open_"</span> | <span class="nv">$as_tr_sh</span><span class="sb">`</span>
+<span class="nb">echo</span> <span class="s2">"$as_me:$LINENO: checking for g6_open_ in -l${gl/-l/}"</span> &gt;&amp;5
 </pre></div>
 
 
-<p>and</p>
-<div class="code"><pre>test_gravity_block 900
+<p>modify it to include boost and CUDA like:</p>
+<div class="code"><pre><span class="k">for </span>gl in <span class="nv">$GRAPE_LIBS_</span>; <span class="k">do</span>
+<span class="k">    </span><span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/"</span>
+    <span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/lib/x86_64-linux-gnu/"</span>
+    <span class="nv">CUDAFLAG</span><span class="o">=</span><span class="s1">'-lcudart'</span>
+    <span class="nv">BOOSTINC</span><span class="o">=</span><span class="s1">'-I/usr/include/boost'</span>
+    <span class="nv">BOOSTLIB</span><span class="o">=</span><span class="s1">'-L/usr/lib/x86_64-linux-gnu/'</span>
+    <span class="nv">BOOSTFLAG</span><span class="o">=</span><span class="s1">'-lboost_system -lboost_thread -lpthread'</span>
+
+    <span class="nv">LIBS</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB $CUDAFLAG $BOOSTLIB $BOOSTFLAG -DNGB"</span>
+
+    <span class="nv">as_ac_Lib</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">"ac_cv_lib_${gl/-l/}''_g6_open_"</span> | <span class="nv">$as_tr_sh</span><span class="sb">`</span>
 </pre></div>
 
 
-<p>where 900 is the number of particles involved in the test. You can choose the number you prefer
-but the test fail if the number is less than ~800.</p>
-<h3>StarLab</h3>
+<p>Last edit is on <code>local/grape.sh</code> to let StarLab know where your sapporo installation is:</p>
+<div class="code"><pre><span class="nv">GRAPE_LDFLAGS_</span><span class="o">=</span><span class="s1">'-L$SLPATH/slpack/sapporo'</span>
+<span class="nv">GRAPE_LIBS_</span><span class="o">=</span><span class="s1">'-lsapporo'</span>
+<span class="c"># For now, define this as `yes' for the AMD64 boxes only, `no' otherwise.</span>
+<span class="nv">OLD_READ_NEIGHBOUR_LIST</span><span class="o">=</span>no
+</pre></div>
+
+
+<p>Before compiling, if you want, you can check also <code>sapporo/sapporo.config</code>.  <br>
+Inside you will find something like that:</p>
+<div class="code"><pre>524288
+-1
+0
+1
+</pre></div>
+
+
+<p>where 524288 should be the maximum number of particles you can handle, -1 the number 
+of CUDA devices to use (-1 means all? maybe...), 0 and 1 are the GPU number you want to use.   <br>
+Recent CUDA seems to be smart enought to understand where to run without having to specify 
+(but look after your cat!!!).    </p>
+<p>Alright!! If you managed to reach this point, very good. Last three commands. In the 
+<code>starlab</code> folder run </p>
 <ul>
-<li>change configure CUDA lines:</li>
+<li><code>configure --without-f77</code></li>
+<li><code>make</code></li>
 </ul>
-<div class="code"><pre><span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost"</span> 
-<span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/libx86_64-linux-gnu/ -lcudart"</span>
-<span class="nv">LIBS</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB"</span>
-</pre></div>
-
-
+<p>go out for a walk</p>
 <ul>
-<li>and change local/grape.sh</li>
+<li><code>make install</code></li>
 </ul>
-<div class="code"><pre><span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost"</span> 
-<span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/libx86_64-linux-gnu/ -lcudart"</span>
-
-<span class="c"># CUDAINC="-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost" </span>
-<span class="c"># CUDALIB="-L/usr/local/cuda-5.0/lib64/ -lcudart" </span>
-
-<span class="nv">LIBS1</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB"</span>
-
-<span class="c">#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread</span>
-g++ -O3 <span class="nv">$flags</span> -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo <span class="nv">$CUDAINC</span> <span class="nv">$CUDALIB</span> <span class="nv">$LIBS1</span>
-
-<span class="c"># Where to find GRAPE libraries:</span>
-<span class="c"># GRAPE_LDFLAGS_='-L/home/mapelli/MICMAP/programmi/sapporo161_release/'</span>
-<span class="nv">GRAPE_LDFLAGS_</span><span class="o">=</span><span class="s1">'-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release'</span>
-</pre></div>
-
-
+<p>If you recompile StarLab AND/OR Sapporo, type <code>make clean</code> 2 times. delete the files in 
+<code>starlab/usr/bin</code>, turn around 3 times, touch your nose and type <code>make</code> two times. Then 
+<code>make install</code> again.   <br>
+No, <code>make clean</code> and <code>make</code> are not enought to update your object 
+files or binaries.</p>
+<h4>Run StarLab</h4>
+<p>Before run a simulation you need to create the initial conditions.</p>
+<h5>Initial Conditions</h5>
+<p>StarLab if provided with few tools to help (really?) you in this task. A common 
+way to create ICs for <a href="http://arxiv.org/abs/1404.7147">our simulations</a> is something like:     </p>
+<p><code>&lt;ehm, I don't know if I can tell you, sorry man...:(&gt;</code></p>
+<h5>Launch</h5>
+<p>StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything 
+you want to know about your simulations to STDERR, so, <code>&lt;ehm.... see ICs&gt;</code></p>
+<h5>Tidal fields</h5>
+<h4>Known issues and Troubleshooting</h4>
+<p>If StarLab did not kill your cat in a horrile way, then , it can still ruin your life.  <br>
+Some of the things that can happen are:</p>
 <ul>
-<li>
-<p>run <code>make clean</code></p>
-</li>
-<li>
-<p>run <code>./configure --without-fortran</code> (<code>--without-f77</code>)</p>
-</li>
-<li>
-<p><code>make</code></p>
-</li>
-<li>
-<p><code>make install</code></p>
-</li>
-<li>
-<p>now you can find the <code>kira</code> binary in <code>/usr/local/bin</code> or<code>/usr/bin</code></p>
-</li>
-<li>
-<p>run </p>
-</li>
+<li>you can find binaries with eccentricity greater than one (StarLab does 
+not update some binaries after they are disrupted? flybyes seen as binaries? don't know)</li>
+<li>StarLab can crash if you try to simulate a number of centers of mass greater than 
+5*10^4 together with a fraction of primordial binaries &gt;=0.1</li>
+<li>boost problems? check the correct flags for your version (choose among some combination of 
+<code>-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread</code>)</li>
+<li>check you put all the <code>_</code>, "-I", "-l", "-L" in the right places</li>
+<li>check all the libraries paths</li>
 </ul>
-<div class="code"><pre>./kira -t 500 -d 1 -D 1 -b 1 <span class="se">\</span>
-             -n 10 -e 0.000 -B   <span class="se">\</span>
-     &lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt <span class="se">\</span>
-     &gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt <span class="se">\</span>
-     2&gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
-</pre></div></div>
+<h4>Clusters</h4>
+<p><code>&lt;can I....?&gt;</code></p>
+<h4>Additional material</h4>
+<ul>
+<li>Code units</li>
+<li>StarLab internals</li>
+<li>Our repo</li>
+<li><a href="http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools">StarLab tools wiki</a></li>
+</ul></div>
     </div>
     </div>
     
