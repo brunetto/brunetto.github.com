@@ -29,6 +29,8 @@ from my [supervisor](http://web.pd.astro.it/mapelli/).
 [Here](http://www.sns.ias.edu/~starlab/) you can find useful information about it that 
 is not useful to rewrite here, so have a look and then come back!:)
 
+<!-- TEASER_END -->
+
 ## StarLab-GPU
 
 Welcome back!!    
