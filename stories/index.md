@@ -40,7 +40,7 @@
     * [PosterMaking](research/posterMaking.html)
     * [Units of measurement and conversions](research/units-of-measurement-and-conversions.html)
     * [Utils](research/utils/utils.html)
-        * [Starlab gpu guide](research/utils/starlab-gpu-guide.html)
+        * [Starlab gpu old guide](research/utils/starlab-gpu-old-guide.html)
 * [Tech](tech/tech.html)
     * [Android](tech/android.html)
     * [C references](tech/c-references.html)
