@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta name="author" content="brunetto">
-    <title>Git references | for future reference...</title>
+    <title>Best Golang installation | for future reference...</title>
     
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -19,19 +19,21 @@ MathJax.Hub.Config({
 });
 </script>
 
-            <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-            <link href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-        <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
-        <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
-        <link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
-        <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
-      <link rel="canonical" href="stories/tech/git-references.html">
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="posts/best-golang-installation.html">
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
     
+
+
 
 
 
@@ -57,12 +59,12 @@ MathJax.Hub.Config({
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
-                <li><a href="../about.html">About</a>
-                </li><li><a href="../../index.html">Blog</a>
-                </li><li><a href="../index.html">SiteIndex</a>
-                </li><li><a href="../../archive.html">Archives</a>
-                </li><li><a href="../../categories/index.html">Tags</a>
-                </li><li><a href="../../rss.xml">RSS</a>
+                <li><a href="../stories/about.html">About</a>
+                </li><li><a href="../index.html">Blog</a>
+                </li><li><a href="../stories/index.html">SiteIndex</a>
+                </li><li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
 
                 </li></ul>
                     
@@ -88,33 +90,54 @@ MathJax.Hub.Config({
     <div class="span2"></div>
     <div class="span8">
     
-    <h1>Git references</h1>
-    <div><ul>
-<li><a href="https://help.github.com/articles/ignoring-files">Ignoring files</a></li>
-<li><a href="https://speakerdeck.com/matze/distributed-version-control-and-why-you-want-to-use-it">How to use GIT (easy)</a></li>
-<li>
-<p><a href="https://cwiki.apache.org/confluence/display/FLEX/Good+vs+Bad+Git+usage">Good vs Bad Git usage</a></p>
-</li>
-<li>
-<p>Untrack files</p>
-</li>
+    <article class="postbox post-text">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <h1 class="p-name" itemprop="headline name">Best Golang installation</h1>
+
+    <hr>
+    <small>
+        Posted: <time class="published dt-published" datetime="2014-06-19T12:46:28+00:00" itemprop="datePublished">2014-06-19 12:46</time>
+        
+
+		
+
+          |  
+		
+    </small>
+    <hr>
+    <div class="e-content" itemprop="articleBody text">
+    <div><p>Best way to install Golang, from:</p>
+<ul>
+<li>http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go</li>
+<li>http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go</li>
 </ul>
-<div class="code"><pre>git rm --cached file
+<p>Assuming you already have the correct environment and you are on an ubuntu workstation.</p>
+<ul>
+<li>Download and install <code>godeb</code> if you haven't already done.</li>
+<li>Then with <code>godeb list</code> and godeb install <version> install your favourite Go version (the last, obviously!:P).</version></li>
+<li>To be able to cross-compile with the new installed Go:</li>
+</ul>
+<div class="code"><pre>sudo -i
+<span class="nb">cd</span> /usr/local/go/src
+git clone git://github.com/davecheney/golang-crosscompile.git
+<span class="nb">source </span>golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
 </pre></div>
 
 
-<ul>
-<li>Remove files from all the repo history</li>
-</ul>
-<div class="code"><pre>git filter-branch -f --index-filter <span class="s1">'git rm --cached --ignore-unmatch filename'</span> HEAD
-</pre></div>
+<p>done.</p></div>
+    </div>
+    </div>
+    
+
+        
+        
 
 
-<ul>
-<li>force a push</li>
-</ul>
-<div class="code"><pre>git push origin master --force
-</pre></div></div>
+    
+
+    </article>
 
     </div>
     </div>
@@ -124,9 +147,9 @@ MathJax.Hub.Config({
     Contents © 2014 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
 </div>
 
-            <script src="../../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
-            <script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
 
 
     

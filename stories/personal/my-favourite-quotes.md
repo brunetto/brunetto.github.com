@@ -141,3 +141,6 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * There are only two types of peolple in the world: those who can extrapolate from incomplete data...
 [???]
+
+* Lascia dormire il futuro come si merita, se lo si sveglia prima del tempo, si ottiene un presente assonnato.    
+[Franz Kafka]
