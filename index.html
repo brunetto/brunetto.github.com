@@ -88,6 +88,40 @@ MathJax.Hub.Config({
     <div class="span8">
     
         <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/best-golang-installation.html" class="u-url">Best Golang installation</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2014-06-19T12:46:28+00:00">2014-06-19 12:46</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>Best way to install Golang, from:</p>
+<ul>
+<li>http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go</li>
+<li>http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go</li>
+</ul>
+<p>Assuming you already have the correct environment and you are on an ubuntu workstation.</p>
+<ul>
+<li>Download and install <code>godeb</code> if you haven't already done.</li>
+<li>Then with <code>godeb list</code> and godeb install <version> install your favourite Go version (the last, obviously!:P).</version></li>
+<li>To be able to cross-compile with the new installed Go:</li>
+</ul>
+<div class="code"><pre>sudo -i
+<span class="nb">cd</span> /usr/local/go/src
+git clone git://github.com/davecheney/golang-crosscompile.git
+<span class="nb">source </span>golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
+</pre></div>
+
+
+<p>done.</p></div>
+        </div>
+            
+        
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
         <h1 class="p-name"><a href="posts/ssh-keys-exchange.html" class="u-url">Ssh keys exchange</a>
         <small>  
              Posted: <time class="published dt-published" datetime="2014-01-31T16:46:42+00:00">2014-01-31 16:46</time>
@@ -262,23 +296,6 @@ is not useful to rewrite here, so have a look and then come back!:)</p>
 several problems.  <br>
 Here I try to summarize some useful step.</p>
 <p class="more"><a href="posts/nvidia-drivers.html">Read more…</a></p></div>
-        </div>
-            
-        
-    <p>
-
-
-        </p></article>
-        <article class="postbox h-entry post-text">
-        <h1 class="p-name"><a href="posts/blogging-with-nikola-ipython-github.html" class="u-url">Blogging with Nikola + Ipython + Git(Hub)</a>
-        <small>  
-             Posted: <time class="published dt-published" datetime="2013-08-18T01:29:57+00:00">2013-08-18 01:29</time>
-        </small></h1>
-        <hr>
-        <div class="p-summary">
-        <div><p>After a lot of different attempts now it seems that I'm able to run a static 
-blog with Python, Nikola and Git.    </p>
-<p class="more"><a href="posts/blogging-with-nikola-ipython-github.html">Read more…</a></p></div>
         </div>
             
         

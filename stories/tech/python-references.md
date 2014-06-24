@@ -21,4 +21,5 @@
 * [Ipython presentations](http://damianavila.github.io/scipy2013_talks/index.html#/)
 * [Examples notebooks](http://nbviewer.ipython.org/urls/raw.github.com/ipython/ipython/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb)
 * [Scipy lectures](http://scipy-lectures.github.io/)
-*[Better ipython typography](https://slendrmeans.wordpress.com/2012/12/05/better-typography-for-ipython-notebooks/)
+* [Better ipython typography](https://slendrmeans.wordpress.com/2012/12/05/better-typography-for-ipython-notebooks/)
+* [Scientific computing in Python](https://github.com/jrjohansson/scientific-python-lectures)

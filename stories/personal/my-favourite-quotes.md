@@ -144,3 +144,12 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * Lascia dormire il futuro come si merita, se lo si sveglia prima del tempo, si ottiene un presente assonnato.    
 [Franz Kafka]
+
+* Mai ti si concede un desiderio senza che inoltre ti sia concesso il potere di farlo avverare. Può darsi che tu debba faticare per questo, tuttavia.
+[Richard Bach]
+
+* Non approfittare mai della pazienza delle persone buone perché sono le ultime a stancarsi ma le prime a non avere ripensamenti.
+[]
+
+* "Se non vogliono che guardi dentro... dovrebbero costruirle meglio."
+[Harold Finch, PoI 3x11]
