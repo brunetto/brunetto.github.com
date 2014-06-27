@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 24 Jun 2014 12:37:12 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Best Golang installation</title><link>posts/best-golang-installation.html</link><description>&lt;div&gt;&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 10:24:15 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Best Golang installation</title><link>posts/best-golang-installation.html</link><description>&lt;div&gt;&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&lt;/li&gt;
 &lt;li&gt;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&lt;/li&gt;
@@ -47,7 +47,15 @@ I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&
 &lt;li&gt;&lt;a href="http://golang.org/doc/code.html"&gt;Write Go code&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p class="more"&gt;&lt;a href="go-installation-from-source.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>code</category><category>go</category><category>golang</category><guid>posts/go-installation-from-source.html</guid><pubDate>Fri, 30 Aug 2013 16:59:36 GMT</pubDate></item><item><title>AGN for Dummies</title><link>posts/agn-for-dummies.html</link><description>&lt;div&gt;&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="agn-for-dummies.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>AGN</category><category>for Dummies</category><category>infographics</category><category>PhD</category><guid>posts/agn-for-dummies.html</guid><pubDate>Tue, 20 Aug 2013 17:53:15 GMT</pubDate></item><item><title>StarLab-GPU installation</title><link>posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="research/utils/starlab-gpu-old-guide.html"&gt;Click here for the old guide!!!&lt;/a&gt;&lt;/p&gt;
+&lt;p class="more"&gt;&lt;a href="agn-for-dummies.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>astro/physics</category><category>AGN</category><category>for Dummies</category><category>infographics</category><category>PhD</category><guid>posts/agn-for-dummies.html</guid><pubDate>Tue, 20 Aug 2013 17:53:15 GMT</pubDate></item><item><title>StarLab-GPU installation</title><link>posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="research/utils/starlab-gpu-old-guide.html"&gt;Click here for the old guide!!!&lt;/a&gt;    &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ignore the "&lt;code&gt;sapporo&lt;/code&gt;"  and "&lt;code&gt;CUDA&lt;/code&gt;" instructions&lt;/li&gt;
+&lt;li&gt;rename &lt;code&gt;starlab/local/grape.sh&lt;/code&gt; to &lt;code&gt;starlab/local/_grape.sh&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --without-grape --without-f77&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;p&gt;Well, probably you landed here searching information about StarLab, how to 
 install it, how to run it, how prevent it to harm your cat.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISCLAIMER 1:&lt;/strong&gt; I won't promise anything about your cat but I will try to help you having a 

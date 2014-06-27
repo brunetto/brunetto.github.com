@@ -51,6 +51,8 @@
 * [GoLang Samples](https://github.com/golang-samples)
 * [GolangBootCamp Book](http://www.golangbootcamp.com/book/frontmatter)
 * [Slice of structs vs map o structs](https://groups.google.com/forum/#!topic/golang-nuts/FCcLsuWsF_U)
+* [go4python](http://talks.golang.org/2013/go4python.slide)
+* [Why I Program in Go](http://tech.t9i.in/2013/01/why-program-in-go/)
 
 ### Web Server
 

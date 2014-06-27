@@ -7,8 +7,17 @@
 .. slug: starlab-gpu-installation
 -->
 
-[Click here for the old guide!!!](../stories/research/utils/starlab-gpu-old-guide.html)
+[Click here for the old guide!!!](../stories/research/utils/starlab-gpu-old-guide.html)    
 
+---    
+
+**UPDATE:** if you want to compile starlab **without GPU support**, you only need to     
+
+* ignore the "`sapporo`"  and "`CUDA`" instructions
+* rename `starlab/local/grape.sh` to `starlab/local/_grape.sh` 
+* substitute `configure --without-f77` with `configure --without-grape --without-f77`)
+
+---
 
 Well, probably you landed here searching information about StarLab, how to 
 install it, how to run it, how prevent it to harm your cat.

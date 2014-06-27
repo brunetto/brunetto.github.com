@@ -262,7 +262,15 @@ I will try to do this in Python and Go. Of course these are raw attempts.</p>
         </small></h1>
         <hr>
         <div class="p-summary">
-        <div><p><a href="stories/research/utils/starlab-gpu-old-guide.html">Click here for the old guide!!!</a></p>
+        <div><p><a href="stories/research/utils/starlab-gpu-old-guide.html">Click here for the old guide!!!</a>    </p>
+<hr>
+<p><strong>UPDATE:</strong> if you want to compile starlab <strong>without GPU support</strong>, you only need to     </p>
+<ul>
+<li>ignore the "<code>sapporo</code>"  and "<code>CUDA</code>" instructions</li>
+<li>rename <code>starlab/local/grape.sh</code> to <code>starlab/local/_grape.sh</code> </li>
+<li>substitute <code>configure --without-f77</code> with <code>configure --without-grape --without-f77</code>)</li>
+</ul>
+<hr>
 <p>Well, probably you landed here searching information about StarLab, how to 
 install it, how to run it, how prevent it to harm your cat.</p>
 <p><strong>DISCLAIMER 1:</strong> I won't promise anything about your cat but I will try to help you having a 
