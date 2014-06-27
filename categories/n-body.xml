@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (N-body)</title><link>brunettoziosi.eu</link><description></description><atom:link href="categories/n-body.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 10:24:15 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>StarLab-GPU installation</title><link>posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="stories/research/utils/starlab-gpu-old-guide.html"&gt;Click here for the old guide!!!&lt;/a&gt;    &lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (N-body)</title><link>brunettoziosi.eu</link><description></description><atom:link href="categories/n-body.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 12:51:25 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>StarLab-GPU installation</title><link>posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="stories/research/utils/starlab-gpu-old-guide.html"&gt;Click here for the old guide!!!&lt;/a&gt;    &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to     &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ignore the "&lt;code&gt;sapporo&lt;/code&gt;"  and "&lt;code&gt;CUDA&lt;/code&gt;" instructions&lt;/li&gt;
 &lt;li&gt;rename &lt;code&gt;starlab/local/grape.sh&lt;/code&gt; to &lt;code&gt;starlab/local/_grape.sh&lt;/code&gt; &lt;/li&gt;
-&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --without-grape --without-f77&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --with-grape=no --without-f77&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;in case you can't &lt;code&gt;make&lt;/code&gt; succesfully may be you need to copy the folder 
+&lt;code&gt;starlab/src/gfx&lt;/code&gt; and do not make clean&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;Well, probably you landed here searching information about StarLab, how to 

@@ -268,7 +268,9 @@ I will try to do this in Python and Go. Of course these are raw attempts.</p>
 <ul>
 <li>ignore the "<code>sapporo</code>"  and "<code>CUDA</code>" instructions</li>
 <li>rename <code>starlab/local/grape.sh</code> to <code>starlab/local/_grape.sh</code> </li>
-<li>substitute <code>configure --without-f77</code> with <code>configure --without-grape --without-f77</code>)</li>
+<li>substitute <code>configure --without-f77</code> with <code>configure --with-grape=no --without-f77</code>)</li>
+<li>in case you can't <code>make</code> succesfully may be you need to copy the folder 
+<code>starlab/src/gfx</code> and do not make clean</li>
 </ul>
 <hr>
 <p>Well, probably you landed here searching information about StarLab, how to 

@@ -15,7 +15,9 @@
 
 * ignore the "`sapporo`"  and "`CUDA`" instructions
 * rename `starlab/local/grape.sh` to `starlab/local/_grape.sh` 
-* substitute `configure --without-f77` with `configure --without-grape --without-f77`)
+* substitute `configure --without-f77` with `configure --with-grape=no --without-f77`)
+* in case you can't `make` succesfully may be you need to copy the folder 
+`starlab/src/gfx` and do not make clean
 
 ---
 

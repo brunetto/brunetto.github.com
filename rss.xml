@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 10:24:15 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Best Golang installation</title><link>posts/best-golang-installation.html</link><description>&lt;div&gt;&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 12:51:25 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Best Golang installation</title><link>posts/best-golang-installation.html</link><description>&lt;div&gt;&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&lt;/li&gt;
 &lt;li&gt;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&lt;/li&gt;
@@ -53,7 +53,9 @@ I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&
 &lt;ul&gt;
 &lt;li&gt;ignore the "&lt;code&gt;sapporo&lt;/code&gt;"  and "&lt;code&gt;CUDA&lt;/code&gt;" instructions&lt;/li&gt;
 &lt;li&gt;rename &lt;code&gt;starlab/local/grape.sh&lt;/code&gt; to &lt;code&gt;starlab/local/_grape.sh&lt;/code&gt; &lt;/li&gt;
-&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --without-grape --without-f77&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --with-grape=no --without-f77&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;in case you can't &lt;code&gt;make&lt;/code&gt; succesfully may be you need to copy the folder 
+&lt;code&gt;starlab/src/gfx&lt;/code&gt; and do not make clean&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;Well, probably you landed here searching information about StarLab, how to 
