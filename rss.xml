@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 12:51:25 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Best Golang installation</title><link>posts/best-golang-installation.html</link><description>&lt;div&gt;&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>brunettoziosi.eu</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 07 Jul 2014 17:17:42 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>rsync like a pro</title><link>posts/rsync-like-a-pro.html</link><description>&lt;div&gt;&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;rsync -avuh --progress --stats --rsh&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'ssh -p&amp;lt;your-ssh-port&amp;gt;'&lt;/span&gt; user@source:path user@dest:path
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you need it, &lt;code&gt;-c&lt;/code&gt; flag will force files checksum to be sure they are the same or not. It takes a lot of time.&lt;/p&gt;&lt;/div&gt;</description><guid>posts/rsync-like-a-pro.html</guid><pubDate>Mon, 07 Jul 2014 09:34:11 GMT</pubDate></item><item><title>Best Golang installation</title><link>posts/best-golang-installation.html</link><description>&lt;div&gt;&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&lt;/li&gt;
 &lt;li&gt;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&lt;/li&gt;
@@ -24,6 +29,11 @@ the need to remember a password.&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;ssh-keygen
 ssh-copy-id -i you@B
 ssh you@B &lt;span class="c"&gt;# to check if it works&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If it doesn't work try:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;cat .ssh/id_rsa.pub | ssh b@B &lt;span class="s1"&gt;'cat &amp;gt;&amp;gt; .ssh/authorized_keys'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>posts/ssh-keys-exchange.html</guid><pubDate>Fri, 31 Jan 2014 16:46:42 GMT</pubDate></item><item><title>Blog pages index generator</title><link>posts/blog-pages-index-generator.html</link><description>&lt;div&gt;&lt;p&gt;Since some time I was looking for a way to automatically generate an 
 &lt;a href="index.html"&gt;index&lt;/a&gt; for the 
 pages of this blog! 
@@ -72,7 +82,4 @@ from my &lt;a href="http://web.pd.astro.it/mapelli/"&gt;supervisor&lt;/a&gt;.&lt
 &lt;p&gt;&lt;a href="http://www.sns.ias.edu/~starlab/"&gt;StarLab&lt;/a&gt; is "A Software Environment for Collisional Stellar Dynamics".
 &lt;a href="http://www.sns.ias.edu/~starlab/"&gt;Here&lt;/a&gt; you can find useful information about it that 
 is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="starlab-gpu-installation.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>GPU</category><category>simulations</category><category>N-body</category><guid>posts/starlab-gpu-installation.html</guid><pubDate>Tue, 20 Aug 2013 09:34:11 GMT</pubDate></item><item><title>Nvidia drivers</title><link>posts/nvidia-drivers.html</link><description>&lt;div&gt;&lt;p&gt;If you need to install the NVIDIA drivers in your linux box you can encounter 
-several problems.  &lt;br&gt;
-Here I try to summarize some useful step.&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="nvidia-drivers.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><guid>posts/nvidia-drivers.html</guid><pubDate>Mon, 19 Aug 2013 10:17:08 GMT</pubDate></item></channel></rss>
+&lt;p class="more"&gt;&lt;a href="starlab-gpu-installation.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>GPU</category><category>simulations</category><category>N-body</category><guid>posts/starlab-gpu-installation.html</guid><pubDate>Tue, 20 Aug 2013 09:34:11 GMT</pubDate></item></channel></rss>

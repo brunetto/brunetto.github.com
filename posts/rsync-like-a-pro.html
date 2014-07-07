@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta name="author" content="brunetto">
-    <title>Best Golang installation | for future reference...</title>
+    <title>rsync like a pro | for future reference...</title>
     
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
         <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
-      <link rel="canonical" href="posts/best-golang-installation.html">
+      <link rel="canonical" href="posts/rsync-like-a-pro.html">
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -93,11 +93,11 @@ MathJax.Hub.Config({
     <article class="postbox post-text">
     <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1 class="p-name" itemprop="headline name">Best Golang installation</h1>
+    <h1 class="p-name" itemprop="headline name">rsync like a pro</h1>
 
     <hr>
     <small>
-        Posted: <time class="published dt-published" datetime="2014-06-19T12:46:28+00:00" itemprop="datePublished">2014-06-19 12:46</time>
+        Posted: <time class="published dt-published" datetime="2014-07-07T09:34:11+00:00" itemprop="datePublished">2014-07-07 09:34</time>
         
 
 		
@@ -107,35 +107,18 @@ MathJax.Hub.Config({
     </small>
     <hr>
     <div class="e-content" itemprop="articleBody text">
-    <div><p>Best way to install Golang, from:</p>
-<ul>
-<li>http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go</li>
-<li>http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go</li>
-</ul>
-<p>Assuming you already have the correct environment and you are on an ubuntu workstation.</p>
-<ul>
-<li>Download and install <code>godeb</code> if you haven't already done.</li>
-<li>Then with <code>godeb list</code> and godeb install <version> install your favourite Go version (the last, obviously!:P).</version></li>
-<li>To be able to cross-compile with the new installed Go:</li>
-</ul>
-<div class="code"><pre>sudo -i
-<span class="nb">cd</span> /usr/local/go/src
-git clone git://github.com/davecheney/golang-crosscompile.git
-<span class="nb">source </span>golang-crosscompile/crosscompile.bash
-go-crosscompile-build-all
+    <div><p>To sync two folder on two different machines with a non-default ssh port:</p>
+<div class="code"><pre>rsync -avuh --progress --stats --rsh<span class="o">=</span><span class="s1">'ssh -p&lt;your-ssh-port&gt;'</span> user@source:path user@dest:path
 </pre></div>
 
 
-<p>done.</p></div>
+<p>If you need it, <code>-c</code> flag will force files checksum to be sure they are the same or not. It takes a lot of time.</p></div>
     </div>
     </div>
     
         <ul class="pager">
             <li class="previous">
-                <a href="ssh-keys-exchange.html" rel="prev">← Previous post</a>
-            </li>
-            <li class="next">
-                <a href="rsync-like-a-pro.html" rel="next">Next post →</a>
+                <a href="best-golang-installation.html" rel="prev">← Previous post</a>
             </li>
         </ul>
 

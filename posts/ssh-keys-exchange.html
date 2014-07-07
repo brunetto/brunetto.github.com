@@ -113,6 +113,11 @@ the need to remember a password.</p>
 <div class="code"><pre>ssh-keygen
 ssh-copy-id -i you@B
 ssh you@B <span class="c"># to check if it works</span>
+</pre></div>
+
+
+<p>If it doesn't work try:</p>
+<div class="code"><pre>cat .ssh/id_rsa.pub | ssh b@B <span class="s1">'cat &gt;&gt; .ssh/authorized_keys'</span>
 </pre></div></div>
     </div>
     </div>

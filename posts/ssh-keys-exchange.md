@@ -17,4 +17,8 @@ ssh-keygen
 ssh-copy-id -i you@B
 ssh you@B # to check if it works
 ````
+If it doesn't work try:
 
+````bash
+cat .ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
+````

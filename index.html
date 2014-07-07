@@ -88,6 +88,26 @@ MathJax.Hub.Config({
     <div class="span8">
     
         <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/rsync-like-a-pro.html" class="u-url">rsync like a pro</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2014-07-07T09:34:11+00:00">2014-07-07 09:34</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>To sync two folder on two different machines with a non-default ssh port:</p>
+<div class="code"><pre>rsync -avuh --progress --stats --rsh<span class="o">=</span><span class="s1">'ssh -p&lt;your-ssh-port&gt;'</span> user@source:path user@dest:path
+</pre></div>
+
+
+<p>If you need it, <code>-c</code> flag will force files checksum to be sure they are the same or not. It takes a lot of time.</p></div>
+        </div>
+            
+        
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
         <h1 class="p-name"><a href="posts/best-golang-installation.html" class="u-url">Best Golang installation</a>
         <small>  
              Posted: <time class="published dt-published" datetime="2014-06-19T12:46:28+00:00">2014-06-19 12:46</time>
@@ -134,6 +154,11 @@ the need to remember a password.</p>
 <div class="code"><pre>ssh-keygen
 ssh-copy-id -i you@B
 ssh you@B <span class="c"># to check if it works</span>
+</pre></div>
+
+
+<p>If it doesn't work try:</p>
+<div class="code"><pre>cat .ssh/id_rsa.pub | ssh b@B <span class="s1">'cat &gt;&gt; .ssh/authorized_keys'</span>
 </pre></div></div>
         </div>
             
@@ -295,29 +320,11 @@ is not useful to rewrite here, so have a look and then come back!:)</p>
 
 
         </p></article>
-        <article class="postbox h-entry post-text">
-        <h1 class="p-name"><a href="posts/nvidia-drivers.html" class="u-url">Nvidia drivers</a>
-        <small>  
-             Posted: <time class="published dt-published" datetime="2013-08-19T10:17:08+00:00">2013-08-19 10:17</time>
-        </small></h1>
-        <hr>
-        <div class="p-summary">
-        <div><p>If you need to install the NVIDIA drivers in your linux box you can encounter 
-several problems.  <br>
-Here I try to summarize some useful step.</p>
-<p class="more"><a href="posts/nvidia-drivers.html">Read more…</a></p></div>
-        </div>
-            
-        
-    <p>
-
-
-        </p></article>
     
         <div>
         <ul class="pager">
             <li class="next">
-                <a href="index-4.html" rel="next">Older posts →</a>
+                <a href="index-5.html" rel="next">Older posts →</a>
             </li>
         </ul>
         </div>
