@@ -34,6 +34,9 @@ Nothin less, nothing more.
 Also note that most of the knowledge I put here come 
 from my [supervisor](http://web.pd.astro.it/mapelli/).
 
+**DISCLAIMER 3:** StarLab still seems to **always** crash if you try to simulate a system 
+with more than ~6000 binaries.
+
 ## StarLab
 
 [StarLab](http://www.sns.ias.edu/~starlab/) is "A Software Environment for Collisional Stellar Dynamics".
@@ -134,6 +137,35 @@ to
 ````
 This is to make Sapporo read the local version of `cutil.h` and `multithreading.h` 
 in case your CUDA version does not support them anymore.     
+
+It's time to fix a bug (thanks Mario):
+in `sapporo.cpp` change    
+
+````c++
+		fprintf(stderr, "\n");
+		nCUDAdevices = how_many;
+    } else {
+		fprintf(stderr," sapporo::open - no config file is found \n");
+		fprintf(stderr,"  using all %d CUDA device(s), nj_max= %d\n", nCUDAdevices, nj_max);
+		//Set original_how_many to a positive number so we get assigned different devices
+		//incase the devices are not in compute exclusive mode.
+		original_how_many = 1;
+  }
+````
+
+with    
+
+````c++
+		fprintf(stderr, "\n");
+		nCUDAdevices = how_many;
+		fclose(fd); // thanks Mario Spera, without this SL will crash after a while if using sapporo.config
+  } else {
+    fprintf(stderr," sapporo::open - no config file is found \n");
+    fprintf(stderr,"  using all %d CUDA device(s), nj_max= %d\n", nCUDAdevices, nj_max);
+    //Set original_how_many to a positive number so we get assigned different devices
+    //incase the devices are not in compute exclusive mode.
+    original_how_many = 1;
+````
 
 Now open `Makefile` and fit 
 

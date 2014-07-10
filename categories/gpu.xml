@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (GPU)</title><link>brunettoziosi.eu</link><description></description><atom:link href="categories/gpu.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 27 Jun 2014 12:51:25 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>StarLab-GPU installation</title><link>posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="stories/research/utils/starlab-gpu-old-guide.html"&gt;Click here for the old guide!!!&lt;/a&gt;    &lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (GPU)</title><link>brunettoziosi.eu</link><description></description><atom:link href="categories/gpu.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 10 Jul 2014 09:43:07 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>StarLab-GPU installation</title><link>posts/starlab-gpu-installation.html</link><description>&lt;div&gt;&lt;p&gt;&lt;a href="stories/research/utils/starlab-gpu-old-guide.html"&gt;Click here for the old guide!!!&lt;/a&gt;    &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to     &lt;/p&gt;
 &lt;ul&gt;
@@ -20,6 +20,8 @@ I'm only giving you some of the experienced I collected in $n+1$ times I install
 Nothin less, nothing more.  &lt;br&gt;
 Also note that most of the knowledge I put here come 
 from my &lt;a href="http://web.pd.astro.it/mapelli/"&gt;supervisor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system 
+with more than ~6000 binaries.&lt;/p&gt;
 &lt;h3&gt;StarLab&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.sns.ias.edu/~starlab/"&gt;StarLab&lt;/a&gt; is "A Software Environment for Collisional Stellar Dynamics".
 &lt;a href="http://www.sns.ias.edu/~starlab/"&gt;Here&lt;/a&gt; you can find useful information about it that 

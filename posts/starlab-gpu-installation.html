@@ -136,6 +136,8 @@ I'm only giving you some of the experienced I collected in $n+1$ times I install
 Nothin less, nothing more.  <br>
 Also note that most of the knowledge I put here come 
 from my <a href="http://web.pd.astro.it/mapelli/">supervisor</a>.</p>
+<p><strong>DISCLAIMER 3:</strong> StarLab still seems to <strong>always</strong> crash if you try to simulate a system 
+with more than ~6000 binaries.</p>
 <h3>StarLab</h3>
 <p><a href="http://www.sns.ias.edu/~starlab/">StarLab</a> is "A Software Environment for Collisional Stellar Dynamics".
 <a href="http://www.sns.ias.edu/~starlab/">Here</a> you can find useful information about it that 
@@ -223,6 +225,33 @@ its presence in your computer. If <code>compile.sh</code> fail, StarLab won't in
 
 <p>This is to make Sapporo read the local version of <code>cutil.h</code> and <code>multithreading.h</code> 
 in case your CUDA version does not support them anymore.     </p>
+<p>It's time to fix a bug (thanks Mario):
+in <code>sapporo.cpp</code> change    </p>
+<div class="code"><pre>        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">nCUDAdevices</span> <span class="o">=</span> <span class="n">how_many</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="s">" sapporo::open - no config file is found </span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="s">"  using all %d CUDA device(s), nj_max= %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">nCUDAdevices</span><span class="p">,</span> <span class="n">nj_max</span><span class="p">);</span>
+        <span class="c1">//Set original_how_many to a positive number so we get assigned different devices</span>
+        <span class="c1">//incase the devices are not in compute exclusive mode.</span>
+        <span class="n">original_how_many</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div>
+
+
+<p>with    </p>
+<div class="code"><pre>        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">nCUDAdevices</span> <span class="o">=</span> <span class="n">how_many</span><span class="p">;</span>
+        <span class="n">fclose</span><span class="p">(</span><span class="n">fd</span><span class="p">);</span> <span class="c1">// thanks Mario Spera, without this SL will crash after a while if using sapporo.config</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="s">" sapporo::open - no config file is found </span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="s">"  using all %d CUDA device(s), nj_max= %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">nCUDAdevices</span><span class="p">,</span> <span class="n">nj_max</span><span class="p">);</span>
+    <span class="c1">//Set original_how_many to a positive number so we get assigned different devices</span>
+    <span class="c1">//incase the devices are not in compute exclusive mode.</span>
+    <span class="n">original_how_many</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</pre></div>
+
+
 <p>Now open <code>Makefile</code> and fit </p>
 <div class="code"><pre><span class="n">CXX</span>  <span class="o">:=</span> <span class="n">g</span><span class="o">++</span>
 <span class="n">CC</span>   <span class="o">:=</span> <span class="n">gcc</span>
