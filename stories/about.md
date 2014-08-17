@@ -27,7 +27,7 @@ I'm also a [scout](personal/scout.html) leader in the AGESCI association, a [tra
 (by [moto](moto.html), [feet](http://en.wikipedia.org/wiki/Way_of_St._James), airplane, ...) and a [registered linux user](https://linuxcounter.net) 
 with registration number [508678](http://linuxcounter.net/user/508678.html).    
 I'm still try to [play an instrument](personal/multimedia/music.html)!:P    
-Sometimes I [try to do something in the kitchen](personal/cooking.html) without create a black hole
+Sometimes I [try to do something in the kitchen](personal/cooking.html) without creating a black hole
 or violating any nature law!:P    
 Of course, I own an [Android](tech/android.html) phone.    
     
