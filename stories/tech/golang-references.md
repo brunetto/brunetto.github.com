@@ -56,6 +56,7 @@
 
 ### Web Server
 
+* [Learn to build and deploy simple Go Web Apps, Part One](http://blog.joshsoftware.com/2014/03/12/learn-to-build-and-deploy-simple-go-web-apps-part-one/)
 * http://golang.org/doc/articles/wiki/
 * http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image
 * https://github.com/ljgww/web_server_example_in_Go_-golang-

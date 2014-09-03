@@ -88,6 +88,48 @@ MathJax.Hub.Config({
     <div class="span8">
     
         <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/starlab-gpu-installation.html" class="u-url">StarLab-GPU installation</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2013-08-20T09:34:11+00:00">2013-08-20 09:34</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p><a href="stories/research/utils/starlab-gpu-old-guide.html">Click here for the old guide!!!</a>    </p>
+<hr>
+<p><strong>UPDATE:</strong> if you want to compile starlab <strong>without GPU support</strong>, you only need to     </p>
+<ul>
+<li>ignore the "<code>sapporo</code>"  and "<code>CUDA</code>" instructions</li>
+<li>rename <code>starlab/local/grape.sh</code> to <code>starlab/local/_grape.sh</code> </li>
+<li>substitute <code>configure --without-f77</code> with <code>configure --with-grape=no --without-f77</code>)</li>
+<li>in case you can't <code>make</code> succesfully may be you need to copy the folder 
+<code>starlab/src/gfx</code> and do not make clean</li>
+</ul>
+<hr>
+<p>Well, probably you landed here searching information about StarLab, how to 
+install it, how to run it, how prevent it to harm your cat.</p>
+<p><strong>DISCLAIMER 1:</strong> I won't promise anything about your cat but I will try to help you having a 
+reasonable well running installation of StarLab.</p>
+<p><strong>DISCLAIMER 2:</strong> I'm not a programmer, I'm not a system administrator and I don't even 
+know how to program in CUDA (yet). Maybe something here is wrong ore outdated. 
+I'm only giving you some of the experienced I collected in $n+1$ times I installed StarLab. 
+Nothin less, nothing more.  <br>
+Also note that most of the knowledge I put here come 
+from my <a href="http://web.pd.astro.it/mapelli/">supervisor</a>.</p>
+<p><strong>DISCLAIMER 3:</strong> StarLab still seems to <strong>always</strong> crash if you try to simulate a system 
+with more than ~6000 binaries.</p>
+<h3>StarLab</h3>
+<p><a href="http://www.sns.ias.edu/~starlab/">StarLab</a> is "A Software Environment for Collisional Stellar Dynamics".
+<a href="http://www.sns.ias.edu/~starlab/">Here</a> you can find useful information about it that 
+is not useful to rewrite here, so have a look and then come back!:)</p>
+<p class="more"><a href="posts/starlab-gpu-installation.html">Read more…</a></p></div>
+        </div>
+            
+        
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
         <h1 class="p-name"><a href="posts/nvidia-drivers.html" class="u-url">Nvidia drivers</a>
         <small>  
              Posted: <time class="published dt-published" datetime="2013-08-19T10:17:08+00:00">2013-08-19 10:17</time>

@@ -41,6 +41,13 @@ Fabrizio Tamburini, Gabriele Anzolin
 ###2004
 High school degree of Scientific studies
 
+
+## Publications
+
+* [2014 - Ziosi B. M., Mapelli M., Branchesi M., Tormen G., 2014, MNRAS, 441, 3703Z]{http://mnras.oxfordjournals.org/content/441/4/3703.full?keytype=ref&ijkey=wtSg4FcQLzZB4Pr}
+* [2014 - M Branchesi, G Woan, P Astone, I Bartos, A Colla, S Covino, M Drago, X Fan, S Frasca, C Hanna, B Haskell, JS Hazboun, IS Heng, DE Holz, NK Johnson-McDaniel, ID Jones, L Keer, S Klimenko, G Kostas, SL Larson, I Mandel, M Mapelli, C Messenger, G Mazzolo, A Melatos, S Mohanty, V Necula, M Normandin, L Obara, R Opiela, B Owen, C Palomba, GA Prodi, V Re, F Salemi, TL Sidery, M Sokolowski, K Schwenzer, V Tiwari, MC Tringali, G Vedovato, W Vousden, I Yakushin, A Zadrożny, BM Ziosi, C7 multi-messenger astronomy of GW sources, 2014, General Relativity and Gravitation, 46, 1771](http://link.springer.com/article/10.1007/s10714-014-1771-6)
+
+
 ## Other
 
 * 2012 - "La notte dei ricercatori" (Researcer's night), Padua
