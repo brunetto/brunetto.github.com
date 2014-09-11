@@ -60,7 +60,7 @@ High school degree of Scientific studies
 
 ### Journal Clubs Presentations
 
-* [2012-05-07: Atacama telescope constrain on primordial power spectrum](../files/Presentations/Atacama_telescope_constrain_on_primordial_power_spectrum.svg)
+* [2012-05-07: Atacama telescope constrain on primordial power spectrum](../files/Presentations/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg)
 * [2012-10-15: Millennium Run Observatory](../files/Presentations/2012-10-15-MRObs.svg)
 * [2013-05-13: Growth via stellar collisions in ensemble star clusters](../files/Presentations/2013-05-13-JC_ziosi.pdf)
 * [2013-10-07: Spoon-feeding giant stars to supermassive black holes](../files/Presentations/2013-10-07-JC_ziosi.pdf)
