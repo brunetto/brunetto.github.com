@@ -553,6 +553,7 @@ to check for other options.
 * Code units (coming soon...)
 * StarLab internals (really???)
 * [Our repo](https://bitbucket.org/brunetto/slpack)
+* [Tools to easily manage SL runs (private too, sorry, ask me if you are interested)](https://bitbucket.org/brunetto/sltools)
 * [StarLab tools wiki](http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools)
 
 
