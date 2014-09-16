@@ -7,7 +7,8 @@
 .. slug: starlab-gpu-installation
 -->
 
-[Click here for the old guide!!!](../stories/research/utils/starlab-gpu-old-guide.html)    
+* [Click here for the old guide!!!](../stories/research/utils/starlab-gpu-old-guide.html)    
+* 2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.
 
 ---    
 
@@ -29,10 +30,11 @@ reasonable well running installation of StarLab.
 
 **DISCLAIMER 2:** I'm not a programmer, I'm not a system administrator and I don't even 
 know how to program in CUDA (yet). Maybe something here is wrong ore outdated. 
-I'm only giving you some of the experienced I collected in $n+1$ times I installed StarLab. 
+I'm only giving you some of the experienced I collected in n+1 times I installed StarLab. 
 Nothin less, nothing more.    
 Also note that most of the knowledge I put here come 
-from my [supervisor](http://web.pd.astro.it/mapelli/).
+from my [supervisor](http://web.pd.astro.it/mapelli/).    
+I also thanks Mario Spera for the usefull advices.
 
 **DISCLAIMER 3:** StarLab still seems to **always** crash if you try to simulate a system 
 with more than ~6000 binaries.
@@ -56,7 +58,7 @@ Now we will try to install a GPU-ready version of StarLab. To be honest, we run
 a **private** version of StarLab for GPU with some customizations (if you are interested, 
 see [Mapelli et al. 2013](http://arxiv.org/abs/1211.6441); [Mapelli & Bressan 2013](http://arxiv.org/abs/1301.4227)).    
 Unfortunately you can't download it now, but I hope the differences in the installation 
-process are negligible. Otherwise ask us for our StarLab version.    
+process are negligible. Ask us if you are interested in our version of StarLab.    
 Because I'm not sure about what you will find in the public version os Sapporo and StarLab, 
 I will show my version of the relevant files you need to install everything. 
 The installation is done on a Ubuntu 14.04 workstation so change them accordingly to 
@@ -95,7 +97,7 @@ Try to have the following folder tree:
 * `$SLPATH/slpack/sapporo`
 * `$SLPATH/slpack/starlab`
 
-The NVIDIA folder is optional, but I would sugest to have with you alle the NVIDIA 
+The NVIDIA folder is optional, but I would suggest to have with you alle the NVIDIA 
 file you can find, soon or later you will need them. CUDA is continuosly changing, 
 SDK is not toolkit, dependencies are different and broken between different versions.
 We will try to survive and to have the most standard installation we can.    
@@ -122,6 +124,7 @@ You also need to find somewhere (= in an old CUDA SKD?)
 * `multithreading.h`
 
 and to copy them in this folder.    
+If you are not able to find them, ask me, I have copies of those files.    
 
 Open `host_evaluate_gravity.cu` and change 
 
@@ -153,7 +156,7 @@ in `sapporo.cpp` change
   }
 ````
 
-with    
+to    
 
 ````c++
 		fprintf(stderr, "\n");
@@ -165,7 +168,9 @@ with
     //Set original_how_many to a positive number so we get assigned different devices
     //incase the devices are not in compute exclusive mode.
     original_how_many = 1;
+    }
 ````
+so the `sapporo.config` file can be close and won't crash your run.    
 
 Now open `Makefile` and fit 
 
@@ -188,10 +193,10 @@ flags=-DNGB
 
 CUDAINC="-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/"
 CUDALIB="-L/usr/lib/x86_64-linux-gnu/"
-CUDAFLAG='-lcudart'
-BOOSTINC='-I/usr/include/boost'
-BOOSTLIB='-L/usr/lib/x86_64-linux-gnu/'
-BOOSTFLAG='-lboost_system -lboost_thread -lpthread'
+CUDAFLAG="-lcudart"
+BOOSTINC="-I/usr/include/boost"
+BOOSTLIB="-L/usr/lib/x86_64-linux-gnu/"
+BOOSTFLAG="-lboost_system -lboost_thread -lpthread"
 
 
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
@@ -236,15 +241,18 @@ modify it to include boost and CUDA like:
 for gl in $GRAPE_LIBS_; do
 	CUDAINC="-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/"
 	CUDALIB="-L/usr/lib/x86_64-linux-gnu/"
-	CUDAFLAG='-lcudart'
-	BOOSTINC='-I/usr/include/boost'
-	BOOSTLIB='-L/usr/lib/x86_64-linux-gnu/'
-	BOOSTFLAG='-lboost_system -lboost_thread -lpthread'
+	CUDAFLAG="-lcudart"
+	BOOSTINC="-I/usr/include/boost/"
+	BOOSTLIB="-L/usr/lib/x86_64-linux-gnu/"
+	BOOSTFLAG="-lboost_system -lboost_thread -lpthread"
 	
-	LIBS="$CUDAINC $CUDALIB $CUDAFLAG $BOOSTLIB $BOOSTFLAG -DNGB"
+	LIBS="$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB"
 		
 	as_ac_Lib=`echo "ac_cv_lib_${gl/-l/}''_g6_open_" | $as_tr_sh`
 ````
+
+Be sure to always use double quotes and to terminate the paths to folders with a slash (`/`), 
+some machines are quite choosy.
 
 Last edit is on `local/grape.sh` to let StarLab know where your sapporo installation is:
 
@@ -272,18 +280,32 @@ Recent CUDA seems to be smart enought to understand where to run without having 
 Alright!! If you managed to reach this point, very good. Last three commands. In the 
 `starlab` folder run 
 
-* `configure --without-f77`
+* `configure --with-f77=no`
 * `make`
 
 go out for a walk
 
 * `make install`
 
-If you recompile StarLab AND/OR Sapporo, type `make clean` 2 times. delete the files in 
+When running configure, avoid the `--without-option` version of an option, prefer 
+`--with-option=no`, it's safer.
+
+If you recompile StarLab AND/OR Sapporo, type `make clean` two times. delete the files in 
 `starlab/usr/bin`, turn around 3 times, touch your nose and type `make` two times. Then 
 `make install` again.     
 No, `make clean` and `make` are not enought to update your object 
-files or binaries.
+files or binaries.    
+
+Depending on your environment, if you run into problems, be sure that:
+
+* you loaded the correct modules (if you are in a cluster for examples
+* you are into the right node (some machine let you compile your code on a 
+node that is not the login node)
+* if you encounter strange messages regarding missing rules for missing files, 
+for example `libxhdyn.la` or something regarding `gfx`-something, may be tou need to 
+tune your config file to exclude, for example, the X/Qt/... libraries, in case 
+try to run `configure --with-f77=no --with-qt=no`; in case try to have a look at 
+`configure --help`
 
 ### Run StarLab
 
@@ -291,7 +313,7 @@ Before run a simulation you need to create the initial conditions.
 
 #### Initial Conditions
 
-StarLab if provided with few tools to help (really?) you in this task. A common 
+StarLab is provided with few tools to help (really?) you in this task. A common 
 way to create ICs for [our simulations](http://arxiv.org/abs/1404.7147) is something like:     
 
 `<ehm, I don't know if I can tell you, sorry man...:(>`
@@ -305,11 +327,11 @@ you want to know about your simulations to STDERR, so, `<ehm.... see ICs>`
 
 #### Tidal fields
 
-
+Be patience...
 
 ### Known issues and Troubleshooting
 
-If StarLab did not kill your cat in a horrile way, then , it can still ruin your life.    
+If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.    
 Some of the things that can happen are:
 
 * you can find binaries with eccentricity greater than one (StarLab does 
@@ -320,17 +342,198 @@ not update some binaries after they are disrupted? flybyes seen as binaries? don
 `-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread`)
 * check you put all the `_`, "-I", "-l", "-L" in the right places
 * check all the libraries paths
+* check for double quotes (`"`) instead of single ones (`'`) in the paths
+* check the modules, environment variables
+* check you are on the right node
+* check your environment against the configure options you passed 
+(have a look at `configure --help`)
+* if you need to modify StarLab and you want to add your own flags, 
+you need to comment 
+
+````c++
+  getia(b->get_log_story(), "step_slow",
+        b->get_kira_counters()->step_slow, nss);
+````
+
+function call in `kira_counters.C` otherwise you won't be able to compile StarLab.    
+
 
 ### Clusters 
 
-`<can I....?>`
+#### EURORA
 
+* in `setup_sapporo.sh`
+(if you want to compile sapporo using queues, or, load modules by hand if you want to 
+compile interactively)
+
+````bash
+module purge
+module load profile/advanced
+module load gnu/4.6.3
+module load boost/1.53.0--gnu--4.6.3
+module load cuda
+
+LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
+export LD_LIBRARY_PATH
+cd $HOME/slPack/sapporo
+````
+
+* in `compile.sh`
+
+````bash
+CUDAINC="-I/cineca/prod/compilers/cuda/5.0.35/none/include/ -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc/ -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/"
+CUDALIB="-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lcudart"
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
+````
+* in `Makefile`
+
+````bash
+NVCC := /cineca/prod/compilers/cuda/5.0.35/none/bin/nvcc
+CUDAPATH    := /cineca/prod/compilers/cuda/5.0.35/none
+CUDASDKPATH := /cineca/prod/compilers/cuda/5.0.35/none/samples
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)/common/inc 
+BOOSTPATH := /cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include
+````
+* in `configure`
+
+````bash
+CUDAINC="-I/cineca/prod/compilers/cuda/5.0.35/none/include -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/"
+CUDALIB="-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -lcudart" 
+LIBS="$CUDAINC $CUDALIB -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lboost_thread-mt -DNGB"
+````
+* in `grape.sh`
+
+````bash
+GRAPE_LDFLAGS_='-L$HOME/slPack/sapporo/'
+GRAPE_LIBS_='-lsapporo'
+
+````
+* in `setup_starlab.sh.sh`
+(if you want to compile sapporo using queues, or, load modules by hand if you want to 
+compile interactively)
+
+````bash
+module purge
+module load profile/advanced
+module load gnu/4.6.3
+module load boost/1.53.0--gnu--4.6.3
+module load cuda
+LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
+export LD_LIBRARY_PATH
+cd $HOME/slPack/starlab
+````
+#### Green II HPC system @ Swinburne University
+
+Thanks to prof. Jarod Hurley I was able to test the installation of StarLab on the Green II HPC 
+system at the Swinburne University. Here how to do that.    
+
+* Log into the system and find yourself in the login node.
+* Clone the private repo / download the folders and unpack them like described before.
+* Then you need to log into one of the compile/test nodes from the head node: `ssh $USER@gstar001`
+* load the right modules:
+
+````bash
+module load gcc/4.6.4
+module load boost/x86_64/gnu/1.51.0-gcc4.6
+module load cuda/4.0
+````
+You need that version of `gcc` and `boost` because of issues with boost threads in the default versions.
+Just in case, check that the paths in the `Makefile` and `compile.h` agree with that shown in     
+`module show boost/x86_64/gnu/1.51.0-gcc4.6`
+and
+`module show cuda`
+
+Make sure you have no `'` around your path, maybe, if you need, only `"` otherwise `sapporo` won't compile.
+Just in case, check that the paths in the `Makefile` and `compile.h` agree with that shown in     
+`module show boost/x86_64/gnu/1.51.0-gcc4.6`
+and
+`module show cuda`
+
+If you have our private version you can 
+* `cp ../scripts/g2/Makefile ./`
+* `cp ../scripts/g2/compile.sh ./`
+
+otherwise try to modify them to have:
+
+````bash
+CXX  := g++
+CC   := gcc
+NVCC := /usr/local/cuda-4.0/bin/nvcc
+CUDAINC := -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc 
+BOOSTINC := -I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6
+NVCCFLAGS := -O0 -g -D_DEBUG  -maxrregcount=64 $(CUDAINC) $(BOOSTINC) 
+````
+in the `Makefile` and 
+
+````bash
+flags=-DNGB
+
+CUDAINC="-I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc"
+CUDALIB="-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib"
+CUDAFLAG="-lcudart"
+BOOSTINC="-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6"
+BOOSTLIB="-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6"
+BOOSTFLAG="-lboost_system  -lboost_thread-mt -lpthread"
+
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+````
+in `compile.sh`.
+
+Then run
+
+* `make clean`
+* `make`
+* `bash compile.sh`
+
+No go the the starlab folder (`cd ../starlab`) and fix the `configure` file accordingly to this
+
+````bash
+
+````
+
+and the `local/grape.sh` file to point to your sapporo installation.
+
+If you have our version of StarLab, just copy the right files:
+
+* `cp ../scripts/g2/configure ./`
+* `cp ../scripts/g2/grape.sh ./local/`
+
+Make sure again `grape.sh` points to the right folder
+
+* `./configure --without-f77 --with-qt=no` (if you want qt, load the modules and check the versions)
+* `make clean && make clean && make clean`
+* `make && make`
+* `rm ./usr/bin/*`
+* `make install`
+
+** Troubleshooting **
+
+If you get this error (or some other error)
+````bash
+make[2]: Entering directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux'
+/bin/sh ../../../libtool --preserve-dup-deps --mode=link gcc  -g -O2  -L/usr/lib64/qt-3.3/lib -o libgfx-2.la   win.lo draw.lo draw1.lo color.lo dialog.lo mcd.lo interface.lo termio.lo utility.lo simple.lo  -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc -L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib -lcudart -L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6 -lboost_system  -lboost_thread-mt -lpthread -DNGB
+ar cru .libs/libgfx-2.a  win.o draw.o draw1.o color.o dialog.o mcd.o interface.o termio.o utility.o simple.o
+ar: interface.o: No such file or directory
+make[2]: *** [libgfx-2.la] Error 1
+make[2]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux'
+make[1]: *** [clibs23] Error 2
+make[1]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx'
+make: *** [libs] Error 2
+````
+when compiling may be you can try to `make` and `make clean` some times.    
+Also remember that make clean is not working properly, so you need to `make clean` more than once or delete the binaries by yourself.
+
+If you have errors regarding no rules for `libxhdyn.la`, probably you forgot to exclude 
+some options from the configure, so run `configure --with-f77=no --with-qt=no` or try `configure --help` 
+to check for other options.
 
 ### Additional material
 
-* Code units
-* StarLab internals
-* Our repo
+* Code units (coming soon...)
+* StarLab internals (really???)
+* [Our repo](https://bitbucket.org/brunetto/slpack)
 * [StarLab tools wiki](http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools)
 
 
