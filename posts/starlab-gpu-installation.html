@@ -555,7 +555,25 @@ g++ -O3 <span class="nv">$flags</span> -g -o test_gravity_N2ngb test_gravity_N2n
 <li><code>bash compile.sh</code></li>
 </ul>
 <p>No go the the starlab folder (<code>cd ../starlab</code>) and fix the <code>configure</code> file accordingly to this</p>
-<div class="code"><pre>
+<div class="code"><pre><span class="c">#   Check all named libraries for g6_open() (GRAPE-6).</span>
+
+    <span class="nv">grape6</span><span class="o">=</span>no
+
+    <span class="k">for </span>gl in <span class="nv">$GRAPE_LIBS_</span>; <span class="k">do</span>
+    <span class="c">##############################</span>
+    <span class="c">######      g2</span>
+    <span class="c">##############################</span>
+    <span class="nv">CUDAINC</span><span class="o">=</span><span class="s2">"-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/"</span>
+    <span class="nv">CUDALIB</span><span class="o">=</span><span class="s2">"-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib"</span>
+    <span class="nv">CUDAFLAG</span><span class="o">=</span><span class="s2">"-lcudart"</span>
+    <span class="nv">BOOSTINC</span><span class="o">=</span><span class="s2">"-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/"</span>
+    <span class="nv">BOOSTLIB</span><span class="o">=</span><span class="s2">"-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6"</span>
+    <span class="nv">BOOSTFLAG</span><span class="o">=</span><span class="s2">"-lboost_system  -lboost_thread-mt -lpthread"</span>
+
+    <span class="nv">LIBS</span><span class="o">=</span><span class="s2">"$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB"</span>
+
+
+    <span class="nv">as_ac_Lib</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">"ac_cv_lib_${gl/-l/}''_g6_open_"</span> | <span class="nv">$as_tr_sh</span><span class="sb">`</span>
 </pre></div>
 
 

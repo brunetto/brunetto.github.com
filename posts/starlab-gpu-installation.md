@@ -490,6 +490,25 @@ Then run
 No go the the starlab folder (`cd ../starlab`) and fix the `configure` file accordingly to this
 
 ````bash
+#   Check all named libraries for g6_open() (GRAPE-6).
+
+    grape6=no
+
+    for gl in $GRAPE_LIBS_; do
+    ##############################
+    ######      g2
+    ##############################
+    CUDAINC="-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/"
+    CUDALIB="-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib"
+    CUDAFLAG="-lcudart"
+    BOOSTINC="-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/"
+    BOOSTLIB="-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6"
+    BOOSTFLAG="-lboost_system  -lboost_thread-mt -lpthread"
+    
+    LIBS="$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB"
+        
+        
+    as_ac_Lib=`echo "ac_cv_lib_${gl/-l/}''_g6_open_" | $as_tr_sh`
 
 ````
 
