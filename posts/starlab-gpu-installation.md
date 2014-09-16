@@ -425,7 +425,7 @@ cd $HOME/slPack/starlab
 ````
 #### Green II HPC system @ Swinburne University
 
-Thanks to prof. Jarod Hurley I was able to test the installation of StarLab on the Green II HPC 
+Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC 
 system at the Swinburne University. Here how to do that.    
 
 * Log into the system and find yourself in the login node.
