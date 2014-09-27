@@ -51,17 +51,28 @@ course
 * [2014 - Ziosi B. M., Mapelli M., Branchesi M., Tormen G., 2014, MNRAS, 441, 3703Z](http://mnras.oxfordjournals.org/content/441/4/3703.full?keytype=ref&ijkey=wtSg4FcQLzZB4Pr)
 * [2014 - M Branchesi, G Woan, P Astone, I Bartos, A Colla, S Covino, M Drago, X Fan, S Frasca, C Hanna, B Haskell, JS Hazboun, IS Heng, DE Holz, NK Johnson-McDaniel, ID Jones, L Keer, S Klimenko, G Kostas, SL Larson, I Mandel, M Mapelli, C Messenger, G Mazzolo, A Melatos, S Mohanty, V Necula, M Normandin, L Obara, R Opiela, B Owen, C Palomba, GA Prodi, V Re, F Salemi, TL Sidery, M Sokolowski, K Schwenzer, V Tiwari, MC Tringali, G Vedovato, W Vousden, I Yakushin, A Zadrożny, BM Ziosi, C7 multi-messenger astronomy of GW sources, 2014, General Relativity and Gravitation, 46, 1771](http://link.springer.com/article/10.1007/s10714-014-1771-6)
 
-\ecvsection{Grants}
-\ecvitem{2013}{1000 EUR to attend the Gravasco IHP trimester ``N-body gravitational 
-dynamical systems From N=2 to infinity...''}
+## Grants
 
-\ecvsection{Accepted computational proposals}
-\ecvitem{2014}{``Star cluster formation through merger of sub-clusters'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs}
-\ecvitem{2013}{``Investigating the statistics and parameter space of double compact object binaries in young star clusters'', 50.0k CPU hours on GPU cluster EURORA, IBM PLX cluster and  IBM Blue Gene/Q Fermi @ CINECA, PI: Ziosi, 2 COIs}
-\ecvitem{2013}{``Making very massive stars through stellar collisions'', 50.0k on GPU cluster EURORA and IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs}
-\ecvitem{2012}{``The violent life of the Galactic Centre'', 281.6k CPU hours on IBM PLX and on the 
-IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs}
-\ecvitem{2012}{``Computational Frontiers of Black Hole Dynamics'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Ripamonti, CO-I: Ziosi and 2 other COIs}
+### 2013 
+
+* 1000 EUR to attend the Gravasco IHP trimester ``N-body gravitational 
+dynamical systems From N=2 to infinity...''
+
+## Accepted computational proposals
+### 2014
+
+* ``Star cluster formation through merger of sub-clusters'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs
+
+### 2013
+
+* ``Investigating the statistics and parameter space of double compact object binaries in young star clusters'', 50.0k CPU hours on GPU cluster EURORA, IBM PLX cluster and  IBM Blue Gene/Q Fermi @ CINECA, PI: Ziosi, 2 COIs
+* ``Making very massive stars through stellar collisions'', 50.0k on GPU cluster EURORA and IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs
+
+### 2012
+
+* ``The violent life of the Galactic Centre'', 281.6k CPU hours on IBM PLX and on the 
+IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs
+* ``Computational Frontiers of Black Hole Dynamics'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Ripamonti, CO-I: Ziosi and 2 other COIs
 
 ## Presentations and posters
 
