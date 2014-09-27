@@ -7,6 +7,8 @@
 .. slug: curriculum-vitae
 -->
 
+[PDF version here](https://github.com/brunetto/ziosiCV/blob/master/ziosi_cv.pdf)
+
 ## Personal information
 **Surname / First name** Ziosi Brunetto Marco    
 **Address** via Ivancich n.17, 30174, Chirignago (VE)    
@@ -16,13 +18,6 @@
 **Date of birth** 03/05/1985    
 **Position** PhD student since 01/2012 at Università degli Studi di Padova - Dipartimento di Fisica e Astronomia    
 PhD advisors: Dr. Michela Mapelli (INAF-OAPd) and Prof. Giuseppe Tormen (University of Padova)
-
-## Teaching experience
-### 2012-2013
-Teaching assistant - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova), Mathematical
-analysis    
-Teaching assistant - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova), Python
-course    
 
 ## Education
 ### 2012-present 
@@ -44,11 +39,29 @@ Fabrizio Tamburini, Gabriele Anzolin
 ### 2004
 High school degree of Scientific studies
 
+## Teaching experience
+### 2012-2013
+Teaching assistant - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova), Mathematical
+analysis    
+Teaching assistant - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova), Python
+course    
 
 ## Publications
 
 * [2014 - Ziosi B. M., Mapelli M., Branchesi M., Tormen G., 2014, MNRAS, 441, 3703Z](http://mnras.oxfordjournals.org/content/441/4/3703.full?keytype=ref&ijkey=wtSg4FcQLzZB4Pr)
 * [2014 - M Branchesi, G Woan, P Astone, I Bartos, A Colla, S Covino, M Drago, X Fan, S Frasca, C Hanna, B Haskell, JS Hazboun, IS Heng, DE Holz, NK Johnson-McDaniel, ID Jones, L Keer, S Klimenko, G Kostas, SL Larson, I Mandel, M Mapelli, C Messenger, G Mazzolo, A Melatos, S Mohanty, V Necula, M Normandin, L Obara, R Opiela, B Owen, C Palomba, GA Prodi, V Re, F Salemi, TL Sidery, M Sokolowski, K Schwenzer, V Tiwari, MC Tringali, G Vedovato, W Vousden, I Yakushin, A Zadrożny, BM Ziosi, C7 multi-messenger astronomy of GW sources, 2014, General Relativity and Gravitation, 46, 1771](http://link.springer.com/article/10.1007/s10714-014-1771-6)
+
+\ecvsection{Grants}
+\ecvitem{2013}{1000 EUR to attend the Gravasco IHP trimester ``N-body gravitational 
+dynamical systems From N=2 to infinity...''}
+
+\ecvsection{Accepted computational proposals}
+\ecvitem{2014}{``Star cluster formation through merger of sub-clusters'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs}
+\ecvitem{2013}{``Investigating the statistics and parameter space of double compact object binaries in young star clusters'', 50.0k CPU hours on GPU cluster EURORA, IBM PLX cluster and  IBM Blue Gene/Q Fermi @ CINECA, PI: Ziosi, 2 COIs}
+\ecvitem{2013}{``Making very massive stars through stellar collisions'', 50.0k on GPU cluster EURORA and IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs}
+\ecvitem{2012}{``The violent life of the Galactic Centre'', 281.6k CPU hours on IBM PLX and on the 
+IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs}
+\ecvitem{2012}{``Computational Frontiers of Black Hole Dynamics'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Ripamonti, CO-I: Ziosi and 2 other COIs}
 
 ## Presentations and posters
 
@@ -107,10 +120,33 @@ Italian (mother tongue), English (good)
 [Linux](http://www.ubuntu.org), MacOSX, Windows
 
 ### Scripting/Programming Languages
-[Go(lang)](http://golang.org), Python, Bash, Matlab/Octave, C/C++, Fortran, IDL, ...
+[Go(lang)](http://golang.org) (advanced), Python (advanced), Bash (good), 
+C/C++ (good), Matlab/Octave (good), Fortran (base), IDL (base)
 
-### Softwares
-LaTeX, Inkscape (+Sozi, TexText), LibreOffice, ImageMagick, Gimp, Blender, Bazaar, Git, ...
+### Data Analysis/Plotting tools    
+
+Veusz (good), Matplotlib/Pylab (advanced), 
+Supermongo (base), Gnuplot (base), IDL (base), IRAF (base)
+
+#### Markup Languages/Web
+
+LaTeX (expert), HTML (base), Javascript (base)
+
+### Graphics
+
+Inkscape (good), Gimp (good), ImageMagick (good), Blender (base)
+
+### Presentation
+
+Beamer, Sozi/Inkscape, Prezi, PowerPoint
+
+### Office/Internet
+
+MSOffice, LibreOffice/OpenOffice, Chrome, Internet Explorer, Firefox, Opera, Outlook, Thuderbird
+
+### Others
+
+Git (good), MySQL (base)
 
 ## Other interests
 * Volunteering with [A.G.E.S.C.I.](http://www.agesci.org) and Protezione Civile
