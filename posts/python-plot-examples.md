@@ -1,11 +1,10 @@
 <!-- 
 .. title: Python plot examples
 .. slug: python-plot-examples
-.. date: 2014/09/30 15:07:54
-.. tags: 
+.. date: 2014/09/29 15:07:54
+.. tags: Python, plot, veusz, matplotlib
 .. link: 
 .. description: 
-.. type: text
 -->
 
 Two examples on how to make plots with [Veusz](http://home.gna.org/veusz) and 
