@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="author" content="brunetto">
+    <title>Python plot examples | for future reference...</title>
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+   tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+   },
+   displayAlign: 'left', // Change this to 'center' to center equations.
+   "HTML-CSS": {
+       styles: {'.MathJax_Display': {"margin": 0}}
+   }
+});
+</script>
+
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+      <link rel="canonical" href="posts/python-plot-examples.html">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+    
+
+
+
+
+
+    <link href="https://plus.google.com/117796240971605586205" rel="publisher">
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="brunettoziosi.eu">
+            for future reference...
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                <li><a href="../stories/about.html">About</a>
+                </li><li><a href="../index.html">Blog</a>
+                </li><li><a href="../stories/index.html">SiteIndex</a>
+                </li><li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
+
+                </li></ul>
+                    
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:brunettoziosi.eu">
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search">
+</form>
+<!-- End of custom search -->
+
+                <ul class="nav pull-right">
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <article class="postbox post-text">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <h1 class="p-name" itemprop="headline name">Python plot examples</h1>
+
+    <hr>
+    <small>
+        Posted: <time class="published dt-published" datetime="2014-09-30T15:07:54+00:00" itemprop="datePublished">2014-09-30 15:07</time>
+        
+
+		
+
+          |  
+		
+    </small>
+    <hr>
+    <div class="e-content" itemprop="articleBody text">
+    <div><p>Two examples on how to make plots with <a href="http://home.gna.org/veusz">Veusz</a> and 
+<a href="http://matplotlib.org">Matplotlib</a>.  <br>
+I prefer Veusz because it's easier to configure, modify and it produces 
+perfect <code>pdf</code> plots, but sometimes Matplotlib it's faster for producing just 
+a draft plot to inspect data!</p>
+<!-- TEASER_END -->
+
+<div class="code"><pre>
+</pre></div>
+
+
+<div class="code"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf8 -*- </span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span> <span class="c"># no more "zero" integer division bugs!:P</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="kn">as</span> <span class="nn">ve</span>
+
+<span class="k">def</span> <span class="nf">sm_hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_bin</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">range_</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">dataMin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+    <span class="n">dataMax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+    <span class="n">n_bin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.</span><span class="o">*</span><span class="p">(</span><span class="n">dataMax</span><span class="o">-</span><span class="n">dataMin</span><span class="p">)</span> <span class="o">/</span> <span class="n">delta</span><span class="p">)</span>
+    <span class="n">range_</span> <span class="o">=</span> <span class="p">(</span><span class="n">dataMin</span><span class="p">,</span> <span class="n">dataMin</span> <span class="o">+</span> <span class="n">n_bin</span> <span class="o">*</span> <span class="n">delta</span><span class="p">)</span>
+    <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n_bin</span><span class="p">,</span> <span class="n">range_</span><span class="p">,</span> <span class="n">density</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span>
+
+<span class="k">def</span> <span class="nf">sm_hist2</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">dataMin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+    <span class="n">dataMax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+    <span class="n">n_bin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.</span><span class="o">*</span><span class="p">(</span><span class="n">dataMax</span><span class="o">-</span><span class="n">dataMin</span><span class="p">)</span> <span class="o">/</span> <span class="n">delta</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">idxs</span> <span class="o">=</span> <span class="p">((</span><span class="n">data</span>  <span class="o">-</span> <span class="n">dataMin</span><span class="p">)</span> <span class="o">/</span> <span class="n">delta</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n_bin</span><span class="p">)</span> 
+    <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">dataMin</span><span class="p">,</span> <span class="n">dataMax</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">idxs</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">]),</span> <span class="n">counts</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">])))</span>
+    <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">bin_edges</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bin_edges</span><span class="p">,</span> <span class="n">bin_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span>
+
+<span class="k">def</span> <span class="nf">plotFunc</span><span class="p">(</span><span class="n">inpath</span><span class="o">=</span><span class="s">"./"</span><span class="p">,</span> <span class="n">outpath</span><span class="o">=</span><span class="s">"./"</span><span class="p">):</span>
+    <span class="n">font</span> <span class="o">=</span> <span class="s">"Times New Roman"</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s">u'blue'</span><span class="p">,</span> <span class="s">u'green'</span><span class="p">]</span>
+    <span class="n">xmin</span> <span class="o">=</span> <span class="p">[</span><span class="s">"auto"</span><span class="p">,</span> <span class="s">"auto"</span><span class="p">]</span>
+    <span class="n">xmax</span> <span class="o">=</span> <span class="p">[</span><span class="s">"auto"</span><span class="p">,</span> <span class="s">"auto"</span><span class="p">]</span>
+    <span class="n">ymin</span> <span class="o">=</span> <span class="p">[</span><span class="s">"auto"</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">ymax</span> <span class="o">=</span> <span class="p">[</span><span class="s">"auto"</span><span class="p">,</span> <span class="s">"auto"</span><span class="p">]</span>
+
+    <span class="n">xData</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> 
+    <span class="n">yData</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+
+    <span class="n">figure</span> <span class="o">=</span> <span class="n">ve</span><span class="o">.</span><span class="n">Embedded</span><span class="p">(</span><span class="s">"Window_1"</span><span class="p">)</span>
+    <span class="n">page</span> <span class="o">=</span> <span class="n">figure</span><span class="o">.</span><span class="n">Root</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'page'</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="s">'30cm'</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s">'15cm'</span><span class="p">)</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'grid'</span><span class="p">,</span> <span class="n">autoadd</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">rows</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="n">scaleRows</span><span class="o">=</span><span class="p">[</span><span class="mf">0.2</span><span class="p">],</span>
+                        <span class="n">topMargin</span><span class="o">=</span><span class="s">'1cm'</span><span class="p">,</span>
+                        <span class="n">bottomMargin</span><span class="o">=</span><span class="s">'1cm'</span>
+                        <span class="p">)</span>
+    <span class="n">graphList</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">graphList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'graph'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">"scatter"</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> 
+                            <span class="n">hide</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> 
+                            <span class="n">Border__width</span> <span class="o">=</span> <span class="s">'2pt'</span><span class="p">,</span>
+                            <span class="n">leftMargin</span> <span class="o">=</span> <span class="s">'0.6cm'</span><span class="p">,</span>
+                            <span class="n">rightMargin</span> <span class="o">=</span> <span class="s">'0.4cm'</span><span class="p">,</span>
+                            <span class="n">topMargin</span> <span class="o">=</span> <span class="s">'0.5cm'</span><span class="p">,</span>
+                            <span class="n">bottomMargin</span> <span class="o">=</span> <span class="s">'1cm'</span><span class="p">,</span>
+                            <span class="p">))</span>
+
+    <span class="n">graphList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'graph'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">"hist"</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> 
+                            <span class="n">hide</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> 
+                            <span class="n">Border__width</span> <span class="o">=</span> <span class="s">'2pt'</span><span class="p">,</span>
+                            <span class="n">leftMargin</span> <span class="o">=</span> <span class="s">'2cm'</span><span class="p">,</span>
+                            <span class="n">rightMargin</span> <span class="o">=</span> <span class="s">'0.4cm'</span><span class="p">,</span>
+                            <span class="n">topMargin</span> <span class="o">=</span> <span class="s">'0.5cm'</span><span class="p">,</span>
+                            <span class="n">bottomMargin</span> <span class="o">=</span> <span class="s">'1cm'</span><span class="p">,</span>
+                            <span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graphList</span><span class="p">)):</span>
+        <span class="n">graphList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'axis'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'x'</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">"x"</span><span class="p">,</span>
+                                <span class="nb">min</span> <span class="o">=</span> <span class="n">xmin</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                <span class="nb">max</span> <span class="o">=</span> <span class="n">xmax</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                <span class="n">log</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+                                <span class="n">Label__size</span> <span class="o">=</span> <span class="s">'25pt'</span><span class="p">,</span>
+                                <span class="n">Label__font</span> <span class="o">=</span> <span class="n">font</span><span class="p">,</span>
+                                <span class="n">TickLabels__size</span> <span class="o">=</span> <span class="s">'17pt'</span><span class="p">,</span>
+                                <span class="n">TickLabels__format</span> <span class="o">=</span> <span class="s">u'Auto'</span><span class="p">,</span>
+                                <span class="n">MajorTicks__width</span> <span class="o">=</span> <span class="s">'2pt'</span><span class="p">,</span>
+                                <span class="n">MajorTicks__length</span> <span class="o">=</span> <span class="s">'10pt'</span><span class="p">,</span>
+                                <span class="n">MinorTicks__width</span> <span class="o">=</span> <span class="s">'1pt'</span><span class="p">,</span>
+                                <span class="n">MinorTicks__length</span> <span class="o">=</span> <span class="s">'6pt'</span>
+                            <span class="p">)</span>
+        <span class="n">graphList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'axis'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'y'</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">"y"</span><span class="p">,</span> 
+                                <span class="n">direction</span> <span class="o">=</span> <span class="s">'vertical'</span><span class="p">,</span>
+                                <span class="nb">min</span> <span class="o">=</span> <span class="n">ymin</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                <span class="nb">max</span> <span class="o">=</span> <span class="n">ymax</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                <span class="n">log</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+                                <span class="n">autoRange</span> <span class="o">=</span> <span class="s">u'+5%'</span><span class="p">,</span>
+                                <span class="n">Label__size</span> <span class="o">=</span> <span class="s">'25pt'</span><span class="p">,</span>
+                                <span class="n">Label__font</span> <span class="o">=</span> <span class="n">font</span><span class="p">,</span>
+                                <span class="n">TickLabels__size</span> <span class="o">=</span> <span class="s">'20pt'</span><span class="p">,</span>
+                                <span class="n">TickLabels__format</span> <span class="o">=</span> <span class="s">u'Auto'</span><span class="p">,</span>
+                                <span class="n">MajorTicks__width</span> <span class="o">=</span> <span class="s">'2pt'</span><span class="p">,</span>
+                                <span class="n">MajorTicks__length</span> <span class="o">=</span> <span class="s">'10pt'</span><span class="p">,</span>
+                                <span class="n">MinorTicks__width</span> <span class="o">=</span> <span class="s">'1pt'</span><span class="p">,</span>
+                                <span class="n">MinorTicks__length</span> <span class="o">=</span> <span class="s">'6pt'</span>
+                            <span class="p">)</span>
+
+    <span class="n">graphList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'xy'</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s">"scatterPlotKey"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'scatterPlotName'</span><span class="p">,</span>
+                        <span class="n">marker</span> <span class="o">=</span> <span class="s">u'circle'</span><span class="p">,</span>
+                        <span class="n">MarkerFill__color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                        <span class="n">markerSize</span> <span class="o">=</span> <span class="s">u'3pt'</span><span class="p">,</span> 
+                        <span class="p">)</span>
+
+    <span class="n">xDataName</span> <span class="o">=</span> <span class="s">"xScatterData"</span>
+    <span class="n">yDataName</span> <span class="o">=</span> <span class="s">"yScatterData"</span>
+    <span class="n">figure</span><span class="o">.</span><span class="n">SetData</span><span class="p">(</span><span class="n">xDataName</span><span class="p">,</span> <span class="n">xData</span><span class="p">)</span>
+    <span class="n">figure</span><span class="o">.</span><span class="n">SetData</span><span class="p">(</span><span class="n">yDataName</span><span class="p">,</span> <span class="n">yData</span><span class="p">)</span>
+    <span class="n">graphList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatterPlotName</span><span class="o">.</span><span class="n">xData</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">xDataName</span>
+    <span class="n">graphList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatterPlotName</span><span class="o">.</span><span class="n">yData</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">yDataName</span>
+
+
+    <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">sm_hist2</span><span class="p">(</span><span class="n">yData</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+    <span class="n">graphList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'xy'</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s">"histPlotKey"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'histPlotName'</span><span class="p">,</span>
+                        <span class="n">xData</span> <span class="o">=</span> <span class="n">bin_edges</span><span class="p">,</span>
+                        <span class="n">yData</span> <span class="o">=</span> <span class="n">counts</span><span class="p">,</span>
+                        <span class="n">marker</span> <span class="o">=</span> <span class="s">'none'</span><span class="p">,</span>
+                        <span class="n">PlotLine__steps</span> <span class="o">=</span> <span class="s">u'left'</span><span class="p">,</span>
+                        <span class="n">PlotLine__color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                        <span class="n">PlotLine__style</span> <span class="o">=</span> <span class="s">u"solid"</span><span class="p">,</span>
+                        <span class="n">PlotLine__width</span> <span class="o">=</span> <span class="s">u'3'</span><span class="p">,</span>
+                        <span class="n">FillBelow__color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                        <span class="n">FillBelow__style</span> <span class="o">=</span> <span class="s">"forward 2"</span><span class="p">,</span>
+                        <span class="n">FillBelow__hide</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+                        <span class="n">FillBelow__transparency</span> <span class="o">=</span> <span class="mi">70</span><span class="p">,</span>
+                        <span class="c">#FillBelow__backtransparency = 50,</span>
+                        <span class="n">FillBelow__linewidth</span> <span class="o">=</span> <span class="s">'1pt'</span><span class="p">,</span>
+                        <span class="n">FillBelow__linestyle</span> <span class="o">=</span> <span class="s">'solid'</span><span class="p">,</span>
+                        <span class="n">FillBelow__backcolor</span> <span class="o">=</span> <span class="s">"white"</span><span class="p">,</span>
+                        <span class="n">FillBelow__backhide</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+                        <span class="n">Label__posnHorz</span> <span class="o">=</span> <span class="s">'right'</span><span class="p">,</span>
+                        <span class="n">Label__size</span> <span class="o">=</span> <span class="s">'14pt'</span><span class="p">,</span> 
+                        <span class="n">Label__color</span> <span class="o">=</span> <span class="s">'black'</span>
+                        <span class="p">)</span>
+
+    <span class="n">histKey</span> <span class="o">=</span> <span class="n">graphList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s">'key'</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> 
+                        <span class="n">horzPosn</span> <span class="o">=</span> <span class="s">'left'</span><span class="p">,</span>
+                        <span class="n">vertPosn</span> <span class="o">=</span> <span class="s">'top'</span><span class="p">,</span>
+                        <span class="n">Text__font</span> <span class="o">=</span> <span class="n">font</span><span class="p">,</span>
+                        <span class="n">Text__size</span> <span class="o">=</span> <span class="s">'15'</span><span class="p">,</span>
+                        <span class="n">Border__width</span> <span class="o">=</span> <span class="s">'1.5pt'</span>
+                        <span class="p">)</span>
+
+    <span class="n">end</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">"Press any key to finish..."</span><span class="p">)</span>
+
+    <span class="n">figure</span><span class="o">.</span><span class="n">Save</span><span class="p">(</span><span class="s">"example.vsz"</span><span class="p">)</span>
+    <span class="n">figure</span><span class="o">.</span><span class="n">Export</span><span class="p">(</span><span class="s">"example.png"</span><span class="p">,</span> <span class="n">backcolor</span><span class="o">=</span><span class="s">'#ffffff'</span><span class="p">)</span>
+    <span class="n">figure</span><span class="o">.</span><span class="n">Export</span><span class="p">(</span><span class="s">"example.pdf"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">inpath</span> <span class="o">=</span> <span class="s">"./"</span>
+    <span class="n">outpath</span> <span class="o">=</span> <span class="s">'./'</span>
+    <span class="n">tt</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">plotFunc</span><span class="p">(</span><span class="n">inpath</span><span class="p">,</span> <span class="n">outpath</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s">"Done in "</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">tt</span><span class="p">,</span> <span class="s">" seconds."</span>
+</pre></div>
+
+
+<p><img alt="Veusz plot" src="../files/example.png" title="Veusz plot"></p>
+<div class="code"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf8 -*- </span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span> <span class="c"># no more "zero" integer division bugs!:P</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.font_manager</span> <span class="kn">as</span> <span class="nn">font_manager</span>
+
+<span class="c"># SM like style</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">'backend'</span><span class="p">:</span> <span class="s">'png'</span><span class="p">,</span>
+        <span class="s">'font.family'</span><span class="p">:</span> <span class="s">"serif"</span><span class="p">,</span>
+        <span class="s">'font.size'</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+        <span class="s">'axes.labelsize'</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+        <span class="c">#'text.fontsize': 30,</span>
+        <span class="s">'legend.fontsize'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="s">'xtick.labelsize'</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+        <span class="s">'xtick.major.size'</span><span class="p">:</span> <span class="mf">20.0</span><span class="p">,</span>
+        <span class="s">'xtick.major.width'</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+        <span class="s">'xtick.minor.size'</span><span class="p">:</span> <span class="mf">12.0</span><span class="p">,</span>
+        <span class="s">'xtick.minor.width'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s">'ytick.labelsize'</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+        <span class="s">'ytick.major.size'</span><span class="p">:</span> <span class="mf">20.0</span><span class="p">,</span>
+        <span class="s">'ytick.major.width'</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+        <span class="s">'ytick.minor.size'</span><span class="p">:</span> <span class="mf">12.0</span><span class="p">,</span>
+        <span class="s">'ytick.minor.width'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="c">#'text.usetex': True,</span>
+        <span class="s">'axes.linewidth'</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+        <span class="s">'lines.linewidth'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s">'lines.markersize'</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+        <span class="s">'axes.grid'</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+        <span class="s">'grid'</span><span class="p">:</span> <span class="p">{</span><span class="s">'color'</span><span class="p">:</span><span class="s">'gray'</span><span class="p">,</span> <span class="s">'linestyle'</span><span class="p">:</span><span class="s">'-'</span><span class="p">,</span> <span class="s">'linewidth'</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s">'figure.figsize'</span><span class="p">:</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span>
+        <span class="s">'figure.subplot.left'</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>  <span class="c"># the left side of the subplots of the figure</span>
+        <span class="s">'figure.subplot.right'</span>   <span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span>    <span class="c"># the right side of the subplots of the figure</span>
+        <span class="s">'figure.subplot.bottom'</span>  <span class="p">:</span> <span class="mf">0.12</span><span class="p">,</span>   <span class="c"># the bottom of the subplots of the figure</span>
+        <span class="s">'figure.subplot.top'</span>     <span class="p">:</span> <span class="mf">0.92</span><span class="p">,</span>    <span class="c"># the top of the subplots of the figure</span>
+        <span class="s">'figure.subplot.wspace'</span>  <span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>    <span class="c"># the amount of width reserved for blank space between subplots</span>
+        <span class="s">'figure.subplot.hspace'</span>  <span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>    <span class="c"># the amount of height reserved for white space between subplots</span>
+        <span class="s">'figure.figsize'</span><span class="p">:</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+           <span class="p">}</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">sm_hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_bin</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">range_</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">dataMin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+    <span class="n">dataMax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+    <span class="n">n_bin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.</span><span class="o">*</span><span class="p">(</span><span class="n">dataMax</span><span class="o">-</span><span class="n">dataMin</span><span class="p">)</span> <span class="o">/</span> <span class="n">delta</span><span class="p">)</span>
+    <span class="n">range_</span> <span class="o">=</span> <span class="p">(</span><span class="n">dataMin</span><span class="p">,</span> <span class="n">dataMin</span> <span class="o">+</span> <span class="n">n_bin</span> <span class="o">*</span> <span class="n">delta</span><span class="p">)</span>
+    <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n_bin</span><span class="p">,</span> <span class="n">range_</span><span class="p">,</span> <span class="n">density</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+    <span class="c"># These two lines double the points let you make the histogram</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span><span class="n">counts</span><span class="p">))</span> 
+    <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">bin_edges</span><span class="p">,</span><span class="n">bin_edges</span><span class="p">))</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">]),</span> <span class="n">counts</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">])))</span>
+    <span class="k">return</span> <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span>
+
+
+<span class="k">def</span> <span class="nf">sm_hist2</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">dataMin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+    <span class="n">dataMax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+    <span class="n">n_bin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.</span><span class="o">*</span><span class="p">(</span><span class="n">dataMax</span><span class="o">-</span><span class="n">dataMin</span><span class="p">)</span> <span class="o">/</span> <span class="n">delta</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">idxs</span> <span class="o">=</span> <span class="p">((</span><span class="n">data</span>  <span class="o">-</span> <span class="n">dataMin</span><span class="p">)</span> <span class="o">/</span> <span class="n">delta</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n_bin</span><span class="p">)</span> 
+    <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">dataMin</span><span class="p">,</span> <span class="n">dataMax</span><span class="o">+</span><span class="n">delta</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">idxs</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">print</span> <span class="n">counts</span>
+    <span class="c"># These two lines double the points let you make the histogram</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span><span class="n">counts</span><span class="p">))</span> 
+    <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">bin_edges</span><span class="p">,</span><span class="n">bin_edges</span><span class="p">))</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">]),</span> <span class="n">counts</span><span class="p">))</span>
+    <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">bin_edges</span><span class="p">,</span> <span class="n">bin_edges</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span>
+
+<span class="k">def</span> <span class="nf">singlePlotScatter</span><span class="p">(</span><span class="n">xData</span><span class="p">,</span> <span class="n">yData</span><span class="p">,</span> <span class="n">nRows</span><span class="p">,</span> <span class="n">nCols</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">rowspan</span><span class="p">,</span> <span class="n">colspan</span><span class="p">):</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="n">nRows</span><span class="p">,</span><span class="n">nCols</span><span class="p">),</span> <span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">),</span> <span class="n">rowspan</span><span class="p">,</span> <span class="n">colspan</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s">"x label"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">"y label"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s">"linear"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s">"linear"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">"Plot title"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">set_y</span><span class="p">(</span><span class="mf">1.02</span><span class="p">)</span> <span class="c"># adjust title position</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s">"both"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s">"major"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xData</span><span class="p">,</span> <span class="n">yData</span><span class="p">,</span> 
+            <span class="n">color</span> <span class="o">=</span> <span class="s">"green"</span><span class="p">,</span> 
+            <span class="n">markeredgewidth</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span> 
+            <span class="n">linestyle</span> <span class="o">=</span> <span class="s">'-'</span><span class="p">,</span> 
+            <span class="n">linewidth</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="n">marker</span> <span class="o">=</span> <span class="s">'o'</span><span class="p">,</span> 
+            <span class="n">markersize</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> 
+            <span class="n">label</span> <span class="o">=</span> <span class="s">"label"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ax</span>
+
+<span class="k">def</span> <span class="nf">singlePlotHist</span><span class="p">(</span><span class="n">yData</span><span class="p">,</span> <span class="n">nRows</span><span class="p">,</span> <span class="n">nCols</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">rowspan</span><span class="p">,</span> <span class="n">colspan</span><span class="p">):</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="n">nRows</span><span class="p">,</span><span class="n">nCols</span><span class="p">),</span> <span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">),</span> <span class="n">rowspan</span><span class="p">,</span> <span class="n">colspan</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s">"x label"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">"y label"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s">"linear"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s">"linear"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">"Plot title"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">set_y</span><span class="p">(</span><span class="mf">1.02</span><span class="p">)</span> <span class="c"># adjust title position</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s">"both"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s">"major"</span><span class="p">)</span>
+    <span class="n">counts</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">sm_hist2</span><span class="p">(</span><span class="n">yData</span><span class="p">,</span> <span class="n">delta</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.2</span><span class="o">*</span><span class="n">counts</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">bin_edges</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> 
+                <span class="n">color</span> <span class="o">=</span> <span class="s">"blue"</span><span class="p">,</span>
+                <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span>
+                <span class="n">linewidth</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="n">antialiased</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+                <span class="n">zorder</span> <span class="o">=</span> <span class="mi">3</span> 
+                <span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">bin_edges</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> 
+                <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+                <span class="n">hatch</span> <span class="o">=</span> <span class="s">"/"</span><span class="p">,</span>
+                <span class="n">edgecolor</span> <span class="o">=</span> <span class="s">"blue"</span><span class="p">,</span>
+                <span class="n">facecolor</span> <span class="o">=</span> <span class="s">"white"</span><span class="p">,</span>
+                <span class="n">antialiased</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> 
+                <span class="n">label</span> <span class="o">=</span> <span class="s">"whatever you want"</span>
+                <span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">'upper left'</span><span class="p">,</span> <span class="n">numpoints</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="n">font_manager</span><span class="o">.</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">))</span><span class="o">.</span><span class="n">draw_frame</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ax</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">tt</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">xData</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> 
+    <span class="n">yData</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">"Figure title"</span><span class="p">)</span>
+    <span class="n">axs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">nPlots</span> <span class="o">=</span> <span class="mi">2</span>
+
+    <span class="n">axs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">singlePlotScatter</span><span class="p">(</span><span class="n">xData</span><span class="p">,</span> <span class="n">yData</span><span class="p">,</span> <span class="n">nRows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">nCols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">rowspan</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">axs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">singlePlotHist</span><span class="p">(</span><span class="n">yData</span><span class="p">,</span> <span class="n">nRows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">nCols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">rowspan</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">"./grid.png"</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s">"Done in "</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">tt</span><span class="p">,</span> <span class="s">" seconds."</span>
+</pre></div>
+
+
+<p><img alt="Matplotlib plot" src="../files/grid.png" title="Mathplotlib plot"></p></div>
+    </div>
+    </div>
+    
+
+        
+        
+
+
+    
+
+    </article>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2014 <a href="mailto:brunetto.ziosi@gmail.com">brunetto</a> - <a href="https://plus.google.com/117554238100031566866?rel=author">G+ Profile</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>
+</div>
+
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+
+
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+    
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51923245-1', 'brunettoziosi.eu');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
