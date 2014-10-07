@@ -153,3 +153,12 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * "Se non vogliono che guardi dentro... dovrebbero costruirle meglio."
 [Harold Finch, PoI 3x11]
+
+* "Ciò che mi spaventa di più è che quando mi succede, quando mi sento sopraffatto e perdo completamente il controllo... mi piace."
+[Hulk]
+
+* "È questo il mio segreto, capitano: sono sempre arrabbiato. "
+[Hulk, in The Avengers]
+
+* "Mi stai facendo arrabbiare. Non ti piacerà vedermi arrabbiato."
+[Hulk]
