@@ -49,19 +49,30 @@ course
 ## Publications
 
 * [2014 - Ziosi B. M., Mapelli M., Branchesi M., Tormen G., 2014, MNRAS, 441, 3703Z](http://mnras.oxfordjournals.org/content/441/4/3703.full?keytype=ref&ijkey=wtSg4FcQLzZB4Pr)
-* [2014 - M Branchesi, G Woan, P Astone, I Bartos, A Colla, S Covino, M Drago, X Fan, S Frasca, C Hanna, B Haskell, JS Hazboun, IS Heng, DE Holz, NK Johnson-McDaniel, ID Jones, L Keer, S Klimenko, G Kostas, SL Larson, I Mandel, M Mapelli, C Messenger, G Mazzolo, A Melatos, S Mohanty, V Necula, M Normandin, L Obara, R Opiela, B Owen, C Palomba, GA Prodi, V Re, F Salemi, TL Sidery, M Sokolowski, K Schwenzer, V Tiwari, MC Tringali, G Vedovato, W Vousden, I Yakushin, A Zadrożny, BM Ziosi, C7 multi-messenger astronomy of GW sources, 2014, General Relativity and Gravitation, 46, 1771](http://link.springer.com/article/10.1007/s10714-014-1771-6)
+* [2014 - Branchesi M. , Woan G., Astone P., Bartos I., Colla A., Covino S., Drago M., Fan X., Frasca S., Hanna C., Haskell B., Hazboun J.S., Heng I.S., Holz D.E., Johnson-McDaniel N.K., Jones I.D., Keer L., Klimenko S., Kostas G., Larson S.L., Mandel I., Mapelli M., Messenger C., Mazzolo G., Melatos A., Mohanty S., Necula V., Normandin M., Obara L., Opiela R., Owen B., Palomba C., Prodi G.A., Re V., Salemi F., Sidery T.L., Sokolowski M., Schwenzer K., Tiwari V., Tringali M.C., Vedovato G., Vousden W., Yakushin I., Zadrożny A., Ziosi B.M., C7 multi-messenger astronomy of GW sources, 2014, General Relativity and Gravitation, 46, 1771](http://link.springer.com/article/10.1007/s10714-014-1771-6)
 
-\ecvsection{Grants}
-\ecvitem{2013}{1000 EUR to attend the Gravasco IHP trimester ``N-body gravitational 
-dynamical systems From N=2 to infinity...''}
+## Grants
 
-\ecvsection{Accepted computational proposals}
-\ecvitem{2014}{``Star cluster formation through merger of sub-clusters'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs}
-\ecvitem{2013}{``Investigating the statistics and parameter space of double compact object binaries in young star clusters'', 50.0k CPU hours on GPU cluster EURORA, IBM PLX cluster and  IBM Blue Gene/Q Fermi @ CINECA, PI: Ziosi, 2 COIs}
-\ecvitem{2013}{``Making very massive stars through stellar collisions'', 50.0k on GPU cluster EURORA and IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs}
-\ecvitem{2012}{``The violent life of the Galactic Centre'', 281.6k CPU hours on IBM PLX and on the 
-IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs}
-\ecvitem{2012}{``Computational Frontiers of Black Hole Dynamics'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Ripamonti, CO-I: Ziosi and 2 other COIs}
+### 2013 
+
+* 1000 EUR to attend the Gravasco IHP trimester ``N-body gravitational 
+dynamical systems From N=2 to infinity...''
+
+## Accepted computational proposals
+### 2014
+
+* ``Star cluster formation through merger of sub-clusters'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs
+
+### 2013
+
+* ``Investigating the statistics and parameter space of double compact object binaries in young star clusters'', 50.0k CPU hours on GPU cluster EURORA, IBM PLX cluster and  IBM Blue Gene/Q Fermi @ CINECA, PI: Ziosi, 2 COIs
+* ``Making very massive stars through stellar collisions'', 50.0k on GPU cluster EURORA and IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs
+
+### 2012
+
+* ``The violent life of the Galactic Centre'', 281.6k CPU hours on IBM PLX and on the 
+IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs
+* ``Computational Frontiers of Black Hole Dynamics'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Ripamonti, CO-I: Ziosi and 2 other COIs
 
 ## Presentations and posters
 
@@ -80,6 +91,7 @@ IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COI
 
 ## Schools, Workshops and Conferences
 
+* [Tools and Techniques for massive data analysis](http://events.prace-ri.eu/conferenceDisplay.py?confId=314), CINECA (Bologna), 15-16 December 2014
 * [Perspectives of GPU computing in Physics and Astrophysics](http://www.roma1.infn.it/conference/GPU2014/), Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, [Poster](../files/Presentations/2014-ZiosiRomaGPU)
 * [Stellar N-body Dynamics](http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics), Sport & Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, [Poster](../files/Presentations/2014-ZiosiSestoNBody.pdf)
 * [Astro-GR@Rome](http://members.aei.mpg.de/amaro-seoane/astro-gr-rome), Rome - Monteporzio Catone, 14-18 July 2014
@@ -87,19 +99,19 @@ IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COI
 * [Dynamics & Kinetic theory of self-gravitating systems Workshop](http://uma.ensta-paristech.fr/conf/gravasco/W2.html) @ [Gravasco IHP trimester "N body gravitational dynamical systems From N=2 to infinity..."](http://uma.ensta-paristech.fr/conf/gravasco/home.html), Paris, 4-8 November 2013
 * [Galactic Dynamics Seminar](http://uma.ensta-paristech.fr/conf/gravasco/P3.html) @ [Gravasco IHP trimester "N body gravitational 
 dynamical systems From N=2 to infinity..."](http://uma.ensta-paristech.fr/conf/gravasco/home.html), Paris, 21th October-1st November 2013, [Presentation](../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf)
-* Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua
-* PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()
+* Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013, Departement of Information Engineering, Padua
+* PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013, Departement of Information Engineering, Padua, [Presentation]()
 * [INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)](http://agenda.infn.it/conferenceDisplay.py?confId=5719)
 * [School on Gravitational Waves, neutrinos 
 and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html), 10-15 April 2013, Monteporzio Catone (Rome)
 * [IMPRS Summer School on Computational Astrophysics](http://www.mpia.de/imprs-hd/SummerSchools/2012/), 10-14 September 2012, Heidelberg, Germany
 * [International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky](http://isa2012.oa-teramo.inaf.it/index.php/home), 11-15 June 2012, Teramo, Italy, [Presentation]()
-* [Summer School of Parallel Computing](http://www.cineca.it/it/content/summer-school-parallel-computing), 2-13 July 2012 @ CINECA
-* Introduction to C language for scientific programming, 17-18 May 2012 @ CINECA
-* PhD Summer School on Algorithms and Architectures for Computational Science and Engineering, 12-16 Semptember 2011 @ Departement of Information Engineering, Padua
-* Workshop on Visualization of Large scientific Data, 14-15 June 2011 @ CINECA
-* Python for computational science, 16-18 May 2011 @ CINECA
-* Introduction to GPGPU and CUDA programming, 27 April 2011 @ CINECA computing center (Bologna, Italy)
+* [Summer School of Parallel Computing](http://www.cineca.it/it/content/summer-school-parallel-computing), 2-13 July 2012, CINECA
+* Introduction to C language for scientific programming, 17-18 May 2012, CINECA
+* PhD Summer School on Algorithms and Architectures for Computational Science and Engineering, 12-16 Semptember 2011, Departement of Information Engineering, Padua
+* Workshop on Visualization of Large scientific Data, 14-15 June 2011, CINECA
+* Python for computational science, 16-18 May 2011, CINECA
+* Introduction to GPGPU and CUDA programming, 27 April 2011, CINECA computing center (Bologna, Italy)
 
 
 ## Other
