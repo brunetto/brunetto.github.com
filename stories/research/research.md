@@ -21,6 +21,14 @@ gravitational wave interferometers Advanced Ligo and Virgo.
 
 More info [here](phd.html)
 
+### Scientific interests
+
+* dynamics of black holes and neutron stars in star clusters 
+* direct-summation N-body simulations in star clusters 
+* gravitational waves in the frequency range of Advanced VIRGO and LIGO 
+* stellar and binary evolution
+* big data analysis and visualization
+
 ## Master Thesis
 
 ## Bachelor Thesis

@@ -12,13 +12,71 @@
 **The impact of stellar evolution and dynamics on the formation of 
 compact-object binaries**
 
-I am working on N-body simulations of young and dense star clusters in order to 
-understand the impact of stellar evolution and dynamics on the formation and evolution 
-of compact-object (neutron stars and black holes) binary systems.     
-These objects are thought to be the best candidates to produce gravitational 
-waves observable in the near future with the second-generation ground-based 
-gravitational wave interferometers Advanced Ligo and Virgo.
+My PhD project is devoted to improving our knowledge on the demographics 
+and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH), 
+neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
+The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
+Gravitational waves (GWs) are among the ``most wanted'' predictions of General 
+Relativity: while indirect confirmations of GWs came from observations of pulsar 
+binaries, a direct detection of GWs is still missing.
+Mergers of binaries 
+are among the most promising sources of GWs in the frequency range that will be 
+explored by Advanced Virgo and LIGO (~10-10000 Hz). 
 
+My research focus on three main fronts: (i) the impact of dynamics and metallicity on 
+the formation and evolution of double compact-object binaries, (ii) the effects 
+of a tidal field on the evolution of star clusters and on the
+demography of DCO binaries inside them, 
+(iii) the changes in the DCO binaries demography 
+considering different initial structural properties of the clusters (mass, concentration,
+primordial binaries fraction, density, ...).
+
+To this purpose I analyzed 600 random realizations of a young dense star cluster at different metallicities.
+We chose young and dense star cluster as environment in which to study DCO binaries 
+because they are the preferential 
+environment for star formation (Lada & Lada, 2003) and gravitational interactions are efficient in exchanging 
+energy on short times. 
+
+My results, published in Ziosi et al. (2014), confirm that the cluster dynamics 
+favours the formation of BH-BH binaries and were tested against the literature. 
+The results I obtained, however, stand on two critical assumptions: i) I assumed that the 
+star cluster would life unpeturbed for 100 Myr but after that time they should be 
+dissolved into the galactic disc because of the host galaxy tidal field
+(ii) I only simulated random realizations of a single star cluster model.
+
+Both the assumptions can heavily affect estimations on the demography of the DCO binaries 
+and the two other parts of my project are devoted to overcome these limitations.
+To overcome the first issue I implemented in the code
+a numerical recipe (the one proposed in Allen & Santillan, 1991) to accurately include the host galaxy gravitational tidal field. 
+I am now testing the new tidal field. As soon as it is proved to 
+be reliable I will study the effect of the disk component on the life 
+of the star clusters and on the DCO binaries dynamics and demography.
+In particoular, it is interesting the case in which the cluster is not on a circoular orbit 
+coplanar with the galactic disk but on an eccentric and inclined one.
+In this case the potential changes rapidly with the time and the effect on the cluster can be 
+remarkable (see Madrid et al., 2014).
+
+Regarding teh second issue, it is necessary to quantify the effect of initial 
+structural properties of the cluster on the double compact-object binaries population.
+First of all, cluster structural properties can affect double compact-object binaries demography  
+because they influence the dynamical interactions rate among binaries, exchanges included, 
+and the cluster surviving time to the tidal field.
+Then, analysing a a wide spectrum of different clusters we would be able to 
+better calibrate the results on the real population of clusters in our galaxy and 
+in the galaxies at distances smaller than the LIGO/Virgo horizon.
+To this purpose, I am running tens of simulations spanning a wide range of initial 
+structural properties. 
+I built the necessary computational tools to run, manage and analyze all these simulations.
+As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
+This would make us able to highlight which aspects of the star clusters 
+are more relevant on the formation and evolution of such binaries and how they impact on them.
+
+As I described above, some part of my PhD research are still in progress but 
+they will be completed by the end of my PhD (PhD defense expected on July 2015).\
+I was always attracted from the numerical side of astrophysics and I really 
+would like to get closer to the more technical area of astronomy and to 
+exploit my programming skills and my methodic approach to research on the instrumental 
+side.
 
 
 ## PhD exams and courses 

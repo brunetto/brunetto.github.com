@@ -116,6 +116,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy](http://www
 
 ## Other
 
+* 2014 - Amazon Web Services Cloud School, 24 July 2014, Milano
 * 2012 - "La notte dei ricercatori" (Researcer's night), Padua
 * 2011 - Internship: Technical characterization of the Astrophysical Observatory of Asiago
 * 2009 - Photometric and spectroscopic digital analysis lab. (FSE)
