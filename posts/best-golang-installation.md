@@ -10,8 +10,8 @@
 
 Best way to install Golang, from:
 
-* http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go
-* http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go
+* [http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go](http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go)
+* [http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go](http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go)
 
 Assuming you already have the correct environment and you are on an ubuntu workstation.
 

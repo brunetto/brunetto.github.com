@@ -162,3 +162,6 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * "Mi stai facendo arrabbiare. Non ti piacerà vedermi arrabbiato."
 [Hulk]
+
+* "The best performance improvement is the transition from the non-working state to the working state" 
+[J. Osterhout]
