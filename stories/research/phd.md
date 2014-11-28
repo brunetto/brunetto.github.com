@@ -18,7 +18,7 @@ compact-object binaries**
 <!--![GPU Rome slide](../../files/ziosi-GPU-Rome.gif "Presentation of my poster at a conference in Rome in 2014 that summarize my research.")-->
 <img src="../../files/PhDProjectScheme.svg" alt="OhD project scheme" style="width:480px;height:360px">
 <figcaption>
-<hr> Schematic scheme of my PhD project.
+<hr> Schematic representation of my PhD project.
 </figcaption>
 </div>
 </figure>
