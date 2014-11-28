@@ -165,3 +165,8 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * "The best performance improvement is the transition from the non-working state to the working state" 
 [J. Osterhout]
+
+* "My particular form of procrastination is optimization."
+[Will Styler, [http://savethevowels.org/](http://savethevowels.org/essays/markdowndissertation.html)]
+
+

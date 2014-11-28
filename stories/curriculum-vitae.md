@@ -76,6 +76,7 @@ IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COI
 
 ## Presentations and posters
 
+* [2014 PhD Workshop](../files/Presentations/2014-11-28-FinalWorkshop-Ziosi/index.html)
 * [2014 GPU conference Rome](../files/Presentations/2014-ZiosiRomaGPU.pdf)
 * [2014 Stellar N-body Dynamics](../files/Presentations/2014-ZiosiSestoNBody.pdf)
 * [MODEST 14](../files/Presentations/2014-ZiosiMODEST14.pdf)

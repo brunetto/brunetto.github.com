@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ziosi - PhD Workshop 2014</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+     .black {
+        background: #000000;
+        }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-3left {
+        float: left;
+        width: 32%;
+      }
+      .align-right {
+		text-align: right;
+      }
+      .pull-3center {
+        float: center;
+        width: 32%;
+        display: inline-block;
+      }
+      .pull-3right {
+        float: right;
+        width: 32%;
+      }
+      .vmiddle {
+      display:inline-block;
+       vertical-align: middle;
+      }
+      .small {
+		font-size:small;
+      }
+      .larger {
+		font-size:140%;
+      }
+      .big {
+		font-size:200%;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .verticalLine {
+		border-left: thick solid #000000;
+	}
+	.red {
+		color: #8B0000;
+	}
+	.green {
+		color: #008B00;
+	}
+	.blue {
+		color: #00008B;
+	}
+	.gray {
+		color: #8B8B8B;
+	}
+	.white {
+		color: #ffffff;
+	}
+	.citation {
+		color: #989898;
+		font-size: 90%;
+	}
+	.boxed {
+		border:2px solid black;
+		border-radius: 2px
+	}
+	.left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+    .left-column h2:last-of-type, .left-column h3:last-child {
+        color: #000;
+    }
+    .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+    }
+    .box{
+		clear: both;
+    }
+    .footer {
+		position:absolute;
+		bottom: 1;
+    }
+    .footnote {
+        position: absolute;
+        bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: middle
+background-image: url(images/gwsBck.svg)
+<!-- Titles section -->
+.center[
+# **Gravitational waves** </br>from the nursery of stars:</br>simulating</br> **black hole mergers** </br>in</br> **young star clusters**
+]
+PhD student: Brunetto M. Ziosi</br>
+Supervisors: Prof. G. Tormen, Dr. M. Mapelli
+
+.footnote[PhD Workshop, PD/2014-11-28]
+
+???
+
+Hi! I'm brunetto ziosi and, as the title say, today I will 
+tell you something about `<title>`
+
+---
+
+.big[.boxed[.boxed[&nbsp _**Outline**_ &nbsp]]]
+
+.pull-left[## Introduction
+.center[![pie](images/pie-xkcd.svg)]]
+
+.verticalLine[
+
+.pull-right[## My work 
+The impact of ... </br>    
+
+  .boxed[&nbsp 1&nbsp ].right[... .red[**dynamics**] and .red[**metallicity**]... ]
+
+----
+  .boxed[&nbsp 2&nbsp ].right[... a galactic .red[**tidal field**]...]
+
+----
+  .boxed[&nbsp 3&nbsp ].right[... different initial .red[**structural properties**] of SCs... ]</br>    
+
+on the formation and evolution of double compact-object binaries
+]
+]
+
+???
+
+As the picture suggests, my work sits among three main topics: stellar evolution, dynamics and gravitational waves.
+In the first part of this talk I will give you some basic notions about them.
+In the second part I will show you my work focusing on three aspects: 
+the role of i) dynamics and metallicity, ii) a galactic tidal field and iii) different structural properties of SCs on the formation and evolution of double compact object binaries.
+
+---
+<!-- GWs section -->
+# Gravitational waves
+.center[![pie](images/pie-gw.svg)]
+
+---
+
+## GWs
+
+
+
+.middle[
+.pull-left[
+* Direct confirmation of General Relativity
+
+---
+
+* GWs from **BH-BH binaries** during inspiral and merger events
+
+----
+* Now it is the perfect time: </br> **Adv. Virgo/LIGO**!!
+
+----
+* Investigate processes with no EM emission
+
+----
+
+* **Multi-messenger astronomy** for those objects emitting both EM and (strong) GW signals
+
+
+
+]
+
+.pull-right[
+.center[_"... ripples in the space-time propagating at the speed of light... "_]</br>
+![gws](images/virgoScheme.svg)]
+]
+
+???
+
+* DCOBS are expected
+
+---
+
+<!-- Dynamics section -->
+# Dynamics
+.center[![pie](images/pie-dyn.svg)]
+
+---
+class: middle
+.center[
+# YSC Facts
+]
+
+* YSCs are birthplace for ∼ 80% of stars in the local universe </br> .citation[(Lada`&`Lada, 2003)]
+
+.center[![HSTclusters](images/HSTclusters.jpg)    
+]
+
+* They dissolve into the galactic disk because of the galactic tidal field, releasing their content
+
+???
+
+* As I touch on in the talk title, our simulations involve YSCs as environments.
+The first reason is that YSC are the birthplace for about 80% of stars in the local universe, so it is reasonable to take them into account as environment for our simulations. The amazing picture shows to young star clusters, the Arches and the Quintuplet, captured by HST.
+
+---
+class: middle
+
+.left-column[
+## YSC Facts
+]
+.right-column[
+</br>
+* YSCs are birthplace for ∼ 80% of stars in the local universe .citation[(Lada`&`Lada, 2003)]
+
+----
+* They dissolve into the galactic disk because of the galactic tidal field, releasing their content
+
+----
+* (Collisional) YSCs are
+	* young (`<` 100 Myr)
+	* relatively massive (`$10^3− 10^7{\rm M}_{\odot}$`),
+	* dense (`$10^3− 10^6$` pc`$^{-3}$` )
+	
+	groups of stars
+
+----
+
+* Y**D**SCs are sites of intense dynamical activity: </br>central `$t_{\rm relax} ∼ 10 − 100$` Myr    
+
+
+]
+
+???
+
+* Moreover, some of them are massive and dense enough
+to be collisional, that is, to have efficient dynamical interactions among stars. Thus they have an intense dynamical activity so they are excellent environments where to study how dynamics impact on binaries.
+
+* Finally, they dissolve into the galactic disk on short times, releasing their binary content.
+
+---
+class: middle
+## Stellar encounters
+
+.center[
+**3-body encounters** $\rightarrow$ hardening `&` exchanges
+]
+.center[![...](images/dynamicalExchanges.svg)]</br>
+.center[BHs have high masses `$\Rightarrow$` high probability to acquire a companion through</br> 3-body exchange]
+
+
+???
+
+* The most interesting aspect of dynamics for this project are 3-body stellar encounters.
+A 3bd encounter is a close encounter between a single object and a binary: if the kinetic energy is transferred from the binary to the single object the binary SMA decrease. This process is called hardening and it more lokely for binaries already hard.
+* Another possivle outcome of a 3bd encounter is the exchange, that is when a single star take the place of one of the component of the binary. The probabilityfor an exchange to occur is proportional to the ratio between the mass of the intruder and the mass of the component of the binary. 
+* Because BH have large masses they have high probability to acquire a companion through 3bd exchange.
+
+* "Hard" binary: `$ \frac{Gm_1 m_2}{2a}\geq\frac{1}{2}\langle m\rangle \sigma^2$`
+
+---
+<!-- Stellar evolution section -->
+# Stellar evolution
+.center[![pie](images/pie-stevo.svg)]
+
+---
+
+## Stellar evolution
+
+.center[![../images/directCollapse.gif](images/directCollapse.svg)]</br>
+.citation[ (Fryer 1999, Fryer`&`Kalogera 2001, Mapelli+2013)]
+
+???
+
+There's something else.
+* This plot here shows the BH mass as a function of the final mass of the progenitor.
+* The red line shows the relation between the two for low-Z stars and they are significantly 
+different from the others.
+* Stars with `$M_{fin} ≥ 40M_\odot$` are
+expected to collapse directly to a BH
+without SN explosion
+* BHs formed from through this process 
+are more massive than BHs
+formed from SN explosion 
+* Because metal-poor stars lose less mass by
+stellar winds ⇒ more likely to
+collapse to BH directly
+
+
+---
+class: middle, black
+<!-- .center[.larger[**StarLab: direct N-body + stellar evolution**]] -->
+.center[
+<!-- ### StarLab: direct N-body + stellar evolution -->
+![../images/directCollapse.gif](images/sl00077.png)
+![../images/directCollapse.gif](images/single_highres_smaller.gif)
+]
+</br>
+.white[
+* N-body + stellar evolution
+* Each particle is a star (with its physics)
+* Updated to take into account different metallicities
+]
+---
+<!-- My work section -->
+# My work
+
+The impact of ... </br>    
+
+  .boxed[&nbsp 1&nbsp ].center[... .red[**dynamics**] and .red[**metallicity**]... ]
+
+----
+  .boxed[&nbsp 2&nbsp ].center[... a galactic .red[**tidal field**]...]
+
+----
+  .boxed[&nbsp 3&nbsp ].center[... different initial .red[**structural properties**] of SCs... ]</br>    
+
+on the formation and evolution of double compact-object binaries.
+
+???
+
+This is the second part of the talk and I'm going to show you my work on how the dynamics and the metallicity, the galactic tidal field and the structural properties of SCs xan affect the double compact object binaries
+
+---
+## Dynamics and metallicity
+</br></br>
+![dynAndMet](images/meanDCOBandMass.svg)
+
+???
+
+Here realizes what I told you before about stellar evolution and dynamics:
+* Taking into account the new stellar evolution recipes we find higher BH masses at lower metallicity
+* the plot shows the number of BH for each mass interval as a function of the metallicity.
+* These BHs are more efficient in acquiring a companion through 3bd exchanges leading to the early formation of more stable binaries respect to higher metallicities. This can be seen here (figure).
+* Just to give you an idea, 97% of DBH binaries come from exchanges while this is true only for 13% of DNS 
+* Moreover, you can see in the inset, dynamics is responsible for the presence of 10 times more DBH binaries than DNS ones despite the IMF
+
+---
+## Dynamics and metallicity
+### Coalescence timescale
+.middle[
+.pull-left[
+* Analysis of the binary properties: SMA, eccentricity, mass, ...
+
+* Derived the time needed to coalesce because of GWs emission .citation[(Peters 1964)]:</br>
+
+	`$t_{\rm GW} \propto \frac{a^4(1-e^2)^{7/2}}{m_1 m_2 m_T}$`
+
+* 7 BH-BH in less than $t_{H}$ over 600 simulations
+
+
+]
+.pull-right[
+![gws](images/tgwSingle.svg)
+
+]
+]
+
+???
+
+* Through the analysis of (first point) **I** derived 
+the coalescence timescale, that is the time a binary needs to merge because of GW emission.
+* The plot on the right shows ...
+* the larger box shows...
+* the smaller one shows...
+
+---
+.box[
+.pull-left[
+## Dynamics and metallicity
+### Merger rates
+]
+.pull-right[.align-right[
+![qr](images/qrSmall.svg)
+]
+]
+]
+.center[![rates](images/Rbhbh.svg)]
+
+???
+
+* From the coalescence timescales, using a Drake-like equation, we derive the merger rates (as a function of the metallicity.
+* It is worth nothing that the BHs merger rate drop 
+at high metallicities because of the smaller masses of the BHs, while the NS merger rate has the opposite trend.
+
+---
+## Dynamics and metallicity
+</br></br>
+.center[
+### .boxed[&nbsp What else?&nbsp]
+]
+
+</br>
+The results I obtained, however, stand on two critical assumptions:
+
+* SCs live **unperturbed** in **isolation** for 100 Myr
+
+* Random realizations of a **single SC model** 
+
+Both these assumptions can heavily affect our estimate of BH demographics.
+
+???
+
+We obtained nice results, but they rely on two critical assumptions:
+* 
+* 
+and they can heavily affect our estimates.
+
+---
+class: middle
+.center[
+## Tidal fields
+]
+### Why?
+
+* YSCs are **not isolated** in the universe
+
+* Overestimate the cluster **lifetime** 
+
+* Dynamical interactions
+
+* Interesting: 
+	* Cluster close to the galactic center
+	* Cluster in the solar region
+	* Eccentric orbit
+
+
+???
+
+Why we need to taking TF into account?
+* ...
+* if we don't consider TF...
+* because they are supposed to be tidally destroyed by the host galaxy field
+* In particular, we are interested in...
+
+---
+.center[
+## Tidal fields: which one?
+]
+
+.pull-left[
+![togetherHeatMapSquare.png](images/bulgeHeatMap.png)
+.middle[#### Starlab public version 
+
+Spherical bulge (Plummer) only
+]]
+
+
+.pull-right[
+![togetherHeatMapSquare.png](images/togetherHeatMap.png)
+#### My upgraded version
+
+Bulge + disk + halo </br> (Milky Way-like potential) </br>
+.citation[(Ziosi+2015a in prep., Allen`&`Santillan 1991)]
+]
+
+
+???
+
+* StarLab comes with a built-in tidal field, but it includes only a spherical Plummer bulge.
+* I implemented in StarLab the tidal field presented in Allen and Santillan 1991 that includes a bulge, a disk and a dark halo, modelled on the Milky Way.
+* The plots on the left are the density map o the potentials, the square highlight a region of 15 kpc of side, the plots on the right the density profiles.
+
+
+
+---
+.left-column[
+## Tidal fields
+### Why?
+### Which?
+### Test
+]
+.right-column[
+.middle[
+.center[![togetherHeatMapSmallOrbit.png](images/togetherHeatMapSmallOrbit.png)]
+Polar orbit to test the code superimposed to the galactic density map.
+
+]]
+
+???
+
+This image shows the orbit of a small test clusters superimposed to the density plot of the tidal field.
+The red dot is the cluster at the beginning of the simulations while the yellow dots shows the cluster after 1.2 Gyr. This is a polar orbit, unusual for our clusters, but useful to test the code.
+
+---
+.left-column[
+## Tidal fields
+### Why?
+### Which?
+### Test
+]
+
+.right-column[
+</br></br>
+![scienceOrbit](images/orbit.gif)
+]
+
+???
+
+This gif shows the evolution of a cluster like those in Ziosi+2014 in an orbit coplanar to the galactic disk. Note that the cluster is destroyed by the tidal field after some time.
+
+---
+class: middle
+## Structural properties
+
+
+* Structural properties $\Leftrightarrow$ dynamical interaction rate
+
+* Which **characteristics** of the SCs are **more important**?
+
+* **Calibrate** our results on the real population
+
+* ~`$10^3$` simulations .citation[(Ziosi+2015b, in prep.)]
+
+</br>
+
+----
+
+</br>
+
+|||
+|-|-|
+|Gravitational well depth $W_0$             | 3, 5, 9 
+|Number of stars $N_\ast$:                  | $1\times10^4, 5\times10^4, 1\times10^5, 5\times10^5$
+|Virial radius $r_{\rm v}$ (pc)             | 1, 3, 5
+|Metallicity $Z$ (Z$_{\rm \odot}$)          | 0.1, 1
+|Primordial binaries fraction $f_{\rm PB}$  | 0.05, 0.1, 0.2
+
+
+
+???
+
+* The last aim of my project is to investigate the role of the structural properties of the SCs on the double compact object population.
+* This would also help in understanding which characteristics are more important for the binaries 
+* while analyzing a wide spectrum of different clusters would make us able to better calibrate our results on th ereal population of clusters within...
+* I created a grid of simulations following these parameters: ...
+
+
+---
+## Structural properties - Highlights
+
+.box[
+.pull-left[
+.placeholder[.red[
+|||
+|-|-|
+|**c28:** |more concentraded, |
+||5% primordial binaries|
+]]]
+.pull-right[
+.placeholder[.green[
+|||
+|-|-|
+|**c60:** |less concentrated, |
+||10% primordial binaries|
+]]]]
+.center[
+![plots](images/plotsSesto.svg)
+]
+
+???
+
+These are some preliminary results: 
+* on the right the table with the values for these simulations, 
+
+* Upper left plot: average number of BH-BH binaries per cluster for different sets of initial structural parameters, integrated over the  ~100 Myr duration of the simulations
+* Bottom left panel: averge number of BH-BH binaries per cluster per Myr
+* c28 shows a peak PROBABLY due to and intense exchange activity at ~ 25 Myr
+* In both the panels c60, the loosest cluster type, has the lowest number of
+BH-BH binaries
+* On the left: coalescence timescale (tGW) [is the time a system needs to reach semi-major axis a=0 due to orbital decay by GW emission (Peters 1964)]
+* Only two simulated BH-BH have `$t_{GW}< t_{H}$` (where tH is the Hubble time), and thus could be important for GW detection
+* The system with a~5x10-2 AU in c60
+* A very eccentric and unstable system in c28 that will break before the end of the simulation
+
+---
+
+.center[
+### https://github.com/brunetto/sltools
+
+![plots](images/sltools.svg)]
+
+
+???
+
+To deal with the great amount of simulations needed for this project, the problem with the Cineca cluster and the data analysis I wrote a number of scripts and programs that are now being included in a single bundle publixy available on github
+
+---
+class:  middle
+<!-- Conlusions section -->
+.center[
+# Conclusions
+]
+
+* I analyzed 600 simulations to study the impact of dynamics and metallicity on the formation and evolution of 
+DCOBs .citation[(Ziosi+2014)]: 
+
+	* Low metallicity favours the **early** formation of **heavy** and **stable** BH-BH binaries
+	
+	* It's likely that a massive BH **acquires a companion** through **dynamical exchanges**
+	
+	* Metallicity has a role in determining the final **merger rates**
+	
+----
+
+* I implemented and tested **Allen&Santillan tidal field** in `StarLab`: runs and analysis in progress .citation[(Ziosi+2015a, in prep.)]
+
+----
+
+* I prepared a grid of simulations to study clusters with **different initial conditions**: runs and analysis in progress .citation[(Ziosi+2015b, in prep.)]
+
+???
+
+
+
+---
+class: center, middle
+background-image: url(images/gwsBck.svg)
+<!-- Thanks section -->
+
+# Thank you!;D
+
+
+
+<!-- End -->
+    </textarea>
+    <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+		var slideshow = remark.create({
+	// 		sourceUrl: 'presentation.md'
+			ratio: '4:3',
+		});
+		
+		// Setup MathJax
+		MathJax.Hub.Config({
+			tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+			}
+		});
+		MathJax.Hub.Queue(function() {
+			$(MathJax.Hub.getAllJax()).map(function(index, elem) {
+				return(elem.SourceElement());
+			}).parent().addClass('has-jax');
+		});
+
+		MathJax.Hub.Configured();
+    </script>
+  </body>
+</html>
