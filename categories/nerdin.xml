@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (nerdin)</title><link>./</link><description></description><atom:link href="categories/nerdin.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 12 Dec 2014 12:01:59 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Things that you can not do without</title><link>posts/things-that-you-can-not-do-without.html</link><description>&lt;ul&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (nerdin)</title><link>./</link><description></description><atom:link href="categories/nerdin.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 12 Dec 2014 12:08:48 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Things that you can not do without</title><link>posts/things-that-you-can-not-do-without.html</link><description>&lt;div&gt;&lt;p&gt;A little list of essential tools:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://git-scm.com/"&gt;git&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; possibly with &lt;a href="https://github.com/getnikola/nikola"&gt;Nikola&lt;/a&gt; or &lt;a href="https://github.com/spf13/hugo"&gt;Hugo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt;&lt;/li&gt;
@@ -14,4 +15,4 @@
 &lt;li&gt;&lt;a href="https://keep.google.com"&gt;Keep&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://juicessh.com/"&gt;JuiceSSH&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.docker.com/"&gt;Docker&lt;/a&gt;, &lt;a href="https://github.com/coreos/rocket"&gt;Rocket&lt;/a&gt; (see also &lt;a href="https://coreos.com/blog/rocket/"&gt;why Rocket&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</description><category>tech</category><category>lifestyle</category><category>nerdin</category><guid>posts/things-that-you-can-not-do-without.html</guid><pubDate>Fri, 12 Dec 2014 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><category>tech</category><category>lifestyle</category><category>nerdin</category><guid>posts/things-that-you-can-not-do-without.html</guid><pubDate>Fri, 12 Dec 2014 11:00:00 GMT</pubDate></item></channel></rss>

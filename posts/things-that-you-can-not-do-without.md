@@ -2,10 +2,12 @@
 .. link: 
 .. description: 
 .. tags: tech, lifestyle, nerdin
-.. date: 2014-12-12 
+.. date: 2014-12-12 11:00 
 .. title: Things that you can not do without
 .. slug: things-that-you-can-not-do-without
 -->
+
+A little list of essential tools:
 
 * [git](http://git-scm.com/)
 * [GitHub](https://github.com/) and [GitHub Pages](https://pages.github.com/) possibly with [Nikola](https://github.com/getnikola/nikola) or [Hugo](https://github.com/spf13/hugo)
