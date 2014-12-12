@@ -88,6 +88,84 @@ MathJax.Hub.Config({
     <div class="span8">
     
         <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/Padding.html" class="u-url">Padding</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2014-12-12T00:00:00+00:00">2014-12-12 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <div><p>Ok, it's the n-th time I search how to pad numbers in bash.  <br>
+I'll take a note here:</p>
+<div class="code"><pre><span class="nv">i</span><span class="o">=</span>5
+<span class="nb">printf</span> <span class="s2">"%03d\n"</span> <span class="nv">$i</span>
+005
+</pre></div>
+
+
+<p>Something similar in Python and Go:</p>
+<div class="code"><pre><span class="n">t</span> <span class="o">=</span> <span class="s">"test-"</span>
+<span class="n">t</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s">'0'</span><span class="p">)</span> <span class="c"># rjust for right padding</span>
+
+<span class="s">'test-00000'</span>
+</pre></div>
+
+
+<div class="code"><pre><span class="c1">// LeftPad returns the string padded filling remaining left spaces to `length` with `pad`.</span>
+<span class="kn">import</span> <span class="s">"log"</span>
+<span class="kn">import</span> <span class="s">"strings"</span>
+
+<span class="kd">func</span> <span class="nx">LeftPad</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">pad</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">length</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">string</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">repeat</span> <span class="kt">int</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">length</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="nx">str</span><span class="p">))</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="nx">pad</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="s">"Can't pad "</span><span class="p">,</span> <span class="nx">str</span><span class="p">,</span> <span class="s">" with "</span><span class="p">,</span> <span class="nx">pad</span><span class="p">,</span> <span class="s">" to length "</span><span class="p">,</span> <span class="nx">length</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">repeat</span> <span class="p">=</span> <span class="p">(</span><span class="nx">length</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="nx">str</span><span class="p">))</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="nx">pad</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">strings</span><span class="p">.</span><span class="nx">Repeat</span><span class="p">(</span><span class="nx">pad</span><span class="p">,</span> <span class="nx">repeat</span><span class="p">)</span> <span class="o">+</span> <span class="nx">str</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>It is also possible to do this with <code>fmt</code> but you still need to compute the number 
+of char if you want to maintain the total number of printed char.</p></div>
+        </div>
+            
+        
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
+        <h1 class="p-name"><a href="posts/things-that-you-can-not-do-without.html" class="u-url">Things that you can not do without</a>
+        <small>  
+             Posted: <time class="published dt-published" datetime="2014-12-12T00:00:00+00:00">2014-12-12 00:00</time>
+        </small></h1>
+        <hr>
+        <div class="p-summary">
+        <ul>
+<li><a href="http://git-scm.com/">git</a></li>
+<li><a href="https://github.com/">GitHub</a> and <a href="https://pages.github.com/">GitHub Pages</a> possibly with <a href="https://github.com/getnikola/nikola">Nikola</a> or <a href="https://github.com/spf13/hugo">Hugo</a></li>
+<li><a href="https://bitbucket.org/">Bitbucket</a></li>
+<li><a href="https://www.dropbox.com">Dropbox</a> (possibly with git repos inside, see <a href="posts/things-that-you-can-not-do-without.html">here</a> for problems)</li>
+<li><a href="posts/mega.co.nz">Mega</a> with <a href="https://mega.co.nz/#sync">linux sync</a></li>
+<li><a href="http://ipython.org/">ipython</a></li>
+<li><a href="http://ipython.org/notebook.html">ipython Notebook</a> with GitHub and <a href="http://nbviewer.ipython.org/">nbviewer</a></li>
+<li><a href="https://www.inkscape.org/en/">Inkscape</a></li>
+<li><a href="http://kate-editor.org/">Kate</a></li>
+<li><a href="http://brunettoziosi.eu/posts/best-golang-installation.html">Go</a> </li>
+<li><a href="https://github.com/jeremysanders/veusz">Veusz</a></li>
+<li><a href="https://keep.google.com">Keep</a></li>
+<li><a href="https://juicessh.com/">JuiceSSH</a></li>
+<li><a href="https://www.docker.com/">Docker</a>, <a href="https://github.com/coreos/rocket">Rocket</a> (see also <a href="https://coreos.com/blog/rocket/">why Rocket</a>)</li>
+</ul>
+        </div>
+            
+        
+    <p>
+
+
+        </p></article>
+        <article class="postbox h-entry post-text">
         <h1 class="p-name"><a href="posts/python-plot-examples.html" class="u-url">Python plot examples</a>
         <small>  
              Posted: <time class="published dt-published" datetime="2014-09-29T15:07:54+00:00">2014-09-29 15:07</time>
@@ -260,42 +338,6 @@ deleted pages.    </p>
 <a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX)">Beamer</a> presentation in order to 
 decide on the fly if I want to print an handout version of the presentation.</p>
 <p class="more"><a href="posts/latex-conditional-compilation.html">Read more…</a></p></div>
-        </div>
-            
-        
-    <p>
-
-
-        </p></article>
-        <article class="postbox h-entry post-text">
-        <h1 class="p-name"><a href="posts/super-basic-file-parsing-in-go.html" class="u-url">Super-basic file parsing in Go</a>
-        <small>  
-             Posted: <time class="published dt-published" datetime="2013-09-05T17:26:48+00:00">2013-09-05 17:26</time>
-        </small></h1>
-        <hr>
-        <div class="p-summary">
-        <div><p>I want to parse all the files in a folder starting with a certain prefix 
-searching for the lines containing a certain string.    </p>
-<p class="more"><a href="posts/super-basic-file-parsing-in-go.html">Read more…</a></p></div>
-        </div>
-            
-        
-    <p>
-
-
-        </p></article>
-        <article class="postbox h-entry post-text">
-        <h1 class="p-name"><a href="posts/check-external-ip.html" class="u-url">Check external ip</a>
-        <small>  
-             Posted: <time class="published dt-published" datetime="2013-09-03T16:59:56+00:00">2013-09-03 16:59</time>
-        </small></h1>
-        <hr>
-        <div class="p-summary">
-        <div><p>This is the first attempt to check the external ip of a linux box. 
-This means, for example, the public ip address of our modem if we are connected
-to the home Wi-Fi.  <br>
-I will try to do this in Python and Go. Of course these are raw attempts.</p>
-<p class="more"><a href="posts/check-external-ip.html">Read more…</a></p></div>
         </div>
             
         

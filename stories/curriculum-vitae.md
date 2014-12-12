@@ -61,6 +61,7 @@ dynamical systems From N=2 to infinity...''
 ## Accepted computational proposals
 ### 2014
 
+* ``Young star cluster disruption by tidal fields'', 50.0k CPU hours on GPU cluster EURORA @ CINECA, PI: Mapelli, CO-I: Ziosi and Moretti
 * ``Star cluster formation through merger of sub-clusters'', 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs
 
 ### 2013

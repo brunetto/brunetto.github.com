@@ -24,6 +24,7 @@ Some links regarding the world of photography...
 * [Javier Pérez](http://instagram.com/cintascotch)
 * [Caleb Charland](http://calebcharland.com/)
 * [Nicola Bernardi](http://www.nicola-bernardi.squarespace.com)
+* [Aaron J. Goen](http://homegroenphotography.com/)
 
 #### Lightpainting
 

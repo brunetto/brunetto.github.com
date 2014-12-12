@@ -169,4 +169,8 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 * "My particular form of procrastination is optimization."
 [Will Styler, [http://savethevowels.org/](http://savethevowels.org/essays/markdowndissertation.html)]
 
+* "Software programming is not typing". Most of my best code has formed somewhere other than at a keyboard. 
+[via Rob Pike](https://twitter.com/rob_pike/status/539601987822567424)
 
+* "If you only walk on sunny days you’ll never reach your destination."
+[Paulo Coelho]
