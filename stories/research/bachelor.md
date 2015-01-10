@@ -39,4 +39,4 @@
 * Astronomy lab <!--30+-->
 * Mathematical methods <!--26-->
 * Structure of matter 1 <!--18-->
-* [Final thesis](../files/masterThesis.pdf)
+* [Final thesis](files/masterThesis.pdf)

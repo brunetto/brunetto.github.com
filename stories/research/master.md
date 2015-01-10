@@ -26,5 +26,5 @@
 * Cosmological structure formation <!--25-->
 * Photometric and spectroscopic digital analysis lab. (FSE)
 * Internship: Technical characterization of the Astrophysical Observatory of Asiago
-* [Final thesis](../files/masterThesis.pdf)
+* [Final thesis](files/masterThesis.pdf)
 
