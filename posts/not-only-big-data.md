@@ -2,7 +2,7 @@
 .. link: 
 .. description: 
 .. tags: docker, big data
-.. date: 2011-11-02
+.. date: 2015-01-08 20:30
 .. title: Not only Big Data
 .. slug: not-only-big-data
 -->

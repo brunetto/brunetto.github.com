@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>./</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 10 Jan 2015 01:09:24 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Things that you can not do without</title><link>posts/things-that-you-can-not-do-without.html</link><description>&lt;div&gt;&lt;p&gt;A little list of essential tools:&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference...</title><link>./</link><description>My digital backuo!:).</description><atom:link href="rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 10 Jan 2015 01:15:11 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Not only Big Data</title><link>posts/not-only-big-data.html</link><description>&lt;div&gt;&lt;p&gt;Recently I've been at a &lt;a href="http://www.cineca.it/en"&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis. 
+We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
+I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are 
+useful in our everyday work. This presentation aims of acting both as a showcase of what can help us and as a cheat sheet.
+You can find it after the break.&lt;/p&gt;
+&lt;p class="more"&gt;&lt;a href="not-only-big-data.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>docker</category><category>big data</category><guid>posts/not-only-big-data.html</guid><pubDate>Thu, 08 Jan 2015 20:30:00 GMT</pubDate></item><item><title>Things that you can not do without</title><link>posts/things-that-you-can-not-do-without.html</link><description>&lt;div&gt;&lt;p&gt;A little list of essential tools:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://git-scm.com/"&gt;git&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; possibly with &lt;a href="https://github.com/getnikola/nikola"&gt;Nikola&lt;/a&gt; or &lt;a href="https://github.com/spf13/hugo"&gt;Hugo&lt;/a&gt;&lt;/li&gt;
@@ -105,7 +110,4 @@ This would rebuild my index every time keeping automatically track of new or
 deleted pages.    &lt;/p&gt;
 &lt;p&gt;Eventually I had time to try, and I tried in Go!:)    &lt;/p&gt;
 &lt;p&gt;This is the first attempt, it could be better, but it works!    &lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="blog-pages-index-generator.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>posts/blog-pages-index-generator.html</guid><pubDate>Fri, 29 Nov 2013 12:18:00 GMT</pubDate></item><item><title>Latex conditional compilation</title><link>posts/latex-conditional-compilation.html</link><description>&lt;div&gt;&lt;p&gt;It's a long time I'm looking for a way to conditional-compiling my 
-&lt;a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX)"&gt;Beamer&lt;/a&gt; presentation in order to 
-decide on the fly if I want to print an handout version of the presentation.&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="latex-conditional-compilation.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>posts/latex-conditional-compilation.html</guid><pubDate>Fri, 13 Sep 2013 11:24:45 GMT</pubDate></item></channel></rss>
+&lt;p class="more"&gt;&lt;a href="blog-pages-index-generator.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>posts/blog-pages-index-generator.html</guid><pubDate>Fri, 29 Nov 2013 12:18:00 GMT</pubDate></item></channel></rss>
