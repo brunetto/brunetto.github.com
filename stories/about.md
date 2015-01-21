@@ -57,6 +57,8 @@ alt="I am nerdier than 86% of all people.
 Are you a nerd? Click here to take the Nerd Test, 
 get nerdy images and jokes, and talk on the nerd forum!"></a>
 
+Ah, [my open source report card!!!](https://osrc.dfm.io/brunetto/)
+
 
 # This blog
 

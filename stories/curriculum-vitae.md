@@ -19,8 +19,17 @@
 **Position** PhD student since 01/2012 at Università degli Studi di Padova - Dipartimento di Fisica e Astronomia    
 PhD advisors: Dr. Michela Mapelli (INAF-OAPd) and Prof. Giuseppe Tormen (University of Padova)
 
-## Education
-### 2012-present 
+**Website** [brunettoziosi.eu](brunettoziosi.eu)
+**Public repository** [https://github.com/brunetto](https://github.com/brunetto)
+**Docker registry** [https://hub.docker.com/u/brunetto](https://hub.docker.com/u/brunetto)
+
+## Education & Emplyment
+
+### 2015
+* **2015/01-2015/07** INAF-OAPd fellowship to work on the project: "Study of gravitational 
+waves sources in young star clusters by means of direct N-body simulations."
+
+### 2012-2015 
 **PhD School in Astronomy** - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
 **Research project title:** “The impact of stellar evolution and dynamics on the formation of compact-
 object binaries” under the supervision of Dr. Michela Mapelli and Prof. Giuseppe Tormen

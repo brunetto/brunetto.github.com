@@ -12,7 +12,7 @@ A little list of essential tools:
 * [git](http://git-scm.com/)
 * [GitHub](https://github.com/) and [GitHub Pages](https://pages.github.com/) possibly with [Nikola](https://github.com/getnikola/nikola) or [Hugo](https://github.com/spf13/hugo)
 * [Bitbucket](https://bitbucket.org/)
-* [Dropbox](https://www.dropbox.com) (possibly with git repos inside, see [here]() for problems)
+* [Dropbox](https://www.dropbox.com) (possibly with git repos inside, see [here](http://stackoverflow.com/questions/12773488/git-fatal-reference-has-invalid-format-refs-heads-master) for problems)
 * [Mega](mega.co.nz) with [linux sync](https://mega.co.nz/#sync)
 * [ipython](http://ipython.org/)
 * [ipython Notebook](http://ipython.org/notebook.html) with GitHub and [nbviewer](http://nbviewer.ipython.org/)
