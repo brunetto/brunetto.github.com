@@ -27,4 +27,30 @@ source golang-crosscompile/crosscompile.bash
 go-crosscompile-build-all
 ````
 
-done.
+done.    
+
+If you need a non-root installation or want to do everything from scratch it is 
+just easy as:
+
+```bash
+git clone https://go.googlesource.com/go
+cd go
+git checkout go1.4.1 # or the latest release
+cd src
+./all.bash
+git clone git://github.com/davecheney/golang-crosscompile.git
+source golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
+cd ../../
+mv go goroot
+mkdir -p gopath/bin
+mkdir -p gopath/docs
+mkdir -p gopath/pkg
+mkdir -p gopath/src/github.com/$USER # here you will put your github project sources
+echo "export GOROOT=/home/$USER/goroot" >> ~/.bashrc
+echo "export GOPATH=/home/$USER/gopath" >> ~/.bashrc
+echo "export PATH=$PATH:$GOROOT/bin:$GOPATH/bin" >> ~/.bashrc
+```
+
+
+
