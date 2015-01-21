@@ -30,7 +30,7 @@ PhD advisors: Dr. Michela Mapelli (INAF-OAPd) and Prof. Giuseppe Tormen (Univers
 waves sources in young star clusters by means of direct N-body simulations."
 
 ### 2012-2015 
-**PhD School in Astronomy** - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
+[**PhD School in Astronomy**](research/phd.html) - Dipartimento di Fisica e Astronomia (Università degli Studi di Padova),
 **Research project title:** “The impact of stellar evolution and dynamics on the formation of compact-
 object binaries” under the supervision of Dr. Michela Mapelli and Prof. Giuseppe Tormen
 
