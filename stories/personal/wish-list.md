@@ -9,7 +9,7 @@
 
 ### Photography
 
-* [Treppiede Manfrotto MKBFRA4-BH Kit Traveller](http://www.amazon.it/dp/B00COLBNTK/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I32LXQ0UA9IAA5) or [here](http://www.lina24.com/go/product_info.php?products_id=24088)
+* [Treppiede Manfrotto MKBFRA4-BH Kit Traveller](http://www.amazon.it/dp/B00COLBNTK/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I32LXQ0UA9IAA5) or [here](http://www.lina24.com/go/product_info.php?products_id=24088) or MKBFRC4-BH (carbon version)
 * [Canon 70D + 18-135 stm](http://www.amazon.it/Canon-Fotocamera-Megapixel-Obiettivo-Antracite/dp/B00DSR6OIY/ref=sr_1_1?s=electronics&ie=UTF8&qid=1417527265&sr=1-1&keywords=canon+70d+18-135+stm)
 * <s>Mirrorless?</s>
 * [GoPro Hero 3 Black Edition](http://www.amazon.it/GoPro-Edition-Videocamera-Digitale-Megapixel/dp/B009TCD8V8/ref=wl_it_dp_o_pd_S_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IJJJM59D5RQ6A)
