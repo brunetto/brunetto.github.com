@@ -9,12 +9,13 @@
 
 ### Photography
 
-* [Treppiede Manfrotto MKBFRA4-BH Kit Traveller](http://www.amazon.it/dp/B00COLBNTK/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I32LXQ0UA9IAA5)
+* [Treppiede Manfrotto MKBFRA4-BH Kit Traveller](http://www.amazon.it/dp/B00COLBNTK/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I32LXQ0UA9IAA5) or [here](http://www.lina24.com/go/product_info.php?products_id=24088)
 * [Canon 70D + 18-135 stm](http://www.amazon.it/Canon-Fotocamera-Megapixel-Obiettivo-Antracite/dp/B00DSR6OIY/ref=sr_1_1?s=electronics&ie=UTF8&qid=1417527265&sr=1-1&keywords=canon+70d+18-135+stm)
 * <s>Mirrorless?</s>
 * [GoPro Hero 3 Black Edition](http://www.amazon.it/GoPro-Edition-Videocamera-Digitale-Megapixel/dp/B009TCD8V8/ref=wl_it_dp_o_pd_S_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IJJJM59D5RQ6A)
 * [Camera Clip 2](http://www.kickstarter.com/projects/97103764/capture-camera-clip-v2)
 * Flash
+* Sony QX1 (this is the detachable lenses version) or Olympus Air A01
 
 ### Travel
 
@@ -43,3 +44,5 @@
 * [Amazon.it Wish List](http://www.amazon.it/registry/wishlist/2M78R4SVWDPFF)
 * [Amazon.com Wish List](http://amzn.com/w/GU96RWE3H5B0)
 * Buoni Amazon, Decathlon, Smartbox sempre graditi
+
+or... surprise me!! :P
