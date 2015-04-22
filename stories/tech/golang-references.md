@@ -53,6 +53,9 @@
 * [Slice of structs vs map o structs](https://groups.google.com/forum/#!topic/golang-nuts/FCcLsuWsF_U)
 * [go4python](http://talks.golang.org/2013/go4python.slide)
 * [Why I Program in Go](http://tech.t9i.in/2013/01/why-program-in-go/)
+* [Defining golang struct function using pointer or not](http://stackoverflow.com/questions/25382073/defining-golang-struct-function-using-pointer-or-not)
+* [Why are receivers pass by value in Go?](http://stackoverflow.com/questions/18435498/why-are-receivers-pass-by-value-in-go/18436251#18436251)
+
 
 ### Web Server
 

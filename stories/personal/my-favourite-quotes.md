@@ -47,7 +47,7 @@
 * Hai mai pensato che sei piccolo o grande in base al coraggio che hai?    
 [Rio, Il Sognatore]
 
-* Hai mai pensato che il destino e` nelle scelte e le scelte sei tu che le fai?    
+* Hai mai pensato che il destino e\` nelle scelte e le scelte sei tu che le fai?    
 [Rio, Il sognatore]
 
 * Visto da vicino nessuno è normale    
@@ -127,10 +127,10 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 * There is a theory which states that if ever anybody discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.  There is another theory which states that this has already happened.    
 [Douglas Adams, The Hitchhiker’s Guide to the Galaxy]
 
-* Ognuno e` un genio, ma se si giudica un pesce dalla sua abilita` ad arrampicarsi sugli alberi lui passera` tutta la sua vita a credersi stupido.    
+* Ognuno e\` un genio, ma se si giudica un pesce dalla sua abilita\` ad arrampicarsi sugli alberi lui passera\` tutta la sua vita a credersi stupido.    
 [Albert Einstein]
 
-* Erra sia chi sbaglia che chi e` vagabondo, ma se io non erro poi non so com'e` il mondo 
+* Erra sia chi sbaglia che chi e\` vagabondo, ma se io non erro poi non so com'e\` il mondo 
 [Jovannotti]
 
 * Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it...    
@@ -139,7 +139,7 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 * They've done studies, you know. 60% of the time, it works every time.
 [Brian Fantana]
 
-* There are only two types of peolple in the world: those who can extrapolate from incomplete data...
+* There are only two types of people in the world: those who can extrapolate from incomplete data...
 [???]
 
 * Lascia dormire il futuro come si merita, se lo si sveglia prima del tempo, si ottiene un presente assonnato.    
@@ -149,7 +149,7 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 [Richard Bach]
 
 * Non approfittare mai della pazienza delle persone buone perché sono le ultime a stancarsi ma le prime a non avere ripensamenti.
-[]
+[???]
 
 * "Se non vogliono che guardi dentro... dovrebbero costruirle meglio."
 [Harold Finch, PoI 3x11]
@@ -174,3 +174,26 @@ pratica: non c'è niente che funzioni... e nessuno sa il perché!
 
 * "If you only walk on sunny days you’ll never reach your destination."
 [Paulo Coelho]
+
+* "Parlare oscuramente lo sa fare ognuno, ma chiaro pochissimi."
+[(Galileo Galilei, Considerazioni al Tasso]
+
+* "Having access to the source code is one thing. Having access to the tacit 
+knowledge that went into the process of writing the source code is quite something else."
+[Piet Hut and Jun Makino, [artcompsci](http://www.artcompsci.org/)] 
+
+* "Rule 34 — "If it exists, there is porn of it. No exceptions""
+
+* "Non esistono vecchi idioti, esistono idioti che diventano idioti" - Herman Medrano
+
+* "Onesto è colui che cambia il proprio pensiero per accordarlo alla verità. Disonesto è colui che cambia la verità per accordarla al proprio pensiero" - Proverbio Arabo
+
+* "I sogni nel cassetto, ammuffiscono" - on a T-shirt
+
+* "Non lasciatevi ingannare dalla nostalgia di "quel che poteva essere" Non poteva essere nient'altro, altrimenti lo sarebbe stato"
+
+* "[...] premature optimization is the root of all evil [...]" - Donald Knuth ([Structured Programming with go to Statements](Structured Programming with go to Statements))
+
+* "La cosa peggiore che si possa fare è pensare e riflettere con angoscia a cosa si sarebbe potuto fare." - Found on internet
+
+* "Il vero viaggio di scoperta non consiste nel cercare nuove terre ma nell'avere occhi nuovi". - Marcel Proust

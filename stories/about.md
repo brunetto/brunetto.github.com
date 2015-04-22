@@ -12,6 +12,7 @@
 ... is the main reason because I try to keep this blog alive! Just to save knowledge about useful things to have them when they are needed again.    
 The second is just... to do it because I like the "[technology](../posts/blogging-with-nikola-ipython-github.html)" behind it!:P
 
+
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <g:person href="https://plus.google.com/117554238100031566866" data-rel="author"></g:person>
 
