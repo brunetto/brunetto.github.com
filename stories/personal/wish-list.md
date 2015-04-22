@@ -11,7 +11,7 @@
 
 * [Treppiede Manfrotto MKBFRA4-BH Kit Traveller](http://www.amazon.it/dp/B00COLBNTK/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I32LXQ0UA9IAA5)
 * [Canon 70D + 18-135 stm](http://www.amazon.it/Canon-Fotocamera-Megapixel-Obiettivo-Antracite/dp/B00DSR6OIY/ref=sr_1_1?s=electronics&ie=UTF8&qid=1417527265&sr=1-1&keywords=canon+70d+18-135+stm)
-* ~~Mirrorless?~~
+* ~Mirrorless?~
 * [GoPro Hero 3 Black Edition](http://www.amazon.it/GoPro-Edition-Videocamera-Digitale-Megapixel/dp/B009TCD8V8/ref=wl_it_dp_o_pd_S_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IJJJM59D5RQ6A)
 * [Camera Clip 2](http://www.kickstarter.com/projects/97103764/capture-camera-clip-v2)
 * Flash
@@ -26,7 +26,7 @@
 
 * [Build-On Brick Mug](http://www.thinkgeek.com/product/ee3c/)
 * Drone [1](http://www.amazon.it/DJI-Phantom-Quadricottero-riprese-aeree/dp/B00AGOSQI8/ref=sr_1_1?ie=UTF8&qid=1417527113&sr=8-1&keywords=DJI+Phantom+Aerial+UAV+Drone+Quadcopter+for+GoPro) o [2](http://www.amazon.it/dp/B00D2VJZBO/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I3K9NA428K0NJ2) o [3](http://www.amazon.it/Parrot-AR-Drone-Quadricottero-Edition-Batterie/dp/B00D8UP6I0/ref=sr_1_1?s=toys&ie=UTF8&qid=1417527172&sr=1-1&keywords=parrot+drone) o [4](http://3drobotics.com/solo/)
-* Roller Blade
+* Rollerblade&protezioni
 * [Even a Geek Can Speak: ](http://www.amazon.it/Even-Geek-Can-Speak-Presentation/dp/0978577604/ref=wl_it_dp_o_pC_nS_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IBB6XPF74B57X)
 
 ### Moto
