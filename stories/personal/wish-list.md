@@ -1,7 +1,7 @@
 <!-- 
 .. link: 
 .. description: 
-.. tags: 
+.. tags: wishlist, wish, list
 .. date: 2013/08/25 21:37:43
 .. title: Wish List
 .. slug: wish-list
@@ -27,11 +27,12 @@
 * [Build-On Brick Mug](http://www.thinkgeek.com/product/ee3c/)
 * Drone [1](http://www.amazon.it/DJI-Phantom-Quadricottero-riprese-aeree/dp/B00AGOSQI8/ref=sr_1_1?ie=UTF8&qid=1417527113&sr=8-1&keywords=DJI+Phantom+Aerial+UAV+Drone+Quadcopter+for+GoPro) o [2](http://www.amazon.it/dp/B00D2VJZBO/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=2M78R4SVWDPFF&coliid=I3K9NA428K0NJ2) o [3](http://www.amazon.it/Parrot-AR-Drone-Quadricottero-Edition-Batterie/dp/B00D8UP6I0/ref=sr_1_1?s=toys&ie=UTF8&qid=1417527172&sr=1-1&keywords=parrot+drone) o [4](http://3drobotics.com/solo/)
 * Rollerblade&protezioni
-* [Even a Geek Can Speak: ](http://www.amazon.it/Even-Geek-Can-Speak-Presentation/dp/0978577604/ref=wl_it_dp_o_pC_nS_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IBB6XPF74B57X)
+* [Even a Geek Can Speak](http://www.amazon.it/Even-Geek-Can-Speak-Presentation/dp/0978577604/ref=wl_it_dp_o_pC_nS_nC?ie=UTF8&colid=2M78R4SVWDPFF&coliid=IBB6XPF74B57X)
 
 ### Moto
 
 * Guanti da moto invernali
+* Interfono bluetooth
 
 ## Amazon Wish Lists
 
