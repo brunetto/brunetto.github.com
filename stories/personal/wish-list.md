@@ -21,6 +21,10 @@
 * [Zaino Osprey Aether 70](http://www.amazon.it/Osprey-Aether-70-Zaino-trekking/dp/B00EL15Y6E/ref=sr_1_fkmr0_2?ie=UTF8&qid=1417526738&sr=8-2-fkmr0&keywords=zaino+osprey+70+l) e/o trolley [(questo?)](http://www.kathmandu.co.uk/packs-and-bags/trolleys/terrane-pack-black-graphite.html) 
 * [Giacca escursionismo softshell uomo Bionnassay nera](http://www.decathlon.it/pile-softshell-bionnassay-id_8189747.html) o verde/azzurra/arancione/... (non rosa ecco, magari... :P)
 * [Pantaloni Alpinism Man](http://www.decathlon.it/pantaloni-alpinism-man-id_8010075.html)
+* Materassino autogonfianti compatto e leggero 
+(es: [1](http://www.decathlon.it/materassino-autogonfiante-a200-ultralight-l-id_8195174.html), 
+[2](http://www.ferrino.it/catalog/sacchiletto-e-notte/78200-mat-autog-dream-mat-183x51x2-5-cm))
+
 
 ### Misc & nerding
 
@@ -38,3 +42,4 @@
 
 * [Amazon.it Wish List](http://www.amazon.it/registry/wishlist/2M78R4SVWDPFF)
 * [Amazon.com Wish List](http://amzn.com/w/GU96RWE3H5B0)
+* Buoni Amazon, Decathlon, Smartbox sempre graditi
