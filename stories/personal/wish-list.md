@@ -41,6 +41,7 @@
 * Guanti da moto invernali
 * Interfono bluetooth
 * Borsa serbatoio compatibile fz6-fazer (es: [1](http://www.amazon.it/GIVI-BORSA-SERBATOIO-EA102-TRASF/dp/B00B22OGS2/ref=sr_1_3?ie=UTF8&qid=1429709531&sr=8-3&keywords=borsa+serbatoio+moto))
+* [Ginocchiere](http://www.spidi.com/it/it_it/protezioni-motociclisti/snug-knee.html)
 
 ## Amazon Wish Lists
 

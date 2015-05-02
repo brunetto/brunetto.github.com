@@ -197,3 +197,8 @@ knowledge that went into the process of writing the source code is quite somethi
 * "La cosa peggiore che si possa fare è pensare e riflettere con angoscia a cosa si sarebbe potuto fare." - Found on internet
 
 * "Il vero viaggio di scoperta non consiste nel cercare nuove terre ma nell'avere occhi nuovi". - Marcel Proust
+
+* "God, grant me the serenity to accept the things I cannot change, courage to change the things I can, and wisdom to know the difference." - Reinhold Niebuhr
+ 
+* "It always seems impossible until it's done." - Nelson Mandela
+
