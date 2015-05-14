@@ -23,7 +23,7 @@ PhD advisors: Dr. Michela Mapelli (INAF-OAPd) and Prof. Giuseppe Tormen (Univers
 **Public repository** [https://github.com/brunetto](https://github.com/brunetto)
 **Docker registry** [https://hub.docker.com/u/brunetto](https://hub.docker.com/u/brunetto)
 
-## Education & Emplyment
+## Education & Employment
 
 ### 2015
 * **2015/01-2015/07** INAF-OAPd fellowship to work on the project: "Study of gravitational 
@@ -170,7 +170,7 @@ MSOffice, LibreOffice/OpenOffice, Chrome, Internet Explorer, Firefox, Opera, Out
 
 ### Others
 
-Git (good), MySQL (base)
+Git (good), Docker, LXC containers/LXD, MySQL (base)
 
 ## Other interests
 * Volunteering with [A.G.E.S.C.I.](http://www.agesci.org) and Protezione Civile

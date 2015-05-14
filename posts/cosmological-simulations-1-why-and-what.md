@@ -17,7 +17,7 @@ So, let's start with "Why we need cosmological simulations? What are they?"!<br 
 
 Let's have a look at the night sky: if we are so lucky to be in a dark site like the mountains or a desert, we can see the stars, and our Galaxy, The Milky Way. With a little telescope we can also see other galaxies, like Andromeda. We can find them in group of galaxies or clusters of galaxies. On bigger scales these form sheets and filaments as you can see in the figure (taken from the Millenium simulation).<br />
 <br />
-<img alt="" class="alignnone" height="400" src="http://upload.wikimedia.org/wikipedia/commons/5/58/AstroMSseqF_063aL_%2818135101%29.jpg" title="A figure of the output of the Milleniun Simulation hosted by Wikipedia" width="600" /><br />
+<img alt="" class="alignnone" height="400" src="../files/supercube.jpg" title="A figure of the output of the Milleniun Simulation" width="600" /><br />
 <br />
 Theoretical models, widely accepted, say that these structures formed from initial small density fluctuations in the matter, grew under their self gravity, lead by a special type of matter that can interact only through gravity, called "dark matter".<br />
 <br />

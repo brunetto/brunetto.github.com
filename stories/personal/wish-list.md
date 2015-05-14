@@ -19,8 +19,8 @@
 
 ### Travel
 
-* [Zaino Osprey Aether 70](http://www.amazon.it/Osprey-Aether-70-Zaino-trekking/dp/B00EL15Y6E/ref=sr_1_fkmr0_2?ie=UTF8&qid=1417526738&sr=8-2-fkmr0&keywords=zaino+osprey+70+l) e/o trolley [(questo?)](http://www.kathmandu.co.uk/packs-and-bags/trolleys/terrane-pack-black-graphite.html) 
-* [Giacca escursionismo softshell uomo Bionnassay nera](http://www.decathlon.it/pile-softshell-bionnassay-id_8189747.html) o verde/azzurra/arancione/... (non rosa ecco, magari... :P)
+* [Zaino Osprey Aether 70](http://www.amazon.it/Osprey-Aether-70-Zaino-trekking/dp/B00EL15Y6E/ref=sr_1_fkmr0_2?ie=UTF8&qid=1417526738&sr=8-2-fkmr0&keywords=zaino+osprey+70+l) <s>e/o trolley [(questo?)](http://www.kathmandu.co.uk/packs-and-bags/trolleys/terrane-pack-black-graphite.html) </s>
+* <s>[Giacca escursionismo softshell uomo Bionnassay nera](http://www.decathlon.it/pile-softshell-bionnassay-id_8189747.html) o verde/azzurra/arancione/... (non rosa ecco, magari... :P)</br>
 * [Pantaloni Alpinism Man](http://www.decathlon.it/pantaloni-alpinism-man-id_8010075.html)
 * Materassino autogonfianti compatto e leggero 
 (es: [1](http://www.decathlon.it/materassino-autogonfiante-a200-ultralight-l-id_8195174.html), 

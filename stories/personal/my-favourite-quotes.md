@@ -202,3 +202,12 @@ knowledge that went into the process of writing the source code is quite somethi
  
 * "It always seems impossible until it's done." - Nelson Mandela
 
+* "E l'indignazione è una bellissima cosa, no? Solo che purtroppo non serve a niente." -  Bifo Berardi
+
+* "If you want to go fast, go alone. If you want to go far, go together." - African proverb
+
+* "Doubt kills more dreams than a failure ever will." - Karim Seddiki
+
+
+
+
