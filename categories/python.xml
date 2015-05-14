@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (Python)</title><link>./</link><description></description><atom:link href="categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 10 Jan 2015 01:09:22 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python plot examples</title><link>posts/python-plot-examples.html</link><description>&lt;div&gt;&lt;p&gt;Two examples on how to make plots with &lt;a href="http://home.gna.org/veusz"&gt;Veusz&lt;/a&gt; and 
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>for future reference... (Python)</title><link>./</link><description></description><atom:link href="categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 14 May 2015 17:15:47 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python plot examples</title><link>posts/python-plot-examples.html</link><description>&lt;div&gt;&lt;p&gt;Two examples on how to make plots with &lt;a href="http://home.gna.org/veusz"&gt;Veusz&lt;/a&gt; and 
 &lt;a href="http://matplotlib.org"&gt;Matplotlib&lt;/a&gt;.  &lt;br&gt;
 I prefer Veusz because it's easier to configure, modify and it produces 
 perfect &lt;code&gt;pdf&lt;/code&gt; plots, but sometimes Matplotlib it's faster for producing just 
@@ -8,6 +8,7 @@ a draft plot to inspect data!&lt;/p&gt;
 This means, for example, the public ip address of our modem if we are connected
 to the home Wi-Fi.  &lt;br&gt;
 I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; new vesion &lt;a href="https://github.com/brunetto/fip"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p class="more"&gt;&lt;a href="posts/check-external-ip.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>go</category><category>golang</category><category>Python</category><category>netword</category><category>ip</category><guid>posts/check-external-ip.html</guid><pubDate>Tue, 03 Sep 2013 16:59:56 GMT</pubDate></item><item><title>Second Pelican attempt: creating a blog on GitHub with Pelican</title><link>posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican.html</link><description>&lt;div&gt;&lt;h3&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h3&gt;
 &lt;h5&gt;Suppose that you are curios about GitHub pages... but I don't understand their guide.&lt;/h5&gt;
 &lt;h5&gt;And suppose that you don't like Ruby but prefer Python...&lt;/h5&gt;

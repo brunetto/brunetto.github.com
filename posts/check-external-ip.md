@@ -11,6 +11,9 @@ This is the first attempt to check the external ip of a linux box.
 This means, for example, the public ip address of our modem if we are connected
 to the home Wi-Fi.    
 I will try to do this in Python and Go. Of course these are raw attempts.
+
+**Update:** new vesion [here](https://github.com/brunetto/fip).
+
     
 <!--TEASER_END-->
     
