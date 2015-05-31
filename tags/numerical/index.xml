@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Numerical on Post It!</title>
+    <link>http://localhost:1313/tags/numerical/</link>
+    <description>Recent content in Numerical on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/numerical/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning C from simulations, #3: C horrors!</title>
+      <link>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</guid>
+      <description>&lt;p&gt;Yeah, this is post #3! Post #2 is &amp;ldquo;work in progress&amp;rdquo; and it will be on FFTs!&lt;/p&gt;
+
+&lt;p&gt;Today I was trying to understand what this piece of code do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;for(i = 0; i &amp;lt; Nmesh / 2; i++)
+    {
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[i * Nmesh + j] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[j * Nmesh + i] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[(Nmesh - 1 - i) * Nmesh + j] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[(Nmesh - 1 - j) * Nmesh + i] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[i * Nmesh + (Nmesh - 1 - j)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[j * Nmesh + (Nmesh - 1 - i)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[(Nmesh - 1 - i) * Nmesh + (Nmesh - 1 - j)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[(Nmesh - 1 - j) * Nmesh + (Nmesh - 1 - i)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- TEASER_END --&gt;    
+
+&lt;p&gt;It&amp;rsquo;s a piece of the source of N-GenIC, Springel&amp;rsquo;s ICs generator for &lt;a href=&#34;http://www.gadgetcode.org/right.html&#34; target=&#34;_blank&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. Obviously no comments were present and I have no experience of how those codes work. I know that this is a way to fill the &lt;code&gt;seedtable&lt;/code&gt; array, maybe a matrix that provides random seeds for the FFTs or to generate the [latex]delta[/latex]s for the realization of the density field. This array is stored in 1D so to access the elements we have to do some magic with indices. Trying to understand how the matrix is filled and how the indices works, and to practice with C I&amp;rsquo;ve wrote this piece of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;math.h&amp;gt;
+
+int i = 0, j = 0;
+int N = 10;
+
+int main(int argc, char **argv){
+  for(i = 0; i &amp;lt; N/2; i++){
+    printf(&amp;quot;i = %in&amp;quot;, i);
+    for(j = 0; j &amp;lt; i; j++)
+      printf(&amp;quot;t j= %in&amp;quot;, j);
+      if(!(i * N + j))
+ printf(&amp;quot;j doesn&#39;t existn&amp;quot;);
+      printf(&amp;quot;tt i * Nmesh + j = %in&amp;quot;,  i * N + j);
+  /*
+    a lot of commented code from the code above
+  */
+  }
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The result was&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;i = 0
+j doesn&#39;t exist
+                 i * Nmesh + j = 0
+i = 1
+         j= 0
+                 i * Nmesh + j = 11
+i = 2
+         j= 0
+         j= 1
+                 i * Nmesh + j = 22
+i = 3
+         j= 0
+         j= 1
+         j= 2
+                 i * Nmesh + j = 33
+i = 4
+         j= 0
+         j= 1
+         j= 2
+         j= 3
+                 i * Nmesh + j = 44
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;clearly wrong.&lt;br /&gt;
+So I&amp;rsquo;ve modified the code (thanks to my coworker) to print &lt;code&gt;j&lt;/code&gt; and the expression in both the lines, and the result was&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;i = 0
+j doesn&#39;t exist
+         j= 0, i * Nmesh + j = 0
+i = 1
+         j= 0, i * Nmesh + j = 10
+         j= 1, i * Nmesh + j = 11
+i = 2
+         j= 0, i * Nmesh + j = 20
+         j= 1, i * Nmesh + j = 21
+         j= 2, i * Nmesh + j = 22
+i = 3
+         j= 0, i * Nmesh + j = 30
+         j= 1, i * Nmesh + j = 31
+         j= 2, i * Nmesh + j = 32
+         j= 3, i * Nmesh + j = 33
+i = 4
+         j= 0, i * Nmesh + j = 40
+         j= 1, i * Nmesh + j = 41
+         j= 2, i * Nmesh + j = 42
+         j= 3, i * Nmesh + j = 43
+         j= 4, i * Nmesh + j = 44
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;wrong again!&lt;/p&gt;
+
+&lt;p&gt;The key is the second &lt;code&gt;for&lt;/code&gt; statement, without the brackets. It was difficult to me to see this because C allows a for statement without brackets evaluating only the first line into the loop, and there were a lot of loop of one line commented into the code. The correct code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;math.h&amp;gt;
+
+int i = 0, j = 0;
+int N = 10;
+
+int main(int argc, char **argv){
+  for(i = 0; i &amp;lt; N/2; i++){
+    printf(&amp;quot;i = %in&amp;quot;, i);
+    for(j = 0; j &amp;lt; i; j++){
+      printf(&amp;quot;t j= %i, i * Nmesh + j = %in&amp;quot;, j, i * N + j);
+      if(!(i * N + j))
+ printf(&amp;quot;j doesn&#39;t existn&amp;quot;);
+      printf(&amp;quot;t j= %i, i * Nmesh + j = %in&amp;quot;, j, i * N + j);
+  /*
+    a lot of commented code from the code above
+  */
+    }
+  }
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;works right!&lt;br /&gt;
+Obviously the Python version I&amp;rsquo;ve wrote before was perfect the first time I wrote it.!:P In Python, due to the mandatory indentation (and without those terrible brackets!:P) it&amp;rsquo;s straightforward to understand what belong to a loop and what doesn&amp;rsquo;t!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

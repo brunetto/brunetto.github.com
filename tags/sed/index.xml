@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sed on Post It!</title>
+    <link>http://localhost:1313/tags/sed/</link>
+    <description>Recent content in Sed on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sed/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Change a line in all of your files at once</title>
+      <link>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <description>&lt;p&gt;Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.&lt;br /&gt;
+With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39; *.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

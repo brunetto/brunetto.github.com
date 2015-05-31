@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>For Dummies on Post It!</title>
+    <link>http://localhost:1313/tags/for-dummies/</link>
+    <description>Recent content in For Dummies on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/for-dummies/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AGN for Dummies</title>
+      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
+
+&lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/very_unified_model_bck.png&#34;&gt;&lt;img alt=&#34;AGN for Dummies&#34; src=&#34;../../files/very_unified_model_bck.png&#34; title=&#34;AGN for Dummies&#34; width=&#34;800&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Post It!</title>
+    <link>http://localhost:1313/tags/installation/</link>
+    <description>Recent content in Installation on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jun 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Best Golang installation</title>
+      <link>http://localhost:1313/posts/best-golang-installation/</link>
+      <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/best-golang-installation/</guid>
+      <description>&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&#34;&gt;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&#34;&gt;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Assuming you already have the correct environment and you are on an ubuntu workstation.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download and install &lt;code&gt;godeb&lt;/code&gt; if you haven&amp;rsquo;t already done.&lt;/li&gt;
+&lt;li&gt;Then with &lt;code&gt;godeb list&lt;/code&gt; and godeb install &lt;version&gt; install your favourite Go version (the last, obviously!:P).&lt;/li&gt;
+&lt;li&gt;To be able to cross-compile with the new installed Go:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo -i
+cd /usr/local/go/src
+git clone git://github.com/davecheney/golang-crosscompile.git
+source golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;done.&lt;/p&gt;
+
+&lt;p&gt;If you need a non-root installation or want to do everything from scratch it is
+just easy as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://go.googlesource.com/go
+cd go
+git checkout go1.4.1 # or the latest release
+cd src
+./all.bash
+git clone git://github.com/davecheney/golang-crosscompile.git
+source golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
+cd ../../
+mv go goroot
+mkdir -p gopath/bin
+mkdir -p gopath/docs
+mkdir -p gopath/pkg
+mkdir -p gopath/src/github.com/$USER # here you will put your github project sources
+echo &amp;quot;export GOROOT=/home/$USER/goroot&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+echo &amp;quot;export GOPATH=/home/$USER/gopath&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StarLab (GPU) old guide</title>
+      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <description>
+
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+
+&lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
+
+&lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- TEASER_END --&gt;
+
+&lt;h2 id=&#34;sapporo:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;Sapporo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in setup_sapporo.sh change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(installation of the binary drivers from the NVIDIA site) to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
+paths in&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
+#/usr/local/cuda-5.0
+CUDASDKPATH := /usr/lib/nvidia-cuda-toolkit/include/
+#/usr/local/cuda-5.0/samples/common/inc
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)
+# RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;puth &lt;code&gt;multithreading.h&lt;/code&gt; in the sapporo folder and then in &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;multithreading.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
+obtain something like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/bin/rm -rf *.o *.cu_o libsapporo.a
+/bin/rm -rf test_gravity_block test_gravity_N2ngb
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
+sapporo.cpp: In member function ‘int sapporo::open(int)’:
+sapporo.cpp:40:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+
+*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+ Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
+ar: creating libsapporo.a
+a - GPUWorker.o
+a - sapporo.o
+a - send_fetch_data.o
+a - sapporoG6lib.o
+a - host_evaluate_gravity.cu_o
+ranlib libsapporo.a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to test the compilation run&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_N2ngb 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_block 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the test fail if the number is less than ~800.&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;StarLab&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;change configure CUDA lines:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and change local/grape.sh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+
+# CUDAINC=&amp;quot;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;quot; 
+# CUDALIB=&amp;quot;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;quot; 
+
+LIBS1=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+
+#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1
+
+# Where to find GRAPE libraries:
+# GRAPE_LDFLAGS_=&#39;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&#39;
+GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;make clean&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;./configure --without-fortran&lt;/code&gt; (&lt;code&gt;--without-f77&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;now you can find the &lt;code&gt;kira&lt;/code&gt; binary in &lt;code&gt;/usr/local/bin&lt;/code&gt; or&lt;code&gt;/usr/bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./kira -t 500 -d 1 -D 1 -b 1 \
+             -n 10 -e 0.000 -B   \
+	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
+	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
+	 2&amp;gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

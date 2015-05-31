@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Astrocomputing on Post It!</title>
+    <link>http://localhost:1313/tags/astrocomputing/</link>
+    <description>Recent content in Astrocomputing on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/astrocomputing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Astrocomputing &amp; Astrostatistics</title>
+      <link>http://localhost:1313/pages/research/astrocomputing/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/astrocomputing/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro&#34;&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt;
+also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

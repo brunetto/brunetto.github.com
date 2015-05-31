@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Cosmological simulations #7: Limitations and some considerations // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Cosmological simulations #7: Limitations and some considerations" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/cosmological-simulations-7-limitations-and-some-considerations/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#limitations:be6e6b0278d604ddee51c801f8740b2c">Limitations</a></li>
+<li><a href="#some-considerations:be6e6b0278d604ddee51c801f8740b2c">Some considerations</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/cosmological-simulations-7-limitations-and-some-considerations/">Cosmological simulations #7: Limitations and some considerations</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>13</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Nov</span> <span class="post-date-year">2011</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f&title=Cosmological%20simulations%20%237%3a%20Limitations%20and%20some%20considerations&summary=%3ch2%20id%3d%22limitations%3abe6e6b0278d604ddee51c801f8740b2c%22%3eLimitations%3c%2fh2%3e%0a%0a%3cp%3eIn%20the%20previous%20posts%20we%20encountered%20some%20of%20the%20limitations%20of%20cosmological%3cbr%20%2f%3e%0asimulations.%20Let%26rsquo%3bs%20review%20these%20in%20detail.%3cbr%20%2f%3e%0aFirst%2c%20we%20can%20consider%20a%20simulation%20composed%20of%20a%20finite%20box%20in%20a%20bigger%20space%20but%20to%20represent%20a%20real%20system%2c%20this%20box%20shouldn%26rsquo%3bt%20be%20isolated%20so%20we%20use%20the%20periodic%20boundary%20conditions%20%28%3ca%20href%3d%22http%3a%2f%2fbrunettoziosi.blogspot.it%2f2011%2f11%2fcosmological-simulations-2-how.html%22%20target%3d%22_blank%22%20title%3d%22Cosmological%20simulations%20%232%3a%c2%a0how%3f%22%3ehere%3c%2fa%3e%29.%20This%20means%20that%20all%20the%20space%20around%20the%20box%20is%20filled%20with%20images%20of%20the%20box%20itself%3a%20a%20particle%20that%20leaves%20the%20box%20from%20one%20side%20will%20come%20in%3cbr%20%2f%3e%0afrom%20the%20opposite%20side.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Cosmological%20simulations%20%237%3a%20Limitations%20and%20some%20considerations&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<h2 id="limitations:be6e6b0278d604ddee51c801f8740b2c">Limitations</h2>
+
+<p>In the previous posts we encountered some of the limitations of cosmological<br />
+simulations. Let&rsquo;s review these in detail.<br />
+First, we can consider a simulation composed of a finite box in a bigger space but to represent a real system, this box shouldn&rsquo;t be isolated so we use the periodic boundary conditions (<a href="http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html" target="_blank" title="Cosmological simulations #2: how?">here</a>). This means that all the space around the box is filled with images of the box itself: a particle that leaves the box from one side will come in<br />
+from the opposite side.</p>
+
+<p>Second, the mass inside the box is not continuous. Instead, it is made by particles of mass of the order of $10^9$ solar masses. These particles represent collisionless fluid elements (made by a huge quantity of real particles) with a certain<br />
+volume and can&rsquo;t be treated as solid spheres. When two simulation particles are<br />
+separated by a distance smaller than the radius of the volumes they represents<br />
+they must feel less than the force coming from the entire mass (thanks to the<br />
+Gauss/Birkhoff&rsquo;s theorem). To do this we soften (read &ldquo;we reduce&rdquo;) the force at<br />
+such small scales (<a href="http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html" target="_blank" title="Cosmological simulations #2: how?">here</a>). Third, time is not continuous and its discreteness was also treated (<a href="http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-4-moving.html" target="_blank" title="Cosmological simulations: #4: Moving the particles!">here</a>) with some<br />
+criteria to decide the time steps.<br />
+Until now, however, we haven&rsquo;t consider the effects of taking into account<br />
+initial density fluctuations over a range of scales that is finite. In<br />
+addition to this, the finite size of the box pose a limit on the force<br />
+resolution, because fluctuations on scales bigger than the box side will not<br />
+included in the simulation due to the way the Fourier transforms act on a<br />
+period box. Some tests in literature show that the exclusion of small<br />
+scales shouldn&rsquo;t affect too much large scales when they reach the non linear<br />
+regime but this not holds for the exclusion of large scales, those scales bigger<br />
+than the box side. Following Bagla, the large scale exclusion should not<br />
+disturb the formation of small haloes but could change their distribution.<br />
+This effect will appear as an underestimation of the correlation function. Bagla<br />
+finds that the best way of quantifying the effects of long wave modes is to<br />
+check whether including them in the simulation will change the number of<br />
+massive haloes or not and this can be estimated using the Press-Schecther mass<br />
+function.<br />
+In Tormen&amp;Bertschinger (1996) the missing power on large scales will cause<br />
+something like a statistical cosmic bias decreasing the number of high-density<br />
+regions, the strength of the clustering and the amplitude of the peculiar<br />
+velocities.<br />
+Methods have been developed to take the missing &ldquo;larger than the box&rdquo; wave modes<br />
+into account and we will have a look on these in a future post.</p>
+
+<h2 id="some-considerations:be6e6b0278d604ddee51c801f8740b2c">Some considerations</h2>
+
+<p>As we have seen (<a href="http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-1-why-and-what.html" target="_blank" title="Cosmological simulations #1: why and what?">here</a>) N-body cosmological simulations<br />
+are useful to understand aspects of non-linear gravitational clustering,<br />
+since it&rsquo;s not possible to carry out laboratory experiments in gravitational<br />
+dynamics and the analytic models fail when the system reach the non linear<br />
+regime, i.e. when the density contrast overcome the unity. Related with<br />
+cosmological simulations there are a pair of aspects that Bagla underlines in its<br />
+articles that interesting to consider.<br />
+The first issue is whether or not the gravitational clustering<br />
+erase memory of initial conditions. Is there a one-to-one correspondence between<br />
+some characterization of initial perturbations and the final state?<br />
+N-body simulations shows that gravitational clustering does not erase memory of<br />
+the initial conditions, the final power spectrum is a function of the initial<br />
+power spectrum and this relationship can be written as a one-step mapping and<br />
+the functional form of this mapping depends on the initial power spectrum.<br />
+However density profiles of massive haloes have a form independent of<br />
+initial conditions but there is a considerable scatter in density profiles<br />
+obtained from N-body simulations and it is difficult to state whether a given<br />
+functional form is always the best fit or not. I must admit that these last concepts are not very clear to me at the moment, and that I trust Bagla but I will deepen them as soon as possible to be able to comfortably master them.<br />
+The second question is if it is possible to predict the masses and distribution<br />
+of haloes that form as a result of gravitational clustering.<br />
+The initial density field is taken to be a Gaussian random field and for<br />
+hierarchical models the simple assumption that each peak undergoes collapse<br />
+independent of the surrounding density distribution can be used to estimate the<br />
+mass function and several related quantities but N-body simulations shows that<br />
+this simple set of approximations is incorrect. However, the resulting mass<br />
+function estimation is fairly accurate over a wide range of masses. Merger rates<br />
+can be thus computed using the extended Press-Schecther formalism. Modifying<br />
+some of this assumption can lead to improved predictions.</p>
+
+<p><em>References</em>:<br />
+<ul><br />
+<li><a href="http://www.ias.ac.in/currsci/apr102005/1088.pdf" target="_blank" title="J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status">J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status</a></li>
+<li><a href="http://adsabs.harvard.edu/abs/1991ComPh...5..164B" target="_blank" title="J.S. Bagla and T. Padmanabham, Cosmological N-body simulations">J.S. Bagla and T. Padmanabham, Cosmological N-body simulations</a></li>
+<li><a href="http://iopscience.iop.org/0004-637X/472/1/14" target="_blank" title="G. Tormen and E. Bertschinger, Adding long wavelenght modes to an N-body simulation">Giuseppe Tormen and Edmund Bertschinger, Adding long wavelenght modes to an N-body simulation</a></li>
+<li><a href="http://adsabs.harvard.edu/full/1997MNRAS.286...38C" target="_blank" title="S. Cole, Adding long-wavelength power to N-body simulations">S. Cole, Adding long-wavelength power to N-body simulations</a></li>
+</ul></p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f&title=Cosmological%20simulations%20%237%3a%20Limitations%20and%20some%20considerations&summary=%3ch2%20id%3d%22limitations%3abe6e6b0278d604ddee51c801f8740b2c%22%3eLimitations%3c%2fh2%3e%0a%0a%3cp%3eIn%20the%20previous%20posts%20we%20encountered%20some%20of%20the%20limitations%20of%20cosmological%3cbr%20%2f%3e%0asimulations.%20Let%26rsquo%3bs%20review%20these%20in%20detail.%3cbr%20%2f%3e%0aFirst%2c%20we%20can%20consider%20a%20simulation%20composed%20of%20a%20finite%20box%20in%20a%20bigger%20space%20but%20to%20represent%20a%20real%20system%2c%20this%20box%20shouldn%26rsquo%3bt%20be%20isolated%20so%20we%20use%20the%20periodic%20boundary%20conditions%20%28%3ca%20href%3d%22http%3a%2f%2fbrunettoziosi.blogspot.it%2f2011%2f11%2fcosmological-simulations-2-how.html%22%20target%3d%22_blank%22%20title%3d%22Cosmological%20simulations%20%232%3a%c2%a0how%3f%22%3ehere%3c%2fa%3e%29.%20This%20means%20that%20all%20the%20space%20around%20the%20box%20is%20filled%20with%20images%20of%20the%20box%20itself%3a%20a%20particle%20that%20leaves%20the%20box%20from%20one%20side%20will%20come%20in%3cbr%20%2f%3e%0afrom%20the%20opposite%20side.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Cosmological%20simulations%20%237%3a%20Limitations%20and%20some%20considerations&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcosmological-simulations-7-limitations-and-some-considerations%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-astro/physics" href="http://localhost:1313//tags/astro/physics">astro/physics</a>,
+	                
+	                <a class="post-tag post-tag-cosmic-structure" href="http://localhost:1313//tags/cosmic-structure">cosmic structure</a>,
+	                
+	                <a class="post-tag post-tag-cosmology" href="http://localhost:1313//tags/cosmology">Cosmology</a>,
+	                
+	                <a class="post-tag post-tag-master-thesis" href="http://localhost:1313//tags/master-thesis">Master Thesis</a>,
+	                
+	                <a class="post-tag post-tag-millennium" href="http://localhost:1313//tags/millennium">Millennium</a>,
+	                
+	                <a class="post-tag post-tag-n-body" href="http://localhost:1313//tags/n-body">N-body</a>,
+	                
+	                <a class="post-tag post-tag-simulation" href="http://localhost:1313//tags/simulation">simulation</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/cosmological-simulations-3-force-calculation/">Cosmological simulations #3: force calculation!</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/phd-question-1-m/">PhD question #1: M*</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

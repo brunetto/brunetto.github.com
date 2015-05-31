@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gadget on Post It!</title>
+    <link>http://localhost:1313/tags/gadget/</link>
+    <description>Recent content in Gadget on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gadget/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The initial condition saga</title>
+      <link>http://localhost:1313/posts/the-initial-condition-saga/</link>
+      <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/the-initial-condition-saga/</guid>
+      <description>
+
+&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
+The first things I have understood banging against them were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Gadget requires initial conditions (ICs) generate by (for example) N-GenIC&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;N-GenIC requires an initial power spectrum from CMBFast that is no longer used&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CMBeasy should substitute CMBFast but it doesn&amp;rsquo;t, it only works for CMB anisotropies&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CAMB should substitute CMBFast&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34; target=&#34;_blank&#34; title=&#34;CAMB online interface&#34;&gt;CAMB interface&lt;/a&gt;&amp;nbsp;is terrible and not very documentated&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;camb:62c9ecd742ba00d6577ca64643723f05&#34;&gt;CAMB&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start with the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34; target=&#34;_blank&#34; title=&#34;CAMB online&#34;&gt;main CAMB interface&lt;/a&gt;. If you, like me, need an initial power spectrum as input for your ICs generator you are interested in just few options of the interface. First, you should select &amp;ldquo;Transfer functions&amp;rdquo; from the &amp;ldquo;Actions to Perform&amp;rdquo; section. You can leave the default selection on &amp;ldquo;Scalar Cl&amp;rsquo;s&amp;rdquo; and &amp;ldquo;Linear&amp;rdquo;. After that, check the &amp;ldquo;Cosmological Parameters&amp;rdquo; section if it&amp;rsquo;s ok for you and maybe, leave the default &amp;ldquo;Initial Scalar Perturbation Mode&amp;rdquo; that is &amp;ldquo;Adiabatic&amp;rdquo;. The last things you should be interested in are the maximum $k$, for me it is $10^4$, &amp;ldquo;k per logint&amp;rdquo; (it should be something like the k-sampling, for me, 50), the number of redshift (1) and the (transfer) redshift (0). Now select between &amp;ldquo;Interpolated Grid&amp;rdquo; or &amp;ldquo;Calculated Values&amp;rdquo; (this parameter switch between and interpolated regular grid in log k or array at actual computed values that are better for later re-interpolation, according with the CAMB README) and choose if you want high precision computation. When you have finished you can click on &amp;ldquo;Go!&amp;rdquo;. What you obtain is a page with some links to download:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;camb_*.ini&lt;/code&gt;: the configuration file to run the standalone CAMB code on your own&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*.log&lt;/code&gt;: the calculation log&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_scalcls.dat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_scalcls.fits&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt;: this is the file containing the transfer functions for CDM, baryon, photon, massless neutrino, massive neutrinos, and total (massive) respectively as function of $k$&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_matterpower_z0.dat&lt;/code&gt;: it contains the conventionally normalized matter power spectrum (for baryons+cdm+massive neutrinos), in h/Mpc units&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;where &lt;code&gt;*&lt;/code&gt; is a number that identifies the computation and z0 can be different if you choose to use a different redshift.&lt;br /&gt;
+You can use &lt;code&gt;camb_*_matterpower_z0.dat&lt;/code&gt; as normalized input power spectrum or you can calculate (also as a check) it on you own using the first and the last column of &lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt;. You should use the last column because DM simulations represents with DM particles all the mass, included that of the baryons, so the initial power spectrum should be the total power spectrum.&lt;br /&gt;
+If you want to understand better how CAMB works you can try to read the &lt;a href=&#34;http://camb.info/readme.html&#34; title=&#34;CAMB README&#34;&gt;CAMB README&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Initial power spectrum theory&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here some theory if you want to understand how to calculate the power spectrum on your own. Maybe it is well-known and trivial, but for me it wasn&amp;rsquo;t and, like many of the trivial and well-known things in (not only) cosmology, it&amp;rsquo;s not easy to find anywhere.&lt;br /&gt;
+So, the spectrum is defined as $P(k) = A k^n T(k)^2$, where $n$ is the &amp;ldquo;primordial spectral index&amp;rdquo; and is taken near the unity. This is a &amp;ldquo;scale-fee&amp;rdquo; spectrum. $T(k)$ is the transfer function that give a synthetic and parametric description of how the initial spectrum survive to the microphysic. $A=\left[\frac{D(z&lt;em&gt;{fin})}{D(z&lt;/em&gt;{in})}\right]^2$ is the amplitude.&lt;br /&gt;
+The normalization of the spectrum is given by the value of &amp;nbsp;$\sigma&lt;em&gt;8$, that is the mean square amplitude of the density field filtered on the scale of 8 Mpc/h. This values comes from the &amp;lsquo;80s, when Peebles and others (Davis &amp;amp; Peebles 1983) measured $\sigma&lt;/em&gt;{galaxies}$ and $\sigma&lt;em&gt;{gal}(R=8)\sim1$ so they took that values as reference.&lt;br /&gt;
+$\sigma_8$ is defined by $\sigma^2&amp;reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$ with $R=8\mathrm{Mpc/h}$ and $\tilde W(kR)$ the Fourier transform of the window (filter) function, usually a top-hat in the positions space.&lt;br /&gt;
+The last thing we need to know to obtain the spectrum is the value of the amplitude, and it can be find by imposing its value so that $\sigma_8$ has a certain (observed) value.&lt;br /&gt;
+Because&lt;br /&gt;
+$$\sigma^2&amp;reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR) = \int \mathrm{d}^3k Ak^nT^2(k))\tilde W(kR)$$&lt;br /&gt;
+we have&lt;br /&gt;
+$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$.&lt;br /&gt;
+Usually $A_0$ is calculated for $\sigma_8=1$ and then scaled with $A = A_0\sigma^2&lt;/em&gt;{8;obs}$ where $\sigma_{8;obs}$ is the observed values for $\sigma_8$. With the last observations we have $\sigma_8 = 0.8118405$.&lt;/p&gt;
+
+&lt;p&gt;Just to have an idea you can do these computation with a simple python code. The code below compare the computation done in Python with the values from &lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt; with the normalized power spectrum from &lt;code&gt;camb_*_matterpower_z0.dat&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load data
+transfer = np.genfromtxt(&#39;camb_88704620_transfer_out_z0.dat&#39;, usecols = (0,6))
+matterpower = np.genfromtxt(&#39;camb_88704620_matterpower_z0.dat&#39;)
+
+# Python calculations
+camb_k = transfer[:,0]
+camb_tf = transfer[:,1] 
+R = 8 #Mpc/h
+s_8 = 0.8118405
+sp_ind = 1
+
+# Define the FT of the window function
+def FTW(R, k):
+  return 3*(np.sin(k*R)-k*R*np.cos(k*R)) / (k*R)**3
+
+# camb_k**(2+sp_ind) that is k^(2+n) because d^3k=4\pi k^2dk
+amp_integrand = camb_k**(2+sp_ind)*camb_tf**2 * FTW(8, camb_k)**2
+amp_integral = integrate.trapz(amp_integrand, camb_k)
+amp_0 = 2*np.pi**2/amp_integral
+amp = amp_0*s_8**2
+spectrum = camb_k**sp_ind*camb_tf**2 * amp
+
+ax = fig.add_subplot(111)
+ax.set_title(&#39;Fortran/Python CDM initial power spectrum&#39;)
+ax.set_xlabel(&#39;k&#39;)
+ax.set_ylabel(&#39;P(k)&#39;)
+ax.set_xscale(&#39;log&#39;)
+ax.set_yscale(&#39;log&#39;)
+
+ax.plot(transfer[:,0], spectrum[:], color = &amp;quot;magenta&amp;quot;, 
+           linestyle = &#39;-&#39;, marker = &#39;&#39;, label = &amp;quot;* python amp&amp;quot;) 
+ax.plot(matterpower[:,0], matterpower[:,1], color = &amp;quot;black&amp;quot;, 
+            linestyle = &#39;--&#39;, marker = &#39;&#39;, label = &amp;quot;matterpower&amp;quot;)
+ax.legend(loc=&#39;best&#39;)
+ax.grid(True)
+
+# Adjust figure size and save
+fig.set_size_inches(20, 20)
+plt.savefig(&#39;camb_f90_py_check&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The result is this&lt;/p&gt;
+
+&lt;p&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../camb_f90_py_check.png&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img alt=&#34;Initial power spectrum&#34; class=&#34;size-medium wp-image-524&#34; height=&#34;550&#34; src=&#34;../files/camb_f90_py_check.png?w=300&#34; title=&#34;CAMB vs Python calculated initial power spectrum&#34; width=&#34;600&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;&lt;span style=&#34;font-size: x-small; text-align: -webkit-auto;&#34;&gt;CAMB vs Python calculated initial power spectrum&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+If you want you can check the power spectrum we have obtained by integrating it to find $\sigma_8$:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;sigma_integrand = camb_k**2 * spectrum * FTW(8, camb_k)**2
+s_8_check = pow(integrate.trapz(sigma_integrand, camb_k)/(2*np.pi**2), 0.5)
+print &amp;quot;s_8_calculated&amp;quot;, s_8_check
+print &amp;quot;s_8 observed&amp;quot;, s_8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;obtaining&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ziosi@uno:~/Code/spettro_CMB$ ./CAMB_check_plot.py
+s_8_calculated 0.8118405
+s_8 observed 0.8118405
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;N-GenIC&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have the initial power spectrum ready for the ICs generator. After N-GenIC have been compiled (try to read &lt;a href=&#34;http://brunettoziosi.blogspot.it/2012/01/my-first-gadget2-tests.html&#34; target=&#34;_blank&#34; title=&#34;My first Gadget2 tests&#34;&gt;this&lt;/a&gt; if you have compilation problems related to the parallel double precision FFTW libraries or if you want to know how to customize the Makefile) we should have a look at the configuration file.&lt;br /&gt;
+We are interested in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Nmesh&lt;/code&gt;: the size (=the number of nodes) of the FFT grid used to compute the displacement field, should be &lt;code&gt;Nmesh&lt;/code&gt; $\geq$&amp;nbsp;&lt;code&gt;Nsample&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Nsample&lt;/code&gt;: this is the maximum k that the code uses, i.e. this effectively determines the Nyquist frequency that the code assumes, $k_{Nyquist} = 2\cdot PI/Box \cdot  Nsample/2$ Normally, one chooses &lt;code&gt;Nsample&lt;/code&gt; such that $Ntot =  Nsample^3$, where &lt;code&gt;Ntot&lt;/code&gt; is the total number of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist frequency of Nsample, so it&amp;rsquo;s good if $Nmesh = 2\cdot Nsample$&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ReNormalizeInputSpectrum&lt;/code&gt;: set it to 0 because we are going to use the previous spectrum that is already normalized, if you don&amp;rsquo;t remember this the code will have integration problems&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TileFac&lt;/code&gt;: it represents how many times you need to tile the glass file (for each dimension) to cover the number of particles you want to use. The glass file contains 4097 particles. Glass particles positions will be automatically stretched to cover the box dimension. When you download N-GenIC you find $Nsample = 128$ and $TileFac = 8$, this is because the total number of particles is $Ntot = Nsample^3 = 128^3=2097125$ and the number of glass particles is $TileFac^3\cdot Nglass = 8^3\cdot 4096 = 2097125$. In practice, if you want to know what &lt;code&gt;TileFac&lt;/code&gt; should be, and you have &lt;code&gt;Ntot&lt;/code&gt; particles in you simulation, &lt;code&gt;TileFac&lt;/code&gt; will be $\frac{Ntot^{&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;}}{4096} = \frac{Nsample}{4096}$.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;WhichSpectrum&lt;/code&gt;: let you choose if you want to use an internal spectrum (calculated with a function) or the spectrum from CAMB&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FileWithInputSpectrum&lt;/code&gt;: it&amp;rsquo;s, obviously, the name of the file containing the spectrum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The other parameters are cosmological parameters or are related to the folders, the name and the number of files, the parallelization and to the internal measure units.&lt;br /&gt;
+Other options are (more or less) documented with comments in the code or in the README.&lt;br /&gt;
+We can now start N-GenIC with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -np 2  ./N-GenIC  ics.param
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;-np&lt;/code&gt; let you set the number of processors you want to use in parallel.&lt;br /&gt;
+Before using the output files with gadget we should open those and calculate the power spectrum to check that this realization of it is a good one. This problem arise because of the sampling of the k-space where few modes are available, but I will deepen on those matter in a future post.&lt;br /&gt;
+There is also an improved version of N-GenIC, 2LPTIC, but it need a different installation of the FFTW so I didn&amp;rsquo;t try it.&lt;/p&gt;
+
+&lt;p&gt;Many of these things can be found &lt;a href=&#34;http://www.annualreviews.org/doi/abs/10.1146/annurev.astro.36.1.599&#34; target=&#34;_blank&#34; title=&#34;Bertschinger, Simulations of structure formation in the universe&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My first Gadget2 tests</title>
+      <link>http://localhost:1313/posts/my-first-gadget2-tests/</link>
+      <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/my-first-gadget2-tests/</guid>
+      <description>
+
+&lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
+
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+
+&lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
+Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;amp;lt;archive name&amp;amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd gsl-1.9/
+goldbaum@~/Documents/code/gsl-1.9: ./configure
+snip: lots of diagnostic ouput
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: cd ..
+goldbaum@~/Documents/code: cd fftw-2.1.5
+goldbaum@~/Documents/code/fftw-2.1.5: ./configure --enable-mpi --enable-type-prefix --enable-float
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As described &lt;a href=&#34;http://www.fftw.org/fftw2_doc/fftw_6.html#SEC69&#34; target=&#34;_blank&#34; title=&#34;FTTW installation and customization&#34;&gt;here&lt;/a&gt; is convenient to install both the single and the double precision version of the FFTW (for example to compile the initial conditions generators) with (that is, without &lt;code&gt;--enable-float&lt;/code&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd fftw-2.1.5
+goldbaum@~/Documents/code/fftw-2.1.5: ./configure --enable-mpi --enable-type-prefix
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;play-with-gadget2:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Play with Gadget2&lt;/h2&gt;
+
+&lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
+To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;
+
+&lt;p&gt;Inside the Gadget directory we have&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Analysis
+AUTHORS
+COPYING
+COPYRIGHT
+Documentation
+Gadget2
+ICs
+README
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the &lt;code&gt;Analysis&lt;/code&gt; folder we can fin some analysis routines provided by the author, the &lt;code&gt;Documentation&lt;/code&gt; folder contains the user guide and the original paper, and the &lt;code&gt;AUTHORS, COPYING, COPYRIGHT&lt;/code&gt; self-explanatory. The &lt;code&gt;ICs&lt;/code&gt; folder contains the initial conditions for the example simulations and the &lt;code&gt;Gadget2&lt;/code&gt; folder contains the sources and the html documentation.&lt;/p&gt;
+
+&lt;p&gt;To be tidy and organized is better to have a folder for every simulations, so we will create a (descriptive) with everything we need to customize&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir 2012-01-07-Gadget2-galaxy_test_01
+cd 2012-01-07-Gadget2-galaxy_test_01
+mkdir out
+cp ../ICs/galaxy_littleendian.dat ./
+cp ../Gadget2/parameterfiles/galaxy.param ../Gadget2/parameterfiles/galaxy.Makefile ./
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the folder Gadget2 we can find the general &lt;code&gt;Makefile&lt;/code&gt; but for now let&amp;rsquo;s use the galaxy&amp;rsquo;s one provided by the author and just copied to our position. Open it with your preferred text editor (for example, in a command line environment, &lt;code&gt;emacs -nw Makefile&lt;/code&gt;).&lt;br /&gt;
+This &lt;code&gt;Makefile&lt;/code&gt; is already customized for the galaxy collision simulation and if you want to understand every option you can read the description in the guide, but we need some more customization. Here what I&amp;rsquo;ve changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;OPT   +=  -DHAVE_HDF5  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so I activate the HDF5 format for the output and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#--------------------------------------- Select target computer
+
+SYSTYPE=&amp;quot;Uno&amp;quot;
+\#SYSTYPE=&amp;quot;MPA&amp;quot;
+\#SYSTYPE=&amp;quot;Mako&amp;quot;
+\#SYSTYPE=&amp;quot;Regatta&amp;quot;
+\#SYSTYPE=&amp;quot;RZG_LinuxCluster&amp;quot;
+\#SYSTYPE=&amp;quot;RZG_LinuxCluster-gcc&amp;quot;
+\#SYSTYPE=&amp;quot;Opteron&amp;quot;
+
+\#--------------------------------------- Adjust settings for target computer
+
+ifeq ($(SYSTYPE),&amp;quot;Uno&amp;quot;)
+CC       =  mpicc   
+OPTIMIZE =  -O3 -Wall
+GSL_INCL =  -I/usr/local/include
+GSL_LIBS =  -L/usr/local/lib
+FFTW_INCL=  -I/usr/local/include
+FFTW_LIBS=  -L/usr/local/lib
+MPICHLIB =  -L/usr/lib
+HDF5INCL =  
+HDF5LIB  =  -lhdf5 -lz 
+endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to select the set the options for my system.&lt;br /&gt;
+Now we have to customize the &lt;code&gt;run/galaxy.param&lt;/code&gt; file changing it like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;InitCondFile      ./galaxy_littleendian.dat
+OutputDir          ./galaxy_out/
+OutputListFilename ./out/output_list.txt
+SnapFormat         3  %to select the HDF5 format
+TimeBegin           0.0        % Begin of the simulation
+TimeMax             40.0        % End of the simulation
+
+% Output frequency
+TimeBetSnapshot        0.1% original 0.5 &amp;lt;/pre&amp;gt;
+    
+    
+Now we should go to the sources folder and compile the code with    
+&amp;lt;pre&amp;gt;cd ../Gadget2
+make -f 2012-01-07-Gadget2-galaxy_test_01/galaxy.Makefile
+cp Gadget2 ../2012-01-07-Gadget2-galaxy_test_01/Gadget2
+make clean
+cd 2012-01-07-Gadget2-galaxy_test_01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last command clean the build leaving only the sources files, so we are ready for a new build.&lt;br /&gt;
+We can also create a script for automatize all this steps, something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+dir=$1
+ics=$2
+param_file=$3
+mk_file=$4
+CPUs=$5
+
+if [ $# -lt 5 ] ; then
+  echo &amp;quot;usage: gadget_set directory_name initial_conditions_file
+parameters_file make_file number_of_CPUs&amp;quot;
+  exit 0
+fi
+
+echo &amp;quot;Assuming to use $dir as the run folder,&amp;quot; 
+echo &amp;quot;$ics as initial conditions,&amp;quot;
+echo &amp;quot;$paramfile as parameter file, &amp;quot;
+echo &amp;quot;$mk_file as makefile &amp;quot;
+echo &amp;quot;and to run on $CPUs CPUs.&amp;quot;
+
+mkdir $dir
+cd $dir
+mkdir out
+cp ../ICs/$ics ./
+cp ../Gadget2/parameterfiles/$param_file
+../Gadget2/parameterfiles/mk_file ./
+cd ../Gadget2
+make -f ../$dir/$mk_file
+cp Gadget2 ../$dir/Gadget2
+make clean
+cd $dir
+mpirun -np $CPUs ./Gadget2 $param_file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a very raw and untested script, but it&amp;rsquo;s just to give an idea.&lt;/p&gt;
+
+&lt;p&gt;Now we are ready to start the simulation with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpirun -np 2 ./Gadget2 galaxy.param
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;-np&lt;/code&gt; sets the number of processes/processors to be used in parallel.&lt;br /&gt;
+When the simulation stops we can analyze it with the tools provided in the &lt;code&gt;Analysis&lt;/code&gt; folder or, if you like me don&amp;rsquo;t own an IDL license and don&amp;rsquo;t feel comfortable with IDL/Fortran/C for the data analysis, with something like (to be run in out/plots/):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/use/bin/env python
+import sys, os
+from subprocess import Popen, PIPE
+from multiprocessing import Process, Queue
+
+import numpy as np
+import tables as tb
+import time
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+&amp;quot;&amp;quot;&amp;quot;This script will plot in parallel the .h5 snapshots created by Gadget2 test
+runs one after the other!:).
+FIXME: i need a way to wait for the final time count the end of the processes
+and a way to print the status
+&amp;quot;&amp;quot;&amp;quot;
+
+# Set the max number of processes
+n_procs = 3
+
+# Set the number of snapshot to be plotted
+n_snap = 401
+
+t = time.time()
+
+print &amp;quot;Defining workers...&amp;quot;
+
+def worker(input, output):
+    while input.qsize() != 0:
+        item = input.get()
+        if item[0]= 10 and item[0]&amp;amp;lt;100: j=&amp;quot;0&amp;quot;+str(item[0])
+        else: j=str(item[0])
+        try:
+#     print &amp;quot;considering file ../snapshot_&amp;quot;+j+&amp;quot;.hdf5&amp;quot;
+#     print &amp;quot;open file &amp;quot;
+            h5 = tb.openFile(&amp;quot;../snapshot_&amp;quot;+j+&amp;quot;.hdf5&amp;quot;, &#39;r&#39;)
+#     print &amp;quot;file opened, set variables&amp;quot;
+            halo = h5.root.PartType1
+            disk = h5.root.PartType2
+#            print &amp;quot;setted, inizialize figure&amp;quot;
+            fig2 = plt.figure()
+            ax = Axes3D(fig2)
+            ax.scatter(disk.Coordinates[:,0], 
+                       disk.Coordinates[:,1],
+                       disk.Coordinates[:,2],
+                       color=&#39;red&#39;, s=0.5)
+            ax.scatter(halo.Coordinates[:,0], 
+                       halo.Coordinates[:,1],
+                       halo.Coordinates[:,2],
+                       color=&#39;blue&#39;, s=0.01)
+            plt.savefig(&#39;snap_&#39;+j)
+#            print &amp;quot;done, closing file&amp;quot;
+            h5.close()  
+#            print &amp;quot;closed&amp;quot;
+
+        except:
+            print &amp;quot;Work &amp;quot;+j+&amp;quot; not done, exit...&amp;quot;
+            sys.exit()
+
+def fill_queue(task_queue):
+    for i in range(n_snap):
+        task_queue.put([i])
+    return task_queue
+
+def status(proc):
+    if proc.is_alive==True:
+        return &#39;alive&#39;
+    elif proc.is_alive==False:
+        return &#39;dead&#39;
+    else:
+        return proc.is_alive()
+
+print &amp;quot;Define queues...&amp;quot;
+
+input_queue = Queue()
+output_queue = Queue()
+
+try:
+    input_queue = fill_queue(input_queue)
+except:
+    print &amp;quot;Queue not filled, exit...&amp;quot;
+    sys.exit()
+
+procs = []
+
+try:
+    for i in range(n_procs):
+        procs.append(Process(target=worker, args=(input_queue,
+output_queue)))
+except:
+    print &amp;quot;Creating processes not complete, exit...&amp;quot;
+    sys.exit()
+
+try:
+    for i in procs:
+        i.start()
+except:
+    print &amp;quot;Start processes not complete, exit...&amp;quot;
+    sys.exit()
+
+for i in procs:
+    print &amp;quot;Process &amp;quot;, i,&amp;quot; @ &amp;quot; , i.pid, &amp;quot; is &amp;quot;, status(i)
+
+print &amp;quot;Done in &amp;quot;+str(time.time()-t)+&amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have one image for each snapshot, and if we are interested we can produce a video with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mencoder mf://*.png -mf fps=25:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -vf scale=720:360 -oac copy -o output.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;youtube http://www.youtube.com/watch?v=b7HyafKMkxI&amp;amp;amp;w=560&amp;amp;amp;h=315&#34;&gt;This&lt;/a&gt; is the first basic video, with logarithmic time and perhaps there&amp;rsquo;s something wrong with the coordinates on the axes.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

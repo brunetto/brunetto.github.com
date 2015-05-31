@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference on Post It!</title>
+    <link>http://localhost:1313/tags/reference/</link>
+    <description>Recent content in Reference on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git references</title>
+      <link>http://localhost:1313/pages/tech/git-references/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/git-references/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/ignoring-files&#34;&gt;Ignoring files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/matze/distributed-version-control-and-why-you-want-to-use-it&#34;&gt;How to use GIT (easy)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cwiki.apache.org/confluence/display/FLEX/Good+vs+Bad+Git+usage&#34;&gt;Good vs Bad Git usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book&#34;&gt;Git Book&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nyuccl.org/pages/GitTutorial/&#34;&gt;Git tutorial&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Untrack files&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git rm --cached file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove files from all the repo history&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git filter-branch -f --index-filter &#39;git rm --cached --ignore-unmatch filename&#39; HEAD
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;force a push&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git push origin master --force
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go(lang) references</title>
+      <link>http://localhost:1313/pages/tech/golang-references/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/golang-references/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../posts/go-installation-from-source.html&#34;&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.kamilkisiel.net/blog/2012/07/05/using-the-go-regexp-package/&#34;&gt;Regex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&#34;&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golangcookbook.blogspot.it/&#34;&gt;Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/StefanSchroeder/Golang-Regex-Tutorial&#34;&gt;Tutorial 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/&#34;&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/&#34;&gt;http://golang.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&#34;&gt;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.golang-book.com/&#34;&gt;http://www.golang-book.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html&#34;&gt;Why it was creates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/golang-nuts&#34;&gt;https://groups.google.com/forum/#!forum/golang-nuts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/golem/&#34;&gt;https://code.google.com/p/golem/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gonum&#34;&gt;https://github.com/gonum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://plus.google.com/+golang/posts&#34;&gt;https://plus.google.com/+golang/posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://plus.google.com/communities/115354877257015196825&#34;&gt;https://plus.google.com/communities/115354877257015196825&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.darkcoding.net/software/pretty-command-line-console-output-on-unix-in-python-and-go-lang/&#34;&gt;Progress bar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/log4go/&#34;&gt;Advanced logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/zen.slide&#34;&gt;Zen Slide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.repustate.com/migrating-code-from-python-to-golang-what-you-need-to-know/2013/04/23/&#34;&gt;What Python developers need to know before migrating to Go(lang)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uberpython.wordpress.com/2012/09/23/why-im-not-leaving-python-for-go/&#34;&gt;Why I’m not leaving Python for Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang-for-python-programmers.readthedocs.org/en/latest/&#34;&gt;Golang for Python programmers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://s3.amazonaws.com/golangweekly/go_for_pythonistas.pdf&#34;&gt;Go for Pythonistas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/&#34;&gt;Go by example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/&#34;&gt;Going Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.syntax-k.de/projekte/go-review&#34;&gt;The Go Programming Language, or: Why all C-like languages except one suck.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://crypto.stanford.edu/~blynn/c2go/index.html&#34;&gt;c2go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://devcry.heiho.net/2012/04/golang-way-to-go.html?m=1&#34;&gt;Golang: The Way To Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.darkcoding.net/software/go-lang-after-four-months/&#34;&gt;Go after four months #golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&#34;&gt;GoDeb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://merbist.com/2011/06/27/golang-reflection-exampl/&#34;&gt;Reflection example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://log.zyxar.com/blog/2012/04/08/go-lang-notes/&#34;&gt;Golang notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://learnxinyminutes.com/docs/go/&#34;&gt;http://learnxinyminutes.com/docs/go/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://soniacodes.wordpress.com/&#34;&gt;Sonia Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.pheelicks.com/&#34;&gt;http://www.pheelicks.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/chat.slide#1&#34;&gt;Chatroulette like mini demo in Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.menfin.info/Presentations/20120709_Golang_introduction/#slide1&#34;&gt;Welcome to the nice world of Golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://nf.wh3rd.net/10things/&#34;&gt;10 things you (probably) don&amp;rsquo;t know about Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://godoc.org/code.google.com/p/go.tools/present&#34;&gt;Present package docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lagomeetup/talks&#34;&gt;Some talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/&#34;&gt;Going go programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang-examples.tumblr.com/&#34;&gt;Golang(Go Language) Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang-samples&#34;&gt;GoLang Samples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.golangbootcamp.com/book/frontmatter&#34;&gt;GolangBootCamp Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!topic/golang-nuts/FCcLsuWsF_U&#34;&gt;Slice of structs vs map o structs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2013/go4python.slide&#34;&gt;go4python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tech.t9i.in/2013/01/why-program-in-go/&#34;&gt;Why I Program in Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/25382073/defining-golang-struct-function-using-pointer-or-not&#34;&gt;Defining golang struct function using pointer or not&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18435498/why-are-receivers-pass-by-value-in-go/18436251#18436251&#34;&gt;Why are receivers pass by value in Go?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;web-server:37888898512b69ee3a39b7d785691d7e&#34;&gt;Web Server&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.joshsoftware.com/2014/03/12/learn-to-build-and-deploy-simple-go-web-apps-part-one/&#34;&gt;Learn to build and deploy simple Go Web Apps, Part One&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/articles/wiki/&#34;&gt;http://golang.org/doc/articles/wiki/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image&#34;&gt;http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ljgww/web_server_example_in_Go_-golang-&#34;&gt;https://github.com/ljgww/web_server_example_in_Go_-golang-&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://robfig.github.io/revel/&#34;&gt;http://robfig.github.io/revel/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://thechangelog.com/on-go-web-application-ecosystem/&#34;&gt;http://thechangelog.com/on-go-web-application-ecosystem/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;goroutines-and-pooling:37888898512b69ee3a39b7d785691d7e&#34;&gt;Goroutines and Pooling&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&#34;&gt;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/worker-pools&#34;&gt;https://gobyexample.com/worker-pools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dancallahan.info/journal/go-concurrency/&#34;&gt;http://dancallahan.info/journal/go-concurrency/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.labix.org/2011/10/09/death-of-goroutines-under-control&#34;&gt;http://blog.labix.org/2011/10/09/death-of-goroutines-under-control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.golang.org/share-memory-by-communicating&#34;&gt;http://blog.golang.org/share-memory-by-communicating&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/codewalk/sharemem/&#34;&gt;http://golang.org/doc/codewalk/sharemem/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18267460/golang-goroutine-pool&#34;&gt;http://stackoverflow.com/questions/18267460/golang-goroutine-pool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dave.cheney.net/tag/golang-3&#34;&gt;http://dave.cheney.net/tag/golang-3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/pkg/log/#Logger&#34;&gt;http://golang.org/pkg/log/#Logger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/2013/11/using-log-package-in-go.html&#34;&gt;http://www.goinggo.net/2013/11/using-log-package-in-go.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/concurrency.slide&#34;&gt;Go Concurrency Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2013/advconc.slide&#34;&gt;Advanced Go Concurrency Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/waza.slide&#34;&gt;Concurrency is not Parallelism&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;efficiency:37888898512b69ee3a39b7d785691d7e&#34;&gt;Efficiency&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dennisforbes.ca/index.php/2013/07/23/the-most-powerful-feature-of-go-is-the-least-sexy&#34;&gt;The Most Powerful Feature of Go Is The Least Sexy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

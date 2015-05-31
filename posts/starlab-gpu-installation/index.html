@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    StarLab-GPU installation // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="StarLab-GPU installation" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/starlab-gpu-installation/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#starlab:3362ac2b0400c3c64983ad8b2d9efef3">StarLab</a></li>
+<li><a href="#starlab-gpu:3362ac2b0400c3c64983ad8b2d9efef3">StarLab-GPU</a>
+<ul>
+<li>
+<ul>
+<li><a href="#download:3362ac2b0400c3c64983ad8b2d9efef3">Download</a></li>
+</ul></li>
+<li><a href="#sapporo:3362ac2b0400c3c64983ad8b2d9efef3">Sapporo</a></li>
+<li><a href="#starlab-1:3362ac2b0400c3c64983ad8b2d9efef3">StarLab</a></li>
+<li><a href="#run-starlab:3362ac2b0400c3c64983ad8b2d9efef3">Run StarLab</a>
+<ul>
+<li><a href="#initial-conditions:3362ac2b0400c3c64983ad8b2d9efef3">Initial Conditions</a></li>
+<li><a href="#launch:3362ac2b0400c3c64983ad8b2d9efef3">Launch</a></li>
+<li><a href="#tidal-fields:3362ac2b0400c3c64983ad8b2d9efef3">Tidal fields</a></li>
+</ul></li>
+<li><a href="#known-issues-and-troubleshooting:3362ac2b0400c3c64983ad8b2d9efef3">Known issues and Troubleshooting</a></li>
+<li><a href="#clusters:3362ac2b0400c3c64983ad8b2d9efef3">Clusters</a>
+<ul>
+<li><a href="#eurora:3362ac2b0400c3c64983ad8b2d9efef3">EURORA</a></li>
+<li><a href="#green-ii-hpc-system-swinburne-university:3362ac2b0400c3c64983ad8b2d9efef3">Green II HPC system @ Swinburne University</a></li>
+</ul></li>
+<li><a href="#additional-material:3362ac2b0400c3c64983ad8b2d9efef3">Additional material</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/starlab-gpu-installation/">StarLab-GPU installation</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>20</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2013</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f&title=StarLab-GPU%20installation&summary=%3cul%3e%0a%3cli%3e%3ca%20href%3d%22..%2fstories%2fresearch%2futils%2fstarlab-gpu-old-guide.html%22%3eClick%20here%20for%20the%20old%20guide%21%21%21%3c%2fa%3e%3cbr%20%2f%3e%3c%2fli%3e%0a%3cli%3e2014%2f09%2f16%3a%20updated%20with%20installation%20instruction%20for%20g2%40Swinburne%20and%20some%20troubleshooting.%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%3a%3c%2fstrong%3e%20if%20you%20want%20to%20compile%20starlab%20%3cstrong%3ewithout%20GPU%20support%3c%2fstrong%3e%2c%20you%20only%20need%20to%3c%2fp%3e%0a%0a%3cul%3e%0a%3cli%3eignore%20the%20%26ldquo%3b%3ccode%3esapporo%3c%2fcode%3e%26rdquo%3b%20%20and%20%26ldquo%3b%3ccode%3eCUDA%3c%2fcode%3e%26rdquo%3b%20instructions%3c%2fli%3e%0a%3cli%3erename%20%3ccode%3estarlab%2flocal%2fgrape.sh%3c%2fcode%3e%20to%20%3ccode%3estarlab%2flocal%2f_grape.sh%3c%2fcode%3e%3c%2fli%3e%0a%3cli%3esubstitute%20%3ccode%3econfigure%20--without-f77%3c%2fcode%3e%20with%20%3ccode%3econfigure%20--with-grape%3dno%20--without-f77%3c%2fcode%3e%29%3c%2fli%3e%0a%3cli%3ein%20case%20you%20can%26rsquo%3bt%20%3ccode%3emake%3c%2fcode%3e%20succesfully%20may%20be%20you%20need%20to%20copy%20the%20folder%0a%3ccode%3estarlab%2fsrc%2fgfx%3c%2fcode%3e%20and%20do%20not%20make%20clean%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3eWell%2c%20probably%20you%20landed%20here%20searching%20information%20about%20StarLab%2c%20how%20to%0ainstall%20it%2c%20how%20to%20run%20it%2c%20how%20prevent%20it%20to%20harm%20your%20cat.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%201%3a%3c%2fstrong%3e%20I%20won%26rsquo%3bt%20promise%20anything%20about%20your%20cat%20but%20I%20will%20try%20to%20help%20you%20having%20a%0areasonable%20well%20running%20installation%20of%20StarLab.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%202%3a%3c%2fstrong%3e%20I%26rsquo%3bm%20not%20a%20programmer%2c%20I%26rsquo%3bm%20not%20a%20system%20administrator%20and%20I%20don%26rsquo%3bt%20even%0aknow%20how%20to%20program%20in%20CUDA%20%28yet%29.%20Maybe%20something%20here%20is%20wrong%20ore%20outdated.%0aI%26rsquo%3bm%20only%20giving%20you%20some%20of%20the%20experienced%20I%20collected%20in%20n%2b1%20times%20I%20installed%20StarLab.%0aNothin%20less%2c%20nothing%20more.%3cbr%20%2f%3e%0aAlso%20note%20that%20most%20of%20the%20knowledge%20I%20put%20here%20come%0afrom%20my%20%3ca%20href%3d%22http%3a%2f%2fweb.pd.astro.it%2fmapelli%2f%22%3esupervisor%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20also%20thanks%20Mario%20Spera%20for%20the%20usefull%20advices.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%203%3a%3c%2fstrong%3e%20StarLab%20still%20seems%20to%20%3cstrong%3ealways%3c%2fstrong%3e%20crash%20if%20you%20try%20to%20simulate%20a%20system%0awith%20more%20than%20~6000%20binaries.%3c%2fp%3e%0a%0a%3ch2%20id%3d%22starlab%3a3362ac2b0400c3c64983ad8b2d9efef3%22%3eStarLab%3c%2fh2%3e%0a%0a%3cp%3e%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eStarLab%3c%2fa%3e%20is%20%26ldquo%3bA%20Software%20Environment%20for%20Collisional%20Stellar%20Dynamics%26rdquo%3b.%0a%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eHere%3c%2fa%3e%20you%20can%20find%20useful%20information%20about%20it%20that%0ais%20not%20useful%20to%20rewrite%20here%2c%20so%20have%20a%20look%20and%20then%20come%20back%21%3a%29%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=StarLab-GPU%20installation&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<ul>
+<li><a href="../stories/research/utils/starlab-gpu-old-guide.html">Click here for the old guide!!!</a><br /></li>
+<li>2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.</li>
+</ul>
+
+<hr />
+
+<p><strong>UPDATE:</strong> if you want to compile starlab <strong>without GPU support</strong>, you only need to</p>
+
+<ul>
+<li>ignore the &ldquo;<code>sapporo</code>&rdquo;  and &ldquo;<code>CUDA</code>&rdquo; instructions</li>
+<li>rename <code>starlab/local/grape.sh</code> to <code>starlab/local/_grape.sh</code></li>
+<li>substitute <code>configure --without-f77</code> with <code>configure --with-grape=no --without-f77</code>)</li>
+<li>in case you can&rsquo;t <code>make</code> succesfully may be you need to copy the folder
+<code>starlab/src/gfx</code> and do not make clean</li>
+</ul>
+
+<hr />
+
+<p>Well, probably you landed here searching information about StarLab, how to
+install it, how to run it, how prevent it to harm your cat.</p>
+
+<p><strong>DISCLAIMER 1:</strong> I won&rsquo;t promise anything about your cat but I will try to help you having a
+reasonable well running installation of StarLab.</p>
+
+<p><strong>DISCLAIMER 2:</strong> I&rsquo;m not a programmer, I&rsquo;m not a system administrator and I don&rsquo;t even
+know how to program in CUDA (yet). Maybe something here is wrong ore outdated.
+I&rsquo;m only giving you some of the experienced I collected in n+1 times I installed StarLab.
+Nothin less, nothing more.<br />
+Also note that most of the knowledge I put here come
+from my <a href="http://web.pd.astro.it/mapelli/">supervisor</a>.<br />
+I also thanks Mario Spera for the usefull advices.</p>
+
+<p><strong>DISCLAIMER 3:</strong> StarLab still seems to <strong>always</strong> crash if you try to simulate a system
+with more than ~6000 binaries.</p>
+
+<h2 id="starlab:3362ac2b0400c3c64983ad8b2d9efef3">StarLab</h2>
+
+<p><a href="http://www.sns.ias.edu/~starlab/">StarLab</a> is &ldquo;A Software Environment for Collisional Stellar Dynamics&rdquo;.
+<a href="http://www.sns.ias.edu/~starlab/">Here</a> you can find useful information about it that
+is not useful to rewrite here, so have a look and then come back!:)</p>
+
+<h2 id="starlab-gpu:3362ac2b0400c3c64983ad8b2d9efef3">StarLab-GPU</h2>
+
+<p>Welcome back!!<br />
+Next step: StarLab was designed to run on <a href="http://en.wikipedia.org/wiki/Gravity_Pipe">GRAPE</a>
+but thanks to the <a href="http://castle.strw.leidenuniv.nl/software/sapporo.html">Sapporo</a>
+library you can run it on GPUs.</p>
+
+<p>Now we will try to install a GPU-ready version of StarLab. To be honest, we run
+a <strong>private</strong> version of StarLab for GPU with some customizations (if you are interested,
+see <a href="http://arxiv.org/abs/1211.6441">Mapelli et al. 2013</a>; <a href="http://arxiv.org/abs/1301.4227">Mapelli &amp; Bressan 2013</a>).<br />
+Unfortunately you can&rsquo;t download it now, but I hope the differences in the installation
+process are negligible. Ask us if you are interested in our version of StarLab.<br />
+Because I&rsquo;m not sure about what you will find in the public version os Sapporo and StarLab,
+I will show my version of the relevant files you need to install everything.
+The installation is done on a Ubuntu 14.04 workstation so change them accordingly to
+your OS. I will also provide some examples on what you need to install StarLab on
+the clusters I tested.</p>
+
+<p>Let&rsquo;s start!!</p>
+
+<h4 id="download:3362ac2b0400c3c64983ad8b2d9efef3">Download</h4>
+
+<p>Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
+You can try to check them using</p>
+
+<ul>
+<li><code>locate cuda | grep nvcc</code> (cuda compiler)</li>
+<li><code>locate cuda | grep include</code></li>
+<li><code>locate cuda | grep include | grep toolkit</code> (for the SDK files of the new release)</li>
+<li><code>locate cuda | grep lib | grep cudart</code> (CUDA runtime)</li>
+<li><code>locate cuda | boost lib</code></li>
+<li><code>locate cuda | boost include</code></li>
+</ul>
+
+<p>It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it&rsquo;s a mess,
+but it&rsquo;s not my fault!:P</p>
+
+<p>Download</p>
+
+<ul>
+<li><a href="http://www.sns.ias.edu/~starlab/download/starlab.tar.gz">StarLab</a></li>
+<li><a href="http://castle.strw.leidenuniv.nl/documents/Sapporo/sapporo161.tgz">Sapporo</a></li>
+</ul>
+
+<p>and decompress the archives with <code>tar -xvf archiveName</code>.<br />
+Try to have the following folder tree:</p>
+
+<ul>
+<li><code>$SLPATH/slpack</code></li>
+<li><code>$SLPATH/slpack/NVIDIA</code></li>
+<li><code>$SLPATH/slpack/NVIDIA/NVIDIA_CUDA-5.0_Samples</code></li>
+<li><code>$SLPATH/slpack/NVIDIA/NVIDIA_GPU_Computing_SDK</code></li>
+<li><code>$SLPATH/slpack/sapporo</code></li>
+<li><code>$SLPATH/slpack/starlab</code></li>
+</ul>
+
+<p>The NVIDIA folder is optional, but I would suggest to have with you alle the NVIDIA
+file you can find, soon or later you will need them. CUDA is continuosly changing,
+SDK is not toolkit, dependencies are different and broken between different versions.
+We will try to survive and to have the most standard installation we can.</p>
+
+<p><code>$SLPATH</code> should be the path where you put your StarLab installation.<br />
+I&rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.</p>
+
+<h3 id="sapporo:3362ac2b0400c3c64983ad8b2d9efef3">Sapporo</h3>
+
+<p>Enter in the sapporo folder, and to be sure to start a clean installation run
+<code>make clean</code>.
+Here you need to find:</p>
+
+<ul>
+<li><code>Makefile</code></li>
+<li><code>compile.sh</code></li>
+<li><code>host_evaluate_gravity.cu</code></li>
+</ul>
+
+<p><code>compile.sh</code> is the script StarLab will run later to decide if you are worthy of
+its presence in your computer. If <code>compile.sh</code> fail, StarLab won&rsquo;t install.</p>
+
+<p>You also need to find somewhere (= in an old CUDA SKD?)</p>
+
+<ul>
+<li><code>cutil.h</code></li>
+<li><code>multithreading.h</code></li>
+</ul>
+
+<p>and to copy them in this folder.<br />
+If you are not able to find them, ask me, I have copies of those files.</p>
+
+<p>Open <code>host_evaluate_gravity.cu</code> and change</p>
+
+<pre><code class="language-C">#include &lt;cutil.h&gt;
+#include &lt;multithreading.h&gt;
+</code></pre>
+
+<p>to</p>
+
+<pre><code class="language-C">#include &quot;cutil.h&quot;
+#include &quot;multithreading.h&quot;
+</code></pre>
+
+<p>This is to make Sapporo read the local version of <code>cutil.h</code> and <code>multithreading.h</code>
+in case your CUDA version does not support them anymore.</p>
+
+<p>It&rsquo;s time to fix a bug (thanks Mario):
+in <code>sapporo.cpp</code> change</p>
+
+<pre><code class="language-c++">		fprintf(stderr, &quot;\n&quot;);
+		nCUDAdevices = how_many;
+    } else {
+		fprintf(stderr,&quot; sapporo::open - no config file is found \n&quot;);
+		fprintf(stderr,&quot;  using all %d CUDA device(s), nj_max= %d\n&quot;, nCUDAdevices, nj_max);
+		//Set original_how_many to a positive number so we get assigned different devices
+		//incase the devices are not in compute exclusive mode.
+		original_how_many = 1;
+  }
+</code></pre>
+
+<p>to</p>
+
+<pre><code class="language-c++">		fprintf(stderr, &quot;\n&quot;);
+		nCUDAdevices = how_many;
+		fclose(fd); // thanks Mario Spera, without this SL will crash after a while if using sapporo.config
+  } else {
+    fprintf(stderr,&quot; sapporo::open - no config file is found \n&quot;);
+    fprintf(stderr,&quot;  using all %d CUDA device(s), nj_max= %d\n&quot;, nCUDAdevices, nj_max);
+    //Set original_how_many to a positive number so we get assigned different devices
+    //incase the devices are not in compute exclusive mode.
+    original_how_many = 1;
+    }
+</code></pre>
+
+<p>so the <code>sapporo.config</code> file can be close and won&rsquo;t crash your run.</p>
+
+<p>Now open <code>Makefile</code> and fit</p>
+
+<pre><code class="language-Makefile">CXX  := g++
+CC   := gcc
+NVCC := /usr/bin/nvcc
+CUDAPATH    := /usr/include/
+CUDAINCLUDE := -I$(CUDAPATH) 
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+</code></pre>
+
+<p>to your case.<br />
+Open <code>compile.sh</code> and be sure to have something like this:</p>
+
+<pre><code class="language-bash">#!/bin/sh
+
+flags=-DNGB
+
+CUDAINC=&quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&quot;
+CUDALIB=&quot;-L/usr/lib/x86_64-linux-gnu/&quot;
+CUDAFLAG=&quot;-lcudart&quot;
+BOOSTINC=&quot;-I/usr/include/boost&quot;
+BOOSTLIB=&quot;-L/usr/lib/x86_64-linux-gnu/&quot;
+BOOSTFLAG=&quot;-lboost_system -lboost_thread -lpthread&quot;
+
+
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+</code></pre>
+
+<p>Try to compile with <code>make</code>. If it works, try to tun <code>bash compile.sh</code>. If this works too,
+then test sapporo with</p>
+
+<ul>
+<li><code>./test_gravity_block 800</code></li>
+<li><code>./test_gravity_block 800</code></li>
+</ul>
+
+<p>Be aware that a number (of particles) too small would crash the tests.</p>
+
+<p>Assuming <code>sapporo</code> is ready, let&rsquo;s move to starlab.</p>
+
+<h3 id="starlab-1:3362ac2b0400c3c64983ad8b2d9efef3">StarLab</h3>
+
+<p>In StarLab the relevant files you have to worry about are</p>
+
+<ul>
+<li><code>sbin/sqrt.c</code></li>
+<li><code>configure</code></li>
+<li><code>local/grape.sh</code></li>
+</ul>
+
+<p>Rename <code>sbin/sqrt.c</code> to <code>sbin/sqrt.C</code> otherwise
+you could have linker problems again the C math library.<br />
+Now open <code>configure</code> and search for CUDA. Probably you won&rsquo;t find anything.<br />
+Search for <code>Check all named libraries for g6_open</code>, you should find something like</p>
+
+<pre><code class="language-bash">#   Check all named libraries for g6_open() (GRAPE-6).
+
+    grape6=no
+
+    for gl in $GRAPE_LIBS_; do
+        as_ac_Lib=`echo &quot;ac_cv_lib_${gl/-l/}''_g6_open_&quot; | $as_tr_sh`
+echo &quot;$as_me:$LINENO: checking for g6_open_ in -l${gl/-l/}&quot; &gt;&amp;5
+</code></pre>
+
+<p>modify it to include boost and CUDA like:</p>
+
+<pre><code class="language-bash">for gl in $GRAPE_LIBS_; do
+	CUDAINC=&quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&quot;
+	CUDALIB=&quot;-L/usr/lib/x86_64-linux-gnu/&quot;
+	CUDAFLAG=&quot;-lcudart&quot;
+	BOOSTINC=&quot;-I/usr/include/boost/&quot;
+	BOOSTLIB=&quot;-L/usr/lib/x86_64-linux-gnu/&quot;
+	BOOSTFLAG=&quot;-lboost_system -lboost_thread -lpthread&quot;
+	
+	LIBS=&quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&quot;
+		
+	as_ac_Lib=`echo &quot;ac_cv_lib_${gl/-l/}''_g6_open_&quot; | $as_tr_sh`
+</code></pre>
+
+<p>Be sure to always use double quotes and to terminate the paths to folders with a slash (<code>/</code>),
+some machines are quite choosy.</p>
+
+<p>Last edit is on <code>local/grape.sh</code> to let StarLab know where your sapporo installation is:</p>
+
+<pre><code class="language-bash">GRAPE_LDFLAGS_='-L$SLPATH/slpack/sapporo'
+GRAPE_LIBS_='-lsapporo'
+# For now, define this as `yes' for the AMD64 boxes only, `no' otherwise.
+OLD_READ_NEIGHBOUR_LIST=no
+</code></pre>
+
+<p>Before compiling, if you want, you can check also <code>sapporo/sapporo.config</code>.<br />
+Inside you will find something like that:</p>
+
+<pre><code class="language-bash">524288
+-1
+0
+1
+</code></pre>
+
+<p>where 524288 should be the maximum number of particles you can handle, -1 the number
+of CUDA devices to use (-1 means all? maybe&hellip;), 0 and 1 are the GPU number you want to use.<br />
+Recent CUDA seems to be smart enought to understand where to run without having to specify
+(but look after your cat!!!).</p>
+
+<p>Alright!! If you managed to reach this point, very good. Last three commands. In the
+<code>starlab</code> folder run</p>
+
+<ul>
+<li><code>configure --with-f77=no</code></li>
+<li><code>make</code></li>
+</ul>
+
+<p>go out for a walk</p>
+
+<ul>
+<li><code>make install</code></li>
+</ul>
+
+<p>When running configure, avoid the <code>--without-option</code> version of an option, prefer
+<code>--with-option=no</code>, it&rsquo;s safer.</p>
+
+<p>If you recompile StarLab AND/OR Sapporo, type <code>make clean</code> two times. delete the files in
+<code>starlab/usr/bin</code>, turn around 3 times, touch your nose and type <code>make</code> two times. Then
+<code>make install</code> again.<br />
+No, <code>make clean</code> and <code>make</code> are not enought to update your object
+files or binaries.</p>
+
+<p>Depending on your environment, if you run into problems, be sure that:</p>
+
+<ul>
+<li>you loaded the correct modules (if you are in a cluster for examples</li>
+<li>you are into the right node (some machine let you compile your code on a
+node that is not the login node)</li>
+<li>if you encounter strange messages regarding missing rules for missing files,
+for example <code>libxhdyn.la</code> or something regarding <code>gfx</code>-something, may be tou need to
+tune your config file to exclude, for example, the X/Qt/&hellip; libraries, in case
+try to run <code>configure --with-f77=no --with-qt=no</code>; in case try to have a look at
+<code>configure --help</code></li>
+</ul>
+
+<h3 id="run-starlab:3362ac2b0400c3c64983ad8b2d9efef3">Run StarLab</h3>
+
+<p>Before run a simulation you need to create the initial conditions.</p>
+
+<h4 id="initial-conditions:3362ac2b0400c3c64983ad8b2d9efef3">Initial Conditions</h4>
+
+<p>StarLab is provided with few tools to help (really?) you in this task. A common
+way to create ICs for <a href="http://arxiv.org/abs/1404.7147">our simulations</a> is something like:</p>
+
+<p><code>&lt;ehm, I don't know if I can tell you, sorry man...:(&gt;</code></p>
+
+<h4 id="launch:3362ac2b0400c3c64983ad8b2d9efef3">Launch</h4>
+
+<p>StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
+you want to know about your simulations to STDERR, so, <code>&lt;ehm.... see ICs&gt;</code></p>
+
+<h4 id="tidal-fields:3362ac2b0400c3c64983ad8b2d9efef3">Tidal fields</h4>
+
+<p>Be patience&hellip;</p>
+
+<h3 id="known-issues-and-troubleshooting:3362ac2b0400c3c64983ad8b2d9efef3">Known issues and Troubleshooting</h3>
+
+<p>If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.<br />
+Some of the things that can happen are:</p>
+
+<ul>
+<li>you can find binaries with eccentricity greater than one (StarLab does
+not update some binaries after they are disrupted? flybyes seen as binaries? don&rsquo;t know)</li>
+<li>StarLab can crash if you try to simulate a number of centers of mass greater than
+5*10^4 together with a fraction of primordial binaries &gt;=0.1</li>
+<li>boost problems? check the correct flags for your version (choose among some combination of
+<code>-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread</code>)</li>
+<li>check you put all the <code>_</code>, &ldquo;-I&rdquo;, &ldquo;-l&rdquo;, &ldquo;-L&rdquo; in the right places</li>
+<li>check all the libraries paths</li>
+<li>check for double quotes (<code>&quot;</code>) instead of single ones (<code>'</code>) in the paths</li>
+<li>check the modules, environment variables</li>
+<li>check you are on the right node</li>
+<li>check your environment against the configure options you passed
+(have a look at <code>configure --help</code>)</li>
+<li>if you need to modify StarLab and you want to add your own flags,
+you need to comment</li>
+</ul>
+
+<pre><code class="language-c++">  getia(b-&gt;get_log_story(), &quot;step_slow&quot;,
+        b-&gt;get_kira_counters()-&gt;step_slow, nss);
+</code></pre>
+
+<p>function call in <code>kira_counters.C</code> otherwise you won&rsquo;t be able to compile StarLab.</p>
+
+<h3 id="clusters:3362ac2b0400c3c64983ad8b2d9efef3">Clusters</h3>
+
+<h4 id="eurora:3362ac2b0400c3c64983ad8b2d9efef3">EURORA</h4>
+
+<ul>
+<li>in <code>setup_sapporo.sh</code>
+(if you want to compile sapporo using queues, or, load modules by hand if you want to
+compile interactively)</li>
+</ul>
+
+<pre><code class="language-bash">module purge
+module load profile/advanced
+module load gnu/4.6.3
+module load boost/1.53.0--gnu--4.6.3
+module load cuda
+
+LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
+export LD_LIBRARY_PATH
+cd $HOME/slPack/sapporo
+</code></pre>
+
+<ul>
+<li>in <code>compile.sh</code></li>
+</ul>
+
+<pre><code class="language-bash">CUDAINC=&quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include/ -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc/ -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&quot;
+CUDALIB=&quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lcudart&quot;
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
+</code></pre>
+
+<ul>
+<li>in <code>Makefile</code></li>
+</ul>
+
+<pre><code class="language-bash">NVCC := /cineca/prod/compilers/cuda/5.0.35/none/bin/nvcc
+CUDAPATH    := /cineca/prod/compilers/cuda/5.0.35/none
+CUDASDKPATH := /cineca/prod/compilers/cuda/5.0.35/none/samples
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)/common/inc 
+BOOSTPATH := /cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include
+</code></pre>
+
+<ul>
+<li>in <code>configure</code></li>
+</ul>
+
+<pre><code class="language-bash">CUDAINC=&quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&quot;
+CUDALIB=&quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -lcudart&quot; 
+LIBS=&quot;$CUDAINC $CUDALIB -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lboost_thread-mt -DNGB&quot;
+</code></pre>
+
+<ul>
+<li>in <code>grape.sh</code></li>
+</ul>
+
+<pre><code class="language-bash">GRAPE_LDFLAGS_='-L$HOME/slPack/sapporo/'
+GRAPE_LIBS_='-lsapporo'
+
+</code></pre>
+
+<ul>
+<li>in <code>setup_starlab.sh.sh</code>
+(if you want to compile sapporo using queues, or, load modules by hand if you want to
+compile interactively)</li>
+</ul>
+
+<pre><code class="language-bash">module purge
+module load profile/advanced
+module load gnu/4.6.3
+module load boost/1.53.0--gnu--4.6.3
+module load cuda
+LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
+export LD_LIBRARY_PATH
+cd $HOME/slPack/starlab
+</code></pre>
+
+<h4 id="green-ii-hpc-system-swinburne-university:3362ac2b0400c3c64983ad8b2d9efef3">Green II HPC system @ Swinburne University</h4>
+
+<p>Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
+system at the Swinburne University. Here how to do that.</p>
+
+<ul>
+<li>Log into the system and find yourself in the login node.</li>
+<li>Clone the private repo / download the folders and unpack them like described before.</li>
+<li>Then you need to log into one of the compile/test nodes from the head node: <code>ssh $USER@gstar001</code></li>
+<li>load the right modules:</li>
+</ul>
+
+<pre><code class="language-bash">module load gcc/4.6.4
+module load boost/x86_64/gnu/1.51.0-gcc4.6
+module load cuda/4.0
+</code></pre>
+
+<p>You need that version of <code>gcc</code> and <code>boost</code> because of issues with boost threads in the default versions.
+Just in case, check that the paths in the <code>Makefile</code> and <code>compile.h</code> agree with that shown in<br />
+<code>module show boost/x86_64/gnu/1.51.0-gcc4.6</code>
+and
+<code>module show cuda</code></p>
+
+<p>Make sure you have no <code>'</code> around your path, maybe, if you need, only <code>&quot;</code> otherwise <code>sapporo</code> won&rsquo;t compile.
+Just in case, check that the paths in the <code>Makefile</code> and <code>compile.h</code> agree with that shown in<br />
+<code>module show boost/x86_64/gnu/1.51.0-gcc4.6</code>
+and
+<code>module show cuda</code></p>
+
+<p>If you have our private version you can
+* <code>cp ../scripts/g2/Makefile ./</code>
+* <code>cp ../scripts/g2/compile.sh ./</code></p>
+
+<p>otherwise try to modify them to have:</p>
+
+<pre><code class="language-bash">CXX  := g++
+CC   := gcc
+NVCC := /usr/local/cuda-4.0/bin/nvcc
+CUDAINC := -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc 
+BOOSTINC := -I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6
+NVCCFLAGS := -O0 -g -D_DEBUG  -maxrregcount=64 $(CUDAINC) $(BOOSTINC) 
+</code></pre>
+
+<p>in the <code>Makefile</code> and</p>
+
+<pre><code class="language-bash">flags=-DNGB
+
+CUDAINC=&quot;-I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc&quot;
+CUDALIB=&quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&quot;
+CUDAFLAG=&quot;-lcudart&quot;
+BOOSTINC=&quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&quot;
+BOOSTLIB=&quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&quot;
+BOOSTFLAG=&quot;-lboost_system  -lboost_thread-mt -lpthread&quot;
+
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+</code></pre>
+
+<p>in <code>compile.sh</code>.</p>
+
+<p>Then run</p>
+
+<ul>
+<li><code>make clean</code></li>
+<li><code>make</code></li>
+<li><code>bash compile.sh</code></li>
+</ul>
+
+<p>No go the the starlab folder (<code>cd ../starlab</code>) and fix the <code>configure</code> file accordingly to this</p>
+
+<pre><code class="language-bash">#   Check all named libraries for g6_open() (GRAPE-6).
+
+    grape6=no
+
+    for gl in $GRAPE_LIBS_; do
+    ##############################
+    ######      g2
+    ##############################
+    CUDAINC=&quot;-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/&quot;
+    CUDALIB=&quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&quot;
+    CUDAFLAG=&quot;-lcudart&quot;
+    BOOSTINC=&quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/&quot;
+    BOOSTLIB=&quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&quot;
+    BOOSTFLAG=&quot;-lboost_system  -lboost_thread-mt -lpthread&quot;
+    
+    LIBS=&quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&quot;
+        
+        
+    as_ac_Lib=`echo &quot;ac_cv_lib_${gl/-l/}''_g6_open_&quot; | $as_tr_sh`
+
+</code></pre>
+
+<p>and the <code>local/grape.sh</code> file to point to your sapporo installation.</p>
+
+<p>If you have our version of StarLab, just copy the right files:</p>
+
+<ul>
+<li><code>cp ../scripts/g2/configure ./</code></li>
+<li><code>cp ../scripts/g2/grape.sh ./local/</code></li>
+</ul>
+
+<p>Make sure again <code>grape.sh</code> points to the right folder</p>
+
+<ul>
+<li><code>./configure --without-f77 --with-qt=no</code> (if you want qt, load the modules and check the versions)</li>
+<li><code>make clean &amp;&amp; make clean &amp;&amp; make clean</code></li>
+<li><code>make &amp;&amp; make</code></li>
+<li><code>rm ./usr/bin/*</code></li>
+<li><code>make install</code></li>
+</ul>
+
+<p>** Troubleshooting **</p>
+
+<p>If you get this error (or some other error)</p>
+
+<pre><code class="language-bash">make[2]: Entering directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux'
+/bin/sh ../../../libtool --preserve-dup-deps --mode=link gcc  -g -O2  -L/usr/lib64/qt-3.3/lib -o libgfx-2.la   win.lo draw.lo draw1.lo color.lo dialog.lo mcd.lo interface.lo termio.lo utility.lo simple.lo  -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc -L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib -lcudart -L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6 -lboost_system  -lboost_thread-mt -lpthread -DNGB
+ar cru .libs/libgfx-2.a  win.o draw.o draw1.o color.o dialog.o mcd.o interface.o termio.o utility.o simple.o
+ar: interface.o: No such file or directory
+make[2]: *** [libgfx-2.la] Error 1
+make[2]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux'
+make[1]: *** [clibs23] Error 2
+make[1]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx'
+make: *** [libs] Error 2
+</code></pre>
+
+<p>when compiling may be you can try to <code>make</code> and <code>make clean</code> some times.<br />
+Also remember that make clean is not working properly, so you need to <code>make clean</code> more than once or delete the binaries by yourself.</p>
+
+<p>If you have errors regarding no rules for <code>libxhdyn.la</code>, probably you forgot to exclude
+some options from the configure, so run <code>configure --with-f77=no --with-qt=no</code> or try <code>configure --help</code>
+to check for other options.</p>
+
+<h3 id="additional-material:3362ac2b0400c3c64983ad8b2d9efef3">Additional material</h3>
+
+<ul>
+<li>Code units (coming soon&hellip;)</li>
+<li>StarLab internals (really???)</li>
+<li><a href="https://bitbucket.org/brunetto/slpack">Our repo</a></li>
+<li><a href="https://bitbucket.org/brunetto/sltools">Tools to easily manage SL runs (private too, sorry, ask me if you are interested)</a></li>
+<li><a href="http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools">StarLab tools wiki</a></li>
+</ul>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f&title=StarLab-GPU%20installation&summary=%3cul%3e%0a%3cli%3e%3ca%20href%3d%22..%2fstories%2fresearch%2futils%2fstarlab-gpu-old-guide.html%22%3eClick%20here%20for%20the%20old%20guide%21%21%21%3c%2fa%3e%3cbr%20%2f%3e%3c%2fli%3e%0a%3cli%3e2014%2f09%2f16%3a%20updated%20with%20installation%20instruction%20for%20g2%40Swinburne%20and%20some%20troubleshooting.%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%3a%3c%2fstrong%3e%20if%20you%20want%20to%20compile%20starlab%20%3cstrong%3ewithout%20GPU%20support%3c%2fstrong%3e%2c%20you%20only%20need%20to%3c%2fp%3e%0a%0a%3cul%3e%0a%3cli%3eignore%20the%20%26ldquo%3b%3ccode%3esapporo%3c%2fcode%3e%26rdquo%3b%20%20and%20%26ldquo%3b%3ccode%3eCUDA%3c%2fcode%3e%26rdquo%3b%20instructions%3c%2fli%3e%0a%3cli%3erename%20%3ccode%3estarlab%2flocal%2fgrape.sh%3c%2fcode%3e%20to%20%3ccode%3estarlab%2flocal%2f_grape.sh%3c%2fcode%3e%3c%2fli%3e%0a%3cli%3esubstitute%20%3ccode%3econfigure%20--without-f77%3c%2fcode%3e%20with%20%3ccode%3econfigure%20--with-grape%3dno%20--without-f77%3c%2fcode%3e%29%3c%2fli%3e%0a%3cli%3ein%20case%20you%20can%26rsquo%3bt%20%3ccode%3emake%3c%2fcode%3e%20succesfully%20may%20be%20you%20need%20to%20copy%20the%20folder%0a%3ccode%3estarlab%2fsrc%2fgfx%3c%2fcode%3e%20and%20do%20not%20make%20clean%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3eWell%2c%20probably%20you%20landed%20here%20searching%20information%20about%20StarLab%2c%20how%20to%0ainstall%20it%2c%20how%20to%20run%20it%2c%20how%20prevent%20it%20to%20harm%20your%20cat.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%201%3a%3c%2fstrong%3e%20I%20won%26rsquo%3bt%20promise%20anything%20about%20your%20cat%20but%20I%20will%20try%20to%20help%20you%20having%20a%0areasonable%20well%20running%20installation%20of%20StarLab.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%202%3a%3c%2fstrong%3e%20I%26rsquo%3bm%20not%20a%20programmer%2c%20I%26rsquo%3bm%20not%20a%20system%20administrator%20and%20I%20don%26rsquo%3bt%20even%0aknow%20how%20to%20program%20in%20CUDA%20%28yet%29.%20Maybe%20something%20here%20is%20wrong%20ore%20outdated.%0aI%26rsquo%3bm%20only%20giving%20you%20some%20of%20the%20experienced%20I%20collected%20in%20n%2b1%20times%20I%20installed%20StarLab.%0aNothin%20less%2c%20nothing%20more.%3cbr%20%2f%3e%0aAlso%20note%20that%20most%20of%20the%20knowledge%20I%20put%20here%20come%0afrom%20my%20%3ca%20href%3d%22http%3a%2f%2fweb.pd.astro.it%2fmapelli%2f%22%3esupervisor%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20also%20thanks%20Mario%20Spera%20for%20the%20usefull%20advices.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%203%3a%3c%2fstrong%3e%20StarLab%20still%20seems%20to%20%3cstrong%3ealways%3c%2fstrong%3e%20crash%20if%20you%20try%20to%20simulate%20a%20system%0awith%20more%20than%20~6000%20binaries.%3c%2fp%3e%0a%0a%3ch2%20id%3d%22starlab%3a3362ac2b0400c3c64983ad8b2d9efef3%22%3eStarLab%3c%2fh2%3e%0a%0a%3cp%3e%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eStarLab%3c%2fa%3e%20is%20%26ldquo%3bA%20Software%20Environment%20for%20Collisional%20Stellar%20Dynamics%26rdquo%3b.%0a%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eHere%3c%2fa%3e%20you%20can%20find%20useful%20information%20about%20it%20that%0ais%20not%20useful%20to%20rewrite%20here%2c%20so%20have%20a%20look%20and%20then%20come%20back%21%3a%29%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=StarLab-GPU%20installation&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-gpu" href="http://localhost:1313//tags/gpu">GPU</a>,
+	                
+	                <a class="post-tag post-tag-simulations" href="http://localhost:1313//tags/simulations">simulations</a>,
+	                
+	                <a class="post-tag post-tag-n-body" href="http://localhost:1313//tags/n-body">N-body</a>,
+	                
+	                <a class="post-tag post-tag-starlab" href="http://localhost:1313//tags/starlab">StarLab</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/pages/tech/python-references/">Python references</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/pages/personal/scout/">Scout</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

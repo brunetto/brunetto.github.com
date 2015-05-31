@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Histogram on Post It!</title>
+    <link>http://localhost:1313/tags/histogram/</link>
+    <description>Recent content in Histogram on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 May 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Essential guide to binning</title>
+      <link>http://localhost:1313/posts/essential-guide-to-binning/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/essential-guide-to-binning/</guid>
+      <description>
+
+&lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
+It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;linear-vs-logarithmic:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+
+&lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
+Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
+
+&lt;h2 id=&#34;from-one-to-the-other:22c59b26f192e65f682baafbd76fbd27&#34;&gt;From one to the other&lt;/h2&gt;
+
+&lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
+It can be easily computed as&lt;br /&gt;
+&lt;code&gt;$\delta_{bin} = (sup-inf)/n_{bin}$&lt;/code&gt;&lt;br /&gt;
+From this it&amp;rsquo;s also straightforward to obtain the number of bins from the spacing:&lt;br /&gt;
+&lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
+Note that we choose the number of bins to be integer.&lt;/p&gt;
+
+&lt;h2 id=&#34;code:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+import sys
+import numpy as np
+
+def binning(inf, sup, n_bin=None, delta_bin=None):
+	&amp;quot;&amp;quot;&amp;quot;Given the inf and sup limits of an array and the number of equally spaced
+	bins, it returns the bin centers, the bin limits and the bin spacing.
+	It&#39;s possible to have a linear or a logarithmic spacing passing linear or
+	logarithmic inf and sup, and searchsorting on a linear or logarithmic array, 
+	or you can use a linear array and logarithmically spaced bins as
+	new_bins = pow(10, logbins)
+	&amp;quot;&amp;quot;&amp;quot;
+	if (n_bin == 0) or (n_bin == 0):
+		print &amp;quot;Error, n_bin and/or delta_bin are/is zero, exit!&amp;quot;
+		sys.exit()    
+	elif (n_bin == None) and (delta_bin != None):
+		n_bin = (sup-inf)/delta_bin
+		elif (n_bin == None) and (delta_bin == None):
+		print &amp;quot;Error, n_bin and delta_bin are both None, exit!&amp;quot;
+		sys.exit()
+	temp, half_step = np.linspace(inf, sup, 2*n_bin+1, endpoint = True, retstep = True)
+	xrange_limit = int(np.floor(temp.size / 2))
+	bin_pos = np.zeros(xrange_limit)
+	bin_limits = np.zeros(xrange_limit+1)
+	for i in xrange(xrange_limit):
+		bin_pos[i] = temp[2*i+1]
+		bin_limits[i] = temp[2*i]
+		bin_limits[-1] = temp[-1]
+	del temp
+	return [bin_pos, bin_limits, 2*half_step]
+
+def base_binning(inf, sup, n_bin=None, delta_bin=None):
+	&amp;quot;&amp;quot;&amp;quot;More C-like...
+	&amp;quot;&amp;quot;&amp;quot;
+	if (n_bin == 0) or (n_bin == 0):
+		print &amp;quot;Error, n_bin and/or delta_bin are/is zero, exit!&amp;quot;
+		sys.exit()    
+	elif (n_bin == None) and (delta_bin != None):
+		n_bin = int((sup-inf)/(1.*delta_bin))
+	elif (n_bin != None) and (delta_bin == None):
+		delta_bin = (sup-inf)/(1.*n_bin)
+	elif (n_bin == None) and (delta_bin == None):
+		print &amp;quot;Error, n_bin and delta_bin are both None, exit!&amp;quot;
+		sys.exit()
+	bin_pos = np.zeros(n_bin)
+	bin_limits = np.zeros(n_bin+1)
+	for i in range(n_bin):
+		if i%2 == 0:
+			bin_limits[i] = inf + i * delta_bin
+			bin_limits[i+1] = bin_limits[i] + delta_bin
+	bin_pos[i] = bin_limits[i] + delta_bin/2.
+	bin_limits[n_bin] = inf + n_bin * delta_bin
+	return [bin_pos, bin_limits, delta_bin]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

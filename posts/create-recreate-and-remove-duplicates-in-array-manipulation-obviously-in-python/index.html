@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Create, recreate and remove duplicates in array manipulation, obviously in Python!:) // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Create, recreate and remove duplicates in array manipulation, obviously in Python!:)" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#create:d7d980b494195784336223544cb1380d">Create</a></li>
+<li><a href="#remove-duplicates:d7d980b494195784336223544cb1380d">Remove duplicates</a></li>
+<li><a href="#recreate:d7d980b494195784336223544cb1380d">Recreate</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/">Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>14</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2012</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+					<a class="post-category post-category-python" href="http://localhost:1313//categories/python">Python</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f&title=Create%2c%20recreate%20and%20remove%20duplicates%20in%20array%20manipulation%2c%20obviously%20in%20Python%21%3a%29&summary=%3cp%3eI%20would%20like%20to%20%26ldquo%3bpin%26rdquo%3b%20here%20a%20pair%20of%20quick%20solution%20to%20everyday%20problems%20I%20encounter%20manipulating%20arrays.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Create%2c%20recreate%20and%20remove%20duplicates%20in%20array%20manipulation%2c%20obviously%20in%20Python%21%3a%29&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<p>I would like to &ldquo;pin&rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.</p>
+
+<h2 id="create:d7d980b494195784336223544cb1380d">Create</h2>
+
+<p>First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with <code>np.genfromtxt</code>. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.</p>
+
+<pre><code class="language-python">import numpy as np
+import tables as tb
+from StringIO import StringIO
+
+f = open(&quot;filename.csv&quot;, 'r')
+line = f.readline()
+values = np.genfromtxt(StringIO(line), dtype=([('column_1', 'i8'), ('column_2', 'f4'), ('column_3', 'f4')]), delimiter=',')
+values.shape = 1
+h5 = tb.openFile('filename.h5', 'w')
+table = h5.createTable(h5.root, description=values, name=table_name', title=&quot;table_description&quot;, expectedrows=12158536)
+table.flush()
+
+for line in f:
+	values = np.genfromtxt(StringIO(line), dtype=([('column_1', 'i8'), ('column_2', 'f4'), ('column_3', 'f4')]), delimiter=',')
+	values.shape = 1
+	table.append(values)
+	
+table.flush()
+h5.flush()
+h5.close()
+f.close()
+</code></pre>
+
+<p>The use of <code>StringIO</code> is necessary to convert the string containing the line read in a &ldquo;I/O&rdquo; object that <code>np.genfromtxt</code> can eat.</p>
+
+<h2 id="remove-duplicates:d7d980b494195784336223544cb1380d">Remove duplicates</h2>
+
+<p>Consider the previous file, if there are duplicates row, <code>np.unique</code> can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.</p>
+
+<pre><code class="language-python">new_indexes = np.unique(table['column_1'], return_index=True, return_inverse=False)[1]
+new_array = np.transpose(table[new_indexes])
+</code></pre>
+
+<p>In general, <code>numpy.unique(array, return_index=True, return_inverse=True)</code><br />
+returns an array sorted and without duplicates, the indexes of the original array to create the new array and the indexes of the new one to recreate the old one:</p>
+
+<pre><code class="language-python">In: a = np.array([5,3,3,7,2,9,1])
+In: np.unique(a, return_index=True, return_inverse=True)
+Out: 
+(array([1, 2, 3, 5, 7, 9]),
+	array([6, 4, 1, 0, 3, 5]),
+	array([3, 2, 2, 4, 1, 5, 0]))
+</code></pre>
+
+<h2 id="recreate:d7d980b494195784336223544cb1380d">Recreate</h2>
+
+<p>Sometimes it&rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.<br />
+To do this a possible solution is:</p>
+
+<pre><code class="language-python">values = np.array(zip([column_1[0]], [column_2[0]]))
+print &quot;Creating table...&quot;
+table = h5.createTable(h5.root, description=values, name='fof_data_snap67', title=&quot;fof_data_snap67&quot;, expectedrows=11697806)
+
+for i in xrange(1, fof.size):
+	values = np.array(zip([column_1[i]], [column_2[i]]))
+	table.append(values)
+
+table.flush()
+h5.flush()
+h5.close()
+</code></pre>
+
+<p>It&rsquo;s also possible to zip the entire arrays if they fit into memory:</p>
+
+<pre><code class="language-python">values = np.array(zip(column_1, column_2))
+</code></pre>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f&title=Create%2c%20recreate%20and%20remove%20duplicates%20in%20array%20manipulation%2c%20obviously%20in%20Python%21%3a%29&summary=%3cp%3eI%20would%20like%20to%20%26ldquo%3bpin%26rdquo%3b%20here%20a%20pair%20of%20quick%20solution%20to%20everyday%20problems%20I%20encounter%20manipulating%20arrays.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Create%2c%20recreate%20and%20remove%20duplicates%20in%20array%20manipulation%2c%20obviously%20in%20Python%21%3a%29&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fcreate-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-array" href="http://localhost:1313//tags/array">array</a>,
+	                
+	                <a class="post-tag post-tag-phd" href="http://localhost:1313//tags/phd">PhD</a>,
+	                
+	                <a class="post-tag post-tag-pytables" href="http://localhost:1313//tags/pytables">PyTables</a>,
+	                
+	                <a class="post-tag post-tag-python" href="http://localhost:1313//tags/python">Python</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/learning-not-to-hate-c-things-worth-nothing/">Learning not to hate C: things worth nothing</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/phd-students-journal-clubs-and-sozi/">PhD students&#39; Journal Clubs and Sozi</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

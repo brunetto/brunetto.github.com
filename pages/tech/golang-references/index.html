@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Go(lang) references // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="Go(lang) references" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/pages/tech/golang-references/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#web-server:37888898512b69ee3a39b7d785691d7e">Web Server</a></li>
+<li><a href="#goroutines-and-pooling:37888898512b69ee3a39b7d785691d7e">Goroutines and Pooling</a></li>
+<li><a href="#efficiency:37888898512b69ee3a39b7d785691d7e">Efficiency</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/pages/tech/golang-references/">Go(lang) references</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-personal" href="http://localhost:1313//categories/personal">Personal</a>
+				
+					<a class="post-category post-category-page" href="http://localhost:1313//categories/page">Page</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-go" href="http://localhost:1313//categories/go">Go</a>
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<ul>
+<li><a href="../../posts/go-installation-from-source.html">Go installation from source</a></li>
+<li><a href="http://blog.kamilkisiel.net/blog/2012/07/05/using-the-go-regexp-package/">Regex</a></li>
+<li><a href="http://golangtutorials.blogspot.it/2011/05/table-of-contents.html">Tutorial</a></li>
+<li><a href="http://golangcookbook.blogspot.it/">Cookbook</a></li>
+<li><a href="https://github.com/StefanSchroeder/Golang-Regex-Tutorial">Tutorial 2</a></li>
+<li><a href="https://gobyexample.com/">Examples</a></li>
+<li><a href="http://golang.org/">http://golang.org/</a></li>
+<li><a href="http://golangtutorials.blogspot.it/2011/05/table-of-contents.html">http://golangtutorials.blogspot.it/2011/05/table-of-contents.html</a></li>
+<li><a href="http://www.golang-book.com/">http://www.golang-book.com/</a></li>
+<li><a href="http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html">Why it was creates</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/golang-nuts">https://groups.google.com/forum/#!forum/golang-nuts</a></li>
+<li><a href="https://code.google.com/p/golem/">https://code.google.com/p/golem/</a></li>
+<li><a href="https://github.com/gonum">https://github.com/gonum</a></li>
+<li><a href="https://plus.google.com/+golang/posts">https://plus.google.com/+golang/posts</a></li>
+<li><a href="https://plus.google.com/communities/115354877257015196825">https://plus.google.com/communities/115354877257015196825</a></li>
+<li><a href="http://www.darkcoding.net/software/pretty-command-line-console-output-on-unix-in-python-and-go-lang/">Progress bar</a></li>
+<li><a href="https://code.google.com/p/log4go/">Advanced logging</a></li>
+<li><a href="http://talks.golang.org/2012/zen.slide">Zen Slide</a></li>
+<li><a href="http://blog.repustate.com/migrating-code-from-python-to-golang-what-you-need-to-know/2013/04/23/">What Python developers need to know before migrating to Go(lang)</a></li>
+<li><a href="http://uberpython.wordpress.com/2012/09/23/why-im-not-leaving-python-for-go/">Why I’m not leaving Python for Go</a></li>
+<li><a href="http://golang-for-python-programmers.readthedocs.org/en/latest/">Golang for Python programmers</a></li>
+<li><a href="http://s3.amazonaws.com/golangweekly/go_for_pythonistas.pdf">Go for Pythonistas</a></li>
+<li><a href="https://gobyexample.com/">Go by example</a></li>
+<li><a href="http://www.goinggo.net/">Going Go</a></li>
+<li><a href="http://www.syntax-k.de/projekte/go-review">The Go Programming Language, or: Why all C-like languages except one suck.</a></li>
+<li><a href="http://crypto.stanford.edu/~blynn/c2go/index.html">c2go</a></li>
+<li><a href="http://devcry.heiho.net/2012/04/golang-way-to-go.html?m=1">Golang: The Way To Go</a></li>
+<li><a href="http://www.darkcoding.net/software/go-lang-after-four-months/">Go after four months #golang</a></li>
+<li><a href="http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go">GoDeb</a></li>
+<li><a href="http://merbist.com/2011/06/27/golang-reflection-exampl/">Reflection example</a></li>
+<li><a href="http://log.zyxar.com/blog/2012/04/08/go-lang-notes/">Golang notes</a></li>
+<li><a href="http://learnxinyminutes.com/docs/go/">http://learnxinyminutes.com/docs/go/</a></li>
+<li><a href="http://soniacodes.wordpress.com/">Sonia Codes</a></li>
+<li><a href="http://www.pheelicks.com/">http://www.pheelicks.com/</a></li>
+<li><a href="http://talks.golang.org/2012/chat.slide#1">Chatroulette like mini demo in Go</a></li>
+<li><a href="http://blog.menfin.info/Presentations/20120709_Golang_introduction/#slide1">Welcome to the nice world of Golang</a></li>
+<li><a href="http://nf.wh3rd.net/10things/">10 things you (probably) don&rsquo;t know about Go</a></li>
+<li><a href="http://godoc.org/code.google.com/p/go.tools/present">Present package docs</a></li>
+<li><a href="https://github.com/lagomeetup/talks">Some talks</a></li>
+<li><a href="http://www.goinggo.net/">Going go programming</a></li>
+<li><a href="http://golang-examples.tumblr.com/">Golang(Go Language) Examples</a></li>
+<li><a href="https://github.com/golang-samples">GoLang Samples</a></li>
+<li><a href="http://www.golangbootcamp.com/book/frontmatter">GolangBootCamp Book</a></li>
+<li><a href="https://groups.google.com/forum/#!topic/golang-nuts/FCcLsuWsF_U">Slice of structs vs map o structs</a></li>
+<li><a href="http://talks.golang.org/2013/go4python.slide">go4python</a></li>
+<li><a href="http://tech.t9i.in/2013/01/why-program-in-go/">Why I Program in Go</a></li>
+<li><a href="http://stackoverflow.com/questions/25382073/defining-golang-struct-function-using-pointer-or-not">Defining golang struct function using pointer or not</a></li>
+<li><a href="http://stackoverflow.com/questions/18435498/why-are-receivers-pass-by-value-in-go/18436251#18436251">Why are receivers pass by value in Go?</a></li>
+</ul>
+
+<h3 id="web-server:37888898512b69ee3a39b7d785691d7e">Web Server</h3>
+
+<ul>
+<li><a href="http://blog.joshsoftware.com/2014/03/12/learn-to-build-and-deploy-simple-go-web-apps-part-one/">Learn to build and deploy simple Go Web Apps, Part One</a></li>
+<li><a href="http://golang.org/doc/articles/wiki/">http://golang.org/doc/articles/wiki/</a></li>
+<li><a href="http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image">http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image</a></li>
+<li><a href="https://github.com/ljgww/web_server_example_in_Go_-golang-">https://github.com/ljgww/web_server_example_in_Go_-golang-</a></li>
+<li><a href="http://robfig.github.io/revel/">http://robfig.github.io/revel/</a></li>
+<li><a href="http://thechangelog.com/on-go-web-application-ecosystem/">http://thechangelog.com/on-go-web-application-ecosystem/</a></li>
+</ul>
+
+<h3 id="goroutines-and-pooling:37888898512b69ee3a39b7d785691d7e">Goroutines and Pooling</h3>
+
+<ul>
+<li><a href="http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0">http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0</a></li>
+<li><a href="https://gobyexample.com/worker-pools">https://gobyexample.com/worker-pools</a></li>
+<li><a href="http://dancallahan.info/journal/go-concurrency/">http://dancallahan.info/journal/go-concurrency/</a></li>
+<li><a href="http://blog.labix.org/2011/10/09/death-of-goroutines-under-control">http://blog.labix.org/2011/10/09/death-of-goroutines-under-control</a></li>
+<li><a href="http://blog.golang.org/share-memory-by-communicating">http://blog.golang.org/share-memory-by-communicating</a></li>
+<li><a href="http://golang.org/doc/codewalk/sharemem/">http://golang.org/doc/codewalk/sharemem/</a></li>
+<li><a href="http://stackoverflow.com/questions/18267460/golang-goroutine-pool">http://stackoverflow.com/questions/18267460/golang-goroutine-pool</a></li>
+<li><a href="http://dave.cheney.net/tag/golang-3">http://dave.cheney.net/tag/golang-3</a></li>
+<li><a href="http://golang.org/pkg/log/#Logger">http://golang.org/pkg/log/#Logger</a></li>
+<li><a href="http://www.goinggo.net/2013/11/using-log-package-in-go.html">http://www.goinggo.net/2013/11/using-log-package-in-go.html</a></li>
+<li><a href="http://talks.golang.org/2012/concurrency.slide">Go Concurrency Patterns</a></li>
+<li><a href="http://talks.golang.org/2013/advconc.slide">Advanced Go Concurrency Patterns</a></li>
+<li><a href="http://talks.golang.org/2012/waza.slide">Concurrency is not Parallelism</a></li>
+</ul>
+
+<h3 id="efficiency:37888898512b69ee3a39b7d785691d7e">Efficiency</h3>
+
+<ul>
+<li><a href="http://dennisforbes.ca/index.php/2013/07/23/the-most-powerful-feature-of-go-is-the-least-sexy">The Most Powerful Feature of Go Is The Least Sexy</a></li>
+</ul>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-golang" href="http://localhost:1313//tags/golang">golang</a>,
+	                
+	                <a class="post-tag post-tag-go" href="http://localhost:1313//tags/go">go</a>,
+	                
+	                <a class="post-tag post-tag-reference" href="http://localhost:1313//tags/reference">reference</a>,
+	                
+	                <a class="post-tag post-tag-cheat-sheet" href="http://localhost:1313//tags/cheat-sheet">cheat sheet</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/pages/tech/js-references/">JavaScript references</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/pages/tech/programming-links/">Programming Links</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

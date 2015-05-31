@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parallel on Post It!</title>
+    <link>http://localhost:1313/tags/parallel/</link>
+    <description>Recent content in Parallel on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Nov 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/parallel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python parallel job manager</title>
+      <link>http://localhost:1313/posts/python-parallel-job-manager/</link>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/python-parallel-job-manager/</guid>
+      <description>&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think&amp;hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &amp;hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.&lt;/p&gt;
+
+&lt;p&gt;At this step, however, I didn&amp;rsquo;t know how to manage the different processes in a comfortable way.
+My requirements were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to start only one process that will take care of starting the right code on the right data-slice&lt;/li&gt;
+&lt;li&gt;the possibility to start &amp;ldquo;n&amp;rdquo; processes depending on the number of processors and memory available (in the actual code this is done by hand)&lt;/li&gt;
+&lt;li&gt;the code should be able to start a new process when one of the previous processes end&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hereafter I expose and comment the complete &amp;ldquo;template&amp;rdquo; for this Python code as I wrote it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/bin/env python
+
+import sys, os
+from subprocess import Popen, PIPE
+from multiprocessing import Process, Queue
+
+&amp;quot;&amp;quot;&amp;quot;This script starts n_procs processes that in parallel take the
+number of the data file from a common queue and with a loop apply the
+analysys code to the data starting it with a bash command using Popen
+&amp;quot;&amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;n_procs = 10 # number of processes to be started
+file_1 = None
+file_2 =  &amp;quot;mill2_fof_sorted.h5&amp;quot;
+m_factor = 1    # How many random more than data
+start_slice = 0 
+end_slice = 99
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here we set some parameters: the number of processes to start (set by hand), the two files to use in the analysis, how many random particles we use more than the data particles and the limits in the data slice to analyze. In this case we want to correlate the data in &lt;code&gt;mill2_fof_sorted.h5&lt;/code&gt; with the data contained in the slices between slice 0 and slice 99. file_1 will be replaced after with the right name. This analysis will be carry out using 10 processes at each time. As a process end the code will take care of starting a new process.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def starter(input, output):
+	&amp;quot;&amp;quot;&amp;quot;Start the code processes one after the other&amp;quot;&amp;quot;&amp;quot;
+	while input.qsize() != 0:
+	item = input.get()
+	file_1 = &amp;quot;mill2sort-&amp;quot;+str(item[0])       
+	cmd = &amp;quot;/opt/epd-7.0-2-rh5-x86_64/bin/python -u \
+			../serial.py --file_1 &amp;quot;+file_1+&amp;quot; --file_2 &amp;quot;+file_2+\
+		&amp;quot; -l 400 -n 0 --m_factor &amp;quot;+str(m_factor)+&amp;quot; \
+			--slicing --log ../logs/&amp;quot;+file_1+&amp;quot;-&amp;quot;+file_2
+
+	try:
+		pid = os.getpid()
+		pid_cmd = &#39;echo &amp;quot;&#39;+str(item[0])+&#39;&amp;quot; &amp;amp;gt;&amp;amp;gt; &#39;+str(pid)+&#39;.log&#39;
+		os.system(pid_cmd)
+		p = Popen(cmd, shell=True, close_fds=True).wait()
+
+	except:
+		print &amp;quot;Popen/os.system not done, exit...&amp;quot;
+		sys.exit()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This piece of code defines the function that will start the processes. It&amp;rsquo;s called &lt;code&gt;started&lt;/code&gt; and it takes &lt;code&gt;input&lt;/code&gt; and &lt;code&gt;output&lt;/code&gt; as arguments. These are two &amp;ldquo;queue objects&amp;rdquo;, they can be filled and emptied in the FIFO way. The starter has a while loop that check if the queue is empty, if not it takes the next elements. This is the number of the slice to be used by the analysis code and with it we build the name of the file to be opened. &lt;code&gt;cmd&lt;/code&gt; is the string we use to start the analysis code with some options (&lt;code&gt;serial.py&lt;/code&gt; is the actual &amp;ldquo;cool&amp;rdquo; name I gave to my code!:P).&lt;br /&gt;
+The &lt;code&gt;try-exept&lt;/code&gt; syntax is the particular Python way to manage the possible errors in the execution, giving the ability to the programmer to handle possible problems (exceptions).&lt;br /&gt;
+So we catch the pid of the starter and save into its log the number of sliced it start and pass to the &lt;code&gt;Popen&lt;/code&gt; (process-open) command the string to start the analysis process telling it to wait the end of the process. If something goes wrong we print that there were some errors and exit the code in a clean way.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def fill_queue(task_queue, start_slice, end_slice):
+	&amp;quot;&amp;quot;&amp;quot;Fill the queue&amp;quot;&amp;quot;&amp;quot;
+	for i in range(start_slice, end_slice, 1):
+		task_queue.put([i])
+	return task_queue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This functions only fill the queue with the number of the sliced to be used.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def status(proc):
+	&amp;quot;&amp;quot;&amp;quot;Check for processes status&amp;quot;&amp;quot;&amp;quot;
+	if proc.is_alive()==True:
+		return &#39;alive&#39;
+	elif proc.is_alive()==False:
+		return &#39;dead&#39;
+	else:
+		return proc.is_alive()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This piece of code check the status (dead or alive) of one process (&lt;code&gt;proc&lt;/code&gt; is the process object&amp;hellip; yeah, in Python everything is an object!)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;input_queue = Queue()
+output_queue = Queue()
+
+try:
+    input_queue = fill_queue(input_queue, start_slice, end_slice)
+except:
+    print &amp;quot;Queue not filled, exit...&amp;quot;
+    sys.exit()
+
+procs = []    # processes container
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we create the empty queues and (try to) fill them, and create the container for the processes objects.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;try:
+    for i in range(n_procs):
+        print &amp;quot;Process loop &amp;quot;, i
+        procs.append(Process(target=starter, args=(input_queue, output_queue)))
+except:
+    print &amp;quot;Creating processes not complete, exit...&amp;quot;
+    sys.exit()
+
+try:
+    for i in procs:
+        i.start()
+except:
+    print &amp;quot;Start processes not complete, exit...&amp;quot;
+    sys.exit()
+
+for i in procs:
+    print &amp;quot;Process &amp;quot;, i,&amp;quot; @ &amp;quot; , i.pid, &amp;quot; is &amp;quot;, status(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the central part of this code: we create the processes objects and put them into the container, start them and check for their status. Everything is inside the &lt;code&gt;try-except&lt;/code&gt; environment to check for possible errors and handle them.&lt;br /&gt;
+In practice we start &amp;ldquo;n&amp;rdquo; processes and every process take the number of a slice from the queue and use it to start the analysis code, waiting for its end. When the analysis is finished it takes another number from the queue and start again the code. When the queue is empty everything is automatically switched off.&lt;br /&gt;
+Future improvements will consider the automatically detection of the hardware resources and the possibility to mail the status of the code.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guthub Pages on Post It!</title>
+    <link>http://localhost:1313/tags/guthub-pages/</link>
+    <description>Recent content in Guthub Pages on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/guthub-pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Blogging with Nikola &#43; Ipython &#43; Git(Hub)</title>
+      <link>http://localhost:1313/posts/blogging-with-nikola-ipython-github/</link>
+      <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/blogging-with-nikola-ipython-github/</guid>
+      <description>
+
+&lt;p&gt;After a lot of different attempts now it seems that I&amp;rsquo;m able to run a static
+blog with Python, Nikola and Git.&lt;/p&gt;
+
+&lt;p&gt;The information are taken from:&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt; &lt;a href=&#34;http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html&#34;&gt;http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href=&#34;http://diegoduncan21.github.io/posts/asi-lo-hice.html&#34;&gt;http://diegoduncan21.github.io/posts/asi-lo-hice.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href=&#34;https://github.com/yeoman/yeoman/wiki/Deployment&#34;&gt;https://github.com/yeoman/yeoman/wiki/Deployment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href=&#34;http://stackoverflow.com/questions/12644855/how-do-i-reset-a-heroku-git-repository-to-its-initial-state&#34;&gt;http://stackoverflow.com/questions/12644855/how-do-i-reset-a-heroku-git-repository-to-its-initial-state&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href=&#34;http://cogumbreiro.blogspot.it/2013/05/how-to-install-git-subtree-in-ubuntu.html&#34;&gt;http://cogumbreiro.blogspot.it/2013/05/how-to-install-git-subtree-in-ubuntu.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;nikola:db662b76ece852b487e671b4f249fd54&#34;&gt;Nikola&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;first of all install some prerequisites:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo aptitude install python-virtualenv virtualenvwrapper libxml2-dev libxslt-dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;export the environment path adding this line to &lt;code&gt;~/.bashrc&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export WORKON_HOME=~/Envs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;now the virtualenv are located in ~/Envs (you can choose another folder, of course)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;then create a virtualenv for the blog:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkvirtualenv -p /usr/bin/python nblog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;enter the virtualenv with &lt;code&gt;workon nblog&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install nikola pyzmq tornado jinja2 requests sphinx markdown
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;from the folder that will be the blog parent folder run&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nikola init myblog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;list the themes and install a theme containing &amp;ldquo;ipython&amp;rdquo; into it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nikola install_theme -l to list all the available themes in Nikola
+nikola install_theme jinja-site-ipython 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modify your conf.py file adding the following lines to your &lt;code&gt;post_pages&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(&amp;quot;posts/*.ipynb&amp;quot;, &amp;quot;posts&amp;quot;, &amp;quot;post.tmpl&amp;quot;, True), (&amp;quot;stories/*.ipynb&amp;quot;, &amp;quot;stories&amp;quot;, &amp;quot;story.tmpl&amp;quot;, False),
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and make explicit to use the IPython theme:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;THEME = &#39;jinja-site-ipython&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;choose some options in the configuration file (your name, your blog name, if to gzip the files,
+add the search box, the disqus comments, if to use teasers and so on)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;to write a new post, just:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nikola new_post -f ipynb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or &lt;code&gt;-f markdown&lt;/code&gt; to use the markdown syntax&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;then, &lt;code&gt;nikola build&lt;/code&gt; to build the site and &lt;code&gt;nikola serve&lt;/code&gt; to see it
+locally at &lt;a href=&#34;localhost:8000&#34;&gt;&lt;code&gt;localhost:8000&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;github:db662b76ece852b487e671b4f249fd54&#34;&gt;GitHub&lt;/h2&gt;
+
+&lt;p&gt;Now we want to deploy the blog on the blogging platform GitHub Pages.
+To do this you need a &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; account.&lt;br /&gt;
+Then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;create a repository named &lt;code&gt;youname.github.com&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;install git locally and (if on Ubuntu 13.04) activate &lt;code&gt;git subtree&lt;/code&gt; with&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo chmod +x /usr/share/doc/git/contrib/subtree/git-subtree.sh
+sudo ln -s /usr/share/doc/git/contrib/subtree/git-subtree.sh /usr/lib/git-core/git-subtree
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if you are on an older Ubuntu version you can do &lt;a href=&#34;http://www.betaful.com/2011/01/i-love-git-subtree/&#34;&gt;this&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/apenwarr/git-subtree.git
+cd git-subtree
+sudo bash ./install.sh 
+# all this does is copies a file to your git folder, i.e. /usr/lib/git-core
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&amp;ldquo;git init&amp;rdquo; you blog with &lt;code&gt;git init&lt;/code&gt; inside the main blog folder&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;set the remote origin locally with&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git remote add origin ssh://git@github.com/yourname/yourname.github.com.git    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I use ssh because I can log in without a password saving my key at
+&lt;a href=&#34;https://github.com/settings/ssh&#34;&gt;https://github.com/settings/ssh&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create an empty commit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git commit --allow-empty -am &amp;quot;first commit&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;now create the branch that will contain all the blog and move to it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git branch AllBlog
+git checkout AllBlog
+git branch --set-upstream AllBlog origin/AllBlog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the last passage is taken from &lt;a href=&#34;http://stackoverflow.com/questions/13886042/git-branches-tracking-upstream&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;add, commit and push the blog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git add ./*
+git commit -am &amp;quot;first import&amp;quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;now you need to force the push of the files contained in the output folder to the master branch
+in order to make the blog visible&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git push origin `git subtree split --prefix output/ master`:master --force
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;once you have done you can configure nikola to deploy the blog automatically
+modifying the deploy option in &lt;code&gt;conf.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;DEPLOY_COMMANDS = [&amp;quot;git checkout AllBlog&amp;quot;,
+				   &amp;quot;git add ./*&amp;quot;,
+				   &amp;quot;git commit -a&amp;quot;,
+				   &amp;quot;git push origin AllBlog&amp;quot;,
+				   &amp;quot;git subtree push --prefix output/ origin master&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;now your workflow should be&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nikola new_post -f ipynb
+nikola build
+nikola serve # optionally to check the output locally
+nikola deploy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;google-authorship:db662b76ece852b487e671b4f249fd54&#34;&gt;Google Authorship&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible to let Google recognize and connect your contribution to the blog,
+that is, the posts will appear with your G+ profile photos and some information in the search results.&lt;/p&gt;
+
+&lt;p&gt;Following&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/webmasters/answer/1408986?expand=option2&#34;&gt;Author information in search results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.google.com/webmasters/tools/richsnippets&#34;&gt;Structured Data Testing Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;the only thing you need to do is to insert the line &lt;code&gt;&amp;lt;a href=&amp;quot;[profile_url]?rel=author&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;&lt;/code&gt;
+in the index.html file, for example inserting it in the &lt;code&gt;CONTENT_FOOTER =&lt;/code&gt; string,
+using your G+ profile link instead of &lt;code&gt;[profile_url]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you own a Google+ page you can also link your site using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;EXTRA_HEAD_DATA = &#39;&amp;lt;link href=&amp;quot;https://plus.google.com/&amp;lt;your page id&amp;gt;&amp;quot; rel=&amp;quot;publisher&amp;quot; /&amp;gt;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;key in the &lt;code&gt;conf.py&lt;/code&gt; configuration file.&lt;br /&gt;
+If you need some more html configuration you can add them there or you can copy the
+template folder from the parent theme folder to your theme and modify the template index.html.&lt;/p&gt;
+
+&lt;p&gt;See also&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/webmasters/answer/1708844?hl=en&#34;&gt;How to link a Google+ page to your website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/plus/answer/1711199?hl=en&#34;&gt;Google Direct Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/plus/contact/page_verification&#34;&gt;Google+ page verification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cname-and-personal-domain:db662b76ece852b487e671b4f249fd54&#34;&gt;CNAME and personal domain&lt;/h2&gt;
+
+&lt;p&gt;If you have a personal domain you can let github serve that domain.
+In brief, following &lt;a href=&#34;http://blog.sathomas.me/post/custom-domains-with-github-pages&#34;&gt;this post&lt;/a&gt;
+you have to put in the output folder a file named &lt;code&gt;CNAME&lt;/code&gt; containing your domain name and to
+create a DNS record on your domain host without&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@ 204.232.175.78 A
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 204.232.175.78 is GitHub ip4 and &lt;code&gt;A&lt;/code&gt; is the type of the record (address).
+You can also create a record for the &lt;code&gt;www&lt;/code&gt; version of your domain resambling&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;www yourname.github.com CNAME
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and wait for the information to propagate (1 hour to 3 days).&lt;br /&gt;
+Note that the output folder can be deleted so it&amp;rsquo;s better to create the &lt;code&gt;CNAME&lt;/code&gt; file
+in the main or &lt;code&gt;files&lt;/code&gt; directory and to copy or &amp;ldquo;&lt;code&gt;rsync&lt;/code&gt;&amp;rdquo; it within the &lt;code&gt;nikola deploy&lt;/code&gt;
+command workflow.&lt;/p&gt;
+
+&lt;p&gt;If you use Tophost and want both the &lt;code&gt;www&lt;/code&gt; and the &lt;code&gt;non-www&lt;/code&gt; version of your site
+available, follow &lt;a href=&#34;http://www.tophost.it/aiuto/cat2/11/199/&#34;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

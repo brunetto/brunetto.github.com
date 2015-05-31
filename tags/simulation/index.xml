@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simulation on Post It!</title>
+    <link>http://localhost:1313/tags/simulation/</link>
+    <description>Recent content in Simulation on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>StarLab (GPU) old guide</title>
+      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <description>
+
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+
+&lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
+
+&lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- TEASER_END --&gt;
+
+&lt;h2 id=&#34;sapporo:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;Sapporo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in setup_sapporo.sh change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(installation of the binary drivers from the NVIDIA site) to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
+paths in&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
+#/usr/local/cuda-5.0
+CUDASDKPATH := /usr/lib/nvidia-cuda-toolkit/include/
+#/usr/local/cuda-5.0/samples/common/inc
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)
+# RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;puth &lt;code&gt;multithreading.h&lt;/code&gt; in the sapporo folder and then in &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;multithreading.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
+obtain something like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/bin/rm -rf *.o *.cu_o libsapporo.a
+/bin/rm -rf test_gravity_block test_gravity_N2ngb
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
+sapporo.cpp: In member function ‘int sapporo::open(int)’:
+sapporo.cpp:40:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+
+*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+ Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
+ar: creating libsapporo.a
+a - GPUWorker.o
+a - sapporo.o
+a - send_fetch_data.o
+a - sapporoG6lib.o
+a - host_evaluate_gravity.cu_o
+ranlib libsapporo.a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to test the compilation run&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_N2ngb 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_block 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the test fail if the number is less than ~800.&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;StarLab&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;change configure CUDA lines:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and change local/grape.sh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+
+# CUDAINC=&amp;quot;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;quot; 
+# CUDALIB=&amp;quot;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;quot; 
+
+LIBS1=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+
+#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1
+
+# Where to find GRAPE libraries:
+# GRAPE_LDFLAGS_=&#39;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&#39;
+GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;make clean&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;./configure --without-fortran&lt;/code&gt; (&lt;code&gt;--without-f77&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;now you can find the &lt;code&gt;kira&lt;/code&gt; binary in &lt;code&gt;/usr/local/bin&lt;/code&gt; or&lt;code&gt;/usr/bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./kira -t 500 -d 1 -D 1 -b 1 \
+             -n 10 -e 0.000 -B   \
+	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
+	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
+	 2&amp;gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
+Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The tree&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gadget-2 uses a&lt;a href=&#34;http://en.wikipedia.org/wiki/Octree&#34; target=&#34;_blank&#34; title=&#34;oct-tree&#34;&gt; BH oct-tree&lt;/a&gt; (see also &lt;a href=&#34;http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation&#34; target=&#34;_blank&#34; title=&#34;Barnes&amp;amp;Hut simulation on wikipedia&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.artcompsci.org/~makino/softwares/C++tree/index.html&#34; target=&#34;_blank&#34; title=&#34;NBODY, an implementation of Barnes-Hut treecode&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://ifa.hawaii.edu/~barnes/software.html&#34; target=&#34;_blank&#34; title=&#34;Barnes&#39; page&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.cita.utoronto.ca/~dubinski/treecode/treecode.html&#34; target=&#34;_blank&#34; title=&#34;A parallel tree code explenation&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.prism.gatech.edu/~gth716h/BNtree/&#34; target=&#34;_blank&#34; title=&#34;Barnes-Hut Implementation in HTML/Javascript&#34;&gt;here&lt;/a&gt;) to calculate the short-range forces in the real space. This choice was done because this type of tree, compared to other types (KD-Tree, &amp;hellip;), requires the creation of less nodes, that imply that less memory is used. It&amp;rsquo;s characterized by eight sub-nodes for each node and has only one particle in each leaf. The code decides to open a leaf according to a certain leaf opening criterion based on the estimated force error. The force for distant groups of particles is approximated with the multipole (here octopole) of the tree node and the error depends on the dimensions and the distances of the node considered.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PM part&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The PM part of the code is used to calculate the long-range forces. The algorithm is something like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;CIC (cloud-in-cell) assignment is used to construct the mass density field on to the mesh from the information on the particles&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the discrete FT of the mesh is multiplied for the Green function for the potential in periodic boundaries (modified with the exponential truncation for the force splitting)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;deconvolution for the CIC kernel twice: the first for the smoothing effect of CIC assignment, the second for the force interpolation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$\mathrm{FT}^{-1}$ to obtain the potential on the mesh&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;finite differentiate the potential to obtain the forces&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;interpolate the forces to the particles positions using CIC&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note: real-to-complex FT are used to save times and memory respect to full complex transforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time step&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This type of code has a large dynamic range in time scale, from the denser regions where the evolution is rapid to the less denser regions in which the evolution occur slower so we can describe it with larger time resolution. In this scenario evolving all particles with the smallest time-scale is a waste of time and computational resources. Because using different time-steps for each particle add instabilities to the system, Gadget-2 separates time-step between long-range (longer time step) and short-range (shorter time step) force computations. The perturbation of the system for different time-steps is related to the symplectic nature of the system, but I still have not understood what it really means and implies! I know that it refers to the phase space volume and has effect on the information conservation. May be in the future I&amp;rsquo;ll write a post about this!&lt;br /&gt;
+Despite these arguments, sometimes individual time step are allowed because they perturb the system but not the symplecticity of the single particle.&lt;br /&gt;
+In the normal integration mode time-steps are discretized in a power of two hierarchy and particles can always move to smaller time steps but to longer time steps only in subsequent step, synchronized with higher time-steps. Alternatively the code can populate time-steps discretizeing them as integer multiples of the minimum time-step among the particles set. This lead to a more homogeneous distribution of particles across the time-line which can simplify work load balancing.&lt;br /&gt;
+The integration is performed using the &lt;a href=&#34;http://en.wikipedia.org/wiki/Leapfrog_integration&#34; target=&#34;_blank&#34; title=&#34;Leapfrog method&#34;&gt;leapfrog method&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallelization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Usually the parallelization distributes particles across the CPUs using an orthogonal domain decomposition but in this way the trees built-in each domain depend on the domain geometry. Because the force depend on the tree (through the multipole expansion of the mass distribution) the force can be different if you change the number of processors.&lt;br /&gt;
+Gadget-2 introduce a space-filling fractal, the Peano-Hilber (PH) curve to map 3D space into a 1D curve that encompasses all the particles. Now the PH curve can be cut and each piece assigned to a CPU and in this way the force is independent of the processors number. If you cut every segment in eight pieces recursively you find again the tree decomposition, so there is a close correspondence between the decomposition obtained with the BH oct-tree and that of the PH curve.&lt;br /&gt;
+The PH curve has some remarkably properties, for example points that are close along the 1D PH curve are in general close in 3D space, so the mapping preserves locality and if we cut the PH curve into segments of a certain length we obtain a domain decomposition which has the property that the spatial domains are simply connected and quite &amp;ldquo;compact&amp;rdquo; (i.e., they tend to have small surface-to-volume ratios and low aspect ratio, a highly desirable property for reducing communication costs with neighbouring domains and for speeding up the local computation).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operations scheme&lt;/strong&gt;&lt;br /&gt;
+Here a brief scheme on how the short range force calculation works on multiple processors. The PM computation uses the &lt;a href=&#34;http://www.fftw.org/fftw2_doc/fftw_4.html&#34; target=&#34;_blank&#34; title=&#34;Parallel FFTWs&#34;&gt;parallel FFTWs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Compute the PH key for each particle&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sort the keys locally and split the PH curve into segments&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Adjust the sorted segments to a global sort, splitting and joining segments if needed, with little communication&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Assign the particles to the processes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Construct a BH tree for the particles of each processors representing particles on other processors with pseudo-particles (acting like placeholders)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;During the tree traverse (e.g. in processor A) these pseudo-particles cannot be opened, the are flagged and inserted into a list that collects all the particles that are to be sent (=requested) to the other processors (e.g. to processor B)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Processor B traverse again its local tree and send back the resulting force contribution to processor A&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My first Gadget2 tests</title>
+      <link>http://localhost:1313/posts/my-first-gadget2-tests/</link>
+      <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/my-first-gadget2-tests/</guid>
+      <description>
+
+&lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
+
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+
+&lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
+Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;amp;lt;archive name&amp;amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd gsl-1.9/
+goldbaum@~/Documents/code/gsl-1.9: ./configure
+snip: lots of diagnostic ouput
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: cd ..
+goldbaum@~/Documents/code: cd fftw-2.1.5
+goldbaum@~/Documents/code/fftw-2.1.5: ./configure --enable-mpi --enable-type-prefix --enable-float
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As described &lt;a href=&#34;http://www.fftw.org/fftw2_doc/fftw_6.html#SEC69&#34; target=&#34;_blank&#34; title=&#34;FTTW installation and customization&#34;&gt;here&lt;/a&gt; is convenient to install both the single and the double precision version of the FFTW (for example to compile the initial conditions generators) with (that is, without &lt;code&gt;--enable-float&lt;/code&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd fftw-2.1.5
+goldbaum@~/Documents/code/fftw-2.1.5: ./configure --enable-mpi --enable-type-prefix
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;play-with-gadget2:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Play with Gadget2&lt;/h2&gt;
+
+&lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
+To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;
+
+&lt;p&gt;Inside the Gadget directory we have&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Analysis
+AUTHORS
+COPYING
+COPYRIGHT
+Documentation
+Gadget2
+ICs
+README
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the &lt;code&gt;Analysis&lt;/code&gt; folder we can fin some analysis routines provided by the author, the &lt;code&gt;Documentation&lt;/code&gt; folder contains the user guide and the original paper, and the &lt;code&gt;AUTHORS, COPYING, COPYRIGHT&lt;/code&gt; self-explanatory. The &lt;code&gt;ICs&lt;/code&gt; folder contains the initial conditions for the example simulations and the &lt;code&gt;Gadget2&lt;/code&gt; folder contains the sources and the html documentation.&lt;/p&gt;
+
+&lt;p&gt;To be tidy and organized is better to have a folder for every simulations, so we will create a (descriptive) with everything we need to customize&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir 2012-01-07-Gadget2-galaxy_test_01
+cd 2012-01-07-Gadget2-galaxy_test_01
+mkdir out
+cp ../ICs/galaxy_littleendian.dat ./
+cp ../Gadget2/parameterfiles/galaxy.param ../Gadget2/parameterfiles/galaxy.Makefile ./
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the folder Gadget2 we can find the general &lt;code&gt;Makefile&lt;/code&gt; but for now let&amp;rsquo;s use the galaxy&amp;rsquo;s one provided by the author and just copied to our position. Open it with your preferred text editor (for example, in a command line environment, &lt;code&gt;emacs -nw Makefile&lt;/code&gt;).&lt;br /&gt;
+This &lt;code&gt;Makefile&lt;/code&gt; is already customized for the galaxy collision simulation and if you want to understand every option you can read the description in the guide, but we need some more customization. Here what I&amp;rsquo;ve changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;OPT   +=  -DHAVE_HDF5  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so I activate the HDF5 format for the output and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#--------------------------------------- Select target computer
+
+SYSTYPE=&amp;quot;Uno&amp;quot;
+\#SYSTYPE=&amp;quot;MPA&amp;quot;
+\#SYSTYPE=&amp;quot;Mako&amp;quot;
+\#SYSTYPE=&amp;quot;Regatta&amp;quot;
+\#SYSTYPE=&amp;quot;RZG_LinuxCluster&amp;quot;
+\#SYSTYPE=&amp;quot;RZG_LinuxCluster-gcc&amp;quot;
+\#SYSTYPE=&amp;quot;Opteron&amp;quot;
+
+\#--------------------------------------- Adjust settings for target computer
+
+ifeq ($(SYSTYPE),&amp;quot;Uno&amp;quot;)
+CC       =  mpicc   
+OPTIMIZE =  -O3 -Wall
+GSL_INCL =  -I/usr/local/include
+GSL_LIBS =  -L/usr/local/lib
+FFTW_INCL=  -I/usr/local/include
+FFTW_LIBS=  -L/usr/local/lib
+MPICHLIB =  -L/usr/lib
+HDF5INCL =  
+HDF5LIB  =  -lhdf5 -lz 
+endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to select the set the options for my system.&lt;br /&gt;
+Now we have to customize the &lt;code&gt;run/galaxy.param&lt;/code&gt; file changing it like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;InitCondFile      ./galaxy_littleendian.dat
+OutputDir          ./galaxy_out/
+OutputListFilename ./out/output_list.txt
+SnapFormat         3  %to select the HDF5 format
+TimeBegin           0.0        % Begin of the simulation
+TimeMax             40.0        % End of the simulation
+
+% Output frequency
+TimeBetSnapshot        0.1% original 0.5 &amp;lt;/pre&amp;gt;
+    
+    
+Now we should go to the sources folder and compile the code with    
+&amp;lt;pre&amp;gt;cd ../Gadget2
+make -f 2012-01-07-Gadget2-galaxy_test_01/galaxy.Makefile
+cp Gadget2 ../2012-01-07-Gadget2-galaxy_test_01/Gadget2
+make clean
+cd 2012-01-07-Gadget2-galaxy_test_01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last command clean the build leaving only the sources files, so we are ready for a new build.&lt;br /&gt;
+We can also create a script for automatize all this steps, something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+dir=$1
+ics=$2
+param_file=$3
+mk_file=$4
+CPUs=$5
+
+if [ $# -lt 5 ] ; then
+  echo &amp;quot;usage: gadget_set directory_name initial_conditions_file
+parameters_file make_file number_of_CPUs&amp;quot;
+  exit 0
+fi
+
+echo &amp;quot;Assuming to use $dir as the run folder,&amp;quot; 
+echo &amp;quot;$ics as initial conditions,&amp;quot;
+echo &amp;quot;$paramfile as parameter file, &amp;quot;
+echo &amp;quot;$mk_file as makefile &amp;quot;
+echo &amp;quot;and to run on $CPUs CPUs.&amp;quot;
+
+mkdir $dir
+cd $dir
+mkdir out
+cp ../ICs/$ics ./
+cp ../Gadget2/parameterfiles/$param_file
+../Gadget2/parameterfiles/mk_file ./
+cd ../Gadget2
+make -f ../$dir/$mk_file
+cp Gadget2 ../$dir/Gadget2
+make clean
+cd $dir
+mpirun -np $CPUs ./Gadget2 $param_file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a very raw and untested script, but it&amp;rsquo;s just to give an idea.&lt;/p&gt;
+
+&lt;p&gt;Now we are ready to start the simulation with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpirun -np 2 ./Gadget2 galaxy.param
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;-np&lt;/code&gt; sets the number of processes/processors to be used in parallel.&lt;br /&gt;
+When the simulation stops we can analyze it with the tools provided in the &lt;code&gt;Analysis&lt;/code&gt; folder or, if you like me don&amp;rsquo;t own an IDL license and don&amp;rsquo;t feel comfortable with IDL/Fortran/C for the data analysis, with something like (to be run in out/plots/):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/use/bin/env python
+import sys, os
+from subprocess import Popen, PIPE
+from multiprocessing import Process, Queue
+
+import numpy as np
+import tables as tb
+import time
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+&amp;quot;&amp;quot;&amp;quot;This script will plot in parallel the .h5 snapshots created by Gadget2 test
+runs one after the other!:).
+FIXME: i need a way to wait for the final time count the end of the processes
+and a way to print the status
+&amp;quot;&amp;quot;&amp;quot;
+
+# Set the max number of processes
+n_procs = 3
+
+# Set the number of snapshot to be plotted
+n_snap = 401
+
+t = time.time()
+
+print &amp;quot;Defining workers...&amp;quot;
+
+def worker(input, output):
+    while input.qsize() != 0:
+        item = input.get()
+        if item[0]= 10 and item[0]&amp;amp;lt;100: j=&amp;quot;0&amp;quot;+str(item[0])
+        else: j=str(item[0])
+        try:
+#     print &amp;quot;considering file ../snapshot_&amp;quot;+j+&amp;quot;.hdf5&amp;quot;
+#     print &amp;quot;open file &amp;quot;
+            h5 = tb.openFile(&amp;quot;../snapshot_&amp;quot;+j+&amp;quot;.hdf5&amp;quot;, &#39;r&#39;)
+#     print &amp;quot;file opened, set variables&amp;quot;
+            halo = h5.root.PartType1
+            disk = h5.root.PartType2
+#            print &amp;quot;setted, inizialize figure&amp;quot;
+            fig2 = plt.figure()
+            ax = Axes3D(fig2)
+            ax.scatter(disk.Coordinates[:,0], 
+                       disk.Coordinates[:,1],
+                       disk.Coordinates[:,2],
+                       color=&#39;red&#39;, s=0.5)
+            ax.scatter(halo.Coordinates[:,0], 
+                       halo.Coordinates[:,1],
+                       halo.Coordinates[:,2],
+                       color=&#39;blue&#39;, s=0.01)
+            plt.savefig(&#39;snap_&#39;+j)
+#            print &amp;quot;done, closing file&amp;quot;
+            h5.close()  
+#            print &amp;quot;closed&amp;quot;
+
+        except:
+            print &amp;quot;Work &amp;quot;+j+&amp;quot; not done, exit...&amp;quot;
+            sys.exit()
+
+def fill_queue(task_queue):
+    for i in range(n_snap):
+        task_queue.put([i])
+    return task_queue
+
+def status(proc):
+    if proc.is_alive==True:
+        return &#39;alive&#39;
+    elif proc.is_alive==False:
+        return &#39;dead&#39;
+    else:
+        return proc.is_alive()
+
+print &amp;quot;Define queues...&amp;quot;
+
+input_queue = Queue()
+output_queue = Queue()
+
+try:
+    input_queue = fill_queue(input_queue)
+except:
+    print &amp;quot;Queue not filled, exit...&amp;quot;
+    sys.exit()
+
+procs = []
+
+try:
+    for i in range(n_procs):
+        procs.append(Process(target=worker, args=(input_queue,
+output_queue)))
+except:
+    print &amp;quot;Creating processes not complete, exit...&amp;quot;
+    sys.exit()
+
+try:
+    for i in procs:
+        i.start()
+except:
+    print &amp;quot;Start processes not complete, exit...&amp;quot;
+    sys.exit()
+
+for i in procs:
+    print &amp;quot;Process &amp;quot;, i,&amp;quot; @ &amp;quot; , i.pid, &amp;quot; is &amp;quot;, status(i)
+
+print &amp;quot;Done in &amp;quot;+str(time.time()-t)+&amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have one image for each snapshot, and if we are interested we can produce a video with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mencoder mf://*.png -mf fps=25:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -vf scale=720:360 -oac copy -o output.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;youtube http://www.youtube.com/watch?v=b7HyafKMkxI&amp;amp;amp;w=560&amp;amp;amp;h=315&#34;&gt;This&lt;/a&gt; is the first basic video, with logarithmic time and perhaps there&amp;rsquo;s something wrong with the coordinates on the axes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #7: Limitations and some considerations</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
+      <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
+      <description>
+
+&lt;h2 id=&#34;limitations:be6e6b0278d604ddee51c801f8740b2c&#34;&gt;Limitations&lt;/h2&gt;
+
+&lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
+simulations. Let&amp;rsquo;s review these in detail.&lt;br /&gt;
+First, we can consider a simulation composed of a finite box in a bigger space but to represent a real system, this box shouldn&amp;rsquo;t be isolated so we use the periodic boundary conditions (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #2: how?&#34;&gt;here&lt;/a&gt;). This means that all the space around the box is filled with images of the box itself: a particle that leaves the box from one side will come in&lt;br /&gt;
+from the opposite side.&lt;/p&gt;
+
+&lt;p&gt;Second, the mass inside the box is not continuous. Instead, it is made by particles of mass of the order of $10^9$ solar masses. These particles represent collisionless fluid elements (made by a huge quantity of real particles) with a certain&lt;br /&gt;
+volume and can&amp;rsquo;t be treated as solid spheres. When two simulation particles are&lt;br /&gt;
+separated by a distance smaller than the radius of the volumes they represents&lt;br /&gt;
+they must feel less than the force coming from the entire mass (thanks to the&lt;br /&gt;
+Gauss/Birkhoff&amp;rsquo;s theorem). To do this we soften (read &amp;ldquo;we reduce&amp;rdquo;) the force at&lt;br /&gt;
+such small scales (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #2: how?&#34;&gt;here&lt;/a&gt;). Third, time is not continuous and its discreteness was also treated (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-4-moving.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations: #4: Moving the particles!&#34;&gt;here&lt;/a&gt;) with some&lt;br /&gt;
+criteria to decide the time steps.&lt;br /&gt;
+Until now, however, we haven&amp;rsquo;t consider the effects of taking into account&lt;br /&gt;
+initial density fluctuations over a range of scales that is finite. In&lt;br /&gt;
+addition to this, the finite size of the box pose a limit on the force&lt;br /&gt;
+resolution, because fluctuations on scales bigger than the box side will not&lt;br /&gt;
+included in the simulation due to the way the Fourier transforms act on a&lt;br /&gt;
+period box. Some tests in literature show that the exclusion of small&lt;br /&gt;
+scales shouldn&amp;rsquo;t affect too much large scales when they reach the non linear&lt;br /&gt;
+regime but this not holds for the exclusion of large scales, those scales bigger&lt;br /&gt;
+than the box side. Following Bagla, the large scale exclusion should not&lt;br /&gt;
+disturb the formation of small haloes but could change their distribution.&lt;br /&gt;
+This effect will appear as an underestimation of the correlation function. Bagla&lt;br /&gt;
+finds that the best way of quantifying the effects of long wave modes is to&lt;br /&gt;
+check whether including them in the simulation will change the number of&lt;br /&gt;
+massive haloes or not and this can be estimated using the Press-Schecther mass&lt;br /&gt;
+function.&lt;br /&gt;
+In Tormen&amp;amp;Bertschinger (1996) the missing power on large scales will cause&lt;br /&gt;
+something like a statistical cosmic bias decreasing the number of high-density&lt;br /&gt;
+regions, the strength of the clustering and the amplitude of the peculiar&lt;br /&gt;
+velocities.&lt;br /&gt;
+Methods have been developed to take the missing &amp;ldquo;larger than the box&amp;rdquo; wave modes&lt;br /&gt;
+into account and we will have a look on these in a future post.&lt;/p&gt;
+
+&lt;h2 id=&#34;some-considerations:be6e6b0278d604ddee51c801f8740b2c&#34;&gt;Some considerations&lt;/h2&gt;
+
+&lt;p&gt;As we have seen (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-1-why-and-what.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #1: why and what?&#34;&gt;here&lt;/a&gt;) N-body cosmological simulations&lt;br /&gt;
+are useful to understand aspects of non-linear gravitational clustering,&lt;br /&gt;
+since it&amp;rsquo;s not possible to carry out laboratory experiments in gravitational&lt;br /&gt;
+dynamics and the analytic models fail when the system reach the non linear&lt;br /&gt;
+regime, i.e. when the density contrast overcome the unity. Related with&lt;br /&gt;
+cosmological simulations there are a pair of aspects that Bagla underlines in its&lt;br /&gt;
+articles that interesting to consider.&lt;br /&gt;
+The first issue is whether or not the gravitational clustering&lt;br /&gt;
+erase memory of initial conditions. Is there a one-to-one correspondence between&lt;br /&gt;
+some characterization of initial perturbations and the final state?&lt;br /&gt;
+N-body simulations shows that gravitational clustering does not erase memory of&lt;br /&gt;
+the initial conditions, the final power spectrum is a function of the initial&lt;br /&gt;
+power spectrum and this relationship can be written as a one-step mapping and&lt;br /&gt;
+the functional form of this mapping depends on the initial power spectrum.&lt;br /&gt;
+However density profiles of massive haloes have a form independent of&lt;br /&gt;
+initial conditions but there is a considerable scatter in density profiles&lt;br /&gt;
+obtained from N-body simulations and it is difficult to state whether a given&lt;br /&gt;
+functional form is always the best fit or not. I must admit that these last concepts are not very clear to me at the moment, and that I trust Bagla but I will deepen them as soon as possible to be able to comfortably master them.&lt;br /&gt;
+The second question is if it is possible to predict the masses and distribution&lt;br /&gt;
+of haloes that form as a result of gravitational clustering.&lt;br /&gt;
+The initial density field is taken to be a Gaussian random field and for&lt;br /&gt;
+hierarchical models the simple assumption that each peak undergoes collapse&lt;br /&gt;
+independent of the surrounding density distribution can be used to estimate the&lt;br /&gt;
+mass function and several related quantities but N-body simulations shows that&lt;br /&gt;
+this simple set of approximations is incorrect. However, the resulting mass&lt;br /&gt;
+function estimation is fairly accurate over a wide range of masses. Merger rates&lt;br /&gt;
+can be thus computed using the extended Press-Schecther formalism. Modifying&lt;br /&gt;
+some of this assumption can lead to improved predictions.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;References&lt;/em&gt;:&lt;br /&gt;
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ias.ac.in/currsci/apr102005/1088.pdf&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status&#34;&gt;J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abs/1991ComPh...5..164B&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&#34;&gt;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://iopscience.iop.org/0004-637X/472/1/14&#34; target=&#34;_blank&#34; title=&#34;G. Tormen and E. Bertschinger, Adding long wavelenght modes to an N-body simulation&#34;&gt;Giuseppe Tormen and Edmund Bertschinger, Adding long wavelenght modes to an N-body simulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/full/1997MNRAS.286...38C&#34; target=&#34;_blank&#34; title=&#34;S. Cole, Adding long-wavelength power to N-body simulations&#34;&gt;S. Cole, Adding long-wavelength power to N-body simulations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #1: why and what?</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-1-why-and-what/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-1-why-and-what/</guid>
+      <description>&lt;p&gt;This is the first of a series of posts dedicated to cosmological simulations!&lt;br /&gt;
+&lt;br /&gt;
+I do this because, as stressed by my PhD advisor,
+I need to practice in explaining in a clear way specialized knowledge and in
+linking it with its background and motivations. Also I would like to keep track
+of my progress and of what I&amp;rsquo;m learning!&lt;br /&gt;
+&lt;br /&gt;
+So, let&amp;rsquo;s start with &amp;ldquo;Why we need cosmological simulations? What are they?&amp;rdquo;!&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s have a look at the night sky: if we are so lucky to be in a dark site like
+the mountains or a desert, we can see the stars, and our Galaxy, The Milky Way.
+With a little telescope we can also see other galaxies, like Andromeda. We can
+find them in group of galaxies or clusters of galaxies. On bigger scales these
+form sheets and filaments as you can see in the figure (taken from the Millenium
+simulation).&lt;br /&gt;
+&lt;br /&gt;
+&lt;p  align=&#34;center&#34; &gt;&lt;img alt=&#34;&#34; class=&#34;alignnone&#34; height=&#34;400&#34; src=&#34;../../files/supercube.jpg&#34; title=&#34;A figure of the output of the Milleniun Simulation&#34; width=&#34;600&#34; /&gt;&lt;/p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Theoretical models, widely accepted, say that these structures formed from initial
+small density fluctuations in the matter, grew under their self gravity, lead by a
+special type of matter that can interact only through gravity, called &amp;ldquo;dark matter&amp;rdquo;.&lt;br /&gt;
+&lt;br /&gt;
+A homogeneous and isotropic universe is described by the
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Friedmann_equations&#34; target=&#34;_blank&#34; title=&#34;Friedmann equations&#34;&gt;Friedmann equations&lt;/a&gt; in general relativity. Until the density fluctuations are small we can treat them as perturbations in a Friedmann universe. If the matter under consideration is non-relativistic (and it is!) and on scales smaller than those of the observable universe we can study the evolution of these perturbations in the Newtonian limit. We also consider gravity as the only interaction to be taken into account for now. On large scales (more than some &lt;a href=&#34;http://en.wikipedia.org/wiki/Parsec&#34; target=&#34;_blank&#34; title=&#34;megaparsecs&#34;&gt;kiloparsecs&lt;/a&gt;) this is not a bad approximation as gravity is the only interaction working efficiently in driving the evolution of the fluctuations on that scales.&lt;br /&gt;
+&lt;br /&gt;
+We have good analytic models for the evolution of these perturbation until the
+density contrast (we call density contrast the quantity &lt;code&gt;$\delta(\vec x,t)=(\rho(\vec x, t)-\rho_{bg}(\vec x, t))/\rho_{bg}(\vec x, t)$&lt;/code&gt;
+where &lt;code&gt;$\rho_{bg}(\vec x, t)$&lt;/code&gt; is the background density at given position and time)
+is smaller than the unity.
+This is the &amp;ldquo;linear regime&amp;rdquo;.
+We call it &amp;ldquo;linear&amp;rdquo; because we can describe the system using first order
+perturbations and the solutions we find are in good agreement with the exact solutions.
+When the density contrast reaches and exceeds the unity, perturbations become
+&amp;ldquo;non-linear&amp;rdquo; and the analytic models break.&lt;br /&gt;
+&lt;br /&gt;
+Cosmological N-body simulations are then the only way we have to study perturbations
+in the non-linear regime. Note that when the fluctuations collapse forming what we
+call a &amp;ldquo;halo&amp;rdquo;, the density contrast is of the order of 100. Cosmological simulations
+are called &amp;ldquo;N-body&amp;rdquo; because they involve the calculation of the (gravitational)
+force among all the bodies (particles) of the simulation.&lt;br /&gt;
+&lt;br /&gt;
+With cosmological simulations we can also play with the initial conditions of our
+model of the universe, change its contents, &amp;hellip; and see what will happen. It&amp;rsquo;s the
+closest thing to a laboratory that we have.&lt;br /&gt;
+&lt;br /&gt;
+Using different techniques is also possible to include non-gravitational effects
+in the simulations, such as gas hydrodynamics, star formation, and so on.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;Reference&lt;/em&gt;:&amp;nbsp;&lt;a href=&#34;http://www.ias.ac.in/currsci/apr102005/1088.pdf&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status&#34;&gt;J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #2: how?</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-2-how/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-2-how/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s try now to understand how simulations can be set up.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;First of all note that dark matter density dominates over ordinary (baryonic) matter at all times and we expect that ordinary matter follows the gravity of dark matter on large scales, so we can start considering only dark matter in our simulation.&lt;br /&gt;
+Moreover, cosmological simulations differ from other N-body simulations because they should to be able to manage comoving coordinates, i.e. coordinates that expand with the universe, since the universe is expanding.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In a cosmological simulation every particle represents a large number of dark matter particles, so the interaction between two particles represents the interaction between two &amp;ldquo;fluid elements&amp;rdquo;, and this must be collisionless.&lt;br /&gt;
+Moreover, a point mass in the simulation represents a mass in a certain volume, and this volume change during the simulation due to the universe expansion and the clustering. This also imply that, at scales comparable to their physical size, they should feel less gravitational force than two point particles. When the two particles are separated by a distance comparable to the dimension of the fluid elements they represents, these would not feel the gravity of all the mass associated with the particles, as suggested by the Gauss theorem. This is because when you are into a spherical distribution of mass you only experience the gravitational force of the mass inside the radius corresponding to your distance from the center.&lt;br /&gt;
+To take care of this we decrease the strength of the force at small scales.&lt;br /&gt;
+Some example:&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;GIF2: 6.6 kpc/h softening with a mean interparticle separation 110 Mpc/h / 400 particles = 275 kpc/h&lt;/li&gt;
+&lt;br /&gt;
+&lt;li&gt;Millennium: 5 kpc/h softening with a mean interparticle separation 500 Mpc/h / 2160 particles = 231 kpc/h&lt;/li&gt;
+&lt;br /&gt;
+&lt;li&gt;Millennium II: 1 kpc/h softening with a mean interparticle separation 100 Mpc/h / 2160 particles = 46 kpc/h&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is called &amp;ldquo;force softening&amp;rdquo;. There are several ways to implement this and one should pay attention because a softening length smaller than the interparticle separation would lead to two-body relaxation problems. With the term &amp;ldquo;two-body relaxation&amp;rdquo; we mean the effects that arise when to particles mainly feels each other instead of feeling the global field, or feel more mass than what they should (they feel the mass of the entire fluid elements instead of the mass inside the radius corresponding to their distance). Usually the effects are of two types: the two particles can start to orbit faster and faster with decreasing separation, or they can experience a gravitational sling and be pulled apart (two-body scattering).&lt;br /&gt;
+The two-body relaxation modifies the density profiles of dark matter haloes (the dark matter structures formed by gravitational collapse of dark matter) making them smoother. The form of the softening is also important: historically there are two main softening, one is Gaussian and the other is a cubic spline.  &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can start analyzing the structure of a cosmological N-body code. It consists in two main parts: the first computes the force field for a given configuration of particles, the second moves the particles according to the computed force field. The two modules are called at each step to ensure that the force field and the particles trajectories evolve in a self-consistent manner. Before starting the simulation we also need to set up the initial conditions and afterwards we have to write the output.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In setting up our simulation there are some things we should consider.&lt;br /&gt;
+Our simulation represents a small box in the whole universe, but it isn&amp;rsquo;t an isolated system so it feels the gravitational field of the rest of the universe. To take account of these we can set up periodic boundary conditions. This implies that space outside the simulation box is tiled it with copies (images) of the box. In this way particles near the edges are attracted not only by the matter in the box but also by the particles in its images.&lt;br /&gt;
+&lt;br /&gt;
+&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;img alt=&#34;&#34; height=&#34;500&#34; src=&#34;http://isaacs.sourceforge.net/phys/images/these-seb/pbc-seb.png&#34; style=&#34;margin-left: auto; margin-right: auto;&#34; title=&#34;Periodic boundary conditions example&#34; width=&#34;500&#34; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;&lt;span style=&#34;font-size: small; text-align: -webkit-auto;&#34;&gt;Periodic boundary conditions example taken from &lt;a href=&#34;http://isaacs.sourceforge.net/phys/pbc.html&#34;&gt;http://isaacs.sourceforge.net/phys/pbc.html&lt;/a&gt;.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;With periodic boundary conditions one should make sure that there isn&amp;rsquo;t a dominant object in its volume to avoid too large influence by its periodic copies.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;As written above, we need cosmological simulations to study scales where perturbations are not linear, to compare results with the real universe. To do this we must probe a large range of scales, so the mass of individual particles must be smaller than the mass of the smallest structure of interest. On the other hand the number of particles must be sufficient to cover the range of   masses involved in galaxy clustering. As of 2011 a typical large simulation have of order of billion of particles.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;With such large number of particles the most time consuming operation in the simulation is force calculation; therefore a number of algorithms  have been developed to avoid direct calculations, unfeasible even on the most powerful computer.&lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;References&lt;/em&gt;:&lt;br /&gt;
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ias.ac.in/currsci/apr102005/1088.pdf&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status&#34;&gt;J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abs/1991ComPh...5..164B&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&#34;&gt;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

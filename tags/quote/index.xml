@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quote on Post It!</title>
+    <link>http://localhost:1313/tags/quote/</link>
+    <description>Recent content in Quote on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2013 17:26:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/quote/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My favourite quotes</title>
+      <link>http://localhost:1313/pages/personal/my-favourite-quotes/</link>
+      <pubDate>Wed, 14 Aug 2013 17:26:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/personal/my-favourite-quotes/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Try again, fail again, fail better.&lt;br /&gt;
+[Samuel Beckett]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tell me and I&amp;rsquo;ll forget, show me and I may remember, involve me and I&amp;rsquo;ll understand.&lt;br /&gt;
+[from the QT website]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Be hungry, be foolish.&lt;br /&gt;
+[Steve Jobs]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prima di diagnosticarti una depressione o bassa autostima, assicurati di non essere semplicemente circondato da stronzi.&lt;br /&gt;
+[W.Gibson]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nulla vale l&amp;rsquo;odore di quel fuoco.&lt;br /&gt;
+[BP]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;La distanza tra teoria e pratica è più grande in pratica che in teoria.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Occorre lavorare su se stessi per imparare ad ASCOLTARE DAVVERO. Imparare a non interrompere, imparare a sospendere il giudizio, imparare ad aprire davvero la mente ed il cuore, prima ancora che le orecchie.&lt;br /&gt;
+[Giovanni Annunziata]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The best way to predict the future is to invent it&lt;br /&gt;
+[Alan Kay]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Less is (exponentially) more&lt;br /&gt;
+[Rob Pike on Go]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;La differenza tra dire e fare è implementare&lt;br /&gt;
+[Andrea Negri]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Beware of the man who won’t be bothered with details.&lt;br /&gt;
+[William Feather, Sr.]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sceglierò sempre una persona pigra per svolgere un compito difficile, perché troverà un modo semplice per risolverlo.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hai mai pensato che è davvero un genio chi rende semplice ciò che non sai&amp;hellip;
+[Rio, Il Sognatore]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hai mai pensato che sei piccolo o grande in base al coraggio che hai?&lt;br /&gt;
+[Rio, Il Sognatore]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hai mai pensato che il destino e` nelle scelte e le scelte sei tu che le fai?&lt;br /&gt;
+[Rio, Il sognatore]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Visto da vicino nessuno è normale&lt;br /&gt;
+[Franco Basaglia]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Un vincente trova la strada un perdente trova una scusa&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Try not. Do or do not!! There is no try&lt;br /&gt;
+[Yoda, Star Wars: Episode V - The Empire Strikes Back (1980)]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Life begins at the end of your comfort zone.&lt;br /&gt;
+[Neale Donald Walsch]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Se un milione di persone crede ad una cosa stupida la cosa non smette di essere stupida&lt;br /&gt;
+[Anatole France]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Any sufficiently advanced technology is indistinguishable from magic.&lt;br /&gt;
+[Clarke&amp;rsquo;s Third Law]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ricordare il passato serve per il futuro, così non ripeterai gli stessi errori: ne inventerai di nuovi.&lt;br /&gt;
+[Groucho Marx]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Non, ho fallito…Ho solo trovato 10.000 modi per non far funzionare una lampadina&lt;br /&gt;
+[Edison]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Con le mani, allora? Allora non mi stupisce che siate cosi&amp;rsquo; tristi.&lt;br /&gt;
+[Ygritte, GoT2x07]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Che tu creda di farcela o non farcela, hai ragione&lt;br /&gt;
+[Henry Ford]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fake it till you make it&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A journey is best measured in friends than in miles&lt;br /&gt;
+[Tim Cahill]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;La bellezza salverà il mondo.&lt;br /&gt;
+[Cvetan Todorov]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Physics is like sex: sure, it may give some practical results, but that&amp;rsquo;s not why we do it.&lt;br /&gt;
+[Richard Feynmann]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ad ogni uomo viene data la chiave del paradiso, la stessa chiave apre le porte dell&amp;rsquo;inferno.&lt;br /&gt;
+[Massima buddhista, riportata da Richard Feynmann]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ho un amico artista, e non sempre sono d’accordo con le sue opinioni. Magari prende in mano un fiore e dice: “Guarda com’è bello!” e sono d’accordo. Poi aggiunge: “Io, in quanto artista, riesco a vedere com’è bello un fiore. Voialtri scienziati lo fate a pezzi e diventa noioso”.
+E io penso che sragioni.
+Prima di tutto la bellezza che vede lui è a disposizione di tutti – anche della mia. Forse non avrò la sua estetica raffinata, ma so apprezzare la bellezza di un fiore. Per di più vedo nel fiore qualcosa, anzi molto, che lui non riesce a vedere: posso immaginare le cellule, anch’esse con una loro bellezza. La bellezza non si ferma alla dimensione dei centimetri, ma si trova anche su scale più piccole.&lt;br /&gt;
+[Richard Feynman]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;La teoria è quando si sa tutto e niente funziona. La pratica è quando
+tutto funziona e nessuno sa il perché. Noi abbiamo messo insieme la teoria e la
+pratica: non c&amp;rsquo;è niente che funzioni&amp;hellip; e nessuno sa il perché!&lt;br /&gt;
+[A. Einstein]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;L’ottimista è colui che vede nella grandine una buona partenza per un mojito.&lt;br /&gt;
+[C. Sauna (via one-none100000masks)]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fear is not real. The only place that fear can exist is in our thoughts of the future. It is a product of our imagination, causing us to fear things that do not at present and may not ever exist. That is near insanity. Do not misunderstand me danger is very real but fear is a choice.&lt;br /&gt;
+[Will Smith]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t cry because it&amp;rsquo;s over, smile because it happened.&lt;br /&gt;
+[Theodor Seuss Geisel]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Today is the tomorrow you expected yesterday.&lt;br /&gt;
+[Shaun Tan (The Lost Thing)]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sapete, un giorno un giornalista chiese a Bruno Lauzi:”Perché scrivi solo canzoni malinconiche?”. La risposta fu: “Perché quando sto bene esco”.&lt;br /&gt;
+[Ligabue]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Un giorno senza un sorriso è un giorno perso.&lt;br /&gt;
+[Charlie Chaplin]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Si educa molto con quel che si dice, ancor più con quel che si fa, ma molto di più con quel che si è.&lt;br /&gt;
+[Sant&amp;rsquo;Ignazio di Antiochia]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There is a theory which states that if ever anybody discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.  There is another theory which states that this has already happened.&lt;br /&gt;
+[Douglas Adams, The Hitchhiker’s Guide to the Galaxy]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ognuno e` un genio, ma se si giudica un pesce dalla sua abilita` ad arrampicarsi sugli alberi lui passera` tutta la sua vita a credersi stupido.&lt;br /&gt;
+[Albert Einstein]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Erra sia chi sbaglia che chi e` vagabondo, ma se io non erro poi non so com&amp;rsquo;e` il mondo
+[Jovannotti]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it&amp;hellip;&lt;br /&gt;
+[Dan Ariely]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;They&amp;rsquo;ve done studies, you know. 60% of the time, it works every time.
+[Brian Fantana]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There are only two types of people in the world: those who can extrapolate from incomplete data&amp;hellip;
+[???]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Lascia dormire il futuro come si merita, se lo si sveglia prima del tempo, si ottiene un presente assonnato.&lt;br /&gt;
+[Franz Kafka]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mai ti si concede un desiderio senza che inoltre ti sia concesso il potere di farlo avverare. Può darsi che tu debba faticare per questo, tuttavia.&lt;br /&gt;
+[Richard Bach]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Non approfittare mai della pazienza delle persone buone perché sono le ultime a stancarsi ma le prime a non avere ripensamenti.&lt;br /&gt;
+[???]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Se non vogliono che guardi dentro&amp;hellip; dovrebbero costruirle meglio.&amp;rdquo;&lt;br /&gt;
+[Harold Finch, PoI 3x11]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Ciò che mi spaventa di più è che quando mi succede, quando mi sento sopraffatto e perdo completamente il controllo&amp;hellip; mi piace.&amp;rdquo;&lt;br /&gt;
+[Hulk]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;È questo il mio segreto, capitano: sono sempre arrabbiato. &amp;ldquo;&lt;br /&gt;
+[Hulk, in The Avengers]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Mi stai facendo arrabbiare. Non ti piacerà vedermi arrabbiato.&amp;rdquo;&lt;br /&gt;
+[Hulk]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;The best performance improvement is the transition from the non-working state to the working state&amp;rdquo;&lt;br /&gt;
+[J. Osterhout]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;My particular form of procrastination is optimization.&amp;rdquo;&lt;br /&gt;
+[Will Styler, &lt;a href=&#34;http://savethevowels.org/essays/markdowndissertation.html&#34;&gt;http://savethevowels.org/&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Software programming is not typing&amp;rdquo;. Most of my best code has formed somewhere other than at a keyboard.&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/rob_pike/status/539601987822567424&#34;&gt;via Rob Pike&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;If you only walk on sunny days you’ll never reach your destination.&amp;rdquo;&lt;br /&gt;
+[Paulo Coelho]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Parlare oscuramente lo sa fare ognuno, ma chiaro pochissimi.&amp;rdquo;&lt;br /&gt;
+[(Galileo Galilei, Considerazioni al Tasso]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Having access to the source code is one thing. Having access to the tacit&lt;br /&gt;
+knowledge that went into the process of writing the source code is quite something else.&amp;rdquo;
+[Piet Hut and Jun Makino, &lt;a href=&#34;http://www.artcompsci.org/&#34;&gt;artcompsci&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Rule 34 — &amp;ldquo;If it exists, there is porn of it. No exceptions&amp;rdquo;&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Non esistono vecchi idioti, esistono idioti che diventano idioti&amp;rdquo;&lt;br /&gt;
+[Herman Medrano]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Onesto è colui che cambia il proprio pensiero per accordarlo alla verità. Disonesto è colui che cambia la verità per accordarla al proprio pensiero&amp;rdquo;&lt;br /&gt;
+[Proverbio Arabo]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;I sogni nel cassetto, ammuffiscono&amp;rdquo;&lt;br /&gt;
+[on a T-shirt]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Non lasciatevi ingannare dalla nostalgia di &amp;ldquo;quel che poteva essere&amp;rdquo; Non poteva essere nient&amp;rsquo;altro, altrimenti lo sarebbe stato&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;[&amp;hellip;] premature optimization is the root of all evil [&amp;hellip;]&amp;rdquo;&lt;br /&gt;
+[Donald Knuth (&lt;a href=&#34;Structured Programming with go to Statements&#34;&gt;Structured Programming with go to Statements&lt;/a&gt;)]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;La cosa peggiore che si possa fare è pensare e riflettere con angoscia a cosa si sarebbe potuto fare.&amp;rdquo;&lt;br /&gt;
+[Found on the Internet]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Il vero viaggio di scoperta non consiste nel cercare nuove terre ma nell&amp;rsquo;avere occhi nuovi&amp;rdquo;. - Marcel Proust&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;God, grant me the serenity to accept the things I cannot change, courage to change the things I can, and wisdom to know the difference.&amp;rdquo;&lt;br /&gt;
+[Reinhold Niebuhr]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;It always seems impossible until it&amp;rsquo;s done.&amp;rdquo;&lt;br /&gt;
+[Nelson Mandela]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;E l&amp;rsquo;indignazione è una bellissima cosa, no? Solo che purtroppo non serve a niente.&amp;rdquo;&lt;br /&gt;
+[Bifo Berardi]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;If you want to go fast, go alone. If you want to go far, go together.&amp;rdquo;&lt;br /&gt;
+[African proverb]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Doubt kills more dreams than a failure ever will.&amp;rdquo;&lt;br /&gt;
+[Karim Seddiki]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;There is a theory which states that if ever anybody discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states that this has already happened.&amp;rdquo;&lt;br /&gt;
+[Douglas Adams]&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

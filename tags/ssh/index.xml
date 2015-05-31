@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on Post It!</title>
+    <link>http://localhost:1313/tags/ssh/</link>
+    <description>Recent content in Ssh on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ssh keys exchange</title>
+      <link>http://localhost:1313/posts/ssh-keys-exchange/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/ssh-keys-exchange/</guid>
+      <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
+the need to remember a password.&lt;/p&gt;
+
+&lt;p&gt;On both the computer (&lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen
+ssh-copy-id -i you@B
+ssh you@B # to check if it works
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If it doesn&amp;rsquo;t work try:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cat .ssh/id_rsa.pub | ssh b@B &#39;cat &amp;gt;&amp;gt; .ssh/authorized_keys&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

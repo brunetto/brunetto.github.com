@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pelikan on Post It!</title>
+    <link>http://localhost:1313/tags/pelikan/</link>
+    <description>Recent content in Pelikan on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Mar 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pelikan/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Second Pelican attempt: creating a blog on GitHub with Pelican</title>
+      <link>http://localhost:1313/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</link>
+      <pubDate>Fri, 08 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
+      <description>
+
+&lt;h1 id=&#34;how-to-create-a-blog-with-github-and-pelican-python:651ade69f2264893e825a9f66a7802da&#34;&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h1&gt;
+
+&lt;p&gt;###Suppose that you are curios about GitHub pages&amp;hellip; but I don&amp;rsquo;t understand their guide.&lt;br /&gt;
+###And suppose that you don&amp;rsquo;t like Ruby but prefer Python&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;First of all create a repo named &lt;code&gt;youname.github.com&lt;/code&gt; on your GitHub account
+(ok, maybe, before this, you have to create a GitHub account!).&lt;br /&gt;
+&amp;lt;!&amp;ndash;TEASER_END&amp;ndash;&amp;gt;
+Then set the remote origin locally with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    # I use ssh because I can log in without a password saving my key at https://github.com/settings/ssh    
+    git remote add origin ssh://git@github.com/yourname/yourname.github.com.git    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can follow the excellent guide by &lt;a href=&#34;http://martinbrochhaus.com/2012/02/pelican.html&#34;&gt;Martin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Maybe you need to change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    mkvirtualenv -p python2.7 blog    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;with something like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    mkvirtualenv -p /usr/bin/python blog    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you need to write equation, use &lt;a href=&#34;http://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt; is straightforward.
+Following &lt;a href=&#34;http://www.ceremade.dauphine.fr/~amic/en/blog/mathjax-and-pelican.html&#34;&gt;this post&lt;/a&gt;
+you only need to add few lines to the &lt;code&gt;base.html&lt;/code&gt; of your theme and write latex-style equation like
+&lt;code&gt;$$\frac{x_n}{x_{n+1}}$$&lt;/code&gt; to obtain&lt;/p&gt;
+
+&lt;p&gt;$$\frac{x&lt;em&gt;n}{x&lt;/em&gt;{n+1}}$$&lt;/p&gt;
+
+&lt;p&gt;If you want to show code you only need to indent it with four spaces and put the
+languade identifier (&lt;code&gt;:::python&lt;/code&gt;) on the top, indented in the same way (.=space):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;....:::python    
+....def print_python():    
+........print &amp;quot;Python:)&amp;quot;    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;produces&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def print_python():
+    print &amp;quot;Python:)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, if can also blog from the &lt;a href=&#34;http://ipython.org/notebook.html&#34;&gt;IPython Notebook&lt;/a&gt;
+following the &lt;a href=&#34;http://danielfrg.github.com/blog/2013/03/08/pelican-ipython-notebook-plugin/&#34;&gt;guide by Daniel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And That&amp;rsquo;s all Folks!:P&lt;/p&gt;
+
+&lt;p&gt;PS: see also &lt;a href=&#34;http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/&#34;&gt;this&lt;/a&gt; great guide&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

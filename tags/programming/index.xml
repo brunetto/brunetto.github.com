@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Post It!</title>
+    <link>http://localhost:1313/tags/programming/</link>
+    <description>Recent content in Programming on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Not only Big Data</title>
+      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
+We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
+I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
+useful in our everyday work. This presentation aims of acting both as a showcase of what can help us and as a cheat sheet.
+You can find it after the break.&lt;/p&gt;
+
+&lt;iframe src=&#34;http://rawgit.com/brunetto/my-public-talks/master/2014-12-cinecaBigData/index.html&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python plot examples</title>
+      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
+&lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
+I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
+perfect &lt;code&gt;pdf&lt;/code&gt; plots, but sometimes Matplotlib it&amp;rsquo;s faster for producing just
+a draft plot to inspect data!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
+import time
+import numpy as np
+import veusz.embed as ve
+
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	return counts, bin_edges
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+2, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	bin_edges = np.hstack((bin_edges[0], bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def plotFunc(inpath=&amp;quot;./&amp;quot;, outpath=&amp;quot;./&amp;quot;):
+	font = &amp;quot;Times New Roman&amp;quot;
+	colors = [u&#39;blue&#39;, u&#39;green&#39;]
+	xmin = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	xmax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	ymin = [&amp;quot;auto&amp;quot;, 0]
+	ymax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	figure = ve.Embedded(&amp;quot;Window_1&amp;quot;)
+	page = figure.Root.Add(&#39;page&#39;, width = &#39;30cm&#39;, height=&#39;15cm&#39;)
+	grid = page.Add(&#39;grid&#39;, autoadd = False, rows = 1, columns = 2,
+						scaleRows=[0.2],
+						topMargin=&#39;1cm&#39;,
+						bottomMargin=&#39;1cm&#39;
+						)
+	graphList = []
+	
+	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;scatter&amp;quot;, autoadd=False, 
+							hide = False, 
+							Border__width = &#39;2pt&#39;,
+							leftMargin = &#39;0.6cm&#39;,
+							rightMargin = &#39;0.4cm&#39;,
+							topMargin = &#39;0.5cm&#39;,
+							bottomMargin = &#39;1cm&#39;,
+							))
+	
+	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;hist&amp;quot;, autoadd=False, 
+							hide = False, 
+							Border__width = &#39;2pt&#39;,
+							leftMargin = &#39;2cm&#39;,
+							rightMargin = &#39;0.4cm&#39;,
+							topMargin = &#39;0.5cm&#39;,
+							bottomMargin = &#39;1cm&#39;,
+							))
+	
+	for i in range(len(graphList)):
+		graphList[i].Add(&#39;axis&#39;, name=&#39;x&#39;, label = &amp;quot;x&amp;quot;,
+								min = xmin[i],
+								max = xmax[i],
+								log = False,
+								Label__size = &#39;25pt&#39;,
+								Label__font = font,
+								TickLabels__size = &#39;17pt&#39;,
+								TickLabels__format = u&#39;Auto&#39;,
+								MajorTicks__width = &#39;2pt&#39;,
+								MajorTicks__length = &#39;10pt&#39;,
+								MinorTicks__width = &#39;1pt&#39;,
+								MinorTicks__length = &#39;6pt&#39;
+							)
+		graphList[i].Add(&#39;axis&#39;, name=&#39;y&#39;, label = &amp;quot;y&amp;quot;, 
+								direction = &#39;vertical&#39;,
+								min = ymin[i],
+								max = ymax[i],
+								log = False,
+								autoRange = u&#39;+5%&#39;,
+								Label__size = &#39;25pt&#39;,
+								Label__font = font,
+								TickLabels__size = &#39;20pt&#39;,
+								TickLabels__format = u&#39;Auto&#39;,
+								MajorTicks__width = &#39;2pt&#39;,
+								MajorTicks__length = &#39;10pt&#39;,
+								MinorTicks__width = &#39;1pt&#39;,
+								MinorTicks__length = &#39;6pt&#39;
+							)
+	
+	graphList[0].Add(&#39;xy&#39;, key=&amp;quot;scatterPlotKey&amp;quot;, name=&#39;scatterPlotName&#39;,
+						marker = u&#39;circle&#39;,
+						MarkerFill__color = colors[0],
+						markerSize = u&#39;3pt&#39;, 
+						)
+
+	xDataName = &amp;quot;xScatterData&amp;quot;
+	yDataName = &amp;quot;yScatterData&amp;quot;
+	figure.SetData(xDataName, xData)
+	figure.SetData(yDataName, yData)
+	graphList[0].scatterPlotName.xData.val = xDataName
+	graphList[0].scatterPlotName.yData.val = yDataName
+	
+	
+	counts, bin_edges = sm_hist2(yData, delta=5)
+	
+	graphList[1].Add(&#39;xy&#39;, key=&amp;quot;histPlotKey&amp;quot;, name=&#39;histPlotName&#39;,
+						xData = bin_edges,
+						yData = counts,
+						marker = &#39;none&#39;,
+						PlotLine__steps = u&#39;left&#39;,
+						PlotLine__color = colors[1],
+						PlotLine__style = u&amp;quot;solid&amp;quot;,
+						PlotLine__width = u&#39;3&#39;,
+						FillBelow__color = colors[1],
+						FillBelow__style = &amp;quot;forward 2&amp;quot;,
+						FillBelow__hide = False,
+						FillBelow__transparency = 70,
+						#FillBelow__backtransparency = 50,
+						FillBelow__linewidth = &#39;1pt&#39;,
+						FillBelow__linestyle = &#39;solid&#39;,
+						FillBelow__backcolor = &amp;quot;white&amp;quot;,
+						FillBelow__backhide = True,
+						Label__posnHorz = &#39;right&#39;,
+						Label__size = &#39;14pt&#39;, 
+						Label__color = &#39;black&#39;
+						)
+
+	histKey = graphList[1].Add(&#39;key&#39;, autoadd=False, 
+						horzPosn = &#39;left&#39;,
+						vertPosn = &#39;top&#39;,
+						Text__font = font,
+						Text__size = &#39;15&#39;,
+						Border__width = &#39;1.5pt&#39;
+						)
+	
+	end = raw_input(&amp;quot;Press any key to finish...&amp;quot;)
+	
+	figure.Save(&amp;quot;example.vsz&amp;quot;)
+	figure.Export(&amp;quot;example.png&amp;quot;, backcolor=&#39;#ffffff&#39;)
+	figure.Export(&amp;quot;example.pdf&amp;quot;)
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	inpath = &amp;quot;./&amp;quot;
+	outpath = &#39;./&#39;
+	tt = time.time()
+	plotFunc(inpath, outpath)
+	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
+import time
+import numpy as np
+import matplotlib.pylab as plt
+import matplotlib.font_manager as font_manager
+
+# SM like style
+params = {&#39;backend&#39;: &#39;png&#39;,
+		&#39;font.family&#39;: &amp;quot;serif&amp;quot;,
+		&#39;font.size&#39;: 25,
+		&#39;axes.labelsize&#39;: 35,
+		#&#39;text.fontsize&#39;: 30,
+		&#39;legend.fontsize&#39;: 30,
+		&#39;xtick.labelsize&#39;: 28,
+		&#39;xtick.major.size&#39;: 20.0,
+		&#39;xtick.major.width&#39;: 3.0,
+		&#39;xtick.minor.size&#39;: 12.0,
+		&#39;xtick.minor.width&#39;: 2,
+		&#39;ytick.labelsize&#39;: 28,
+		&#39;ytick.major.size&#39;: 20.0,
+		&#39;ytick.major.width&#39;: 3.0,
+		&#39;ytick.minor.size&#39;: 12.0,
+		&#39;ytick.minor.width&#39;: 2,
+		#&#39;text.usetex&#39;: True,
+		&#39;axes.linewidth&#39;: 3.0,
+		&#39;lines.linewidth&#39;: 2,
+		&#39;lines.markersize&#39;: 15,
+		&#39;axes.grid&#39;: False,
+		&#39;grid&#39;: {&#39;color&#39;:&#39;gray&#39;, &#39;linestyle&#39;:&#39;-&#39;, &#39;linewidth&#39;:1},
+		&#39;figure.figsize&#39;: (10,10),
+		&#39;figure.subplot.left&#39;: 0.15,  # the left side of the subplots of the figure
+		&#39;figure.subplot.right&#39;   : 0.95,    # the right side of the subplots of the figure
+		&#39;figure.subplot.bottom&#39;  : 0.12,   # the bottom of the subplots of the figure
+		&#39;figure.subplot.top&#39;     : 0.92,    # the top of the subplots of the figure
+		&#39;figure.subplot.wspace&#39;  : 0.2,    # the amount of width reserved for blank space between subplots
+		&#39;figure.subplot.hspace&#39;  : 0.2,    # the amount of height reserved for white space between subplots
+		&#39;figure.figsize&#39;: (12, 12)
+           }
+plt.rcParams.update(params)
+	
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	return counts, bin_edges
+	
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+delta, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	print counts
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts))
+	bin_edges = np.hstack((bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def singlePlotScatter(xData, yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&amp;quot;x label&amp;quot;)
+	ax.set_ylabel(&amp;quot;y label&amp;quot;)
+	ax.set_xscale(&amp;quot;linear&amp;quot;)
+	ax.set_yscale(&amp;quot;linear&amp;quot;)
+	ax.set_title(&amp;quot;Plot title&amp;quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
+	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
+	ax.plot(xData, yData, 
+			color = &amp;quot;green&amp;quot;, 
+			markeredgewidth = 0.8, 
+			linestyle = &#39;-&#39;, 
+			linewidth = 2,
+			marker = &#39;o&#39;, 
+			markersize = 1, 
+			label = &amp;quot;label&amp;quot;)
+	return ax
+
+def singlePlotHist(yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&amp;quot;x label&amp;quot;)
+	ax.set_ylabel(&amp;quot;y label&amp;quot;)
+	ax.set_xscale(&amp;quot;linear&amp;quot;)
+	ax.set_yscale(&amp;quot;linear&amp;quot;)
+	ax.set_title(&amp;quot;Plot title&amp;quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
+	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
+	counts, bin_edges = sm_hist2(yData, delta = 10)
+	ax.set_ylim((0, 1.2*counts.max()))
+	
+	ax.plot(bin_edges, counts, 
+				color = &amp;quot;blue&amp;quot;,
+				alpha = 0.8,
+				linewidth = 2,
+				antialiased = True,
+				zorder = 3 
+				)
+	ax.fill(bin_edges, counts, 
+				alpha = 0.5,
+				hatch = &amp;quot;/&amp;quot;,
+				edgecolor = &amp;quot;blue&amp;quot;,
+				facecolor = &amp;quot;white&amp;quot;,
+				antialiased = True, 
+				label = &amp;quot;whatever you want&amp;quot;
+				)
+	ax.legend(loc=&#39;upper left&#39;, numpoints = 1, prop=font_manager.FontProperties(size=18)).draw_frame(False)
+
+	return ax
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	tt = time.time()
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	fig = plt.figure()
+	fig.suptitle(&amp;quot;Figure title&amp;quot;)
+	axs = []
+	nPlots = 2
+	
+	axs.append(singlePlotScatter(xData, yData, nRows=1, nCols=2, x0=0, y0=0, rowspan=1, colspan=1))
+	axs.append(singlePlotHist(yData, nRows=1, nCols=2, x0=0, y0=1, rowspan=1, colspan=1))
+	
+	fig.set_size_inches(20, 10)
+	plt.savefig(&amp;quot;./grid.png&amp;quot;, dpi=100)
+	plt.close(fig)
+	
+	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Change a line in all of your files at once</title>
+      <link>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <description>&lt;p&gt;Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.&lt;br /&gt;
+With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39; *.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rsync like a pro</title>
+      <link>http://localhost:1313/posts/rsync-like-a-pro/</link>
+      <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/rsync-like-a-pro/</guid>
+      <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you need it, &lt;code&gt;-c&lt;/code&gt; flag will force files checksum to be sure they are the same or not. It takes a lot of time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ssh keys exchange</title>
+      <link>http://localhost:1313/posts/ssh-keys-exchange/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/ssh-keys-exchange/</guid>
+      <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
+the need to remember a password.&lt;/p&gt;
+
+&lt;p&gt;On both the computer (&lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen
+ssh-copy-id -i you@B
+ssh you@B # to check if it works
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If it doesn&amp;rsquo;t work try:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cat .ssh/id_rsa.pub | ssh b@B &#39;cat &amp;gt;&amp;gt; .ssh/authorized_keys&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/fit/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://idlastro.gsfc.nasa.gov/ftp/pro/math/fitexy.pro&#34;&gt;IDL function&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&#34;&gt;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/?p=409&#34;&gt;http://blog.technokrat.nl/?p=409&lt;/a&gt; (qui usano la versione R in python)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/pull/14&#34;&gt;https://github.com/scikit-learn/scikit-learn/pull/14&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&#34;&gt;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&lt;/a&gt; (gaussian processes è il nome ufficiale e generico degli algoritmi tipo quelli di krige)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&#34;&gt;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&#34;&gt;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.gaussianprocess.org/&#34;&gt;http://www.gaussianprocess.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pygpr.sourceforge.net/&#34;&gt;http://pygpr.sourceforge.net/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&#34;&gt;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&#34;&gt;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.enthought.com/services/training/geophysics&#34;&gt;https://www.enthought.com/services/training/geophysics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ambhas.com/books/python-in-hydrology/book.html&#34;&gt;http://ambhas.com/books/python-in-hydrology/book.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&#34;&gt;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&#34;&gt;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&#34;&gt;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&#34;&gt;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/stober/4964727&#34;&gt;https://gist.github.com/stober/4964727&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog pages index generator</title>
+      <link>http://localhost:1313/posts/blog-pages-index-generator/</link>
+      <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/blog-pages-index-generator/</guid>
+      <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
+&lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
+pages of this blog!
+This would rebuild my index every time keeping automatically track of new or
+deleted pages.&lt;/p&gt;
+
+&lt;p&gt;Eventually I had time to try, and I tried in Go!:)&lt;/p&gt;
+
+&lt;p&gt;This is the first attempt, it could be better, but it works!&lt;/p&gt;
+
+&lt;p&gt;Filesystem walk from
+&lt;a href=&#34;http://stackoverflow.com/questions/12657365/extracting-directory-hierarchy-using-go-language&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+	&amp;quot;path/filepath&amp;quot;
+	&amp;quot;fmt&amp;quot;
+	&amp;quot;log&amp;quot;
+	&amp;quot;os&amp;quot;
+	&amp;quot;strings&amp;quot;
+	&amp;quot;time&amp;quot;
+)
+
+func main() {
+	tGlob0 := time.Now()
+	
+	// Create output file
+	fOut, err := os.Create(&amp;quot;index.md&amp;quot;)
+	if err != nil {
+        panic(err)
+    }
+    defer fOut.Close()
+	
+	// Define and implement what to do with path pieces
+	visit := func(path string, info os.FileInfo, err error) error {
+		// Split dir path from file name
+		dir, file := filepath.Split(path)
+		// Init list line string
+		line := &amp;quot;&amp;quot;
+		// Init and compute the level of indentation based on dit level 
+		indent := &amp;quot;&amp;quot;
+		for i:=0; i &amp;lt; len(strings.Split(dir, &amp;quot;/&amp;quot;))-1; i++ {
+			indent = indent + &amp;quot;    &amp;quot;
+		}
+		// If I reach a new dir
+        if info.IsDir() {
+			// Ignore local dir (exit function)
+			if strings.Contains(path, &amp;quot;.&amp;quot;) {
+				return nil
+			}
+			// Create line for page with name == dirName
+            line = indent + &amp;quot;* [&amp;quot;+strings.Title(filepath.Base(path))+&amp;quot;](&amp;quot;+filepath.Join(path, filepath.Base(path)+&amp;quot;.html)&amp;quot;)+&amp;quot;\n&amp;quot;
+        // If I found a new file
+		} else {
+			// Only consider md files
+			if strings.HasSuffix(file, &amp;quot;md&amp;quot;){
+				fileBase := strings.TrimSuffix(file, &amp;quot;.md&amp;quot;)
+				// Ignore files with name == dirName
+				if fileBase == filepath.Base(dir) {
+					return nil
+				}
+				// Create line
+				linkName := strings.Replace(strings.Title(strings.Replace(fileBase, &amp;quot;-&amp;quot;, &amp;quot;_&amp;quot;, -1)), &amp;quot;_&amp;quot;, &amp;quot; &amp;quot;, -1)
+			    line = indent + &amp;quot;* [&amp;quot;+ linkName +&amp;quot;](&amp;quot;+filepath.Join(dir, strings.Replace(file, &amp;quot;.md&amp;quot;, &amp;quot;.html&amp;quot;, 1))+&amp;quot;)\n&amp;quot;
+			} else {	
+				return nil
+			}
+        }
+        // Print line to file
+//         fmt.Print(line)
+		if _, err = fOut.WriteString(line); err != nil {
+			log.Fatal(err)
+		}
+        return nil
+    }
+    
+    header := `&amp;lt;!-- 
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/09/03 12:24:24
+.. title: for future references summary
+.. slug: index
+--&amp;gt;
+
+* [Blog](../index.html)
+`
+    
+    if _, err = fOut.WriteString(header); err != nil {
+			log.Fatal(err)
+	}
+    
+    // Walk through folders
+	err = filepath.Walk(&amp;quot;./&amp;quot;, visit)
+    if err != nil {
+        log.Fatal(err)
+    }
+	
+
+	tGlob1 := time.Now()
+	fmt.Println()
+	log.Println(&amp;quot;Recreated pages index in &amp;quot;, tGlob1.Sub(tGlob0))
+} //END MAIN
+
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Create a cluster with Ubuntu</title>
+      <link>http://localhost:1313/pages/tech/create-a-cluster/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/create-a-cluster/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape&#34;&gt;http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tomshw.it/forum/linux-e-altri-sistemi-operativi/118105-realizzare-un-cluster-con-ubuntu-server.html&#34;&gt;http://www.tomshw.it/forum/linux-e-altri-sistemi-operativi/118105-realizzare-un-cluster-con-ubuntu-server.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://byobu.info/article/Building_a_simple_Beowulf_cluster_with_Ubuntu/&#34;&gt;http://byobu.info/article/Building_a_simple_Beowulf_cluster_with_Ubuntu/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stevekelly.eu/cluster.shtml&#34;&gt;http://www.stevekelly.eu/cluster.shtml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://apps.ubuntu.com/cat/applications/precise/system-config-cluster/&#34;&gt;https://apps.ubuntu.com/cat/applications/precise/system-config-cluster/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ubuntu.com/cloud/build-a-cloud&#34;&gt;http://www.ubuntu.com/cloud/build-a-cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ubuntu.com/download/cloud/install-ubuntu-cloud&#34;&gt;http://www.ubuntu.com/download/cloud/install-ubuntu-cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ubuntu.com/server&#34;&gt;http://www.ubuntu.com/server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.eucalyptus.com/participate&#34;&gt;http://www.eucalyptus.com/participate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ubuntu.com/cloud&#34;&gt;http://www.ubuntu.com/cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Git references</title>
+      <link>http://localhost:1313/pages/tech/git-references/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/git-references/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/ignoring-files&#34;&gt;Ignoring files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/matze/distributed-version-control-and-why-you-want-to-use-it&#34;&gt;How to use GIT (easy)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cwiki.apache.org/confluence/display/FLEX/Good+vs+Bad+Git+usage&#34;&gt;Good vs Bad Git usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book&#34;&gt;Git Book&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nyuccl.org/pages/GitTutorial/&#34;&gt;Git tutorial&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Untrack files&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git rm --cached file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove files from all the repo history&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git filter-branch -f --index-filter &#39;git rm --cached --ignore-unmatch filename&#39; HEAD
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;force a push&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git push origin master --force
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Latex conditional compilation</title>
+      <link>http://localhost:1313/posts/latex-conditional-compilation/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/latex-conditional-compilation/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a long time I&amp;rsquo;m looking for a way to conditional-compiling my
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX&#34;&gt;Beamer&lt;/a&gt;) presentation in order to
+decide on the fly if I want to print an handout version of the presentation.&lt;/p&gt;
+
+&lt;!--TEASER_END--&gt;
+
+&lt;p&gt;Inside the &lt;code&gt;.tex&lt;/code&gt; file you have to write&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\ifdefined\HANDOUT
+  \setbeameroption{show notes} %un-comment to see the notes
+  \usepackage{pgfpages}
+  \pgfpagesuselayout{8 on 1}[a4paper]%, landscape]
+\fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where the &lt;code&gt;pgfpages&lt;/code&gt; package is used to print 8 slide per page.&lt;br /&gt;
+Before this if you want you can put &lt;code&gt;\newcommand*{\HANDOUT}{}%&lt;/code&gt;
+to decide in the source if you want the handout version or not&amp;hellip;&lt;br /&gt;
+&amp;hellip; or you can decide it via command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdflatex -jobname=handout.pdf  &amp;quot;\def\HANDOUT{}\input{sourcefile.tex}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Super-basic file parsing in Go</title>
+      <link>http://localhost:1313/posts/super-basic-file-parsing-in-go/</link>
+      <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/super-basic-file-parsing-in-go/</guid>
+      <description>&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix
+searching for the lines containing a certain string.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;package main&lt;/code&gt; tells go that this source will be a main file, not a library/module.
+Then, we import the packages we need. If a package is not still needed, go will
+throw an error.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;//&lt;/code&gt; or &lt;code&gt;/* */&lt;/code&gt; are, respectively, the one-line and multi-line comments.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+	&amp;quot;bufio&amp;quot; // buffered input/output
+	&amp;quot;compress/gzip&amp;quot; // compressed files handling
+	&amp;quot;log&amp;quot; // logging
+	&amp;quot;os&amp;quot; // OS related utilities
+	&amp;quot;time&amp;quot; // timing
+	&amp;quot;strings&amp;quot; // strings handling
+	&amp;quot;path/filepath&amp;quot; // path handling
+	&amp;quot;fmt&amp;quot; // basic printing
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The main body of the program has to be in the &lt;code&gt;main&lt;/code&gt; function.
+We would also like to know the time needed to execute the program so we use
+&lt;code&gt;tGlob0 := time.Now()&lt;/code&gt; to keep track of the time we launch the program.&lt;br /&gt;
+We also print a help message in case the number of arguments provided
+do not match the needed ones&amp;hellip;. id they are wrong, googd luck!:P&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main() {
+	
+	helpMessage :=`Hi! To use this program you must provide
+	1 - the path
+	2 - the file prefix
+	3 - the output file
+	4 - the string to be searched.`
+	
+	if len(os.Args) &amp;lt; 5{
+		fmt.Println(helpMessage)
+		os.Exit(0)
+	}
+
+	tGlob0 := time.Now()
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Go can create variables in two ways, by declaring them before or by assignement directly.
+To have a clearer view of what is going on I will declare the variables before except
+for &lt;code&gt;tGlob0&lt;/code&gt; and &lt;code&gt;tGlob1&lt;/code&gt;. If you want to know the type of a variable, you can
+create it by assignement and then inspect its type with the reflect package,
+using &lt;code&gt;reflect.TypeOf(variable)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;    var inPath string
+    var prefix string
+    var searchString string
+    var outFile string
+    var inFiles []string
+    var inFile string
+    var extString []string
+    var ext string
+    var PID int 
+    var (fileStruct *os.File
+    fOut *os.File)
+    var err error
+    var fZip *gzip.Reader
+    var nReader *bufio.Reader
+    var read_line string
+```        
+
+The `os` package provides the tools to interact with the OS, so we can retrieve the process
+PID and the CLI arguments.        
+    
+
+````go
+	PID = os.Getpid()
+	log.Println(&amp;quot;Process PID is &amp;quot;, PID)	
+	
+	inPath = os.Args[1]
+	prefix = os.Args[2]+&amp;quot;*&amp;quot;
+	outFile = os.Args[3]
+	searchString = os.Args[4]
+	
+	log.Println(&amp;quot;Parsing files in folder &amp;quot;, inPath, &amp;quot; selecting &amp;quot;, os.Args[2])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;Glob&lt;/code&gt; function allows to search for the filenames matching a certain
+ wildcard pattern.&lt;br /&gt;
+ &lt;code&gt;defer&lt;/code&gt; is used to mark functions to be executed on function exit.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;	inFiles, err = filepath.Glob(filepath.Join(inPath, prefix))
+	if err != nil {
+		panic(err)
+	}
+	
+	log.Println(&amp;quot;Searching for &amp;quot;, searchString, &amp;quot; in &amp;quot;, filepath.Join(inPath, prefix))
+	log.Println(&amp;quot;Creating output file &amp;quot;, outFile)
+	
+	fOut, err = os.Create(outFile)
+	if err != nil {
+		panic(err)
+	}
+	defer fOut.Close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the following piece of code is possible to see how to&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;work on strings&lt;/li&gt;
+&lt;li&gt;write a counter that updates&lt;/li&gt;
+&lt;li&gt;use the switch construct&lt;/li&gt;
+&lt;li&gt;make an assignement in the if construct&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;	log.Println(&amp;quot;Starting main loop on file list of lenght &amp;quot;, len(inFiles))
+	for fileIdx := range inFiles {
+		
+		inFile = inFiles[fileIdx]
+		extString = strings.Split(inFile, &amp;quot;.&amp;quot;)
+		ext = extString[len(extString)-1]
+
+		// Write an updating counter
+		fmt.Print(&amp;quot;Completed: &amp;quot;, 100. * fileIdx / len(inFiles), &amp;quot;% \r&amp;quot;)
+		
+		// Creating file object
+		if fileStruct, err = os.Open(inFile); err != nil {
+			log.Fatal(os.Stderr, &amp;quot;%v, Can&#39;t open %s: error: %s\n&amp;quot;, os.Args[0], inFile, err)
+			os.Exit(1)
+		}
+		defer fileStruct.Close()
+		
+		switch ext {
+			case &amp;quot;dat&amp;quot;: {
+				nReader = bufio.NewReader(fileStruct)
+			}
+			case &amp;quot;txt&amp;quot;:{
+				nReader = bufio.NewReader(fileStruct)
+			}
+			case &amp;quot;gz&amp;quot;: {
+				fZip, err = gzip.NewReader(fileStruct)
+				if err != nil {
+				log.Fatal(os.Stderr, &amp;quot;%v, Can&#39;t open %s: error: %s\n&amp;quot;, os.Args[0], inFile, err)
+				os.Exit(1)
+				}
+				nReader = bufio.NewReader(fZip)
+			}
+			default: {
+				log.Fatal(&amp;quot;Unrecognized file &amp;quot;, inFile)
+			}
+		}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And yes, no &lt;code&gt;while&lt;/code&gt; but infinite loops with &lt;code&gt;for&lt;/code&gt;.&lt;br /&gt;
+Then we read the file line by line and write the line if we find a certain
+string inside it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;        for {
+            if read_line, err = nReader.ReadString(&#39;\n&#39;); err != nil {
+            log.Println(&amp;quot;Done reading file with err&amp;quot;, err)
+            break
+            }
+//          if (strings.Contains(read_line, &amp;quot;name =&amp;quot;) || strings.Contains(read_line, &amp;quot;i =&amp;quot;)) {//&amp;amp;&amp;amp; strings.Contains(read_line, &amp;quot;&amp;lt;&amp;quot;){
+                if strings.Contains(read_line, searchString){
+                _, err = fOut.WriteString(read_line)
+                }
+        }
+    
+        // flush 
+        fOut.Sync()
+        fOut.Close()
+    }
+    
+    
+    log.Println()
+    tGlob1 := time.Now()
+    log.Println(&amp;quot;Wall time for all &amp;quot;, tGlob1.Sub(tGlob0))
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go installation from source</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <description>&lt;p&gt;Summary of the Go installation instruction from source as presented in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/install&#34;&gt;Go installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/install/source&#34;&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/code.html&#34;&gt;Write Go code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--TEASER_END--&gt;
+
+&lt;p&gt;The installation path will be &lt;code&gt;/usr/local/go&lt;/code&gt; and the workspace in
+&lt;code&gt;$HOME/Code/go&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /usr/local
+hg clone -u release https://code.google.com/p/go
+cd go/src
+./all.bash
+echo &amp;quot;export PATH=$PATH:/usr/local/go/bin&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
+echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>http://localhost:1313/pages/tech/system/</link>
+      <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/system/</guid>
+      <description>
+
+&lt;h2 id=&#34;installed-software-from-repos:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Installed software (from repos)&lt;/h2&gt;
+
+&lt;h3 id=&#34;nvidia-and-cuda:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Nvidia and CUDA&lt;/h3&gt;
+
+&lt;h3 id=&#34;compilers:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Compilers&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;gcc&lt;/li&gt;
+&lt;li&gt;g++&lt;/li&gt;
+&lt;li&gt;gfortran&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;editors:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Editors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kate&lt;/li&gt;
+&lt;li&gt;Emacs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;terminals:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Terminals&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ipython&lt;/li&gt;
+&lt;li&gt;konsole&lt;/li&gt;
+&lt;li&gt;terminator&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;python:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ipython&lt;/li&gt;
+&lt;li&gt;NumPy&lt;/li&gt;
+&lt;li&gt;SciPy&lt;/li&gt;
+&lt;li&gt;PyTables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;graphics:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Graphics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Digikam&lt;/li&gt;
+&lt;li&gt;Inkscape&lt;/li&gt;
+&lt;li&gt;Gimp&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;multimedia:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Multimedia&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;VLC&lt;/li&gt;
+&lt;li&gt;avconv (ffmpeg)&lt;/li&gt;
+&lt;li&gt;mencoder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;other:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Other&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;texlive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;reistallation-cli:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Reistallation CLI&lt;/h3&gt;
+
+&lt;h2 id=&#34;external-packages:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;External packages&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Settings&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inkscape: latex formulas (
+&lt;a href=&#34;http://pav.iki.fi/software/textext/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.timteatro.net/2010/08/05/textext-for-math-in-inkscape/&#34;&gt;here&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bashrc:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;.bashrc&lt;/h3&gt;
+
+&lt;h3 id=&#34;inkscape:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Inkscape&lt;/h3&gt;
+
+&lt;h3 id=&#34;git:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Git&lt;/h3&gt;
+
+&lt;h3 id=&#34;go-lang:fc01508acb380bfa5567c9fccdfa05e8&#34;&gt;Go(lang)&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StarLab (GPU) old guide</title>
+      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <description>
+
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+
+&lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
+
+&lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- TEASER_END --&gt;
+
+&lt;h2 id=&#34;sapporo:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;Sapporo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in setup_sapporo.sh change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(installation of the binary drivers from the NVIDIA site) to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
+paths in&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
+#/usr/local/cuda-5.0
+CUDASDKPATH := /usr/lib/nvidia-cuda-toolkit/include/
+#/usr/local/cuda-5.0/samples/common/inc
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)
+# RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;puth &lt;code&gt;multithreading.h&lt;/code&gt; in the sapporo folder and then in &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;multithreading.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
+obtain something like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/bin/rm -rf *.o *.cu_o libsapporo.a
+/bin/rm -rf test_gravity_block test_gravity_N2ngb
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
+sapporo.cpp: In member function ‘int sapporo::open(int)’:
+sapporo.cpp:40:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+
+*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+ Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
+ar: creating libsapporo.a
+a - GPUWorker.o
+a - sapporo.o
+a - send_fetch_data.o
+a - sapporoG6lib.o
+a - host_evaluate_gravity.cu_o
+ranlib libsapporo.a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to test the compilation run&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_N2ngb 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_block 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the test fail if the number is less than ~800.&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;StarLab&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;change configure CUDA lines:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and change local/grape.sh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+
+# CUDAINC=&amp;quot;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;quot; 
+# CUDALIB=&amp;quot;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;quot; 
+
+LIBS1=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+
+#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1
+
+# Where to find GRAPE libraries:
+# GRAPE_LDFLAGS_=&#39;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&#39;
+GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;make clean&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;./configure --without-fortran&lt;/code&gt; (&lt;code&gt;--without-f77&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;now you can find the &lt;code&gt;kira&lt;/code&gt; binary in &lt;code&gt;/usr/local/bin&lt;/code&gt; or&lt;code&gt;/usr/bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./kira -t 500 -d 1 -D 1 -b 1 \
+             -n 10 -e 0.000 -B   \
+	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
+	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
+	 2&amp;gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Astrocomputing &amp; Astrostatistics</title>
+      <link>http://localhost:1313/pages/research/astrocomputing/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/astrocomputing/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro&#34;&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt;
+also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

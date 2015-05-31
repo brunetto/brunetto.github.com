@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phd Comics on Post It!</title>
+    <link>http://localhost:1313/tags/phd-comics/</link>
+    <description>Recent content in Phd Comics on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/phd-comics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My favourite PhD Comics</title>
+      <link>http://localhost:1313/pages/personal/my-favourite-phd-comics/</link>
+      <pubDate>Sat, 17 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/personal/my-favourite-phd-comics/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_list.php&#34;&gt;PhD Comics Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/most_popular.php&#34;&gt;Most Popular&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1296&#34;&gt;Marriage vs PhD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=125&#34;&gt;Motivation Level&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=715&#34;&gt;Thesis Outline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1354&#34;&gt;The Thesis repulsor field&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=718&#34;&gt;The Thesis title&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1168&#34;&gt;Your computer desktop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1040&#34;&gt;Ninjas vs Professors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=575&#34;&gt;Desk entropy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1531&#34;&gt;&amp;ldquo;Final&amp;rdquo;.doc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

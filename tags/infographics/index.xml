@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infographics on Post It!</title>
+    <link>http://localhost:1313/tags/infographics/</link>
+    <description>Recent content in Infographics on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/infographics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AGN for Dummies</title>
+      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
+
+&lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/very_unified_model_bck.png&#34;&gt;&lt;img alt=&#34;AGN for Dummies&#34; src=&#34;../../files/very_unified_model_bck.png&#34; title=&#34;AGN for Dummies&#34; width=&#34;800&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Infographics attempts!</title>
+      <link>http://localhost:1313/posts/infographics-attempts/</link>
+      <pubDate>Mon, 23 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/infographics-attempts/</guid>
+      <description>&lt;p&gt;Recently I am interested in &lt;a href=&#34;http://en.wikipedia.org/wiki/Information_graphics&#34; target=&#34;_blank&#34; title=&#34;Infographics on wikipedia&#34;&gt;infographics&lt;/a&gt; (check also &lt;a href=&#34;http://www.coolinfographics.com/&#34; target=&#34;_blank&#34; title=&#34;Coolinfographics&#34;&gt;this&lt;/a&gt;) and if it can help communicating science. There are also two interesting projects related to this, &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi homepage&#34;&gt;Prezi&lt;/a&gt; and &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi homepage&#34;&gt;Sozi&lt;/a&gt;. I&amp;rsquo;m not an artist but I want to try to change my way of communicating and to save lectures notes. This is my first attempt, the first lesson of the Astroparticles course for PhD students! It is not really &amp;ldquo;graphic&amp;rdquo;, but it&amp;rsquo;s my first step!:P&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/astropartycles_1.png&#34;&gt;&lt;img alt=&#34;Astroparticles notes 1&#34; height=&#34;800&#34; src=&#34;../../files/astropartycles_1.png&#34; title=&#34;Astroparticles First Aid 1&#34; width=&#34;600&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/astropartycles_2.png&#34;&gt;&lt;img alt=&#34;Astroparticles notes 2&#34; height=&#34;800&#34; src=&#34;../../files/astropartycles_2.png&#34; title=&#34;Astroparticles First Aid 2&#34; width=&#34;600&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

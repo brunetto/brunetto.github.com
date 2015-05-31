@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Queue Manager on Post It!</title>
+    <link>http://localhost:1313/tags/queue-manager/</link>
+    <description>Recent content in Queue Manager on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Nov 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/queue-manager/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Loadleveler quick howto</title>
+      <link>http://localhost:1313/posts/loadleveler-quick-howto/</link>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/loadleveler-quick-howto/</guid>
+      <description>&lt;p&gt;Some useful commands to manage jobs with IBM &lt;code&gt;loadleveler&lt;/code&gt; (&lt;code&gt;ll&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) &amp;ldquo;test_run.cmd&amp;rdquo;. With this file you tell &lt;code&gt;ll&lt;/code&gt; what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
+It would look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+# @ initialdir = /path-to-your-folder
+# @ job_name = test_run
+# @ output = test_run.$(jobid).out
+# @ error = test_run.$(jobid).err
+# @ notification = error
+# @ class = long
+# @ total_tasks = 20
+# @ job_type = parallel
+# @ queue
+
+ulimit -s 65536
+
+python ./start.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After that you can submit your job with &lt;code&gt;llsubmit test_run.cmd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Other useful commands are&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;llq -u $USER&lt;/code&gt;: Return information about your jobs only in the queues&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;llq -l &amp;amp;lt;job&amp;amp;gt;&lt;/code&gt;: Return detailed information about the specific&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;llq -s &amp;amp;lt;job&amp;amp;gt;&lt;/code&gt;: Return information about why the job remains queued&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;llcancel &amp;amp;lt;job&amp;amp;gt;&lt;/code&gt;: Cancel a job from the queues, either it is waiting or running&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;llstatus&lt;/code&gt;: Return information about the status of the machine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Reference&lt;/em&gt;: &lt;a href=&#34;http://hpc.cineca.it/content/batch-scheduler-loadleveler&#34; target=&#34;_blank&#34; title=&#34;Cineca LoadLeveler howto&#34;&gt;Cineca LoadLeveler howto&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

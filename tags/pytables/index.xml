@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pytables on Post It!</title>
+    <link>http://localhost:1313/tags/pytables/</link>
+    <description>Recent content in Pytables on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 May 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pytables/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
+      <link>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <description>
+
+&lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
+
+&lt;h2 id=&#34;create:d7d980b494195784336223544cb1380d&#34;&gt;Create&lt;/h2&gt;
+
+&lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+import tables as tb
+from StringIO import StringIO
+
+f = open(&amp;quot;filename.csv&amp;quot;, &#39;r&#39;)
+line = f.readline()
+values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+values.shape = 1
+h5 = tb.openFile(&#39;filename.h5&#39;, &#39;w&#39;)
+table = h5.createTable(h5.root, description=values, name=table_name&#39;, title=&amp;quot;table_description&amp;quot;, expectedrows=12158536)
+table.flush()
+
+for line in f:
+	values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+	values.shape = 1
+	table.append(values)
+	
+table.flush()
+h5.flush()
+h5.close()
+f.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
+
+&lt;h2 id=&#34;remove-duplicates:d7d980b494195784336223544cb1380d&#34;&gt;Remove duplicates&lt;/h2&gt;
+
+&lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;new_indexes = np.unique(table[&#39;column_1&#39;], return_index=True, return_inverse=False)[1]
+new_array = np.transpose(table[new_indexes])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In general, &lt;code&gt;numpy.unique(array, return_index=True, return_inverse=True)&lt;/code&gt;&lt;br /&gt;
+returns an array sorted and without duplicates, the indexes of the original array to create the new array and the indexes of the new one to recreate the old one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In: a = np.array([5,3,3,7,2,9,1])
+In: np.unique(a, return_index=True, return_inverse=True)
+Out: 
+(array([1, 2, 3, 5, 7, 9]),
+	array([6, 4, 1, 0, 3, 5]),
+	array([3, 2, 2, 4, 1, 5, 0]))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;recreate:d7d980b494195784336223544cb1380d&#34;&gt;Recreate&lt;/h2&gt;
+
+&lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
+To do this a possible solution is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip([column_1[0]], [column_2[0]]))
+print &amp;quot;Creating table...&amp;quot;
+table = h5.createTable(h5.root, description=values, name=&#39;fof_data_snap67&#39;, title=&amp;quot;fof_data_snap67&amp;quot;, expectedrows=11697806)
+
+for i in xrange(1, fof.size):
+	values = np.array(zip([column_1[i]], [column_2[i]]))
+	table.append(values)
+
+table.flush()
+h5.flush()
+h5.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s also possible to zip the entire arrays if they fit into memory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip(column_1, column_2))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

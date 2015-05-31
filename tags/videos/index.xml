@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Videos on Post It!</title>
+    <link>http://localhost:1313/tags/videos/</link>
+    <description>Recent content in Videos on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/videos/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Videos</title>
+      <link>http://localhost:1313/pages/personal/multimedia/videos/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/personal/multimedia/videos/</guid>
+      <description>
+
+&lt;p&gt;Some links about videos&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;editors:a45b24697a235d080c581c0ce5a9b90b&#34;&gt;Editors&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;KDEnlive, my favourite&lt;/li&gt;
+&lt;li&gt;Cinelerra&lt;/li&gt;
+&lt;li&gt;LightWorks&lt;/li&gt;
+&lt;li&gt;Openshot&lt;/li&gt;
+&lt;li&gt;Avidemux&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cli-tricks:a45b24697a235d080c581c0ce5a9b90b&#34;&gt;CLI tricks&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Convert (avcon, previously known as ffmpeg)&lt;/li&gt;
+&lt;li&gt;Slow down&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

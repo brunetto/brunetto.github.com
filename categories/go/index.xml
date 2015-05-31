@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Post It!</title>
+    <link>http://localhost:1313/categories/go/</link>
+    <description>Recent content in Go on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Padding</title>
+      <link>http://localhost:1313/posts/padding/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/padding/</guid>
+      <description>&lt;p&gt;Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.&lt;br /&gt;
+I&amp;rsquo;ll take a note here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;i=5
+printf &amp;quot;%03d\n&amp;quot; $i
+005
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Something similar in Python and Go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;t = &amp;quot;test-&amp;quot;
+t.ljust(10, &#39;0&#39;) # rjust for right padding
+
+&#39;test-00000&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// LeftPad returns the string padded filling remaining left spaces to `length` with `pad`.
+import &amp;quot;log&amp;quot;
+import &amp;quot;strings&amp;quot;
+
+func LeftPad(str, pad string, length int) string {
+	var repeat int
+	if (length-len(str))%len(pad) != 0 {
+		log.Fatal(&amp;quot;Can&#39;t pad &amp;quot;, str, &amp;quot; with &amp;quot;, pad, &amp;quot; to length &amp;quot;, length)
+	} else {
+		repeat = (length - len(str)) / len(pad)
+	}
+	return strings.Repeat(pad, repeat) + str
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is also possible to do this with &lt;code&gt;fmt&lt;/code&gt; but you still need to compute the number
+of char if you want to maintain the total number of printed char.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Super-basic file parsing in Go</title>
+      <link>http://localhost:1313/posts/super-basic-file-parsing-in-go/</link>
+      <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/super-basic-file-parsing-in-go/</guid>
+      <description>&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix
+searching for the lines containing a certain string.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;package main&lt;/code&gt; tells go that this source will be a main file, not a library/module.
+Then, we import the packages we need. If a package is not still needed, go will
+throw an error.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;//&lt;/code&gt; or &lt;code&gt;/* */&lt;/code&gt; are, respectively, the one-line and multi-line comments.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+	&amp;quot;bufio&amp;quot; // buffered input/output
+	&amp;quot;compress/gzip&amp;quot; // compressed files handling
+	&amp;quot;log&amp;quot; // logging
+	&amp;quot;os&amp;quot; // OS related utilities
+	&amp;quot;time&amp;quot; // timing
+	&amp;quot;strings&amp;quot; // strings handling
+	&amp;quot;path/filepath&amp;quot; // path handling
+	&amp;quot;fmt&amp;quot; // basic printing
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The main body of the program has to be in the &lt;code&gt;main&lt;/code&gt; function.
+We would also like to know the time needed to execute the program so we use
+&lt;code&gt;tGlob0 := time.Now()&lt;/code&gt; to keep track of the time we launch the program.&lt;br /&gt;
+We also print a help message in case the number of arguments provided
+do not match the needed ones&amp;hellip;. id they are wrong, googd luck!:P&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main() {
+	
+	helpMessage :=`Hi! To use this program you must provide
+	1 - the path
+	2 - the file prefix
+	3 - the output file
+	4 - the string to be searched.`
+	
+	if len(os.Args) &amp;lt; 5{
+		fmt.Println(helpMessage)
+		os.Exit(0)
+	}
+
+	tGlob0 := time.Now()
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Go can create variables in two ways, by declaring them before or by assignement directly.
+To have a clearer view of what is going on I will declare the variables before except
+for &lt;code&gt;tGlob0&lt;/code&gt; and &lt;code&gt;tGlob1&lt;/code&gt;. If you want to know the type of a variable, you can
+create it by assignement and then inspect its type with the reflect package,
+using &lt;code&gt;reflect.TypeOf(variable)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;    var inPath string
+    var prefix string
+    var searchString string
+    var outFile string
+    var inFiles []string
+    var inFile string
+    var extString []string
+    var ext string
+    var PID int 
+    var (fileStruct *os.File
+    fOut *os.File)
+    var err error
+    var fZip *gzip.Reader
+    var nReader *bufio.Reader
+    var read_line string
+```        
+
+The `os` package provides the tools to interact with the OS, so we can retrieve the process
+PID and the CLI arguments.        
+    
+
+````go
+	PID = os.Getpid()
+	log.Println(&amp;quot;Process PID is &amp;quot;, PID)	
+	
+	inPath = os.Args[1]
+	prefix = os.Args[2]+&amp;quot;*&amp;quot;
+	outFile = os.Args[3]
+	searchString = os.Args[4]
+	
+	log.Println(&amp;quot;Parsing files in folder &amp;quot;, inPath, &amp;quot; selecting &amp;quot;, os.Args[2])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;Glob&lt;/code&gt; function allows to search for the filenames matching a certain
+ wildcard pattern.&lt;br /&gt;
+ &lt;code&gt;defer&lt;/code&gt; is used to mark functions to be executed on function exit.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;	inFiles, err = filepath.Glob(filepath.Join(inPath, prefix))
+	if err != nil {
+		panic(err)
+	}
+	
+	log.Println(&amp;quot;Searching for &amp;quot;, searchString, &amp;quot; in &amp;quot;, filepath.Join(inPath, prefix))
+	log.Println(&amp;quot;Creating output file &amp;quot;, outFile)
+	
+	fOut, err = os.Create(outFile)
+	if err != nil {
+		panic(err)
+	}
+	defer fOut.Close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the following piece of code is possible to see how to&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;work on strings&lt;/li&gt;
+&lt;li&gt;write a counter that updates&lt;/li&gt;
+&lt;li&gt;use the switch construct&lt;/li&gt;
+&lt;li&gt;make an assignement in the if construct&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;	log.Println(&amp;quot;Starting main loop on file list of lenght &amp;quot;, len(inFiles))
+	for fileIdx := range inFiles {
+		
+		inFile = inFiles[fileIdx]
+		extString = strings.Split(inFile, &amp;quot;.&amp;quot;)
+		ext = extString[len(extString)-1]
+
+		// Write an updating counter
+		fmt.Print(&amp;quot;Completed: &amp;quot;, 100. * fileIdx / len(inFiles), &amp;quot;% \r&amp;quot;)
+		
+		// Creating file object
+		if fileStruct, err = os.Open(inFile); err != nil {
+			log.Fatal(os.Stderr, &amp;quot;%v, Can&#39;t open %s: error: %s\n&amp;quot;, os.Args[0], inFile, err)
+			os.Exit(1)
+		}
+		defer fileStruct.Close()
+		
+		switch ext {
+			case &amp;quot;dat&amp;quot;: {
+				nReader = bufio.NewReader(fileStruct)
+			}
+			case &amp;quot;txt&amp;quot;:{
+				nReader = bufio.NewReader(fileStruct)
+			}
+			case &amp;quot;gz&amp;quot;: {
+				fZip, err = gzip.NewReader(fileStruct)
+				if err != nil {
+				log.Fatal(os.Stderr, &amp;quot;%v, Can&#39;t open %s: error: %s\n&amp;quot;, os.Args[0], inFile, err)
+				os.Exit(1)
+				}
+				nReader = bufio.NewReader(fZip)
+			}
+			default: {
+				log.Fatal(&amp;quot;Unrecognized file &amp;quot;, inFile)
+			}
+		}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And yes, no &lt;code&gt;while&lt;/code&gt; but infinite loops with &lt;code&gt;for&lt;/code&gt;.&lt;br /&gt;
+Then we read the file line by line and write the line if we find a certain
+string inside it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;        for {
+            if read_line, err = nReader.ReadString(&#39;\n&#39;); err != nil {
+            log.Println(&amp;quot;Done reading file with err&amp;quot;, err)
+            break
+            }
+//          if (strings.Contains(read_line, &amp;quot;name =&amp;quot;) || strings.Contains(read_line, &amp;quot;i =&amp;quot;)) {//&amp;amp;&amp;amp; strings.Contains(read_line, &amp;quot;&amp;lt;&amp;quot;){
+                if strings.Contains(read_line, searchString){
+                _, err = fOut.WriteString(read_line)
+                }
+        }
+    
+        // flush 
+        fOut.Sync()
+        fOut.Close()
+    }
+    
+    
+    log.Println()
+    tGlob1 := time.Now()
+    log.Println(&amp;quot;Wall time for all &amp;quot;, tGlob1.Sub(tGlob0))
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Check external ip</title>
+      <link>http://localhost:1313/posts/check-external-ip/</link>
+      <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/check-external-ip/</guid>
+      <description>
+
+&lt;p&gt;This is the first attempt to check the external ip of a linux box.
+This means, for example, the public ip address of our modem if we are connected
+to the home Wi-Fi.&lt;br /&gt;
+I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; new version &lt;a href=&#34;https://github.com/brunetto/fip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;python:a03aac959a8b7e6a11a32e871f3dca9a&#34;&gt;Python&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+import re, os, time
+
+# In internet they say that
+# ^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+# is better but I find this useful
+
+print &amp;quot;Check external ip&amp;quot;
+print &amp;quot;This script need curl and the Python modules re, os and time&amp;quot;
+
+# Compile regex
+reg = re.compile(&#39;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&#39;)
+
+# Query until stop, hoping the site won&#39;t stop us
+while True:
+	# Ask the site for ip
+	string = os.popen(&amp;quot;curl -s &#39;http://checkip.dyndns.org&#39;&amp;quot;).read()
+	res = reg.search(string)
+	if res == None:
+		print &amp;quot;Error, ip not found, continue, ...&amp;quot;
+	else:
+		print ip
+		ip = res.group(0)
+		# Recreate the ip file and write the ip
+		ipFile = open(&amp;quot;ip.dat&amp;quot;, &#39;w&#39;)
+		ipFile.write(ip)
+		ipFile.flush()
+		ipFile.close()
+	# Wait
+	time.sleep(5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;go:a03aac959a8b7e6a11a32e871f3dca9a&#34;&gt;Go&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+	//&amp;quot;io/ioutil&amp;quot;
+    &amp;quot;os&amp;quot;
+    &amp;quot;log&amp;quot;
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;time&amp;quot;
+    &amp;quot;os/exec&amp;quot;
+    &amp;quot;regexp&amp;quot;
+)
+
+// check the errors
+func check(e error) {
+    if e != nil {
+        panic(e)
+    }
+}
+
+func main() {
+
+	// set ip download command
+	
+	command := &amp;quot;/usr/bin/curl&amp;quot;
+	args := &amp;quot;http://checkip.dyndns.org&amp;quot;
+	
+	// compile regexp
+	var digitsRegexp = regexp.MustCompile(`\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}`)
+	
+	// infinite loop to update the ip
+    for ;;{
+		// download ip string
+		out, err := exec.Command(command, args).Output()
+		if err != nil {
+			log.Fatal(err)
+		}
+		
+		// out is a binary buffer, convert into string
+		ipString := string(out)
+		
+		// search for ip
+		ipRes := digitsRegexp.FindString(ipString)
+		fmt.Println(ipRes)
+		
+		// convert string to byte (found a better method)
+		//ipByte := []byte(ipRes)
+		//ioutil.WriteFile(&amp;quot;ip.dat&amp;quot;, ipByte, 0644)
+		
+		// create a file, it implements the Writer interface
+		f, err := os.Create(&amp;quot;ip.dat&amp;quot;)
+		
+		// check for errors
+		check(err)
+		
+		// close file before exit in case of problems
+		defer f.Close()
+		
+		// write the string, discard (_) the number of bytes written
+		_, err = f.WriteString(ipRes)
+		// flush 
+		f.Sync()
+		f.Close()
+		// wait
+		time.Sleep(5 * time.Second)
+    }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go installation from source</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <description>&lt;p&gt;Summary of the Go installation instruction from source as presented in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/install&#34;&gt;Go installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/install/source&#34;&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/code.html&#34;&gt;Write Go code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--TEASER_END--&gt;
+
+&lt;p&gt;The installation path will be &lt;code&gt;/usr/local/go&lt;/code&gt; and the workspace in
+&lt;code&gt;$HOME/Code/go&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /usr/local
+hg clone -u release https://code.google.com/p/go
+cd go/src
+./all.bash
+echo &amp;quot;export PATH=$PATH:/usr/local/go/bin&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
+echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go(lang) references</title>
+      <link>http://localhost:1313/pages/tech/golang-references/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/golang-references/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../posts/go-installation-from-source.html&#34;&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.kamilkisiel.net/blog/2012/07/05/using-the-go-regexp-package/&#34;&gt;Regex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&#34;&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golangcookbook.blogspot.it/&#34;&gt;Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/StefanSchroeder/Golang-Regex-Tutorial&#34;&gt;Tutorial 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/&#34;&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/&#34;&gt;http://golang.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&#34;&gt;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.golang-book.com/&#34;&gt;http://www.golang-book.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html&#34;&gt;Why it was creates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/golang-nuts&#34;&gt;https://groups.google.com/forum/#!forum/golang-nuts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/golem/&#34;&gt;https://code.google.com/p/golem/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gonum&#34;&gt;https://github.com/gonum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://plus.google.com/+golang/posts&#34;&gt;https://plus.google.com/+golang/posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://plus.google.com/communities/115354877257015196825&#34;&gt;https://plus.google.com/communities/115354877257015196825&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.darkcoding.net/software/pretty-command-line-console-output-on-unix-in-python-and-go-lang/&#34;&gt;Progress bar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/log4go/&#34;&gt;Advanced logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/zen.slide&#34;&gt;Zen Slide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.repustate.com/migrating-code-from-python-to-golang-what-you-need-to-know/2013/04/23/&#34;&gt;What Python developers need to know before migrating to Go(lang)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uberpython.wordpress.com/2012/09/23/why-im-not-leaving-python-for-go/&#34;&gt;Why I’m not leaving Python for Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang-for-python-programmers.readthedocs.org/en/latest/&#34;&gt;Golang for Python programmers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://s3.amazonaws.com/golangweekly/go_for_pythonistas.pdf&#34;&gt;Go for Pythonistas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/&#34;&gt;Go by example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/&#34;&gt;Going Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.syntax-k.de/projekte/go-review&#34;&gt;The Go Programming Language, or: Why all C-like languages except one suck.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://crypto.stanford.edu/~blynn/c2go/index.html&#34;&gt;c2go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://devcry.heiho.net/2012/04/golang-way-to-go.html?m=1&#34;&gt;Golang: The Way To Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.darkcoding.net/software/go-lang-after-four-months/&#34;&gt;Go after four months #golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&#34;&gt;GoDeb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://merbist.com/2011/06/27/golang-reflection-exampl/&#34;&gt;Reflection example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://log.zyxar.com/blog/2012/04/08/go-lang-notes/&#34;&gt;Golang notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://learnxinyminutes.com/docs/go/&#34;&gt;http://learnxinyminutes.com/docs/go/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://soniacodes.wordpress.com/&#34;&gt;Sonia Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.pheelicks.com/&#34;&gt;http://www.pheelicks.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/chat.slide#1&#34;&gt;Chatroulette like mini demo in Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.menfin.info/Presentations/20120709_Golang_introduction/#slide1&#34;&gt;Welcome to the nice world of Golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://nf.wh3rd.net/10things/&#34;&gt;10 things you (probably) don&amp;rsquo;t know about Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://godoc.org/code.google.com/p/go.tools/present&#34;&gt;Present package docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lagomeetup/talks&#34;&gt;Some talks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/&#34;&gt;Going go programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang-examples.tumblr.com/&#34;&gt;Golang(Go Language) Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang-samples&#34;&gt;GoLang Samples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.golangbootcamp.com/book/frontmatter&#34;&gt;GolangBootCamp Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!topic/golang-nuts/FCcLsuWsF_U&#34;&gt;Slice of structs vs map o structs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2013/go4python.slide&#34;&gt;go4python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tech.t9i.in/2013/01/why-program-in-go/&#34;&gt;Why I Program in Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/25382073/defining-golang-struct-function-using-pointer-or-not&#34;&gt;Defining golang struct function using pointer or not&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18435498/why-are-receivers-pass-by-value-in-go/18436251#18436251&#34;&gt;Why are receivers pass by value in Go?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;web-server:37888898512b69ee3a39b7d785691d7e&#34;&gt;Web Server&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.joshsoftware.com/2014/03/12/learn-to-build-and-deploy-simple-go-web-apps-part-one/&#34;&gt;Learn to build and deploy simple Go Web Apps, Part One&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/articles/wiki/&#34;&gt;http://golang.org/doc/articles/wiki/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image&#34;&gt;http://stackoverflow.com/questions/16672593/go-lang-simple-webserver-serve-static-image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ljgww/web_server_example_in_Go_-golang-&#34;&gt;https://github.com/ljgww/web_server_example_in_Go_-golang-&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://robfig.github.io/revel/&#34;&gt;http://robfig.github.io/revel/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://thechangelog.com/on-go-web-application-ecosystem/&#34;&gt;http://thechangelog.com/on-go-web-application-ecosystem/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;goroutines-and-pooling:37888898512b69ee3a39b7d785691d7e&#34;&gt;Goroutines and Pooling&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&#34;&gt;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gobyexample.com/worker-pools&#34;&gt;https://gobyexample.com/worker-pools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dancallahan.info/journal/go-concurrency/&#34;&gt;http://dancallahan.info/journal/go-concurrency/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.labix.org/2011/10/09/death-of-goroutines-under-control&#34;&gt;http://blog.labix.org/2011/10/09/death-of-goroutines-under-control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.golang.org/share-memory-by-communicating&#34;&gt;http://blog.golang.org/share-memory-by-communicating&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/codewalk/sharemem/&#34;&gt;http://golang.org/doc/codewalk/sharemem/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18267460/golang-goroutine-pool&#34;&gt;http://stackoverflow.com/questions/18267460/golang-goroutine-pool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dave.cheney.net/tag/golang-3&#34;&gt;http://dave.cheney.net/tag/golang-3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/pkg/log/#Logger&#34;&gt;http://golang.org/pkg/log/#Logger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/2013/11/using-log-package-in-go.html&#34;&gt;http://www.goinggo.net/2013/11/using-log-package-in-go.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/concurrency.slide&#34;&gt;Go Concurrency Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2013/advconc.slide&#34;&gt;Advanced Go Concurrency Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/waza.slide&#34;&gt;Concurrency is not Parallelism&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;efficiency:37888898512b69ee3a39b7d785691d7e&#34;&gt;Efficiency&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dennisforbes.ca/index.php/2013/07/23/the-most-powerful-feature-of-go-is-the-least-sexy&#34;&gt;The Most Powerful Feature of Go Is The Least Sexy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

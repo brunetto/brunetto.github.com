@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post It!</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 May 2015 10:29:10 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 29 May 2015 10:29:10 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>
+
+&lt;!-- banner = &#34;../../img/shutter.JPG&#34; --&gt;
+
+&lt;!-- banner = &#34;../../img/soh.JPG&#34; --&gt;
+
+&lt;p&gt;Hi there!!&lt;br /&gt;
+I&amp;rsquo;m Brunetto Ziosi.&lt;br /&gt;
+Currently I&amp;rsquo;m a PhD student in Astronomy at the Department
+of Physics and Astronomy of the University of Padua.&lt;br /&gt;
+There I simulate binary black holes and binary neutron stars in young and dense star clusters.
+They are the best candidates to be sources of detectable gravitational waves in the near future.&lt;/p&gt;
+
+&lt;p&gt;When I&amp;rsquo;m not at the computer (yes, I insanely ❤ programming/data analysis/data visualization, and not only for work! 😜 ) I enjoy travelling and making photos.
+I also volunteered as a scout leader, both as an educator (for almost ten years) and
+with civil defense during the post earthquake in 2012.&lt;/p&gt;
+
+&lt;h3 id=&#34;license:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;License&lt;/h3&gt;
+
+&lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; property=&#34;dct:title&#34;&gt;Post It! Sticky digital notes stuck on the Net!;D&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;http://brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;Brunetto Ziosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;. You can use and modify what you find here for free but I would like if you cite me as reference!&lt;br /&gt;
+I also like if you let me know you found something useful here. 😃
+Moreover, I try to put references for things I found anywhere and post here,
+if you have any doubt or you find my citations wrong, feel free to ask me!:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Not only Big Data</title>
+      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
+We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
+I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
+useful in our everyday work. This presentation aims of acting both as a showcase of what can help us and as a cheat sheet.
+You can find it after the break.&lt;/p&gt;
+
+&lt;iframe src=&#34;http://rawgit.com/brunetto/my-public-talks/master/2014-12-cinecaBigData/index.html&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Padding</title>
+      <link>http://localhost:1313/posts/padding/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/padding/</guid>
+      <description>&lt;p&gt;Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.&lt;br /&gt;
+I&amp;rsquo;ll take a note here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;i=5
+printf &amp;quot;%03d\n&amp;quot; $i
+005
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Something similar in Python and Go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;t = &amp;quot;test-&amp;quot;
+t.ljust(10, &#39;0&#39;) # rjust for right padding
+
+&#39;test-00000&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// LeftPad returns the string padded filling remaining left spaces to `length` with `pad`.
+import &amp;quot;log&amp;quot;
+import &amp;quot;strings&amp;quot;
+
+func LeftPad(str, pad string, length int) string {
+	var repeat int
+	if (length-len(str))%len(pad) != 0 {
+		log.Fatal(&amp;quot;Can&#39;t pad &amp;quot;, str, &amp;quot; with &amp;quot;, pad, &amp;quot; to length &amp;quot;, length)
+	} else {
+		repeat = (length - len(str)) / len(pad)
+	}
+	return strings.Repeat(pad, repeat) + str
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is also possible to do this with &lt;code&gt;fmt&lt;/code&gt; but you still need to compute the number
+of char if you want to maintain the total number of printed char.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Things that you can not do without</title>
+      <link>http://localhost:1313/posts/things-that-you-can-not-do-without/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/things-that-you-can-not-do-without/</guid>
+      <description>&lt;p&gt;A little list of essential tools:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; possibly with &lt;a href=&#34;https://github.com/getnikola/nikola&#34;&gt;Nikola&lt;/a&gt; or &lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34;&gt;Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; (possibly with git repos inside, see &lt;a href=&#34;http://stackoverflow.com/questions/12773488/git-fatal-reference-has-invalid-format-refs-heads-master&#34;&gt;here&lt;/a&gt; for problems)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mega.co.nz&#34;&gt;Mega&lt;/a&gt; with &lt;a href=&#34;https://mega.co.nz/#sync&#34;&gt;linux sync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ipython.org/&#34;&gt;ipython&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ipython.org/notebook.html&#34;&gt;ipython Notebook&lt;/a&gt; with GitHub and &lt;a href=&#34;http://nbviewer.ipython.org/&#34;&gt;nbviewer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.inkscape.org/en/&#34;&gt;Inkscape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kate-editor.org/&#34;&gt;Kate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brunettoziosi.eu/posts/best-golang-installation.html&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jeremysanders/veusz&#34;&gt;Veusz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://keep.google.com&#34;&gt;Keep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juicessh.com/&#34;&gt;JuiceSSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://github.com/coreos/rocket&#34;&gt;Rocket&lt;/a&gt; (see also &lt;a href=&#34;https://coreos.com/blog/rocket/&#34;&gt;why Rocket&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python plot examples</title>
+      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
+&lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
+I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
+perfect &lt;code&gt;pdf&lt;/code&gt; plots, but sometimes Matplotlib it&amp;rsquo;s faster for producing just
+a draft plot to inspect data!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
+import time
+import numpy as np
+import veusz.embed as ve
+
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	return counts, bin_edges
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+2, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	bin_edges = np.hstack((bin_edges[0], bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def plotFunc(inpath=&amp;quot;./&amp;quot;, outpath=&amp;quot;./&amp;quot;):
+	font = &amp;quot;Times New Roman&amp;quot;
+	colors = [u&#39;blue&#39;, u&#39;green&#39;]
+	xmin = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	xmax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	ymin = [&amp;quot;auto&amp;quot;, 0]
+	ymax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	figure = ve.Embedded(&amp;quot;Window_1&amp;quot;)
+	page = figure.Root.Add(&#39;page&#39;, width = &#39;30cm&#39;, height=&#39;15cm&#39;)
+	grid = page.Add(&#39;grid&#39;, autoadd = False, rows = 1, columns = 2,
+						scaleRows=[0.2],
+						topMargin=&#39;1cm&#39;,
+						bottomMargin=&#39;1cm&#39;
+						)
+	graphList = []
+	
+	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;scatter&amp;quot;, autoadd=False, 
+							hide = False, 
+							Border__width = &#39;2pt&#39;,
+							leftMargin = &#39;0.6cm&#39;,
+							rightMargin = &#39;0.4cm&#39;,
+							topMargin = &#39;0.5cm&#39;,
+							bottomMargin = &#39;1cm&#39;,
+							))
+	
+	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;hist&amp;quot;, autoadd=False, 
+							hide = False, 
+							Border__width = &#39;2pt&#39;,
+							leftMargin = &#39;2cm&#39;,
+							rightMargin = &#39;0.4cm&#39;,
+							topMargin = &#39;0.5cm&#39;,
+							bottomMargin = &#39;1cm&#39;,
+							))
+	
+	for i in range(len(graphList)):
+		graphList[i].Add(&#39;axis&#39;, name=&#39;x&#39;, label = &amp;quot;x&amp;quot;,
+								min = xmin[i],
+								max = xmax[i],
+								log = False,
+								Label__size = &#39;25pt&#39;,
+								Label__font = font,
+								TickLabels__size = &#39;17pt&#39;,
+								TickLabels__format = u&#39;Auto&#39;,
+								MajorTicks__width = &#39;2pt&#39;,
+								MajorTicks__length = &#39;10pt&#39;,
+								MinorTicks__width = &#39;1pt&#39;,
+								MinorTicks__length = &#39;6pt&#39;
+							)
+		graphList[i].Add(&#39;axis&#39;, name=&#39;y&#39;, label = &amp;quot;y&amp;quot;, 
+								direction = &#39;vertical&#39;,
+								min = ymin[i],
+								max = ymax[i],
+								log = False,
+								autoRange = u&#39;+5%&#39;,
+								Label__size = &#39;25pt&#39;,
+								Label__font = font,
+								TickLabels__size = &#39;20pt&#39;,
+								TickLabels__format = u&#39;Auto&#39;,
+								MajorTicks__width = &#39;2pt&#39;,
+								MajorTicks__length = &#39;10pt&#39;,
+								MinorTicks__width = &#39;1pt&#39;,
+								MinorTicks__length = &#39;6pt&#39;
+							)
+	
+	graphList[0].Add(&#39;xy&#39;, key=&amp;quot;scatterPlotKey&amp;quot;, name=&#39;scatterPlotName&#39;,
+						marker = u&#39;circle&#39;,
+						MarkerFill__color = colors[0],
+						markerSize = u&#39;3pt&#39;, 
+						)
+
+	xDataName = &amp;quot;xScatterData&amp;quot;
+	yDataName = &amp;quot;yScatterData&amp;quot;
+	figure.SetData(xDataName, xData)
+	figure.SetData(yDataName, yData)
+	graphList[0].scatterPlotName.xData.val = xDataName
+	graphList[0].scatterPlotName.yData.val = yDataName
+	
+	
+	counts, bin_edges = sm_hist2(yData, delta=5)
+	
+	graphList[1].Add(&#39;xy&#39;, key=&amp;quot;histPlotKey&amp;quot;, name=&#39;histPlotName&#39;,
+						xData = bin_edges,
+						yData = counts,
+						marker = &#39;none&#39;,
+						PlotLine__steps = u&#39;left&#39;,
+						PlotLine__color = colors[1],
+						PlotLine__style = u&amp;quot;solid&amp;quot;,
+						PlotLine__width = u&#39;3&#39;,
+						FillBelow__color = colors[1],
+						FillBelow__style = &amp;quot;forward 2&amp;quot;,
+						FillBelow__hide = False,
+						FillBelow__transparency = 70,
+						#FillBelow__backtransparency = 50,
+						FillBelow__linewidth = &#39;1pt&#39;,
+						FillBelow__linestyle = &#39;solid&#39;,
+						FillBelow__backcolor = &amp;quot;white&amp;quot;,
+						FillBelow__backhide = True,
+						Label__posnHorz = &#39;right&#39;,
+						Label__size = &#39;14pt&#39;, 
+						Label__color = &#39;black&#39;
+						)
+
+	histKey = graphList[1].Add(&#39;key&#39;, autoadd=False, 
+						horzPosn = &#39;left&#39;,
+						vertPosn = &#39;top&#39;,
+						Text__font = font,
+						Text__size = &#39;15&#39;,
+						Border__width = &#39;1.5pt&#39;
+						)
+	
+	end = raw_input(&amp;quot;Press any key to finish...&amp;quot;)
+	
+	figure.Save(&amp;quot;example.vsz&amp;quot;)
+	figure.Export(&amp;quot;example.png&amp;quot;, backcolor=&#39;#ffffff&#39;)
+	figure.Export(&amp;quot;example.pdf&amp;quot;)
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	inpath = &amp;quot;./&amp;quot;
+	outpath = &#39;./&#39;
+	tt = time.time()
+	plotFunc(inpath, outpath)
+	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
+import time
+import numpy as np
+import matplotlib.pylab as plt
+import matplotlib.font_manager as font_manager
+
+# SM like style
+params = {&#39;backend&#39;: &#39;png&#39;,
+		&#39;font.family&#39;: &amp;quot;serif&amp;quot;,
+		&#39;font.size&#39;: 25,
+		&#39;axes.labelsize&#39;: 35,
+		#&#39;text.fontsize&#39;: 30,
+		&#39;legend.fontsize&#39;: 30,
+		&#39;xtick.labelsize&#39;: 28,
+		&#39;xtick.major.size&#39;: 20.0,
+		&#39;xtick.major.width&#39;: 3.0,
+		&#39;xtick.minor.size&#39;: 12.0,
+		&#39;xtick.minor.width&#39;: 2,
+		&#39;ytick.labelsize&#39;: 28,
+		&#39;ytick.major.size&#39;: 20.0,
+		&#39;ytick.major.width&#39;: 3.0,
+		&#39;ytick.minor.size&#39;: 12.0,
+		&#39;ytick.minor.width&#39;: 2,
+		#&#39;text.usetex&#39;: True,
+		&#39;axes.linewidth&#39;: 3.0,
+		&#39;lines.linewidth&#39;: 2,
+		&#39;lines.markersize&#39;: 15,
+		&#39;axes.grid&#39;: False,
+		&#39;grid&#39;: {&#39;color&#39;:&#39;gray&#39;, &#39;linestyle&#39;:&#39;-&#39;, &#39;linewidth&#39;:1},
+		&#39;figure.figsize&#39;: (10,10),
+		&#39;figure.subplot.left&#39;: 0.15,  # the left side of the subplots of the figure
+		&#39;figure.subplot.right&#39;   : 0.95,    # the right side of the subplots of the figure
+		&#39;figure.subplot.bottom&#39;  : 0.12,   # the bottom of the subplots of the figure
+		&#39;figure.subplot.top&#39;     : 0.92,    # the top of the subplots of the figure
+		&#39;figure.subplot.wspace&#39;  : 0.2,    # the amount of width reserved for blank space between subplots
+		&#39;figure.subplot.hspace&#39;  : 0.2,    # the amount of height reserved for white space between subplots
+		&#39;figure.figsize&#39;: (12, 12)
+           }
+plt.rcParams.update(params)
+	
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	return counts, bin_edges
+	
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+delta, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	print counts
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts))
+	bin_edges = np.hstack((bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def singlePlotScatter(xData, yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&amp;quot;x label&amp;quot;)
+	ax.set_ylabel(&amp;quot;y label&amp;quot;)
+	ax.set_xscale(&amp;quot;linear&amp;quot;)
+	ax.set_yscale(&amp;quot;linear&amp;quot;)
+	ax.set_title(&amp;quot;Plot title&amp;quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
+	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
+	ax.plot(xData, yData, 
+			color = &amp;quot;green&amp;quot;, 
+			markeredgewidth = 0.8, 
+			linestyle = &#39;-&#39;, 
+			linewidth = 2,
+			marker = &#39;o&#39;, 
+			markersize = 1, 
+			label = &amp;quot;label&amp;quot;)
+	return ax
+
+def singlePlotHist(yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&amp;quot;x label&amp;quot;)
+	ax.set_ylabel(&amp;quot;y label&amp;quot;)
+	ax.set_xscale(&amp;quot;linear&amp;quot;)
+	ax.set_yscale(&amp;quot;linear&amp;quot;)
+	ax.set_title(&amp;quot;Plot title&amp;quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
+	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
+	counts, bin_edges = sm_hist2(yData, delta = 10)
+	ax.set_ylim((0, 1.2*counts.max()))
+	
+	ax.plot(bin_edges, counts, 
+				color = &amp;quot;blue&amp;quot;,
+				alpha = 0.8,
+				linewidth = 2,
+				antialiased = True,
+				zorder = 3 
+				)
+	ax.fill(bin_edges, counts, 
+				alpha = 0.5,
+				hatch = &amp;quot;/&amp;quot;,
+				edgecolor = &amp;quot;blue&amp;quot;,
+				facecolor = &amp;quot;white&amp;quot;,
+				antialiased = True, 
+				label = &amp;quot;whatever you want&amp;quot;
+				)
+	ax.legend(loc=&#39;upper left&#39;, numpoints = 1, prop=font_manager.FontProperties(size=18)).draw_frame(False)
+
+	return ax
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	tt = time.time()
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	fig = plt.figure()
+	fig.suptitle(&amp;quot;Figure title&amp;quot;)
+	axs = []
+	nPlots = 2
+	
+	axs.append(singlePlotScatter(xData, yData, nRows=1, nCols=2, x0=0, y0=0, rowspan=1, colspan=1))
+	axs.append(singlePlotHist(yData, nRows=1, nCols=2, x0=0, y0=1, rowspan=1, colspan=1))
+	
+	fig.set_size_inches(20, 10)
+	plt.savefig(&amp;quot;./grid.png&amp;quot;, dpi=100)
+	plt.close(fig)
+	
+	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Change a line in all of your files at once</title>
+      <link>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <description>&lt;p&gt;Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.&lt;br /&gt;
+With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39; *.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linux network monitoring</title>
+      <link>http://localhost:1313/posts/network-monitoring/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/network-monitoring/</guid>
+      <description>&lt;p&gt;A list of programs to monitor your network connection and find out which process is eating bandwith
+and how to run them:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo nethogs eth0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsof -i -n -P&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo iftop -i eth0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nmon&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rsync like a pro</title>
+      <link>http://localhost:1313/posts/rsync-like-a-pro/</link>
+      <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/rsync-like-a-pro/</guid>
+      <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you need it, &lt;code&gt;-c&lt;/code&gt; flag will force files checksum to be sure they are the same or not. It takes a lot of time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best Golang installation</title>
+      <link>http://localhost:1313/posts/best-golang-installation/</link>
+      <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/best-golang-installation/</guid>
+      <description>&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&#34;&gt;http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&#34;&gt;http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Assuming you already have the correct environment and you are on an ubuntu workstation.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download and install &lt;code&gt;godeb&lt;/code&gt; if you haven&amp;rsquo;t already done.&lt;/li&gt;
+&lt;li&gt;Then with &lt;code&gt;godeb list&lt;/code&gt; and godeb install &lt;version&gt; install your favourite Go version (the last, obviously!:P).&lt;/li&gt;
+&lt;li&gt;To be able to cross-compile with the new installed Go:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo -i
+cd /usr/local/go/src
+git clone git://github.com/davecheney/golang-crosscompile.git
+source golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;done.&lt;/p&gt;
+
+&lt;p&gt;If you need a non-root installation or want to do everything from scratch it is
+just easy as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://go.googlesource.com/go
+cd go
+git checkout go1.4.1 # or the latest release
+cd src
+./all.bash
+git clone git://github.com/davecheney/golang-crosscompile.git
+source golang-crosscompile/crosscompile.bash
+go-crosscompile-build-all
+cd ../../
+mv go goroot
+mkdir -p gopath/bin
+mkdir -p gopath/docs
+mkdir -p gopath/pkg
+mkdir -p gopath/src/github.com/$USER # here you will put your github project sources
+echo &amp;quot;export GOROOT=/home/$USER/goroot&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+echo &amp;quot;export GOPATH=/home/$USER/gopath&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Poster Making</title>
+      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&#34;&gt;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zachholman.com/posts/slide-design-for-developers/&#34;&gt;http://zachholman.com/posts/slide-design-for-developers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.colormatters.com/color-and-design/basic-color-theory&#34;&gt;http://www.colormatters.com/color-and-design/basic-color-theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1000.com/posters/browse?docTypeSearch=Poster&#34;&gt;http://f1000.com/posters/browse?docTypeSearch=Poster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cool Websites</title>
+      <link>http://localhost:1313/pages/tech/coolwebsites/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/tech/coolwebsites/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/holman/left&#34;&gt;https://github.com/holman/left&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&#34;&gt;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&#34;&gt;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://html5up.net/&#34;&gt;http://html5up.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ssh keys exchange</title>
+      <link>http://localhost:1313/posts/ssh-keys-exchange/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/ssh-keys-exchange/</guid>
+      <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
+the need to remember a password.&lt;/p&gt;
+
+&lt;p&gt;On both the computer (&lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen
+ssh-copy-id -i you@B
+ssh you@B # to check if it works
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If it doesn&amp;rsquo;t work try:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cat .ssh/id_rsa.pub | ssh b@B &#39;cat &amp;gt;&amp;gt; .ssh/authorized_keys&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/fit/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://idlastro.gsfc.nasa.gov/ftp/pro/math/fitexy.pro&#34;&gt;IDL function&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&#34;&gt;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/?p=409&#34;&gt;http://blog.technokrat.nl/?p=409&lt;/a&gt; (qui usano la versione R in python)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/pull/14&#34;&gt;https://github.com/scikit-learn/scikit-learn/pull/14&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&#34;&gt;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&lt;/a&gt; (gaussian processes è il nome ufficiale e generico degli algoritmi tipo quelli di krige)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&#34;&gt;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&#34;&gt;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.gaussianprocess.org/&#34;&gt;http://www.gaussianprocess.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pygpr.sourceforge.net/&#34;&gt;http://pygpr.sourceforge.net/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&#34;&gt;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&#34;&gt;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.enthought.com/services/training/geophysics&#34;&gt;https://www.enthought.com/services/training/geophysics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ambhas.com/books/python-in-hydrology/book.html&#34;&gt;http://ambhas.com/books/python-in-hydrology/book.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&#34;&gt;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&#34;&gt;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&#34;&gt;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&#34;&gt;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/stober/4964727&#34;&gt;https://gist.github.com/stober/4964727&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog pages index generator</title>
+      <link>http://localhost:1313/posts/blog-pages-index-generator/</link>
+      <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/blog-pages-index-generator/</guid>
+      <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
+&lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
+pages of this blog!
+This would rebuild my index every time keeping automatically track of new or
+deleted pages.&lt;/p&gt;
+
+&lt;p&gt;Eventually I had time to try, and I tried in Go!:)&lt;/p&gt;
+
+&lt;p&gt;This is the first attempt, it could be better, but it works!&lt;/p&gt;
+
+&lt;p&gt;Filesystem walk from
+&lt;a href=&#34;http://stackoverflow.com/questions/12657365/extracting-directory-hierarchy-using-go-language&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+	&amp;quot;path/filepath&amp;quot;
+	&amp;quot;fmt&amp;quot;
+	&amp;quot;log&amp;quot;
+	&amp;quot;os&amp;quot;
+	&amp;quot;strings&amp;quot;
+	&amp;quot;time&amp;quot;
+)
+
+func main() {
+	tGlob0 := time.Now()
+	
+	// Create output file
+	fOut, err := os.Create(&amp;quot;index.md&amp;quot;)
+	if err != nil {
+        panic(err)
+    }
+    defer fOut.Close()
+	
+	// Define and implement what to do with path pieces
+	visit := func(path string, info os.FileInfo, err error) error {
+		// Split dir path from file name
+		dir, file := filepath.Split(path)
+		// Init list line string
+		line := &amp;quot;&amp;quot;
+		// Init and compute the level of indentation based on dit level 
+		indent := &amp;quot;&amp;quot;
+		for i:=0; i &amp;lt; len(strings.Split(dir, &amp;quot;/&amp;quot;))-1; i++ {
+			indent = indent + &amp;quot;    &amp;quot;
+		}
+		// If I reach a new dir
+        if info.IsDir() {
+			// Ignore local dir (exit function)
+			if strings.Contains(path, &amp;quot;.&amp;quot;) {
+				return nil
+			}
+			// Create line for page with name == dirName
+            line = indent + &amp;quot;* [&amp;quot;+strings.Title(filepath.Base(path))+&amp;quot;](&amp;quot;+filepath.Join(path, filepath.Base(path)+&amp;quot;.html)&amp;quot;)+&amp;quot;\n&amp;quot;
+        // If I found a new file
+		} else {
+			// Only consider md files
+			if strings.HasSuffix(file, &amp;quot;md&amp;quot;){
+				fileBase := strings.TrimSuffix(file, &amp;quot;.md&amp;quot;)
+				// Ignore files with name == dirName
+				if fileBase == filepath.Base(dir) {
+					return nil
+				}
+				// Create line
+				linkName := strings.Replace(strings.Title(strings.Replace(fileBase, &amp;quot;-&amp;quot;, &amp;quot;_&amp;quot;, -1)), &amp;quot;_&amp;quot;, &amp;quot; &amp;quot;, -1)
+			    line = indent + &amp;quot;* [&amp;quot;+ linkName +&amp;quot;](&amp;quot;+filepath.Join(dir, strings.Replace(file, &amp;quot;.md&amp;quot;, &amp;quot;.html&amp;quot;, 1))+&amp;quot;)\n&amp;quot;
+			} else {	
+				return nil
+			}
+        }
+        // Print line to file
+//         fmt.Print(line)
+		if _, err = fOut.WriteString(line); err != nil {
+			log.Fatal(err)
+		}
+        return nil
+    }
+    
+    header := `&amp;lt;!-- 
+.. link: 
+.. description: 
+.. tags: 
+.. date: 2013/09/03 12:24:24
+.. title: for future references summary
+.. slug: index
+--&amp;gt;
+
+* [Blog](../index.html)
+`
+    
+    if _, err = fOut.WriteString(header); err != nil {
+			log.Fatal(err)
+	}
+    
+    // Walk through folders
+	err = filepath.Walk(&amp;quot;./&amp;quot;, visit)
+    if err != nil {
+        log.Fatal(err)
+    }
+	
+
+	tGlob1 := time.Now()
+	fmt.Println()
+	log.Println(&amp;quot;Recreated pages index in &amp;quot;, tGlob1.Sub(tGlob0))
+} //END MAIN
+
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/phd/</link>
+      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <description>
+
+&lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
+compact-object binaries&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure&gt;
+&lt;div style=&#34;border:1px solid black;border-radius: 8px&#34;&gt;
+&amp;lt;!&amp;ndash;&lt;img src=&#34;../../files/ziosi-GPU-Rome.gif&#34; alt=&#34;GPU Rome slide&#34; title=&#34;Presentation of my poster at a conference in Rome in 2014 that summarize my research.&#34; /&gt;&amp;ndash;&amp;gt;
+&lt;img src=&#34;../../files/PhDProjectScheme.svg&#34; alt=&#34;OhD project scheme&#34; style=&#34;width:700px&#34;&gt;
+&lt;figcaption&gt;
+&lt;hr&gt; Schematic representation of my PhD project.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;My PhD project is devoted to improving our knowledge on the demographics
+and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH),
+neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
+The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
+Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General
+Relativity: while indirect confirmations of GWs came from observations of pulsar
+binaries, a direct detection of GWs is still missing.
+Mergers of binaries
+are among the most promising sources of GWs in the frequency range that will be
+explored by Advanced Virgo and LIGO (~10-10000 Hz).&lt;/p&gt;
+
+&lt;p&gt;My research focus on three main fronts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the impact of dynamics and metallicity on
+the formation and evolution of double compact-object binaries&lt;/li&gt;
+&lt;li&gt;the effects
+of a tidal field on the evolution of star clusters and on the
+demography of DCO binaries inside them,&lt;/li&gt;
+&lt;li&gt;the changes in the DCO binaries demography
+considering different initial structural properties of the clusters (mass, concentration,
+primordial binaries fraction, density, &amp;hellip;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To investigate the impact of dynamics and metallicity on double compact-object binaries demography,
+I analyzed 600 random realizations of a young dense star cluster at different metallicities.
+I was interested in the binary orbital properties, lifetimes, number of exchanges and coalescence timescales
+(the time a binary need to merge only because of gravitational wave emission).
+We chose young and dense star cluster as environment in which to study DCO binaries
+because they are the preferential
+environment for star formation (Lada &amp;amp; Lada, 2003) and gravitational interactions are efficient in exchanging
+energy on short times.&lt;/p&gt;
+
+&lt;p&gt;My results, published in Ziosi et al. (2014), confirm that the cluster dynamics
+favours the formation of BH-BH binaries and were tested against the literature.&lt;/p&gt;
+
+&lt;p&gt;The results I obtained, however, stand on two critical assumptions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I assumed that the
+star cluster would life unpeturbed for 100 Myr but after that time they should be
+dissolved into the galactic disc because of the host galaxy tidal field&lt;/li&gt;
+&lt;li&gt;I only simulated random realizations of a single star cluster model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both the assumptions can heavily affect estimations on the demography of the DCO binaries
+and the two other parts of my project are devoted to overcome these limitations.&lt;br /&gt;
+To face the first issue I implemented in the code
+a numerical recipe (the one proposed in Allen &amp;amp; Santillan, 1991) to accurately include the host galaxy gravitational tidal field.
+I am now testing the new tidal field. As soon as it is proved to
+be reliable I will study the effect of the disk component on the life
+of the star clusters and on the DCO binaries dynamics and demography.
+In particoular, it is interesting the case in which the cluster is not on a circoular orbit
+coplanar with the galactic disk but on an eccentric and inclined one.
+In this case the potential changes rapidly with the time and the effect on the cluster can be
+remarkable (see Madrid et al., 2014).&lt;/p&gt;
+
+&lt;p&gt;Regarding the second issue, it is necessary to quantify the effect of initial
+structural properties of the cluster on the double compact-object binaries population.
+First of all, cluster structural properties can affect double compact-object binaries demography&lt;br /&gt;
+because they influence the dynamical interactions rate among binaries, exchanges included,
+and the cluster surviving time to the tidal field.
+Then, analysing a a wide spectrum of different clusters we would be able to
+better calibrate the results on the real population of clusters in our galaxy and
+in the galaxies at distances smaller than the LIGO/Virgo horizon.
+To this purpose, I am running tens of simulations spanning a wide range of initial
+structural properties.  All the simulations make havy use of HPC hardware (GPU clusters) and
+I built the necessary computational tools to run, manage and analyze all these simulations.
+As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
+This would make us able to highlight which aspects of the star clusters
+are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
+
+&lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
+&lt;li&gt;High energy astrophysics (Prof Franceschini)&lt;/li&gt;
+&lt;li&gt;Extrasolar planets (Dr. Claudi)&lt;/li&gt;
+&lt;li&gt;Scientific projects management (Dr. Farinato)&lt;/li&gt;
+&lt;li&gt;Galaxy Archeology (Prof. Saglia)&lt;/li&gt;
+&lt;li&gt;Nucleosynthesis in the early galaxy (Prof. Sneden)&lt;/li&gt;
+&lt;li&gt;Collisional dynamics in stellar systems (Dr. Mapelli)&lt;/li&gt;
+&lt;li&gt;Supernovae (Dr. Pastorello)&lt;/li&gt;
+&lt;li&gt;Astronomia X (Dr. Zampieri)&lt;/li&gt;
+&lt;li&gt;Paper writing (Prof. Sneden)&lt;/li&gt;
+&lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
+dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
+&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
+and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

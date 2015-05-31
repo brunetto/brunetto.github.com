@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curriculum on Post It!</title>
+    <link>http://localhost:1313/tags/curriculum/</link>
+    <description>Recent content in Curriculum on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Aug 2013 23:40:58 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/curriculum/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Curriculum vitae</title>
+      <link>http://localhost:1313/pages/curriculum-vitae/</link>
+      <pubDate>Fri, 16 Aug 2013 23:40:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/curriculum-vitae/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/brunetto/ziosiCV/blob/master/ziosi_cv.pdf&#34;&gt;PDF version here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;personal-information:d29e840c67b04b7da7a217fabb734866&#34;&gt;Personal information&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Surname / First name&lt;/strong&gt; Ziosi Brunetto Marco&lt;br /&gt;
+&lt;strong&gt;Address&lt;/strong&gt; via Ivancich n.17, 30174, Chirignago (VE)&lt;br /&gt;
+&lt;strong&gt;Telephone&lt;/strong&gt; (+39) 3474958152&lt;br /&gt;
+&lt;strong&gt;Email&lt;/strong&gt; brunetto.ziosi@gmail.com&lt;br /&gt;
+&lt;strong&gt;Nationality&lt;/strong&gt; Italian&lt;br /&gt;
+&lt;strong&gt;Date of birth&lt;/strong&gt; 03/05/1985&lt;br /&gt;
+&lt;strong&gt;Position&lt;/strong&gt; PhD student since 01/2012 at University of Padova - Department of Physics and Astronomy&lt;br /&gt;
+PhD advisors: Dr. Michela Mapelli (INAF-OAPd) and Prof. Giuseppe Tormen (University of Padova)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Website&lt;/strong&gt; &lt;a href=&#34;brunettoziosi.eu&#34;&gt;brunettoziosi.eu&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Public repository&lt;/strong&gt; &lt;a href=&#34;https://github.com/brunetto&#34;&gt;https://github.com/brunetto&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Docker registry&lt;/strong&gt; &lt;a href=&#34;https://hub.docker.com/u/brunetto&#34;&gt;https://hub.docker.com/u/brunetto&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;education-employment:d29e840c67b04b7da7a217fabb734866&#34;&gt;Education &amp;amp; Employment&lt;/h2&gt;
+
+&lt;h3 id=&#34;2015:d29e840c67b04b7da7a217fabb734866&#34;&gt;2015&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;sup&gt;2015&lt;/sup&gt;&amp;frasl;&lt;sub&gt;01&lt;/sub&gt;-&lt;sup&gt;2015&lt;/sup&gt;&amp;frasl;&lt;sub&gt;07&lt;/sub&gt;&lt;/strong&gt; INAF-OAPd fellowship to work on the project: &amp;ldquo;Study of gravitational
+waves sources in young star clusters by means of direct N-body simulations.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2012-2015:d29e840c67b04b7da7a217fabb734866&#34;&gt;2012-2015&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;research/phd.html&#34;&gt;&lt;strong&gt;PhD School in Astronomy&lt;/strong&gt;&lt;/a&gt; - Department of Physics and Astronomy (University of Padova),
+&lt;strong&gt;Research project title:&lt;/strong&gt; “The impact of stellar evolution and dynamics on the formation of compact-
+object binaries” under the supervision of Dr. Michela Mapelli and Prof. Giuseppe Tormen&lt;/p&gt;
+
+&lt;h3 id=&#34;2007-2011:d29e840c67b04b7da7a217fabb734866&#34;&gt;2007-2011&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;research/master.html&#34;&gt;&lt;strong&gt;Master Thesis in Astronomy&lt;/strong&gt;&lt;/a&gt; - Department of Physics and Astronomy (University of Padova),
+(&lt;sup&gt;108&lt;/sup&gt;&amp;frasl;&lt;sub&gt;110&lt;/sub&gt;): &lt;a href=&#34;../../files/ZiosiMasterThesis.pdf&#34;&gt;&amp;ldquo;Halo-matter cross-correlation in cosmological simulation&amp;rdquo;&lt;/a&gt; under the supervision of
+Prof. Giuseppe Tormen and Prof. Ravi K. Sheth&lt;/p&gt;
+
+&lt;h3 id=&#34;2004-2007:d29e840c67b04b7da7a217fabb734866&#34;&gt;2004-2007&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;research/bachelor.html&#34;&gt;&lt;strong&gt;Bachelor Thesis in Astronomy&lt;/strong&gt;&lt;/a&gt; - Department of Physics and Astronomy (University of Padova),
+(&lt;sup&gt;103&lt;/sup&gt;&amp;frasl;&lt;sub&gt;110&lt;/sub&gt;): &lt;a href=&#34;../../files/ZiosiBachelorThesis.pdf&#34;&gt;&amp;ldquo;Studio del profilo dei vortici ottici con diverso momento angolare&amp;rdquo;&lt;/a&gt; (Characterization of
+optical vortexes with different angular momentum), under the supervision of Prof. Cesare Barbieri, Dott.
+Fabrizio Tamburini, Gabriele Anzolin&lt;/p&gt;
+
+&lt;h3 id=&#34;2004:d29e840c67b04b7da7a217fabb734866&#34;&gt;2004&lt;/h3&gt;
+
+&lt;p&gt;High school degree of Scientific studies&lt;/p&gt;
+
+&lt;h2 id=&#34;teaching-experience:d29e840c67b04b7da7a217fabb734866&#34;&gt;Teaching experience&lt;/h2&gt;
+
+&lt;h3 id=&#34;2012-2013:d29e840c67b04b7da7a217fabb734866&#34;&gt;2012-2013&lt;/h3&gt;
+
+&lt;p&gt;Teaching assistant - Department of Physics and Astronomy (University of Padova), Mathematical
+analysis&lt;br /&gt;
+Teaching assistant - Department of Physics and Astronomy (University of Padova), Python
+course&lt;/p&gt;
+
+&lt;h2 id=&#34;publications:d29e840c67b04b7da7a217fabb734866&#34;&gt;Publications&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://mnras.oxfordjournals.org/content/441/4/3703.full?keytype=ref&amp;amp;ijkey=wtSg4FcQLzZB4Pr&#34;&gt;2014 - Ziosi B. M., Mapelli M., Branchesi M., Tormen G., 2014, MNRAS, 441, 3703Z&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://link.springer.com/article/10.1007/s10714-014-1771-6&#34;&gt;2014 - Branchesi M. , Woan G., Astone P., Bartos I., Colla A., Covino S., Drago M., Fan X., Frasca S., Hanna C., Haskell B., Hazboun J.S., Heng I.S., Holz D.E., Johnson-McDaniel N.K., Jones I.D., Keer L., Klimenko S., Kostas G., Larson S.L., Mandel I., Mapelli M., Messenger C., Mazzolo G., Melatos A., Mohanty S., Necula V., Normandin M., Obara L., Opiela R., Owen B., Palomba C., Prodi G.A., Re V., Salemi F., Sidery T.L., Sokolowski M., Schwenzer K., Tiwari V., Tringali M.C., Vedovato G., Vousden W., Yakushin I., Zadrożny A., Ziosi B.M., C7 multi-messenger astronomy of GW sources, 2014, General Relativity and Gravitation, 46, 1771&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;grants:d29e840c67b04b7da7a217fabb734866&#34;&gt;Grants&lt;/h2&gt;
+
+&lt;h3 id=&#34;2013:d29e840c67b04b7da7a217fabb734866&#34;&gt;2013&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1000 EUR to attend the Gravasco IHP trimester ``N-body gravitational
+dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;accepted-computational-proposals:d29e840c67b04b7da7a217fabb734866&#34;&gt;Accepted computational proposals&lt;/h2&gt;
+
+&lt;h3 id=&#34;2014:d29e840c67b04b7da7a217fabb734866&#34;&gt;2014&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;``Young star cluster disruption by tidal fields&amp;rdquo;, 50.0k CPU hours on GPU cluster EURORA @ CINECA, PI: Mapelli, CO-I: Ziosi and Moretti&lt;/li&gt;
+&lt;li&gt;``Star cluster formation through merger of sub-clusters&amp;rdquo;, 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 3 other COIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2013-1:d29e840c67b04b7da7a217fabb734866&#34;&gt;2013&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;``Investigating the statistics and parameter space of double compact object binaries in young star clusters&amp;rdquo;, 50.0k CPU hours on GPU cluster EURORA, IBM PLX cluster and  IBM Blue Gene/Q Fermi @ CINECA, PI: Ziosi, 2 COIs&lt;/li&gt;
+&lt;li&gt;``Making very massive stars through stellar collisions&amp;rdquo;, 50.0k on GPU cluster EURORA and IBM PLX cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2012:d29e840c67b04b7da7a217fabb734866&#34;&gt;2012&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;``The violent life of the Galactic Centre&amp;rdquo;, 281.6k CPU hours on IBM PLX and on the
+IBM Blue Gene/Q Fermi cluster @ CINECA, PI: Mapelli, CO-I: Ziosi and 2 other COIs&lt;/li&gt;
+&lt;li&gt;``Computational Frontiers of Black Hole Dynamics&amp;rdquo;, 50.0k CPU hours on IBM PLX cluster @ CINECA, PI: Ripamonti, CO-I: Ziosi and 2 other COIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;presentations-and-posters:d29e840c67b04b7da7a217fabb734866&#34;&gt;Presentations and posters&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2014-11-28-FinalWorkshop-Ziosi/index.html&#34;&gt;2014 PhD Workshop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2014-ZiosiRomaGPU.pdf&#34;&gt;2014 GPU conference Rome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;2014 Stellar N-body Dynamics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;MODEST 14&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Gravasco&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2013-11-28-FinalWorkshop-Ziosi.pdf&#34;&gt;2013 PhD Workshop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;journal-clubs-presentations:d29e840c67b04b7da7a217fabb734866&#34;&gt;Journal Clubs Presentations&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg&#34;&gt;2012-05-07: Atacama telescope constrain on primordial power spectrum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2012-10-15-MRObs.svg&#34;&gt;2012-10-15: Millennium Run Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2013-05-13-JC_ziosi.pdf&#34;&gt;2013-05-13: Growth via stellar collisions in ensemble star clusters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/Presentations/2013-10-07-JC_ziosi.pdf&#34;&gt;2013-10-07: Spoon-feeding giant stars to supermassive black holes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;schools-workshops-and-conferences:d29e840c67b04b7da7a217fabb734866&#34;&gt;Schools, Workshops and Conferences&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://events.prace-ri.eu/conferenceDisplay.py?confId=314&#34;&gt;Tools and Techniques for massive data analysis&lt;/a&gt;, CINECA (Bologna), 15-16 December 2014&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
+dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013, Departement of Information Engineering, Padua&lt;/li&gt;
+&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013, Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
+and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012, CINECA&lt;/li&gt;
+&lt;li&gt;Introduction to C language for scientific programming, 17-18 May 2012, CINECA&lt;/li&gt;
+&lt;li&gt;PhD Summer School on Algorithms and Architectures for Computational Science and Engineering, 12-16 Semptember 2011, Departement of Information Engineering, Padua&lt;/li&gt;
+&lt;li&gt;Workshop on Visualization of Large scientific Data, 14-15 June 2011, CINECA&lt;/li&gt;
+&lt;li&gt;Python for computational science, 16-18 May 2011, CINECA&lt;/li&gt;
+&lt;li&gt;Introduction to GPGPU and CUDA programming, 27 April 2011, CINECA computing center (Bologna, Italy)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;other:d29e840c67b04b7da7a217fabb734866&#34;&gt;Other&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2014 - Amazon Web Services Cloud School, 24 July 2014, Milano&lt;/li&gt;
+&lt;li&gt;2012 - &amp;ldquo;La notte dei ricercatori&amp;rdquo; (Researcer&amp;rsquo;s night), Padua&lt;/li&gt;
+&lt;li&gt;2011 - Internship: Technical characterization of the Astrophysical Observatory of Asiago&lt;/li&gt;
+&lt;li&gt;2009 - Photometric and spectroscopic digital analysis lab. (FSE)&lt;/li&gt;
+&lt;li&gt;2007 - Digital data analysis lab. (FSE)&lt;/li&gt;
+&lt;li&gt;2004 - &lt;a href=&#34;http://www.astro.unipd.it/progettoeducativo/&#34;&gt;&amp;ldquo;Il cielo come laboratorio&amp;rdquo;&lt;/a&gt; (Sky as a lab), in collaboration with
+the Astronomy Department of Padua (&lt;a href=&#34;../files/CieloLaboratorio-Morin-ZiosiPontiniDelnegro.pdf&#34;&gt;Composition&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;language-skills:d29e840c67b04b7da7a217fabb734866&#34;&gt;Language skills&lt;/h2&gt;
+
+&lt;p&gt;Italian (mother tongue), English (good)&lt;/p&gt;
+
+&lt;h2 id=&#34;computer-skills:d29e840c67b04b7da7a217fabb734866&#34;&gt;Computer skills&lt;/h2&gt;
+
+&lt;h3 id=&#34;oss:d29e840c67b04b7da7a217fabb734866&#34;&gt;OSs&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ubuntu.org&#34;&gt;Linux&lt;/a&gt;, MacOSX, Windows&lt;/p&gt;
+
+&lt;h3 id=&#34;scripting-programming-languages:d29e840c67b04b7da7a217fabb734866&#34;&gt;Scripting/Programming Languages&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://golang.org&#34;&gt;Go(lang)&lt;/a&gt; (advanced), Python (advanced), Bash (good),
+C/C++ (good), Matlab/Octave (good), Fortran (base), IDL (base)&lt;/p&gt;
+
+&lt;h3 id=&#34;data-analysis-plotting-tools:d29e840c67b04b7da7a217fabb734866&#34;&gt;Data Analysis/Plotting tools&lt;/h3&gt;
+
+&lt;p&gt;Veusz (good), Matplotlib/Pylab (advanced),
+Supermongo (base), Gnuplot (base), IDL (base), IRAF (base)&lt;/p&gt;
+
+&lt;h4 id=&#34;markup-languages-web:d29e840c67b04b7da7a217fabb734866&#34;&gt;Markup Languages/Web&lt;/h4&gt;
+
+&lt;p&gt;LaTeX (expert), HTML (base), Javascript (base)&lt;/p&gt;
+
+&lt;h3 id=&#34;graphics:d29e840c67b04b7da7a217fabb734866&#34;&gt;Graphics&lt;/h3&gt;
+
+&lt;p&gt;Inkscape (good), Gimp (good), ImageMagick (good), Blender (base)&lt;/p&gt;
+
+&lt;h3 id=&#34;presentation:d29e840c67b04b7da7a217fabb734866&#34;&gt;Presentation&lt;/h3&gt;
+
+&lt;p&gt;Beamer, Sozi/Inkscape, Prezi, PowerPoint&lt;/p&gt;
+
+&lt;h3 id=&#34;office-internet:d29e840c67b04b7da7a217fabb734866&#34;&gt;Office/Internet&lt;/h3&gt;
+
+&lt;p&gt;MSOffice, LibreOffice/OpenOffice, Chrome, Internet Explorer, Firefox, Opera, Outlook, Thuderbird&lt;/p&gt;
+
+&lt;h3 id=&#34;others:d29e840c67b04b7da7a217fabb734866&#34;&gt;Others&lt;/h3&gt;
+
+&lt;p&gt;Git (good), Docker, LXC containers/LXD, MongoDB, MySQL (base)&lt;/p&gt;
+
+&lt;h2 id=&#34;other-interests:d29e840c67b04b7da7a217fabb734866&#34;&gt;Other interests&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Volunteering with &lt;a href=&#34;http://www.agesci.org&#34;&gt;A.G.E.S.C.I.&lt;/a&gt; and Protezione Civile&lt;/li&gt;
+&lt;li&gt;Digital Photograpy&lt;/li&gt;
+&lt;li&gt;Piano and guitar&lt;/li&gt;
+&lt;li&gt;Travelling by moto and by foot&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://(www.openstreetmap.org&#34;&gt;Mapping&lt;/a&gt; and geo-data manipulation
+(I took part in &lt;a href=&#34;http://www.dicat.unige.it/osmit2010/&#34;&gt;OsmIt2010&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

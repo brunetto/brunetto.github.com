@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Analysis on Post It!</title>
+    <link>http://localhost:1313/tags/data-analysis/</link>
+    <description>Recent content in Data Analysis on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Not only Big Data</title>
+      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
+We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
+I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
+useful in our everyday work. This presentation aims of acting both as a showcase of what can help us and as a cheat sheet.
+You can find it after the break.&lt;/p&gt;
+
+&lt;iframe src=&#34;http://rawgit.com/brunetto/my-public-talks/master/2014-12-cinecaBigData/index.html&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    From .csv to HDF5 in Python // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="From .csv to HDF5 in Python" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/from-csv-to-hdf5-in-python/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/from-csv-to-hdf5-in-python/">From .csv to HDF5 in Python</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>2</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Dec</span> <span class="post-date-year">2011</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-python" href="http://localhost:1313//categories/python">Python</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f&title=From%20.csv%20to%20HDF5%20in%20Python&summary=PyTables%20is%20a%20Python%20library%20that%20provide%20a%20simple%20but%20really%20useful%20interface%20to%20manage%20the%20HDF5%20files%20with%20some%20other%20interesting%20features%20%28compression%2c%20optimizations%2c%20%26hellip%3b%29.%20To%20the%20library%20presentation%20and%20documentation%2c%20for%20now%20refers%2c%20to%20the%20site.%20I%20used%20it%20a%20lot%20during%20my%20master%20thesis%20to%20manage%20the%20dataset%20from%20the%20Millennium%20database.%20Here%20I%20provide%20a%20brief%20review%20of%20how%20I%20used%20it%20to%20store%20data%20obtained%20in%20.csv%20%28comma%20separated%20values%29%20format.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=From%20.csv%20to%20HDF5%20in%20Python&url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            <p>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &hellip;). To the library presentation and documentation, for now refers, to the <a href="http://www.pytables.org/moin" target="_blank" title="site">site</a>.<br />
+I used it a lot during my master thesis to manage the dataset from the Millennium database.<br />
+Here I provide a brief review of how I used it to store data obtained in .csv (comma separated values) format.</p>
+
+<!-- TEASER_END -->    
+
+<pre><code class="language-python">#!/usr/bin/env python
+
+import numpy as np
+import tables as tb
+import time
+
+t = time.time()
+</code></pre>
+
+<p>As usual, we have the initial import of the modules we need and start the timing of the code.</p>
+
+<pre><code class="language-python">fofhdf5 = tb.openFile('mill2_fof_snap67.h5', 'w')
+</code></pre>
+
+<p>This create the HDF5-file object we use to work on the file, in write (<code>'w'</code>) mode. Read-only (<code>'r'</code>) mode is also possible.</p>
+
+<pre><code class="language-python">fof_data = np.genfromtxt('fof0.csv', dtype=([('fofId', 'i8'), ('np', 'i4'), ('mass', 'f4'), ('x', 'f4'), ('y', 'f4'), ('z', 'f4'), ('ix', 'i4'), ('iy', 'i4'), ('iz', 'i4'), ('m_crit_200', 'f4'), ('r_crit_200', 'f4'), ('m_mean_200', 'f4'), ('r_meam_200', 'f4'), ('m_tophat', 'f4'), ('r_tophat', 'f4'), ('numSubs', 'i4')]), comments='#', delimiter=',', skiprows=26)
+</code></pre>
+
+<p>Here we read the .csv/ASCII table and from this we create a table of numpy arrays, each of them with its own name and type. It&rsquo;s also possible to specify the character for the comments in the file (<code>#</code>), the character separating the values (commas, spaces, &hellip;) and the number of line to be skipped (file header).</p>
+
+<pre><code class="language-python">table = fofhdf5.createTable(fofhdf5.root, description=fof_data, name='fof_data_snap67', title=&quot;fof_data_snap67&quot;, expectedrows=11697806)
+</code></pre>
+
+<p>create the HDF5-table with the proper hierarchy, some metadata (description and title). Specify the number of rows one expects to put into the table helps the library to optimize the operations and the space.</p>
+
+<pre><code class="language-python">for i in range(1, 20):
+    fof_data = np.genfromtxt('fof'+str(i)+'.csv', dtype=([('fofId', 'i8'), ('np', 'i4'), ('mass', 'f4'), ('x', 'f4'), ('y', 'f4'), ('z', 'f4'), ('ix', 'i4'), ('iy', 'i4'), ('iz', 'i4'), ('m_crit_200', 'f4'), ('r_crit_200', 'f4'), ('m_mean_200', 'f4'), ('r_meam_200', 'f4'), ('m_tophat', 'f4'), ('r_tophat', 'f4'), ('numSubs', 'i4')]), comments='#', delimiter=',', skiprows=26)
+    
+    table.append(fof_data)
+    table.flush()
+    print &quot;Loop &quot;, i, &quot; done.&quot;
+
+fofhdf5.close()
+print &quot;Done in &quot;, time.time()-t, &quot;seconds !!!&quot;
+</code></pre>
+
+<p>The <code>for</code> loop opens other ASCII tables and append them to the existing HDF5-table. The <code>table.flush()</code> command let the library physically write the data on the disk instead of maintaining them in memory and write them periodically. After that we close the file object.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f&title=From%20.csv%20to%20HDF5%20in%20Python&summary=PyTables%20is%20a%20Python%20library%20that%20provide%20a%20simple%20but%20really%20useful%20interface%20to%20manage%20the%20HDF5%20files%20with%20some%20other%20interesting%20features%20%28compression%2c%20optimizations%2c%20%26hellip%3b%29.%20To%20the%20library%20presentation%20and%20documentation%2c%20for%20now%20refers%2c%20to%20the%20site.%20I%20used%20it%20a%20lot%20during%20my%20master%20thesis%20to%20manage%20the%20dataset%20from%20the%20Millennium%20database.%20Here%20I%20provide%20a%20brief%20review%20of%20how%20I%20used%20it%20to%20store%20data%20obtained%20in%20.csv%20%28comma%20separated%20values%29%20format.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=From%20.csv%20to%20HDF5%20in%20Python&url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffrom-csv-to-hdf5-in-python%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-research" href="http://localhost:1313//tags/research">research</a>,
+	                
+	                <a class="post-tag post-tag-python" href="http://localhost:1313//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-programming" href="http://localhost:1313//tags/programming">programming</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/from-binaries-to-hdf5-using-python/">From binaries to HDF5 using Python</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/cosmological-simulations-6-adding-gas/">Cosmological simulations #6: adding gas!</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

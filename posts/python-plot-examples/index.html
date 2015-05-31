@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Python plot examples // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Python plot examples" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/python-plot-examples/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/python-plot-examples/">Python plot examples</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>29</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2014</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-python" href="http://localhost:1313//categories/python">Python</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f&title=Python%20plot%20examples&summary=%3cp%3eTwo%20examples%20on%20how%20to%20make%20plots%20with%20%3ca%20href%3d%22http%3a%2f%2fhome.gna.org%2fveusz%22%3eVeusz%3c%2fa%3e%20and%0a%3ca%20href%3d%22http%3a%2f%2fmatplotlib.org%22%3eMatplotlib%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20prefer%20Veusz%20because%20it%26rsquo%3bs%20easier%20to%20configure%2c%20modify%20and%20it%20produces%0aperfect%20%3ccode%3epdf%3c%2fcode%3e%20plots%2c%20but%20sometimes%20Matplotlib%20it%26rsquo%3bs%20faster%20for%20producing%20just%0aa%20draft%20plot%20to%20inspect%20data%21%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%20plot%20examples&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            <p>Two examples on how to make plots with <a href="http://home.gna.org/veusz">Veusz</a> and
+<a href="http://matplotlib.org">Matplotlib</a>.<br />
+I prefer Veusz because it&rsquo;s easier to configure, modify and it produces
+perfect <code>pdf</code> plots, but sometimes Matplotlib it&rsquo;s faster for producing just
+a draft plot to inspect data!</p>
+
+<pre><code class="language-python">#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &quot;zero&quot; integer division bugs!:P
+import time
+import numpy as np
+import veusz.embed as ve
+
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	return counts, bin_edges
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+2, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	bin_edges = np.hstack((bin_edges[0], bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def plotFunc(inpath=&quot;./&quot;, outpath=&quot;./&quot;):
+	font = &quot;Times New Roman&quot;
+	colors = [u'blue', u'green']
+	xmin = [&quot;auto&quot;, &quot;auto&quot;]
+	xmax = [&quot;auto&quot;, &quot;auto&quot;]
+	ymin = [&quot;auto&quot;, 0]
+	ymax = [&quot;auto&quot;, &quot;auto&quot;]
+	
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	figure = ve.Embedded(&quot;Window_1&quot;)
+	page = figure.Root.Add('page', width = '30cm', height='15cm')
+	grid = page.Add('grid', autoadd = False, rows = 1, columns = 2,
+						scaleRows=[0.2],
+						topMargin='1cm',
+						bottomMargin='1cm'
+						)
+	graphList = []
+	
+	graphList.append(grid.Add('graph', name=&quot;scatter&quot;, autoadd=False, 
+							hide = False, 
+							Border__width = '2pt',
+							leftMargin = '0.6cm',
+							rightMargin = '0.4cm',
+							topMargin = '0.5cm',
+							bottomMargin = '1cm',
+							))
+	
+	graphList.append(grid.Add('graph', name=&quot;hist&quot;, autoadd=False, 
+							hide = False, 
+							Border__width = '2pt',
+							leftMargin = '2cm',
+							rightMargin = '0.4cm',
+							topMargin = '0.5cm',
+							bottomMargin = '1cm',
+							))
+	
+	for i in range(len(graphList)):
+		graphList[i].Add('axis', name='x', label = &quot;x&quot;,
+								min = xmin[i],
+								max = xmax[i],
+								log = False,
+								Label__size = '25pt',
+								Label__font = font,
+								TickLabels__size = '17pt',
+								TickLabels__format = u'Auto',
+								MajorTicks__width = '2pt',
+								MajorTicks__length = '10pt',
+								MinorTicks__width = '1pt',
+								MinorTicks__length = '6pt'
+							)
+		graphList[i].Add('axis', name='y', label = &quot;y&quot;, 
+								direction = 'vertical',
+								min = ymin[i],
+								max = ymax[i],
+								log = False,
+								autoRange = u'+5%',
+								Label__size = '25pt',
+								Label__font = font,
+								TickLabels__size = '20pt',
+								TickLabels__format = u'Auto',
+								MajorTicks__width = '2pt',
+								MajorTicks__length = '10pt',
+								MinorTicks__width = '1pt',
+								MinorTicks__length = '6pt'
+							)
+	
+	graphList[0].Add('xy', key=&quot;scatterPlotKey&quot;, name='scatterPlotName',
+						marker = u'circle',
+						MarkerFill__color = colors[0],
+						markerSize = u'3pt', 
+						)
+
+	xDataName = &quot;xScatterData&quot;
+	yDataName = &quot;yScatterData&quot;
+	figure.SetData(xDataName, xData)
+	figure.SetData(yDataName, yData)
+	graphList[0].scatterPlotName.xData.val = xDataName
+	graphList[0].scatterPlotName.yData.val = yDataName
+	
+	
+	counts, bin_edges = sm_hist2(yData, delta=5)
+	
+	graphList[1].Add('xy', key=&quot;histPlotKey&quot;, name='histPlotName',
+						xData = bin_edges,
+						yData = counts,
+						marker = 'none',
+						PlotLine__steps = u'left',
+						PlotLine__color = colors[1],
+						PlotLine__style = u&quot;solid&quot;,
+						PlotLine__width = u'3',
+						FillBelow__color = colors[1],
+						FillBelow__style = &quot;forward 2&quot;,
+						FillBelow__hide = False,
+						FillBelow__transparency = 70,
+						#FillBelow__backtransparency = 50,
+						FillBelow__linewidth = '1pt',
+						FillBelow__linestyle = 'solid',
+						FillBelow__backcolor = &quot;white&quot;,
+						FillBelow__backhide = True,
+						Label__posnHorz = 'right',
+						Label__size = '14pt', 
+						Label__color = 'black'
+						)
+
+	histKey = graphList[1].Add('key', autoadd=False, 
+						horzPosn = 'left',
+						vertPosn = 'top',
+						Text__font = font,
+						Text__size = '15',
+						Border__width = '1.5pt'
+						)
+	
+	end = raw_input(&quot;Press any key to finish...&quot;)
+	
+	figure.Save(&quot;example.vsz&quot;)
+	figure.Export(&quot;example.png&quot;, backcolor='#ffffff')
+	figure.Export(&quot;example.pdf&quot;)
+
+if __name__ == &quot;__main__&quot;:
+	inpath = &quot;./&quot;
+	outpath = './'
+	tt = time.time()
+	plotFunc(inpath, outpath)
+	print &quot;Done in &quot;, time.time()-tt, &quot; seconds.&quot;
+</code></pre>
+
+<p><img src="../files/example.png" alt="Veusz plot" title="Veusz plot" /></p>
+
+<pre><code class="language-python">#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &quot;zero&quot; integer division bugs!:P
+import time
+import numpy as np
+import matplotlib.pylab as plt
+import matplotlib.font_manager as font_manager
+
+# SM like style
+params = {'backend': 'png',
+		'font.family': &quot;serif&quot;,
+		'font.size': 25,
+		'axes.labelsize': 35,
+		#'text.fontsize': 30,
+		'legend.fontsize': 30,
+		'xtick.labelsize': 28,
+		'xtick.major.size': 20.0,
+		'xtick.major.width': 3.0,
+		'xtick.minor.size': 12.0,
+		'xtick.minor.width': 2,
+		'ytick.labelsize': 28,
+		'ytick.major.size': 20.0,
+		'ytick.major.width': 3.0,
+		'ytick.minor.size': 12.0,
+		'ytick.minor.width': 2,
+		#'text.usetex': True,
+		'axes.linewidth': 3.0,
+		'lines.linewidth': 2,
+		'lines.markersize': 15,
+		'axes.grid': False,
+		'grid': {'color':'gray', 'linestyle':'-', 'linewidth':1},
+		'figure.figsize': (10,10),
+		'figure.subplot.left': 0.15,  # the left side of the subplots of the figure
+		'figure.subplot.right'   : 0.95,    # the right side of the subplots of the figure
+		'figure.subplot.bottom'  : 0.12,   # the bottom of the subplots of the figure
+		'figure.subplot.top'     : 0.92,    # the top of the subplots of the figure
+		'figure.subplot.wspace'  : 0.2,    # the amount of width reserved for blank space between subplots
+		'figure.subplot.hspace'  : 0.2,    # the amount of height reserved for white space between subplots
+		'figure.figsize': (12, 12)
+           }
+plt.rcParams.update(params)
+	
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	return counts, bin_edges
+	
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+delta, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	print counts
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts))
+	bin_edges = np.hstack((bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def singlePlotScatter(xData, yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&quot;x label&quot;)
+	ax.set_ylabel(&quot;y label&quot;)
+	ax.set_xscale(&quot;linear&quot;)
+	ax.set_yscale(&quot;linear&quot;)
+	ax.set_title(&quot;Plot title&quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&quot;both&quot;)
+	ax.yaxis.grid(True, which=&quot;major&quot;)
+	ax.plot(xData, yData, 
+			color = &quot;green&quot;, 
+			markeredgewidth = 0.8, 
+			linestyle = '-', 
+			linewidth = 2,
+			marker = 'o', 
+			markersize = 1, 
+			label = &quot;label&quot;)
+	return ax
+
+def singlePlotHist(yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&quot;x label&quot;)
+	ax.set_ylabel(&quot;y label&quot;)
+	ax.set_xscale(&quot;linear&quot;)
+	ax.set_yscale(&quot;linear&quot;)
+	ax.set_title(&quot;Plot title&quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&quot;both&quot;)
+	ax.yaxis.grid(True, which=&quot;major&quot;)
+	counts, bin_edges = sm_hist2(yData, delta = 10)
+	ax.set_ylim((0, 1.2*counts.max()))
+	
+	ax.plot(bin_edges, counts, 
+				color = &quot;blue&quot;,
+				alpha = 0.8,
+				linewidth = 2,
+				antialiased = True,
+				zorder = 3 
+				)
+	ax.fill(bin_edges, counts, 
+				alpha = 0.5,
+				hatch = &quot;/&quot;,
+				edgecolor = &quot;blue&quot;,
+				facecolor = &quot;white&quot;,
+				antialiased = True, 
+				label = &quot;whatever you want&quot;
+				)
+	ax.legend(loc='upper left', numpoints = 1, prop=font_manager.FontProperties(size=18)).draw_frame(False)
+
+	return ax
+
+if __name__ == &quot;__main__&quot;:
+	tt = time.time()
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	fig = plt.figure()
+	fig.suptitle(&quot;Figure title&quot;)
+	axs = []
+	nPlots = 2
+	
+	axs.append(singlePlotScatter(xData, yData, nRows=1, nCols=2, x0=0, y0=0, rowspan=1, colspan=1))
+	axs.append(singlePlotHist(yData, nRows=1, nCols=2, x0=0, y0=1, rowspan=1, colspan=1))
+	
+	fig.set_size_inches(20, 10)
+	plt.savefig(&quot;./grid.png&quot;, dpi=100)
+	plt.close(fig)
+	
+	print &quot;Done in &quot;, time.time()-tt, &quot; seconds.&quot;
+</code></pre>
+
+<p><img src="../files/grid.png" alt="Matplotlib plot" title="Mathplotlib plot" /></p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f&title=Python%20plot%20examples&summary=%3cp%3eTwo%20examples%20on%20how%20to%20make%20plots%20with%20%3ca%20href%3d%22http%3a%2f%2fhome.gna.org%2fveusz%22%3eVeusz%3c%2fa%3e%20and%0a%3ca%20href%3d%22http%3a%2f%2fmatplotlib.org%22%3eMatplotlib%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20prefer%20Veusz%20because%20it%26rsquo%3bs%20easier%20to%20configure%2c%20modify%20and%20it%20produces%0aperfect%20%3ccode%3epdf%3c%2fcode%3e%20plots%2c%20but%20sometimes%20Matplotlib%20it%26rsquo%3bs%20faster%20for%20producing%20just%0aa%20draft%20plot%20to%20inspect%20data%21%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%20plot%20examples&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-plot-examples%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-research" href="http://localhost:1313//tags/research">research</a>,
+	                
+	                <a class="post-tag post-tag-python" href="http://localhost:1313//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-programming" href="http://localhost:1313//tags/programming">programming</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/things-that-you-can-not-do-without/">Things that you can not do without</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/change-a-line-in-all-of-your-files-at-once/">Change a line in all of your files at once</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

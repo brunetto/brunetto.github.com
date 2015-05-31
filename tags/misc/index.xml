@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on Post It!</title>
+    <link>http://localhost:1313/tags/misc/</link>
+    <description>Recent content in Misc on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Goodies</title>
+      <link>http://localhost:1313/pages/misc/goodies/</link>
+      <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/misc/goodies/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Illegal prime number (&lt;a href=&#34;http://en.wikipedia.org/wiki/Illegal_prime&#34;&gt;link 1&lt;/a&gt;, &lt;a href=&#34;http://fatphil.org/maths/illegal1.html&#34;&gt;link 2&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Languages</title>
+      <link>http://localhost:1313/pages/misc/languages/</link>
+      <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/misc/languages/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;The end of a concern lasted for years: &lt;a href=&#34;http://www.accademiadellacrusca.it/it/lingua-italiana/consulenza-linguistica/domande-risposte/soluzione-continuit&#34;&gt;link to Accademia della Crusca&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.davidpbrown.co.uk/jokes/european-commission.html&#34;&gt;European language joke&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

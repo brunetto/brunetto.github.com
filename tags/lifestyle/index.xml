@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lifestyle on Post It!</title>
+    <link>http://localhost:1313/tags/lifestyle/</link>
+    <description>Recent content in Lifestyle on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lifestyle/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Things that you can not do without</title>
+      <link>http://localhost:1313/posts/things-that-you-can-not-do-without/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/things-that-you-can-not-do-without/</guid>
+      <description>&lt;p&gt;A little list of essential tools:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; possibly with &lt;a href=&#34;https://github.com/getnikola/nikola&#34;&gt;Nikola&lt;/a&gt; or &lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34;&gt;Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; (possibly with git repos inside, see &lt;a href=&#34;http://stackoverflow.com/questions/12773488/git-fatal-reference-has-invalid-format-refs-heads-master&#34;&gt;here&lt;/a&gt; for problems)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mega.co.nz&#34;&gt;Mega&lt;/a&gt; with &lt;a href=&#34;https://mega.co.nz/#sync&#34;&gt;linux sync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ipython.org/&#34;&gt;ipython&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ipython.org/notebook.html&#34;&gt;ipython Notebook&lt;/a&gt; with GitHub and &lt;a href=&#34;http://nbviewer.ipython.org/&#34;&gt;nbviewer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.inkscape.org/en/&#34;&gt;Inkscape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kate-editor.org/&#34;&gt;Kate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brunettoziosi.eu/posts/best-golang-installation.html&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jeremysanders/veusz&#34;&gt;Veusz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://keep.google.com&#34;&gt;Keep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juicessh.com/&#34;&gt;JuiceSSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://github.com/coreos/rocket&#34;&gt;Rocket&lt;/a&gt; (see also &lt;a href=&#34;https://coreos.com/blog/rocket/&#34;&gt;why Rocket&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

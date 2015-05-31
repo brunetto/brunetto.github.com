@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phd on Post It!</title>
+    <link>http://localhost:1313/tags/phd/</link>
+    <description>Recent content in Phd on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/phd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Poster Making</title>
+      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&#34;&gt;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zachholman.com/posts/slide-design-for-developers/&#34;&gt;http://zachholman.com/posts/slide-design-for-developers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.colormatters.com/color-and-design/basic-color-theory&#34;&gt;http://www.colormatters.com/color-and-design/basic-color-theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1000.com/posters/browse?docTypeSearch=Poster&#34;&gt;http://f1000.com/posters/browse?docTypeSearch=Poster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/phd/</link>
+      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <description>
+
+&lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
+compact-object binaries&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure&gt;
+&lt;div style=&#34;border:1px solid black;border-radius: 8px&#34;&gt;
+&amp;lt;!&amp;ndash;&lt;img src=&#34;../../files/ziosi-GPU-Rome.gif&#34; alt=&#34;GPU Rome slide&#34; title=&#34;Presentation of my poster at a conference in Rome in 2014 that summarize my research.&#34; /&gt;&amp;ndash;&amp;gt;
+&lt;img src=&#34;../../files/PhDProjectScheme.svg&#34; alt=&#34;OhD project scheme&#34; style=&#34;width:700px&#34;&gt;
+&lt;figcaption&gt;
+&lt;hr&gt; Schematic representation of my PhD project.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;My PhD project is devoted to improving our knowledge on the demographics
+and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH),
+neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
+The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
+Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General
+Relativity: while indirect confirmations of GWs came from observations of pulsar
+binaries, a direct detection of GWs is still missing.
+Mergers of binaries
+are among the most promising sources of GWs in the frequency range that will be
+explored by Advanced Virgo and LIGO (~10-10000 Hz).&lt;/p&gt;
+
+&lt;p&gt;My research focus on three main fronts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the impact of dynamics and metallicity on
+the formation and evolution of double compact-object binaries&lt;/li&gt;
+&lt;li&gt;the effects
+of a tidal field on the evolution of star clusters and on the
+demography of DCO binaries inside them,&lt;/li&gt;
+&lt;li&gt;the changes in the DCO binaries demography
+considering different initial structural properties of the clusters (mass, concentration,
+primordial binaries fraction, density, &amp;hellip;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To investigate the impact of dynamics and metallicity on double compact-object binaries demography,
+I analyzed 600 random realizations of a young dense star cluster at different metallicities.
+I was interested in the binary orbital properties, lifetimes, number of exchanges and coalescence timescales
+(the time a binary need to merge only because of gravitational wave emission).
+We chose young and dense star cluster as environment in which to study DCO binaries
+because they are the preferential
+environment for star formation (Lada &amp;amp; Lada, 2003) and gravitational interactions are efficient in exchanging
+energy on short times.&lt;/p&gt;
+
+&lt;p&gt;My results, published in Ziosi et al. (2014), confirm that the cluster dynamics
+favours the formation of BH-BH binaries and were tested against the literature.&lt;/p&gt;
+
+&lt;p&gt;The results I obtained, however, stand on two critical assumptions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I assumed that the
+star cluster would life unpeturbed for 100 Myr but after that time they should be
+dissolved into the galactic disc because of the host galaxy tidal field&lt;/li&gt;
+&lt;li&gt;I only simulated random realizations of a single star cluster model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both the assumptions can heavily affect estimations on the demography of the DCO binaries
+and the two other parts of my project are devoted to overcome these limitations.&lt;br /&gt;
+To face the first issue I implemented in the code
+a numerical recipe (the one proposed in Allen &amp;amp; Santillan, 1991) to accurately include the host galaxy gravitational tidal field.
+I am now testing the new tidal field. As soon as it is proved to
+be reliable I will study the effect of the disk component on the life
+of the star clusters and on the DCO binaries dynamics and demography.
+In particoular, it is interesting the case in which the cluster is not on a circoular orbit
+coplanar with the galactic disk but on an eccentric and inclined one.
+In this case the potential changes rapidly with the time and the effect on the cluster can be
+remarkable (see Madrid et al., 2014).&lt;/p&gt;
+
+&lt;p&gt;Regarding the second issue, it is necessary to quantify the effect of initial
+structural properties of the cluster on the double compact-object binaries population.
+First of all, cluster structural properties can affect double compact-object binaries demography&lt;br /&gt;
+because they influence the dynamical interactions rate among binaries, exchanges included,
+and the cluster surviving time to the tidal field.
+Then, analysing a a wide spectrum of different clusters we would be able to
+better calibrate the results on the real population of clusters in our galaxy and
+in the galaxies at distances smaller than the LIGO/Virgo horizon.
+To this purpose, I am running tens of simulations spanning a wide range of initial
+structural properties.  All the simulations make havy use of HPC hardware (GPU clusters) and
+I built the necessary computational tools to run, manage and analyze all these simulations.
+As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
+This would make us able to highlight which aspects of the star clusters
+are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
+
+&lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
+&lt;li&gt;High energy astrophysics (Prof Franceschini)&lt;/li&gt;
+&lt;li&gt;Extrasolar planets (Dr. Claudi)&lt;/li&gt;
+&lt;li&gt;Scientific projects management (Dr. Farinato)&lt;/li&gt;
+&lt;li&gt;Galaxy Archeology (Prof. Saglia)&lt;/li&gt;
+&lt;li&gt;Nucleosynthesis in the early galaxy (Prof. Sneden)&lt;/li&gt;
+&lt;li&gt;Collisional dynamics in stellar systems (Dr. Mapelli)&lt;/li&gt;
+&lt;li&gt;Supernovae (Dr. Pastorello)&lt;/li&gt;
+&lt;li&gt;Astronomia X (Dr. Zampieri)&lt;/li&gt;
+&lt;li&gt;Paper writing (Prof. Sneden)&lt;/li&gt;
+&lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
+dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
+&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
+and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AGN for Dummies</title>
+      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
+
+&lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/very_unified_model_bck.png&#34;&gt;&lt;img alt=&#34;AGN for Dummies&#34; src=&#34;../../files/very_unified_model_bck.png&#34; title=&#34;AGN for Dummies&#34; width=&#34;800&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Essential guide to binning</title>
+      <link>http://localhost:1313/posts/essential-guide-to-binning/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/essential-guide-to-binning/</guid>
+      <description>
+
+&lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
+It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;linear-vs-logarithmic:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+
+&lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
+Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
+
+&lt;h2 id=&#34;from-one-to-the-other:22c59b26f192e65f682baafbd76fbd27&#34;&gt;From one to the other&lt;/h2&gt;
+
+&lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
+It can be easily computed as&lt;br /&gt;
+&lt;code&gt;$\delta_{bin} = (sup-inf)/n_{bin}$&lt;/code&gt;&lt;br /&gt;
+From this it&amp;rsquo;s also straightforward to obtain the number of bins from the spacing:&lt;br /&gt;
+&lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
+Note that we choose the number of bins to be integer.&lt;/p&gt;
+
+&lt;h2 id=&#34;code:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+import sys
+import numpy as np
+
+def binning(inf, sup, n_bin=None, delta_bin=None):
+	&amp;quot;&amp;quot;&amp;quot;Given the inf and sup limits of an array and the number of equally spaced
+	bins, it returns the bin centers, the bin limits and the bin spacing.
+	It&#39;s possible to have a linear or a logarithmic spacing passing linear or
+	logarithmic inf and sup, and searchsorting on a linear or logarithmic array, 
+	or you can use a linear array and logarithmically spaced bins as
+	new_bins = pow(10, logbins)
+	&amp;quot;&amp;quot;&amp;quot;
+	if (n_bin == 0) or (n_bin == 0):
+		print &amp;quot;Error, n_bin and/or delta_bin are/is zero, exit!&amp;quot;
+		sys.exit()    
+	elif (n_bin == None) and (delta_bin != None):
+		n_bin = (sup-inf)/delta_bin
+		elif (n_bin == None) and (delta_bin == None):
+		print &amp;quot;Error, n_bin and delta_bin are both None, exit!&amp;quot;
+		sys.exit()
+	temp, half_step = np.linspace(inf, sup, 2*n_bin+1, endpoint = True, retstep = True)
+	xrange_limit = int(np.floor(temp.size / 2))
+	bin_pos = np.zeros(xrange_limit)
+	bin_limits = np.zeros(xrange_limit+1)
+	for i in xrange(xrange_limit):
+		bin_pos[i] = temp[2*i+1]
+		bin_limits[i] = temp[2*i]
+		bin_limits[-1] = temp[-1]
+	del temp
+	return [bin_pos, bin_limits, 2*half_step]
+
+def base_binning(inf, sup, n_bin=None, delta_bin=None):
+	&amp;quot;&amp;quot;&amp;quot;More C-like...
+	&amp;quot;&amp;quot;&amp;quot;
+	if (n_bin == 0) or (n_bin == 0):
+		print &amp;quot;Error, n_bin and/or delta_bin are/is zero, exit!&amp;quot;
+		sys.exit()    
+	elif (n_bin == None) and (delta_bin != None):
+		n_bin = int((sup-inf)/(1.*delta_bin))
+	elif (n_bin != None) and (delta_bin == None):
+		delta_bin = (sup-inf)/(1.*n_bin)
+	elif (n_bin == None) and (delta_bin == None):
+		print &amp;quot;Error, n_bin and delta_bin are both None, exit!&amp;quot;
+		sys.exit()
+	bin_pos = np.zeros(n_bin)
+	bin_limits = np.zeros(n_bin+1)
+	for i in range(n_bin):
+		if i%2 == 0:
+			bin_limits[i] = inf + i * delta_bin
+			bin_limits[i+1] = bin_limits[i] + delta_bin
+	bin_pos[i] = bin_limits[i] + delta_bin/2.
+	bin_limits[n_bin] = inf + n_bin * delta_bin
+	return [bin_pos, bin_limits, delta_bin]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning not to hate C: things worth nothing</title>
+      <link>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <description>
+
+&lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
+
+&lt;h2 id=&#34;header-files:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Header files&lt;/h2&gt;
+
+&lt;p&gt;They are one of the first annoying things I see in C/C++ languages. Two files for each &amp;ldquo;module&amp;rdquo;, two lines to be modified every times, &amp;hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&amp;rsquo;s code, you can share or download compiled code+header files and not all the sources.&lt;/p&gt;
+
+&lt;h2 id=&#34;compile:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Compile&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to compile the sources and get the executable is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;gcc pippo.c -o pippo.x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;pippo.c&lt;/code&gt; is the source(s) (you can have &lt;code&gt;pippo1.c&lt;/code&gt;, &lt;code&gt;pippo2.c&lt;/code&gt; etc, but only one &lt;code&gt;main&lt;/code&gt; function) file.&lt;br /&gt;
+A better way is to include some flags&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;gcc -std=gnu99 -Wall -pedantic -Werror -O0 -g -o pippo.x pippo.c
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-std=gnu99&lt;/code&gt; forces the compiler to the C99 standard (it includes some new features)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Wall&lt;/code&gt; to print all the compiler warnings&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-pedantic&lt;/code&gt; &amp;ldquo;Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use forbidden extensions, and some other programs that do not follow ISO C and ISO C++&amp;rdquo; (from the &lt;code&gt;gcc&lt;/code&gt; manual)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Werror&lt;/code&gt; transform the warnings into errors&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-O0&lt;/code&gt; no optimization&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-g&lt;/code&gt; produces debugging informations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-o&lt;/code&gt; to specify the output&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;macros-preprocessor:572a5990ff18de3fef742f6ac648edcf&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
+
+&lt;p&gt;The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &amp;ldquo;constant&amp;rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#define PI 3.14
+float a = PI;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but you can also check for already defined quantities, compile pieces of code (&amp;ldquo;conditional compilation&amp;rdquo;) or implement a &amp;ldquo;header-guard&amp;rdquo; to avoid multiple imports of the same header&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#define CONDITION
+#ifdef CONDITION
+....
+#else
+....
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#ifndef HEADER_H
+#define HEADER_H
+.....
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Compiling with the &lt;code&gt;-E&lt;/code&gt; flag you can view the result of the preprocessor action.&lt;/p&gt;
+
+&lt;h2 id=&#34;numbers:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Numbers&lt;/h2&gt;
+
+&lt;p&gt;Number variables are similar to those in other programming languages, but there&amp;rsquo;s some peculiarities.&lt;br /&gt;
+Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.&lt;/p&gt;
+
+&lt;h2 id=&#34;cast:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Cast&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible to convert one type to some other type. For example,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;float pippo;
+pippo = (float) k*1024L;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;bool:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Bool&lt;/h2&gt;
+
+&lt;p&gt;There aren&amp;rsquo;t boolean variables, but 0 stands for &lt;code&gt;False&lt;/code&gt; and any other non-zero value means &lt;code&gt;True&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;side-effect-and-short-circuit:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
+
+&lt;p&gt;Something like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;i = k + 10 - ++k;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;has indefinite result because it&amp;rsquo;s not predictable the order of evaluation of operand/expression &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;++k&lt;/code&gt;, and those expressions have &lt;em&gt;side effects&lt;/em&gt; on the other expression involved in the result.&lt;br /&gt;
+Logical operators &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; and &lt;code&gt;||&lt;/code&gt; instead are evaluated strictly from left to right. This is c&lt;em&gt;alled short-circuit evaluation&lt;/em&gt; and the operators are synchronization points, just like &amp;ldquo;;&amp;rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.&lt;/p&gt;
+
+&lt;h2 id=&#34;ternary-operator:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Ternary operator&lt;/h2&gt;
+
+&lt;p&gt;The ternary operator accept three arguments and has the form of&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;result = a &amp;amp;gt; b ? x : y;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This means &lt;code&gt;[expression_to_evaluate] ? [if true] : [if false]&lt;/code&gt;. Obviously you can nest as many expression and operator as you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Variables qualifiers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In C there&amp;rsquo;are some qualifier that can be added to the type specification. Three of them are &lt;code&gt;const&lt;/code&gt;, &lt;code&gt;extern&lt;/code&gt; and &lt;code&gt;static&lt;/code&gt;.&lt;br /&gt;
+The first can be added in the function declaration to tell the compiler that the values has not to be changed by the function, for example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int pippo(const int pluto, const int* paperino);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;means that the integer &lt;code&gt;pluto&lt;/code&gt; and the pointer to integer &lt;code&gt;paperino&lt;/code&gt; can not be changed by the function &lt;code&gt;pippo&lt;/code&gt;.&lt;br /&gt;
+&amp;ldquo;extern&amp;rdquo; specifies that the variable is a global variable, coming from outside the function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int pippo;
+int main(...){
+	extern int pippo;
+...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;ldquo;static&amp;rdquo; has different meanings depending on where you put it.&lt;br /&gt;
+Before a global variable means that the variable is private of the file, and other files can not use it. Inside a function means that the variable survive after the end of the function (when the stack frame - the stack memory associated to the function - is deleted) and is available to the succeeding calls to the same function. Static is also used before a function to specify that the function is private of the file and can not be called outside:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;static int i;
+static void foo(void){
+	extern int i;
+	static int j
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt; is global inside the file but can not be called outside&lt;/li&gt;
+&lt;li&gt;the function &lt;code&gt;foo&lt;/code&gt; is private of the file and can not be called outside&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;j&lt;/code&gt; survive after the termination of the function and maintains its value until the next call.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pointers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pointers are special integer values that contains addresses of other values, for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int i;
+int* p;
+p = &amp;amp;amp;i;
+*p = 13;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;first we define the integer &lt;code&gt;i&lt;/code&gt;, then a pointer &lt;code&gt;p&lt;/code&gt; to a integer value (here &lt;code&gt;*&lt;/code&gt; means &amp;ldquo;the argument on the right is a pointer to a value of type defined by the argument on the left&amp;rdquo;), then we put the address of &lt;code&gt;i&lt;/code&gt; in &lt;code&gt;p&lt;/code&gt; (&lt;code&gt;&amp;amp;amp;&lt;/code&gt; means &amp;ldquo;give me the address of the right argument&amp;rdquo;) and at the end we modify the value of &lt;code&gt;i&lt;/code&gt; dereferencing &lt;code&gt;p&lt;/code&gt;, that is modifying the memory cell pointed by the address contained in p (here &lt;code&gt;*&lt;/code&gt; means &amp;ldquo;follow the address contained in the argument on the right&amp;rdquo;).&lt;br /&gt;
+It&amp;rsquo;s possible to define pointers to pointers to pointers etc. adding &amp;ldquo;*&amp;ldquo;. It exists the null pointer, that is an invalid pointer, and follow it result in a &amp;ldquo;segmentation fault&amp;rdquo; that means &amp;ldquo;you are trying to access memory you are not allowed to access&amp;rdquo;. A pointer defined but not filled point to a random location in memory, so following it results in an indefinite result, probably a segmentation fault or the modification of another variable.&lt;br /&gt;
+Because the dereferencing operator has not the highest precedence, sometimes you will have to put parenthesis to specify the order of dereferencing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;/*Filling a &amp;quot;heap&amp;quot; array using pointers*/
+(*ptr)[i] = (float*) malloc(sizeof(float)*lenghtx);
+
+/*In struct, the two forms are equivalent*/
+(*pippo).pluto
+pippo-&amp;amp;gt;pluto
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;stack-and-heap:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Stack and heap&lt;/h2&gt;
+
+&lt;p&gt;The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&amp;rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &amp;ldquo;&lt;em&gt;memory leak&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;arrays:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Arrays&lt;/h2&gt;
+
+&lt;p&gt;There&amp;rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;&lt;/p&gt;
+
+&lt;pre&gt;float array[10];&lt;/pre&gt;
+    
+
+&lt;p&gt;You can access the elements of the array in the natural way &lt;code&gt;array[3] = 10&lt;/code&gt;.&lt;br /&gt;
+As a matter of fact, because an array it&amp;rsquo;s a masked pointer, all of these are equivalent&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;*V = 10;
+V[0] = 10;
+*(V+0) = 10;
+0[V] = 10;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The operator &amp;ldquo;&lt;code&gt;[]&lt;/code&gt;&amp;rdquo; is equivalent to dereferencing the address contained into the pointer on the left shifted by the quantity inside the operator, and to shift an address is equivalent to sum it to the shift because addresses are integer values and the memory occupied by an array is contiguous.&lt;/p&gt;
+
+&lt;p&gt;The second type of array is defined by the user and manually allocated (and manually deallocated) in the heap memory with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;void* malloc(size_t size);
+void free(void* heapBlockPointer);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In practice, the following is an example of how to implement two functions that create and destroy a two dimensional array given a pointer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include 
+#include 
+#include &amp;quot;array_management.h&amp;quot;
+
+/* Function definition, takes as argument the address of a pointer to pointer */
+int array_creation(float*** ptr, int lenghtx, int lenghty){
+	printf(&amp;quot;Create array of pointers...n&amp;quot;);
+
+	/* In the memory cell of the pointer put the address of the first 
+		element of an array of pointers to float and allocate the necessary space */
+	*ptr = (float**) malloc(sizeof(float*)*lenghty); 
+
+	/* Check that the allocation worked fine */
+	if(*ptr==NULL){
+	return -1;
+	}
+	printf(&amp;quot;Create arrays...n&amp;quot;);
+
+	/* Allocate memory for an array of float for each pointer and put the address 
+		of the first element in the respective cell of the array of pointers */
+	for(int i=0; i&amp;amp;lt;lenghty; i++){
+	(*ptr)[i] = (float*) malloc(sizeof(float)*lenghtx);
+	if( (*ptr)[i] == NULL){
+		return -1;
+	}
+	}
+	return 0;
+}
+
+/* Function to deallocate the memory */
+void array_destruction(float** ptr, int lenghty){
+	printf(&amp;quot;Destructing array...n&amp;quot;);
+	for(int i=0; i&amp;amp;lt;lenghty; i++){
+	free(ptr[i]);
+	}
+	free(ptr); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In both types of array there isn&amp;rsquo;t a control on the indexes, it&amp;rsquo;s up to the user not to read or write beyond the array limits.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &amp;ldquo;linearized&amp;rdquo; row-major order so it&amp;rsquo;s faster to &amp;ldquo;run&amp;rdquo; on the row index (that on the right-most one). This is known as &lt;a href=&#34;http://en.wikipedia.org/wiki/Stride_of_an_array&#34; target=&#34;_blank&#34;&gt;stride one access&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;structs:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Structs&lt;/h2&gt;
+
+&lt;p&gt;An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;struct point {
+int x;
+int y;}; /* Don&#39;t forget this semicolon!*/
+
+struct point pippo;
+pippo.x = 12;
+pippo.y = 15;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;code&gt;typedef&lt;/code&gt; to symplify the sintax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;typedef struct treenode* Tree;
+struct treenode {
+int data;
+Tree smaller, larger; /* equivalently, this line could say
+};                       &amp;quot;struct treenode *smaller, *larger&amp;quot; */  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
+
+&lt;h2 id=&#34;strings:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Strings&lt;/h2&gt;
+
+&lt;p&gt;Strings are simply arrays of characters, usually terminated with the &amp;ldquo;null&amp;rdquo; character &amp;ldquo;&lt;code&gt;&amp;quot; to be able to use the string manipulation libraries (without &amp;quot;&lt;/code&gt;&amp;rdquo; you should give the length of the string to the library, but they are not designed to do this).&lt;br /&gt;
+Because of this, the two expression that follows are equivalent:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;void strcpy(char *s, char *t) {
+	while ((*s = *t) != ‘’) {
+	s++;
+	t++;
+	}
+}
+void strcpy(char s[], char *t) {
+	/* s arr, t ptr */
+	int i = 0;
+	while ((*s = t[i]) != ‘’) {
+	s++; /* s ptr */
+	i++; /* t arr */
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assignement evaluation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Because the assignment operator &amp;ldquo;=&amp;rdquo; return the value assigned, it&amp;rsquo;s possible to use this in expression evaluation to shorten the code, for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;void strcpy(char *s, char *t){while((*s++==*t++));}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;is equivalent to the expressions in the previous paragraph.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
+      <link>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <description>
+
+&lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
+
+&lt;h2 id=&#34;create:d7d980b494195784336223544cb1380d&#34;&gt;Create&lt;/h2&gt;
+
+&lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+import tables as tb
+from StringIO import StringIO
+
+f = open(&amp;quot;filename.csv&amp;quot;, &#39;r&#39;)
+line = f.readline()
+values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+values.shape = 1
+h5 = tb.openFile(&#39;filename.h5&#39;, &#39;w&#39;)
+table = h5.createTable(h5.root, description=values, name=table_name&#39;, title=&amp;quot;table_description&amp;quot;, expectedrows=12158536)
+table.flush()
+
+for line in f:
+	values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+	values.shape = 1
+	table.append(values)
+	
+table.flush()
+h5.flush()
+h5.close()
+f.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
+
+&lt;h2 id=&#34;remove-duplicates:d7d980b494195784336223544cb1380d&#34;&gt;Remove duplicates&lt;/h2&gt;
+
+&lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;new_indexes = np.unique(table[&#39;column_1&#39;], return_index=True, return_inverse=False)[1]
+new_array = np.transpose(table[new_indexes])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In general, &lt;code&gt;numpy.unique(array, return_index=True, return_inverse=True)&lt;/code&gt;&lt;br /&gt;
+returns an array sorted and without duplicates, the indexes of the original array to create the new array and the indexes of the new one to recreate the old one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In: a = np.array([5,3,3,7,2,9,1])
+In: np.unique(a, return_index=True, return_inverse=True)
+Out: 
+(array([1, 2, 3, 5, 7, 9]),
+	array([6, 4, 1, 0, 3, 5]),
+	array([3, 2, 2, 4, 1, 5, 0]))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;recreate:d7d980b494195784336223544cb1380d&#34;&gt;Recreate&lt;/h2&gt;
+
+&lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
+To do this a possible solution is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip([column_1[0]], [column_2[0]]))
+print &amp;quot;Creating table...&amp;quot;
+table = h5.createTable(h5.root, description=values, name=&#39;fof_data_snap67&#39;, title=&amp;quot;fof_data_snap67&amp;quot;, expectedrows=11697806)
+
+for i in xrange(1, fof.size):
+	values = np.array(zip([column_1[i]], [column_2[i]]))
+	table.append(values)
+
+table.flush()
+h5.flush()
+h5.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s also possible to zip the entire arrays if they fit into memory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip(column_1, column_2))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD students&#39; Journal Clubs and Sozi</title>
+      <link>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</link>
+      <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
+I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also ported my first JC presentation (that on my PhD project) to Inkscape but loosing part of the beauty of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX)&#34; target=&#34;_blank&#34;&gt;Beamer&lt;/a&gt; original theme.&lt;/p&gt;
+
+&lt;p&gt;These are the two presentations. Right click and &amp;ldquo;Open in new tab&amp;rdquo; will let you able to view the presentations, navigatin with left and right arrows. Mid-click to view the summary and up/down arrow to navigate without any effect.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../files/first_JC_with_proposal.svg&#34;&gt;PhD project presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg&#34;&gt;JC on the ACT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD question #4: calculate the value of M*</title>
+      <link>http://localhost:1313/posts/phd-question-4-calculate-the-value-of-m/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/phd-question-4-calculate-the-value-of-m/</guid>
+      <description>
+
+&lt;p&gt;Some post ago &lt;a href=&#34;phd-question-1-m.html&#34;&gt;I&amp;rsquo;ve written about M*&lt;/a&gt;, the typical non-linear mass collapsing at the redshift we are considering. Now I have to find a value for it.&lt;/p&gt;
+
+&lt;p&gt;I said that &lt;code&gt;$M^*$&lt;/code&gt; is the typical mass of a perturbation that, at the time we are looking, has the associated liner density contrast &lt;code&gt;$\delta(\mathbf{x})\sim1$, or, in the formalism of the excursion set, pass the barrier of &amp;amp;nbsp;$\delta_c=1.686$.     
+This means that we are looking for a perturbation with&lt;/code&gt;$\sigma\simeq1.686$` and trying to quantify the mass it contains.&lt;/p&gt;
+
+&lt;h2 id=&#34;sigma-and-r:fc25179ded4233c0e9f8a261bf2b1314&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
+
+&lt;p&gt;First of all we need to find the radius of a perturbation whose &lt;code&gt;$\sigma$&lt;/code&gt; reached the value of 1.686. To do this we can use the &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/&#34; target=&#34;_blank&#34; title=&#34;The “Initial Conditions” saga&#34;&gt;code&lt;/a&gt; developed to manage the CAMB files in order to find the matter power spectrum and its normalization. Then we add few lines to &amp;ldquo;sample&amp;rdquo; the &lt;code&gt;$\sigma(R)$&lt;/code&gt; distribution and find the radius of the perturbation reaching the excursion set barrier for the collapse.&lt;/p&gt;
+
+&lt;h2 id=&#34;m:fc25179ded4233c0e9f8a261bf2b1314&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Once we have the radius for which &lt;code&gt;$\sigma = \delta_c$&lt;/code&gt; we need to know the mean density in the universe to find &lt;code&gt;$M^*$&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;p&gt;$M^* = \frac{4}{3}\pi R_*^3\rho_m$`&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;I don&amp;rsquo;t know why we only need to use &lt;code&gt;$\rho_m$&lt;/code&gt; and not &lt;code&gt;$\rho_m\delta$&lt;/code&gt; or something similar is not clear to me, but it&amp;rsquo;s correct.&lt;/del&gt;We use this formula because &lt;code&gt;$M^*$&lt;/code&gt; is a quantity related to the linear perturbations. It&amp;rsquo;s correct because the difference between a linear and a non-linear perturbation is the value of the density contrast, but the mass is the same. In other words, the mass of a perturbation is the same both in the linear and in the non-linear evolution, but linear perturbations have smaller density contrasts and larger radii, non-linear perturbations instead have larger density contrasts and smaller radii. To be precise, the previous equation can be written:&lt;br /&gt;
+$M^* = \frac{4}{3}\pi R&lt;em&gt;*^3\rho&lt;/em&gt;{bg}(1+1.686) = \frac{4}{3}\pi R&lt;em&gt;{vir}^3\rho&lt;/em&gt;{bg}(1+200)$.&lt;br /&gt;
+To obtain &lt;code&gt;$\rho_m$&lt;/code&gt; we find the value of the critical density &lt;code&gt;$\rho_c$&lt;/code&gt; and multiply it for `$\Omega = \rho_m / \rho_c$. These two values can be obtained from books (&lt;a href=&#34;http://www.amazon.com/Cosmology-Prof-Peter-Coles/dp/0471489093/ref=ntt_at_ep_dpt_2&#34; target=&#34;_blank&#34; title=&#34;Coles &amp;amp; Lucchin&#34;&gt;Lucchin&lt;/a&gt;, &lt;a href=&#34;http://www.amazon.com/Galaxy-Formation-Evolution-Houjun-Mo/dp/0521857937/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1333458377&amp;amp;sr=1-1&#34; target=&#34;_blank&#34; title=&#34;Mo, van den Bosch &amp;amp; White&#34;&gt;Mo&amp;amp;White&lt;/a&gt; for example) or in the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/product/map/dr2/params/lcdm_wmap.cfm&#34; target=&#34;_blank&#34; title=&#34;WMAP data page&#34;&gt;WMAP data page&lt;/a&gt;. In the second case we prefer to use the single data fit because it&amp;rsquo;s simpler to refer to it.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/use/bin/env python
+import time
+import numpy as np
+import matplotlib.pyplot as plt
+import random as rnd
+from scipy import integrate
+
+&amp;quot;&amp;quot;&amp;quot; Calculate M* . M* is propto the mass contained in the radius for which 
+s_8=delta_c refer to: 
+http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/
+http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-calculate-the-value-of-m/
+&amp;quot;&amp;quot;&amp;quot;
+
+t = time.time()
+
+#===============================================================================
+#    Compute sigma
+#===============================================================================
+
+### Load data from the nasa-CAMB file 
+
+# matterpower is the file with the k and the total matter spectrum
+# transfer is the file with the k and the transfer function for the various 
+#species, the 6th column is for the total matter (baryons+DM)
+transfer = np.genfromtxt(&#39;camb_88704620_transfer_out_z0.dat&#39;, usecols = (0,6))
+#matterpower = np.genfromtxt(&#39;2012-01-30_data/camb_88704620_matterpower_z0.dat&#39;)
+
+# CAMB CDM transfer output
+camb_k = transfer[:,0]
+camb_tf = transfer[:,1] 
+
+R = 8 #Mpc/h
+s_8 = 0.9#0.8118405 #from WMAP7 but we need the values for the Millennium-2, so 
+# we use its s_8
+sp_ind = 1
+delta_c = 1.686
+
+### Calculate the amplitude to normalize the spectrum:
+### P(k) = Ak^nT^2(k) 
+
+# FT of the window function (spherical top-hat)
+def FTW(R, k): 
+	&amp;quot;&amp;quot;&amp;quot; Return the Fourier transform of the window function 
+	(spherical top-hat)
+	&amp;quot;&amp;quot;&amp;quot;
+	return 3.*(np.sin(k*R)-k*R*np.cos(k*R)) / (k*R)**3
+
+def spectrum():
+	&amp;quot;&amp;quot;&amp;quot;Calculate the power spectrum given the transfer function and the FT of the window 
+	function.
+	&amp;quot;&amp;quot;&amp;quot;
+	# camb_k**(2+sp_ind) that is k^(2+n) because d^3k=4pi k^2dk
+	amp_integrand = camb_k**(2+sp_ind)*camb_tf**2 * FTW(R, camb_k)**2
+	amp_integral = integrate.trapz(amp_integrand, camb_k)
+	# Amplitude for s_8 = 1
+	amp_0 = 2*np.pi**2/amp_integral
+	# Amplitude
+	amp = amp_0*s_8**2  # 9.9197881817e-09
+	#print amp
+	# Calculate the power spectrum
+	return camb_k**sp_ind*camb_tf**2 * amp
+
+# Calculate the power spectrum
+ps = spectrum()
+
+# Calculate sigma on the radii
+def sigma(R):
+	&amp;quot;&amp;quot;&amp;quot;Return the sigma for the current radius.
+	&amp;quot;&amp;quot;&amp;quot;
+	return pow(integrate.trapz(camb_k**2 * ps * FTW(R, camb_k)**2, camb_k)/(2*np.pi**2), 0.5)
+
+#===============================================================================
+#    Find the radius containing M*
+#===============================================================================
+
+# Initialize some variables
+neigh = np.ones(2) # two nearest neighbours sigmas
+r_min = 10**(-2) # min r to sample
+r_max = 10**2 # max r ti sample
+i = 0 # loop counter
+
+# While stops when the computed sigma is less then 0.001 from delta_c
+while np.abs(np.amin(delta_c+neigh)) &amp;amp;gt; 0.001:
+print &amp;quot;Loop &amp;quot;, i
+i+=1
+print &amp;quot;Condition start &amp;quot;, np.abs(np.amin(delta_c+neigh))
+# radii to be sampled
+r = np.linspace(r_min, r_max, num=100)
+# Compute sigma for those radii, the minus sign is to avoid resorting of the
+# array to be used by np.searchsorted
+s_r = -np.asarray(map(sigma, r))
+# Find the two nearest neighbours
+neigh[0] = np.amax(s_r[s_r  -delta_c])
+# Find the corresponding radii
+r_min = r[np.searchsorted(s_r, neigh).min()]
+r_max = r[np.searchsorted(s_r, neigh).max()]
+print &amp;quot;Sigmas&amp;quot;, -neigh[0], -neigh[1]
+print &amp;quot;Radii [Mpc/h] &amp;quot;, r_min, r_max
+print &amp;quot;Condition end &amp;quot;, np.abs(np.amin(delta_c+neigh))
+
+# Selected values
+s_star = neigh[np.argmin(delta_c+neigh)]
+r_star = r[np.searchsorted(s_r, s_star)]
+deviation = np.abs(np.amin(delta_c+neigh))
+
+print &amp;quot;############################################&amp;quot;
+
+print &amp;quot;Selected sigma &amp;quot;, -s_star
+print &amp;quot;Selected radius [Mpc/h] &amp;quot;, r_star
+
+print &amp;quot;Calculate M* using:&amp;quot;
+print &amp;quot;Gt4.299 x 10^(-9) Mpc /M_sun (km/s)^2tfrom Mo&amp;amp;amp;White&amp;quot;
+print &amp;quot;Ht100*h^2&amp;quot;
+print &amp;quot;Omega_mt0.25tfrom the Millennium-2 simulation&amp;quot;
+print &amp;quot;Omega_mt0.241tfrom WMAP7&amp;quot;
+
+#===============================================================================
+#    Cosmological parameters and find the mean density in the Universe
+#===============================================================================
+
+H = 100
+h = 0.732 #WMAP http://lambda.gsfc.nasa.gov/product/map/dr2/params/lcdm_wmap.cfm
+G = 4.299*10**(-9)
+omega_m_mill = 0.25
+omega_m_WMAP = 0.241
+
+# Until here it&#39;s correct
+rho_c = 3*H**2/(8*np.pi*G) # 2.7766040316101764 * h**2 x 10^11 M_sun/Mpc^3
+	# 2.778 from Lucchin book
+	# 2.775 from Mo&amp;amp;amp;White book
+
+rho_mean_mill = rho_c * omega_m_mill # 6.94151007903 * h**2 x 10^10 M_sun/Mpc^3 = 3.71942769658 x 10^10 M_sun/Mpc^3
+	rho_mean_WMAP = rho_c * omega_m_WMAP # 6.69161571618 * h**2 x 10^10 M_sun/Mpc^3 = 3.58552829951 x 10^10 M_sun/Mpc^3
+
+print &amp;quot;rho_c = 3H^2/8 pi G = &amp;quot;, rho_c,&amp;quot; h^2 M_sun/Mpc^3&amp;quot;
+print &amp;quot;Millennium-2 rho_mean = omega_m_mill * rho_c = &amp;quot;, rho_mean_mill, &amp;quot; h^2 M_sun/Mpc^3 = &amp;quot;, rho_mean_mill*h**2
+print &amp;quot;WMAP7 rho_mean = omega_m_WMAP * rho_c = &amp;quot;, rho_mean_WMAP, &amp;quot; h^2 M_sun/Mpc^3 = &amp;quot;, rho_mean_WMAP*h**2 
+
+#===============================================================================
+#    Compute M*
+#===============================================================================
+
+M_star_mill = np.pi * r_star**3 * rho_mean_mill * 4./3#* (delta_c + 1)
+M_star_WMAP = np.pi * r_star**3 * rho_mean_WMAP * 4./3#* (delta_c + 1)
+
+print &amp;quot;M* Millennium-2 &amp;quot;, M_star_mill, &amp;quot; M_sun/h&amp;quot; # 4.81467115575e+12 M_sun/h
+print &amp;quot;M* WMAP &amp;quot;, M_star_WMAP, &amp;quot; M_sun/h&amp;quot; # 4.64134299414e+12 M_sun/h
+
+#===============================================================================
+#    Compare with Hayashi&amp;amp;amp;White 2008 article
+#===============================================================================
+
+print &amp;quot;Hayashi&amp;amp;amp;White&#39;s value:&amp;quot;
+
+M_star_white = 6.15*10**(12)
+omega_m_white = 3.*M_star_white/(4*np.pi*r_star**3*rho_c)
+
+print &amp;quot;M*: &amp;quot;, M_star_white
+print &amp;quot;Omega_m&amp;quot;, omega_m_white
+
+r_s = pow(3.*M_star_white/(4*np.pi*rho_mean_mill), 1./3)
+s_white = sigma(r_s)
+
+print &amp;quot;As alternative:&amp;quot;
+print &amp;quot;R* &amp;quot;, r_s
+print &amp;quot;Sigma &amp;quot;, s_white
+
+#===============================================================================
+#    Summary
+#===============================================================================
+
+print &amp;quot;&amp;quot;
+print &amp;quot;##############################################################################################################&amp;quot;
+print &amp;quot;SUMMARY&amp;quot;
+print &amp;quot;##############################################################################################################&amp;quot;
+print &amp;quot;&amp;quot;
+print &amp;quot;WhottttM*ttR*ttOmegattSigmattSigma-delta_c&amp;quot;
+print &amp;quot;--------------------------------------------------------------------------------------------------------------&amp;quot;
+print &amp;quot;Hayashi&amp;amp;amp;White given Rtt{:e}t{:e}t{:e}t{:e}t{:e}&amp;quot;.format(M_star_white,r_star,omega_m_white,-s_star,deviation)
+print &amp;quot;Hayashi&amp;amp;amp;White given Omegat{:e}t{:e}t{:e}t{:e}t{:e}&amp;quot;.format(M_star_white,r_s,omega_m_mill,s_white,np.abs(s_white-delta_c))
+print &#39;Me WMAP datattt{:e}t{:e}t{:e}t{:e}t{:e}&#39;.format(M_star_WMAP,r_star,omega_m_WMAP,-s_star,deviation)
+print &amp;quot;Me Millennium-2 datatt{:e}t{:e}t{:e}t{:e}t{:e}&amp;quot;.format(M_star_mill,r_star,omega_m_mill,-s_star,deviation)
+print &amp;quot;&amp;quot;
+print &amp;quot;##############################################################################################################&amp;quot;
+print &amp;quot;##############################################################################################################&amp;quot;
+print &amp;quot;&amp;quot;
+print &amp;quot;Done in &amp;quot;, time.time()-t
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The differences between the different values of &lt;code&gt;$M^*$&lt;/code&gt; are acceptable and probably depends on different integration boundaries for `$\sigma$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Create your own Wikipedia</title>
+      <link>http://localhost:1313/posts/create-your-own-wikipedia/</link>
+      <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/create-your-own-wikipedia/</guid>
+      <description>&lt;p&gt;I was trying to find a tool to keep track of my activities (mainly), work activities. I&amp;rsquo;ve given a chance to some &amp;ldquo;diary&amp;rdquo; software but I was not convinced. I was lingering on using text files but it was not a solution. So I decided to try &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt;. And it was perfect!!!&lt;br /&gt;
+Now I&amp;rsquo;m going to describe the installation on an Ubuntu 11.10 with the repos packages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Packages installation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;First, install&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mediawiki&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Apache2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mysql-server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mysql-admin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mysql-common&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mysql-client&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;php5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Imagemagick&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Latex&lt;/code&gt;, if you want to display math&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;with Synaptic, Aptitude or whatever you want. In principle installing mediawiki all the rest will be installed as a dependence (except for &lt;code&gt;Latex&lt;/code&gt;). Once you have installed all the packages you need to modify&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/etc/apache2/conf.d/mediawiki.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;removing the comment (#) before&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Alias /mediawiki /var/lib/mediawiki
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and then to restart Apache with&lt;br /&gt;
+````bash sudo /etc/init.d/apache2 restart&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    
+&amp;lt;strong&amp;gt;Database&amp;lt;/strong&amp;gt;    
+    
+Start a root mysql prompt with    
+````bash
+mysql -u root -p
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and create a database for your wiki:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CREATE DATABASE dbname;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then create a user with permissions for this database&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRANT ALL ON dbname.* TO &#39;user&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(pay attention to the &amp;ldquo;&amp;lsquo;&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wiki installation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;code&gt;http://localhost/mediawiki&lt;/code&gt; and follow the instructions!:)&lt;br /&gt;
+To be able to upload files and images you have to modify values in &lt;code&gt;/etc/mediawiki/LocalSettings.php&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;XML dump&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To obtain a XMP backup of your wiki you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;php /var/lib/mediawiki/maintenance/dumpBackup.php --full &amp;gt; $bck_path/$(date +&amp;quot;%F&amp;quot;)-wiki_bck.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that &lt;code&gt;dumpBackup.php&lt;/code&gt; works if you write into the database login where required.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Main references:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://framaulo.blogspot.com/2008/06/installare-ed-utilizzare-mediawiki-su.html&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://framaulo.blogspot.com/2008/06/installare-ed-utilizzare-mediawiki-su.html&#34;&gt;http://framaulo.blogspot.com/2008/06/installare-ed-utilizzare-mediawiki-su.html&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ealmuno.com/2009/11/06/creare-database-in-mysql/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.ealmuno.com/2009/11/06/creare-database-in-mysql/&#34;&gt;http://www.ealmuno.com/2009/11/06/creare-database-in-mysql/&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ubuntuguide.org/wiki/MediaWiki_tips&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://ubuntuguide.org/wiki/MediaWiki_tips&#34;&gt;http://ubuntuguide.org/wiki/MediaWiki_tips&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
+Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The tree&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gadget-2 uses a&lt;a href=&#34;http://en.wikipedia.org/wiki/Octree&#34; target=&#34;_blank&#34; title=&#34;oct-tree&#34;&gt; BH oct-tree&lt;/a&gt; (see also &lt;a href=&#34;http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation&#34; target=&#34;_blank&#34; title=&#34;Barnes&amp;amp;Hut simulation on wikipedia&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.artcompsci.org/~makino/softwares/C++tree/index.html&#34; target=&#34;_blank&#34; title=&#34;NBODY, an implementation of Barnes-Hut treecode&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://ifa.hawaii.edu/~barnes/software.html&#34; target=&#34;_blank&#34; title=&#34;Barnes&#39; page&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.cita.utoronto.ca/~dubinski/treecode/treecode.html&#34; target=&#34;_blank&#34; title=&#34;A parallel tree code explenation&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.prism.gatech.edu/~gth716h/BNtree/&#34; target=&#34;_blank&#34; title=&#34;Barnes-Hut Implementation in HTML/Javascript&#34;&gt;here&lt;/a&gt;) to calculate the short-range forces in the real space. This choice was done because this type of tree, compared to other types (KD-Tree, &amp;hellip;), requires the creation of less nodes, that imply that less memory is used. It&amp;rsquo;s characterized by eight sub-nodes for each node and has only one particle in each leaf. The code decides to open a leaf according to a certain leaf opening criterion based on the estimated force error. The force for distant groups of particles is approximated with the multipole (here octopole) of the tree node and the error depends on the dimensions and the distances of the node considered.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PM part&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The PM part of the code is used to calculate the long-range forces. The algorithm is something like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;CIC (cloud-in-cell) assignment is used to construct the mass density field on to the mesh from the information on the particles&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the discrete FT of the mesh is multiplied for the Green function for the potential in periodic boundaries (modified with the exponential truncation for the force splitting)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;deconvolution for the CIC kernel twice: the first for the smoothing effect of CIC assignment, the second for the force interpolation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$\mathrm{FT}^{-1}$ to obtain the potential on the mesh&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;finite differentiate the potential to obtain the forces&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;interpolate the forces to the particles positions using CIC&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note: real-to-complex FT are used to save times and memory respect to full complex transforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time step&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This type of code has a large dynamic range in time scale, from the denser regions where the evolution is rapid to the less denser regions in which the evolution occur slower so we can describe it with larger time resolution. In this scenario evolving all particles with the smallest time-scale is a waste of time and computational resources. Because using different time-steps for each particle add instabilities to the system, Gadget-2 separates time-step between long-range (longer time step) and short-range (shorter time step) force computations. The perturbation of the system for different time-steps is related to the symplectic nature of the system, but I still have not understood what it really means and implies! I know that it refers to the phase space volume and has effect on the information conservation. May be in the future I&amp;rsquo;ll write a post about this!&lt;br /&gt;
+Despite these arguments, sometimes individual time step are allowed because they perturb the system but not the symplecticity of the single particle.&lt;br /&gt;
+In the normal integration mode time-steps are discretized in a power of two hierarchy and particles can always move to smaller time steps but to longer time steps only in subsequent step, synchronized with higher time-steps. Alternatively the code can populate time-steps discretizeing them as integer multiples of the minimum time-step among the particles set. This lead to a more homogeneous distribution of particles across the time-line which can simplify work load balancing.&lt;br /&gt;
+The integration is performed using the &lt;a href=&#34;http://en.wikipedia.org/wiki/Leapfrog_integration&#34; target=&#34;_blank&#34; title=&#34;Leapfrog method&#34;&gt;leapfrog method&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallelization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Usually the parallelization distributes particles across the CPUs using an orthogonal domain decomposition but in this way the trees built-in each domain depend on the domain geometry. Because the force depend on the tree (through the multipole expansion of the mass distribution) the force can be different if you change the number of processors.&lt;br /&gt;
+Gadget-2 introduce a space-filling fractal, the Peano-Hilber (PH) curve to map 3D space into a 1D curve that encompasses all the particles. Now the PH curve can be cut and each piece assigned to a CPU and in this way the force is independent of the processors number. If you cut every segment in eight pieces recursively you find again the tree decomposition, so there is a close correspondence between the decomposition obtained with the BH oct-tree and that of the PH curve.&lt;br /&gt;
+The PH curve has some remarkably properties, for example points that are close along the 1D PH curve are in general close in 3D space, so the mapping preserves locality and if we cut the PH curve into segments of a certain length we obtain a domain decomposition which has the property that the spatial domains are simply connected and quite &amp;ldquo;compact&amp;rdquo; (i.e., they tend to have small surface-to-volume ratios and low aspect ratio, a highly desirable property for reducing communication costs with neighbouring domains and for speeding up the local computation).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operations scheme&lt;/strong&gt;&lt;br /&gt;
+Here a brief scheme on how the short range force calculation works on multiple processors. The PM computation uses the &lt;a href=&#34;http://www.fftw.org/fftw2_doc/fftw_4.html&#34; target=&#34;_blank&#34; title=&#34;Parallel FFTWs&#34;&gt;parallel FFTWs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Compute the PH key for each particle&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sort the keys locally and split the PH curve into segments&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Adjust the sorted segments to a global sort, splitting and joining segments if needed, with little communication&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Assign the particles to the processes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Construct a BH tree for the particles of each processors representing particles on other processors with pseudo-particles (acting like placeholders)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;During the tree traverse (e.g. in processor A) these pseudo-particles cannot be opened, the are flagged and inserted into a list that collects all the particles that are to be sent (=requested) to the other processors (e.g. to processor B)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Processor B traverse again its local tree and send back the resulting force contribution to processor A&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning C from simulations, #1</title>
+      <link>http://localhost:1313/posts/learning-c-from-simulations-1/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/learning-c-from-simulations-1/</guid>
+      <description>
+
+&lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
+
+&lt;h2 id=&#34;the-ide:1680eed1e7c3d060af76c9b132d6b744&#34;&gt;The IDE&lt;/h2&gt;
+
+&lt;p&gt;When I write little pieces of code I usually find &lt;a href=&#34;http://kate-editor.org/&#34; target=&#34;_blank&#34; title=&#34;Kate Editor&#34;&gt;Kate&lt;/a&gt; comfortable enough but to explore projects like &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt; I prefer to use something like &lt;a href=&#34;http://kdevelop.org/&#34; target=&#34;_blank&#34; title=&#34;KDevelop&#34;&gt;KDevelop&lt;/a&gt; because it&amp;rsquo;s easier to manage where a variable is defined, declared and used. And it do this only by positioning the mouse on the variable name. If you put the mouse on a known function (from the standard library for example), KDevelop will open the documentation for you.&lt;/p&gt;
+
+&lt;h2 id=&#34;doxygen:1680eed1e7c3d060af76c9b132d6b744&#34;&gt;Doxygen&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen&#34; target=&#34;_blank&#34; title=&#34;Doxygen&#34;&gt;Doxygen&lt;/a&gt; is a documentation system. It allows you to produce documentation for a project from the comments in the code. With no additional work you can &lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen/docblocks.html#specialblock&#34; target=&#34;_blank&#34; title=&#34;Comment in Doxigen&#34;&gt;comment&lt;/a&gt; your code and be ready to produce the documentation. In KDevelop Doxygen style for comments has a different (and nice) coloring.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Single file compilation&lt;/strong&gt;&lt;br /&gt;
+I your C program is simple and short, and fit in a single file you can compile it to produce the executable file with&lt;br /&gt;
+&lt;pre&gt;gcc -O3 -Wall sort.c -o sort.exe&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;where &lt;code&gt;gcc&lt;/code&gt; is the GNU compiler, &lt;code&gt;-O3&lt;/code&gt; is the level of optimization, &lt;code&gt;-Wall&lt;/code&gt; activate the print of all the warnings, &lt;code&gt;sort.c&lt;/code&gt; is your source code file and &lt;code&gt;-o sort.exe&lt;/code&gt; specify the output file (default is &amp;ldquo;a.out&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also learned some other things, but a good combination of my laziness and the fact that it&amp;rsquo;s not always useful to rewrite things already well-written let me give you the links to those resources!:)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.network-theory.co.uk/docs/gccintro/gccintro_16.html&#34; target=&#34;_blanck&#34; title=&#34;Makefile&#34;&gt;Makefile&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://duramecho.com/ComputerInformation/WhyCPointers.html&#34; target=&#34;_blank&#34; title=&#34;Why pointers in C&#34;&gt;Pointers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cprogramming.com/tutorial/cpreprocessor.html&#34; target=&#34;_blank&#34; title=&#34;Macros&#34;&gt;Macros&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Maybe in the next episodes I will understand how to manage &lt;a href=&#34;http://www.cplusplus.com/forum/articles/10627/&#34; target=&#34;_blank&#34; title=&#34;headers&#34;&gt;headers&lt;/a&gt;, implementations, object files and other funny things!:P&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning C from simulations, #3: C horrors!</title>
+      <link>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</guid>
+      <description>&lt;p&gt;Yeah, this is post #3! Post #2 is &amp;ldquo;work in progress&amp;rdquo; and it will be on FFTs!&lt;/p&gt;
+
+&lt;p&gt;Today I was trying to understand what this piece of code do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;for(i = 0; i &amp;lt; Nmesh / 2; i++)
+    {
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[i * Nmesh + j] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[j * Nmesh + i] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[(Nmesh - 1 - i) * Nmesh + j] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[(Nmesh - 1 - j) * Nmesh + i] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[i * Nmesh + (Nmesh - 1 - j)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[j * Nmesh + (Nmesh - 1 - i)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i; j++)
+ seedtable[(Nmesh - 1 - i) * Nmesh + (Nmesh - 1 - j)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+
+      for(j = 0; j &amp;lt; i + 1; j++)
+ seedtable[(Nmesh - 1 - j) * Nmesh + (Nmesh - 1 - i)] = 0x7fffffff * gsl_rng_uniform(random_generator);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- TEASER_END --&gt;    
+
+&lt;p&gt;It&amp;rsquo;s a piece of the source of N-GenIC, Springel&amp;rsquo;s ICs generator for &lt;a href=&#34;http://www.gadgetcode.org/right.html&#34; target=&#34;_blank&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. Obviously no comments were present and I have no experience of how those codes work. I know that this is a way to fill the &lt;code&gt;seedtable&lt;/code&gt; array, maybe a matrix that provides random seeds for the FFTs or to generate the [latex]delta[/latex]s for the realization of the density field. This array is stored in 1D so to access the elements we have to do some magic with indices. Trying to understand how the matrix is filled and how the indices works, and to practice with C I&amp;rsquo;ve wrote this piece of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;math.h&amp;gt;
+
+int i = 0, j = 0;
+int N = 10;
+
+int main(int argc, char **argv){
+  for(i = 0; i &amp;lt; N/2; i++){
+    printf(&amp;quot;i = %in&amp;quot;, i);
+    for(j = 0; j &amp;lt; i; j++)
+      printf(&amp;quot;t j= %in&amp;quot;, j);
+      if(!(i * N + j))
+ printf(&amp;quot;j doesn&#39;t existn&amp;quot;);
+      printf(&amp;quot;tt i * Nmesh + j = %in&amp;quot;,  i * N + j);
+  /*
+    a lot of commented code from the code above
+  */
+  }
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The result was&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;i = 0
+j doesn&#39;t exist
+                 i * Nmesh + j = 0
+i = 1
+         j= 0
+                 i * Nmesh + j = 11
+i = 2
+         j= 0
+         j= 1
+                 i * Nmesh + j = 22
+i = 3
+         j= 0
+         j= 1
+         j= 2
+                 i * Nmesh + j = 33
+i = 4
+         j= 0
+         j= 1
+         j= 2
+         j= 3
+                 i * Nmesh + j = 44
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;clearly wrong.&lt;br /&gt;
+So I&amp;rsquo;ve modified the code (thanks to my coworker) to print &lt;code&gt;j&lt;/code&gt; and the expression in both the lines, and the result was&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;i = 0
+j doesn&#39;t exist
+         j= 0, i * Nmesh + j = 0
+i = 1
+         j= 0, i * Nmesh + j = 10
+         j= 1, i * Nmesh + j = 11
+i = 2
+         j= 0, i * Nmesh + j = 20
+         j= 1, i * Nmesh + j = 21
+         j= 2, i * Nmesh + j = 22
+i = 3
+         j= 0, i * Nmesh + j = 30
+         j= 1, i * Nmesh + j = 31
+         j= 2, i * Nmesh + j = 32
+         j= 3, i * Nmesh + j = 33
+i = 4
+         j= 0, i * Nmesh + j = 40
+         j= 1, i * Nmesh + j = 41
+         j= 2, i * Nmesh + j = 42
+         j= 3, i * Nmesh + j = 43
+         j= 4, i * Nmesh + j = 44
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;wrong again!&lt;/p&gt;
+
+&lt;p&gt;The key is the second &lt;code&gt;for&lt;/code&gt; statement, without the brackets. It was difficult to me to see this because C allows a for statement without brackets evaluating only the first line into the loop, and there were a lot of loop of one line commented into the code. The correct code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;math.h&amp;gt;
+
+int i = 0, j = 0;
+int N = 10;
+
+int main(int argc, char **argv){
+  for(i = 0; i &amp;lt; N/2; i++){
+    printf(&amp;quot;i = %in&amp;quot;, i);
+    for(j = 0; j &amp;lt; i; j++){
+      printf(&amp;quot;t j= %i, i * Nmesh + j = %in&amp;quot;, j, i * N + j);
+      if(!(i * N + j))
+ printf(&amp;quot;j doesn&#39;t existn&amp;quot;);
+      printf(&amp;quot;t j= %i, i * Nmesh + j = %in&amp;quot;, j, i * N + j);
+  /*
+    a lot of commented code from the code above
+  */
+    }
+  }
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;works right!&lt;br /&gt;
+Obviously the Python version I&amp;rsquo;ve wrote before was perfect the first time I wrote it.!:P In Python, due to the mandatory indentation (and without those terrible brackets!:P) it&amp;rsquo;s straightforward to understand what belong to a loop and what doesn&amp;rsquo;t!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The initial condition saga</title>
+      <link>http://localhost:1313/posts/the-initial-condition-saga/</link>
+      <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/the-initial-condition-saga/</guid>
+      <description>
+
+&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
+The first things I have understood banging against them were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Gadget requires initial conditions (ICs) generate by (for example) N-GenIC&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;N-GenIC requires an initial power spectrum from CMBFast that is no longer used&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CMBeasy should substitute CMBFast but it doesn&amp;rsquo;t, it only works for CMB anisotropies&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CAMB should substitute CMBFast&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34; target=&#34;_blank&#34; title=&#34;CAMB online interface&#34;&gt;CAMB interface&lt;/a&gt;&amp;nbsp;is terrible and not very documentated&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;camb:62c9ecd742ba00d6577ca64643723f05&#34;&gt;CAMB&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start with the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34; target=&#34;_blank&#34; title=&#34;CAMB online&#34;&gt;main CAMB interface&lt;/a&gt;. If you, like me, need an initial power spectrum as input for your ICs generator you are interested in just few options of the interface. First, you should select &amp;ldquo;Transfer functions&amp;rdquo; from the &amp;ldquo;Actions to Perform&amp;rdquo; section. You can leave the default selection on &amp;ldquo;Scalar Cl&amp;rsquo;s&amp;rdquo; and &amp;ldquo;Linear&amp;rdquo;. After that, check the &amp;ldquo;Cosmological Parameters&amp;rdquo; section if it&amp;rsquo;s ok for you and maybe, leave the default &amp;ldquo;Initial Scalar Perturbation Mode&amp;rdquo; that is &amp;ldquo;Adiabatic&amp;rdquo;. The last things you should be interested in are the maximum $k$, for me it is $10^4$, &amp;ldquo;k per logint&amp;rdquo; (it should be something like the k-sampling, for me, 50), the number of redshift (1) and the (transfer) redshift (0). Now select between &amp;ldquo;Interpolated Grid&amp;rdquo; or &amp;ldquo;Calculated Values&amp;rdquo; (this parameter switch between and interpolated regular grid in log k or array at actual computed values that are better for later re-interpolation, according with the CAMB README) and choose if you want high precision computation. When you have finished you can click on &amp;ldquo;Go!&amp;rdquo;. What you obtain is a page with some links to download:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;camb_*.ini&lt;/code&gt;: the configuration file to run the standalone CAMB code on your own&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*.log&lt;/code&gt;: the calculation log&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_scalcls.dat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_scalcls.fits&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt;: this is the file containing the transfer functions for CDM, baryon, photon, massless neutrino, massive neutrinos, and total (massive) respectively as function of $k$&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;camb_*_matterpower_z0.dat&lt;/code&gt;: it contains the conventionally normalized matter power spectrum (for baryons+cdm+massive neutrinos), in h/Mpc units&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;where &lt;code&gt;*&lt;/code&gt; is a number that identifies the computation and z0 can be different if you choose to use a different redshift.&lt;br /&gt;
+You can use &lt;code&gt;camb_*_matterpower_z0.dat&lt;/code&gt; as normalized input power spectrum or you can calculate (also as a check) it on you own using the first and the last column of &lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt;. You should use the last column because DM simulations represents with DM particles all the mass, included that of the baryons, so the initial power spectrum should be the total power spectrum.&lt;br /&gt;
+If you want to understand better how CAMB works you can try to read the &lt;a href=&#34;http://camb.info/readme.html&#34; title=&#34;CAMB README&#34;&gt;CAMB README&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Initial power spectrum theory&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here some theory if you want to understand how to calculate the power spectrum on your own. Maybe it is well-known and trivial, but for me it wasn&amp;rsquo;t and, like many of the trivial and well-known things in (not only) cosmology, it&amp;rsquo;s not easy to find anywhere.&lt;br /&gt;
+So, the spectrum is defined as $P(k) = A k^n T(k)^2$, where $n$ is the &amp;ldquo;primordial spectral index&amp;rdquo; and is taken near the unity. This is a &amp;ldquo;scale-fee&amp;rdquo; spectrum. $T(k)$ is the transfer function that give a synthetic and parametric description of how the initial spectrum survive to the microphysic. $A=\left[\frac{D(z&lt;em&gt;{fin})}{D(z&lt;/em&gt;{in})}\right]^2$ is the amplitude.&lt;br /&gt;
+The normalization of the spectrum is given by the value of &amp;nbsp;$\sigma&lt;em&gt;8$, that is the mean square amplitude of the density field filtered on the scale of 8 Mpc/h. This values comes from the &amp;lsquo;80s, when Peebles and others (Davis &amp;amp; Peebles 1983) measured $\sigma&lt;/em&gt;{galaxies}$ and $\sigma&lt;em&gt;{gal}(R=8)\sim1$ so they took that values as reference.&lt;br /&gt;
+$\sigma_8$ is defined by $\sigma^2&amp;reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$ with $R=8\mathrm{Mpc/h}$ and $\tilde W(kR)$ the Fourier transform of the window (filter) function, usually a top-hat in the positions space.&lt;br /&gt;
+The last thing we need to know to obtain the spectrum is the value of the amplitude, and it can be find by imposing its value so that $\sigma_8$ has a certain (observed) value.&lt;br /&gt;
+Because&lt;br /&gt;
+$$\sigma^2&amp;reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR) = \int \mathrm{d}^3k Ak^nT^2(k))\tilde W(kR)$$&lt;br /&gt;
+we have&lt;br /&gt;
+$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$.&lt;br /&gt;
+Usually $A_0$ is calculated for $\sigma_8=1$ and then scaled with $A = A_0\sigma^2&lt;/em&gt;{8;obs}$ where $\sigma_{8;obs}$ is the observed values for $\sigma_8$. With the last observations we have $\sigma_8 = 0.8118405$.&lt;/p&gt;
+
+&lt;p&gt;Just to have an idea you can do these computation with a simple python code. The code below compare the computation done in Python with the values from &lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt; with the normalized power spectrum from &lt;code&gt;camb_*_matterpower_z0.dat&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load data
+transfer = np.genfromtxt(&#39;camb_88704620_transfer_out_z0.dat&#39;, usecols = (0,6))
+matterpower = np.genfromtxt(&#39;camb_88704620_matterpower_z0.dat&#39;)
+
+# Python calculations
+camb_k = transfer[:,0]
+camb_tf = transfer[:,1] 
+R = 8 #Mpc/h
+s_8 = 0.8118405
+sp_ind = 1
+
+# Define the FT of the window function
+def FTW(R, k):
+  return 3*(np.sin(k*R)-k*R*np.cos(k*R)) / (k*R)**3
+
+# camb_k**(2+sp_ind) that is k^(2+n) because d^3k=4\pi k^2dk
+amp_integrand = camb_k**(2+sp_ind)*camb_tf**2 * FTW(8, camb_k)**2
+amp_integral = integrate.trapz(amp_integrand, camb_k)
+amp_0 = 2*np.pi**2/amp_integral
+amp = amp_0*s_8**2
+spectrum = camb_k**sp_ind*camb_tf**2 * amp
+
+ax = fig.add_subplot(111)
+ax.set_title(&#39;Fortran/Python CDM initial power spectrum&#39;)
+ax.set_xlabel(&#39;k&#39;)
+ax.set_ylabel(&#39;P(k)&#39;)
+ax.set_xscale(&#39;log&#39;)
+ax.set_yscale(&#39;log&#39;)
+
+ax.plot(transfer[:,0], spectrum[:], color = &amp;quot;magenta&amp;quot;, 
+           linestyle = &#39;-&#39;, marker = &#39;&#39;, label = &amp;quot;* python amp&amp;quot;) 
+ax.plot(matterpower[:,0], matterpower[:,1], color = &amp;quot;black&amp;quot;, 
+            linestyle = &#39;--&#39;, marker = &#39;&#39;, label = &amp;quot;matterpower&amp;quot;)
+ax.legend(loc=&#39;best&#39;)
+ax.grid(True)
+
+# Adjust figure size and save
+fig.set_size_inches(20, 20)
+plt.savefig(&#39;camb_f90_py_check&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The result is this&lt;/p&gt;
+
+&lt;p&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../camb_f90_py_check.png&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img alt=&#34;Initial power spectrum&#34; class=&#34;size-medium wp-image-524&#34; height=&#34;550&#34; src=&#34;../files/camb_f90_py_check.png?w=300&#34; title=&#34;CAMB vs Python calculated initial power spectrum&#34; width=&#34;600&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;&lt;span style=&#34;font-size: x-small; text-align: -webkit-auto;&#34;&gt;CAMB vs Python calculated initial power spectrum&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+If you want you can check the power spectrum we have obtained by integrating it to find $\sigma_8$:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;sigma_integrand = camb_k**2 * spectrum * FTW(8, camb_k)**2
+s_8_check = pow(integrate.trapz(sigma_integrand, camb_k)/(2*np.pi**2), 0.5)
+print &amp;quot;s_8_calculated&amp;quot;, s_8_check
+print &amp;quot;s_8 observed&amp;quot;, s_8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;obtaining&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ziosi@uno:~/Code/spettro_CMB$ ./CAMB_check_plot.py
+s_8_calculated 0.8118405
+s_8 observed 0.8118405
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;N-GenIC&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have the initial power spectrum ready for the ICs generator. After N-GenIC have been compiled (try to read &lt;a href=&#34;http://brunettoziosi.blogspot.it/2012/01/my-first-gadget2-tests.html&#34; target=&#34;_blank&#34; title=&#34;My first Gadget2 tests&#34;&gt;this&lt;/a&gt; if you have compilation problems related to the parallel double precision FFTW libraries or if you want to know how to customize the Makefile) we should have a look at the configuration file.&lt;br /&gt;
+We are interested in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Nmesh&lt;/code&gt;: the size (=the number of nodes) of the FFT grid used to compute the displacement field, should be &lt;code&gt;Nmesh&lt;/code&gt; $\geq$&amp;nbsp;&lt;code&gt;Nsample&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Nsample&lt;/code&gt;: this is the maximum k that the code uses, i.e. this effectively determines the Nyquist frequency that the code assumes, $k_{Nyquist} = 2\cdot PI/Box \cdot  Nsample/2$ Normally, one chooses &lt;code&gt;Nsample&lt;/code&gt; such that $Ntot =  Nsample^3$, where &lt;code&gt;Ntot&lt;/code&gt; is the total number of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist frequency of Nsample, so it&amp;rsquo;s good if $Nmesh = 2\cdot Nsample$&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ReNormalizeInputSpectrum&lt;/code&gt;: set it to 0 because we are going to use the previous spectrum that is already normalized, if you don&amp;rsquo;t remember this the code will have integration problems&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TileFac&lt;/code&gt;: it represents how many times you need to tile the glass file (for each dimension) to cover the number of particles you want to use. The glass file contains 4097 particles. Glass particles positions will be automatically stretched to cover the box dimension. When you download N-GenIC you find $Nsample = 128$ and $TileFac = 8$, this is because the total number of particles is $Ntot = Nsample^3 = 128^3=2097125$ and the number of glass particles is $TileFac^3\cdot Nglass = 8^3\cdot 4096 = 2097125$. In practice, if you want to know what &lt;code&gt;TileFac&lt;/code&gt; should be, and you have &lt;code&gt;Ntot&lt;/code&gt; particles in you simulation, &lt;code&gt;TileFac&lt;/code&gt; will be $\frac{Ntot^{&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;}}{4096} = \frac{Nsample}{4096}$.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;WhichSpectrum&lt;/code&gt;: let you choose if you want to use an internal spectrum (calculated with a function) or the spectrum from CAMB&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FileWithInputSpectrum&lt;/code&gt;: it&amp;rsquo;s, obviously, the name of the file containing the spectrum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The other parameters are cosmological parameters or are related to the folders, the name and the number of files, the parallelization and to the internal measure units.&lt;br /&gt;
+Other options are (more or less) documented with comments in the code or in the README.&lt;br /&gt;
+We can now start N-GenIC with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpiexec -np 2  ./N-GenIC  ics.param
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;-np&lt;/code&gt; let you set the number of processors you want to use in parallel.&lt;br /&gt;
+Before using the output files with gadget we should open those and calculate the power spectrum to check that this realization of it is a good one. This problem arise because of the sampling of the k-space where few modes are available, but I will deepen on those matter in a future post.&lt;br /&gt;
+There is also an improved version of N-GenIC, 2LPTIC, but it need a different installation of the FFTW so I didn&amp;rsquo;t try it.&lt;/p&gt;
+
+&lt;p&gt;Many of these things can be found &lt;a href=&#34;http://www.annualreviews.org/doi/abs/10.1146/annurev.astro.36.1.599&#34; target=&#34;_blank&#34; title=&#34;Bertschinger, Simulations of structure formation in the universe&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD question #2: spherical collapse</title>
+      <link>http://localhost:1313/posts/phd-question-2-spherical-collapse/</link>
+      <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/phd-question-2-spherical-collapse/</guid>
+      <description>&lt;p&gt;With this post I would like to collect and present in a simple and consistent
+form some of the various analytical derivation of the spherical collapse
+model, in particular the challenge was to find how to obtain the famous
+$\delta_{lin}\sim1.686$.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/spherical_collapse2.pdf&#34;&gt;Here&lt;/a&gt; you can find a pdf file with the analytic computation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My first Gadget2 tests</title>
+      <link>http://localhost:1313/posts/my-first-gadget2-tests/</link>
+      <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/my-first-gadget2-tests/</guid>
+      <description>
+
+&lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
+
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+
+&lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
+Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;amp;lt;archive name&amp;amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd gsl-1.9/
+goldbaum@~/Documents/code/gsl-1.9: ./configure
+snip: lots of diagnostic ouput
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: cd ..
+goldbaum@~/Documents/code: cd fftw-2.1.5
+goldbaum@~/Documents/code/fftw-2.1.5: ./configure --enable-mpi --enable-type-prefix --enable-float
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As described &lt;a href=&#34;http://www.fftw.org/fftw2_doc/fftw_6.html#SEC69&#34; target=&#34;_blank&#34; title=&#34;FTTW installation and customization&#34;&gt;here&lt;/a&gt; is convenient to install both the single and the double precision version of the FFTW (for example to compile the initial conditions generators) with (that is, without &lt;code&gt;--enable-float&lt;/code&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd fftw-2.1.5
+goldbaum@~/Documents/code/fftw-2.1.5: ./configure --enable-mpi --enable-type-prefix
+snip: lots of diagnostic output
+goldbaum@~/Documents/code/gsl-1.9: make
+snip: lots of compilation output
+goldbaum@~/Documents/code/gsl-1.9: sudo make install
+Password:
+snip: lots of diagnostic output
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;play-with-gadget2:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Play with Gadget2&lt;/h2&gt;
+
+&lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
+To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;
+
+&lt;p&gt;Inside the Gadget directory we have&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Analysis
+AUTHORS
+COPYING
+COPYRIGHT
+Documentation
+Gadget2
+ICs
+README
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the &lt;code&gt;Analysis&lt;/code&gt; folder we can fin some analysis routines provided by the author, the &lt;code&gt;Documentation&lt;/code&gt; folder contains the user guide and the original paper, and the &lt;code&gt;AUTHORS, COPYING, COPYRIGHT&lt;/code&gt; self-explanatory. The &lt;code&gt;ICs&lt;/code&gt; folder contains the initial conditions for the example simulations and the &lt;code&gt;Gadget2&lt;/code&gt; folder contains the sources and the html documentation.&lt;/p&gt;
+
+&lt;p&gt;To be tidy and organized is better to have a folder for every simulations, so we will create a (descriptive) with everything we need to customize&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir 2012-01-07-Gadget2-galaxy_test_01
+cd 2012-01-07-Gadget2-galaxy_test_01
+mkdir out
+cp ../ICs/galaxy_littleendian.dat ./
+cp ../Gadget2/parameterfiles/galaxy.param ../Gadget2/parameterfiles/galaxy.Makefile ./
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the folder Gadget2 we can find the general &lt;code&gt;Makefile&lt;/code&gt; but for now let&amp;rsquo;s use the galaxy&amp;rsquo;s one provided by the author and just copied to our position. Open it with your preferred text editor (for example, in a command line environment, &lt;code&gt;emacs -nw Makefile&lt;/code&gt;).&lt;br /&gt;
+This &lt;code&gt;Makefile&lt;/code&gt; is already customized for the galaxy collision simulation and if you want to understand every option you can read the description in the guide, but we need some more customization. Here what I&amp;rsquo;ve changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;OPT   +=  -DHAVE_HDF5  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so I activate the HDF5 format for the output and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#--------------------------------------- Select target computer
+
+SYSTYPE=&amp;quot;Uno&amp;quot;
+\#SYSTYPE=&amp;quot;MPA&amp;quot;
+\#SYSTYPE=&amp;quot;Mako&amp;quot;
+\#SYSTYPE=&amp;quot;Regatta&amp;quot;
+\#SYSTYPE=&amp;quot;RZG_LinuxCluster&amp;quot;
+\#SYSTYPE=&amp;quot;RZG_LinuxCluster-gcc&amp;quot;
+\#SYSTYPE=&amp;quot;Opteron&amp;quot;
+
+\#--------------------------------------- Adjust settings for target computer
+
+ifeq ($(SYSTYPE),&amp;quot;Uno&amp;quot;)
+CC       =  mpicc   
+OPTIMIZE =  -O3 -Wall
+GSL_INCL =  -I/usr/local/include
+GSL_LIBS =  -L/usr/local/lib
+FFTW_INCL=  -I/usr/local/include
+FFTW_LIBS=  -L/usr/local/lib
+MPICHLIB =  -L/usr/lib
+HDF5INCL =  
+HDF5LIB  =  -lhdf5 -lz 
+endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to select the set the options for my system.&lt;br /&gt;
+Now we have to customize the &lt;code&gt;run/galaxy.param&lt;/code&gt; file changing it like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;InitCondFile      ./galaxy_littleendian.dat
+OutputDir          ./galaxy_out/
+OutputListFilename ./out/output_list.txt
+SnapFormat         3  %to select the HDF5 format
+TimeBegin           0.0        % Begin of the simulation
+TimeMax             40.0        % End of the simulation
+
+% Output frequency
+TimeBetSnapshot        0.1% original 0.5 &amp;lt;/pre&amp;gt;
+    
+    
+Now we should go to the sources folder and compile the code with    
+&amp;lt;pre&amp;gt;cd ../Gadget2
+make -f 2012-01-07-Gadget2-galaxy_test_01/galaxy.Makefile
+cp Gadget2 ../2012-01-07-Gadget2-galaxy_test_01/Gadget2
+make clean
+cd 2012-01-07-Gadget2-galaxy_test_01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last command clean the build leaving only the sources files, so we are ready for a new build.&lt;br /&gt;
+We can also create a script for automatize all this steps, something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+dir=$1
+ics=$2
+param_file=$3
+mk_file=$4
+CPUs=$5
+
+if [ $# -lt 5 ] ; then
+  echo &amp;quot;usage: gadget_set directory_name initial_conditions_file
+parameters_file make_file number_of_CPUs&amp;quot;
+  exit 0
+fi
+
+echo &amp;quot;Assuming to use $dir as the run folder,&amp;quot; 
+echo &amp;quot;$ics as initial conditions,&amp;quot;
+echo &amp;quot;$paramfile as parameter file, &amp;quot;
+echo &amp;quot;$mk_file as makefile &amp;quot;
+echo &amp;quot;and to run on $CPUs CPUs.&amp;quot;
+
+mkdir $dir
+cd $dir
+mkdir out
+cp ../ICs/$ics ./
+cp ../Gadget2/parameterfiles/$param_file
+../Gadget2/parameterfiles/mk_file ./
+cd ../Gadget2
+make -f ../$dir/$mk_file
+cp Gadget2 ../$dir/Gadget2
+make clean
+cd $dir
+mpirun -np $CPUs ./Gadget2 $param_file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a very raw and untested script, but it&amp;rsquo;s just to give an idea.&lt;/p&gt;
+
+&lt;p&gt;Now we are ready to start the simulation with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mpirun -np 2 ./Gadget2 galaxy.param
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;-np&lt;/code&gt; sets the number of processes/processors to be used in parallel.&lt;br /&gt;
+When the simulation stops we can analyze it with the tools provided in the &lt;code&gt;Analysis&lt;/code&gt; folder or, if you like me don&amp;rsquo;t own an IDL license and don&amp;rsquo;t feel comfortable with IDL/Fortran/C for the data analysis, with something like (to be run in out/plots/):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/use/bin/env python
+import sys, os
+from subprocess import Popen, PIPE
+from multiprocessing import Process, Queue
+
+import numpy as np
+import tables as tb
+import time
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+&amp;quot;&amp;quot;&amp;quot;This script will plot in parallel the .h5 snapshots created by Gadget2 test
+runs one after the other!:).
+FIXME: i need a way to wait for the final time count the end of the processes
+and a way to print the status
+&amp;quot;&amp;quot;&amp;quot;
+
+# Set the max number of processes
+n_procs = 3
+
+# Set the number of snapshot to be plotted
+n_snap = 401
+
+t = time.time()
+
+print &amp;quot;Defining workers...&amp;quot;
+
+def worker(input, output):
+    while input.qsize() != 0:
+        item = input.get()
+        if item[0]= 10 and item[0]&amp;amp;lt;100: j=&amp;quot;0&amp;quot;+str(item[0])
+        else: j=str(item[0])
+        try:
+#     print &amp;quot;considering file ../snapshot_&amp;quot;+j+&amp;quot;.hdf5&amp;quot;
+#     print &amp;quot;open file &amp;quot;
+            h5 = tb.openFile(&amp;quot;../snapshot_&amp;quot;+j+&amp;quot;.hdf5&amp;quot;, &#39;r&#39;)
+#     print &amp;quot;file opened, set variables&amp;quot;
+            halo = h5.root.PartType1
+            disk = h5.root.PartType2
+#            print &amp;quot;setted, inizialize figure&amp;quot;
+            fig2 = plt.figure()
+            ax = Axes3D(fig2)
+            ax.scatter(disk.Coordinates[:,0], 
+                       disk.Coordinates[:,1],
+                       disk.Coordinates[:,2],
+                       color=&#39;red&#39;, s=0.5)
+            ax.scatter(halo.Coordinates[:,0], 
+                       halo.Coordinates[:,1],
+                       halo.Coordinates[:,2],
+                       color=&#39;blue&#39;, s=0.01)
+            plt.savefig(&#39;snap_&#39;+j)
+#            print &amp;quot;done, closing file&amp;quot;
+            h5.close()  
+#            print &amp;quot;closed&amp;quot;
+
+        except:
+            print &amp;quot;Work &amp;quot;+j+&amp;quot; not done, exit...&amp;quot;
+            sys.exit()
+
+def fill_queue(task_queue):
+    for i in range(n_snap):
+        task_queue.put([i])
+    return task_queue
+
+def status(proc):
+    if proc.is_alive==True:
+        return &#39;alive&#39;
+    elif proc.is_alive==False:
+        return &#39;dead&#39;
+    else:
+        return proc.is_alive()
+
+print &amp;quot;Define queues...&amp;quot;
+
+input_queue = Queue()
+output_queue = Queue()
+
+try:
+    input_queue = fill_queue(input_queue)
+except:
+    print &amp;quot;Queue not filled, exit...&amp;quot;
+    sys.exit()
+
+procs = []
+
+try:
+    for i in range(n_procs):
+        procs.append(Process(target=worker, args=(input_queue,
+output_queue)))
+except:
+    print &amp;quot;Creating processes not complete, exit...&amp;quot;
+    sys.exit()
+
+try:
+    for i in procs:
+        i.start()
+except:
+    print &amp;quot;Start processes not complete, exit...&amp;quot;
+    sys.exit()
+
+for i in procs:
+    print &amp;quot;Process &amp;quot;, i,&amp;quot; @ &amp;quot; , i.pid, &amp;quot; is &amp;quot;, status(i)
+
+print &amp;quot;Done in &amp;quot;+str(time.time()-t)+&amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have one image for each snapshot, and if we are interested we can produce a video with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mencoder mf://*.png -mf fps=25:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -vf scale=720:360 -oac copy -o output.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;youtube http://www.youtube.com/watch?v=b7HyafKMkxI&amp;amp;amp;w=560&amp;amp;amp;h=315&#34;&gt;This&lt;/a&gt; is the first basic video, with logarithmic time and perhaps there&amp;rsquo;s something wrong with the coordinates on the axes.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

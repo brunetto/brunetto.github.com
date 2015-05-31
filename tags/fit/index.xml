@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fit on Post It!</title>
+    <link>http://localhost:1313/tags/fit/</link>
+    <description>Recent content in Fit on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fit/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/fit/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://idlastro.gsfc.nasa.gov/ftp/pro/math/fitexy.pro&#34;&gt;IDL function&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&#34;&gt;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/?p=409&#34;&gt;http://blog.technokrat.nl/?p=409&lt;/a&gt; (qui usano la versione R in python)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/pull/14&#34;&gt;https://github.com/scikit-learn/scikit-learn/pull/14&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&#34;&gt;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&lt;/a&gt; (gaussian processes è il nome ufficiale e generico degli algoritmi tipo quelli di krige)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&#34;&gt;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&#34;&gt;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.gaussianprocess.org/&#34;&gt;http://www.gaussianprocess.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pygpr.sourceforge.net/&#34;&gt;http://pygpr.sourceforge.net/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&#34;&gt;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&#34;&gt;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.enthought.com/services/training/geophysics&#34;&gt;https://www.enthought.com/services/training/geophysics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ambhas.com/books/python-in-hydrology/book.html&#34;&gt;http://ambhas.com/books/python-in-hydrology/book.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&#34;&gt;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&#34;&gt;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&#34;&gt;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&#34;&gt;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/stober/4964727&#34;&gt;https://gist.github.com/stober/4964727&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

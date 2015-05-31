@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Post It!</title>
+    <link>http://localhost:1313/categories/research/</link>
+    <description>Recent content in Research on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Not only Big Data</title>
+      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
+We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
+I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
+useful in our everyday work. This presentation aims of acting both as a showcase of what can help us and as a cheat sheet.
+You can find it after the break.&lt;/p&gt;
+
+&lt;iframe src=&#34;http://rawgit.com/brunetto/my-public-talks/master/2014-12-cinecaBigData/index.html&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python plot examples</title>
+      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
+&lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
+I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
+perfect &lt;code&gt;pdf&lt;/code&gt; plots, but sometimes Matplotlib it&amp;rsquo;s faster for producing just
+a draft plot to inspect data!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
+import time
+import numpy as np
+import veusz.embed as ve
+
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	return counts, bin_edges
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+2, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	bin_edges = np.hstack((bin_edges[0], bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def plotFunc(inpath=&amp;quot;./&amp;quot;, outpath=&amp;quot;./&amp;quot;):
+	font = &amp;quot;Times New Roman&amp;quot;
+	colors = [u&#39;blue&#39;, u&#39;green&#39;]
+	xmin = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	xmax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	ymin = [&amp;quot;auto&amp;quot;, 0]
+	ymax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
+	
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	figure = ve.Embedded(&amp;quot;Window_1&amp;quot;)
+	page = figure.Root.Add(&#39;page&#39;, width = &#39;30cm&#39;, height=&#39;15cm&#39;)
+	grid = page.Add(&#39;grid&#39;, autoadd = False, rows = 1, columns = 2,
+						scaleRows=[0.2],
+						topMargin=&#39;1cm&#39;,
+						bottomMargin=&#39;1cm&#39;
+						)
+	graphList = []
+	
+	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;scatter&amp;quot;, autoadd=False, 
+							hide = False, 
+							Border__width = &#39;2pt&#39;,
+							leftMargin = &#39;0.6cm&#39;,
+							rightMargin = &#39;0.4cm&#39;,
+							topMargin = &#39;0.5cm&#39;,
+							bottomMargin = &#39;1cm&#39;,
+							))
+	
+	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;hist&amp;quot;, autoadd=False, 
+							hide = False, 
+							Border__width = &#39;2pt&#39;,
+							leftMargin = &#39;2cm&#39;,
+							rightMargin = &#39;0.4cm&#39;,
+							topMargin = &#39;0.5cm&#39;,
+							bottomMargin = &#39;1cm&#39;,
+							))
+	
+	for i in range(len(graphList)):
+		graphList[i].Add(&#39;axis&#39;, name=&#39;x&#39;, label = &amp;quot;x&amp;quot;,
+								min = xmin[i],
+								max = xmax[i],
+								log = False,
+								Label__size = &#39;25pt&#39;,
+								Label__font = font,
+								TickLabels__size = &#39;17pt&#39;,
+								TickLabels__format = u&#39;Auto&#39;,
+								MajorTicks__width = &#39;2pt&#39;,
+								MajorTicks__length = &#39;10pt&#39;,
+								MinorTicks__width = &#39;1pt&#39;,
+								MinorTicks__length = &#39;6pt&#39;
+							)
+		graphList[i].Add(&#39;axis&#39;, name=&#39;y&#39;, label = &amp;quot;y&amp;quot;, 
+								direction = &#39;vertical&#39;,
+								min = ymin[i],
+								max = ymax[i],
+								log = False,
+								autoRange = u&#39;+5%&#39;,
+								Label__size = &#39;25pt&#39;,
+								Label__font = font,
+								TickLabels__size = &#39;20pt&#39;,
+								TickLabels__format = u&#39;Auto&#39;,
+								MajorTicks__width = &#39;2pt&#39;,
+								MajorTicks__length = &#39;10pt&#39;,
+								MinorTicks__width = &#39;1pt&#39;,
+								MinorTicks__length = &#39;6pt&#39;
+							)
+	
+	graphList[0].Add(&#39;xy&#39;, key=&amp;quot;scatterPlotKey&amp;quot;, name=&#39;scatterPlotName&#39;,
+						marker = u&#39;circle&#39;,
+						MarkerFill__color = colors[0],
+						markerSize = u&#39;3pt&#39;, 
+						)
+
+	xDataName = &amp;quot;xScatterData&amp;quot;
+	yDataName = &amp;quot;yScatterData&amp;quot;
+	figure.SetData(xDataName, xData)
+	figure.SetData(yDataName, yData)
+	graphList[0].scatterPlotName.xData.val = xDataName
+	graphList[0].scatterPlotName.yData.val = yDataName
+	
+	
+	counts, bin_edges = sm_hist2(yData, delta=5)
+	
+	graphList[1].Add(&#39;xy&#39;, key=&amp;quot;histPlotKey&amp;quot;, name=&#39;histPlotName&#39;,
+						xData = bin_edges,
+						yData = counts,
+						marker = &#39;none&#39;,
+						PlotLine__steps = u&#39;left&#39;,
+						PlotLine__color = colors[1],
+						PlotLine__style = u&amp;quot;solid&amp;quot;,
+						PlotLine__width = u&#39;3&#39;,
+						FillBelow__color = colors[1],
+						FillBelow__style = &amp;quot;forward 2&amp;quot;,
+						FillBelow__hide = False,
+						FillBelow__transparency = 70,
+						#FillBelow__backtransparency = 50,
+						FillBelow__linewidth = &#39;1pt&#39;,
+						FillBelow__linestyle = &#39;solid&#39;,
+						FillBelow__backcolor = &amp;quot;white&amp;quot;,
+						FillBelow__backhide = True,
+						Label__posnHorz = &#39;right&#39;,
+						Label__size = &#39;14pt&#39;, 
+						Label__color = &#39;black&#39;
+						)
+
+	histKey = graphList[1].Add(&#39;key&#39;, autoadd=False, 
+						horzPosn = &#39;left&#39;,
+						vertPosn = &#39;top&#39;,
+						Text__font = font,
+						Text__size = &#39;15&#39;,
+						Border__width = &#39;1.5pt&#39;
+						)
+	
+	end = raw_input(&amp;quot;Press any key to finish...&amp;quot;)
+	
+	figure.Save(&amp;quot;example.vsz&amp;quot;)
+	figure.Export(&amp;quot;example.png&amp;quot;, backcolor=&#39;#ffffff&#39;)
+	figure.Export(&amp;quot;example.pdf&amp;quot;)
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	inpath = &amp;quot;./&amp;quot;
+	outpath = &#39;./&#39;
+	tt = time.time()
+	plotFunc(inpath, outpath)
+	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# -*- coding: utf8 -*- 
+
+from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
+import time
+import numpy as np
+import matplotlib.pylab as plt
+import matplotlib.font_manager as font_manager
+
+# SM like style
+params = {&#39;backend&#39;: &#39;png&#39;,
+		&#39;font.family&#39;: &amp;quot;serif&amp;quot;,
+		&#39;font.size&#39;: 25,
+		&#39;axes.labelsize&#39;: 35,
+		#&#39;text.fontsize&#39;: 30,
+		&#39;legend.fontsize&#39;: 30,
+		&#39;xtick.labelsize&#39;: 28,
+		&#39;xtick.major.size&#39;: 20.0,
+		&#39;xtick.major.width&#39;: 3.0,
+		&#39;xtick.minor.size&#39;: 12.0,
+		&#39;xtick.minor.width&#39;: 2,
+		&#39;ytick.labelsize&#39;: 28,
+		&#39;ytick.major.size&#39;: 20.0,
+		&#39;ytick.major.width&#39;: 3.0,
+		&#39;ytick.minor.size&#39;: 12.0,
+		&#39;ytick.minor.width&#39;: 2,
+		#&#39;text.usetex&#39;: True,
+		&#39;axes.linewidth&#39;: 3.0,
+		&#39;lines.linewidth&#39;: 2,
+		&#39;lines.markersize&#39;: 15,
+		&#39;axes.grid&#39;: False,
+		&#39;grid&#39;: {&#39;color&#39;:&#39;gray&#39;, &#39;linestyle&#39;:&#39;-&#39;, &#39;linewidth&#39;:1},
+		&#39;figure.figsize&#39;: (10,10),
+		&#39;figure.subplot.left&#39;: 0.15,  # the left side of the subplots of the figure
+		&#39;figure.subplot.right&#39;   : 0.95,    # the right side of the subplots of the figure
+		&#39;figure.subplot.bottom&#39;  : 0.12,   # the bottom of the subplots of the figure
+		&#39;figure.subplot.top&#39;     : 0.92,    # the top of the subplots of the figure
+		&#39;figure.subplot.wspace&#39;  : 0.2,    # the amount of width reserved for blank space between subplots
+		&#39;figure.subplot.hspace&#39;  : 0.2,    # the amount of height reserved for white space between subplots
+		&#39;figure.figsize&#39;: (12, 12)
+           }
+plt.rcParams.update(params)
+	
+def sm_hist(data, delta=5, n_bin=None, range_=None):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
+	range_ = (dataMin, dataMin + n_bin * delta)
+	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts, np.array([0])))
+	return counts, bin_edges
+	
+	
+def sm_hist2(data, delta=5):
+	dataMin = np.floor(data.min())
+	dataMax = np.ceil(data.max())
+	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
+	idxs = ((data  - dataMin) / delta).astype(int)
+	counts = np.zeros(n_bin) 
+	bin_edges = np.arange(dataMin, dataMax+delta, delta)
+	for idx in idxs:
+		counts[idx] += 1
+	print counts
+	# These two lines double the points let you make the histogram
+	counts = np.ravel(zip(counts,counts)) 
+	bin_edges = np.ravel(zip(bin_edges,bin_edges))
+	counts = np.hstack((np.array([0]), counts))
+	bin_edges = np.hstack((bin_edges, bin_edges[-1]))
+	return counts, bin_edges
+
+def singlePlotScatter(xData, yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&amp;quot;x label&amp;quot;)
+	ax.set_ylabel(&amp;quot;y label&amp;quot;)
+	ax.set_xscale(&amp;quot;linear&amp;quot;)
+	ax.set_yscale(&amp;quot;linear&amp;quot;)
+	ax.set_title(&amp;quot;Plot title&amp;quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
+	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
+	ax.plot(xData, yData, 
+			color = &amp;quot;green&amp;quot;, 
+			markeredgewidth = 0.8, 
+			linestyle = &#39;-&#39;, 
+			linewidth = 2,
+			marker = &#39;o&#39;, 
+			markersize = 1, 
+			label = &amp;quot;label&amp;quot;)
+	return ax
+
+def singlePlotHist(yData, nRows, nCols, x0, y0, rowspan, colspan):
+	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
+	ax.set_xlabel(&amp;quot;x label&amp;quot;)
+	ax.set_ylabel(&amp;quot;y label&amp;quot;)
+	ax.set_xscale(&amp;quot;linear&amp;quot;)
+	ax.set_yscale(&amp;quot;linear&amp;quot;)
+	ax.set_title(&amp;quot;Plot title&amp;quot;)
+	ax.title.set_y(1.02) # adjust title position
+	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
+	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
+	counts, bin_edges = sm_hist2(yData, delta = 10)
+	ax.set_ylim((0, 1.2*counts.max()))
+	
+	ax.plot(bin_edges, counts, 
+				color = &amp;quot;blue&amp;quot;,
+				alpha = 0.8,
+				linewidth = 2,
+				antialiased = True,
+				zorder = 3 
+				)
+	ax.fill(bin_edges, counts, 
+				alpha = 0.5,
+				hatch = &amp;quot;/&amp;quot;,
+				edgecolor = &amp;quot;blue&amp;quot;,
+				facecolor = &amp;quot;white&amp;quot;,
+				antialiased = True, 
+				label = &amp;quot;whatever you want&amp;quot;
+				)
+	ax.legend(loc=&#39;upper left&#39;, numpoints = 1, prop=font_manager.FontProperties(size=18)).draw_frame(False)
+
+	return ax
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+	tt = time.time()
+	xData = np.arange(100) 
+	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
+	
+	fig = plt.figure()
+	fig.suptitle(&amp;quot;Figure title&amp;quot;)
+	axs = []
+	nPlots = 2
+	
+	axs.append(singlePlotScatter(xData, yData, nRows=1, nCols=2, x0=0, y0=0, rowspan=1, colspan=1))
+	axs.append(singlePlotHist(yData, nRows=1, nCols=2, x0=0, y0=1, rowspan=1, colspan=1))
+	
+	fig.set_size_inches(20, 10)
+	plt.savefig(&amp;quot;./grid.png&amp;quot;, dpi=100)
+	plt.close(fig)
+	
+	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/fit/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://idlastro.gsfc.nasa.gov/ftp/pro/math/fitexy.pro&#34;&gt;IDL function&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:6832f5b027bba644337ff6835b5f54a6&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&#34;&gt;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/?p=409&#34;&gt;http://blog.technokrat.nl/?p=409&lt;/a&gt; (qui usano la versione R in python)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/pull/14&#34;&gt;https://github.com/scikit-learn/scikit-learn/pull/14&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&#34;&gt;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&lt;/a&gt; (gaussian processes è il nome ufficiale e generico degli algoritmi tipo quelli di krige)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&#34;&gt;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&#34;&gt;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.gaussianprocess.org/&#34;&gt;http://www.gaussianprocess.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pygpr.sourceforge.net/&#34;&gt;http://pygpr.sourceforge.net/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&#34;&gt;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&#34;&gt;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.enthought.com/services/training/geophysics&#34;&gt;https://www.enthought.com/services/training/geophysics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ambhas.com/books/python-in-hydrology/book.html&#34;&gt;http://ambhas.com/books/python-in-hydrology/book.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&#34;&gt;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&#34;&gt;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&#34;&gt;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&#34;&gt;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/stober/4964727&#34;&gt;https://gist.github.com/stober/4964727&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StarLab (GPU) old guide</title>
+      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <description>
+
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+
+&lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
+
+&lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- TEASER_END --&gt;
+
+&lt;h2 id=&#34;sapporo:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;Sapporo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in setup_sapporo.sh change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(installation of the binary drivers from the NVIDIA site) to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
+paths in&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
+#/usr/local/cuda-5.0
+CUDASDKPATH := /usr/lib/nvidia-cuda-toolkit/include/
+#/usr/local/cuda-5.0/samples/common/inc
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)
+# RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;puth &lt;code&gt;multithreading.h&lt;/code&gt; in the sapporo folder and then in &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;multithreading.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
+obtain something like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/bin/rm -rf *.o *.cu_o libsapporo.a
+/bin/rm -rf test_gravity_block test_gravity_N2ngb
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
+sapporo.cpp: In member function ‘int sapporo::open(int)’:
+sapporo.cpp:40:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+
+*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+ Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
+ar: creating libsapporo.a
+a - GPUWorker.o
+a - sapporo.o
+a - send_fetch_data.o
+a - sapporoG6lib.o
+a - host_evaluate_gravity.cu_o
+ranlib libsapporo.a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to test the compilation run&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_N2ngb 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_block 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the test fail if the number is less than ~800.&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;StarLab&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;change configure CUDA lines:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and change local/grape.sh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+
+# CUDAINC=&amp;quot;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;quot; 
+# CUDALIB=&amp;quot;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;quot; 
+
+LIBS1=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+
+#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1
+
+# Where to find GRAPE libraries:
+# GRAPE_LDFLAGS_=&#39;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&#39;
+GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;make clean&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;./configure --without-fortran&lt;/code&gt; (&lt;code&gt;--without-f77&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;now you can find the &lt;code&gt;kira&lt;/code&gt; binary in &lt;code&gt;/usr/local/bin&lt;/code&gt; or&lt;code&gt;/usr/bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./kira -t 500 -d 1 -D 1 -b 1 \
+             -n 10 -e 0.000 -B   \
+	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
+	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
+	 2&amp;gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Astrocomputing &amp; Astrostatistics</title>
+      <link>http://localhost:1313/pages/research/astrocomputing/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/astrocomputing/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro&#34;&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt;
+also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/pages/research/research/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/research/</guid>
+      <description>
+
+&lt;h2 id=&#34;phd-project:42f623b3bad309d5d6619d450af47d40&#34;&gt;PhD Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
+compact-object binaries&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am working on N-body simulations of young and dense star clusters in order to
+understand the impact of stellar evolution and dynamics on the formation and evolution
+of compact-object (neutron stars and black holes) binary systems.&lt;br /&gt;
+These objects are thought to be the best candidates to produce gravitational
+waves observable in the near future with the second-generation ground-based
+gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
+
+&lt;p&gt;More info &lt;a href=&#34;phd.html&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;scientific-interests:42f623b3bad309d5d6619d450af47d40&#34;&gt;Scientific interests&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
+&lt;li&gt;direct-summation N-body simulations in star clusters&lt;/li&gt;
+&lt;li&gt;gravitational waves in the frequency range of Advanced VIRGO and LIGO&lt;/li&gt;
+&lt;li&gt;stellar and binary evolution&lt;/li&gt;
+&lt;li&gt;big data analysis and visualization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;master-thesis:42f623b3bad309d5d6619d450af47d40&#34;&gt;Master Thesis&lt;/h2&gt;
+
+&lt;h2 id=&#34;bachelor-thesis:42f623b3bad309d5d6619d450af47d40&#34;&gt;Bachelor Thesis&lt;/h2&gt;
+
+&lt;h2 id=&#34;exam-works:42f623b3bad309d5d6619d450af47d40&#34;&gt;Exam works&lt;/h2&gt;
+
+&lt;h2 id=&#34;useful-links:42f623b3bad309d5d6619d450af47d40&#34;&gt;Useful links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,
+&lt;a href=&#34;http://labs.adsabs.harvard.edu/wiki/doku.php&#34;&gt;Lab version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv.org&lt;/a&gt;, &lt;a href=&#34;http://arxiv.org/list/astro-ph/new&#34;&gt;new astro* papers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.unipd.it/&#34;&gt;University of Padua&lt;/a&gt;,
+&lt;a href=&#34;http://www.unipd.it/scuole/scienze&#34;&gt;Science School&lt;/a&gt;,
+&lt;a href=&#34;http://www.dfa.unipd.it/&#34;&gt;Department of Physics and Astronomy&lt;/a&gt;,
+&lt;a href=&#34;http://www.dfa.unipd.it/index.php?id=112&#34;&gt;Building&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StarLab-GPU installation</title>
+      <link>http://localhost:1313/posts/starlab-gpu-installation/</link>
+      <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/starlab-gpu-installation/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../stories/research/utils/starlab-gpu-old-guide.html&#34;&gt;Click here for the old guide!!!&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ignore the &amp;ldquo;&lt;code&gt;sapporo&lt;/code&gt;&amp;rdquo;  and &amp;ldquo;&lt;code&gt;CUDA&lt;/code&gt;&amp;rdquo; instructions&lt;/li&gt;
+&lt;li&gt;rename &lt;code&gt;starlab/local/grape.sh&lt;/code&gt; to &lt;code&gt;starlab/local/_grape.sh&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --with-grape=no --without-f77&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;in case you can&amp;rsquo;t &lt;code&gt;make&lt;/code&gt; succesfully may be you need to copy the folder
+&lt;code&gt;starlab/src/gfx&lt;/code&gt; and do not make clean&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Well, probably you landed here searching information about StarLab, how to
+install it, how to run it, how prevent it to harm your cat.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DISCLAIMER 1:&lt;/strong&gt; I won&amp;rsquo;t promise anything about your cat but I will try to help you having a
+reasonable well running installation of StarLab.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DISCLAIMER 2:&lt;/strong&gt; I&amp;rsquo;m not a programmer, I&amp;rsquo;m not a system administrator and I don&amp;rsquo;t even
+know how to program in CUDA (yet). Maybe something here is wrong ore outdated.
+I&amp;rsquo;m only giving you some of the experienced I collected in n+1 times I installed StarLab.
+Nothin less, nothing more.&lt;br /&gt;
+Also note that most of the knowledge I put here come
+from my &lt;a href=&#34;http://web.pd.astro.it/mapelli/&#34;&gt;supervisor&lt;/a&gt;.&lt;br /&gt;
+I also thanks Mario Spera for the usefull advices.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system
+with more than ~6000 binaries.&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;StarLab&lt;/a&gt; is &amp;ldquo;A Software Environment for Collisional Stellar Dynamics&amp;rdquo;.
+&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;Here&lt;/a&gt; you can find useful information about it that
+is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab-gpu:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab-GPU&lt;/h2&gt;
+
+&lt;p&gt;Welcome back!!&lt;br /&gt;
+Next step: StarLab was designed to run on &lt;a href=&#34;http://en.wikipedia.org/wiki/Gravity_Pipe&#34;&gt;GRAPE&lt;/a&gt;
+but thanks to the &lt;a href=&#34;http://castle.strw.leidenuniv.nl/software/sapporo.html&#34;&gt;Sapporo&lt;/a&gt;
+library you can run it on GPUs.&lt;/p&gt;
+
+&lt;p&gt;Now we will try to install a GPU-ready version of StarLab. To be honest, we run
+a &lt;strong&gt;private&lt;/strong&gt; version of StarLab for GPU with some customizations (if you are interested,
+see &lt;a href=&#34;http://arxiv.org/abs/1211.6441&#34;&gt;Mapelli et al. 2013&lt;/a&gt;; &lt;a href=&#34;http://arxiv.org/abs/1301.4227&#34;&gt;Mapelli &amp;amp; Bressan 2013&lt;/a&gt;).&lt;br /&gt;
+Unfortunately you can&amp;rsquo;t download it now, but I hope the differences in the installation
+process are negligible. Ask us if you are interested in our version of StarLab.&lt;br /&gt;
+Because I&amp;rsquo;m not sure about what you will find in the public version os Sapporo and StarLab,
+I will show my version of the relevant files you need to install everything.
+The installation is done on a Ubuntu 14.04 workstation so change them accordingly to
+your OS. I will also provide some examples on what you need to install StarLab on
+the clusters I tested.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start!!&lt;/p&gt;
+
+&lt;h4 id=&#34;download:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Download&lt;/h4&gt;
+
+&lt;p&gt;Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
+You can try to check them using&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt; (cuda compiler)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudart&lt;/code&gt; (CUDA runtime)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | boost lib&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | boost include&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it&amp;rsquo;s a mess,
+but it&amp;rsquo;s not my fault!:P&lt;/p&gt;
+
+&lt;p&gt;Download&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/starlab.tar.gz&#34;&gt;StarLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://castle.strw.leidenuniv.nl/documents/Sapporo/sapporo161.tgz&#34;&gt;Sapporo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and decompress the archives with &lt;code&gt;tar -xvf archiveName&lt;/code&gt;.&lt;br /&gt;
+Try to have the following folder tree:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$SLPATH/slpack&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_CUDA-5.0_Samples&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_GPU_Computing_SDK&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$SLPATH/slpack/sapporo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$SLPATH/slpack/starlab&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The NVIDIA folder is optional, but I would suggest to have with you alle the NVIDIA
+file you can find, soon or later you will need them. CUDA is continuosly changing,
+SDK is not toolkit, dependencies are different and broken between different versions.
+We will try to survive and to have the most standard installation we can.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$SLPATH&lt;/code&gt; should be the path where you put your StarLab installation.&lt;br /&gt;
+I&amp;rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.&lt;/p&gt;
+
+&lt;h3 id=&#34;sapporo:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Sapporo&lt;/h3&gt;
+
+&lt;p&gt;Enter in the sapporo folder, and to be sure to start a clean installation run
+&lt;code&gt;make clean&lt;/code&gt;.
+Here you need to find:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;compile.sh&lt;/code&gt; is the script StarLab will run later to decide if you are worthy of
+its presence in your computer. If &lt;code&gt;compile.sh&lt;/code&gt; fail, StarLab won&amp;rsquo;t install.&lt;/p&gt;
+
+&lt;p&gt;You also need to find somewhere (= in an old CUDA SKD?)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cutil.h&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;multithreading.h&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and to copy them in this folder.&lt;br /&gt;
+If you are not able to find them, ask me, I have copies of those files.&lt;/p&gt;
+
+&lt;p&gt;Open &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; and change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;lt;cutil.h&amp;gt;
+#include &amp;lt;multithreading.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;quot;cutil.h&amp;quot;
+#include &amp;quot;multithreading.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is to make Sapporo read the local version of &lt;code&gt;cutil.h&lt;/code&gt; and &lt;code&gt;multithreading.h&lt;/code&gt;
+in case your CUDA version does not support them anymore.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s time to fix a bug (thanks Mario):
+in &lt;code&gt;sapporo.cpp&lt;/code&gt; change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
+		nCUDAdevices = how_many;
+    } else {
+		fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
+		fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
+		//Set original_how_many to a positive number so we get assigned different devices
+		//incase the devices are not in compute exclusive mode.
+		original_how_many = 1;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
+		nCUDAdevices = how_many;
+		fclose(fd); // thanks Mario Spera, without this SL will crash after a while if using sapporo.config
+  } else {
+    fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
+    fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
+    //Set original_how_many to a positive number so we get assigned different devices
+    //incase the devices are not in compute exclusive mode.
+    original_how_many = 1;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so the &lt;code&gt;sapporo.config&lt;/code&gt; file can be close and won&amp;rsquo;t crash your run.&lt;/p&gt;
+
+&lt;p&gt;Now open &lt;code&gt;Makefile&lt;/code&gt; and fit&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Makefile&#34;&gt;CXX  := g++
+CC   := gcc
+NVCC := /usr/bin/nvcc
+CUDAPATH    := /usr/include/
+CUDAINCLUDE := -I$(CUDAPATH) 
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to your case.&lt;br /&gt;
+Open &lt;code&gt;compile.sh&lt;/code&gt; and be sure to have something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/sh
+
+flags=-DNGB
+
+CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
+CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
+CUDAFLAG=&amp;quot;-lcudart&amp;quot;
+BOOSTINC=&amp;quot;-I/usr/include/boost&amp;quot;
+BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
+BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
+
+
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Try to compile with &lt;code&gt;make&lt;/code&gt;. If it works, try to tun &lt;code&gt;bash compile.sh&lt;/code&gt;. If this works too,
+then test sapporo with&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Be aware that a number (of particles) too small would crash the tests.&lt;/p&gt;
+
+&lt;p&gt;Assuming &lt;code&gt;sapporo&lt;/code&gt; is ready, let&amp;rsquo;s move to starlab.&lt;/p&gt;
+
+&lt;h3 id=&#34;starlab-1:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab&lt;/h3&gt;
+
+&lt;p&gt;In StarLab the relevant files you have to worry about are&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sbin/sqrt.c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;local/grape.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Rename &lt;code&gt;sbin/sqrt.c&lt;/code&gt; to &lt;code&gt;sbin/sqrt.C&lt;/code&gt; otherwise
+you could have linker problems again the C math library.&lt;br /&gt;
+Now open &lt;code&gt;configure&lt;/code&gt; and search for CUDA. Probably you won&amp;rsquo;t find anything.&lt;br /&gt;
+Search for &lt;code&gt;Check all named libraries for g6_open&lt;/code&gt;, you should find something like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
+
+    grape6=no
+
+    for gl in $GRAPE_LIBS_; do
+        as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
+echo &amp;quot;$as_me:$LINENO: checking for g6_open_ in -l${gl/-l/}&amp;quot; &amp;gt;&amp;amp;5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;modify it to include boost and CUDA like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for gl in $GRAPE_LIBS_; do
+	CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
+	CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
+	CUDAFLAG=&amp;quot;-lcudart&amp;quot;
+	BOOSTINC=&amp;quot;-I/usr/include/boost/&amp;quot;
+	BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
+	BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
+	
+	LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
+		
+	as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Be sure to always use double quotes and to terminate the paths to folders with a slash (&lt;code&gt;/&lt;/code&gt;),
+some machines are quite choosy.&lt;/p&gt;
+
+&lt;p&gt;Last edit is on &lt;code&gt;local/grape.sh&lt;/code&gt; to let StarLab know where your sapporo installation is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$SLPATH/slpack/sapporo&#39;
+GRAPE_LIBS_=&#39;-lsapporo&#39;
+# For now, define this as `yes&#39; for the AMD64 boxes only, `no&#39; otherwise.
+OLD_READ_NEIGHBOUR_LIST=no
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Before compiling, if you want, you can check also &lt;code&gt;sapporo/sapporo.config&lt;/code&gt;.&lt;br /&gt;
+Inside you will find something like that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;524288
+-1
+0
+1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 524288 should be the maximum number of particles you can handle, -1 the number
+of CUDA devices to use (-1 means all? maybe&amp;hellip;), 0 and 1 are the GPU number you want to use.&lt;br /&gt;
+Recent CUDA seems to be smart enought to understand where to run without having to specify
+(but look after your cat!!!).&lt;/p&gt;
+
+&lt;p&gt;Alright!! If you managed to reach this point, very good. Last three commands. In the
+&lt;code&gt;starlab&lt;/code&gt; folder run&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;configure --with-f77=no&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;go out for a walk&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When running configure, avoid the &lt;code&gt;--without-option&lt;/code&gt; version of an option, prefer
+&lt;code&gt;--with-option=no&lt;/code&gt;, it&amp;rsquo;s safer.&lt;/p&gt;
+
+&lt;p&gt;If you recompile StarLab AND/OR Sapporo, type &lt;code&gt;make clean&lt;/code&gt; two times. delete the files in
+&lt;code&gt;starlab/usr/bin&lt;/code&gt;, turn around 3 times, touch your nose and type &lt;code&gt;make&lt;/code&gt; two times. Then
+&lt;code&gt;make install&lt;/code&gt; again.&lt;br /&gt;
+No, &lt;code&gt;make clean&lt;/code&gt; and &lt;code&gt;make&lt;/code&gt; are not enought to update your object
+files or binaries.&lt;/p&gt;
+
+&lt;p&gt;Depending on your environment, if you run into problems, be sure that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;you loaded the correct modules (if you are in a cluster for examples&lt;/li&gt;
+&lt;li&gt;you are into the right node (some machine let you compile your code on a
+node that is not the login node)&lt;/li&gt;
+&lt;li&gt;if you encounter strange messages regarding missing rules for missing files,
+for example &lt;code&gt;libxhdyn.la&lt;/code&gt; or something regarding &lt;code&gt;gfx&lt;/code&gt;-something, may be tou need to
+tune your config file to exclude, for example, the X/Qt/&amp;hellip; libraries, in case
+try to run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt;; in case try to have a look at
+&lt;code&gt;configure --help&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;run-starlab:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Run StarLab&lt;/h3&gt;
+
+&lt;p&gt;Before run a simulation you need to create the initial conditions.&lt;/p&gt;
+
+&lt;h4 id=&#34;initial-conditions:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Initial Conditions&lt;/h4&gt;
+
+&lt;p&gt;StarLab is provided with few tools to help (really?) you in this task. A common
+way to create ICs for &lt;a href=&#34;http://arxiv.org/abs/1404.7147&#34;&gt;our simulations&lt;/a&gt; is something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;ehm, I don&#39;t know if I can tell you, sorry man...:(&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;launch:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Launch&lt;/h4&gt;
+
+&lt;p&gt;StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
+you want to know about your simulations to STDERR, so, &lt;code&gt;&amp;lt;ehm.... see ICs&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;tidal-fields:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Tidal fields&lt;/h4&gt;
+
+&lt;p&gt;Be patience&amp;hellip;&lt;/p&gt;
+
+&lt;h3 id=&#34;known-issues-and-troubleshooting:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
+
+&lt;p&gt;If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.&lt;br /&gt;
+Some of the things that can happen are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;you can find binaries with eccentricity greater than one (StarLab does
+not update some binaries after they are disrupted? flybyes seen as binaries? don&amp;rsquo;t know)&lt;/li&gt;
+&lt;li&gt;StarLab can crash if you try to simulate a number of centers of mass greater than
+5*10^4 together with a fraction of primordial binaries &amp;gt;=0.1&lt;/li&gt;
+&lt;li&gt;boost problems? check the correct flags for your version (choose among some combination of
+&lt;code&gt;-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;check you put all the &lt;code&gt;_&lt;/code&gt;, &amp;ldquo;-I&amp;rdquo;, &amp;ldquo;-l&amp;rdquo;, &amp;ldquo;-L&amp;rdquo; in the right places&lt;/li&gt;
+&lt;li&gt;check all the libraries paths&lt;/li&gt;
+&lt;li&gt;check for double quotes (&lt;code&gt;&amp;quot;&lt;/code&gt;) instead of single ones (&lt;code&gt;&#39;&lt;/code&gt;) in the paths&lt;/li&gt;
+&lt;li&gt;check the modules, environment variables&lt;/li&gt;
+&lt;li&gt;check you are on the right node&lt;/li&gt;
+&lt;li&gt;check your environment against the configure options you passed
+(have a look at &lt;code&gt;configure --help&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;if you need to modify StarLab and you want to add your own flags,
+you need to comment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;  getia(b-&amp;gt;get_log_story(), &amp;quot;step_slow&amp;quot;,
+        b-&amp;gt;get_kira_counters()-&amp;gt;step_slow, nss);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;function call in &lt;code&gt;kira_counters.C&lt;/code&gt; otherwise you won&amp;rsquo;t be able to compile StarLab.&lt;/p&gt;
+
+&lt;h3 id=&#34;clusters:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Clusters&lt;/h3&gt;
+
+&lt;h4 id=&#34;eurora:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;EURORA&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;setup_sapporo.sh&lt;/code&gt;
+(if you want to compile sapporo using queues, or, load modules by hand if you want to
+compile interactively)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
+module load profile/advanced
+module load gnu/4.6.3
+module load boost/1.53.0--gnu--4.6.3
+module load cuda
+
+LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
+export LD_LIBRARY_PATH
+cd $HOME/slPack/sapporo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include/ -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc/ -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
+CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lcudart&amp;quot;
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;NVCC := /cineca/prod/compilers/cuda/5.0.35/none/bin/nvcc
+CUDAPATH    := /cineca/prod/compilers/cuda/5.0.35/none
+CUDASDKPATH := /cineca/prod/compilers/cuda/5.0.35/none/samples
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)/common/inc 
+BOOSTPATH := /cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
+CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -lcudart&amp;quot; 
+LIBS=&amp;quot;$CUDAINC $CUDALIB -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lboost_thread-mt -DNGB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;grape.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$HOME/slPack/sapporo/&#39;
+GRAPE_LIBS_=&#39;-lsapporo&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in &lt;code&gt;setup_starlab.sh.sh&lt;/code&gt;
+(if you want to compile sapporo using queues, or, load modules by hand if you want to
+compile interactively)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
+module load profile/advanced
+module load gnu/4.6.3
+module load boost/1.53.0--gnu--4.6.3
+module load cuda
+LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
+export LD_LIBRARY_PATH
+cd $HOME/slPack/starlab
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
+
+&lt;p&gt;Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
+system at the Swinburne University. Here how to do that.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Log into the system and find yourself in the login node.&lt;/li&gt;
+&lt;li&gt;Clone the private repo / download the folders and unpack them like described before.&lt;/li&gt;
+&lt;li&gt;Then you need to log into one of the compile/test nodes from the head node: &lt;code&gt;ssh $USER@gstar001&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;load the right modules:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module load gcc/4.6.4
+module load boost/x86_64/gnu/1.51.0-gcc4.6
+module load cuda/4.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You need that version of &lt;code&gt;gcc&lt;/code&gt; and &lt;code&gt;boost&lt;/code&gt; because of issues with boost threads in the default versions.
+Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
+&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
+and
+&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure you have no &lt;code&gt;&#39;&lt;/code&gt; around your path, maybe, if you need, only &lt;code&gt;&amp;quot;&lt;/code&gt; otherwise &lt;code&gt;sapporo&lt;/code&gt; won&amp;rsquo;t compile.
+Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
+&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
+and
+&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you have our private version you can
+* &lt;code&gt;cp ../scripts/g2/Makefile ./&lt;/code&gt;
+* &lt;code&gt;cp ../scripts/g2/compile.sh ./&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;otherwise try to modify them to have:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CXX  := g++
+CC   := gcc
+NVCC := /usr/local/cuda-4.0/bin/nvcc
+CUDAINC := -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc 
+BOOSTINC := -I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6
+NVCCFLAGS := -O0 -g -D_DEBUG  -maxrregcount=64 $(CUDAINC) $(BOOSTINC) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in the &lt;code&gt;Makefile&lt;/code&gt; and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;flags=-DNGB
+
+CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc&amp;quot;
+CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
+CUDAFLAG=&amp;quot;-lcudart&amp;quot;
+BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
+BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
+BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
+
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in &lt;code&gt;compile.sh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then run&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make clean&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bash compile.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No go the the starlab folder (&lt;code&gt;cd ../starlab&lt;/code&gt;) and fix the &lt;code&gt;configure&lt;/code&gt; file accordingly to this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
+
+    grape6=no
+
+    for gl in $GRAPE_LIBS_; do
+    ##############################
+    ######      g2
+    ##############################
+    CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/&amp;quot;
+    CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
+    CUDAFLAG=&amp;quot;-lcudart&amp;quot;
+    BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/&amp;quot;
+    BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
+    BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
+    
+    LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
+        
+        
+    as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the &lt;code&gt;local/grape.sh&lt;/code&gt; file to point to your sapporo installation.&lt;/p&gt;
+
+&lt;p&gt;If you have our version of StarLab, just copy the right files:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cp ../scripts/g2/configure ./&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cp ../scripts/g2/grape.sh ./local/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Make sure again &lt;code&gt;grape.sh&lt;/code&gt; points to the right folder&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./configure --without-f77 --with-qt=no&lt;/code&gt; (if you want qt, load the modules and check the versions)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make clean &amp;amp;&amp;amp; make clean &amp;amp;&amp;amp; make clean&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make &amp;amp;&amp;amp; make&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rm ./usr/bin/*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** Troubleshooting **&lt;/p&gt;
+
+&lt;p&gt;If you get this error (or some other error)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;make[2]: Entering directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
+/bin/sh ../../../libtool --preserve-dup-deps --mode=link gcc  -g -O2  -L/usr/lib64/qt-3.3/lib -o libgfx-2.la   win.lo draw.lo draw1.lo color.lo dialog.lo mcd.lo interface.lo termio.lo utility.lo simple.lo  -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc -L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib -lcudart -L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6 -lboost_system  -lboost_thread-mt -lpthread -DNGB
+ar cru .libs/libgfx-2.a  win.o draw.o draw1.o color.o dialog.o mcd.o interface.o termio.o utility.o simple.o
+ar: interface.o: No such file or directory
+make[2]: *** [libgfx-2.la] Error 1
+make[2]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
+make[1]: *** [clibs23] Error 2
+make[1]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx&#39;
+make: *** [libs] Error 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;when compiling may be you can try to &lt;code&gt;make&lt;/code&gt; and &lt;code&gt;make clean&lt;/code&gt; some times.&lt;br /&gt;
+Also remember that make clean is not working properly, so you need to &lt;code&gt;make clean&lt;/code&gt; more than once or delete the binaries by yourself.&lt;/p&gt;
+
+&lt;p&gt;If you have errors regarding no rules for &lt;code&gt;libxhdyn.la&lt;/code&gt;, probably you forgot to exclude
+some options from the configure, so run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt; or try &lt;code&gt;configure --help&lt;/code&gt;
+to check for other options.&lt;/p&gt;
+
+&lt;h3 id=&#34;additional-material:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Additional material&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Code units (coming soon&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;StarLab internals (really???)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/brunetto/slpack&#34;&gt;Our repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/brunetto/sltools&#34;&gt;Tools to easily manage SL runs (private too, sorry, ask me if you are interested)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools&#34;&gt;StarLab tools wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AGN for Dummies</title>
+      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
+
+&lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../files/very_unified_model_bck.png&#34;&gt;&lt;img alt=&#34;AGN for Dummies&#34; src=&#34;../../files/very_unified_model_bck.png&#34; title=&#34;AGN for Dummies&#34; width=&#34;800&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Latex together with matplotlib!</title>
+      <link>http://localhost:1313/posts/latex-together-with-matplotlib/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/latex-together-with-matplotlib/</guid>
+      <description>&lt;p&gt;Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.&lt;br /&gt;
+Everything you need is to add to your script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from matplotlib import rc
+rc(&#39;font&#39;,**{&#39;family&#39;:&#39;sans-serif&#39;,&#39;sans-serif&#39;:[&#39;Helvetica&#39;]})
+## for Palatino and other serif fonts use:
+#rc(&#39;font&#39;,**{&#39;family&#39;:&#39;serif&#39;,&#39;serif&#39;:[&#39;Palatino&#39;]))
+rc(&#39;text&#39;, usetex=True)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and write you text label like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;label = r&#39;theoretical $f(nu)$&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Essential guide to binning</title>
+      <link>http://localhost:1313/posts/essential-guide-to-binning/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/essential-guide-to-binning/</guid>
+      <description>
+
+&lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
+It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;linear-vs-logarithmic:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+
+&lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
+Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
+
+&lt;h2 id=&#34;from-one-to-the-other:22c59b26f192e65f682baafbd76fbd27&#34;&gt;From one to the other&lt;/h2&gt;
+
+&lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
+It can be easily computed as&lt;br /&gt;
+&lt;code&gt;$\delta_{bin} = (sup-inf)/n_{bin}$&lt;/code&gt;&lt;br /&gt;
+From this it&amp;rsquo;s also straightforward to obtain the number of bins from the spacing:&lt;br /&gt;
+&lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
+Note that we choose the number of bins to be integer.&lt;/p&gt;
+
+&lt;h2 id=&#34;code:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+import sys
+import numpy as np
+
+def binning(inf, sup, n_bin=None, delta_bin=None):
+	&amp;quot;&amp;quot;&amp;quot;Given the inf and sup limits of an array and the number of equally spaced
+	bins, it returns the bin centers, the bin limits and the bin spacing.
+	It&#39;s possible to have a linear or a logarithmic spacing passing linear or
+	logarithmic inf and sup, and searchsorting on a linear or logarithmic array, 
+	or you can use a linear array and logarithmically spaced bins as
+	new_bins = pow(10, logbins)
+	&amp;quot;&amp;quot;&amp;quot;
+	if (n_bin == 0) or (n_bin == 0):
+		print &amp;quot;Error, n_bin and/or delta_bin are/is zero, exit!&amp;quot;
+		sys.exit()    
+	elif (n_bin == None) and (delta_bin != None):
+		n_bin = (sup-inf)/delta_bin
+		elif (n_bin == None) and (delta_bin == None):
+		print &amp;quot;Error, n_bin and delta_bin are both None, exit!&amp;quot;
+		sys.exit()
+	temp, half_step = np.linspace(inf, sup, 2*n_bin+1, endpoint = True, retstep = True)
+	xrange_limit = int(np.floor(temp.size / 2))
+	bin_pos = np.zeros(xrange_limit)
+	bin_limits = np.zeros(xrange_limit+1)
+	for i in xrange(xrange_limit):
+		bin_pos[i] = temp[2*i+1]
+		bin_limits[i] = temp[2*i]
+		bin_limits[-1] = temp[-1]
+	del temp
+	return [bin_pos, bin_limits, 2*half_step]
+
+def base_binning(inf, sup, n_bin=None, delta_bin=None):
+	&amp;quot;&amp;quot;&amp;quot;More C-like...
+	&amp;quot;&amp;quot;&amp;quot;
+	if (n_bin == 0) or (n_bin == 0):
+		print &amp;quot;Error, n_bin and/or delta_bin are/is zero, exit!&amp;quot;
+		sys.exit()    
+	elif (n_bin == None) and (delta_bin != None):
+		n_bin = int((sup-inf)/(1.*delta_bin))
+	elif (n_bin != None) and (delta_bin == None):
+		delta_bin = (sup-inf)/(1.*n_bin)
+	elif (n_bin == None) and (delta_bin == None):
+		print &amp;quot;Error, n_bin and delta_bin are both None, exit!&amp;quot;
+		sys.exit()
+	bin_pos = np.zeros(n_bin)
+	bin_limits = np.zeros(n_bin+1)
+	for i in range(n_bin):
+		if i%2 == 0:
+			bin_limits[i] = inf + i * delta_bin
+			bin_limits[i+1] = bin_limits[i] + delta_bin
+	bin_pos[i] = bin_limits[i] + delta_bin/2.
+	bin_limits[n_bin] = inf + n_bin * delta_bin
+	return [bin_pos, bin_limits, delta_bin]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HDF5 in Python: PyTables</title>
+      <link>http://localhost:1313/posts/hdf5-in-python-pytables/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/hdf5-in-python-pytables/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.hdfgroup.org/HDF5/&#34; target=&#34;_blank&#34; title=&#34;HDF5 Group homepage&#34;&gt;HDF5&lt;/a&gt; is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.&lt;br /&gt;
+Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.&lt;br /&gt;
+It&amp;rsquo;s also possible to navigate into a file graphically with &lt;a href=&#34;http://vitables.org/&#34; target=&#34;_blank&#34; title=&#34;ViTables homepage&#34;&gt;ViTables&lt;/a&gt;.&lt;br /&gt;
+Here I would like to present some of the features I use more often.&lt;br /&gt;
+&amp;lt;!&amp;ndash;TEASER_END&amp;ndash;&amp;gt;&lt;br /&gt;
+Open, flush and close a file&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tables as tb
+
+h5 = tb.openfile(&amp;quot;filename.h5&amp;quot;, &#39;r&#39;)
+...
+h5.flush()
+h5.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;&#39;r&#39;&lt;/code&gt; means &amp;ldquo;open the file in read-only mode&amp;rdquo;. It&amp;rsquo;s also possible to open it as &lt;code&gt;&#39;w&#39;&lt;/code&gt; (create a new file: it overwrites the file if it still exists) and &lt;code&gt;&#39;a&#39;&lt;/code&gt; (append: create if it does not exist, if it exists, read and modify it).&lt;/p&gt;
+
+&lt;p&gt;Create a group to contain some data&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;group = h5.createGroup(h5.root, &amp;quot;group&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;h5.root&lt;/code&gt; is the location of the new object created (where we want to create the group) and can also be passe as string (&amp;ldquo;/&amp;rdquo;) and &lt;code&gt;&amp;quot;group&amp;quot;&lt;/code&gt; is the string with the name.&lt;/p&gt;
+
+&lt;p&gt;Store an array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = np.array([....])
+array = h5.createArray(h5.root.group, &#39;name&#39;, array_to_store, &#39;title&#39;)
+array = h5.createArray(&amp;quot;/group&amp;quot;, &#39;name&#39;, array_to_store, &#39;title&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a table (from &lt;a href=&#34;create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python.html&#34;&gt;Create, recreate and remove duplicates in array manipulation, obviously in Python!:)&lt;/a&gt; or &lt;a href=&#34;from-csv-to-hdf5-in-python.html&#34;&gt;From .csv to HDF5 in Python&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;f = open(&amp;quot;filename.csv&amp;quot;, &#39;r&#39;)
+line = f.readline()
+values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+values.shape = 1
+
+# or in an equivalent way, if the file dimensions permit to lad the entire file:
+# values = np.genfromtxt(&amp;quot;filename.csv&amp;quot;, dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, # &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+
+h5 = tb.openFile(&#39;filename.h5&#39;, &#39;w&#39;)
+table = h5.createTable(h5.root, description=values, name=&#39;table_name&#39;, title=&amp;quot;table_description&amp;quot;, expectedrows=12158536)
+table.flush()
+
+for line in f:
+	values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+	values.shape = 1
+	table.append(values)
+	
+table.flush()
+h5.flush()
+h5.close()
+f.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s also possible to walk all the nodes under a group:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for i in h5.walkNodes(h5.root.group):
+	print i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and to delete a node/array/table:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;h5.removeNode(h5.root.group, &#39;name&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All the nodes are available through their path:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;h5.getNode(&amp;quot;/group&amp;quot;, &amp;quot;name&amp;quot;)
+h5.root.group.name
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to read a table or an array, you can use the function &lt;code&gt;read()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;h5.getNode(&amp;quot;/group&amp;quot;, &amp;quot;name&amp;quot;).read()
+h5.root.group.name.read()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning not to hate C: things worth nothing</title>
+      <link>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <description>
+
+&lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
+
+&lt;h2 id=&#34;header-files:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Header files&lt;/h2&gt;
+
+&lt;p&gt;They are one of the first annoying things I see in C/C++ languages. Two files for each &amp;ldquo;module&amp;rdquo;, two lines to be modified every times, &amp;hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&amp;rsquo;s code, you can share or download compiled code+header files and not all the sources.&lt;/p&gt;
+
+&lt;h2 id=&#34;compile:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Compile&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to compile the sources and get the executable is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;gcc pippo.c -o pippo.x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;pippo.c&lt;/code&gt; is the source(s) (you can have &lt;code&gt;pippo1.c&lt;/code&gt;, &lt;code&gt;pippo2.c&lt;/code&gt; etc, but only one &lt;code&gt;main&lt;/code&gt; function) file.&lt;br /&gt;
+A better way is to include some flags&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;gcc -std=gnu99 -Wall -pedantic -Werror -O0 -g -o pippo.x pippo.c
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-std=gnu99&lt;/code&gt; forces the compiler to the C99 standard (it includes some new features)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Wall&lt;/code&gt; to print all the compiler warnings&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-pedantic&lt;/code&gt; &amp;ldquo;Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use forbidden extensions, and some other programs that do not follow ISO C and ISO C++&amp;rdquo; (from the &lt;code&gt;gcc&lt;/code&gt; manual)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Werror&lt;/code&gt; transform the warnings into errors&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-O0&lt;/code&gt; no optimization&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-g&lt;/code&gt; produces debugging informations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-o&lt;/code&gt; to specify the output&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;macros-preprocessor:572a5990ff18de3fef742f6ac648edcf&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
+
+&lt;p&gt;The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &amp;ldquo;constant&amp;rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#define PI 3.14
+float a = PI;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but you can also check for already defined quantities, compile pieces of code (&amp;ldquo;conditional compilation&amp;rdquo;) or implement a &amp;ldquo;header-guard&amp;rdquo; to avoid multiple imports of the same header&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#define CONDITION
+#ifdef CONDITION
+....
+#else
+....
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#ifndef HEADER_H
+#define HEADER_H
+.....
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Compiling with the &lt;code&gt;-E&lt;/code&gt; flag you can view the result of the preprocessor action.&lt;/p&gt;
+
+&lt;h2 id=&#34;numbers:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Numbers&lt;/h2&gt;
+
+&lt;p&gt;Number variables are similar to those in other programming languages, but there&amp;rsquo;s some peculiarities.&lt;br /&gt;
+Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.&lt;/p&gt;
+
+&lt;h2 id=&#34;cast:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Cast&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible to convert one type to some other type. For example,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;float pippo;
+pippo = (float) k*1024L;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;bool:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Bool&lt;/h2&gt;
+
+&lt;p&gt;There aren&amp;rsquo;t boolean variables, but 0 stands for &lt;code&gt;False&lt;/code&gt; and any other non-zero value means &lt;code&gt;True&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;side-effect-and-short-circuit:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
+
+&lt;p&gt;Something like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;i = k + 10 - ++k;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;has indefinite result because it&amp;rsquo;s not predictable the order of evaluation of operand/expression &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;++k&lt;/code&gt;, and those expressions have &lt;em&gt;side effects&lt;/em&gt; on the other expression involved in the result.&lt;br /&gt;
+Logical operators &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; and &lt;code&gt;||&lt;/code&gt; instead are evaluated strictly from left to right. This is c&lt;em&gt;alled short-circuit evaluation&lt;/em&gt; and the operators are synchronization points, just like &amp;ldquo;;&amp;rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.&lt;/p&gt;
+
+&lt;h2 id=&#34;ternary-operator:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Ternary operator&lt;/h2&gt;
+
+&lt;p&gt;The ternary operator accept three arguments and has the form of&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;result = a &amp;amp;gt; b ? x : y;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This means &lt;code&gt;[expression_to_evaluate] ? [if true] : [if false]&lt;/code&gt;. Obviously you can nest as many expression and operator as you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Variables qualifiers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In C there&amp;rsquo;are some qualifier that can be added to the type specification. Three of them are &lt;code&gt;const&lt;/code&gt;, &lt;code&gt;extern&lt;/code&gt; and &lt;code&gt;static&lt;/code&gt;.&lt;br /&gt;
+The first can be added in the function declaration to tell the compiler that the values has not to be changed by the function, for example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int pippo(const int pluto, const int* paperino);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;means that the integer &lt;code&gt;pluto&lt;/code&gt; and the pointer to integer &lt;code&gt;paperino&lt;/code&gt; can not be changed by the function &lt;code&gt;pippo&lt;/code&gt;.&lt;br /&gt;
+&amp;ldquo;extern&amp;rdquo; specifies that the variable is a global variable, coming from outside the function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int pippo;
+int main(...){
+	extern int pippo;
+...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;ldquo;static&amp;rdquo; has different meanings depending on where you put it.&lt;br /&gt;
+Before a global variable means that the variable is private of the file, and other files can not use it. Inside a function means that the variable survive after the end of the function (when the stack frame - the stack memory associated to the function - is deleted) and is available to the succeeding calls to the same function. Static is also used before a function to specify that the function is private of the file and can not be called outside:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;static int i;
+static void foo(void){
+	extern int i;
+	static int j
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt; is global inside the file but can not be called outside&lt;/li&gt;
+&lt;li&gt;the function &lt;code&gt;foo&lt;/code&gt; is private of the file and can not be called outside&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;j&lt;/code&gt; survive after the termination of the function and maintains its value until the next call.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pointers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pointers are special integer values that contains addresses of other values, for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int i;
+int* p;
+p = &amp;amp;amp;i;
+*p = 13;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;first we define the integer &lt;code&gt;i&lt;/code&gt;, then a pointer &lt;code&gt;p&lt;/code&gt; to a integer value (here &lt;code&gt;*&lt;/code&gt; means &amp;ldquo;the argument on the right is a pointer to a value of type defined by the argument on the left&amp;rdquo;), then we put the address of &lt;code&gt;i&lt;/code&gt; in &lt;code&gt;p&lt;/code&gt; (&lt;code&gt;&amp;amp;amp;&lt;/code&gt; means &amp;ldquo;give me the address of the right argument&amp;rdquo;) and at the end we modify the value of &lt;code&gt;i&lt;/code&gt; dereferencing &lt;code&gt;p&lt;/code&gt;, that is modifying the memory cell pointed by the address contained in p (here &lt;code&gt;*&lt;/code&gt; means &amp;ldquo;follow the address contained in the argument on the right&amp;rdquo;).&lt;br /&gt;
+It&amp;rsquo;s possible to define pointers to pointers to pointers etc. adding &amp;ldquo;*&amp;ldquo;. It exists the null pointer, that is an invalid pointer, and follow it result in a &amp;ldquo;segmentation fault&amp;rdquo; that means &amp;ldquo;you are trying to access memory you are not allowed to access&amp;rdquo;. A pointer defined but not filled point to a random location in memory, so following it results in an indefinite result, probably a segmentation fault or the modification of another variable.&lt;br /&gt;
+Because the dereferencing operator has not the highest precedence, sometimes you will have to put parenthesis to specify the order of dereferencing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;/*Filling a &amp;quot;heap&amp;quot; array using pointers*/
+(*ptr)[i] = (float*) malloc(sizeof(float)*lenghtx);
+
+/*In struct, the two forms are equivalent*/
+(*pippo).pluto
+pippo-&amp;amp;gt;pluto
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;stack-and-heap:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Stack and heap&lt;/h2&gt;
+
+&lt;p&gt;The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&amp;rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &amp;ldquo;&lt;em&gt;memory leak&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;arrays:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Arrays&lt;/h2&gt;
+
+&lt;p&gt;There&amp;rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;&lt;/p&gt;
+
+&lt;pre&gt;float array[10];&lt;/pre&gt;
+    
+
+&lt;p&gt;You can access the elements of the array in the natural way &lt;code&gt;array[3] = 10&lt;/code&gt;.&lt;br /&gt;
+As a matter of fact, because an array it&amp;rsquo;s a masked pointer, all of these are equivalent&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;*V = 10;
+V[0] = 10;
+*(V+0) = 10;
+0[V] = 10;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The operator &amp;ldquo;&lt;code&gt;[]&lt;/code&gt;&amp;rdquo; is equivalent to dereferencing the address contained into the pointer on the left shifted by the quantity inside the operator, and to shift an address is equivalent to sum it to the shift because addresses are integer values and the memory occupied by an array is contiguous.&lt;/p&gt;
+
+&lt;p&gt;The second type of array is defined by the user and manually allocated (and manually deallocated) in the heap memory with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;void* malloc(size_t size);
+void free(void* heapBlockPointer);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In practice, the following is an example of how to implement two functions that create and destroy a two dimensional array given a pointer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include 
+#include 
+#include &amp;quot;array_management.h&amp;quot;
+
+/* Function definition, takes as argument the address of a pointer to pointer */
+int array_creation(float*** ptr, int lenghtx, int lenghty){
+	printf(&amp;quot;Create array of pointers...n&amp;quot;);
+
+	/* In the memory cell of the pointer put the address of the first 
+		element of an array of pointers to float and allocate the necessary space */
+	*ptr = (float**) malloc(sizeof(float*)*lenghty); 
+
+	/* Check that the allocation worked fine */
+	if(*ptr==NULL){
+	return -1;
+	}
+	printf(&amp;quot;Create arrays...n&amp;quot;);
+
+	/* Allocate memory for an array of float for each pointer and put the address 
+		of the first element in the respective cell of the array of pointers */
+	for(int i=0; i&amp;amp;lt;lenghty; i++){
+	(*ptr)[i] = (float*) malloc(sizeof(float)*lenghtx);
+	if( (*ptr)[i] == NULL){
+		return -1;
+	}
+	}
+	return 0;
+}
+
+/* Function to deallocate the memory */
+void array_destruction(float** ptr, int lenghty){
+	printf(&amp;quot;Destructing array...n&amp;quot;);
+	for(int i=0; i&amp;amp;lt;lenghty; i++){
+	free(ptr[i]);
+	}
+	free(ptr); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In both types of array there isn&amp;rsquo;t a control on the indexes, it&amp;rsquo;s up to the user not to read or write beyond the array limits.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &amp;ldquo;linearized&amp;rdquo; row-major order so it&amp;rsquo;s faster to &amp;ldquo;run&amp;rdquo; on the row index (that on the right-most one). This is known as &lt;a href=&#34;http://en.wikipedia.org/wiki/Stride_of_an_array&#34; target=&#34;_blank&#34;&gt;stride one access&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;structs:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Structs&lt;/h2&gt;
+
+&lt;p&gt;An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;struct point {
+int x;
+int y;}; /* Don&#39;t forget this semicolon!*/
+
+struct point pippo;
+pippo.x = 12;
+pippo.y = 15;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;code&gt;typedef&lt;/code&gt; to symplify the sintax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;typedef struct treenode* Tree;
+struct treenode {
+int data;
+Tree smaller, larger; /* equivalently, this line could say
+};                       &amp;quot;struct treenode *smaller, *larger&amp;quot; */  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
+
+&lt;h2 id=&#34;strings:572a5990ff18de3fef742f6ac648edcf&#34;&gt;Strings&lt;/h2&gt;
+
+&lt;p&gt;Strings are simply arrays of characters, usually terminated with the &amp;ldquo;null&amp;rdquo; character &amp;ldquo;&lt;code&gt;&amp;quot; to be able to use the string manipulation libraries (without &amp;quot;&lt;/code&gt;&amp;rdquo; you should give the length of the string to the library, but they are not designed to do this).&lt;br /&gt;
+Because of this, the two expression that follows are equivalent:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;void strcpy(char *s, char *t) {
+	while ((*s = *t) != ‘’) {
+	s++;
+	t++;
+	}
+}
+void strcpy(char s[], char *t) {
+	/* s arr, t ptr */
+	int i = 0;
+	while ((*s = t[i]) != ‘’) {
+	s++; /* s ptr */
+	i++; /* t arr */
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assignement evaluation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Because the assignment operator &amp;ldquo;=&amp;rdquo; return the value assigned, it&amp;rsquo;s possible to use this in expression evaluation to shorten the code, for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;void strcpy(char *s, char *t){while((*s++==*t++));}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;is equivalent to the expressions in the previous paragraph.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
+      <link>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <description>
+
+&lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
+
+&lt;h2 id=&#34;create:d7d980b494195784336223544cb1380d&#34;&gt;Create&lt;/h2&gt;
+
+&lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+import tables as tb
+from StringIO import StringIO
+
+f = open(&amp;quot;filename.csv&amp;quot;, &#39;r&#39;)
+line = f.readline()
+values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+values.shape = 1
+h5 = tb.openFile(&#39;filename.h5&#39;, &#39;w&#39;)
+table = h5.createTable(h5.root, description=values, name=table_name&#39;, title=&amp;quot;table_description&amp;quot;, expectedrows=12158536)
+table.flush()
+
+for line in f:
+	values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
+	values.shape = 1
+	table.append(values)
+	
+table.flush()
+h5.flush()
+h5.close()
+f.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
+
+&lt;h2 id=&#34;remove-duplicates:d7d980b494195784336223544cb1380d&#34;&gt;Remove duplicates&lt;/h2&gt;
+
+&lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;new_indexes = np.unique(table[&#39;column_1&#39;], return_index=True, return_inverse=False)[1]
+new_array = np.transpose(table[new_indexes])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In general, &lt;code&gt;numpy.unique(array, return_index=True, return_inverse=True)&lt;/code&gt;&lt;br /&gt;
+returns an array sorted and without duplicates, the indexes of the original array to create the new array and the indexes of the new one to recreate the old one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In: a = np.array([5,3,3,7,2,9,1])
+In: np.unique(a, return_index=True, return_inverse=True)
+Out: 
+(array([1, 2, 3, 5, 7, 9]),
+	array([6, 4, 1, 0, 3, 5]),
+	array([3, 2, 2, 4, 1, 5, 0]))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;recreate:d7d980b494195784336223544cb1380d&#34;&gt;Recreate&lt;/h2&gt;
+
+&lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
+To do this a possible solution is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip([column_1[0]], [column_2[0]]))
+print &amp;quot;Creating table...&amp;quot;
+table = h5.createTable(h5.root, description=values, name=&#39;fof_data_snap67&#39;, title=&amp;quot;fof_data_snap67&amp;quot;, expectedrows=11697806)
+
+for i in xrange(1, fof.size):
+	values = np.array(zip([column_1[i]], [column_2[i]]))
+	table.append(values)
+
+table.flush()
+h5.flush()
+h5.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s also possible to zip the entire arrays if they fit into memory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip(column_1, column_2))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD students&#39; Journal Clubs and Sozi</title>
+      <link>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</link>
+      <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
+I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also ported my first JC presentation (that on my PhD project) to Inkscape but loosing part of the beauty of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX)&#34; target=&#34;_blank&#34;&gt;Beamer&lt;/a&gt; original theme.&lt;/p&gt;
+
+&lt;p&gt;These are the two presentations. Right click and &amp;ldquo;Open in new tab&amp;rdquo; will let you able to view the presentations, navigatin with left and right arrows. Mid-click to view the summary and up/down arrow to navigate without any effect.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../files/first_JC_with_proposal.svg&#34;&gt;PhD project presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg&#34;&gt;JC on the ACT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parameter space parallel exploration in Python</title>
+      <link>http://localhost:1313/posts/parameter-space-parallel-exploration-in-python/</link>
+      <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/parameter-space-parallel-exploration-in-python/</guid>
+      <description>&lt;p&gt;Today a friend of mine ask me how to quickly and easily parallelize a parameter space exploration in his code. &amp;ldquo;Quickly and easily&amp;rdquo; means &amp;ldquo;do not try to use &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-monte-carlo-markov-chain/&#34; target=&#34;_blank&#34; title=&#34;PhD question #3: Monte Carlo Markov chain&#34;&gt;MCMC&lt;/a&gt; or something similar!!!&amp;ldquo;.&lt;/p&gt;
+
+&lt;p&gt;I think a good solution could be use something like &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/python-parallel-job-manager/&#34; target=&#34;_blank&#34; title=&#34;Python parallel job manager&#34;&gt;this&lt;/a&gt; defining objects to contain parameters combinations and result, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    class parameter(object):
+      &amp;quot;&amp;quot;&amp;quot;Object to handle all the information about a parameter combination.
+      &amp;quot;&amp;quot;&amp;quot;
+      def __init__(self, a = None, b = None, c= None, d = None):
+        &amp;quot;&amp;quot;&amp;quot;Construct parameters object.&amp;quot;&amp;quot;&amp;quot;
+        self.name = str(self.a)+&amp;quot;-&amp;quot;+str(self.b)+&amp;quot;-&amp;quot;+str(self.c)+&amp;quot;-&amp;quot;+str(self.d)
+        self.a = None
+        self.b = None
+        self.c = None
+        self.d = None
+        self.res_a = None
+        self.res_b = None
+        self.res_c = None
+      def __repr__(self):
+        return &amp;quot;&amp;quot; % self.name
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and filling the queue in this way:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    def fill_queue(input_queue):
+      &amp;quot;&amp;quot;&amp;quot;Fill the queue&amp;quot;&amp;quot;&amp;quot;
+      parameter_set = [xrange(a_limit),xrange(b_limit), xrange(c_limit), xrange(d_limit)]
+      # Create all possible combination of the parameters values and from these 
+      # generate and put in the queue the objects
+      for i in itertools.product(\*l):
+        input_queue.put(parameter(i[0], i[1], i[2], i[3]))
+      return input_queue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I think it&amp;rsquo;s not optimal for a huge amount of combinations, because of the huge amount of objects, but in this case you can change the code to use lists or arrays. Anyway it should be better than four nested loops!:P&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

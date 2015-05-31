@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Super-basic file parsing in Go // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Super-basic file parsing in Go" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/super-basic-file-parsing-in-go/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/super-basic-file-parsing-in-go/">Super-basic file parsing in Go</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>5</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2013</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-go" href="http://localhost:1313//categories/go">Go</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f&title=Super-basic%20file%20parsing%20in%20Go&summary=%3cp%3eI%20want%20to%20parse%20all%20the%20files%20in%20a%20folder%20starting%20with%20a%20certain%20prefix%0asearching%20for%20the%20lines%20containing%20a%20certain%20string.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Super-basic%20file%20parsing%20in%20Go&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            <p>I want to parse all the files in a folder starting with a certain prefix
+searching for the lines containing a certain string.</p>
+
+<p><code>package main</code> tells go that this source will be a main file, not a library/module.
+Then, we import the packages we need. If a package is not still needed, go will
+throw an error.</p>
+
+<p><code>//</code> or <code>/* */</code> are, respectively, the one-line and multi-line comments.</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;bufio&quot; // buffered input/output
+	&quot;compress/gzip&quot; // compressed files handling
+	&quot;log&quot; // logging
+	&quot;os&quot; // OS related utilities
+	&quot;time&quot; // timing
+	&quot;strings&quot; // strings handling
+	&quot;path/filepath&quot; // path handling
+	&quot;fmt&quot; // basic printing
+)
+</code></pre>
+
+<p>The main body of the program has to be in the <code>main</code> function.
+We would also like to know the time needed to execute the program so we use
+<code>tGlob0 := time.Now()</code> to keep track of the time we launch the program.<br />
+We also print a help message in case the number of arguments provided
+do not match the needed ones&hellip;. id they are wrong, googd luck!:P</p>
+
+<pre><code class="language-go">func main() {
+	
+	helpMessage :=`Hi! To use this program you must provide
+	1 - the path
+	2 - the file prefix
+	3 - the output file
+	4 - the string to be searched.`
+	
+	if len(os.Args) &lt; 5{
+		fmt.Println(helpMessage)
+		os.Exit(0)
+	}
+
+	tGlob0 := time.Now()
+ 
+</code></pre>
+
+<p>Go can create variables in two ways, by declaring them before or by assignement directly.
+To have a clearer view of what is going on I will declare the variables before except
+for <code>tGlob0</code> and <code>tGlob1</code>. If you want to know the type of a variable, you can
+create it by assignement and then inspect its type with the reflect package,
+using <code>reflect.TypeOf(variable)</code>.</p>
+
+<pre><code class="language-go">    var inPath string
+    var prefix string
+    var searchString string
+    var outFile string
+    var inFiles []string
+    var inFile string
+    var extString []string
+    var ext string
+    var PID int 
+    var (fileStruct *os.File
+    fOut *os.File)
+    var err error
+    var fZip *gzip.Reader
+    var nReader *bufio.Reader
+    var read_line string
+```        
+
+The `os` package provides the tools to interact with the OS, so we can retrieve the process
+PID and the CLI arguments.        
+    
+
+````go
+	PID = os.Getpid()
+	log.Println(&quot;Process PID is &quot;, PID)	
+	
+	inPath = os.Args[1]
+	prefix = os.Args[2]+&quot;*&quot;
+	outFile = os.Args[3]
+	searchString = os.Args[4]
+	
+	log.Println(&quot;Parsing files in folder &quot;, inPath, &quot; selecting &quot;, os.Args[2])
+</code></pre>
+
+<p>The <code>Glob</code> function allows to search for the filenames matching a certain
+ wildcard pattern.<br />
+ <code>defer</code> is used to mark functions to be executed on function exit.</p>
+
+<pre><code class="language-go">	inFiles, err = filepath.Glob(filepath.Join(inPath, prefix))
+	if err != nil {
+		panic(err)
+	}
+	
+	log.Println(&quot;Searching for &quot;, searchString, &quot; in &quot;, filepath.Join(inPath, prefix))
+	log.Println(&quot;Creating output file &quot;, outFile)
+	
+	fOut, err = os.Create(outFile)
+	if err != nil {
+		panic(err)
+	}
+	defer fOut.Close()
+</code></pre>
+
+<p>In the following piece of code is possible to see how to</p>
+
+<ul>
+<li>work on strings</li>
+<li>write a counter that updates</li>
+<li>use the switch construct</li>
+<li>make an assignement in the if construct<br /></li>
+</ul>
+
+<pre><code class="language-go">	log.Println(&quot;Starting main loop on file list of lenght &quot;, len(inFiles))
+	for fileIdx := range inFiles {
+		
+		inFile = inFiles[fileIdx]
+		extString = strings.Split(inFile, &quot;.&quot;)
+		ext = extString[len(extString)-1]
+
+		// Write an updating counter
+		fmt.Print(&quot;Completed: &quot;, 100. * fileIdx / len(inFiles), &quot;% \r&quot;)
+		
+		// Creating file object
+		if fileStruct, err = os.Open(inFile); err != nil {
+			log.Fatal(os.Stderr, &quot;%v, Can't open %s: error: %s\n&quot;, os.Args[0], inFile, err)
+			os.Exit(1)
+		}
+		defer fileStruct.Close()
+		
+		switch ext {
+			case &quot;dat&quot;: {
+				nReader = bufio.NewReader(fileStruct)
+			}
+			case &quot;txt&quot;:{
+				nReader = bufio.NewReader(fileStruct)
+			}
+			case &quot;gz&quot;: {
+				fZip, err = gzip.NewReader(fileStruct)
+				if err != nil {
+				log.Fatal(os.Stderr, &quot;%v, Can't open %s: error: %s\n&quot;, os.Args[0], inFile, err)
+				os.Exit(1)
+				}
+				nReader = bufio.NewReader(fZip)
+			}
+			default: {
+				log.Fatal(&quot;Unrecognized file &quot;, inFile)
+			}
+		}
+</code></pre>
+
+<p>And yes, no <code>while</code> but infinite loops with <code>for</code>.<br />
+Then we read the file line by line and write the line if we find a certain
+string inside it.</p>
+
+<pre><code class="language-go">        for {
+            if read_line, err = nReader.ReadString('\n'); err != nil {
+            log.Println(&quot;Done reading file with err&quot;, err)
+            break
+            }
+//          if (strings.Contains(read_line, &quot;name =&quot;) || strings.Contains(read_line, &quot;i =&quot;)) {//&amp;&amp; strings.Contains(read_line, &quot;&lt;&quot;){
+                if strings.Contains(read_line, searchString){
+                _, err = fOut.WriteString(read_line)
+                }
+        }
+    
+        // flush 
+        fOut.Sync()
+        fOut.Close()
+    }
+    
+    
+    log.Println()
+    tGlob1 := time.Now()
+    log.Println(&quot;Wall time for all &quot;, tGlob1.Sub(tGlob0))
+}
+</code></pre>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f&title=Super-basic%20file%20parsing%20in%20Go&summary=%3cp%3eI%20want%20to%20parse%20all%20the%20files%20in%20a%20folder%20starting%20with%20a%20certain%20prefix%0asearching%20for%20the%20lines%20containing%20a%20certain%20string.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Super-basic%20file%20parsing%20in%20Go&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fsuper-basic-file-parsing-in-go%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-golang" href="http://localhost:1313//tags/golang">golang</a>,
+	                
+	                <a class="post-tag post-tag-go" href="http://localhost:1313//tags/go">go</a>,
+	                
+	                <a class="post-tag post-tag-programming" href="http://localhost:1313//tags/programming">programming</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/pages/travels/australia/blog-backup/">G&#43; UpsideDown page backup</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/check-external-ip/">Check external ip</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

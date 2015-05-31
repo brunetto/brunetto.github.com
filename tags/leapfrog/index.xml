@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leapfrog on Post It!</title>
+    <link>http://localhost:1313/tags/leapfrog/</link>
+    <description>Recent content in Leapfrog on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/leapfrog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
+Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The tree&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gadget-2 uses a&lt;a href=&#34;http://en.wikipedia.org/wiki/Octree&#34; target=&#34;_blank&#34; title=&#34;oct-tree&#34;&gt; BH oct-tree&lt;/a&gt; (see also &lt;a href=&#34;http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation&#34; target=&#34;_blank&#34; title=&#34;Barnes&amp;amp;Hut simulation on wikipedia&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.artcompsci.org/~makino/softwares/C++tree/index.html&#34; target=&#34;_blank&#34; title=&#34;NBODY, an implementation of Barnes-Hut treecode&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://ifa.hawaii.edu/~barnes/software.html&#34; target=&#34;_blank&#34; title=&#34;Barnes&#39; page&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.cita.utoronto.ca/~dubinski/treecode/treecode.html&#34; target=&#34;_blank&#34; title=&#34;A parallel tree code explenation&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.prism.gatech.edu/~gth716h/BNtree/&#34; target=&#34;_blank&#34; title=&#34;Barnes-Hut Implementation in HTML/Javascript&#34;&gt;here&lt;/a&gt;) to calculate the short-range forces in the real space. This choice was done because this type of tree, compared to other types (KD-Tree, &amp;hellip;), requires the creation of less nodes, that imply that less memory is used. It&amp;rsquo;s characterized by eight sub-nodes for each node and has only one particle in each leaf. The code decides to open a leaf according to a certain leaf opening criterion based on the estimated force error. The force for distant groups of particles is approximated with the multipole (here octopole) of the tree node and the error depends on the dimensions and the distances of the node considered.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PM part&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The PM part of the code is used to calculate the long-range forces. The algorithm is something like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;CIC (cloud-in-cell) assignment is used to construct the mass density field on to the mesh from the information on the particles&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the discrete FT of the mesh is multiplied for the Green function for the potential in periodic boundaries (modified with the exponential truncation for the force splitting)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;deconvolution for the CIC kernel twice: the first for the smoothing effect of CIC assignment, the second for the force interpolation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$\mathrm{FT}^{-1}$ to obtain the potential on the mesh&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;finite differentiate the potential to obtain the forces&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;interpolate the forces to the particles positions using CIC&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note: real-to-complex FT are used to save times and memory respect to full complex transforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time step&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This type of code has a large dynamic range in time scale, from the denser regions where the evolution is rapid to the less denser regions in which the evolution occur slower so we can describe it with larger time resolution. In this scenario evolving all particles with the smallest time-scale is a waste of time and computational resources. Because using different time-steps for each particle add instabilities to the system, Gadget-2 separates time-step between long-range (longer time step) and short-range (shorter time step) force computations. The perturbation of the system for different time-steps is related to the symplectic nature of the system, but I still have not understood what it really means and implies! I know that it refers to the phase space volume and has effect on the information conservation. May be in the future I&amp;rsquo;ll write a post about this!&lt;br /&gt;
+Despite these arguments, sometimes individual time step are allowed because they perturb the system but not the symplecticity of the single particle.&lt;br /&gt;
+In the normal integration mode time-steps are discretized in a power of two hierarchy and particles can always move to smaller time steps but to longer time steps only in subsequent step, synchronized with higher time-steps. Alternatively the code can populate time-steps discretizeing them as integer multiples of the minimum time-step among the particles set. This lead to a more homogeneous distribution of particles across the time-line which can simplify work load balancing.&lt;br /&gt;
+The integration is performed using the &lt;a href=&#34;http://en.wikipedia.org/wiki/Leapfrog_integration&#34; target=&#34;_blank&#34; title=&#34;Leapfrog method&#34;&gt;leapfrog method&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallelization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Usually the parallelization distributes particles across the CPUs using an orthogonal domain decomposition but in this way the trees built-in each domain depend on the domain geometry. Because the force depend on the tree (through the multipole expansion of the mass distribution) the force can be different if you change the number of processors.&lt;br /&gt;
+Gadget-2 introduce a space-filling fractal, the Peano-Hilber (PH) curve to map 3D space into a 1D curve that encompasses all the particles. Now the PH curve can be cut and each piece assigned to a CPU and in this way the force is independent of the processors number. If you cut every segment in eight pieces recursively you find again the tree decomposition, so there is a close correspondence between the decomposition obtained with the BH oct-tree and that of the PH curve.&lt;br /&gt;
+The PH curve has some remarkably properties, for example points that are close along the 1D PH curve are in general close in 3D space, so the mapping preserves locality and if we cut the PH curve into segments of a certain length we obtain a domain decomposition which has the property that the spatial domains are simply connected and quite &amp;ldquo;compact&amp;rdquo; (i.e., they tend to have small surface-to-volume ratios and low aspect ratio, a highly desirable property for reducing communication costs with neighbouring domains and for speeding up the local computation).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operations scheme&lt;/strong&gt;&lt;br /&gt;
+Here a brief scheme on how the short range force calculation works on multiple processors. The PM computation uses the &lt;a href=&#34;http://www.fftw.org/fftw2_doc/fftw_4.html&#34; target=&#34;_blank&#34; title=&#34;Parallel FFTWs&#34;&gt;parallel FFTWs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Compute the PH key for each particle&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sort the keys locally and split the PH curve into segments&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Adjust the sorted segments to a global sort, splitting and joining segments if needed, with little communication&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Assign the particles to the processes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Construct a BH tree for the particles of each processors representing particles on other processors with pseudo-particles (acting like placeholders)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;During the tree traverse (e.g. in processor A) these pseudo-particles cannot be opened, the are flagged and inserted into a list that collects all the particles that are to be sent (=requested) to the other processors (e.g. to processor B)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Processor B traverse again its local tree and send back the resulting force contribution to processor A&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

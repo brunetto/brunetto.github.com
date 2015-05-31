@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eating on Post It!</title>
+    <link>http://localhost:1313/tags/eating/</link>
+    <description>Recent content in Eating on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/eating/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/personal/eating/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/personal/eating/</guid>
+      <description>
+
+&lt;h2 id=&#34;restaurants:365cf1f8969747523194b52038445b61&#34;&gt;Restaurants&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Insonnia&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bigoleria Edelweiss&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Pizzeria Il corso (Jesolo)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hamburgeria PD &lt;a href=&#34;http://www.tripadvisor.it/Restaurant_Review-g187867-d4587167-Reviews-212_Hamburger_Delicious-Padua_Province_of_Padua_Veneto.html&#34;&gt;link&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Messicano Vicenza&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Messicano Padova&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pubs:365cf1f8969747523194b52038445b61&#34;&gt;Pubs&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Dakota&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Voodoochild Pub&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Woody&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Boombastic&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sushi:365cf1f8969747523194b52038445b61&#34;&gt;Sushi&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

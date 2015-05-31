@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Millennium on Post It!</title>
+    <link>http://localhost:1313/tags/millennium/</link>
+    <description>Recent content in Millennium on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Nov 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/millennium/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cosmological simulations #7: Limitations and some considerations</title>
+      <link>http://localhost:1313/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
+      <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
+      <description>
+
+&lt;h2 id=&#34;limitations:be6e6b0278d604ddee51c801f8740b2c&#34;&gt;Limitations&lt;/h2&gt;
+
+&lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
+simulations. Let&amp;rsquo;s review these in detail.&lt;br /&gt;
+First, we can consider a simulation composed of a finite box in a bigger space but to represent a real system, this box shouldn&amp;rsquo;t be isolated so we use the periodic boundary conditions (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #2: how?&#34;&gt;here&lt;/a&gt;). This means that all the space around the box is filled with images of the box itself: a particle that leaves the box from one side will come in&lt;br /&gt;
+from the opposite side.&lt;/p&gt;
+
+&lt;p&gt;Second, the mass inside the box is not continuous. Instead, it is made by particles of mass of the order of $10^9$ solar masses. These particles represent collisionless fluid elements (made by a huge quantity of real particles) with a certain&lt;br /&gt;
+volume and can&amp;rsquo;t be treated as solid spheres. When two simulation particles are&lt;br /&gt;
+separated by a distance smaller than the radius of the volumes they represents&lt;br /&gt;
+they must feel less than the force coming from the entire mass (thanks to the&lt;br /&gt;
+Gauss/Birkhoff&amp;rsquo;s theorem). To do this we soften (read &amp;ldquo;we reduce&amp;rdquo;) the force at&lt;br /&gt;
+such small scales (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #2: how?&#34;&gt;here&lt;/a&gt;). Third, time is not continuous and its discreteness was also treated (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-4-moving.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations: #4: Moving the particles!&#34;&gt;here&lt;/a&gt;) with some&lt;br /&gt;
+criteria to decide the time steps.&lt;br /&gt;
+Until now, however, we haven&amp;rsquo;t consider the effects of taking into account&lt;br /&gt;
+initial density fluctuations over a range of scales that is finite. In&lt;br /&gt;
+addition to this, the finite size of the box pose a limit on the force&lt;br /&gt;
+resolution, because fluctuations on scales bigger than the box side will not&lt;br /&gt;
+included in the simulation due to the way the Fourier transforms act on a&lt;br /&gt;
+period box. Some tests in literature show that the exclusion of small&lt;br /&gt;
+scales shouldn&amp;rsquo;t affect too much large scales when they reach the non linear&lt;br /&gt;
+regime but this not holds for the exclusion of large scales, those scales bigger&lt;br /&gt;
+than the box side. Following Bagla, the large scale exclusion should not&lt;br /&gt;
+disturb the formation of small haloes but could change their distribution.&lt;br /&gt;
+This effect will appear as an underestimation of the correlation function. Bagla&lt;br /&gt;
+finds that the best way of quantifying the effects of long wave modes is to&lt;br /&gt;
+check whether including them in the simulation will change the number of&lt;br /&gt;
+massive haloes or not and this can be estimated using the Press-Schecther mass&lt;br /&gt;
+function.&lt;br /&gt;
+In Tormen&amp;amp;Bertschinger (1996) the missing power on large scales will cause&lt;br /&gt;
+something like a statistical cosmic bias decreasing the number of high-density&lt;br /&gt;
+regions, the strength of the clustering and the amplitude of the peculiar&lt;br /&gt;
+velocities.&lt;br /&gt;
+Methods have been developed to take the missing &amp;ldquo;larger than the box&amp;rdquo; wave modes&lt;br /&gt;
+into account and we will have a look on these in a future post.&lt;/p&gt;
+
+&lt;h2 id=&#34;some-considerations:be6e6b0278d604ddee51c801f8740b2c&#34;&gt;Some considerations&lt;/h2&gt;
+
+&lt;p&gt;As we have seen (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-1-why-and-what.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #1: why and what?&#34;&gt;here&lt;/a&gt;) N-body cosmological simulations&lt;br /&gt;
+are useful to understand aspects of non-linear gravitational clustering,&lt;br /&gt;
+since it&amp;rsquo;s not possible to carry out laboratory experiments in gravitational&lt;br /&gt;
+dynamics and the analytic models fail when the system reach the non linear&lt;br /&gt;
+regime, i.e. when the density contrast overcome the unity. Related with&lt;br /&gt;
+cosmological simulations there are a pair of aspects that Bagla underlines in its&lt;br /&gt;
+articles that interesting to consider.&lt;br /&gt;
+The first issue is whether or not the gravitational clustering&lt;br /&gt;
+erase memory of initial conditions. Is there a one-to-one correspondence between&lt;br /&gt;
+some characterization of initial perturbations and the final state?&lt;br /&gt;
+N-body simulations shows that gravitational clustering does not erase memory of&lt;br /&gt;
+the initial conditions, the final power spectrum is a function of the initial&lt;br /&gt;
+power spectrum and this relationship can be written as a one-step mapping and&lt;br /&gt;
+the functional form of this mapping depends on the initial power spectrum.&lt;br /&gt;
+However density profiles of massive haloes have a form independent of&lt;br /&gt;
+initial conditions but there is a considerable scatter in density profiles&lt;br /&gt;
+obtained from N-body simulations and it is difficult to state whether a given&lt;br /&gt;
+functional form is always the best fit or not. I must admit that these last concepts are not very clear to me at the moment, and that I trust Bagla but I will deepen them as soon as possible to be able to comfortably master them.&lt;br /&gt;
+The second question is if it is possible to predict the masses and distribution&lt;br /&gt;
+of haloes that form as a result of gravitational clustering.&lt;br /&gt;
+The initial density field is taken to be a Gaussian random field and for&lt;br /&gt;
+hierarchical models the simple assumption that each peak undergoes collapse&lt;br /&gt;
+independent of the surrounding density distribution can be used to estimate the&lt;br /&gt;
+mass function and several related quantities but N-body simulations shows that&lt;br /&gt;
+this simple set of approximations is incorrect. However, the resulting mass&lt;br /&gt;
+function estimation is fairly accurate over a wide range of masses. Merger rates&lt;br /&gt;
+can be thus computed using the extended Press-Schecther formalism. Modifying&lt;br /&gt;
+some of this assumption can lead to improved predictions.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;References&lt;/em&gt;:&lt;br /&gt;
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ias.ac.in/currsci/apr102005/1088.pdf&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla, Cosmological N-body simulation: Techniques, scope and status&#34;&gt;J. S. Bagla, Cosmological N-body simulation: Techniques, scope and status&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abs/1991ComPh...5..164B&#34; target=&#34;_blank&#34; title=&#34;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&#34;&gt;J.S. Bagla and T. Padmanabham, Cosmological N-body simulations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://iopscience.iop.org/0004-637X/472/1/14&#34; target=&#34;_blank&#34; title=&#34;G. Tormen and E. Bertschinger, Adding long wavelenght modes to an N-body simulation&#34;&gt;Giuseppe Tormen and Edmund Bertschinger, Adding long wavelenght modes to an N-body simulation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/full/1997MNRAS.286...38C&#34; target=&#34;_blank&#34; title=&#34;S. Cole, Adding long-wavelength power to N-body simulations&#34;&gt;S. Cole, Adding long-wavelength power to N-body simulations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

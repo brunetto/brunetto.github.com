@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bachelor on Post It!</title>
+    <link>http://localhost:1313/tags/bachelor/</link>
+    <description>Recent content in Bachelor on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bachelor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bachelor</title>
+      <link>http://localhost:1313/pages/research/bachelor/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/bachelor/</guid>
+      <description>
+
+&lt;h2 id=&#34;bachelor-degree-exams:b01dfa78655a77806320c9885c2b1df3&#34;&gt;Bachelor Degree Exams&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mathematical analysis 1 &lt;a href=&#34;23&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mathematical analysis 2 &lt;a href=&#34;20&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mathematical analysis 3 &lt;a href=&#34;21&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Astronomy 1 (sperical astronomy, coordinates, &amp;hellip;) &lt;a href=&#34;29&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Astronomy 2 (observational astronomy, photometry, &amp;hellip;) &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Historical astronomy &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Physics 1 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Physics 2 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Physics 3 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Physics lab 1 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Physics lab 2 &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Geometry &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Computer science&lt;/li&gt;
+&lt;li&gt;Scientific English&lt;/li&gt;
+&lt;li&gt;Descriptive statistics &lt;a href=&#34;20&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, &amp;hellip;) &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Astrophysics 2 (A: spectroscopy, B: stellar structure) &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chemistry 1 &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chemistry 2 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Analytical mechanics &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Complementary astrophysics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cosmology &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plasma physics fundamentals &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Statistical inference 1B &lt;a href=&#34;18&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Principles of quantum mechanics &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Principles of (special) relativity &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Digital data analysis lab. (FSE)&lt;/li&gt;
+&lt;li&gt;Astronomy lab &lt;a href=&#34;30+&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mathematical methods &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Structure of matter 1 &lt;a href=&#34;18&#34;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;files/masterThesis.pdf&#34;&gt;Final thesis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

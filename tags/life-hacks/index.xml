@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life Hacks on Post It!</title>
+    <link>http://localhost:1313/tags/life-hacks/</link>
+    <description>Recent content in Life Hacks on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/life-hacks/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Life hakcs</title>
+      <link>http://localhost:1313/pages/personal/life-hacks/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/personal/life-hacks/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://sarcasticcharm.com/99-life-hacks-that-could-make-your-life-easier&#34;&gt;99 Life hacks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Fake_it_till_you_make_it&#34;&gt;Fake it till you make it&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Self-fulfilling_prophecy&#34;&gt;Self-fulfilling prophecy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://buzzly.org/le-46-soluzioni-ingegnose-per-rendere-la-vita-di-qualsiasi-essere-umano-piu-semplice/&#34;&gt;http://buzzly.org/le-46-soluzioni-ingegnose-per-rendere-la-vita-di-qualsiasi-essere-umano-piu-semplice/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

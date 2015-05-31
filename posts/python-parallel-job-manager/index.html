@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Python parallel job manager // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Python parallel job manager" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/python-parallel-job-manager/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/python-parallel-job-manager/">Python parallel job manager</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>4</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Nov</span> <span class="post-date-year">2011</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-python" href="http://localhost:1313//categories/python">Python</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f&title=Python%20parallel%20job%20manager&summary=%3cp%3eThe%20final%20version%20of%20the%20code%20for%20my%20master%20thesis%20was%20the%20most%20embarrassing%20parallel%20code%20you%20can%20think%26hellip%3b%20just%20a%20serial%20code%20to%20be%20run%20on%20different%20slices%20of%20the%20dataset.%20I%20choose%20this%20solution%20because%20it%20permits%20to%20manage%20the%20different%20resources%20%28memory%2c%20processors%2c%20%26hellip%3b%29%20on%20the%20different%20machines%20available%20without%20any%20restriction.%20Moreover%2c%20this%20solution%20has%20no%20communication%20between%20the%20processes%2c%20with%20better%20performances%20and%20all%20the%20processes%20are%20independent%2c%20so%20it%20minimize%20the%20damages%20due%20to%20any%20failure.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%20parallel%20job%20manager&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            <p>The final version of the code for my master thesis was the most embarrassing parallel code you can think&hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.</p>
+
+<p>At this step, however, I didn&rsquo;t know how to manage the different processes in a comfortable way.
+My requirements were:</p>
+
+<ul>
+<li>to start only one process that will take care of starting the right code on the right data-slice</li>
+<li>the possibility to start &ldquo;n&rdquo; processes depending on the number of processors and memory available (in the actual code this is done by hand)</li>
+<li>the code should be able to start a new process when one of the previous processes end</li>
+</ul>
+
+<p>Hereafter I expose and comment the complete &ldquo;template&rdquo; for this Python code as I wrote it.</p>
+
+<pre><code class="language-python">#!/bin/env python
+
+import sys, os
+from subprocess import Popen, PIPE
+from multiprocessing import Process, Queue
+
+&quot;&quot;&quot;This script starts n_procs processes that in parallel take the
+number of the data file from a common queue and with a loop apply the
+analysys code to the data starting it with a bash command using Popen
+&quot;&quot;&quot;
+</code></pre>
+
+<p>The first line is the declaration of the interpreter to be used for this script, in this case Python. After that we import some libraries and modules used in this code. The last lines, inside the triple quotes, are the documentation string of the code. Python in fact has a self-doc system that can be used to understand what a piece of code does and how it works.</p>
+
+<pre><code class="language-python">n_procs = 10 # number of processes to be started
+file_1 = None
+file_2 =  &quot;mill2_fof_sorted.h5&quot;
+m_factor = 1    # How many random more than data
+start_slice = 0 
+end_slice = 99
+</code></pre>
+
+<p>Here we set some parameters: the number of processes to start (set by hand), the two files to use in the analysis, how many random particles we use more than the data particles and the limits in the data slice to analyze. In this case we want to correlate the data in <code>mill2_fof_sorted.h5</code> with the data contained in the slices between slice 0 and slice 99. file_1 will be replaced after with the right name. This analysis will be carry out using 10 processes at each time. As a process end the code will take care of starting a new process.</p>
+
+<pre><code class="language-python">def starter(input, output):
+	&quot;&quot;&quot;Start the code processes one after the other&quot;&quot;&quot;
+	while input.qsize() != 0:
+	item = input.get()
+	file_1 = &quot;mill2sort-&quot;+str(item[0])       
+	cmd = &quot;/opt/epd-7.0-2-rh5-x86_64/bin/python -u \
+			../serial.py --file_1 &quot;+file_1+&quot; --file_2 &quot;+file_2+\
+		&quot; -l 400 -n 0 --m_factor &quot;+str(m_factor)+&quot; \
+			--slicing --log ../logs/&quot;+file_1+&quot;-&quot;+file_2
+
+	try:
+		pid = os.getpid()
+		pid_cmd = 'echo &quot;'+str(item[0])+'&quot; &amp;gt;&amp;gt; '+str(pid)+'.log'
+		os.system(pid_cmd)
+		p = Popen(cmd, shell=True, close_fds=True).wait()
+
+	except:
+		print &quot;Popen/os.system not done, exit...&quot;
+		sys.exit()
+</code></pre>
+
+<p>This piece of code defines the function that will start the processes. It&rsquo;s called <code>started</code> and it takes <code>input</code> and <code>output</code> as arguments. These are two &ldquo;queue objects&rdquo;, they can be filled and emptied in the FIFO way. The starter has a while loop that check if the queue is empty, if not it takes the next elements. This is the number of the slice to be used by the analysis code and with it we build the name of the file to be opened. <code>cmd</code> is the string we use to start the analysis code with some options (<code>serial.py</code> is the actual &ldquo;cool&rdquo; name I gave to my code!:P).<br />
+The <code>try-exept</code> syntax is the particular Python way to manage the possible errors in the execution, giving the ability to the programmer to handle possible problems (exceptions).<br />
+So we catch the pid of the starter and save into its log the number of sliced it start and pass to the <code>Popen</code> (process-open) command the string to start the analysis process telling it to wait the end of the process. If something goes wrong we print that there were some errors and exit the code in a clean way.</p>
+
+<pre><code class="language-python">def fill_queue(task_queue, start_slice, end_slice):
+	&quot;&quot;&quot;Fill the queue&quot;&quot;&quot;
+	for i in range(start_slice, end_slice, 1):
+		task_queue.put([i])
+	return task_queue
+</code></pre>
+
+<p>This functions only fill the queue with the number of the sliced to be used.</p>
+
+<pre><code class="language-python">def status(proc):
+	&quot;&quot;&quot;Check for processes status&quot;&quot;&quot;
+	if proc.is_alive()==True:
+		return 'alive'
+	elif proc.is_alive()==False:
+		return 'dead'
+	else:
+		return proc.is_alive()
+</code></pre>
+
+<p>This piece of code check the status (dead or alive) of one process (<code>proc</code> is the process object&hellip; yeah, in Python everything is an object!)</p>
+
+<pre><code class="language-python">input_queue = Queue()
+output_queue = Queue()
+
+try:
+    input_queue = fill_queue(input_queue, start_slice, end_slice)
+except:
+    print &quot;Queue not filled, exit...&quot;
+    sys.exit()
+
+procs = []    # processes container
+</code></pre>
+
+<p>Now we create the empty queues and (try to) fill them, and create the container for the processes objects.</p>
+
+<pre><code class="language-python">try:
+    for i in range(n_procs):
+        print &quot;Process loop &quot;, i
+        procs.append(Process(target=starter, args=(input_queue, output_queue)))
+except:
+    print &quot;Creating processes not complete, exit...&quot;
+    sys.exit()
+
+try:
+    for i in procs:
+        i.start()
+except:
+    print &quot;Start processes not complete, exit...&quot;
+    sys.exit()
+
+for i in procs:
+    print &quot;Process &quot;, i,&quot; @ &quot; , i.pid, &quot; is &quot;, status(i)
+</code></pre>
+
+<p>This is the central part of this code: we create the processes objects and put them into the container, start them and check for their status. Everything is inside the <code>try-except</code> environment to check for possible errors and handle them.<br />
+In practice we start &ldquo;n&rdquo; processes and every process take the number of a slice from the queue and use it to start the analysis code, waiting for its end. When the analysis is finished it takes another number from the queue and start again the code. When the queue is empty everything is automatically switched off.<br />
+Future improvements will consider the automatically detection of the hardware resources and the possibility to mail the status of the code.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f&title=Python%20parallel%20job%20manager&summary=%3cp%3eThe%20final%20version%20of%20the%20code%20for%20my%20master%20thesis%20was%20the%20most%20embarrassing%20parallel%20code%20you%20can%20think%26hellip%3b%20just%20a%20serial%20code%20to%20be%20run%20on%20different%20slices%20of%20the%20dataset.%20I%20choose%20this%20solution%20because%20it%20permits%20to%20manage%20the%20different%20resources%20%28memory%2c%20processors%2c%20%26hellip%3b%29%20on%20the%20different%20machines%20available%20without%20any%20restriction.%20Moreover%2c%20this%20solution%20has%20no%20communication%20between%20the%20processes%2c%20with%20better%20performances%20and%20all%20the%20processes%20are%20independent%2c%20so%20it%20minimize%20the%20damages%20due%20to%20any%20failure.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%20parallel%20job%20manager&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpython-parallel-job-manager%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-simulations" href="http://localhost:1313//tags/simulations">simulations</a>,
+	                
+	                <a class="post-tag post-tag-python" href="http://localhost:1313//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-programming" href="http://localhost:1313//tags/programming">programming</a>,
+	                
+	                <a class="post-tag post-tag-parallel" href="http://localhost:1313//tags/parallel">parallel</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/loadleveler-quick-howto/">Loadleveler quick howto</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/cosmological-simulations-1-why-and-what/">Cosmological simulations #1: why and what?</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

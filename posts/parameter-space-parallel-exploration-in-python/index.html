@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Parameter space parallel exploration in Python // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Parameter space parallel exploration in Python" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/parameter-space-parallel-exploration-in-python/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/parameter-space-parallel-exploration-in-python/">Parameter space parallel exploration in Python</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>3</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2012</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-python" href="http://localhost:1313//categories/python">Python</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f&title=Parameter%20space%20parallel%20exploration%20in%20Python&summary=%3cp%3eToday%20a%20friend%20of%20mine%20ask%20me%20how%20to%20quickly%20and%20easily%20parallelize%20a%20parameter%20space%20exploration%20in%20his%20code.%20%26ldquo%3bQuickly%20and%20easily%26rdquo%3b%20means%20%26ldquo%3bdo%20not%20try%20to%20use%20%3ca%20href%3d%22http%3a%2f%2fwww.brunettoziosi.eu%2fblog%2fwordpress%2fphd-question-3-monte-carlo-markov-chain%2f%22%20target%3d%22_blank%22%20title%3d%22PhD%20question%20%233%3a%20Monte%20Carlo%20Markov%20chain%22%3eMCMC%3c%2fa%3e%20or%20something%20similar%21%21%21%26ldquo%3b.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Parameter%20space%20parallel%20exploration%20in%20Python&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            <p>Today a friend of mine ask me how to quickly and easily parallelize a parameter space exploration in his code. &ldquo;Quickly and easily&rdquo; means &ldquo;do not try to use <a href="http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-monte-carlo-markov-chain/" target="_blank" title="PhD question #3: Monte Carlo Markov chain">MCMC</a> or something similar!!!&ldquo;.</p>
+
+<p>I think a good solution could be use something like <a href="http://www.brunettoziosi.eu/blog/wordpress/python-parallel-job-manager/" target="_blank" title="Python parallel job manager">this</a> defining objects to contain parameters combinations and result, like this:</p>
+
+<pre><code class="language-python">    class parameter(object):
+      &quot;&quot;&quot;Object to handle all the information about a parameter combination.
+      &quot;&quot;&quot;
+      def __init__(self, a = None, b = None, c= None, d = None):
+        &quot;&quot;&quot;Construct parameters object.&quot;&quot;&quot;
+        self.name = str(self.a)+&quot;-&quot;+str(self.b)+&quot;-&quot;+str(self.c)+&quot;-&quot;+str(self.d)
+        self.a = None
+        self.b = None
+        self.c = None
+        self.d = None
+        self.res_a = None
+        self.res_b = None
+        self.res_c = None
+      def __repr__(self):
+        return &quot;&quot; % self.name
+</code></pre>
+
+<p>and filling the queue in this way:</p>
+
+<pre><code class="language-python">    def fill_queue(input_queue):
+      &quot;&quot;&quot;Fill the queue&quot;&quot;&quot;
+      parameter_set = [xrange(a_limit),xrange(b_limit), xrange(c_limit), xrange(d_limit)]
+      # Create all possible combination of the parameters values and from these 
+      # generate and put in the queue the objects
+      for i in itertools.product(\*l):
+        input_queue.put(parameter(i[0], i[1], i[2], i[3]))
+      return input_queue
+</code></pre>
+
+<p>I think it&rsquo;s not optimal for a huge amount of combinations, because of the huge amount of objects, but in this case you can change the code to use lists or arrays. Anyway it should be better than four nested loops!:P</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f&title=Parameter%20space%20parallel%20exploration%20in%20Python&summary=%3cp%3eToday%20a%20friend%20of%20mine%20ask%20me%20how%20to%20quickly%20and%20easily%20parallelize%20a%20parameter%20space%20exploration%20in%20his%20code.%20%26ldquo%3bQuickly%20and%20easily%26rdquo%3b%20means%20%26ldquo%3bdo%20not%20try%20to%20use%20%3ca%20href%3d%22http%3a%2f%2fwww.brunettoziosi.eu%2fblog%2fwordpress%2fphd-question-3-monte-carlo-markov-chain%2f%22%20target%3d%22_blank%22%20title%3d%22PhD%20question%20%233%3a%20Monte%20Carlo%20Markov%20chain%22%3eMCMC%3c%2fa%3e%20or%20something%20similar%21%21%21%26ldquo%3b.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Parameter%20space%20parallel%20exploration%20in%20Python&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fparameter-space-parallel-exploration-in-python%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-aresearch" href="http://localhost:1313//tags/aresearch">aresearch</a>,
+	                
+	                <a class="post-tag post-tag-python" href="http://localhost:1313//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-programming" href="http://localhost:1313//tags/programming">programming</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/phd-students-journal-clubs-and-sozi/">PhD students&#39; Journal Clubs and Sozi</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/infographics-attempts/">Infographics attempts!</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

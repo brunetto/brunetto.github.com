@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Learning not to hate C: things worth nothing // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Learning not to hate C: things worth nothing" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes stuck on the Net!;D</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#header-files:572a5990ff18de3fef742f6ac648edcf">Header files</a></li>
+<li><a href="#compile:572a5990ff18de3fef742f6ac648edcf">Compile</a></li>
+<li><a href="#macros-preprocessor:572a5990ff18de3fef742f6ac648edcf">MACROS &amp; preprocessor</a></li>
+<li><a href="#numbers:572a5990ff18de3fef742f6ac648edcf">Numbers</a></li>
+<li><a href="#cast:572a5990ff18de3fef742f6ac648edcf">Cast</a></li>
+<li><a href="#bool:572a5990ff18de3fef742f6ac648edcf">Bool</a></li>
+<li><a href="#side-effect-and-short-circuit:572a5990ff18de3fef742f6ac648edcf">Side effect and short-circuit</a></li>
+<li><a href="#ternary-operator:572a5990ff18de3fef742f6ac648edcf">Ternary operator</a></li>
+<li><a href="#stack-and-heap:572a5990ff18de3fef742f6ac648edcf">Stack and heap</a></li>
+<li><a href="#arrays:572a5990ff18de3fef742f6ac648edcf">Arrays</a></li>
+<li><a href="#structs:572a5990ff18de3fef742f6ac648edcf">Structs</a></li>
+<li><a href="#strings:572a5990ff18de3fef742f6ac648edcf">Strings</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/learning-not-to-hate-c-things-worth-nothing/">Learning not to hate C: things worth nothing</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>21</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2012</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://localhost:1313//categories/research">Research</a>
+				
+					<a class="post-category post-category-programming" href="http://localhost:1313//categories/programming">Programming</a>
+				
+					<a class="post-category post-category-post" href="http://localhost:1313//categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f&title=Learning%20not%20to%20hate%20C%3a%20things%20worth%20nothing&summary=%3cp%3eHere%20I%20would%20like%20to%20post%20some%20of%20the%20ideas%2c%20tricks%2c%20truths%2c%20and%20so%20on%20I%26rsquo%3bve%20learned%20during%20the%20two-days%20course%20at%20the%20computing%20center.%20Two%20intense%20days%20of%20base%20C-programming%20full%20immersion%2c%20far%20beyond%20the%20flat%20and%20boring%20%28and%20unuseful%29%20orthodoxy%20you%20can%20find%20in%20a%20book.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Learning%20not%20to%20hate%20C%3a%20things%20worth%20nothing&url=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<p>Here I would like to post some of the ideas, tricks, truths, and so on I&rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.</p>
+
+<h2 id="header-files:572a5990ff18de3fef742f6ac648edcf">Header files</h2>
+
+<p>They are one of the first annoying things I see in C/C++ languages. Two files for each &ldquo;module&rdquo;, two lines to be modified every times, &hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&rsquo;s code, you can share or download compiled code+header files and not all the sources.</p>
+
+<h2 id="compile:572a5990ff18de3fef742f6ac648edcf">Compile</h2>
+
+<p>The easiest way to compile the sources and get the executable is</p>
+
+<pre><code class="language-C">gcc pippo.c -o pippo.x
+</code></pre>
+
+<p>where <code>pippo.c</code> is the source(s) (you can have <code>pippo1.c</code>, <code>pippo2.c</code> etc, but only one <code>main</code> function) file.<br />
+A better way is to include some flags</p>
+
+<pre><code class="language-C">gcc -std=gnu99 -Wall -pedantic -Werror -O0 -g -o pippo.x pippo.c
+</code></pre>
+
+<p>where</p>
+
+<ul>
+<li><code>-std=gnu99</code> forces the compiler to the C99 standard (it includes some new features)</li>
+<li><code>-Wall</code> to print all the compiler warnings</li>
+<li><code>-pedantic</code> &ldquo;Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use forbidden extensions, and some other programs that do not follow ISO C and ISO C++&rdquo; (from the <code>gcc</code> manual)</li>
+<li><code>-Werror</code> transform the warnings into errors</li>
+<li><code>-O0</code> no optimization</li>
+<li><code>-g</code> produces debugging informations</li>
+<li><code>-o</code> to specify the output</li>
+</ul>
+
+<h2 id="macros-preprocessor:572a5990ff18de3fef742f6ac648edcf">MACROS &amp; preprocessor</h2>
+
+<p>The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &ldquo;constant&rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it</p>
+
+<pre><code class="language-C">#define PI 3.14
+float a = PI;
+</code></pre>
+
+<p>but you can also check for already defined quantities, compile pieces of code (&ldquo;conditional compilation&rdquo;) or implement a &ldquo;header-guard&rdquo; to avoid multiple imports of the same header</p>
+
+<pre><code class="language-C">#define CONDITION
+#ifdef CONDITION
+....
+#else
+....
+#endif
+</code></pre>
+
+<pre><code class="language-C">#ifndef HEADER_H
+#define HEADER_H
+.....
+#endif
+</code></pre>
+
+<p>Compiling with the <code>-E</code> flag you can view the result of the preprocessor action.</p>
+
+<h2 id="numbers:572a5990ff18de3fef742f6ac648edcf">Numbers</h2>
+
+<p>Number variables are similar to those in other programming languages, but there&rsquo;s some peculiarities.<br />
+Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.</p>
+
+<h2 id="cast:572a5990ff18de3fef742f6ac648edcf">Cast</h2>
+
+<p>It&rsquo;s possible to convert one type to some other type. For example,</p>
+
+<pre><code class="language-C">float pippo;
+pippo = (float) k*1024L;
+</code></pre>
+
+<h2 id="bool:572a5990ff18de3fef742f6ac648edcf">Bool</h2>
+
+<p>There aren&rsquo;t boolean variables, but 0 stands for <code>False</code> and any other non-zero value means <code>True</code>.</p>
+
+<h2 id="side-effect-and-short-circuit:572a5990ff18de3fef742f6ac648edcf">Side effect and short-circuit</h2>
+
+<p>Something like</p>
+
+<pre><code class="language-C">i = k + 10 - ++k;
+</code></pre>
+
+<p>has indefinite result because it&rsquo;s not predictable the order of evaluation of operand/expression <code>k</code> and <code>++k</code>, and those expressions have <em>side effects</em> on the other expression involved in the result.<br />
+Logical operators <code>&amp;&amp;</code> and <code>||</code> instead are evaluated strictly from left to right. This is c<em>alled short-circuit evaluation</em> and the operators are synchronization points, just like &ldquo;;&rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.</p>
+
+<h2 id="ternary-operator:572a5990ff18de3fef742f6ac648edcf">Ternary operator</h2>
+
+<p>The ternary operator accept three arguments and has the form of</p>
+
+<pre><code class="language-C">result = a &amp;gt; b ? x : y;
+</code></pre>
+
+<p>This means <code>[expression_to_evaluate] ? [if true] : [if false]</code>. Obviously you can nest as many expression and operator as you want.</p>
+
+<p><strong>Variables qualifiers</strong></p>
+
+<p>In C there&rsquo;are some qualifier that can be added to the type specification. Three of them are <code>const</code>, <code>extern</code> and <code>static</code>.<br />
+The first can be added in the function declaration to tell the compiler that the values has not to be changed by the function, for example</p>
+
+<pre><code class="language-C">int pippo(const int pluto, const int* paperino);
+</code></pre>
+
+<p>means that the integer <code>pluto</code> and the pointer to integer <code>paperino</code> can not be changed by the function <code>pippo</code>.<br />
+&ldquo;extern&rdquo; specifies that the variable is a global variable, coming from outside the function:</p>
+
+<pre><code class="language-C">int pippo;
+int main(...){
+	extern int pippo;
+...
+}
+</code></pre>
+
+<p>&ldquo;static&rdquo; has different meanings depending on where you put it.<br />
+Before a global variable means that the variable is private of the file, and other files can not use it. Inside a function means that the variable survive after the end of the function (when the stack frame - the stack memory associated to the function - is deleted) and is available to the succeeding calls to the same function. Static is also used before a function to specify that the function is private of the file and can not be called outside:</p>
+
+<pre><code class="language-C">static int i;
+static void foo(void){
+	extern int i;
+	static int j
+}
+</code></pre>
+
+<ul>
+<li><code>i</code> is global inside the file but can not be called outside</li>
+<li>the function <code>foo</code> is private of the file and can not be called outside</li>
+<li><code>j</code> survive after the termination of the function and maintains its value until the next call.</li>
+</ul>
+
+<p><strong>Pointers</strong></p>
+
+<p>Pointers are special integer values that contains addresses of other values, for example:</p>
+
+<pre><code class="language-C">int i;
+int* p;
+p = &amp;amp;i;
+*p = 13;
+</code></pre>
+
+<p>first we define the integer <code>i</code>, then a pointer <code>p</code> to a integer value (here <code>*</code> means &ldquo;the argument on the right is a pointer to a value of type defined by the argument on the left&rdquo;), then we put the address of <code>i</code> in <code>p</code> (<code>&amp;amp;</code> means &ldquo;give me the address of the right argument&rdquo;) and at the end we modify the value of <code>i</code> dereferencing <code>p</code>, that is modifying the memory cell pointed by the address contained in p (here <code>*</code> means &ldquo;follow the address contained in the argument on the right&rdquo;).<br />
+It&rsquo;s possible to define pointers to pointers to pointers etc. adding &ldquo;*&ldquo;. It exists the null pointer, that is an invalid pointer, and follow it result in a &ldquo;segmentation fault&rdquo; that means &ldquo;you are trying to access memory you are not allowed to access&rdquo;. A pointer defined but not filled point to a random location in memory, so following it results in an indefinite result, probably a segmentation fault or the modification of another variable.<br />
+Because the dereferencing operator has not the highest precedence, sometimes you will have to put parenthesis to specify the order of dereferencing:</p>
+
+<pre><code class="language-C">/*Filling a &quot;heap&quot; array using pointers*/
+(*ptr)[i] = (float*) malloc(sizeof(float)*lenghtx);
+
+/*In struct, the two forms are equivalent*/
+(*pippo).pluto
+pippo-&amp;gt;pluto
+</code></pre>
+
+<h2 id="stack-and-heap:572a5990ff18de3fef742f6ac648edcf">Stack and heap</h2>
+
+<p>The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &ldquo;<em>memory leak</em>&rdquo;.</p>
+
+<h2 id="arrays:572a5990ff18de3fef742f6ac648edcf">Arrays</h2>
+
+<p>There&rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;</p>
+
+<pre>float array[10];</pre>
+    
+
+<p>You can access the elements of the array in the natural way <code>array[3] = 10</code>.<br />
+As a matter of fact, because an array it&rsquo;s a masked pointer, all of these are equivalent</p>
+
+<pre><code class="language-C">*V = 10;
+V[0] = 10;
+*(V+0) = 10;
+0[V] = 10;
+</code></pre>
+
+<p>The operator &ldquo;<code>[]</code>&rdquo; is equivalent to dereferencing the address contained into the pointer on the left shifted by the quantity inside the operator, and to shift an address is equivalent to sum it to the shift because addresses are integer values and the memory occupied by an array is contiguous.</p>
+
+<p>The second type of array is defined by the user and manually allocated (and manually deallocated) in the heap memory with</p>
+
+<pre><code class="language-C">void* malloc(size_t size);
+void free(void* heapBlockPointer);
+</code></pre>
+
+<p>In practice, the following is an example of how to implement two functions that create and destroy a two dimensional array given a pointer:</p>
+
+<pre><code class="language-C">#include 
+#include 
+#include &quot;array_management.h&quot;
+
+/* Function definition, takes as argument the address of a pointer to pointer */
+int array_creation(float*** ptr, int lenghtx, int lenghty){
+	printf(&quot;Create array of pointers...n&quot;);
+
+	/* In the memory cell of the pointer put the address of the first 
+		element of an array of pointers to float and allocate the necessary space */
+	*ptr = (float**) malloc(sizeof(float*)*lenghty); 
+
+	/* Check that the allocation worked fine */
+	if(*ptr==NULL){
+	return -1;
+	}
+	printf(&quot;Create arrays...n&quot;);
+
+	/* Allocate memory for an array of float for each pointer and put the address 
+		of the first element in the respective cell of the array of pointers */
+	for(int i=0; i&amp;lt;lenghty; i++){
+	(*ptr)[i] = (float*) malloc(sizeof(float)*lenghtx);
+	if( (*ptr)[i] == NULL){
+		return -1;
+	}
+	}
+	return 0;
+}
+
+/* Function to deallocate the memory */
+void array_destruction(float** ptr, int lenghty){
+	printf(&quot;Destructing array...n&quot;);
+	for(int i=0; i&amp;lt;lenghty; i++){
+	free(ptr[i]);
+	}
+	free(ptr); 
+}
+</code></pre>
+
+<p>In both types of array there isn&rsquo;t a control on the indexes, it&rsquo;s up to the user not to read or write beyond the array limits.</p>
+
+<p>It&rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &ldquo;linearized&rdquo; row-major order so it&rsquo;s faster to &ldquo;run&rdquo; on the row index (that on the right-most one). This is known as <a href="http://en.wikipedia.org/wiki/Stride_of_an_array" target="_blank">stride one access</a>.</p>
+
+<h2 id="structs:572a5990ff18de3fef742f6ac648edcf">Structs</h2>
+
+<p>An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:</p>
+
+<pre><code class="language-C">struct point {
+int x;
+int y;}; /* Don't forget this semicolon!*/
+
+struct point pippo;
+pippo.x = 12;
+pippo.y = 15;
+</code></pre>
+
+<p>It&rsquo;s also possible to use <code>typedef</code> to symplify the sintax:</p>
+
+<pre><code class="language-C">typedef struct treenode* Tree;
+struct treenode {
+int data;
+Tree smaller, larger; /* equivalently, this line could say
+};                       &quot;struct treenode *smaller, *larger&quot; */  
+</code></pre>
+
+<p>(From Cineca&rsquo;s slides)</p>
+
+<h2 id="strings:572a5990ff18de3fef742f6ac648edcf">Strings</h2>
+
+<p>Strings are simply arrays of characters, usually terminated with the &ldquo;null&rdquo; character &ldquo;<code>&quot; to be able to use the string manipulation libraries (without &quot;</code>&rdquo; you should give the length of the string to the library, but they are not designed to do this).<br />
+Because of this, the two expression that follows are equivalent:</p>
+
+<pre><code class="language-C">void strcpy(char *s, char *t) {
+	while ((*s = *t) != ‘’) {
+	s++;
+	t++;
+	}
+}
+void strcpy(char s[], char *t) {
+	/* s arr, t ptr */
+	int i = 0;
+	while ((*s = t[i]) != ‘’) {
+	s++; /* s ptr */
+	i++; /* t arr */
+	}
+}
+</code></pre>
+
+<p>(From Cineca&rsquo;s slides)</p>
+
+<p><strong>Assignement evaluation</strong></p>
+
+<p>Because the assignment operator &ldquo;=&rdquo; return the value assigned, it&rsquo;s possible to use this in expression evaluation to shorten the code, for example:</p>
+
+<pre><code class="language-C">void strcpy(char *s, char *t){while((*s++==*t++));}
+</code></pre>
+
+<p>is equivalent to the expressions in the previous paragraph.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f&title=Learning%20not%20to%20hate%20C%3a%20things%20worth%20nothing&summary=%3cp%3eHere%20I%20would%20like%20to%20post%20some%20of%20the%20ideas%2c%20tricks%2c%20truths%2c%20and%20so%20on%20I%26rsquo%3bve%20learned%20during%20the%20two-days%20course%20at%20the%20computing%20center.%20Two%20intense%20days%20of%20base%20C-programming%20full%20immersion%2c%20far%20beyond%20the%20flat%20and%20boring%20%28and%20unuseful%29%20orthodoxy%20you%20can%20find%20in%20a%20book.%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Learning%20not%20to%20hate%20C%3a%20things%20worth%20nothing&url=http%3a%2f%2flocalhost%3a1313%2fposts%2flearning-not-to-hate-c-things-worth-nothing%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-c" href="http://localhost:1313//tags/c">c</a>,
+	                
+	                <a class="post-tag post-tag-programming" href="http://localhost:1313//tags/programming">programming</a>,
+	                
+	                <a class="post-tag post-tag-cosmology" href="http://localhost:1313//tags/cosmology">Cosmology</a>,
+	                
+	                <a class="post-tag post-tag-phd" href="http://localhost:1313//tags/phd">PhD</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/hdf5-in-python-pytables/">HDF5 in Python: PyTables</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/">Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a></p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

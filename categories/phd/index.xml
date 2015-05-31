@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phd on Post It!</title>
+    <link>http://localhost:1313/categories/phd/</link>
+    <description>Recent content in Phd on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/phd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Poster Making</title>
+      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&#34;&gt;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zachholman.com/posts/slide-design-for-developers/&#34;&gt;http://zachholman.com/posts/slide-design-for-developers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.colormatters.com/color-and-design/basic-color-theory&#34;&gt;http://www.colormatters.com/color-and-design/basic-color-theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://f1000.com/posters/browse?docTypeSearch=Poster&#34;&gt;http://f1000.com/posters/browse?docTypeSearch=Poster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eating</title>
+      <link>http://localhost:1313/pages/research/phd/</link>
+      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <description>
+
+&lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
+compact-object binaries&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure&gt;
+&lt;div style=&#34;border:1px solid black;border-radius: 8px&#34;&gt;
+&amp;lt;!&amp;ndash;&lt;img src=&#34;../../files/ziosi-GPU-Rome.gif&#34; alt=&#34;GPU Rome slide&#34; title=&#34;Presentation of my poster at a conference in Rome in 2014 that summarize my research.&#34; /&gt;&amp;ndash;&amp;gt;
+&lt;img src=&#34;../../files/PhDProjectScheme.svg&#34; alt=&#34;OhD project scheme&#34; style=&#34;width:700px&#34;&gt;
+&lt;figcaption&gt;
+&lt;hr&gt; Schematic representation of my PhD project.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;My PhD project is devoted to improving our knowledge on the demographics
+and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH),
+neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
+The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
+Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General
+Relativity: while indirect confirmations of GWs came from observations of pulsar
+binaries, a direct detection of GWs is still missing.
+Mergers of binaries
+are among the most promising sources of GWs in the frequency range that will be
+explored by Advanced Virgo and LIGO (~10-10000 Hz).&lt;/p&gt;
+
+&lt;p&gt;My research focus on three main fronts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the impact of dynamics and metallicity on
+the formation and evolution of double compact-object binaries&lt;/li&gt;
+&lt;li&gt;the effects
+of a tidal field on the evolution of star clusters and on the
+demography of DCO binaries inside them,&lt;/li&gt;
+&lt;li&gt;the changes in the DCO binaries demography
+considering different initial structural properties of the clusters (mass, concentration,
+primordial binaries fraction, density, &amp;hellip;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To investigate the impact of dynamics and metallicity on double compact-object binaries demography,
+I analyzed 600 random realizations of a young dense star cluster at different metallicities.
+I was interested in the binary orbital properties, lifetimes, number of exchanges and coalescence timescales
+(the time a binary need to merge only because of gravitational wave emission).
+We chose young and dense star cluster as environment in which to study DCO binaries
+because they are the preferential
+environment for star formation (Lada &amp;amp; Lada, 2003) and gravitational interactions are efficient in exchanging
+energy on short times.&lt;/p&gt;
+
+&lt;p&gt;My results, published in Ziosi et al. (2014), confirm that the cluster dynamics
+favours the formation of BH-BH binaries and were tested against the literature.&lt;/p&gt;
+
+&lt;p&gt;The results I obtained, however, stand on two critical assumptions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I assumed that the
+star cluster would life unpeturbed for 100 Myr but after that time they should be
+dissolved into the galactic disc because of the host galaxy tidal field&lt;/li&gt;
+&lt;li&gt;I only simulated random realizations of a single star cluster model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both the assumptions can heavily affect estimations on the demography of the DCO binaries
+and the two other parts of my project are devoted to overcome these limitations.&lt;br /&gt;
+To face the first issue I implemented in the code
+a numerical recipe (the one proposed in Allen &amp;amp; Santillan, 1991) to accurately include the host galaxy gravitational tidal field.
+I am now testing the new tidal field. As soon as it is proved to
+be reliable I will study the effect of the disk component on the life
+of the star clusters and on the DCO binaries dynamics and demography.
+In particoular, it is interesting the case in which the cluster is not on a circoular orbit
+coplanar with the galactic disk but on an eccentric and inclined one.
+In this case the potential changes rapidly with the time and the effect on the cluster can be
+remarkable (see Madrid et al., 2014).&lt;/p&gt;
+
+&lt;p&gt;Regarding the second issue, it is necessary to quantify the effect of initial
+structural properties of the cluster on the double compact-object binaries population.
+First of all, cluster structural properties can affect double compact-object binaries demography&lt;br /&gt;
+because they influence the dynamical interactions rate among binaries, exchanges included,
+and the cluster surviving time to the tidal field.
+Then, analysing a a wide spectrum of different clusters we would be able to
+better calibrate the results on the real population of clusters in our galaxy and
+in the galaxies at distances smaller than the LIGO/Virgo horizon.
+To this purpose, I am running tens of simulations spanning a wide range of initial
+structural properties.  All the simulations make havy use of HPC hardware (GPU clusters) and
+I built the necessary computational tools to run, manage and analyze all these simulations.
+As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
+This would make us able to highlight which aspects of the star clusters
+are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
+
+&lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
+&lt;li&gt;High energy astrophysics (Prof Franceschini)&lt;/li&gt;
+&lt;li&gt;Extrasolar planets (Dr. Claudi)&lt;/li&gt;
+&lt;li&gt;Scientific projects management (Dr. Farinato)&lt;/li&gt;
+&lt;li&gt;Galaxy Archeology (Prof. Saglia)&lt;/li&gt;
+&lt;li&gt;Nucleosynthesis in the early galaxy (Prof. Sneden)&lt;/li&gt;
+&lt;li&gt;Collisional dynamics in stellar systems (Dr. Mapelli)&lt;/li&gt;
+&lt;li&gt;Supernovae (Dr. Pastorello)&lt;/li&gt;
+&lt;li&gt;Astronomia X (Dr. Zampieri)&lt;/li&gt;
+&lt;li&gt;Paper writing (Prof. Sneden)&lt;/li&gt;
+&lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
+dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
+&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
+and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StarLab (GPU) old guide</title>
+      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <description>
+
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+
+&lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
+
+&lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- TEASER_END --&gt;
+
+&lt;h2 id=&#34;sapporo:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;Sapporo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in setup_sapporo.sh change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(installation of the binary drivers from the NVIDIA site) to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
+paths in&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
+#/usr/local/cuda-5.0
+CUDASDKPATH := /usr/lib/nvidia-cuda-toolkit/include/
+#/usr/local/cuda-5.0/samples/common/inc
+CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)
+# RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)
+BOOSTPATH := /usr/include/boost 
+BOOSTINCLUDE := -I$(BOOSTPATH)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;puth &lt;code&gt;multithreading.h&lt;/code&gt; in the sapporo folder and then in &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; change&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;multithreading.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
+obtain something like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/bin/rm -rf *.o *.cu_o libsapporo.a
+/bin/rm -rf test_gravity_block test_gravity_N2ngb
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
+sapporo.cpp: In member function ‘int sapporo::open(int)’:
+sapporo.cpp:40:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+
+*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+ Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
+ar: creating libsapporo.a
+a - GPUWorker.o
+a - sapporo.o
+a - send_fetch_data.o
+a - sapporoG6lib.o
+a - host_evaluate_gravity.cu_o
+ranlib libsapporo.a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to test the compilation run&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_N2ngb 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_block 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
+but the test fail if the number is less than ~800.&lt;/p&gt;
+
+&lt;h2 id=&#34;starlab:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;StarLab&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;change configure CUDA lines:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;and change local/grape.sh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+
+# CUDAINC=&amp;quot;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;quot; 
+# CUDALIB=&amp;quot;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;quot; 
+
+LIBS1=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+
+#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1
+
+# Where to find GRAPE libraries:
+# GRAPE_LDFLAGS_=&#39;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&#39;
+GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;make clean&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run &lt;code&gt;./configure --without-fortran&lt;/code&gt; (&lt;code&gt;--without-f77&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;now you can find the &lt;code&gt;kira&lt;/code&gt; binary in &lt;code&gt;/usr/local/bin&lt;/code&gt; or&lt;code&gt;/usr/bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./kira -t 500 -d 1 -D 1 -b 1 \
+             -n 10 -e 0.000 -B   \
+	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
+	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
+	 2&amp;gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AstroFelpa</title>
+      <link>http://localhost:1313/pages/research/astrofelpa/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/astrofelpa/</guid>
+      <description>
+
+&lt;h3 id=&#34;license:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;License&lt;/h3&gt;
+
+&lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; href=&#34;http://purl.org/dc/dcmitype/StillImage&#34; property=&#34;dct:title&#34; rel=&#34;dct:type&#34;&gt;AstroFelpa&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;BrunettoZiosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;Permissions beyond the scope of this license may be available at &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;www.brunettoziosi.eu/stories/research/astrofelpa.html&#34; rel=&#34;cc:morePermissions&#34;&gt;www.brunettoziosi.eu/stories/research/astrofelpa.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;shop-available-now:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;Shop available now!!!&lt;/h3&gt;
+
+&lt;p&gt;You can purchase the t-shirt and other material from &lt;a href=&#34;http://astrophd.spreadshirt.it/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;astrop-h-d:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;AstroP(h)D&lt;/h3&gt;
+
+&lt;p&gt;AstroFelpa is an indipendent initiative with the purpose to represent
+the Padua astronomers and all their friends and supporters.&lt;br /&gt;
+AstroP(h)D was born within the astronomy PhD students community of Padua but
+also covers all the astro-workers of the University and the Observatory.&lt;br /&gt;
+The draw tries to bring together most of the fields we are working on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Specola&amp;rdquo; is our headquarter and our symbol&lt;/li&gt;
+&lt;li&gt;The stars all around the picture for all of us working on stellar evolution and both observational
+and numerical approaches are included, as anyone working on every kind of star cluster&lt;/li&gt;
+&lt;li&gt;The Saturn shape remembers all the (exo-)planets guys&lt;/li&gt;
+&lt;li&gt;HST is for all of us working on satellites and technology&lt;/li&gt;
+&lt;li&gt;Galactic and extragalactic researchers, cosmologists and darkmatterists have
+the galaxy surrounded by a dark matter halo&lt;/li&gt;
+&lt;li&gt;The reduced Planck constant is for who is working on spectroscopy and high energy or other
+quantum/relativistic/strange matters&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This are the AstroP(h)D and supporters versions for the sweatshirt and the T-shirt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../../files/AstroFelpa/AstroFelpa.png&#34; alt=&#34;AstroFelpe&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then some new ideas!:P&lt;/p&gt;
+
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-keepcalmand-png-width-50-height-50:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/keepCalmAnd.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-gogo-png-width-50-height-50-br:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goGo.png&#34;width=&#34;50%&#34; height=&#34;50%&#34; &gt;&lt;/br&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-f77-png-width-50-height-50:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/f77.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goSM.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/p&gt;
+
+&lt;!--![AstroFelpe](../../files/AstroFelpa/keepCalmAnd.png) 
+![AstroFelpe](../../files/AstroFelpa/goGo.png) 
+![AstroFelpe](../../files/AstroFelpa/f77.png)   
+![AstroFelpe](../../files/AstroFelpa/goSM.png)    --&gt;
+
+&lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; href=&#34;http://purl.org/dc/dcmitype/StillImage&#34; property=&#34;dct:title&#34; rel=&#34;dct:type&#34;&gt;AstroFelpa&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;BrunettoZiosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;Permissions beyond the scope of this license may be available at &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;www.brunettoziosi.eu/pages/research/astrofelpa.html&#34; rel=&#34;cc:morePermissions&#34;&gt;www.brunettoziosi.eu/pages/research/astrofelpa.html&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/pages/research/research/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/research/research/</guid>
+      <description>
+
+&lt;h2 id=&#34;phd-project:42f623b3bad309d5d6619d450af47d40&#34;&gt;PhD Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
+compact-object binaries&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am working on N-body simulations of young and dense star clusters in order to
+understand the impact of stellar evolution and dynamics on the formation and evolution
+of compact-object (neutron stars and black holes) binary systems.&lt;br /&gt;
+These objects are thought to be the best candidates to produce gravitational
+waves observable in the near future with the second-generation ground-based
+gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
+
+&lt;p&gt;More info &lt;a href=&#34;phd.html&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;scientific-interests:42f623b3bad309d5d6619d450af47d40&#34;&gt;Scientific interests&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
+&lt;li&gt;direct-summation N-body simulations in star clusters&lt;/li&gt;
+&lt;li&gt;gravitational waves in the frequency range of Advanced VIRGO and LIGO&lt;/li&gt;
+&lt;li&gt;stellar and binary evolution&lt;/li&gt;
+&lt;li&gt;big data analysis and visualization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;master-thesis:42f623b3bad309d5d6619d450af47d40&#34;&gt;Master Thesis&lt;/h2&gt;
+
+&lt;h2 id=&#34;bachelor-thesis:42f623b3bad309d5d6619d450af47d40&#34;&gt;Bachelor Thesis&lt;/h2&gt;
+
+&lt;h2 id=&#34;exam-works:42f623b3bad309d5d6619d450af47d40&#34;&gt;Exam works&lt;/h2&gt;
+
+&lt;h2 id=&#34;useful-links:42f623b3bad309d5d6619d450af47d40&#34;&gt;Useful links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,
+&lt;a href=&#34;http://labs.adsabs.harvard.edu/wiki/doku.php&#34;&gt;Lab version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv.org&lt;/a&gt;, &lt;a href=&#34;http://arxiv.org/list/astro-ph/new&#34;&gt;new astro* papers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.unipd.it/&#34;&gt;University of Padua&lt;/a&gt;,
+&lt;a href=&#34;http://www.unipd.it/scuole/scienze&#34;&gt;Science School&lt;/a&gt;,
+&lt;a href=&#34;http://www.dfa.unipd.it/&#34;&gt;Department of Physics and Astronomy&lt;/a&gt;,
+&lt;a href=&#34;http://www.dfa.unipd.it/index.php?id=112&#34;&gt;Building&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My favourite PhD Comics</title>
+      <link>http://localhost:1313/pages/personal/my-favourite-phd-comics/</link>
+      <pubDate>Sat, 17 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/personal/my-favourite-phd-comics/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_list.php&#34;&gt;PhD Comics Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/most_popular.php&#34;&gt;Most Popular&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1296&#34;&gt;Marriage vs PhD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=125&#34;&gt;Motivation Level&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=715&#34;&gt;Thesis Outline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1354&#34;&gt;The Thesis repulsor field&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=718&#34;&gt;The Thesis title&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1168&#34;&gt;Your computer desktop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1040&#34;&gt;Ninjas vs Professors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=575&#34;&gt;Desk entropy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_print.php?comicid=1531&#34;&gt;&amp;ldquo;Final&amp;rdquo;.doc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
