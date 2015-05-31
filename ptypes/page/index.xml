@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page on Post It!</title>
-    <link>http://localhost:1313/ptypes/page/</link>
+    <link>http://brunettoziosi.eu/ptypes/page/</link>
     <description>Recent content in Page on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/ptypes/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/ptypes/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cool Websites</title>
-      <link>http://localhost:1313/pages/tech/coolwebsites/</link>
+      <link>http://brunettoziosi.eu/pages/tech/coolwebsites/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/coolwebsites/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/coolwebsites/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/holman/left&#34;&gt;https://github.com/holman/left&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&#34;&gt;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&lt;/a&gt;&lt;/li&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>Poster Making</title>
-      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <link>http://brunettoziosi.eu/pages/research/posterMaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/posterMaking/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/fit/</link>
+      <link>http://brunettoziosi.eu/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
       <description>
 
 &lt;ul&gt;
@@ -104,10 +104,10 @@
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/phd/</link>
+      <link>http://brunettoziosi.eu/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
@@ -240,10 +240,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>Create a cluster with Ubuntu</title>
-      <link>http://localhost:1313/pages/tech/create-a-cluster/</link>
+      <link>http://brunettoziosi.eu/pages/tech/create-a-cluster/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/create-a-cluster/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/create-a-cluster/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape&#34;&gt;http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.tomshw.it/forum/linux-e-altri-sistemi-operativi/118105-realizzare-un-cluster-con-ubuntu-server.html&#34;&gt;http://www.tomshw.it/forum/linux-e-altri-sistemi-operativi/118105-realizzare-un-cluster-con-ubuntu-server.html&lt;/a&gt;&lt;/li&gt;
@@ -261,10 +261,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>Git references</title>
-      <link>http://localhost:1313/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/ignoring-files&#34;&gt;Ignoring files&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/matze/distributed-version-control-and-why-you-want-to-use-it&#34;&gt;How to use GIT (easy)&lt;/a&gt;&lt;/li&gt;
@@ -297,10 +297,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>G&#43; UpsideDown page backup</title>
-      <link>http://localhost:1313/pages/travels/australia/blog-backup/</link>
+      <link>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/travels/australia/blog-backup/</guid>
+      <guid>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</guid>
       <description>
 
 &lt;p&gt;&lt;div style=&#34;border:6px solid black;border-radius: 8px&#34;&gt;
@@ -1208,10 +1208,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>G&#43; UpsideDown page mirror</title>
-      <link>http://localhost:1313/pages/travels/australia/blog-mirror/</link>
+      <link>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/travels/australia/blog-mirror/</guid>
+      <guid>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;g-post&#34; data-href=&#34;https://plus.google.com/111247854072185245270/posts/csxg364tFoo&#34;&gt;&lt;/div&gt;
 &lt;br/&gt; &lt;br/&gt;&lt;div class=&#34;g-post&#34; data-href=&#34;https://plus.google.com/111247854072185245270/posts/Rn6272Ejb87&#34;&gt;&lt;/div&gt;
 &lt;div class=&#34;g-post&#34; data-href=&#34;https://plus.google.com/111247854072185245270/posts/9AZnzxhyWiT&#34;&gt;&lt;/div&gt;
@@ -1332,10 +1332,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>Toward Upsidedown</title>
-      <link>http://localhost:1313/pages/travels/australia/toward-upsidedown/</link>
+      <link>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/travels/australia/toward-upsidedown/</guid>
+      <guid>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</guid>
       <description>
 
 &lt;p&gt;&amp;hellip; Page filling in progress&amp;hellip; :)&lt;/p&gt;
@@ -1393,10 +1393,10 @@ var myCountdown4 = new Countdown({
     
     <item>
       <title>Films</title>
-      <link>http://localhost:1313/pages/personal/Films/</link>
+      <link>http://brunettoziosi.eu/pages/personal/Films/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/Films/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/Films/</guid>
       <description>
 
 &lt;h2 id=&#34;to-see:719f11202785b7b381b95433c7b41b2a&#34;&gt;To see&lt;/h2&gt;
@@ -1526,10 +1526,10 @@ var myCountdown4 = new Countdown({
     
     <item>
       <title>Goodies</title>
-      <link>http://localhost:1313/pages/misc/goodies/</link>
+      <link>http://brunettoziosi.eu/pages/misc/goodies/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/misc/goodies/</guid>
+      <guid>http://brunettoziosi.eu/pages/misc/goodies/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Illegal prime number (&lt;a href=&#34;http://en.wikipedia.org/wiki/Illegal_prime&#34;&gt;link 1&lt;/a&gt;, &lt;a href=&#34;http://fatphil.org/maths/illegal1.html&#34;&gt;link 2&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
@@ -1538,10 +1538,10 @@ var myCountdown4 = new Countdown({
     
     <item>
       <title>Android</title>
-      <link>http://localhost:1313/pages/tech/android/</link>
+      <link>http://brunettoziosi.eu/pages/tech/android/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/android/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/android/</guid>
       <description>
 
 &lt;h2 id=&#34;apps-i-use-or-like:3d4f1be51c17430d33a03ca1a5690035&#34;&gt;Apps I use or like&lt;/h2&gt;
@@ -1593,10 +1593,10 @@ var myCountdown4 = new Countdown({
     
     <item>
       <title>Interior Design</title>
-      <link>http://localhost:1313/pages/personal/interior-design/</link>
+      <link>http://brunettoziosi.eu/pages/personal/interior-design/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/interior-design/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/interior-design/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://cafelab.blogspot.it/2013/01/pallets-inspiration.html&#34;&gt;Pallets inspiration&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.facebook.com/photo.php?fbid=10151743434233088&amp;amp;set=a.114505628087.98650.114505178087&amp;amp;type=1&amp;amp;ref=nf&#34;&gt;Finestre tetto&lt;/a&gt;&lt;/li&gt;
@@ -1607,10 +1607,10 @@ var myCountdown4 = new Countdown({
     
     <item>
       <title>Languages</title>
-      <link>http://localhost:1313/pages/misc/languages/</link>
+      <link>http://brunettoziosi.eu/pages/misc/languages/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/misc/languages/</guid>
+      <guid>http://brunettoziosi.eu/pages/misc/languages/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;The end of a concern lasted for years: &lt;a href=&#34;http://www.accademiadellacrusca.it/it/lingua-italiana/consulenza-linguistica/domande-risposte/soluzione-continuit&#34;&gt;link to Accademia della Crusca&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.davidpbrown.co.uk/jokes/european-commission.html&#34;&gt;European language joke&lt;/a&gt;&lt;/li&gt;
@@ -1620,10 +1620,10 @@ var myCountdown4 = new Countdown({
     
     <item>
       <title>Sites Making Notes</title>
-      <link>http://localhost:1313/pages/tech/sites-making-notes/</link>
+      <link>http://brunettoziosi.eu/pages/tech/sites-making-notes/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/sites-making-notes/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/sites-making-notes/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.google.com/webmasters/tools/home?hl=en&#34;&gt;Google webmaster tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://plus.google.com/authorship&#34;&gt;Google+ authoring&lt;/a&gt;&lt;/li&gt;

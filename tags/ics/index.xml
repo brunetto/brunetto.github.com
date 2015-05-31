@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ics on Post It!</title>
-    <link>http://localhost:1313/tags/ics/</link>
+    <link>http://brunettoziosi.eu/tags/ics/</link>
     <description>Recent content in Ics on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Jan 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/ics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The initial condition saga</title>
-      <link>http://localhost:1313/posts/the-initial-condition-saga/</link>
+      <link>http://brunettoziosi.eu/posts/the-initial-condition-saga/</link>
       <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/the-initial-condition-saga/</guid>
+      <guid>http://brunettoziosi.eu/posts/the-initial-condition-saga/</guid>
       <description>
 
 &lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;

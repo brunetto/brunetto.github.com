@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Website on Post It!</title>
-    <link>http://localhost:1313/tags/website/</link>
+    <link>http://brunettoziosi.eu/tags/website/</link>
     <description>Recent content in Website on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Nov 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/website/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Blog pages index generator</title>
-      <link>http://localhost:1313/posts/blog-pages-index-generator/</link>
+      <link>http://brunettoziosi.eu/posts/blog-pages-index-generator/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-pages-index-generator/</guid>
+      <guid>http://brunettoziosi.eu/posts/blog-pages-index-generator/</guid>
       <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
 &lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
 pages of this blog!

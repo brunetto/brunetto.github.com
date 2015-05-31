@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Post It!</title>
-    <link>http://localhost:1313/tags/research/</link>
+    <link>http://brunettoziosi.eu/tags/research/</link>
     <description>Recent content in Research on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -27,10 +27,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>Python plot examples</title>
-      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -347,10 +347,10 @@ if __name__ == &amp;quot;__main__&amp;quot;:
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/fit/</link>
+      <link>http://brunettoziosi.eu/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
       <description>
 
 &lt;ul&gt;
@@ -408,10 +408,10 @@ if __name__ == &amp;quot;__main__&amp;quot;:
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
@@ -579,10 +579,10 @@ GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_releas
     
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/pages/research/research/</link>
+      <link>http://brunettoziosi.eu/pages/research/research/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/research/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:42f623b3bad309d5d6619d450af47d40&#34;&gt;PhD Project&lt;/h2&gt;
@@ -631,10 +631,10 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
     
     <item>
       <title>From .csv to HDF5 in Python</title>
-      <link>http://localhost:1313/posts/from-csv-to-hdf5-in-python/</link>
+      <link>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/from-csv-to-hdf5-in-python/</guid>
+      <guid>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</guid>
       <description>&lt;p&gt;PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &amp;hellip;). To the library presentation and documentation, for now refers, to the &lt;a href=&#34;http://www.pytables.org/moin&#34; target=&#34;_blank&#34; title=&#34;site&#34;&gt;site&lt;/a&gt;.&lt;br /&gt;
 I used it a lot during my master thesis to manage the dataset from the Millennium database.&lt;br /&gt;
 Here I provide a brief review of how I used it to store data obtained in .csv (comma separated values) format.&lt;/p&gt;
@@ -684,10 +684,10 @@ print &amp;quot;Done in &amp;quot;, time.time()-t, &amp;quot;seconds !!!&amp;quo
     
     <item>
       <title>Python slicing, rebinning and indexing</title>
-      <link>http://localhost:1313/posts/python-slicing-rebinning-and-indexing/</link>
+      <link>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</link>
       <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-slicing-rebinning-and-indexing/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</guid>
       <description>&lt;p&gt;During my master thesis I had to manage a lot of (different) data from GIF and GIF2 projects, Millimillennium, Millenium and Millennium 2 simulations and so on. Sometimes there were the need to sort, divide or rearrange these dataset.&lt;br /&gt;
 Here some examples.&lt;/p&gt;
 
@@ -873,10 +873,10 @@ print &amp;quot;Done.&amp;quot;
     
     <item>
       <title>Python CLI and configuration file parser</title>
-      <link>http://localhost:1313/posts/python-cli-and-configuration-file-parser/</link>
+      <link>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</link>
       <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-cli-and-configuration-file-parser/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</guid>
       <description>&lt;p&gt;One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at &lt;a href=&#34;http://www.decalage.info/&#34; target=&#34;_blank&#34; title=&#34;http://www.decalage.info&#34;&gt;&lt;a href=&#34;http://www.decalage.info&#34;&gt;http://www.decalage.info&lt;/a&gt;&lt;/a&gt;) a file parser to read a configuration file and the Python library &lt;a href=&#34;http://docs.python.org/dev/library/argparse.html&#34; target=&#34;_blank&#34; title=&#34;argparse&#34;&gt;argparse&lt;/a&gt; for the command line parsing. In addition I have modified the file parser and I&amp;rsquo;ve added a &amp;ldquo;variable container&amp;rdquo; object, inspired by some snippets found somewhere on the web.&lt;br /&gt;
 &amp;lt;!&amp;ndash; TEASER_END &amp;ndash;&amp;gt;
 I chose to first parse the configuration file and after the command line options: if it&amp;rsquo;s necessary the command line options will overwrite the file options.&lt;br /&gt;

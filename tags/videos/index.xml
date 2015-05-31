@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Videos on Post It!</title>
-    <link>http://localhost:1313/tags/videos/</link>
+    <link>http://brunettoziosi.eu/tags/videos/</link>
     <description>Recent content in Videos on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/videos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/videos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Videos</title>
-      <link>http://localhost:1313/pages/personal/multimedia/videos/</link>
+      <link>http://brunettoziosi.eu/pages/personal/multimedia/videos/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/multimedia/videos/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/multimedia/videos/</guid>
       <description>
 
 &lt;p&gt;Some links about videos&amp;hellip;&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on Post It!</title>
-    <link>http://localhost:1313/tags/music/</link>
+    <link>http://brunettoziosi.eu/tags/music/</link>
     <description>Recent content in Music on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Music</title>
-      <link>http://localhost:1313/pages/personal/multimedia/Music/</link>
+      <link>http://brunettoziosi.eu/pages/personal/multimedia/Music/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/multimedia/Music/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/multimedia/Music/</guid>
       <description>
 
 &lt;h2 id=&#34;instruments:80a30196a224b6de08ea1ecb0250d3a5&#34;&gt;Instruments&lt;/h2&gt;

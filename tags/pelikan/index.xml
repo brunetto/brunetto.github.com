@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pelikan on Post It!</title>
-    <link>http://localhost:1313/tags/pelikan/</link>
+    <link>http://brunettoziosi.eu/tags/pelikan/</link>
     <description>Recent content in Pelikan on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Mar 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pelikan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/pelikan/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Second Pelican attempt: creating a blog on GitHub with Pelican</title>
-      <link>http://localhost:1313/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</link>
+      <link>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</link>
       <pubDate>Fri, 08 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
+      <guid>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
       <description>
 
 &lt;h1 id=&#34;how-to-create-a-blog-with-github-and-pelican-python:651ade69f2264893e825a9f66a7802da&#34;&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h1&gt;

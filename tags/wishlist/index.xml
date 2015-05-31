@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wishlist on Post It!</title>
-    <link>http://localhost:1313/tags/wishlist/</link>
+    <link>http://brunettoziosi.eu/tags/wishlist/</link>
     <description>Recent content in Wishlist on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/wishlist/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/wishlist/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wish List</title>
-      <link>http://localhost:1313/pages/personal/wish-list/</link>
+      <link>http://brunettoziosi.eu/pages/personal/wish-list/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/wish-list/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/wish-list/</guid>
       <description>
 
 &lt;h3 id=&#34;photography:8e2ce76d60d0fc2e610e54119abe87dd&#34;&gt;Photography&lt;/h3&gt;

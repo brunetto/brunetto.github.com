@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System on Post It!</title>
-    <link>http://localhost:1313/categories/system/</link>
+    <link>http://brunettoziosi.eu/categories/system/</link>
     <description>Recent content in System on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/categories/system/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>System tricks</title>
-      <link>http://localhost:1313/pages/tech/system-tricks/</link>
+      <link>http://brunettoziosi.eu/pages/tech/system-tricks/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/system-tricks/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
       <description>
 
 &lt;h2 id=&#34;system:72bac119edfbd0f2bc21b23acb9f5790&#34;&gt;System&lt;/h2&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pytables on Post It!</title>
-    <link>http://localhost:1313/tags/pytables/</link>
+    <link>http://brunettoziosi.eu/tags/pytables/</link>
     <description>Recent content in Pytables on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 May 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pytables/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/pytables/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
-      <link>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <link>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
       <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <guid>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
       <description>
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;

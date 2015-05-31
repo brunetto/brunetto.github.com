@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wikipedia on Post It!</title>
-    <link>http://localhost:1313/tags/wikipedia/</link>
+    <link>http://brunettoziosi.eu/tags/wikipedia/</link>
     <description>Recent content in Wikipedia on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/wikipedia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/wikipedia/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Create your own Wikipedia</title>
-      <link>http://localhost:1313/posts/create-your-own-wikipedia/</link>
+      <link>http://brunettoziosi.eu/posts/create-your-own-wikipedia/</link>
       <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-your-own-wikipedia/</guid>
+      <guid>http://brunettoziosi.eu/posts/create-your-own-wikipedia/</guid>
       <description>&lt;p&gt;I was trying to find a tool to keep track of my activities (mainly), work activities. I&amp;rsquo;ve given a chance to some &amp;ldquo;diary&amp;rdquo; software but I was not convinced. I was lingering on using text files but it was not a solution. So I decided to try &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt;. And it was perfect!!!&lt;br /&gt;
 Now I&amp;rsquo;m going to describe the installation on an Ubuntu 11.10 with the repos packages.&lt;/p&gt;
 

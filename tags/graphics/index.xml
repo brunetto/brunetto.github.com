@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphics on Post It!</title>
-    <link>http://localhost:1313/tags/graphics/</link>
+    <link>http://brunettoziosi.eu/tags/graphics/</link>
     <description>Recent content in Graphics on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cool Websites</title>
-      <link>http://localhost:1313/pages/tech/coolwebsites/</link>
+      <link>http://brunettoziosi.eu/pages/tech/coolwebsites/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/coolwebsites/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/coolwebsites/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/holman/left&#34;&gt;https://github.com/holman/left&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&#34;&gt;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&lt;/a&gt;&lt;/li&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>Poster Making</title>
-      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <link>http://brunettoziosi.eu/pages/research/posterMaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/posterMaking/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>AstroFelpa</title>
-      <link>http://localhost:1313/pages/research/astrofelpa/</link>
+      <link>http://brunettoziosi.eu/pages/research/astrofelpa/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/astrofelpa/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
       <description>
 
 &lt;h3 id=&#34;license:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;License&lt;/h3&gt;

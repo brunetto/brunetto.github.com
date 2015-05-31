@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Numerical on Post It!</title>
-    <link>http://localhost:1313/tags/numerical/</link>
+    <link>http://brunettoziosi.eu/tags/numerical/</link>
     <description>Recent content in Numerical on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Feb 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/numerical/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/numerical/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Learning C from simulations, #3: C horrors!</title>
-      <link>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</link>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</guid>
       <description>&lt;p&gt;Yeah, this is post #3! Post #2 is &amp;ldquo;work in progress&amp;rdquo; and it will be on FFTs!&lt;/p&gt;
 
 &lt;p&gt;Today I was trying to understand what this piece of code do:&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post It!</title>
-    <link>http://localhost:1313/</link>
+    <link>http://brunettoziosi.eu/</link>
     <description>Recent content on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 May 2015 10:29:10 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://brunettoziosi.eu/about/</link>
       <pubDate>Fri, 29 May 2015 10:29:10 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://brunettoziosi.eu/about/</guid>
       <description>
 
 &lt;!-- banner = &#34;../../img/shutter.JPG&#34; --&gt;
@@ -43,10 +43,10 @@ if you have any doubt or you find my citations wrong, feel free to ask me!:)&lt;
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -59,10 +59,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>Padding</title>
-      <link>http://localhost:1313/posts/padding/</link>
+      <link>http://brunettoziosi.eu/posts/padding/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/padding/</guid>
+      <guid>http://brunettoziosi.eu/posts/padding/</guid>
       <description>&lt;p&gt;Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.&lt;br /&gt;
 I&amp;rsquo;ll take a note here:&lt;/p&gt;
 
@@ -101,10 +101,10 @@ of char if you want to maintain the total number of printed char.&lt;/p&gt;
     
     <item>
       <title>Things that you can not do without</title>
-      <link>http://localhost:1313/posts/things-that-you-can-not-do-without/</link>
+      <link>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/things-that-you-can-not-do-without/</guid>
+      <guid>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</guid>
       <description>&lt;p&gt;A little list of essential tools:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -128,10 +128,10 @@ of char if you want to maintain the total number of printed char.&lt;/p&gt;
     
     <item>
       <title>Python plot examples</title>
-      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -448,10 +448,10 @@ if __name__ == &amp;quot;__main__&amp;quot;:
     
     <item>
       <title>Change a line in all of your files at once</title>
-      <link>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <link>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <guid>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</guid>
       <description>&lt;p&gt;Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.&lt;br /&gt;
 With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
 
@@ -462,10 +462,10 @@ With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
     
     <item>
       <title>Linux network monitoring</title>
-      <link>http://localhost:1313/posts/network-monitoring/</link>
+      <link>http://brunettoziosi.eu/posts/network-monitoring/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/network-monitoring/</guid>
+      <guid>http://brunettoziosi.eu/posts/network-monitoring/</guid>
       <description>&lt;p&gt;A list of programs to monitor your network connection and find out which process is eating bandwith
 and how to run them:&lt;/p&gt;
 
@@ -480,10 +480,10 @@ and how to run them:&lt;/p&gt;
     
     <item>
       <title>rsync like a pro</title>
-      <link>http://localhost:1313/posts/rsync-like-a-pro/</link>
+      <link>http://brunettoziosi.eu/posts/rsync-like-a-pro/</link>
       <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/rsync-like-a-pro/</guid>
+      <guid>http://brunettoziosi.eu/posts/rsync-like-a-pro/</guid>
       <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path
@@ -495,10 +495,10 @@ and how to run them:&lt;/p&gt;
     
     <item>
       <title>Best Golang installation</title>
-      <link>http://localhost:1313/posts/best-golang-installation/</link>
+      <link>http://brunettoziosi.eu/posts/best-golang-installation/</link>
       <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/best-golang-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/best-golang-installation/</guid>
       <description>&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -549,10 +549,10 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
     
     <item>
       <title>Poster Making</title>
-      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <link>http://brunettoziosi.eu/pages/research/posterMaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/posterMaking/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
@@ -566,10 +566,10 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
     
     <item>
       <title>Cool Websites</title>
-      <link>http://localhost:1313/pages/tech/coolwebsites/</link>
+      <link>http://brunettoziosi.eu/pages/tech/coolwebsites/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/coolwebsites/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/coolwebsites/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/holman/left&#34;&gt;https://github.com/holman/left&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&#34;&gt;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&lt;/a&gt;&lt;/li&gt;
@@ -581,10 +581,10 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
     
     <item>
       <title>Ssh keys exchange</title>
-      <link>http://localhost:1313/posts/ssh-keys-exchange/</link>
+      <link>http://brunettoziosi.eu/posts/ssh-keys-exchange/</link>
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ssh-keys-exchange/</guid>
+      <guid>http://brunettoziosi.eu/posts/ssh-keys-exchange/</guid>
       <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
 the need to remember a password.&lt;/p&gt;
 
@@ -604,10 +604,10 @@ ssh you@B # to check if it works
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/fit/</link>
+      <link>http://brunettoziosi.eu/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
       <description>
 
 &lt;ul&gt;
@@ -665,10 +665,10 @@ ssh you@B # to check if it works
     
     <item>
       <title>Blog pages index generator</title>
-      <link>http://localhost:1313/posts/blog-pages-index-generator/</link>
+      <link>http://brunettoziosi.eu/posts/blog-pages-index-generator/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-pages-index-generator/</guid>
+      <guid>http://brunettoziosi.eu/posts/blog-pages-index-generator/</guid>
       <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
 &lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
 pages of this blog!
@@ -781,10 +781,10 @@ func main() {
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/phd/</link>
+      <link>http://brunettoziosi.eu/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Astrofelpa on Post It!</title>
-    <link>http://localhost:1313/tags/astrofelpa/</link>
+    <link>http://brunettoziosi.eu/tags/astrofelpa/</link>
     <description>Recent content in Astrofelpa on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/astrofelpa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/astrofelpa/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>AstroFelpa</title>
-      <link>http://localhost:1313/pages/research/astrofelpa/</link>
+      <link>http://brunettoziosi.eu/pages/research/astrofelpa/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/astrofelpa/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
       <description>
 
 &lt;h3 id=&#34;license:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;License&lt;/h3&gt;

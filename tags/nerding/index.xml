@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nerding on Post It!</title>
-    <link>http://localhost:1313/tags/nerding/</link>
+    <link>http://brunettoziosi.eu/tags/nerding/</link>
     <description>Recent content in Nerding on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nerding/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/nerding/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Things that you can not do without</title>
-      <link>http://localhost:1313/posts/things-that-you-can-not-do-without/</link>
+      <link>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/things-that-you-can-not-do-without/</guid>
+      <guid>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</guid>
       <description>&lt;p&gt;A little list of essential tools:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Change a line in all of your files at once</title>
-      <link>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <link>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <guid>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</guid>
       <description>&lt;p&gt;Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.&lt;br /&gt;
 With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
 
@@ -52,10 +52,10 @@ With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
     
     <item>
       <title>Blogging with Nikola &#43; Ipython &#43; Git(Hub)</title>
-      <link>http://localhost:1313/posts/blogging-with-nikola-ipython-github/</link>
+      <link>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</link>
       <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blogging-with-nikola-ipython-github/</guid>
+      <guid>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</guid>
       <description>
 
 &lt;p&gt;After a lot of different attempts now it seems that I&amp;rsquo;m able to run a static

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Astro/Physics on Post It!</title>
-    <link>http://localhost:1313/tags/astro/physics/</link>
+    <link>http://brunettoziosi.eu/tags/astro/physics/</link>
     <description>Recent content in Astro/Physics on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/astro/physics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/astro/physics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -27,10 +27,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>AGN for Dummies</title>
-      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <link>http://brunettoziosi.eu/posts/agn-for-dummies/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <guid>http://brunettoziosi.eu/posts/agn-for-dummies/</guid>
       <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 
 &lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
@@ -41,10 +41,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>PhD students&#39; Journal Clubs and Sozi</title>
-      <link>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</link>
+      <link>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</link>
       <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</guid>
       <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
 I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
 
@@ -61,10 +61,10 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
     
     <item>
       <title>Infographics attempts!</title>
-      <link>http://localhost:1313/posts/infographics-attempts/</link>
+      <link>http://brunettoziosi.eu/posts/infographics-attempts/</link>
       <pubDate>Mon, 23 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/infographics-attempts/</guid>
+      <guid>http://brunettoziosi.eu/posts/infographics-attempts/</guid>
       <description>&lt;p&gt;Recently I am interested in &lt;a href=&#34;http://en.wikipedia.org/wiki/Information_graphics&#34; target=&#34;_blank&#34; title=&#34;Infographics on wikipedia&#34;&gt;infographics&lt;/a&gt; (check also &lt;a href=&#34;http://www.coolinfographics.com/&#34; target=&#34;_blank&#34; title=&#34;Coolinfographics&#34;&gt;this&lt;/a&gt;) and if it can help communicating science. There are also two interesting projects related to this, &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi homepage&#34;&gt;Prezi&lt;/a&gt; and &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi homepage&#34;&gt;Sozi&lt;/a&gt;. I&amp;rsquo;m not an artist but I want to try to change my way of communicating and to save lectures notes. This is my first attempt, the first lesson of the Astroparticles course for PhD students! It is not really &amp;ldquo;graphic&amp;rdquo;, but it&amp;rsquo;s my first step!:P&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;../../files/astropartycles_1.png&#34;&gt;&lt;img alt=&#34;Astroparticles notes 1&#34; height=&#34;800&#34; src=&#34;../../files/astropartycles_1.png&#34; title=&#34;Astroparticles First Aid 1&#34; width=&#34;600&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -75,10 +75,10 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
     
     <item>
       <title>PhD question #4: calculate the value of M*</title>
-      <link>http://localhost:1313/posts/phd-question-4-calculate-the-value-of-m/</link>
+      <link>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</link>
       <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-question-4-calculate-the-value-of-m/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</guid>
       <description>
 
 &lt;p&gt;Some post ago &lt;a href=&#34;phd-question-1-m.html&#34;&gt;I&amp;rsquo;ve written about M*&lt;/a&gt;, the typical non-linear mass collapsing at the redshift we are considering. Now I have to find a value for it.&lt;/p&gt;
@@ -297,10 +297,10 @@ print &amp;quot;Done in &amp;quot;, time.time()-t
     
     <item>
       <title>PhD question #3: Monte Carlo Markov chain</title>
-      <link>http://localhost:1313/posts/phd-question-3-monte-carlo-markov-chain/</link>
+      <link>http://brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain/</link>
       <pubDate>Thu, 15 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-question-3-monte-carlo-markov-chain/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain/</guid>
       <description>
 
 &lt;p&gt;After &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-1-latexm_latex/&#34; target=&#34;_blank&#34; title=&#34;PhD question #1: M*&#34;&gt;&lt;/a&gt; and &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-2-spherical-collapse/&#34; target=&#34;_blank&#34; title=&#34;PhD question #2: spherical collapse&#34;&gt;&lt;/a&gt;, in this post I write about the Monte Carlo Markov chain. This post is the Wordpress transposition of a page in my private and local Mediawiki installation, so maybe has not a perfect structure and look&amp;amp;feel. Also, the Latex formulas embedded in &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt; and &lt;a href=&#34;http://wordpress.com/&#34; target=&#34;_blank&#34; title=&#34;Wordpress homepage&#34;&gt;Wordpress&lt;/a&gt; look horrible.&lt;br /&gt;
@@ -508,10 +508,10 @@ We have a theory and some data, the Bayesian approach says that&lt;/p&gt;
     
     <item>
       <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
-      <link>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
       <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
 Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
 
@@ -575,10 +575,10 @@ Here a brief scheme on how the short range force calculation works on multiple p
     
     <item>
       <title>The initial condition saga</title>
-      <link>http://localhost:1313/posts/the-initial-condition-saga/</link>
+      <link>http://brunettoziosi.eu/posts/the-initial-condition-saga/</link>
       <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/the-initial-condition-saga/</guid>
+      <guid>http://brunettoziosi.eu/posts/the-initial-condition-saga/</guid>
       <description>
 
 &lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
@@ -725,10 +725,10 @@ There is also an improved version of N-GenIC, 2LPTIC, but it need a different in
     
     <item>
       <title>PhD question #2: spherical collapse</title>
-      <link>http://localhost:1313/posts/phd-question-2-spherical-collapse/</link>
+      <link>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</link>
       <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-question-2-spherical-collapse/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</guid>
       <description>&lt;p&gt;With this post I would like to collect and present in a simple and consistent
 form some of the various analytical derivation of the spherical collapse
 model, in particular the challenge was to find how to obtain the famous
@@ -740,10 +740,10 @@ $\delta_{lin}\sim1.686$.&lt;/p&gt;
     
     <item>
       <title>My first Gadget2 tests</title>
-      <link>http://localhost:1313/posts/my-first-gadget2-tests/</link>
+      <link>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</link>
       <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-gadget2-tests/</guid>
+      <guid>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</guid>
       <description>
 
 &lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
@@ -1031,10 +1031,10 @@ print &amp;quot;Done in &amp;quot;+str(time.time()-t)+&amp;quot; seconds.&amp;qu
     
     <item>
       <title>GIF2 files Python reader</title>
-      <link>http://localhost:1313/posts/gif2-files-python-reader/</link>
+      <link>http://brunettoziosi.eu/posts/gif2-files-python-reader/</link>
       <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/gif2-files-python-reader/</guid>
+      <guid>http://brunettoziosi.eu/posts/gif2-files-python-reader/</guid>
       <description>&lt;p&gt;I create this script on the basis of the code to read the Millennium II data (the same used &lt;a href=&#34;http://elbrunz.wordpress.com/2011/12/02/from-binaries-to-hdf5-using-python/&#34; title=&#34;From binaries to HDF5 using Python&#34;&gt;here&lt;/a&gt;) provided by &lt;a href=&#34;http://mbk.ps.uci.edu/index.html&#34; title=&#34;Mike Boylan-Kolchin&#34;&gt;Mike Boylan-Kolchin&lt;/a&gt;. Being allowed to read the Fortran code to write and read the GIF2 files I could adapt this script to exactly fit this problem.&lt;/p&gt;
 
 &lt;!-- TEASER_END--&gt;    
@@ -1122,10 +1122,10 @@ for riga in file.readlines():
     
     <item>
       <title>GIF2 substructures coordinates correction</title>
-      <link>http://localhost:1313/posts/gif2-substructures-coordinates-correction/</link>
+      <link>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</link>
       <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/gif2-substructures-coordinates-correction/</guid>
+      <guid>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</guid>
       <description>&lt;p&gt;I used this script to change the coordinates of the substructures in the GIF2 simulation output from the center of mass coordinates to the global ones. The substructures were stored in our server in files referring to the index of the halo to which they belong and their coordinates were respect to the center of the halo. For each halo this script read the subhaloes center of mass coordinates in kpc and change them to global coordinates in Mpc managing the periodic boundary conditions .&lt;/p&gt;
 
 &lt;!-- TEASER_END --&gt;    
@@ -1255,10 +1255,10 @@ print &amp;quot;Done in &amp;quot;, time.time()-t, &amp;quot; with &amp;quot;, v
     
     <item>
       <title>Cosmological simulations #6: adding gas!</title>
-      <link>http://localhost:1313/posts/cosmological-simulations-6-adding-gas/</link>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas/</link>
       <pubDate>Tue, 29 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/cosmological-simulations-6-adding-gas/</guid>
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas/</guid>
       <description>&lt;p&gt;As we have seen, cosmological N-body simulations consider only gravitational interactions. This is good for large scale distribution of matter such as galaxy distribution or cluster formation, but if we are interested in smaller details we have to add gas physics.&lt;br /&gt;
 There are two main approaches, completely different one from the other.&lt;/p&gt;
 
@@ -1278,10 +1278,10 @@ The second way is the Smoothed Particles Hydrodynamics (SPH). In these type of a
     
     <item>
       <title>Cosmological simulations #5: initial conditions!</title>
-      <link>http://localhost:1313/posts/cosmological-simulations-5-initial-conditions/</link>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</link>
       <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/cosmological-simulations-5-initial-conditions/</guid>
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</guid>
       <description>
 
 &lt;p&gt;After we had a look on why we need cosmological simulations, what they are and how they are performed, it&amp;rsquo;s time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.&lt;/p&gt;
@@ -1326,10 +1326,10 @@ We can generate the gravitational field in the Fourier space just using these pr
     
     <item>
       <title>Cosmological simulations #3: force calculation!</title>
-      <link>http://localhost:1313/posts/cosmological-simulations-3-force-calculation/</link>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</link>
       <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/cosmological-simulations-3-force-calculation/</guid>
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</guid>
       <description>
 
 &lt;p&gt;In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.

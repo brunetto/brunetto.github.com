@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installation on Post It!</title>
-    <link>http://localhost:1313/tags/installation/</link>
+    <link>http://brunettoziosi.eu/tags/installation/</link>
     <description>Recent content in Installation on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Jun 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/installation/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Best Golang installation</title>
-      <link>http://localhost:1313/posts/best-golang-installation/</link>
+      <link>http://brunettoziosi.eu/posts/best-golang-installation/</link>
       <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/best-golang-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/best-golang-installation/</guid>
       <description>&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -65,10 +65,10 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;

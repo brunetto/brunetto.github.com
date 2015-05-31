@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Moto on Post It!</title>
-    <link>http://localhost:1313/tags/moto/</link>
+    <link>http://brunettoziosi.eu/tags/moto/</link>
     <description>Recent content in Moto on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/moto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/moto/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Moto</title>
-      <link>http://localhost:1313/pages/travels/moto/</link>
+      <link>http://brunettoziosi.eu/pages/travels/moto/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/travels/moto/</guid>
+      <guid>http://brunettoziosi.eu/pages/travels/moto/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Venezia - Instambul</title>
-      <link>http://localhost:1313/pages/travels/venezia-instambul/</link>
+      <link>http://brunettoziosi.eu/pages/travels/venezia-instambul/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/travels/venezia-instambul/</guid>
+      <guid>http://brunettoziosi.eu/pages/travels/venezia-instambul/</guid>
       <description></description>
     </item>
     

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post on Post It!</title>
-    <link>http://localhost:1313/categories/post/</link>
+    <link>http://brunettoziosi.eu/categories/post/</link>
     <description>Recent content in Post on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/categories/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -27,10 +27,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>Padding</title>
-      <link>http://localhost:1313/posts/padding/</link>
+      <link>http://brunettoziosi.eu/posts/padding/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/padding/</guid>
+      <guid>http://brunettoziosi.eu/posts/padding/</guid>
       <description>&lt;p&gt;Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.&lt;br /&gt;
 I&amp;rsquo;ll take a note here:&lt;/p&gt;
 
@@ -69,10 +69,10 @@ of char if you want to maintain the total number of printed char.&lt;/p&gt;
     
     <item>
       <title>Things that you can not do without</title>
-      <link>http://localhost:1313/posts/things-that-you-can-not-do-without/</link>
+      <link>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/things-that-you-can-not-do-without/</guid>
+      <guid>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</guid>
       <description>&lt;p&gt;A little list of essential tools:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -96,10 +96,10 @@ of char if you want to maintain the total number of printed char.&lt;/p&gt;
     
     <item>
       <title>Python plot examples</title>
-      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -416,10 +416,10 @@ if __name__ == &amp;quot;__main__&amp;quot;:
     
     <item>
       <title>Change a line in all of your files at once</title>
-      <link>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <link>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <guid>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</guid>
       <description>&lt;p&gt;Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.&lt;br /&gt;
 With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
 
@@ -430,10 +430,10 @@ With &lt;code&gt;sed&lt;/code&gt; it is super-easy:&lt;/p&gt;
     
     <item>
       <title>Linux network monitoring</title>
-      <link>http://localhost:1313/posts/network-monitoring/</link>
+      <link>http://brunettoziosi.eu/posts/network-monitoring/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/network-monitoring/</guid>
+      <guid>http://brunettoziosi.eu/posts/network-monitoring/</guid>
       <description>&lt;p&gt;A list of programs to monitor your network connection and find out which process is eating bandwith
 and how to run them:&lt;/p&gt;
 
@@ -448,10 +448,10 @@ and how to run them:&lt;/p&gt;
     
     <item>
       <title>rsync like a pro</title>
-      <link>http://localhost:1313/posts/rsync-like-a-pro/</link>
+      <link>http://brunettoziosi.eu/posts/rsync-like-a-pro/</link>
       <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/rsync-like-a-pro/</guid>
+      <guid>http://brunettoziosi.eu/posts/rsync-like-a-pro/</guid>
       <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path
@@ -463,10 +463,10 @@ and how to run them:&lt;/p&gt;
     
     <item>
       <title>Best Golang installation</title>
-      <link>http://localhost:1313/posts/best-golang-installation/</link>
+      <link>http://brunettoziosi.eu/posts/best-golang-installation/</link>
       <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/best-golang-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/best-golang-installation/</guid>
       <description>&lt;p&gt;Best way to install Golang, from:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -517,10 +517,10 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
     
     <item>
       <title>Ssh keys exchange</title>
-      <link>http://localhost:1313/posts/ssh-keys-exchange/</link>
+      <link>http://brunettoziosi.eu/posts/ssh-keys-exchange/</link>
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ssh-keys-exchange/</guid>
+      <guid>http://brunettoziosi.eu/posts/ssh-keys-exchange/</guid>
       <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
 the need to remember a password.&lt;/p&gt;
 
@@ -540,10 +540,10 @@ ssh you@B # to check if it works
     
     <item>
       <title>Blog pages index generator</title>
-      <link>http://localhost:1313/posts/blog-pages-index-generator/</link>
+      <link>http://brunettoziosi.eu/posts/blog-pages-index-generator/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blog-pages-index-generator/</guid>
+      <guid>http://brunettoziosi.eu/posts/blog-pages-index-generator/</guid>
       <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
 &lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
 pages of this blog!
@@ -656,10 +656,10 @@ func main() {
     
     <item>
       <title>Latex conditional compilation</title>
-      <link>http://localhost:1313/posts/latex-conditional-compilation/</link>
+      <link>http://brunettoziosi.eu/posts/latex-conditional-compilation/</link>
       <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/latex-conditional-compilation/</guid>
+      <guid>http://brunettoziosi.eu/posts/latex-conditional-compilation/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a long time I&amp;rsquo;m looking for a way to conditional-compiling my
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX&#34;&gt;Beamer&lt;/a&gt;) presentation in order to
 decide on the fly if I want to print an handout version of the presentation.&lt;/p&gt;
@@ -687,10 +687,10 @@ to decide in the source if you want the handout version or not&amp;hellip;&lt;br
     
     <item>
       <title>Super-basic file parsing in Go</title>
-      <link>http://localhost:1313/posts/super-basic-file-parsing-in-go/</link>
+      <link>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</link>
       <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/super-basic-file-parsing-in-go/</guid>
+      <guid>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</guid>
       <description>&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix
 searching for the lines containing a certain string.&lt;/p&gt;
 
@@ -873,10 +873,10 @@ string inside it.&lt;/p&gt;
     
     <item>
       <title>Check external ip</title>
-      <link>http://localhost:1313/posts/check-external-ip/</link>
+      <link>http://brunettoziosi.eu/posts/check-external-ip/</link>
       <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/check-external-ip/</guid>
+      <guid>http://brunettoziosi.eu/posts/check-external-ip/</guid>
       <description>
 
 &lt;p&gt;This is the first attempt to check the external ip of a linux box.
@@ -995,10 +995,10 @@ func main() {
     
     <item>
       <title>Go installation from source</title>
-      <link>http://localhost:1313/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</link>
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
       <description>&lt;p&gt;Summary of the Go installation instruction from source as presented in:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1024,10 +1024,10 @@ echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.ba
     
     <item>
       <title>StarLab-GPU installation</title>
-      <link>http://localhost:1313/posts/starlab-gpu-installation/</link>
+      <link>http://brunettoziosi.eu/posts/starlab-gpu-installation/</link>
       <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/starlab-gpu-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
       <description>
 
 &lt;ul&gt;

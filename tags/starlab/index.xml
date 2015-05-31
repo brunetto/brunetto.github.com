@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Starlab on Post It!</title>
-    <link>http://localhost:1313/tags/starlab/</link>
+    <link>http://brunettoziosi.eu/tags/starlab/</link>
     <description>Recent content in Starlab on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/starlab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/starlab/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
@@ -182,10 +182,10 @@ GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_releas
     
     <item>
       <title>StarLab-GPU installation</title>
-      <link>http://localhost:1313/posts/starlab-gpu-installation/</link>
+      <link>http://brunettoziosi.eu/posts/starlab-gpu-installation/</link>
       <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/starlab-gpu-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
       <description>
 
 &lt;ul&gt;

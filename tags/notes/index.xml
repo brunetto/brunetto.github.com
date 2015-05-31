@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Post It!</title>
-    <link>http://localhost:1313/tags/notes/</link>
+    <link>http://brunettoziosi.eu/tags/notes/</link>
     <description>Recent content in Notes on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Sites Making Notes</title>
-      <link>http://localhost:1313/pages/tech/sites-making-notes/</link>
+      <link>http://brunettoziosi.eu/pages/tech/sites-making-notes/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/sites-making-notes/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/sites-making-notes/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.google.com/webmasters/tools/home?hl=en&#34;&gt;Google webmaster tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://plus.google.com/authorship&#34;&gt;Google+ authoring&lt;/a&gt;&lt;/li&gt;

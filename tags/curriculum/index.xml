@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Curriculum on Post It!</title>
-    <link>http://localhost:1313/tags/curriculum/</link>
+    <link>http://brunettoziosi.eu/tags/curriculum/</link>
     <description>Recent content in Curriculum on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2013 23:40:58 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/curriculum/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/curriculum/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Curriculum vitae</title>
-      <link>http://localhost:1313/pages/curriculum-vitae/</link>
+      <link>http://brunettoziosi.eu/pages/curriculum-vitae/</link>
       <pubDate>Fri, 16 Aug 2013 23:40:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/curriculum-vitae/</guid>
+      <guid>http://brunettoziosi.eu/pages/curriculum-vitae/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/brunetto/ziosiCV/blob/master/ziosi_cv.pdf&#34;&gt;PDF version here&lt;/a&gt;&lt;/p&gt;

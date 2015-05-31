@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markov Chain on Post It!</title>
-    <link>http://localhost:1313/tags/markov-chain/</link>
+    <link>http://brunettoziosi.eu/tags/markov-chain/</link>
     <description>Recent content in Markov Chain on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/markov-chain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/markov-chain/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PhD question #3: Monte Carlo Markov chain</title>
-      <link>http://localhost:1313/posts/phd-question-3-monte-carlo-markov-chain/</link>
+      <link>http://brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain/</link>
       <pubDate>Thu, 15 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-question-3-monte-carlo-markov-chain/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain/</guid>
       <description>
 
 &lt;p&gt;After &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-1-latexm_latex/&#34; target=&#34;_blank&#34; title=&#34;PhD question #1: M*&#34;&gt;&lt;/a&gt; and &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-2-spherical-collapse/&#34; target=&#34;_blank&#34; title=&#34;PhD question #2: spherical collapse&#34;&gt;&lt;/a&gt;, in this post I write about the Monte Carlo Markov chain. This post is the Wordpress transposition of a page in my private and local Mediawiki installation, so maybe has not a perfect structure and look&amp;amp;feel. Also, the Latex formulas embedded in &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt; and &lt;a href=&#34;http://wordpress.com/&#34; target=&#34;_blank&#34; title=&#34;Wordpress homepage&#34;&gt;Wordpress&lt;/a&gt; look horrible.&lt;br /&gt;

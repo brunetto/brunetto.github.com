@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cooking on Post It!</title>
-    <link>http://localhost:1313/tags/cooking/</link>
+    <link>http://brunettoziosi.eu/tags/cooking/</link>
     <description>Recent content in Cooking on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cooking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/cooking/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cooking</title>
-      <link>http://localhost:1313/pages/personal/cooking/</link>
+      <link>http://brunettoziosi.eu/pages/personal/cooking/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/cooking/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/cooking/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Piadine rucola, stracchino, pomodorini e crudo/arrosto&lt;/li&gt;
 &lt;/ul&gt;

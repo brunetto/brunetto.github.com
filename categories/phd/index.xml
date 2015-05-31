@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phd on Post It!</title>
-    <link>http://localhost:1313/categories/phd/</link>
+    <link>http://brunettoziosi.eu/categories/phd/</link>
     <description>Recent content in Phd on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/phd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/categories/phd/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Poster Making</title>
-      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <link>http://brunettoziosi.eu/pages/research/posterMaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/posterMaking/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/phd/</link>
+      <link>http://brunettoziosi.eu/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
@@ -164,10 +164,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
@@ -335,10 +335,10 @@ GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_releas
     
     <item>
       <title>AstroFelpa</title>
-      <link>http://localhost:1313/pages/research/astrofelpa/</link>
+      <link>http://brunettoziosi.eu/pages/research/astrofelpa/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/astrofelpa/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
       <description>
 
 &lt;h3 id=&#34;license:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;License&lt;/h3&gt;
@@ -394,10 +394,10 @@ quantum/relativistic/strange matters&lt;/li&gt;
     
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/pages/research/research/</link>
+      <link>http://brunettoziosi.eu/pages/research/research/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/research/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:42f623b3bad309d5d6619d450af47d40&#34;&gt;PhD Project&lt;/h2&gt;
@@ -446,10 +446,10 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
     
     <item>
       <title>My favourite PhD Comics</title>
-      <link>http://localhost:1313/pages/personal/my-favourite-phd-comics/</link>
+      <link>http://brunettoziosi.eu/pages/personal/my-favourite-phd-comics/</link>
       <pubDate>Sat, 17 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/personal/my-favourite-phd-comics/</guid>
+      <guid>http://brunettoziosi.eu/pages/personal/my-favourite-phd-comics/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/archive_list.php&#34;&gt;PhD Comics Archive&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.phdcomics.com/comics/most_popular.php&#34;&gt;Most Popular&lt;/a&gt;&lt;/li&gt;

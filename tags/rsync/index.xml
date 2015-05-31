@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rsync on Post It!</title>
-    <link>http://localhost:1313/tags/rsync/</link>
+    <link>http://brunettoziosi.eu/tags/rsync/</link>
     <description>Recent content in Rsync on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jul 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>rsync like a pro</title>
-      <link>http://localhost:1313/posts/rsync-like-a-pro/</link>
+      <link>http://brunettoziosi.eu/posts/rsync-like-a-pro/</link>
       <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/rsync-like-a-pro/</guid>
+      <guid>http://brunettoziosi.eu/posts/rsync-like-a-pro/</guid>
       <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path

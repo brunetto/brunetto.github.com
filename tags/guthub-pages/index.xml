@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guthub Pages on Post It!</title>
-    <link>http://localhost:1313/tags/guthub-pages/</link>
+    <link>http://brunettoziosi.eu/tags/guthub-pages/</link>
     <description>Recent content in Guthub Pages on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/guthub-pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/guthub-pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Blogging with Nikola &#43; Ipython &#43; Git(Hub)</title>
-      <link>http://localhost:1313/posts/blogging-with-nikola-ipython-github/</link>
+      <link>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</link>
       <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/blogging-with-nikola-ipython-github/</guid>
+      <guid>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</guid>
       <description>
 
 &lt;p&gt;After a lot of different attempts now it seems that I&amp;rsquo;m able to run a static

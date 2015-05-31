@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Histogram on Post It!</title>
-    <link>http://localhost:1313/tags/histogram/</link>
+    <link>http://brunettoziosi.eu/tags/histogram/</link>
     <description>Recent content in Histogram on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 May 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Essential guide to binning</title>
-      <link>http://localhost:1313/posts/essential-guide-to-binning/</link>
+      <link>http://brunettoziosi.eu/posts/essential-guide-to-binning/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/essential-guide-to-binning/</guid>
+      <guid>http://brunettoziosi.eu/posts/essential-guide-to-binning/</guid>
       <description>
 
 &lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;

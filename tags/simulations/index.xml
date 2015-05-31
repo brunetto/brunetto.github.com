@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simulations on Post It!</title>
-    <link>http://localhost:1313/tags/simulations/</link>
+    <link>http://brunettoziosi.eu/tags/simulations/</link>
     <description>Recent content in Simulations on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2013 09:34:11 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/simulations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/simulations/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>StarLab-GPU installation</title>
-      <link>http://localhost:1313/posts/starlab-gpu-installation/</link>
+      <link>http://brunettoziosi.eu/posts/starlab-gpu-installation/</link>
       <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/starlab-gpu-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
       <description>
 
 &lt;ul&gt;
@@ -607,10 +607,10 @@ to check for other options.&lt;/p&gt;
     
     <item>
       <title>HDF5 in Python: PyTables</title>
-      <link>http://localhost:1313/posts/hdf5-in-python-pytables/</link>
+      <link>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/hdf5-in-python-pytables/</guid>
+      <guid>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.hdfgroup.org/HDF5/&#34; target=&#34;_blank&#34; title=&#34;HDF5 Group homepage&#34;&gt;HDF5&lt;/a&gt; is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.&lt;br /&gt;
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.&lt;br /&gt;
 It&amp;rsquo;s also possible to navigate into a file graphically with &lt;a href=&#34;http://vitables.org/&#34; target=&#34;_blank&#34; title=&#34;ViTables homepage&#34;&gt;ViTables&lt;/a&gt;.&lt;br /&gt;
@@ -694,10 +694,10 @@ h5.root.group.name.read()
     
     <item>
       <title>Learning C from simulations, #1</title>
-      <link>http://localhost:1313/posts/learning-c-from-simulations-1/</link>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-c-from-simulations-1/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</guid>
       <description>
 
 &lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
@@ -732,10 +732,10 @@ I your C program is simple and short, and fit in a single file you can compile i
     
     <item>
       <title>Learning C from simulations, #3: C horrors!</title>
-      <link>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</link>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</guid>
       <description>&lt;p&gt;Yeah, this is post #3! Post #2 is &amp;ldquo;work in progress&amp;rdquo; and it will be on FFTs!&lt;/p&gt;
 
 &lt;p&gt;Today I was trying to understand what this piece of code do:&lt;/p&gt;
@@ -879,10 +879,10 @@ Obviously the Python version I&amp;rsquo;ve wrote before was perfect the first t
     
     <item>
       <title>Loadleveler quick howto</title>
-      <link>http://localhost:1313/posts/loadleveler-quick-howto/</link>
+      <link>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/loadleveler-quick-howto/</guid>
+      <guid>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</guid>
       <description>&lt;p&gt;Some useful commands to manage jobs with IBM &lt;code&gt;loadleveler&lt;/code&gt; (&lt;code&gt;ll&lt;/code&gt;).&lt;/p&gt;
 
 &lt;p&gt;First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) &amp;ldquo;test_run.cmd&amp;rdquo;. With this file you tell &lt;code&gt;ll&lt;/code&gt; what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
@@ -922,10 +922,10 @@ python ./start.py
     
     <item>
       <title>Python parallel job manager</title>
-      <link>http://localhost:1313/posts/python-parallel-job-manager/</link>
+      <link>http://brunettoziosi.eu/posts/python-parallel-job-manager/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-parallel-job-manager/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-parallel-job-manager/</guid>
       <description>&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think&amp;hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &amp;hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.&lt;/p&gt;
 
 &lt;p&gt;At this step, however, I didn&amp;rsquo;t know how to manage the different processes in a comfortable way.

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phd on Post It!</title>
-    <link>http://localhost:1313/tags/phd/</link>
+    <link>http://brunettoziosi.eu/tags/phd/</link>
     <description>Recent content in Phd on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/phd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/phd/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Poster Making</title>
-      <link>http://localhost:1313/pages/research/posterMaking/</link>
+      <link>http://brunettoziosi.eu/pages/research/posterMaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/posterMaking/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/posterMaking/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/phd/</link>
+      <link>http://brunettoziosi.eu/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/phd/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
@@ -164,10 +164,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>AGN for Dummies</title>
-      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <link>http://brunettoziosi.eu/posts/agn-for-dummies/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <guid>http://brunettoziosi.eu/posts/agn-for-dummies/</guid>
       <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 
 &lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
@@ -178,10 +178,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
     
     <item>
       <title>Essential guide to binning</title>
-      <link>http://localhost:1313/posts/essential-guide-to-binning/</link>
+      <link>http://brunettoziosi.eu/posts/essential-guide-to-binning/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/essential-guide-to-binning/</guid>
+      <guid>http://brunettoziosi.eu/posts/essential-guide-to-binning/</guid>
       <description>
 
 &lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
@@ -266,10 +266,10 @@ def base_binning(inf, sup, n_bin=None, delta_bin=None):
     
     <item>
       <title>Learning not to hate C: things worth nothing</title>
-      <link>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <link>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</link>
       <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
       <description>
 
 &lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
@@ -554,10 +554,10 @@ void strcpy(char s[], char *t) {
     
     <item>
       <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
-      <link>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <link>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
       <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <guid>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
       <description>
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
@@ -637,10 +637,10 @@ h5.close()
     
     <item>
       <title>PhD students&#39; Journal Clubs and Sozi</title>
-      <link>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</link>
+      <link>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</link>
       <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</guid>
       <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
 I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
 
@@ -657,10 +657,10 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
     
     <item>
       <title>PhD question #4: calculate the value of M*</title>
-      <link>http://localhost:1313/posts/phd-question-4-calculate-the-value-of-m/</link>
+      <link>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</link>
       <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-question-4-calculate-the-value-of-m/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</guid>
       <description>
 
 &lt;p&gt;Some post ago &lt;a href=&#34;phd-question-1-m.html&#34;&gt;I&amp;rsquo;ve written about M*&lt;/a&gt;, the typical non-linear mass collapsing at the redshift we are considering. Now I have to find a value for it.&lt;/p&gt;
@@ -879,10 +879,10 @@ print &amp;quot;Done in &amp;quot;, time.time()-t
     
     <item>
       <title>Create your own Wikipedia</title>
-      <link>http://localhost:1313/posts/create-your-own-wikipedia/</link>
+      <link>http://brunettoziosi.eu/posts/create-your-own-wikipedia/</link>
       <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-your-own-wikipedia/</guid>
+      <guid>http://brunettoziosi.eu/posts/create-your-own-wikipedia/</guid>
       <description>&lt;p&gt;I was trying to find a tool to keep track of my activities (mainly), work activities. I&amp;rsquo;ve given a chance to some &amp;ldquo;diary&amp;rdquo; software but I was not convinced. I was lingering on using text files but it was not a solution. So I decided to try &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt;. And it was perfect!!!&lt;br /&gt;
 Now I&amp;rsquo;m going to describe the installation on an Ubuntu 11.10 with the repos packages.&lt;/p&gt;
 
@@ -961,10 +961,10 @@ To be able to upload files and images you have to modify values in &lt;code&gt;/
     
     <item>
       <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
-      <link>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
       <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
 Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
 
@@ -1028,10 +1028,10 @@ Here a brief scheme on how the short range force calculation works on multiple p
     
     <item>
       <title>Learning C from simulations, #1</title>
-      <link>http://localhost:1313/posts/learning-c-from-simulations-1/</link>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-c-from-simulations-1/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</guid>
       <description>
 
 &lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
@@ -1066,10 +1066,10 @@ I your C program is simple and short, and fit in a single file you can compile i
     
     <item>
       <title>Learning C from simulations, #3: C horrors!</title>
-      <link>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</link>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-c-from-simulations-3-c-horrors/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</guid>
       <description>&lt;p&gt;Yeah, this is post #3! Post #2 is &amp;ldquo;work in progress&amp;rdquo; and it will be on FFTs!&lt;/p&gt;
 
 &lt;p&gt;Today I was trying to understand what this piece of code do:&lt;/p&gt;
@@ -1213,10 +1213,10 @@ Obviously the Python version I&amp;rsquo;ve wrote before was perfect the first t
     
     <item>
       <title>The initial condition saga</title>
-      <link>http://localhost:1313/posts/the-initial-condition-saga/</link>
+      <link>http://brunettoziosi.eu/posts/the-initial-condition-saga/</link>
       <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/the-initial-condition-saga/</guid>
+      <guid>http://brunettoziosi.eu/posts/the-initial-condition-saga/</guid>
       <description>
 
 &lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
@@ -1363,10 +1363,10 @@ There is also an improved version of N-GenIC, 2LPTIC, but it need a different in
     
     <item>
       <title>PhD question #2: spherical collapse</title>
-      <link>http://localhost:1313/posts/phd-question-2-spherical-collapse/</link>
+      <link>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</link>
       <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-question-2-spherical-collapse/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</guid>
       <description>&lt;p&gt;With this post I would like to collect and present in a simple and consistent
 form some of the various analytical derivation of the spherical collapse
 model, in particular the challenge was to find how to obtain the famous
@@ -1378,10 +1378,10 @@ $\delta_{lin}\sim1.686$.&lt;/p&gt;
     
     <item>
       <title>My first Gadget2 tests</title>
-      <link>http://localhost:1313/posts/my-first-gadget2-tests/</link>
+      <link>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</link>
       <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-gadget2-tests/</guid>
+      <guid>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</guid>
       <description>
 
 &lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;

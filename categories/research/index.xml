@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Post It!</title>
-    <link>http://localhost:1313/categories/research/</link>
+    <link>http://brunettoziosi.eu/categories/research/</link>
     <description>Recent content in Research on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://localhost:1313/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -27,10 +27,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>Python plot examples</title>
-      <link>http://localhost:1313/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -347,10 +347,10 @@ if __name__ == &amp;quot;__main__&amp;quot;:
     
     <item>
       <title>Eating</title>
-      <link>http://localhost:1313/pages/research/fit/</link>
+      <link>http://brunettoziosi.eu/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
       <description>
 
 &lt;ul&gt;
@@ -408,10 +408,10 @@ if __name__ == &amp;quot;__main__&amp;quot;:
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
@@ -579,10 +579,10 @@ GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_releas
     
     <item>
       <title>Astrocomputing &amp; Astrostatistics</title>
-      <link>http://localhost:1313/pages/research/astrocomputing/</link>
+      <link>http://brunettoziosi.eu/pages/research/astrocomputing/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/astrocomputing/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/astrocomputing/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro&#34;&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt;
 also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
@@ -592,10 +592,10 @@ also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/l
     
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/pages/research/research/</link>
+      <link>http://brunettoziosi.eu/pages/research/research/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/research/research/</guid>
+      <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
 &lt;h2 id=&#34;phd-project:42f623b3bad309d5d6619d450af47d40&#34;&gt;PhD Project&lt;/h2&gt;
@@ -644,10 +644,10 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
     
     <item>
       <title>StarLab-GPU installation</title>
-      <link>http://localhost:1313/posts/starlab-gpu-installation/</link>
+      <link>http://brunettoziosi.eu/posts/starlab-gpu-installation/</link>
       <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/starlab-gpu-installation/</guid>
+      <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
       <description>
 
 &lt;ul&gt;
@@ -1240,10 +1240,10 @@ to check for other options.&lt;/p&gt;
     
     <item>
       <title>AGN for Dummies</title>
-      <link>http://localhost:1313/posts/agn-for-dummies/</link>
+      <link>http://brunettoziosi.eu/posts/agn-for-dummies/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/agn-for-dummies/</guid>
+      <guid>http://brunettoziosi.eu/posts/agn-for-dummies/</guid>
       <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 
 &lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
@@ -1254,10 +1254,10 @@ to check for other options.&lt;/p&gt;
     
     <item>
       <title>Latex together with matplotlib!</title>
-      <link>http://localhost:1313/posts/latex-together-with-matplotlib/</link>
+      <link>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/latex-together-with-matplotlib/</guid>
+      <guid>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</guid>
       <description>&lt;p&gt;Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.&lt;br /&gt;
 Everything you need is to add to your script&lt;/p&gt;
 
@@ -1277,10 +1277,10 @@ rc(&#39;text&#39;, usetex=True)
     
     <item>
       <title>Essential guide to binning</title>
-      <link>http://localhost:1313/posts/essential-guide-to-binning/</link>
+      <link>http://brunettoziosi.eu/posts/essential-guide-to-binning/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/essential-guide-to-binning/</guid>
+      <guid>http://brunettoziosi.eu/posts/essential-guide-to-binning/</guid>
       <description>
 
 &lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
@@ -1365,10 +1365,10 @@ def base_binning(inf, sup, n_bin=None, delta_bin=None):
     
     <item>
       <title>HDF5 in Python: PyTables</title>
-      <link>http://localhost:1313/posts/hdf5-in-python-pytables/</link>
+      <link>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/hdf5-in-python-pytables/</guid>
+      <guid>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.hdfgroup.org/HDF5/&#34; target=&#34;_blank&#34; title=&#34;HDF5 Group homepage&#34;&gt;HDF5&lt;/a&gt; is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.&lt;br /&gt;
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.&lt;br /&gt;
 It&amp;rsquo;s also possible to navigate into a file graphically with &lt;a href=&#34;http://vitables.org/&#34; target=&#34;_blank&#34; title=&#34;ViTables homepage&#34;&gt;ViTables&lt;/a&gt;.&lt;br /&gt;
@@ -1452,10 +1452,10 @@ h5.root.group.name.read()
     
     <item>
       <title>Learning not to hate C: things worth nothing</title>
-      <link>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <link>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</link>
       <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <guid>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
       <description>
 
 &lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
@@ -1740,10 +1740,10 @@ void strcpy(char s[], char *t) {
     
     <item>
       <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
-      <link>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <link>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
       <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <guid>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
       <description>
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
@@ -1823,10 +1823,10 @@ h5.close()
     
     <item>
       <title>PhD students&#39; Journal Clubs and Sozi</title>
-      <link>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</link>
+      <link>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</link>
       <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <guid>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</guid>
       <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
 I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
 
@@ -1843,10 +1843,10 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
     
     <item>
       <title>Parameter space parallel exploration in Python</title>
-      <link>http://localhost:1313/posts/parameter-space-parallel-exploration-in-python/</link>
+      <link>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/parameter-space-parallel-exploration-in-python/</guid>
+      <guid>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</guid>
       <description>&lt;p&gt;Today a friend of mine ask me how to quickly and easily parallelize a parameter space exploration in his code. &amp;ldquo;Quickly and easily&amp;rdquo; means &amp;ldquo;do not try to use &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-monte-carlo-markov-chain/&#34; target=&#34;_blank&#34; title=&#34;PhD question #3: Monte Carlo Markov chain&#34;&gt;MCMC&lt;/a&gt; or something similar!!!&amp;ldquo;.&lt;/p&gt;
 
 &lt;p&gt;I think a good solution could be use something like &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/python-parallel-job-manager/&#34; target=&#34;_blank&#34; title=&#34;Python parallel job manager&#34;&gt;this&lt;/a&gt; defining objects to contain parameters combinations and result, like this:&lt;/p&gt;

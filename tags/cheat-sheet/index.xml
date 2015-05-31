@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheat Sheet on Post It!</title>
-    <link>http://localhost:1313/tags/cheat-sheet/</link>
+    <link>http://brunettoziosi.eu/tags/cheat-sheet/</link>
     <description>Recent content in Cheat Sheet on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git references</title>
-      <link>http://localhost:1313/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/ignoring-files&#34;&gt;Ignoring files&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/matze/distributed-version-control-and-why-you-want-to-use-it&#34;&gt;How to use GIT (easy)&lt;/a&gt;&lt;/li&gt;
@@ -47,19 +47,19 @@
     
     <item>
       <title>C references</title>
-      <link>http://localhost:1313/pages/tech/c-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/c-references/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/c-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/c-references/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43; references</title>
-      <link>http://localhost:1313/pages/tech/cpp-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/cpp-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/cpp-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/cpp-references/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://dehn.slu.edu/courses/spring08/180/transition.pdf&#34;&gt;A transition guide: Python to C++&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://users.aims.ac.za/~nneoma/cpp4py/cpptut.html&#34;&gt;A Brief Introduction to C++ for Python programmers&lt;/a&gt;&lt;/li&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>Go(lang) references</title>
-      <link>http://localhost:1313/pages/tech/golang-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/golang-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/golang-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/golang-references/</guid>
       <description>
 
 &lt;ul&gt;
@@ -165,10 +165,10 @@
     
     <item>
       <title>JavaScript references</title>
-      <link>http://localhost:1313/pages/tech/js-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/js-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/js-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/js-references/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://yuiblog.com/crockford/&#34;&gt;Crockford on javascript&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -177,10 +177,10 @@
     
     <item>
       <title>Python references</title>
-      <link>http://localhost:1313/pages/tech/python-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/python-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/python-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/python-references/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md&#34;&gt;Super Python Guide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.astropy.org/&#34;&gt;Astropy&lt;/a&gt;&lt;/li&gt;

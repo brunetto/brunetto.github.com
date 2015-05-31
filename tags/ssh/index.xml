@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ssh on Post It!</title>
-    <link>http://localhost:1313/tags/ssh/</link>
+    <link>http://brunettoziosi.eu/tags/ssh/</link>
     <description>Recent content in Ssh on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ssh keys exchange</title>
-      <link>http://localhost:1313/posts/ssh-keys-exchange/</link>
+      <link>http://brunettoziosi.eu/posts/ssh-keys-exchange/</link>
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ssh-keys-exchange/</guid>
+      <guid>http://brunettoziosi.eu/posts/ssh-keys-exchange/</guid>
       <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
 the need to remember a password.&lt;/p&gt;
 

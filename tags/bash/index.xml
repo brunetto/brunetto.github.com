@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on Post It!</title>
-    <link>http://localhost:1313/tags/bash/</link>
+    <link>http://brunettoziosi.eu/tags/bash/</link>
     <description>Recent content in Bash on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Padding</title>
-      <link>http://localhost:1313/posts/padding/</link>
+      <link>http://brunettoziosi.eu/posts/padding/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/padding/</guid>
+      <guid>http://brunettoziosi.eu/posts/padding/</guid>
       <description>&lt;p&gt;Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.&lt;br /&gt;
 I&amp;rsquo;ll take a note here:&lt;/p&gt;
 

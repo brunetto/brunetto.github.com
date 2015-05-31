@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programmint on Post It!</title>
-    <link>http://localhost:1313/tags/programmint/</link>
+    <link>http://brunettoziosi.eu/tags/programmint/</link>
     <description>Recent content in Programmint on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/programmint/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/programmint/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Linux network monitoring</title>
-      <link>http://localhost:1313/posts/network-monitoring/</link>
+      <link>http://brunettoziosi.eu/posts/network-monitoring/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/network-monitoring/</guid>
+      <guid>http://brunettoziosi.eu/posts/network-monitoring/</guid>
       <description>&lt;p&gt;A list of programs to monitor your network connection and find out which process is eating bandwith
 and how to run them:&lt;/p&gt;
 

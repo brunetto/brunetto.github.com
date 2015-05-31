@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Post It!</title>
-    <link>http://localhost:1313/tags/blog/</link>
+    <link>http://brunettoziosi.eu/tags/blog/</link>
     <description>Recent content in Blog on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>G&#43; UpsideDown page backup</title>
-      <link>http://localhost:1313/pages/travels/australia/blog-backup/</link>
+      <link>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/travels/australia/blog-backup/</guid>
+      <guid>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</guid>
       <description>
 
 &lt;p&gt;&lt;div style=&#34;border:6px solid black;border-radius: 8px&#34;&gt;

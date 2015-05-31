@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Parallel on Post It!</title>
-    <link>http://localhost:1313/tags/parallel/</link>
+    <link>http://brunettoziosi.eu/tags/parallel/</link>
     <description>Recent content in Parallel on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Nov 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/parallel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/parallel/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python parallel job manager</title>
-      <link>http://localhost:1313/posts/python-parallel-job-manager/</link>
+      <link>http://brunettoziosi.eu/posts/python-parallel-job-manager/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/python-parallel-job-manager/</guid>
+      <guid>http://brunettoziosi.eu/posts/python-parallel-job-manager/</guid>
       <description>&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think&amp;hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &amp;hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.&lt;/p&gt;
 
 &lt;p&gt;At this step, however, I didn&amp;rsquo;t know how to manage the different processes in a comfortable way.

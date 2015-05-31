@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dust Spot on Post It!</title>
-    <link>http://localhost:1313/tags/dust-spot/</link>
+    <link>http://brunettoziosi.eu/tags/dust-spot/</link>
     <description>Recent content in Dust Spot on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Sep 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/dust-spot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/dust-spot/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Easy and fast dust removal in Digikam&#43;Gimp</title>
-      <link>http://localhost:1313/posts/easy-and-fast-dust-removal-in-digikamgimp/</link>
+      <link>http://brunettoziosi.eu/posts/easy-and-fast-dust-removal-in-digikamgimp/</link>
       <pubDate>Tue, 04 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/easy-and-fast-dust-removal-in-digikamgimp/</guid>
+      <guid>http://brunettoziosi.eu/posts/easy-and-fast-dust-removal-in-digikamgimp/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a long time I was searching for an easy and fast way to remove dust spot from my photos.&lt;br /&gt;
 Unfortunately it seem that until now no tools like &amp;ldquo;dust removal mask&amp;rdquo; or something similar are present in the open-source/linux panorama.&lt;br /&gt;
 But yesterday I&amp;rsquo;ve found a &lt;a href=&#34;http://dodonov.net/blog/2009/12/29/cleaning-dust-on-photos-or-in-gimp-we-trust/&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt; explaining how to use a Gimp plugin to easy clean photos from dust spot.&lt;br /&gt;

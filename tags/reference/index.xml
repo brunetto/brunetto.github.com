@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reference on Post It!</title>
-    <link>http://localhost:1313/tags/reference/</link>
+    <link>http://brunettoziosi.eu/tags/reference/</link>
     <description>Recent content in Reference on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/reference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/reference/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git references</title>
-      <link>http://localhost:1313/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/ignoring-files&#34;&gt;Ignoring files&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://speakerdeck.com/matze/distributed-version-control-and-why-you-want-to-use-it&#34;&gt;How to use GIT (easy)&lt;/a&gt;&lt;/li&gt;
@@ -47,10 +47,10 @@
     
     <item>
       <title>Go(lang) references</title>
-      <link>http://localhost:1313/pages/tech/golang-references/</link>
+      <link>http://brunettoziosi.eu/pages/tech/golang-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/tech/golang-references/</guid>
+      <guid>http://brunettoziosi.eu/pages/tech/golang-references/</guid>
       <description>
 
 &lt;ul&gt;

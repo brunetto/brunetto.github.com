@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on Post It!</title>
-    <link>http://localhost:1313/tags/latex/</link>
+    <link>http://brunettoziosi.eu/tags/latex/</link>
     <description>Recent content in Latex on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://brunettoziosi.eu/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Latex conditional compilation</title>
-      <link>http://localhost:1313/posts/latex-conditional-compilation/</link>
+      <link>http://brunettoziosi.eu/posts/latex-conditional-compilation/</link>
       <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/latex-conditional-compilation/</guid>
+      <guid>http://brunettoziosi.eu/posts/latex-conditional-compilation/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s a long time I&amp;rsquo;m looking for a way to conditional-compiling my
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX&#34;&gt;Beamer&lt;/a&gt;) presentation in order to
 decide on the fly if I want to print an handout version of the presentation.&lt;/p&gt;
@@ -42,10 +42,10 @@ to decide in the source if you want the handout version or not&amp;hellip;&lt;br
     
     <item>
       <title>Latex together with matplotlib!</title>
-      <link>http://localhost:1313/posts/latex-together-with-matplotlib/</link>
+      <link>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/latex-together-with-matplotlib/</guid>
+      <guid>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</guid>
       <description>&lt;p&gt;Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.&lt;br /&gt;
 Everything you need is to add to your script&lt;/p&gt;
 
@@ -65,10 +65,10 @@ rc(&#39;text&#39;, usetex=True)
     
     <item>
       <title>Subfile package for latex</title>
-      <link>http://localhost:1313/posts/subfile-package-for-latex/</link>
+      <link>http://brunettoziosi.eu/posts/subfile-package-for-latex/</link>
       <pubDate>Fri, 13 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/subfile-package-for-latex/</guid>
+      <guid>http://brunettoziosi.eu/posts/subfile-package-for-latex/</guid>
       <description>&lt;p&gt;If you have a complex Latex document and you want to split it in several files, the &lt;a href=&#34;http://ctan.org/tex-archive/macros/latex/contrib/subfiles&#34;&gt;subfile&lt;/a&gt; package can help you.&lt;br /&gt;
 The main difference between this and the &lt;code&gt;\input&lt;/code&gt; or &lt;code&gt;\import&lt;/code&gt; methods is that with &lt;code&gt;subfile&lt;/code&gt; you can compile also each file, without need to copy the preamble.&lt;/p&gt;
 
