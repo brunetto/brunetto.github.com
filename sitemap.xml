@@ -98,7 +98,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,7 +108,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -128,18 +128,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/misc/goodies/</loc>
-    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/personal/Films/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/misc/languages/</loc>
-    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <loc>http://brunettoziosi.eu/pages/misc/goodies/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -149,6 +144,11 @@
   
   <url>
     <loc>http://brunettoziosi.eu/pages/tech/android/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/misc/languages/</loc>
     <lastmod>2013-08-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -168,17 +168,17 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/moto/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,12 +208,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -488,12 +488,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</loc>
+    <loc>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</loc>
     <lastmod>2011-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</loc>
+    <loc>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</loc>
     <lastmod>2011-12-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -508,12 +508,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -523,12 +523,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
