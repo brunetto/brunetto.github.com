@@ -194,7 +194,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
 # -*- coding: utf8 -*- 
@@ -341,7 +341,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1835,8 +1835,8 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
 &lt;p&gt;These are the two presentations. Right click and &amp;ldquo;Open in new tab&amp;rdquo; will let you able to view the presentations, navigatin with left and right arrows. Mid-click to view the summary and up/down arrow to navigate without any effect.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../files/first_JC_with_proposal.svg&#34;&gt;PhD project presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../files/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg&#34;&gt;JC on the ACT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../files/first_JC_with_proposal.svg&#34;&gt;PhD project presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../files/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg&#34;&gt;JC on the ACT&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -220,7 +220,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
 # -*- coding: utf8 -*- 
@@ -367,7 +367,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

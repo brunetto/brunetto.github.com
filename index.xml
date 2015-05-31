@@ -295,7 +295,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
 # -*- coding: utf8 -*- 
@@ -442,7 +442,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -795,7 +795,7 @@ compact-object binaries&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;
 &lt;figure&gt;
 &lt;div style=&#34;border:1px solid black;border-radius: 8px&#34;&gt;
-&amp;lt;!&amp;ndash;&lt;img src=&#34;../../files/ziosi-GPU-Rome.gif&#34; alt=&#34;GPU Rome slide&#34; title=&#34;Presentation of my poster at a conference in Rome in 2014 that summarize my research.&#34; /&gt;&amp;ndash;&amp;gt;
+&lt;a href=&#34;!--![GPU Rome slide](../../files/ziosi-GPU-Rome.gif&#34; title=&#34;Presentation of my poster at a conference in Rome in 2014 that summarize my research.&#34;&gt; &lt;/a&gt;&amp;ndash;&amp;gt;)
 &lt;img src=&#34;../../files/PhDProjectScheme.svg&#34; alt=&#34;OhD project scheme&#34; style=&#34;width:700px&#34;&gt;
 &lt;figcaption&gt;
 &lt;hr&gt; Schematic representation of my PhD project.
@@ -896,13 +896,13 @@ are more relevant on the formation and evolution of such binaries and how they i
 &lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
-dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
 &lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
