@@ -78,6 +78,11 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/research/GW-links/</loc>
+    <lastmod>2013-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/research/phd/</loc>
     <lastmod>2013-10-31T00:00:00+00:00</lastmod>
   </url>
@@ -153,12 +158,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/system/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/sites-making-notes/</loc>
     <lastmod>2013-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/sites-making-notes/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/system/</loc>
     <lastmod>2013-08-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,22 +213,22 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/travels/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -253,7 +258,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -263,7 +268,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -283,12 +288,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -298,7 +303,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -323,12 +328,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   

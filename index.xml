@@ -779,138 +779,23 @@ func main() {
     </item>
     
     <item>
-      <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/research/phd/</link>
+      <title>GW links</title>
+      <link>http://brunettoziosi.eu/pages/research/GW-links/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
-      <description>
-
-&lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
-compact-object binaries&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure&gt;
-&lt;div style=&#34;border:1px solid black;border-radius: 8px&#34;&gt;
-&lt;img src=&#34;../../../files/PhDProjectScheme.svg&#34; alt=&#34;PhD project scheme&#34; style=&#34;width:700px&#34;&gt;
-&lt;figcaption&gt;
-&lt;hr&gt; Schematic representation of my PhD project.
-&lt;/figcaption&gt;
-&lt;/div&gt;
-&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;My PhD project is devoted to improving our knowledge on the demographics
-and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH),
-neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
-The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
-Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General
-Relativity: while indirect confirmations of GWs came from observations of pulsar
-binaries, a direct detection of GWs is still missing.
-Mergers of binaries
-are among the most promising sources of GWs in the frequency range that will be
-explored by Advanced Virgo and LIGO (~10-10000 Hz).&lt;/p&gt;
-
-&lt;p&gt;My research focus on three main fronts:&lt;/p&gt;
+      <guid>http://brunettoziosi.eu/pages/research/GW-links/</guid>
+      <description>&lt;p&gt;List of useful links about gravitational waves:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;the impact of dynamics and metallicity on
-the formation and evolution of double compact-object binaries&lt;/li&gt;
-&lt;li&gt;the effects
-of a tidal field on the evolution of star clusters and on the
-demography of DCO binaries inside them,&lt;/li&gt;
-&lt;li&gt;the changes in the DCO binaries demography
-considering different initial structural properties of the clusters (mass, concentration,
-primordial binaries fraction, density, &amp;hellip;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To investigate the impact of dynamics and metallicity on double compact-object binaries demography,
-I analyzed 600 random realizations of a young dense star cluster at different metallicities.
-I was interested in the binary orbital properties, lifetimes, number of exchanges and coalescence timescales
-(the time a binary need to merge only because of gravitational wave emission).
-We chose young and dense star cluster as environment in which to study DCO binaries
-because they are the preferential
-environment for star formation (Lada &amp;amp; Lada, 2003) and gravitational interactions are efficient in exchanging
-energy on short times.&lt;/p&gt;
-
-&lt;p&gt;My results, published in Ziosi et al. (2014), confirm that the cluster dynamics
-favours the formation of BH-BH binaries and were tested against the literature.&lt;/p&gt;
-
-&lt;p&gt;The results I obtained, however, stand on two critical assumptions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I assumed that the
-star cluster would life unpeturbed for 100 Myr but after that time they should be
-dissolved into the galactic disc because of the host galaxy tidal field&lt;/li&gt;
-&lt;li&gt;I only simulated random realizations of a single star cluster model.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both the assumptions can heavily affect estimations on the demography of the DCO binaries
-and the two other parts of my project are devoted to overcome these limitations.&lt;br /&gt;
-To face the first issue I implemented in the code
-a numerical recipe (the one proposed in Allen &amp;amp; Santillan, 1991) to accurately include the host galaxy gravitational tidal field.
-I am now testing the new tidal field. As soon as it is proved to
-be reliable I will study the effect of the disk component on the life
-of the star clusters and on the DCO binaries dynamics and demography.
-In particoular, it is interesting the case in which the cluster is not on a circoular orbit
-coplanar with the galactic disk but on an eccentric and inclined one.
-In this case the potential changes rapidly with the time and the effect on the cluster can be
-remarkable (see Madrid et al., 2014).&lt;/p&gt;
-
-&lt;p&gt;Regarding the second issue, it is necessary to quantify the effect of initial
-structural properties of the cluster on the double compact-object binaries population.
-First of all, cluster structural properties can affect double compact-object binaries demography&lt;br /&gt;
-because they influence the dynamical interactions rate among binaries, exchanges included,
-and the cluster surviving time to the tidal field.
-Then, analysing a a wide spectrum of different clusters we would be able to
-better calibrate the results on the real population of clusters in our galaxy and
-in the galaxies at distances smaller than the LIGO/Virgo horizon.
-To this purpose, I am running tens of simulations spanning a wide range of initial
-structural properties.  All the simulations make havy use of HPC hardware (GPU clusters) and
-I built the necessary computational tools to run, manage and analyze all these simulations.
-As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
-This would make us able to highlight which aspects of the star clusters
-are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
-
-&lt;p&gt;[GW useful links]()&lt;/p&gt;
-
-&lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
-&lt;li&gt;High energy astrophysics (Prof Franceschini)&lt;/li&gt;
-&lt;li&gt;Extrasolar planets (Dr. Claudi)&lt;/li&gt;
-&lt;li&gt;Scientific projects management (Dr. Farinato)&lt;/li&gt;
-&lt;li&gt;Galaxy Archeology (Prof. Saglia)&lt;/li&gt;
-&lt;li&gt;Nucleosynthesis in the early galaxy (Prof. Sneden)&lt;/li&gt;
-&lt;li&gt;Collisional dynamics in stellar systems (Dr. Mapelli)&lt;/li&gt;
-&lt;li&gt;Supernovae (Dr. Pastorello)&lt;/li&gt;
-&lt;li&gt;Astronomia X (Dr. Zampieri)&lt;/li&gt;
-&lt;li&gt;Paper writing (Prof. Sneden)&lt;/li&gt;
-&lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
-dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
-&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
-and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rhcole.com/apps/GWplotter/&#34;&gt;Gravitational waves detector and sources interactive plot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.blackholehunter.org/&#34;&gt;Black hole hunter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ego-gw.it/&#34;&gt;EGO - European Gravitational Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wwwcascina.virgo.infn.it/&#34;&gt;VIRGO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/&#34;&gt;LIGO - Laser Interferometer Gravitational Wave Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ttps://www.elisascience.org&#34;&gt;eLISA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/ebook/&#34;&gt;E-Book on gravitational wave detection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/processing/&#34;&gt;Games for science teaching, outreach and research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cplberry.com/&#34;&gt;Christopher Berry hompage&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

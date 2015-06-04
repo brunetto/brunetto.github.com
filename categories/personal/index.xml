@@ -27,143 +27,6 @@
     </item>
     
     <item>
-      <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/research/phd/</link>
-      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
-      <description>
-
-&lt;h2 id=&#34;phd-project:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD Project&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
-compact-object binaries&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure&gt;
-&lt;div style=&#34;border:1px solid black;border-radius: 8px&#34;&gt;
-&lt;img src=&#34;../../../files/PhDProjectScheme.svg&#34; alt=&#34;PhD project scheme&#34; style=&#34;width:700px&#34;&gt;
-&lt;figcaption&gt;
-&lt;hr&gt; Schematic representation of my PhD project.
-&lt;/figcaption&gt;
-&lt;/div&gt;
-&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;My PhD project is devoted to improving our knowledge on the demographics
-and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH),
-neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
-The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
-Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General
-Relativity: while indirect confirmations of GWs came from observations of pulsar
-binaries, a direct detection of GWs is still missing.
-Mergers of binaries
-are among the most promising sources of GWs in the frequency range that will be
-explored by Advanced Virgo and LIGO (~10-10000 Hz).&lt;/p&gt;
-
-&lt;p&gt;My research focus on three main fronts:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;the impact of dynamics and metallicity on
-the formation and evolution of double compact-object binaries&lt;/li&gt;
-&lt;li&gt;the effects
-of a tidal field on the evolution of star clusters and on the
-demography of DCO binaries inside them,&lt;/li&gt;
-&lt;li&gt;the changes in the DCO binaries demography
-considering different initial structural properties of the clusters (mass, concentration,
-primordial binaries fraction, density, &amp;hellip;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To investigate the impact of dynamics and metallicity on double compact-object binaries demography,
-I analyzed 600 random realizations of a young dense star cluster at different metallicities.
-I was interested in the binary orbital properties, lifetimes, number of exchanges and coalescence timescales
-(the time a binary need to merge only because of gravitational wave emission).
-We chose young and dense star cluster as environment in which to study DCO binaries
-because they are the preferential
-environment for star formation (Lada &amp;amp; Lada, 2003) and gravitational interactions are efficient in exchanging
-energy on short times.&lt;/p&gt;
-
-&lt;p&gt;My results, published in Ziosi et al. (2014), confirm that the cluster dynamics
-favours the formation of BH-BH binaries and were tested against the literature.&lt;/p&gt;
-
-&lt;p&gt;The results I obtained, however, stand on two critical assumptions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I assumed that the
-star cluster would life unpeturbed for 100 Myr but after that time they should be
-dissolved into the galactic disc because of the host galaxy tidal field&lt;/li&gt;
-&lt;li&gt;I only simulated random realizations of a single star cluster model.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both the assumptions can heavily affect estimations on the demography of the DCO binaries
-and the two other parts of my project are devoted to overcome these limitations.&lt;br /&gt;
-To face the first issue I implemented in the code
-a numerical recipe (the one proposed in Allen &amp;amp; Santillan, 1991) to accurately include the host galaxy gravitational tidal field.
-I am now testing the new tidal field. As soon as it is proved to
-be reliable I will study the effect of the disk component on the life
-of the star clusters and on the DCO binaries dynamics and demography.
-In particoular, it is interesting the case in which the cluster is not on a circoular orbit
-coplanar with the galactic disk but on an eccentric and inclined one.
-In this case the potential changes rapidly with the time and the effect on the cluster can be
-remarkable (see Madrid et al., 2014).&lt;/p&gt;
-
-&lt;p&gt;Regarding the second issue, it is necessary to quantify the effect of initial
-structural properties of the cluster on the double compact-object binaries population.
-First of all, cluster structural properties can affect double compact-object binaries demography&lt;br /&gt;
-because they influence the dynamical interactions rate among binaries, exchanges included,
-and the cluster surviving time to the tidal field.
-Then, analysing a a wide spectrum of different clusters we would be able to
-better calibrate the results on the real population of clusters in our galaxy and
-in the galaxies at distances smaller than the LIGO/Virgo horizon.
-To this purpose, I am running tens of simulations spanning a wide range of initial
-structural properties.  All the simulations make havy use of HPC hardware (GPU clusters) and
-I built the necessary computational tools to run, manage and analyze all these simulations.
-As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
-This would make us able to highlight which aspects of the star clusters
-are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
-
-&lt;p&gt;[GW useful links]()&lt;/p&gt;
-
-&lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
-&lt;li&gt;High energy astrophysics (Prof Franceschini)&lt;/li&gt;
-&lt;li&gt;Extrasolar planets (Dr. Claudi)&lt;/li&gt;
-&lt;li&gt;Scientific projects management (Dr. Farinato)&lt;/li&gt;
-&lt;li&gt;Galaxy Archeology (Prof. Saglia)&lt;/li&gt;
-&lt;li&gt;Nucleosynthesis in the early galaxy (Prof. Sneden)&lt;/li&gt;
-&lt;li&gt;Collisional dynamics in stellar systems (Dr. Mapelli)&lt;/li&gt;
-&lt;li&gt;Supernovae (Dr. Pastorello)&lt;/li&gt;
-&lt;li&gt;Astronomia X (Dr. Zampieri)&lt;/li&gt;
-&lt;li&gt;Paper writing (Prof. Sneden)&lt;/li&gt;
-&lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
-dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
-&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
-and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>G&#43; UpsideDown page backup</title>
       <link>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
@@ -1743,6 +1606,92 @@ Nel pomeriggio si scende fino nei pressi del lago Du Tramail e lì ci si può ac
 &lt;p&gt;Si scende a Cervinia dove si attende l&amp;rsquo;autobus per Chatillon.
 Da Chatillon si prende il treno per tornare a casa.
 Orario di arrivo a Mestre 21.10.&lt;/p&gt;
+
+&lt;p&gt;(by Clan Crode del Sud, Chirignago 1)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monti Lattari</title>
+      <link>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</guid>
+      <description>
+
+&lt;h2 id=&#34;note:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Note&lt;/h2&gt;
+
+&lt;p&gt;Partenza da Mestre alle 0.15 del 10/08/02, arrivo a Napoli alle 9.59
+Ritorno da Cava dei Tirreni alle 21.07 del 16/08/02, arrivo a  Mestre alle 7.59
+Costo del viaggio: 70 euro circa  a testa&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-1:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 1&lt;/h2&gt;
+
+&lt;p&gt;SORRENTO Arrivo in Treno alla Stazione.
+Nello zaino serve il rifornimento per la colazione in treno, il pranzo,la cena a Marina di Crapolla, e la colazione della seconda mattina.&lt;/p&gt;
+
+&lt;p&gt;Si procede a piedi verso la LOCALITÀ S. ANTONIO (85 m di quota) su strade asfaltate. Poi si segue il sentiero per la località CROCEVIA che ci porta alla strada asfaltata (323 m di quota il punto di intersezione).
+Si segue poi la strada asfaltata fino alla località SANT’AGATA (acqua 371 m). In due ore o poco più dovremmo arrivare da Sorrento a S. Agata. Da Sant’Agata si procede sulla strada asfaltata per 10 minuti circa e si giunge in lieve discesa a TORCA (350 m). Anche qui troviamo acqua.
+Con un sentiero tutto in discesa (1000 gradini di scala) si scende a MARINA DI CRAPOLLA (livello 0 sul mare). Località molto bella. Era un porticciolo sul mare abitato solo da pescatori, oggi ci sono alcuni edifici disabitata, nel porticciolo c’è una fontana con acqua piovana, utile per lavare le gavette e per cucinare. Il porticciolo è interamente asfaltato, le tende vanno montate utilizzando le pietre disponibili in abbondanza, come aiuto per picchettare. PRIMA NOTTE. Attenzione: Marina di Crapolla è un’insenatura circondata da colline piuttosto elevate: il sole tramonta presto e conviene arrivarci quanto prima. Se lo desideriamo potremo farci il bagno. Ma c’è il problema di come lavarci.&lt;/p&gt;
+
+&lt;p&gt;Riferimento telefonico: Parrocchia Della Cattedrale (80067 Sorrento (NA) - Corso Italia, 1) 081  8782248, ho parlato con don Cristiano; Parrocchia Nostra Signora Di Lourdes (80067 Sorrento (NA) - Corso Italia, 212), 081  8782605, parlato con Francesco e Alessandro.&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-2:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 2&lt;/h2&gt;
+
+&lt;p&gt;La mattina seguente si risale a Torca (SONO MILLE SCALINI IN SALITA, ATTENZIONE CI VOGLIONO DUE ORE CIRCA DI CAMMINO). Di lì c’è un sentiero (n°CAI 00, altavia dei monti Lattari, non sempre ben battuto) che, sostanzialmente in quota, ci porta dalla località PONTICELLO a FONTANELLE, un centro abitato di un certo rilievo dove possiamo fare il primo rifornimento. Qui potremmo pranzare.&lt;/p&gt;
+
+&lt;p&gt;Riferimento telefonico: don Paolo de Ponte, parroco di Fontanelle, 081 8083534. Ho parlato col cognato che mi ha aiutato non poco a chiarire il sentiero, lungo il quale non c’è acqua. Non è però un problema perché la troviamo nei centri abitati. Abbiamo anche il telefono della parrocchia del comune (S. Agnello 081 8783817).&lt;/p&gt;
+
+&lt;p&gt;Nel pomeriggio si procede sul sentiero dell’altavia 00 in direzione dei COLLI DI SAN PIETRO (quota 312). Troviamo acqua sia in questa località sia poco più su, nel CASTELLO DEL PRINCIPE (località Colonna quota 351). La notte si dorme  nel giardino della scuola, dove c’è acqua ed un bel prato per piantare le tende.&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-3:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 3&lt;/h2&gt;
+
+&lt;p&gt;Il terzo giorno dobbiamo partire dopo colazione con un buon carico d’acqua e percorrere il sentiero 00 e poi 33° che ci porta nel primo pomeriggio a POSITANO. Probabilmente si farà un po’ di fatica perché si tratta di salire dai 351 ai 642 del monte Vico Alvano e poi con una lieve e lunga salita al monte Comune (quota 877) dove si potrebbe pranzare. Nel pomeriggio bisogna scendere abbastanza rapidamente a POSITANO. Il Parroco, non ha posto dove ospitarci e ci ha mandato a Montepertuso dove abbiamo dormito nel centro Parrocchiale. La salita da Positano a Montepertuso è stata fatta in autobus.
+A Montepertuso abbiamo fatto rifornimento e celebrato la Santa Messa come servizio alla Parrocchia locale.&lt;/p&gt;
+
+&lt;p&gt;Telefono di riferimento: don Raffaele, Parrocchia S. Maria Assunta, 84017 Positano (SA) - Via Marina, 089  875480, ci ha parlato Giovanna al telefono.&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-4:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 4&lt;/h2&gt;
+
+&lt;p&gt;Da Positano inizia il SENTIERO DEGLI DEI. Ne abbiamo parlato al telefono col farmacista Gaetano Ala (tel. della farmacia 089 871969)&lt;/p&gt;
+
+&lt;p&gt;Montepertuso ( fraz. Di positano) (250m)
+Nocelle (fraz. Di positano) (365m)
+Sentiero degli dei - loc. COLLE SERRA (578m) Colle Serra
+Bomerano (fraz. Di agerola) (638 m)  &amp;ldquo; 27 acq.(578m)
+San lazzaro (fraz. Agerola) (650 m) (SI PASSA A PIEDI ATTRAVERSO LA LOCALITÀ PONTE: lungo questa strada c’è senz’altro la possibilità di fare un rifornimento)
+Monte Murillo - rist.&amp;ldquo;La Taverna&amp;rdquo; (736 m) &amp;ldquo; 63
+Agerola - Sella Monte Murillo (866 m)&lt;/p&gt;
+
+&lt;p&gt;A San Lazzaro facciamo i rifornimenti dell’acqua anche per la notte e la colazione e saliamo verso località Acquolella, ad un certo punto il sentiero ci condurrà ad una biforcazione, prendiamo la strada di destra, dopo 10 minuti il sentiero sembra finire (nei pressi troverete anche una macchina abbandonata), qui piantiamo le tende, il panorama è splendido e c’è il posto per 7 tende igloo.
+La sera cercate la continuazione del sentiero perché noi non l’abbiamo trovata e ci siamo persi, una persona del luogo ci ha garantito che il sentiero giusto prosegue da sotto la macchina.&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-5:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 5&lt;/h2&gt;
+
+&lt;p&gt;La mattina seguente si prosegue per la località Acquolella, dove c’è una sorgente d’acqua potabile e via via si segue per Tavernate (localita&amp;rsquo; di Pogerola) (448 m) &amp;ldquo; 01 sorg. (866m) e di seguito per Pogerola (fraz.di Amalfi) (305 m) &amp;rdquo; 59. A Pogerola si pranza nei giardini, in piazza c’è una fontana di acqua potabile.
+Si potrebbe inserire una deviazione di qualche ora per vedere la VALLE FERRIERE (350 m)
+AMALFI (0 m ) &amp;ldquo; 25&lt;/p&gt;
+
+&lt;p&gt;Da Pogerola si scende ad Amalfi con una meravigliosa ed impegnativa scalinata.
+Ad Amalfi si contatta il Farmacista Gaetano che ci dà le chiavi della sede degli scout, dove si dorme la sera. Il resto del pomeriggio lo si impiega per una visita della città e per un bagno sulla piccola ma deliziosa spiaggia della città.
+Ad Amalfi si fanno i rifornimenti, c’è un bel supermercato ben fornito.&lt;/p&gt;
+
+&lt;p&gt;Riferimenti telefonici
+Gaetano Ala (tel. della farmacia 089 871969) Capo scout di Amalfi
+Parrocchia S.maria Assunta, 84011 Amalfi (SA) - Salita Pastena, 11, 089  871485 (don Andrea Apicella) più n° di casa 089 871218.&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-6:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 6&lt;/h2&gt;
+
+&lt;p&gt;Da Amalfi si prende l’autobus, in modo tale da evitare la strada asfaltata, che ci porta a MAIORI (0 m ). Da qui si prende il sentiero che sale al SANTUARIO MADONNA AVVOCATA. (873 m). La salita è piuttosto impegnativa, sia a Maiori che a metà strada si trova acqua, è opportuno fare rifornimento di acqua potabile per la  cena e la colazione. Nel Santuario c’è acqua ma di cisterna.
+Nel pomeriggio deserto e veglia delle Promesse, alla sera Promesse.
+Se arrivate come noi il 15 Agosto potete gustarvi i fuochi d’artificio dall’alto: uno spettacolo meraviglioso!&lt;/p&gt;
+
+&lt;h2 id=&#34;giorno-7:d518e7c4f60ed2998fe98d595da6e2dd&#34;&gt;Giorno 7&lt;/h2&gt;
+
+&lt;p&gt;Dal Santuario si scende piuttosto agevolmente verso la località Badia di Cava (406 m), dove c’è una sorgente ed un meraviglioso monastero da visitare, magari si potrebbe contattare prima i monaci e farsi fare una visita guidata: sono molto disponibili.
+Al santuario si pranza.
+Poi, si scende a Cava dei Tirreni si comprano i panini per la notte e se si vuole ci si può portare a Salerno dove si può visitare una splendida cattedrale. Di fronte alla stazione di Salerno c’è una chiesa di Francescani, che molto gentilmente ci hanno tenuto gli zaini finchè abbiamo visitato la città.
+Da Salerno si prende il treno per tornare a casa.&lt;/p&gt;
 
 &lt;p&gt;(by Clan Crode del Sud, Chirignago 1)&lt;/p&gt;
 </description>

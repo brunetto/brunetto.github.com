@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gravitational Wave on Post It!</title>
+    <link>http://brunettoziosi.eu/tags/gravitational-wave/</link>
+    <description>Recent content in Gravitational Wave on Post It!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://brunettoziosi.eu/tags/gravitational-wave/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GW links</title>
+      <link>http://brunettoziosi.eu/pages/research/GW-links/</link>
+      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/pages/research/GW-links/</guid>
+      <description>&lt;p&gt;List of useful links about gravitational waves:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rhcole.com/apps/GWplotter/&#34;&gt;Gravitational waves detector and sources interactive plot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.blackholehunter.org/&#34;&gt;Black hole hunter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ego-gw.it/&#34;&gt;EGO - European Gravitational Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wwwcascina.virgo.infn.it/&#34;&gt;VIRGO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/&#34;&gt;LIGO - Laser Interferometer Gravitational Wave Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ttps://www.elisascience.org&#34;&gt;eLISA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/ebook/&#34;&gt;E-Book on gravitational wave detection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/processing/&#34;&gt;Games for science teaching, outreach and research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cplberry.com/&#34;&gt;Christopher Berry hompage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

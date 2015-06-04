@@ -27,7 +27,29 @@
     </item>
     
     <item>
-      <title>Eating</title>
+      <title>GW links</title>
+      <link>http://brunettoziosi.eu/pages/research/GW-links/</link>
+      <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/pages/research/GW-links/</guid>
+      <description>&lt;p&gt;List of useful links about gravitational waves:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rhcole.com/apps/GWplotter/&#34;&gt;Gravitational waves detector and sources interactive plot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.blackholehunter.org/&#34;&gt;Black hole hunter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ego-gw.it/&#34;&gt;EGO - European Gravitational Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wwwcascina.virgo.infn.it/&#34;&gt;VIRGO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/&#34;&gt;LIGO - Laser Interferometer Gravitational Wave Observatory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ttps://www.elisascience.org&#34;&gt;eLISA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/ebook/&#34;&gt;E-Book on gravitational wave detection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/processing/&#34;&gt;Games for science teaching, outreach and research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cplberry.com/&#34;&gt;Christopher Berry hompage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD</title>
       <link>http://brunettoziosi.eu/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
@@ -123,7 +145,7 @@ As soon as the simulations are finished, I will explore the results to understan
 This would make us able to highlight which aspects of the star clusters
 are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
 
-&lt;p&gt;[GW useful links]()&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../GW-links&#34;&gt;GW useful links&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
 
