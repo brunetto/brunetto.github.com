@@ -30,7 +30,7 @@ and assume you have &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics
 installed.
 This is how you can produce a pdf with two pages per sheet:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x2 infile.pdf --landscape --outfile outfile.pdf
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x1 infile.pdf --landscape --outfile outfile.pdf
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;booklet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Booklet&lt;/h2&gt;
