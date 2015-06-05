@@ -188,6 +188,11 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
@@ -198,27 +203,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -228,7 +213,22 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -248,12 +248,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/cooking/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/eating/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/eating/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/cooking/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -268,17 +268,17 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/research/master/</loc>
-    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -298,7 +298,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -328,7 +328,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -338,7 +338,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -463,12 +463,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</loc>
+    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</loc>
     <lastmod>2012-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</loc>
+    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</loc>
     <lastmod>2012-02-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -533,12 +533,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
