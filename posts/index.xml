@@ -6,8 +6,89 @@
     <description>Recent content in Posts on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://brunettoziosi.eu/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PDF manipulation</title>
+      <link>http://brunettoziosi.eu/posts/pdf-manipulation/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/pdf-manipulation/</guid>
+      <description>
+
+&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
+on the fly. For example, I want to print them two-pages per sheet, or to extract
+few pages, or to shrink the size of the file without degradate the quality.&lt;/p&gt;
+
+&lt;p&gt;Here are few trick I collected and post here to be able to find them.&lt;/p&gt;
+
+&lt;h2 id=&#34;print-two-pages-per-sheet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Print two pages per sheet&lt;/h2&gt;
+
+&lt;p&gt;The first tricks comes from &lt;a href=&#34;http://0x2a.at/blog/2011/02/pdf_manipulation_on_the_cli/&#34;&gt;here&lt;/a&gt;
+and assume you have &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;&lt;code&gt;pdfjam&lt;/code&gt;&lt;/a&gt;
+installed.
+This is how you can produce a pdf with two pages per sheet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x2 infile.pdf --landscape --outfile outfile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;booklet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Booklet&lt;/h2&gt;
+
+&lt;p&gt;You can also print your pdf file as booklet. This means that the pages
+of your file are shuffled (and placed two per sheet) so that you can
+join them with a clip or some glue or strings in the middle just like
+a real book. The sommand is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfbook --short-edge infile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;pdfbook&lt;/code&gt; is part of &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;extract-or-join-pages:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Extract (or join) pages&lt;/h2&gt;
+
+&lt;p&gt;If you need to extrac some pages from your pdf file you can just run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile.pdf cat &amp;lt;first_page&amp;gt;-&amp;lt;last_page&amp;gt; output outfile.pdf 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To join pdf files, instead, run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously you need &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=pdftk&#34;&gt;&lt;code&gt;pdftk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;shrink-pdf-file-size:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Shrink pdf file size&lt;/h2&gt;
+
+&lt;p&gt;Sometiimes a pdf grows in size with no reason (apparently). It is possible to shrink it
+by reduce it to pdf defaults. You will need &lt;a href=&#34;http://www.ghostscript.com/&#34;&gt;&lt;code&gt;gs&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The command you need to run is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=outfile.pdf infile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It can be quite difficult to remember, so you can create a bash alias for a function
+doing it for you. In &lt;code&gt;.bashrc&lt;/code&gt; add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias pdfdefault=&#39;function _pdfdefault() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$2 $1;}; _pdfdefault&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and run &lt;code&gt;. ~/.bashrc&lt;/code&gt; before running &lt;code&gt;pdfdefault infile.pdf outfile.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;two-pages-per-sheet-with-latex:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Two pages per sheet with latex&lt;/h2&gt;
+
+&lt;p&gt;It is possible, if you are writing something with pdf, to produce a pdf
+with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this case just add, at the beginning of your latex document&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper], landscape]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Not only Big Data</title>
@@ -1019,602 +1100,6 @@ cd go/src
 echo &amp;quot;export PATH=$PATH:/usr/local/go/bin&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
 echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>StarLab-GPU installation</title>
-      <link>http://brunettoziosi.eu/posts/starlab-gpu-installation/</link>
-      <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
-      <description>
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../stories/research/utils/starlab-gpu-old-guide.html&#34;&gt;Click here for the old guide!!!&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ignore the &amp;ldquo;&lt;code&gt;sapporo&lt;/code&gt;&amp;rdquo;  and &amp;ldquo;&lt;code&gt;CUDA&lt;/code&gt;&amp;rdquo; instructions&lt;/li&gt;
-&lt;li&gt;rename &lt;code&gt;starlab/local/grape.sh&lt;/code&gt; to &lt;code&gt;starlab/local/_grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --with-grape=no --without-f77&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;in case you can&amp;rsquo;t &lt;code&gt;make&lt;/code&gt; succesfully may be you need to copy the folder
-&lt;code&gt;starlab/src/gfx&lt;/code&gt; and do not make clean&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Well, probably you landed here searching information about StarLab, how to
-install it, how to run it, how prevent it to harm your cat.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER 1:&lt;/strong&gt; I won&amp;rsquo;t promise anything about your cat but I will try to help you having a
-reasonable well running installation of StarLab.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER 2:&lt;/strong&gt; I&amp;rsquo;m not a programmer, I&amp;rsquo;m not a system administrator and I don&amp;rsquo;t even
-know how to program in CUDA (yet). Maybe something here is wrong ore outdated.
-I&amp;rsquo;m only giving you some of the experienced I collected in n+1 times I installed StarLab.
-Nothin less, nothing more.&lt;br /&gt;
-Also note that most of the knowledge I put here come
-from my &lt;a href=&#34;http://web.pd.astro.it/mapelli/&#34;&gt;supervisor&lt;/a&gt;.&lt;br /&gt;
-I also thanks Mario Spera for the usefull advices.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system
-with more than ~6000 binaries.&lt;/p&gt;
-
-&lt;h2 id=&#34;starlab:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;StarLab&lt;/a&gt; is &amp;ldquo;A Software Environment for Collisional Stellar Dynamics&amp;rdquo;.
-&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;Here&lt;/a&gt; you can find useful information about it that
-is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
-
-&lt;h2 id=&#34;starlab-gpu:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab-GPU&lt;/h2&gt;
-
-&lt;p&gt;Welcome back!!&lt;br /&gt;
-Next step: StarLab was designed to run on &lt;a href=&#34;http://en.wikipedia.org/wiki/Gravity_Pipe&#34;&gt;GRAPE&lt;/a&gt;
-but thanks to the &lt;a href=&#34;http://castle.strw.leidenuniv.nl/software/sapporo.html&#34;&gt;Sapporo&lt;/a&gt;
-library you can run it on GPUs.&lt;/p&gt;
-
-&lt;p&gt;Now we will try to install a GPU-ready version of StarLab. To be honest, we run
-a &lt;strong&gt;private&lt;/strong&gt; version of StarLab for GPU with some customizations (if you are interested,
-see &lt;a href=&#34;http://arxiv.org/abs/1211.6441&#34;&gt;Mapelli et al. 2013&lt;/a&gt;; &lt;a href=&#34;http://arxiv.org/abs/1301.4227&#34;&gt;Mapelli &amp;amp; Bressan 2013&lt;/a&gt;).&lt;br /&gt;
-Unfortunately you can&amp;rsquo;t download it now, but I hope the differences in the installation
-process are negligible. Ask us if you are interested in our version of StarLab.&lt;br /&gt;
-Because I&amp;rsquo;m not sure about what you will find in the public version os Sapporo and StarLab,
-I will show my version of the relevant files you need to install everything.
-The installation is done on a Ubuntu 14.04 workstation so change them accordingly to
-your OS. I will also provide some examples on what you need to install StarLab on
-the clusters I tested.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s start!!&lt;/p&gt;
-
-&lt;h4 id=&#34;download:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Download&lt;/h4&gt;
-
-&lt;p&gt;Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
-You can try to check them using&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt; (cuda compiler)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudart&lt;/code&gt; (CUDA runtime)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | boost lib&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | boost include&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it&amp;rsquo;s a mess,
-but it&amp;rsquo;s not my fault!:P&lt;/p&gt;
-
-&lt;p&gt;Download&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/starlab.tar.gz&#34;&gt;StarLab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://castle.strw.leidenuniv.nl/documents/Sapporo/sapporo161.tgz&#34;&gt;Sapporo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and decompress the archives with &lt;code&gt;tar -xvf archiveName&lt;/code&gt;.&lt;br /&gt;
-Try to have the following folder tree:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_CUDA-5.0_Samples&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_GPU_Computing_SDK&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/sapporo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/starlab&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The NVIDIA folder is optional, but I would suggest to have with you alle the NVIDIA
-file you can find, soon or later you will need them. CUDA is continuosly changing,
-SDK is not toolkit, dependencies are different and broken between different versions.
-We will try to survive and to have the most standard installation we can.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$SLPATH&lt;/code&gt; should be the path where you put your StarLab installation.&lt;br /&gt;
-I&amp;rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.&lt;/p&gt;
-
-&lt;h3 id=&#34;sapporo:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Sapporo&lt;/h3&gt;
-
-&lt;p&gt;Enter in the sapporo folder, and to be sure to start a clean installation run
-&lt;code&gt;make clean&lt;/code&gt;.
-Here you need to find:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;compile.sh&lt;/code&gt; is the script StarLab will run later to decide if you are worthy of
-its presence in your computer. If &lt;code&gt;compile.sh&lt;/code&gt; fail, StarLab won&amp;rsquo;t install.&lt;/p&gt;
-
-&lt;p&gt;You also need to find somewhere (= in an old CUDA SKD?)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cutil.h&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;multithreading.h&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and to copy them in this folder.&lt;br /&gt;
-If you are not able to find them, ask me, I have copies of those files.&lt;/p&gt;
-
-&lt;p&gt;Open &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; and change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;lt;cutil.h&amp;gt;
-#include &amp;lt;multithreading.h&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;quot;cutil.h&amp;quot;
-#include &amp;quot;multithreading.h&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is to make Sapporo read the local version of &lt;code&gt;cutil.h&lt;/code&gt; and &lt;code&gt;multithreading.h&lt;/code&gt;
-in case your CUDA version does not support them anymore.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s time to fix a bug (thanks Mario):
-in &lt;code&gt;sapporo.cpp&lt;/code&gt; change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
-		nCUDAdevices = how_many;
-    } else {
-		fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
-		fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
-		//Set original_how_many to a positive number so we get assigned different devices
-		//incase the devices are not in compute exclusive mode.
-		original_how_many = 1;
-  }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
-		nCUDAdevices = how_many;
-		fclose(fd); // thanks Mario Spera, without this SL will crash after a while if using sapporo.config
-  } else {
-    fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
-    fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
-    //Set original_how_many to a positive number so we get assigned different devices
-    //incase the devices are not in compute exclusive mode.
-    original_how_many = 1;
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;so the &lt;code&gt;sapporo.config&lt;/code&gt; file can be close and won&amp;rsquo;t crash your run.&lt;/p&gt;
-
-&lt;p&gt;Now open &lt;code&gt;Makefile&lt;/code&gt; and fit&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Makefile&#34;&gt;CXX  := g++
-CC   := gcc
-NVCC := /usr/bin/nvcc
-CUDAPATH    := /usr/include/
-CUDAINCLUDE := -I$(CUDAPATH) 
-BOOSTPATH := /usr/include/boost 
-BOOSTINCLUDE := -I$(BOOSTPATH)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to your case.&lt;br /&gt;
-Open &lt;code&gt;compile.sh&lt;/code&gt; and be sure to have something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/sh
-
-flags=-DNGB
-
-CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
-CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-BOOSTINC=&amp;quot;-I/usr/include/boost&amp;quot;
-BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
-
-
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Try to compile with &lt;code&gt;make&lt;/code&gt;. If it works, try to tun &lt;code&gt;bash compile.sh&lt;/code&gt;. If this works too,
-then test sapporo with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Be aware that a number (of particles) too small would crash the tests.&lt;/p&gt;
-
-&lt;p&gt;Assuming &lt;code&gt;sapporo&lt;/code&gt; is ready, let&amp;rsquo;s move to starlab.&lt;/p&gt;
-
-&lt;h3 id=&#34;starlab-1:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab&lt;/h3&gt;
-
-&lt;p&gt;In StarLab the relevant files you have to worry about are&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sbin/sqrt.c&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;local/grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Rename &lt;code&gt;sbin/sqrt.c&lt;/code&gt; to &lt;code&gt;sbin/sqrt.C&lt;/code&gt; otherwise
-you could have linker problems again the C math library.&lt;br /&gt;
-Now open &lt;code&gt;configure&lt;/code&gt; and search for CUDA. Probably you won&amp;rsquo;t find anything.&lt;br /&gt;
-Search for &lt;code&gt;Check all named libraries for g6_open&lt;/code&gt;, you should find something like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
-
-    grape6=no
-
-    for gl in $GRAPE_LIBS_; do
-        as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-echo &amp;quot;$as_me:$LINENO: checking for g6_open_ in -l${gl/-l/}&amp;quot; &amp;gt;&amp;amp;5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;modify it to include boost and CUDA like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for gl in $GRAPE_LIBS_; do
-	CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
-	CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-	CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-	BOOSTINC=&amp;quot;-I/usr/include/boost/&amp;quot;
-	BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-	BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
-	
-	LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
-		
-	as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Be sure to always use double quotes and to terminate the paths to folders with a slash (&lt;code&gt;/&lt;/code&gt;),
-some machines are quite choosy.&lt;/p&gt;
-
-&lt;p&gt;Last edit is on &lt;code&gt;local/grape.sh&lt;/code&gt; to let StarLab know where your sapporo installation is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$SLPATH/slpack/sapporo&#39;
-GRAPE_LIBS_=&#39;-lsapporo&#39;
-# For now, define this as `yes&#39; for the AMD64 boxes only, `no&#39; otherwise.
-OLD_READ_NEIGHBOUR_LIST=no
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Before compiling, if you want, you can check also &lt;code&gt;sapporo/sapporo.config&lt;/code&gt;.&lt;br /&gt;
-Inside you will find something like that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;524288
--1
-0
-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where 524288 should be the maximum number of particles you can handle, -1 the number
-of CUDA devices to use (-1 means all? maybe&amp;hellip;), 0 and 1 are the GPU number you want to use.&lt;br /&gt;
-Recent CUDA seems to be smart enought to understand where to run without having to specify
-(but look after your cat!!!).&lt;/p&gt;
-
-&lt;p&gt;Alright!! If you managed to reach this point, very good. Last three commands. In the
-&lt;code&gt;starlab&lt;/code&gt; folder run&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;configure --with-f77=no&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;go out for a walk&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When running configure, avoid the &lt;code&gt;--without-option&lt;/code&gt; version of an option, prefer
-&lt;code&gt;--with-option=no&lt;/code&gt;, it&amp;rsquo;s safer.&lt;/p&gt;
-
-&lt;p&gt;If you recompile StarLab AND/OR Sapporo, type &lt;code&gt;make clean&lt;/code&gt; two times. delete the files in
-&lt;code&gt;starlab/usr/bin&lt;/code&gt;, turn around 3 times, touch your nose and type &lt;code&gt;make&lt;/code&gt; two times. Then
-&lt;code&gt;make install&lt;/code&gt; again.&lt;br /&gt;
-No, &lt;code&gt;make clean&lt;/code&gt; and &lt;code&gt;make&lt;/code&gt; are not enought to update your object
-files or binaries.&lt;/p&gt;
-
-&lt;p&gt;Depending on your environment, if you run into problems, be sure that:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;you loaded the correct modules (if you are in a cluster for examples&lt;/li&gt;
-&lt;li&gt;you are into the right node (some machine let you compile your code on a
-node that is not the login node)&lt;/li&gt;
-&lt;li&gt;if you encounter strange messages regarding missing rules for missing files,
-for example &lt;code&gt;libxhdyn.la&lt;/code&gt; or something regarding &lt;code&gt;gfx&lt;/code&gt;-something, may be tou need to
-tune your config file to exclude, for example, the X/Qt/&amp;hellip; libraries, in case
-try to run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt;; in case try to have a look at
-&lt;code&gt;configure --help&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;run-starlab:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Run StarLab&lt;/h3&gt;
-
-&lt;p&gt;Before run a simulation you need to create the initial conditions.&lt;/p&gt;
-
-&lt;h4 id=&#34;initial-conditions:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Initial Conditions&lt;/h4&gt;
-
-&lt;p&gt;StarLab is provided with few tools to help (really?) you in this task. A common
-way to create ICs for &lt;a href=&#34;http://arxiv.org/abs/1404.7147&#34;&gt;our simulations&lt;/a&gt; is something like:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;ehm, I don&#39;t know if I can tell you, sorry man...:(&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;launch:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Launch&lt;/h4&gt;
-
-&lt;p&gt;StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
-you want to know about your simulations to STDERR, so, &lt;code&gt;&amp;lt;ehm.... see ICs&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;tidal-fields:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Tidal fields&lt;/h4&gt;
-
-&lt;p&gt;Be patience&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;known-issues-and-troubleshooting:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
-
-&lt;p&gt;If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.&lt;br /&gt;
-Some of the things that can happen are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;you can find binaries with eccentricity greater than one (StarLab does
-not update some binaries after they are disrupted? flybyes seen as binaries? don&amp;rsquo;t know)&lt;/li&gt;
-&lt;li&gt;StarLab can crash if you try to simulate a number of centers of mass greater than
-5*10^4 together with a fraction of primordial binaries &amp;gt;=0.1&lt;/li&gt;
-&lt;li&gt;boost problems? check the correct flags for your version (choose among some combination of
-&lt;code&gt;-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;check you put all the &lt;code&gt;_&lt;/code&gt;, &amp;ldquo;-I&amp;rdquo;, &amp;ldquo;-l&amp;rdquo;, &amp;ldquo;-L&amp;rdquo; in the right places&lt;/li&gt;
-&lt;li&gt;check all the libraries paths&lt;/li&gt;
-&lt;li&gt;check for double quotes (&lt;code&gt;&amp;quot;&lt;/code&gt;) instead of single ones (&lt;code&gt;&#39;&lt;/code&gt;) in the paths&lt;/li&gt;
-&lt;li&gt;check the modules, environment variables&lt;/li&gt;
-&lt;li&gt;check you are on the right node&lt;/li&gt;
-&lt;li&gt;check your environment against the configure options you passed
-(have a look at &lt;code&gt;configure --help&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;if you need to modify StarLab and you want to add your own flags,
-you need to comment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;  getia(b-&amp;gt;get_log_story(), &amp;quot;step_slow&amp;quot;,
-        b-&amp;gt;get_kira_counters()-&amp;gt;step_slow, nss);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;function call in &lt;code&gt;kira_counters.C&lt;/code&gt; otherwise you won&amp;rsquo;t be able to compile StarLab.&lt;/p&gt;
-
-&lt;h3 id=&#34;clusters:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Clusters&lt;/h3&gt;
-
-&lt;h4 id=&#34;eurora:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;EURORA&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;setup_sapporo.sh&lt;/code&gt;
-(if you want to compile sapporo using queues, or, load modules by hand if you want to
-compile interactively)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
-module load profile/advanced
-module load gnu/4.6.3
-module load boost/1.53.0--gnu--4.6.3
-module load cuda
-
-LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
-export LD_LIBRARY_PATH
-cd $HOME/slPack/sapporo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include/ -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc/ -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
-CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lcudart&amp;quot;
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;NVCC := /cineca/prod/compilers/cuda/5.0.35/none/bin/nvcc
-CUDAPATH    := /cineca/prod/compilers/cuda/5.0.35/none
-CUDASDKPATH := /cineca/prod/compilers/cuda/5.0.35/none/samples
-CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)/common/inc 
-BOOSTPATH := /cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
-CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -lcudart&amp;quot; 
-LIBS=&amp;quot;$CUDAINC $CUDALIB -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lboost_thread-mt -DNGB&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$HOME/slPack/sapporo/&#39;
-GRAPE_LIBS_=&#39;-lsapporo&#39;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;setup_starlab.sh.sh&lt;/code&gt;
-(if you want to compile sapporo using queues, or, load modules by hand if you want to
-compile interactively)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
-module load profile/advanced
-module load gnu/4.6.3
-module load boost/1.53.0--gnu--4.6.3
-module load cuda
-LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
-export LD_LIBRARY_PATH
-cd $HOME/slPack/starlab
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
-
-&lt;p&gt;Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
-system at the Swinburne University. Here how to do that.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log into the system and find yourself in the login node.&lt;/li&gt;
-&lt;li&gt;Clone the private repo / download the folders and unpack them like described before.&lt;/li&gt;
-&lt;li&gt;Then you need to log into one of the compile/test nodes from the head node: &lt;code&gt;ssh $USER@gstar001&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;load the right modules:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module load gcc/4.6.4
-module load boost/x86_64/gnu/1.51.0-gcc4.6
-module load cuda/4.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need that version of &lt;code&gt;gcc&lt;/code&gt; and &lt;code&gt;boost&lt;/code&gt; because of issues with boost threads in the default versions.
-Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
-&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
-and
-&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Make sure you have no &lt;code&gt;&#39;&lt;/code&gt; around your path, maybe, if you need, only &lt;code&gt;&amp;quot;&lt;/code&gt; otherwise &lt;code&gt;sapporo&lt;/code&gt; won&amp;rsquo;t compile.
-Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
-&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
-and
-&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have our private version you can
-* &lt;code&gt;cp ../scripts/g2/Makefile ./&lt;/code&gt;
-* &lt;code&gt;cp ../scripts/g2/compile.sh ./&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;otherwise try to modify them to have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CXX  := g++
-CC   := gcc
-NVCC := /usr/local/cuda-4.0/bin/nvcc
-CUDAINC := -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc 
-BOOSTINC := -I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6
-NVCCFLAGS := -O0 -g -D_DEBUG  -maxrregcount=64 $(CUDAINC) $(BOOSTINC) 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in the &lt;code&gt;Makefile&lt;/code&gt; and&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;flags=-DNGB
-
-CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc&amp;quot;
-CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
-CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
-
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in &lt;code&gt;compile.sh&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then run&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;make clean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bash compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No go the the starlab folder (&lt;code&gt;cd ../starlab&lt;/code&gt;) and fix the &lt;code&gt;configure&lt;/code&gt; file accordingly to this&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
-
-    grape6=no
-
-    for gl in $GRAPE_LIBS_; do
-    ##############################
-    ######      g2
-    ##############################
-    CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/&amp;quot;
-    CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
-    CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-    BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/&amp;quot;
-    BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-    BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
-    
-    LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
-        
-        
-    as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and the &lt;code&gt;local/grape.sh&lt;/code&gt; file to point to your sapporo installation.&lt;/p&gt;
-
-&lt;p&gt;If you have our version of StarLab, just copy the right files:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cp ../scripts/g2/configure ./&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cp ../scripts/g2/grape.sh ./local/&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Make sure again &lt;code&gt;grape.sh&lt;/code&gt; points to the right folder&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./configure --without-f77 --with-qt=no&lt;/code&gt; (if you want qt, load the modules and check the versions)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make clean &amp;amp;&amp;amp; make clean &amp;amp;&amp;amp; make clean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make &amp;amp;&amp;amp; make&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rm ./usr/bin/*&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;** Troubleshooting **&lt;/p&gt;
-
-&lt;p&gt;If you get this error (or some other error)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;make[2]: Entering directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
-/bin/sh ../../../libtool --preserve-dup-deps --mode=link gcc  -g -O2  -L/usr/lib64/qt-3.3/lib -o libgfx-2.la   win.lo draw.lo draw1.lo color.lo dialog.lo mcd.lo interface.lo termio.lo utility.lo simple.lo  -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc -L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib -lcudart -L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6 -lboost_system  -lboost_thread-mt -lpthread -DNGB
-ar cru .libs/libgfx-2.a  win.o draw.o draw1.o color.o dialog.o mcd.o interface.o termio.o utility.o simple.o
-ar: interface.o: No such file or directory
-make[2]: *** [libgfx-2.la] Error 1
-make[2]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
-make[1]: *** [clibs23] Error 2
-make[1]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx&#39;
-make: *** [libs] Error 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;when compiling may be you can try to &lt;code&gt;make&lt;/code&gt; and &lt;code&gt;make clean&lt;/code&gt; some times.&lt;br /&gt;
-Also remember that make clean is not working properly, so you need to &lt;code&gt;make clean&lt;/code&gt; more than once or delete the binaries by yourself.&lt;/p&gt;
-
-&lt;p&gt;If you have errors regarding no rules for &lt;code&gt;libxhdyn.la&lt;/code&gt;, probably you forgot to exclude
-some options from the configure, so run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt; or try &lt;code&gt;configure --help&lt;/code&gt;
-to check for other options.&lt;/p&gt;
-
-&lt;h3 id=&#34;additional-material:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Additional material&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Code units (coming soon&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;StarLab internals (really???)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/brunetto/slpack&#34;&gt;Our repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/brunetto/sltools&#34;&gt;Tools to easily manage SL runs (private too, sorry, ask me if you are interested)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools&#34;&gt;StarLab tools wiki&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

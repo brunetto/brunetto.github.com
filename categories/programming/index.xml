@@ -6,8 +6,89 @@
     <description>Recent content in Programming on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://brunettoziosi.eu/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PDF manipulation</title>
+      <link>http://brunettoziosi.eu/posts/pdf-manipulation/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/pdf-manipulation/</guid>
+      <description>
+
+&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
+on the fly. For example, I want to print them two-pages per sheet, or to extract
+few pages, or to shrink the size of the file without degradate the quality.&lt;/p&gt;
+
+&lt;p&gt;Here are few trick I collected and post here to be able to find them.&lt;/p&gt;
+
+&lt;h2 id=&#34;print-two-pages-per-sheet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Print two pages per sheet&lt;/h2&gt;
+
+&lt;p&gt;The first tricks comes from &lt;a href=&#34;http://0x2a.at/blog/2011/02/pdf_manipulation_on_the_cli/&#34;&gt;here&lt;/a&gt;
+and assume you have &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;&lt;code&gt;pdfjam&lt;/code&gt;&lt;/a&gt;
+installed.
+This is how you can produce a pdf with two pages per sheet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x2 infile.pdf --landscape --outfile outfile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;booklet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Booklet&lt;/h2&gt;
+
+&lt;p&gt;You can also print your pdf file as booklet. This means that the pages
+of your file are shuffled (and placed two per sheet) so that you can
+join them with a clip or some glue or strings in the middle just like
+a real book. The sommand is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfbook --short-edge infile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;pdfbook&lt;/code&gt; is part of &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;extract-or-join-pages:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Extract (or join) pages&lt;/h2&gt;
+
+&lt;p&gt;If you need to extrac some pages from your pdf file you can just run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile.pdf cat &amp;lt;first_page&amp;gt;-&amp;lt;last_page&amp;gt; output outfile.pdf 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To join pdf files, instead, run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously you need &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=pdftk&#34;&gt;&lt;code&gt;pdftk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;shrink-pdf-file-size:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Shrink pdf file size&lt;/h2&gt;
+
+&lt;p&gt;Sometiimes a pdf grows in size with no reason (apparently). It is possible to shrink it
+by reduce it to pdf defaults. You will need &lt;a href=&#34;http://www.ghostscript.com/&#34;&gt;&lt;code&gt;gs&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The command you need to run is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=outfile.pdf infile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It can be quite difficult to remember, so you can create a bash alias for a function
+doing it for you. In &lt;code&gt;.bashrc&lt;/code&gt; add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias pdfdefault=&#39;function _pdfdefault() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$2 $1;}; _pdfdefault&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and run &lt;code&gt;. ~/.bashrc&lt;/code&gt; before running &lt;code&gt;pdfdefault infile.pdf outfile.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;two-pages-per-sheet-with-latex:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Two pages per sheet with latex&lt;/h2&gt;
+
+&lt;p&gt;It is possible, if you are writing something with pdf, to produce a pdf
+with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this case just add, at the beginning of your latex document&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper], landscape]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Not only Big Data</title>
@@ -787,192 +868,6 @@ to decide in the source if you want the handout version or not&amp;hellip;&lt;br
 &amp;hellip; or you can decide it via command line:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdflatex -jobname=handout.pdf  &amp;quot;\def\HANDOUT{}\input{sourcefile.tex}&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Super-basic file parsing in Go</title>
-      <link>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</link>
-      <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</guid>
-      <description>&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix
-searching for the lines containing a certain string.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;package main&lt;/code&gt; tells go that this source will be a main file, not a library/module.
-Then, we import the packages we need. If a package is not still needed, go will
-throw an error.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;//&lt;/code&gt; or &lt;code&gt;/* */&lt;/code&gt; are, respectively, the one-line and multi-line comments.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
-
-import (
-	&amp;quot;bufio&amp;quot; // buffered input/output
-	&amp;quot;compress/gzip&amp;quot; // compressed files handling
-	&amp;quot;log&amp;quot; // logging
-	&amp;quot;os&amp;quot; // OS related utilities
-	&amp;quot;time&amp;quot; // timing
-	&amp;quot;strings&amp;quot; // strings handling
-	&amp;quot;path/filepath&amp;quot; // path handling
-	&amp;quot;fmt&amp;quot; // basic printing
-)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The main body of the program has to be in the &lt;code&gt;main&lt;/code&gt; function.
-We would also like to know the time needed to execute the program so we use
-&lt;code&gt;tGlob0 := time.Now()&lt;/code&gt; to keep track of the time we launch the program.&lt;br /&gt;
-We also print a help message in case the number of arguments provided
-do not match the needed ones&amp;hellip;. id they are wrong, googd luck!:P&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main() {
-	
-	helpMessage :=`Hi! To use this program you must provide
-	1 - the path
-	2 - the file prefix
-	3 - the output file
-	4 - the string to be searched.`
-	
-	if len(os.Args) &amp;lt; 5{
-		fmt.Println(helpMessage)
-		os.Exit(0)
-	}
-
-	tGlob0 := time.Now()
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Go can create variables in two ways, by declaring them before or by assignement directly.
-To have a clearer view of what is going on I will declare the variables before except
-for &lt;code&gt;tGlob0&lt;/code&gt; and &lt;code&gt;tGlob1&lt;/code&gt;. If you want to know the type of a variable, you can
-create it by assignement and then inspect its type with the reflect package,
-using &lt;code&gt;reflect.TypeOf(variable)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;    var inPath string
-    var prefix string
-    var searchString string
-    var outFile string
-    var inFiles []string
-    var inFile string
-    var extString []string
-    var ext string
-    var PID int 
-    var (fileStruct *os.File
-    fOut *os.File)
-    var err error
-    var fZip *gzip.Reader
-    var nReader *bufio.Reader
-    var read_line string
-```        
-
-The `os` package provides the tools to interact with the OS, so we can retrieve the process
-PID and the CLI arguments.        
-    
-
-````go
-	PID = os.Getpid()
-	log.Println(&amp;quot;Process PID is &amp;quot;, PID)	
-	
-	inPath = os.Args[1]
-	prefix = os.Args[2]+&amp;quot;*&amp;quot;
-	outFile = os.Args[3]
-	searchString = os.Args[4]
-	
-	log.Println(&amp;quot;Parsing files in folder &amp;quot;, inPath, &amp;quot; selecting &amp;quot;, os.Args[2])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;Glob&lt;/code&gt; function allows to search for the filenames matching a certain
- wildcard pattern.&lt;br /&gt;
- &lt;code&gt;defer&lt;/code&gt; is used to mark functions to be executed on function exit.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;	inFiles, err = filepath.Glob(filepath.Join(inPath, prefix))
-	if err != nil {
-		panic(err)
-	}
-	
-	log.Println(&amp;quot;Searching for &amp;quot;, searchString, &amp;quot; in &amp;quot;, filepath.Join(inPath, prefix))
-	log.Println(&amp;quot;Creating output file &amp;quot;, outFile)
-	
-	fOut, err = os.Create(outFile)
-	if err != nil {
-		panic(err)
-	}
-	defer fOut.Close()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the following piece of code is possible to see how to&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;work on strings&lt;/li&gt;
-&lt;li&gt;write a counter that updates&lt;/li&gt;
-&lt;li&gt;use the switch construct&lt;/li&gt;
-&lt;li&gt;make an assignement in the if construct&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;	log.Println(&amp;quot;Starting main loop on file list of lenght &amp;quot;, len(inFiles))
-	for fileIdx := range inFiles {
-		
-		inFile = inFiles[fileIdx]
-		extString = strings.Split(inFile, &amp;quot;.&amp;quot;)
-		ext = extString[len(extString)-1]
-
-		// Write an updating counter
-		fmt.Print(&amp;quot;Completed: &amp;quot;, 100. * fileIdx / len(inFiles), &amp;quot;% \r&amp;quot;)
-		
-		// Creating file object
-		if fileStruct, err = os.Open(inFile); err != nil {
-			log.Fatal(os.Stderr, &amp;quot;%v, Can&#39;t open %s: error: %s\n&amp;quot;, os.Args[0], inFile, err)
-			os.Exit(1)
-		}
-		defer fileStruct.Close()
-		
-		switch ext {
-			case &amp;quot;dat&amp;quot;: {
-				nReader = bufio.NewReader(fileStruct)
-			}
-			case &amp;quot;txt&amp;quot;:{
-				nReader = bufio.NewReader(fileStruct)
-			}
-			case &amp;quot;gz&amp;quot;: {
-				fZip, err = gzip.NewReader(fileStruct)
-				if err != nil {
-				log.Fatal(os.Stderr, &amp;quot;%v, Can&#39;t open %s: error: %s\n&amp;quot;, os.Args[0], inFile, err)
-				os.Exit(1)
-				}
-				nReader = bufio.NewReader(fZip)
-			}
-			default: {
-				log.Fatal(&amp;quot;Unrecognized file &amp;quot;, inFile)
-			}
-		}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And yes, no &lt;code&gt;while&lt;/code&gt; but infinite loops with &lt;code&gt;for&lt;/code&gt;.&lt;br /&gt;
-Then we read the file line by line and write the line if we find a certain
-string inside it.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;        for {
-            if read_line, err = nReader.ReadString(&#39;\n&#39;); err != nil {
-            log.Println(&amp;quot;Done reading file with err&amp;quot;, err)
-            break
-            }
-//          if (strings.Contains(read_line, &amp;quot;name =&amp;quot;) || strings.Contains(read_line, &amp;quot;i =&amp;quot;)) {//&amp;amp;&amp;amp; strings.Contains(read_line, &amp;quot;&amp;lt;&amp;quot;){
-                if strings.Contains(read_line, searchString){
-                _, err = fOut.WriteString(read_line)
-                }
-        }
-    
-        // flush 
-        fOut.Sync()
-        fOut.Close()
-    }
-    
-    
-    log.Println()
-    tGlob1 := time.Now()
-    log.Println(&amp;quot;Wall time for all &amp;quot;, tGlob1.Sub(tGlob0))
-}
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

@@ -6,8 +6,89 @@
     <description>Recent content in Research on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://brunettoziosi.eu/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PDF manipulation</title>
+      <link>http://brunettoziosi.eu/posts/pdf-manipulation/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/pdf-manipulation/</guid>
+      <description>
+
+&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
+on the fly. For example, I want to print them two-pages per sheet, or to extract
+few pages, or to shrink the size of the file without degradate the quality.&lt;/p&gt;
+
+&lt;p&gt;Here are few trick I collected and post here to be able to find them.&lt;/p&gt;
+
+&lt;h2 id=&#34;print-two-pages-per-sheet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Print two pages per sheet&lt;/h2&gt;
+
+&lt;p&gt;The first tricks comes from &lt;a href=&#34;http://0x2a.at/blog/2011/02/pdf_manipulation_on_the_cli/&#34;&gt;here&lt;/a&gt;
+and assume you have &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;&lt;code&gt;pdfjam&lt;/code&gt;&lt;/a&gt;
+installed.
+This is how you can produce a pdf with two pages per sheet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x2 infile.pdf --landscape --outfile outfile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;booklet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Booklet&lt;/h2&gt;
+
+&lt;p&gt;You can also print your pdf file as booklet. This means that the pages
+of your file are shuffled (and placed two per sheet) so that you can
+join them with a clip or some glue or strings in the middle just like
+a real book. The sommand is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfbook --short-edge infile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;pdfbook&lt;/code&gt; is part of &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;extract-or-join-pages:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Extract (or join) pages&lt;/h2&gt;
+
+&lt;p&gt;If you need to extrac some pages from your pdf file you can just run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile.pdf cat &amp;lt;first_page&amp;gt;-&amp;lt;last_page&amp;gt; output outfile.pdf 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To join pdf files, instead, run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously you need &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=pdftk&#34;&gt;&lt;code&gt;pdftk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;shrink-pdf-file-size:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Shrink pdf file size&lt;/h2&gt;
+
+&lt;p&gt;Sometiimes a pdf grows in size with no reason (apparently). It is possible to shrink it
+by reduce it to pdf defaults. You will need &lt;a href=&#34;http://www.ghostscript.com/&#34;&gt;&lt;code&gt;gs&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The command you need to run is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=outfile.pdf infile.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It can be quite difficult to remember, so you can create a bash alias for a function
+doing it for you. In &lt;code&gt;.bashrc&lt;/code&gt; add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias pdfdefault=&#39;function _pdfdefault() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$2 $1;}; _pdfdefault&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and run &lt;code&gt;. ~/.bashrc&lt;/code&gt; before running &lt;code&gt;pdfdefault infile.pdf outfile.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;two-pages-per-sheet-with-latex:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Two pages per sheet with latex&lt;/h2&gt;
+
+&lt;p&gt;It is possible, if you are writing something with pdf, to produce a pdf
+with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this case just add, at the beginning of your latex document&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper], landscape]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Not only Big Data</title>
@@ -1898,89 +1979,6 @@ void strcpy(char s[], char *t) {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;is equivalent to the expressions in the previous paragraph.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
-      <link>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
-      <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
-      <description>
-
-&lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
-
-&lt;h2 id=&#34;create:d7d980b494195784336223544cb1380d&#34;&gt;Create&lt;/h2&gt;
-
-&lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
-import tables as tb
-from StringIO import StringIO
-
-f = open(&amp;quot;filename.csv&amp;quot;, &#39;r&#39;)
-line = f.readline()
-values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
-values.shape = 1
-h5 = tb.openFile(&#39;filename.h5&#39;, &#39;w&#39;)
-table = h5.createTable(h5.root, description=values, name=table_name&#39;, title=&amp;quot;table_description&amp;quot;, expectedrows=12158536)
-table.flush()
-
-for line in f:
-	values = np.genfromtxt(StringIO(line), dtype=([(&#39;column_1&#39;, &#39;i8&#39;), (&#39;column_2&#39;, &#39;f4&#39;), (&#39;column_3&#39;, &#39;f4&#39;)]), delimiter=&#39;,&#39;)
-	values.shape = 1
-	table.append(values)
-	
-table.flush()
-h5.flush()
-h5.close()
-f.close()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
-
-&lt;h2 id=&#34;remove-duplicates:d7d980b494195784336223544cb1380d&#34;&gt;Remove duplicates&lt;/h2&gt;
-
-&lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;new_indexes = np.unique(table[&#39;column_1&#39;], return_index=True, return_inverse=False)[1]
-new_array = np.transpose(table[new_indexes])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In general, &lt;code&gt;numpy.unique(array, return_index=True, return_inverse=True)&lt;/code&gt;&lt;br /&gt;
-returns an array sorted and without duplicates, the indexes of the original array to create the new array and the indexes of the new one to recreate the old one:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In: a = np.array([5,3,3,7,2,9,1])
-In: np.unique(a, return_index=True, return_inverse=True)
-Out: 
-(array([1, 2, 3, 5, 7, 9]),
-	array([6, 4, 1, 0, 3, 5]),
-	array([3, 2, 2, 4, 1, 5, 0]))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;recreate:d7d980b494195784336223544cb1380d&#34;&gt;Recreate&lt;/h2&gt;
-
-&lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
-To do this a possible solution is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip([column_1[0]], [column_2[0]]))
-print &amp;quot;Creating table...&amp;quot;
-table = h5.createTable(h5.root, description=values, name=&#39;fof_data_snap67&#39;, title=&amp;quot;fof_data_snap67&amp;quot;, expectedrows=11697806)
-
-for i in xrange(1, fof.size):
-	values = np.array(zip([column_1[i]], [column_2[i]]))
-	table.append(values)
-
-table.flush()
-h5.flush()
-h5.close()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It&amp;rsquo;s also possible to zip the entire arrays if they fit into memory:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;values = np.array(zip(column_1, column_2))
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
