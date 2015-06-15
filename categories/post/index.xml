@@ -55,7 +55,7 @@ prefer to have everything already in the folder.&lt;/p&gt;
 
 &lt;p&gt;First of all, create a new empty folder and &lt;code&gt;cd&lt;/code&gt; into it. Then, copy the StarLab sources
 and the docker file into that folder.
-Mine look like that:&lt;/p&gt;
+Mine looks like that:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;starlabDocker.tar.gz
 	|-sapporo
@@ -67,7 +67,7 @@ Mine look like that:&lt;/p&gt;
 
 &lt;p&gt;Then, you need a &lt;code&gt;Dockerfile&lt;/code&gt;. The &lt;code&gt;Dockerfile&lt;/code&gt; tells Docker what it has to do
 in order to create your image. Which base images to use (if any), which packages to download and install and so on.
-Mine is :&lt;/p&gt;
+Mine is:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;FROM ubuntu:14.04
 
