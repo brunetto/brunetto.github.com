@@ -6,8 +6,528 @@
     <description>Recent content in Post on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2015 10:55:02 +0200</lastBuildDate>
     <atom:link href="http://brunettoziosi.eu/ptypes/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Install Docker</title>
+      <link>http://brunettoziosi.eu/posts/docker-installation/</link>
+      <pubDate>Mon, 15 Jun 2015 10:55:02 +0200</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/docker-installation/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-is-docker:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;What is Docker&lt;/h2&gt;
+
+&lt;p&gt;Well, Docker is&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;An open source project to pack, ship and run any application as a lightweight container.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;I have written a brief introduction &lt;a href=&#34;http://rawgit.com/brunetto/my-public-talks/master/2014-12-cinecaBigData/index.html#24&#34;&gt;here&lt;/a&gt;,
+and the Internet is full of definitions and suggestions. Check also out
+&lt;a href=&#34;http://www.ubuntu.com/cloud/tools/lxd&#34;&gt;this&lt;/a&gt; for a comparison with
+&lt;a href=&#34;https://insights.ubuntu.com/2015/04/28/getting-started-with-lxd-the-container-lightervisor/&#34;&gt;LDX&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, in short, Docker:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;is an isolated sharable environment (dev and ship)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;avoid the need to mess-up host OS to change dev env&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;avoid the need to get mad to install an app&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;is (was) based on lxc (linux containers) and Go&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;is NOT a virtual machine → lightweight&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;is a secure (sandbox)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;allow you to commit changes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;is based on images and containers: templates and running instances (that lose memory on shutdown)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;how-to-install-docker:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;How to install Docker&lt;/h2&gt;
+
+&lt;p&gt;There are many different way to install Docker. On *buntu,
+I find this the best (see also &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet#linux&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Add docker repository key to apt-key for package verification and add repository:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo sh -c &amp;quot;wget -qO- https://get.docker.io/gpg | apt-key add -&amp;quot;
+sudo sh -c &amp;quot;echo deb http://get.docker.io/ubuntu docker main\
+&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install docker&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo aptitude update &amp;amp;&amp;amp; sudo aptitude install lxc-docker
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Avoid typing sudo everytime&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo groupadd docker
+sudo gpasswd -a ${USER} docker
+sudo service docker restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then logout and login again.&lt;/p&gt;
+
+&lt;p&gt;If you want, you can allow memory limits: set &lt;code&gt;/etc/default/grub&lt;/code&gt; key &lt;code&gt;GRUB_CMDLINE_LINUX&lt;/code&gt; to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRUB_CMDLINE_LINUX=&amp;quot;cgroup_enable=memory swapaccount=1&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then update GRUB with &lt;code&gt;sudo update-grub&lt;/code&gt; and reboot.&lt;/p&gt;
+
+&lt;h2 id=&#34;usefull-commands:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Usefull commands&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;docker&lt;/code&gt; &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#attach&#34;&gt;attach&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#create&#34;&gt;create&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#exec&#34;&gt;exec&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#inspect&#34;&gt;inspect&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#logs&#34;&gt;logs&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#push&#34;&gt;push&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#pull&#34;&gt;pull&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#rm&#34;&gt;rm&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#rmi&#34;&gt;rmi&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#run&#34;&gt;run&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#start&#34;&gt;start&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#stop&#34;&gt;stop&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#tag&#34;&gt;tag&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Inside a container, exit with &lt;code&gt;ctrl+p ctrl+q&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Attach to a running container with &lt;code&gt;docker attach &amp;lt;container name&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;other-resources:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Other resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://registry.hub.docker.com&#34;&gt;Registry/repository&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Docs: &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/&#34;&gt;command line&lt;/a&gt;, &lt;a href=&#34;http://docs.docker.com/&#34;&gt;all&lt;/a&gt;, &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet&#34;&gt;me&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/24702233/docker-container-and-memory-consumption&#34;&gt;Memory consumption&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://phusion.github.io/baseimage-docker/#intro&#34;&gt;Docker baseimages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See &lt;a href=&#34;../dockerized-starlab&#34;&gt;Dockerized Starlab&lt;/a&gt; to have an example of
+how Docker can be used.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>`Dockerized Starlab`</title>
+      <link>http://brunettoziosi.eu/posts/dockerized-starlab/</link>
+      <pubDate>Mon, 15 Jun 2015 10:55:02 +0200</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/dockerized-starlab/</guid>
+      <description>
+
+&lt;p&gt;Once you have &lt;a href=&#34;../docker-installation&#34;&gt;Docker installed&lt;/a&gt;, you may want to see it
+in action. Here I demonstrate how to use Docker in a slightly different way respect
+what you can find around (AKA use Docker to set up a web-server or something similar).&lt;/p&gt;
+
+&lt;p&gt;I think Docker is a great solution to deal with easiness of installation and reproducibility
+in science. LXD would be probable be better. LXD already provide unprivileged containers
+AND is more about a container containing more than an application, while Docker is
+based on the idea of one container for a single app. However, I still have to try LXD.&lt;/p&gt;
+
+&lt;p&gt;Here I will show you how to use Docker to install and run &lt;a href=&#34;http://brunettoziosi.eu/posts/starlab-gpu-installation/&#34;&gt;Starlab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;NB: nVidia (AKA the most annoying GPU producer in the world) drivers, in addition to be
+the worst Linux GPU drivers, require a system-dependent installation. This means that
+you can&amp;rsquo;t just download the Docker image from &lt;a href=&#34;https://registry.hub.docker.com/repos/brunetto/&#34;&gt;my Docker registry&lt;/a&gt; and run a container
+from it, but you need to download the &lt;code&gt;Dockerfile&lt;/code&gt; and build the image on your own.
+You can use the image I provide ONLY if you run the non-GPU StarLab version.
+And to do this you need to have a loooot of time to wait for the simulations to finish.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-a-docker-image:e7da96f04bfa3eab144a0265a4f6de5a&#34;&gt;Create a Docker image&lt;/h2&gt;
+
+&lt;p&gt;The image I&amp;rsquo;m going to create contains:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;our modified StarLab version (it contains updated stellar evolution recipes), both GPU and non GPU version&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the same version with an &lt;a href=&#34;http://adsabs.harvard.edu/abs/1991RMxAA..22..255A&#34;&gt;Allen-Santillan&lt;/a&gt; galactic tidal field,
+corrected for the non-inertial reference frame used in StarLab
+(at the moment this version is not working, probably because a problem in the timestep calculation, but I am working on it!)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can use the &lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/&#34;&gt;public version&lt;/a&gt; and correct the
+&lt;code&gt;Dockerfile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is possible to download and extract the StarLab sourced directly from the Internet but I
+prefer to have everything already in the folder.&lt;/p&gt;
+
+&lt;p&gt;First of all, create a new empty folder and &lt;code&gt;cd&lt;/code&gt; into it. Then, copy the StarLab sources
+and the docker file into that folder.
+Mine look like that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;starlabDocker.tar.gz
+					|-sapporo
+					|-starlab
+					|-starlabAS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;starlabAS only contains the files that differ from the versio without the Allen-Santillan tidal field.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, you need a &lt;code&gt;Dockerfile&lt;/code&gt;. The &lt;code&gt;Dockerfile&lt;/code&gt; tells Docker what it has to do
+in order to create your image. Which base images to use (if any), which packages to download and install and so on.
+Mine is :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;FROM ubuntu:14.04
+
+MAINTAINER brunetto ziosi &amp;lt;my email hehe&amp;gt;
+
+# For the public version of StarLab4.4.4, see http://www.sns.ias.edu/~starlab/
+
+ENV DEBIAN_FRONTEND noninteractive
+
+ENV STARLAB_FILE starlabDocker.tar.gz
+
+# Copy StarLab bundle into the image
+COPY $STARLAB_FILE /
+
+# This has to be set by hand and MUST be the same of the host
+##############
+# longisland #
+##############
+# ENV CUDA_DRIVER 340.46
+# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+# ENV CUDA_TOOLKIT cuda_6.0.37_linux_64.run
+# ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/6_0/rel/installers/$CUDA_TOOLKIT
+##############
+#    uno     #
+##############
+# ENV CUDA_DRIVER 331.38
+# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+# ENV CUDA_TOOLKIT cuda_5.5.22_linux_64.run
+# ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/5_5/rel/installers/$CUDA_TOOLKIT
+##############
+#   spritz   #
+##############
+ENV CUDA_DRIVER 331.113
+ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+ENV CUDA_TOOLKIT cuda_5.5.22_linux_64.run
+ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/5_5/rel/installers/$CUDA_TOOLKIT
+################
+#  sfursat     #
+# to be tested #
+################
+# ENV CUDA_DRIVER 270.41.19
+# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+# ENV CUDA_TOOLKIT ????
+# ENV CUDA_TOOLKIT_DOWNLOAD ????????
+
+# Update and install minimal and clean up packages
+RUN apt-get update --quiet &amp;amp;&amp;amp; apt-get install --yes \
+ --no-install-recommends --no-install-suggests \
+ build-essential module-init-tools wget libboost-all-dev   \
+&amp;amp;&amp;amp; apt-get clean &amp;amp;&amp;amp; rm -rf /var/lib/apt/lists/*
+
+# Install CUDA drivers
+RUN wget $CUDA_INSTALL -P /tmp --no-verbose \
+      &amp;amp;&amp;amp; chmod +x /tmp/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run \
+      &amp;amp;&amp;amp; /tmp/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run -s -N --no-kernel-module \
+      &amp;amp;&amp;amp; rm -rf /tmp/*
+
+# Install CUDA toolkit
+RUN wget $CUDA_TOOLKIT_DOWNLOAD &amp;amp;&amp;amp; chmod +x $CUDA_TOOLKIT \
+&amp;amp;&amp;amp; ./$CUDA_TOOLKIT -toolkit -toolkitpath=/usr/local/cuda-site -silent -override \
+&amp;amp;&amp;amp; rm $CUDA_TOOLKIT
+
+# Set env variables
+RUN echo &amp;quot;PATH=$PATH:/usr/local/cuda-site/bin&amp;quot; &amp;gt;&amp;gt; .bashrc          \
+&amp;amp;&amp;amp; echo &amp;quot;LD_LIBRARY_PATH=/usr/local/cuda-site/lib64&amp;quot; &amp;gt;&amp;gt; .bashrc   \
+&amp;amp;&amp;amp; . /.bashrc \
+&amp;amp;&amp;amp; ldconfig /usr/local/cuda-site/lib64
+
+# Install StarLab w/ and w/o GPU, w/ and w/o tidal fields
+RUN tar -xvf $STARLAB_FILE &amp;amp;&amp;amp; rm $STARLAB_FILE \
+&amp;amp;&amp;amp; cp -r starlab starlab-no-GPU               \
+&amp;amp;&amp;amp; cp -r starlab starlabAS-no-GPU             \
+&amp;amp;&amp;amp; cp -r starlab starlabAS-GPU                \
+&amp;amp;&amp;amp; mv starlab starlab-GPU
+
+# Tidal field version only has 5 files different, 
+# so we can copy them into a copy of the non TF version:
+
+# starlab/src/node/dyn/util/add_tidal.C
+# starlab/src/node/dyn/util/dyn_external.C
+# starlab/src/node/dyn/util/dyn_io.C
+# starlab/src/node/dyn/util/set_com.C
+# starlab/src/node/dyn/util/dyn_story.C
+
+RUN cp starlabAS/*.C starlabAS-no-GPU/src/node/dyn/util/ \
+&amp;amp;&amp;amp; cp starlabAS/*.C starlabAS-GPU/src/node/dyn/util/     \
+&amp;amp;&amp;amp; cp starlabAS/dyn.h starlabAS-no-GPU/include/          \
+&amp;amp;&amp;amp; cp starlabAS/dyn.h starlabAS-GPU/include/             \
+&amp;amp;&amp;amp; rm -rf starlabAS
+
+# Compile sapporo
+RUN cd sapporo/ &amp;amp;&amp;amp; make &amp;amp;&amp;amp; bash compile.sh &amp;amp;&amp;amp; cd ../
+
+# With and w/o GPU and w/ and w/o AS tidal fields
+RUN cd /starlab-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
+&amp;amp;&amp;amp; mv /starlab-GPU/usr/bin slbin-GPU &amp;amp;&amp;amp; rm -rf /starlab-GPU \
+&amp;amp;&amp;amp; cd /starlabAS-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
+&amp;amp;&amp;amp; mv /starlabAS-GPU/usr/bin slbinAS-GPU &amp;amp;&amp;amp; rm -rf /starlabAS-GPU \
+&amp;amp;&amp;amp; cd /starlab-no-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no --with-grape=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
+&amp;amp;&amp;amp; mv /starlab-no-GPU/usr/bin slbin-no-GPU &amp;amp;&amp;amp; rm -rf /starlab-no-GPU \
+&amp;amp;&amp;amp; cd /starlabAS-no-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no --with-grape=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
+&amp;amp;&amp;amp; mv /starlabAS-no-GPU/usr/bin slbinAS-no-GPU &amp;amp;&amp;amp; rm -rf /starlabAS-no-GPU
+
+# Default command.
+ENTRYPOINT [&amp;quot;/bin/bash&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first part of the &lt;code&gt;Dockerfile&lt;/code&gt; specify to use &lt;code&gt;Ubuntu 14.04&lt;/code&gt; as base image
+(a special version customized for Docker). Then it lists me as maintainer of the image.
+What follows are environment variables needed for the installation.
+&lt;code&gt;COPY&lt;/code&gt; copy the Starlab sources from the host folder to the image &lt;code&gt;/&lt;/code&gt; folder.
+After that I set the right variables needed to install the right CUDA drivers
+and libraries for each system.&lt;/p&gt;
+
+&lt;p&gt;After setting the environment variables, the &lt;code&gt;RUN&lt;/code&gt; command is used to launch
+the update of the system indexes and packages and the installations of the needed
+build tools.&lt;/p&gt;
+
+&lt;p&gt;Then we can install the CUDA drivers and the CUDA libraries.&lt;/p&gt;
+
+&lt;p&gt;Because Docker add a layer for each of the Docker commands used, I minimize the number of layers
+running more that one bash command chaining them with &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following steps are extract the sources, copy the files in the right places and compile
+sapporo and Starlab. Sapporo is the library that allow Starlab (developed for GRAPE) to run on the GPUs.&lt;/p&gt;
+
+&lt;p&gt;The final line tells Docker that a container based on this image should start with /bin/bash active.&lt;/p&gt;
+
+&lt;p&gt;To build the image just run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;time docker build --force-rm=true -t &amp;lt;your registry name&amp;gt;/starlab-cuda-&amp;lt;driver version&amp;gt;:$(date +&amp;quot;%Y%m%d&amp;quot;) .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is my build line containing&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;time&lt;/code&gt; command, just to know how log does it take to build the image&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker build --force-rm=true&lt;/code&gt; build the image removing intermediate layer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t&lt;/code&gt; to tag the image you create with a name you like, I use my Dcoker Hub username,
+the name of the program I&amp;rsquo;m dockerizing, if using cuda, the driver version and the build date,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt; the final dot is not a typo, it tells Docker to build an image using the &lt;code&gt;Dockerfile&lt;/code&gt;
+in the current folder.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&amp;rsquo;s assume that the container name is &lt;code&gt;me/starlab-cuda-340.46-6.0.37-2015-06-15&lt;/code&gt;
+At the end of the process you can check if the image was successfully created (ok, you can do this also from the errors!)
+by running:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ docker images
+
+REPOSITORY                                   TAG                 IMAGE ID            
+me/starlab-cuda-340.46-6.0.37-2015-06-15    20150615            b073d414323f        
+                                            CREATED             VIRTUAL SIZE
+                                            37 minutes ago      5.272 GB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;run-a-starlab-container:e7da96f04bfa3eab144a0265a4f6de5a&#34;&gt;Run a StarLab container&lt;/h2&gt;
+
+&lt;p&gt;Now that you created the image, it&amp;rsquo;s time to run a container with it.
+To create and run a container based on your newly created image run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ docker run -ti --device /dev/nvidia0:/dev/nvidia0 \
+                 --device /dev/nvidia1:/dev/nvidia1 \
+                 --device /dev/nvidiactl:/dev/nvidiactl \
+                 --device /dev/nvidia-uvm:/dev/nvidia-uvm \
+                 -v       &amp;lt;abs path to host folder&amp;gt;:&amp;lt;container folder&amp;gt; \
+                          me/starlab-cuda-340.46-6.0.37-2015-06-15
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker run&lt;/code&gt; is obvious&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-ti&lt;/code&gt; means open a interactive pseudo tty (that is, more or less, give me a terminal inside the
+container, once started, where I can run commands)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--device&lt;/code&gt; specify which devices to attach; in this case I am connecting 2 CUDA GPUs
+and allow for the Unified Virtual Memory to be used (it works only from CUDA6)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-v &amp;lt;abs path to host folder&amp;gt;:&amp;lt;container folder&amp;gt;&lt;/code&gt; allow to share a folder between host and container&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;me/starlab-cuda-340.46-6.0.37-2015-06-15&lt;/code&gt; is the name of the image from which to create the container&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can check by running:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps [-a]
+
+CONTAINER ID        IMAGE                                              
+ccdffc10c680        me/starlab-cuda-340.46-6.0.37-2015-06-15   
+                     COMMAND             CREATED             
+                     &amp;quot;/bin/bash&amp;quot;         15 seconds ago    
+                     STATUS              PORTS               NAMES
+                     Up 15 seconds                           adoring_turing
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;-a&lt;/code&gt; flags tells Docker to show you also the stopped containers. Note that the container
+has a random name given by Docker.&lt;/p&gt;
+
+&lt;p&gt;It is also possible to directly run commands just after the container creation,
+for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ time echo &amp;quot;Hello world&amp;quot;
+Hello world
+real    0m0.000s
+user    0m0.000s
+sys     0m0.000s
+
+$ time docker run ubuntu:14.04 /bin/echo &#39;Hello world&#39;
+Hello world
+real    0m0.219s
+user    0m0.028s
+sys     0m0.005s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this example, the second command ran into a docker container.&lt;/p&gt;
+
+&lt;p&gt;We can do something better: we want a script that creates a container,
+start it, run some commands and then clean everything.&lt;/p&gt;
+
+&lt;p&gt;This could be quite easy, but we are using StarLab, that makes heavy use of pipes.
+I found three solutions to get it works, the last being the better.&lt;/p&gt;
+
+&lt;p&gt;The first attempt is something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash # shebang line to specify the interpreter
+
+set -x # set -x tells bash to echo the command is going to run
+
+# Create a docker container with devices and volumes and give it a name
+docker create --name sltest -i -t \
+--device /dev/nvidia0:/dev/nvidia0 \
+--device /dev/nvidia1:/dev/nvidia1 \
+--device /dev/nvidiactl:/dev/nvidiactl \
+--device /dev/nvidia-uvm:/dev/nvidia-uvm \
+me/starlab-cuda-340.46-6.0.37-2015-06-15
+
+# Start the container
+docker start sltest
+
+# Exec commands to create StarLab initial conditions
+(docker exec -i sltest /slbin/makeking -n 100 -w 5 -i -u ) &amp;gt; makeking.out
+(docker exec -i sltest /slbin/makemass -f 8 -l 0.1 -u 40 ) &amp;lt; makeking.out &amp;gt; makemass.out
+(docker exec -i sltest /slbin/add_star -R 1 -Z 0.1       ) &amp;lt; makemass.out &amp;gt; add_star.out
+(docker exec -i sltest /slbin/scale    -R 1 -M 1         ) &amp;lt; add_star.out &amp;gt; ics.txt
+
+# Start kira: two ways, note the difference!!!
+(docker exec -i sltest /slbin/kira -t 3 -d 1 -D 1 -f 0 -n 10 -e 0 -B -b 1) &amp;lt; ics.txt &amp;gt; out.txt 2&amp;gt; err.txt
+
+# Stop and delete the container
+docker stop sltest
+docker rm sltest
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This example make use of the STDIN/ERR/OUT redirection, but does not always work
+very well.&lt;/p&gt;
+
+&lt;p&gt;The second attempt, a little better is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash # shebang line to specify the interpreter
+
+set -x # set -x tells bash to echo the command is going to run
+
+# Create env variables for the folders
+LOCAL_FOLDER=~/starlab-results
+DOCKER_FOLDER=/starlab-results
+
+# Create a docker container with devices and volumes and give it a name
+docker create --name sltest -i -t \
+--device /dev/nvidia0:/dev/nvidia0 \
+--device /dev/nvidia1:/dev/nvidia1 \
+--device /dev/nvidiactl:/dev/nvidiactl \
+--device /dev/nvidia-uvm:/dev/nvidia-uvm \
+-v $LOCAL_FOLDER:$OCKER_FOLDER \
+me/starlab-cuda-340.46-6.0.37-2015-06-15
+
+# Start the container
+docker start sltest
+
+# Exec commands to create StarLab initial conditions
+(docker exec -i sltest -c &amp;quot;/slbin/makeking -n 100 -w 5 -i -u ) &amp;gt; /starlab-results/makeking.out&amp;quot;
+(docker exec -i sltest -c &amp;quot;/slbin/makemass -f 8 -l 0.1 -u 40 ) &amp;lt; /starlab-results/makeking.out &amp;gt; /starlab-results/makemass.out&amp;quot;
+(docker exec -i sltest -c &amp;quot;/slbin/add_star -R 1 -Z 0.1       ) &amp;lt; /starlab-results/makemass.out &amp;gt; /starlab-results/add_star.out&amp;quot;
+(docker exec -i sltest -c &amp;quot;/slbin/scale    -R 1 -M 1         ) &amp;lt; /starlab-results/add_star.out &amp;gt; /starlab-results/ics.txt&amp;quot;
+
+# Start kira: two ways, note the difference!!!
+docker exec -i sltest bash -c &amp;quot;/slbin/kira -t 3 -d 1 -D 1 -f 0 \
+ -n 10 -e 0 -B -b 1 &amp;lt; /starlab-results/ics.txt \
+ &amp;gt; /starlab-results/out.txt 2&amp;gt; /starlab-results/err.txt&amp;quot;
+
+# Stop and delete the container
+docker stop sltest
+docker rm sltest
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this second example we make use of the internal container folder attached to a host system folder.
+We will found our files in &lt;code&gt;~/starlab-results&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, the way I prefer is to make the container bash read a script in the
+exchange folder. To do this, we need two files.&lt;br /&gt;
+The first create the container and launch the second, located into the exchange folder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat dockerized_starlab.sh
+
+#!/bin/bash
+set -x
+# Create a docker container with devices and volumes and give it a name
+CONTAINER_NAME=test-001
+
+docker create --name $CONTAINER_NAME -i -t \
+--device /dev/nvidia0:/dev/nvidia0 \
+--device /dev/nvidia1:/dev/nvidia1 \
+--device /dev/nvidiactl:/dev/nvidiactl \
+--device /dev/nvidia-uvm:/dev/nvidia-uvm \
+-v /home/ziosi/tests/$CONTAINER_NAME/results/:/sl-exchanges/ \
+me/starlab-cuda-340.46-6.0.37-2015-06-15
+
+# Start the container
+docker start $CONTAINER_NAME
+
+# Execute the script in the exchange folder
+docker exec -i $CONTAINER_NAME bash -c &amp;quot;/sl-exchanges/run.sh&amp;quot;
+
+docker stop $CONTAINER_NAME
+docker rm $CONTAINER_NAME
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second may contain the instructions to run StarLab commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+set -x
+
+for RUN in $(ls create_*.sh); do
+	echo &amp;quot;Run $RUN&amp;quot;;
+	/slbin-GPU/makeking -n 1000 -w 5 -i -u  &amp;gt; /sl-exchanges/makeking-$RUN.out;
+	/slbin-GPU/makemass -f 8  -l 0.1 -u 150 &amp;lt; /sl-exchanges/makeking-$RUN.out &amp;gt; /sl-exchanges/makemass-$RUN.out;
+	/slbin-GPU/add_star -R 1 -Z 0.10        &amp;lt; /sl-exchanges/makemass-$RUN.out &amp;gt; /sl-exchanges/add_star-$RUN.out;
+	/slbin-GPU/set_com -r 5 0 0 -v 0 1 0    &amp;lt; /sl-exchanges/add_star-$RUN.out &amp;gt; /sl-exchanges/set_com-$RUN.out;
+	/slbin-GPU/scale -R 1 -M 1  &amp;lt; /sl-exchanges/set_com-$RUN.out &amp;gt; /sl-exchanges/ics-$RUN.txt;
+	/slbin-GPU/kira -t 500 -d 1 -D 1 -f 0 -n 10 -e 0 -B -b 1 &amp;lt; /sl-exchanges/ics-$RUN.txt &amp;gt; /sl-exchanges/out-$RUN.txt 2&amp;gt; /sl-exchanges/err-$RUN.txt;
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s it!!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PDF manipulation</title>
@@ -1044,631 +1564,6 @@ func main() {
 }
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Go installation from source</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</link>
-      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
-      <description>&lt;p&gt;Summary of the Go installation instruction from source as presented in:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/install&#34;&gt;Go installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/install/source&#34;&gt;Go installation from source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://golang.org/doc/code.html&#34;&gt;Write Go code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--TEASER_END--&gt;
-
-&lt;p&gt;The installation path will be &lt;code&gt;/usr/local/go&lt;/code&gt; and the workspace in
-&lt;code&gt;$HOME/Code/go&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /usr/local
-hg clone -u release https://code.google.com/p/go
-cd go/src
-./all.bash
-echo &amp;quot;export PATH=$PATH:/usr/local/go/bin&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
-echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>StarLab-GPU installation</title>
-      <link>http://brunettoziosi.eu/posts/starlab-gpu-installation/</link>
-      <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
-      <description>
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../stories/research/utils/starlab-gpu-old-guide.html&#34;&gt;Click here for the old guide!!!&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ignore the &amp;ldquo;&lt;code&gt;sapporo&lt;/code&gt;&amp;rdquo;  and &amp;ldquo;&lt;code&gt;CUDA&lt;/code&gt;&amp;rdquo; instructions&lt;/li&gt;
-&lt;li&gt;rename &lt;code&gt;starlab/local/grape.sh&lt;/code&gt; to &lt;code&gt;starlab/local/_grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;substitute &lt;code&gt;configure --without-f77&lt;/code&gt; with &lt;code&gt;configure --with-grape=no --without-f77&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;in case you can&amp;rsquo;t &lt;code&gt;make&lt;/code&gt; succesfully may be you need to copy the folder
-&lt;code&gt;starlab/src/gfx&lt;/code&gt; and do not make clean&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Well, probably you landed here searching information about StarLab, how to
-install it, how to run it, how prevent it to harm your cat.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER 1:&lt;/strong&gt; I won&amp;rsquo;t promise anything about your cat but I will try to help you having a
-reasonable well running installation of StarLab.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER 2:&lt;/strong&gt; I&amp;rsquo;m not a programmer, I&amp;rsquo;m not a system administrator and I don&amp;rsquo;t even
-know how to program in CUDA (yet). Maybe something here is wrong ore outdated.
-I&amp;rsquo;m only giving you some of the experienced I collected in n+1 times I installed StarLab.
-Nothin less, nothing more.&lt;br /&gt;
-Also note that most of the knowledge I put here come
-from my &lt;a href=&#34;http://web.pd.astro.it/mapelli/&#34;&gt;supervisor&lt;/a&gt;.&lt;br /&gt;
-I also thanks Mario Spera for the usefull advices.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system
-with more than ~6000 binaries.&lt;/p&gt;
-
-&lt;h2 id=&#34;starlab:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;StarLab&lt;/a&gt; is &amp;ldquo;A Software Environment for Collisional Stellar Dynamics&amp;rdquo;.
-&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;Here&lt;/a&gt; you can find useful information about it that
-is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
-
-&lt;h2 id=&#34;starlab-gpu:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab-GPU&lt;/h2&gt;
-
-&lt;p&gt;Welcome back!!&lt;br /&gt;
-Next step: StarLab was designed to run on &lt;a href=&#34;http://en.wikipedia.org/wiki/Gravity_Pipe&#34;&gt;GRAPE&lt;/a&gt;
-but thanks to the &lt;a href=&#34;http://castle.strw.leidenuniv.nl/software/sapporo.html&#34;&gt;Sapporo&lt;/a&gt;
-library you can run it on GPUs.&lt;/p&gt;
-
-&lt;p&gt;Now we will try to install a GPU-ready version of StarLab. To be honest, we run
-a &lt;strong&gt;private&lt;/strong&gt; version of StarLab for GPU with some customizations (if you are interested,
-see &lt;a href=&#34;http://arxiv.org/abs/1211.6441&#34;&gt;Mapelli et al. 2013&lt;/a&gt;; &lt;a href=&#34;http://arxiv.org/abs/1301.4227&#34;&gt;Mapelli &amp;amp; Bressan 2013&lt;/a&gt;).&lt;br /&gt;
-Unfortunately you can&amp;rsquo;t download it now, but I hope the differences in the installation
-process are negligible. Ask us if you are interested in our version of StarLab.&lt;br /&gt;
-Because I&amp;rsquo;m not sure about what you will find in the public version os Sapporo and StarLab,
-I will show my version of the relevant files you need to install everything.
-The installation is done on a Ubuntu 14.04 workstation so change them accordingly to
-your OS. I will also provide some examples on what you need to install StarLab on
-the clusters I tested.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s start!!&lt;/p&gt;
-
-&lt;h4 id=&#34;download:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Download&lt;/h4&gt;
-
-&lt;p&gt;Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
-You can try to check them using&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt; (cuda compiler)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudart&lt;/code&gt; (CUDA runtime)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | boost lib&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | boost include&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it&amp;rsquo;s a mess,
-but it&amp;rsquo;s not my fault!:P&lt;/p&gt;
-
-&lt;p&gt;Download&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/starlab.tar.gz&#34;&gt;StarLab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://castle.strw.leidenuniv.nl/documents/Sapporo/sapporo161.tgz&#34;&gt;Sapporo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and decompress the archives with &lt;code&gt;tar -xvf archiveName&lt;/code&gt;.&lt;br /&gt;
-Try to have the following folder tree:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_CUDA-5.0_Samples&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_GPU_Computing_SDK&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/sapporo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/starlab&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The NVIDIA folder is optional, but I would suggest to have with you alle the NVIDIA
-file you can find, soon or later you will need them. CUDA is continuosly changing,
-SDK is not toolkit, dependencies are different and broken between different versions.
-We will try to survive and to have the most standard installation we can.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$SLPATH&lt;/code&gt; should be the path where you put your StarLab installation.&lt;br /&gt;
-I&amp;rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.&lt;/p&gt;
-
-&lt;h3 id=&#34;sapporo:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Sapporo&lt;/h3&gt;
-
-&lt;p&gt;Enter in the sapporo folder, and to be sure to start a clean installation run
-&lt;code&gt;make clean&lt;/code&gt;.
-Here you need to find:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;compile.sh&lt;/code&gt; is the script StarLab will run later to decide if you are worthy of
-its presence in your computer. If &lt;code&gt;compile.sh&lt;/code&gt; fail, StarLab won&amp;rsquo;t install.&lt;/p&gt;
-
-&lt;p&gt;You also need to find somewhere (= in an old CUDA SKD?)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cutil.h&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;multithreading.h&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and to copy them in this folder.&lt;br /&gt;
-If you are not able to find them, ask me, I have copies of those files.&lt;/p&gt;
-
-&lt;p&gt;Open &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; and change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;lt;cutil.h&amp;gt;
-#include &amp;lt;multithreading.h&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;quot;cutil.h&amp;quot;
-#include &amp;quot;multithreading.h&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is to make Sapporo read the local version of &lt;code&gt;cutil.h&lt;/code&gt; and &lt;code&gt;multithreading.h&lt;/code&gt;
-in case your CUDA version does not support them anymore.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s time to fix a bug (thanks Mario):
-in &lt;code&gt;sapporo.cpp&lt;/code&gt; change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
-		nCUDAdevices = how_many;
-    } else {
-		fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
-		fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
-		//Set original_how_many to a positive number so we get assigned different devices
-		//incase the devices are not in compute exclusive mode.
-		original_how_many = 1;
-  }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
-		nCUDAdevices = how_many;
-		fclose(fd); // thanks Mario Spera, without this SL will crash after a while if using sapporo.config
-  } else {
-    fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
-    fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
-    //Set original_how_many to a positive number so we get assigned different devices
-    //incase the devices are not in compute exclusive mode.
-    original_how_many = 1;
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;so the &lt;code&gt;sapporo.config&lt;/code&gt; file can be close and won&amp;rsquo;t crash your run.&lt;/p&gt;
-
-&lt;p&gt;Now open &lt;code&gt;Makefile&lt;/code&gt; and fit&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Makefile&#34;&gt;CXX  := g++
-CC   := gcc
-NVCC := /usr/bin/nvcc
-CUDAPATH    := /usr/include/
-CUDAINCLUDE := -I$(CUDAPATH) 
-BOOSTPATH := /usr/include/boost 
-BOOSTINCLUDE := -I$(BOOSTPATH)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to your case.&lt;br /&gt;
-Open &lt;code&gt;compile.sh&lt;/code&gt; and be sure to have something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/sh
-
-flags=-DNGB
-
-CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
-CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-BOOSTINC=&amp;quot;-I/usr/include/boost&amp;quot;
-BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
-
-
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Try to compile with &lt;code&gt;make&lt;/code&gt;. If it works, try to tun &lt;code&gt;bash compile.sh&lt;/code&gt;. If this works too,
-then test sapporo with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Be aware that a number (of particles) too small would crash the tests.&lt;/p&gt;
-
-&lt;p&gt;Assuming &lt;code&gt;sapporo&lt;/code&gt; is ready, let&amp;rsquo;s move to starlab.&lt;/p&gt;
-
-&lt;h3 id=&#34;starlab-1:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;StarLab&lt;/h3&gt;
-
-&lt;p&gt;In StarLab the relevant files you have to worry about are&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sbin/sqrt.c&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;local/grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Rename &lt;code&gt;sbin/sqrt.c&lt;/code&gt; to &lt;code&gt;sbin/sqrt.C&lt;/code&gt; otherwise
-you could have linker problems again the C math library.&lt;br /&gt;
-Now open &lt;code&gt;configure&lt;/code&gt; and search for CUDA. Probably you won&amp;rsquo;t find anything.&lt;br /&gt;
-Search for &lt;code&gt;Check all named libraries for g6_open&lt;/code&gt;, you should find something like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
-
-    grape6=no
-
-    for gl in $GRAPE_LIBS_; do
-        as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-echo &amp;quot;$as_me:$LINENO: checking for g6_open_ in -l${gl/-l/}&amp;quot; &amp;gt;&amp;amp;5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;modify it to include boost and CUDA like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for gl in $GRAPE_LIBS_; do
-	CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
-	CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-	CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-	BOOSTINC=&amp;quot;-I/usr/include/boost/&amp;quot;
-	BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-	BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
-	
-	LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
-		
-	as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Be sure to always use double quotes and to terminate the paths to folders with a slash (&lt;code&gt;/&lt;/code&gt;),
-some machines are quite choosy.&lt;/p&gt;
-
-&lt;p&gt;Last edit is on &lt;code&gt;local/grape.sh&lt;/code&gt; to let StarLab know where your sapporo installation is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$SLPATH/slpack/sapporo&#39;
-GRAPE_LIBS_=&#39;-lsapporo&#39;
-# For now, define this as `yes&#39; for the AMD64 boxes only, `no&#39; otherwise.
-OLD_READ_NEIGHBOUR_LIST=no
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Before compiling, if you want, you can check also &lt;code&gt;sapporo/sapporo.config&lt;/code&gt;.&lt;br /&gt;
-Inside you will find something like that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;524288
--1
-0
-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where 524288 should be the maximum number of particles you can handle, -1 the number
-of CUDA devices to use (-1 means all? maybe&amp;hellip;), 0 and 1 are the GPU number you want to use.&lt;br /&gt;
-Recent CUDA seems to be smart enought to understand where to run without having to specify
-(but look after your cat!!!).&lt;/p&gt;
-
-&lt;p&gt;Alright!! If you managed to reach this point, very good. Last three commands. In the
-&lt;code&gt;starlab&lt;/code&gt; folder run&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;configure --with-f77=no&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;go out for a walk&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When running configure, avoid the &lt;code&gt;--without-option&lt;/code&gt; version of an option, prefer
-&lt;code&gt;--with-option=no&lt;/code&gt;, it&amp;rsquo;s safer.&lt;/p&gt;
-
-&lt;p&gt;If you recompile StarLab AND/OR Sapporo, type &lt;code&gt;make clean&lt;/code&gt; two times. delete the files in
-&lt;code&gt;starlab/usr/bin&lt;/code&gt;, turn around 3 times, touch your nose and type &lt;code&gt;make&lt;/code&gt; two times. Then
-&lt;code&gt;make install&lt;/code&gt; again.&lt;br /&gt;
-No, &lt;code&gt;make clean&lt;/code&gt; and &lt;code&gt;make&lt;/code&gt; are not enought to update your object
-files or binaries.&lt;/p&gt;
-
-&lt;p&gt;Depending on your environment, if you run into problems, be sure that:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;you loaded the correct modules (if you are in a cluster for examples&lt;/li&gt;
-&lt;li&gt;you are into the right node (some machine let you compile your code on a
-node that is not the login node)&lt;/li&gt;
-&lt;li&gt;if you encounter strange messages regarding missing rules for missing files,
-for example &lt;code&gt;libxhdyn.la&lt;/code&gt; or something regarding &lt;code&gt;gfx&lt;/code&gt;-something, may be tou need to
-tune your config file to exclude, for example, the X/Qt/&amp;hellip; libraries, in case
-try to run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt;; in case try to have a look at
-&lt;code&gt;configure --help&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;run-starlab:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Run StarLab&lt;/h3&gt;
-
-&lt;p&gt;Before run a simulation you need to create the initial conditions.&lt;/p&gt;
-
-&lt;h4 id=&#34;initial-conditions:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Initial Conditions&lt;/h4&gt;
-
-&lt;p&gt;StarLab is provided with few tools to help (really?) you in this task. A common
-way to create ICs for &lt;a href=&#34;http://arxiv.org/abs/1404.7147&#34;&gt;our simulations&lt;/a&gt; is something like:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;ehm, I don&#39;t know if I can tell you, sorry man...:(&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;launch:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Launch&lt;/h4&gt;
-
-&lt;p&gt;StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
-you want to know about your simulations to STDERR, so, &lt;code&gt;&amp;lt;ehm.... see ICs&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;tidal-fields:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Tidal fields&lt;/h4&gt;
-
-&lt;p&gt;Be patience&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;known-issues-and-troubleshooting:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
-
-&lt;p&gt;If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.&lt;br /&gt;
-Some of the things that can happen are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;you can find binaries with eccentricity greater than one (StarLab does
-not update some binaries after they are disrupted? flybyes seen as binaries? don&amp;rsquo;t know)&lt;/li&gt;
-&lt;li&gt;StarLab can crash if you try to simulate a number of centers of mass greater than
-5*10^4 together with a fraction of primordial binaries &amp;gt;=0.1&lt;/li&gt;
-&lt;li&gt;boost problems? check the correct flags for your version (choose among some combination of
-&lt;code&gt;-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;check you put all the &lt;code&gt;_&lt;/code&gt;, &amp;ldquo;-I&amp;rdquo;, &amp;ldquo;-l&amp;rdquo;, &amp;ldquo;-L&amp;rdquo; in the right places&lt;/li&gt;
-&lt;li&gt;check all the libraries paths&lt;/li&gt;
-&lt;li&gt;check for double quotes (&lt;code&gt;&amp;quot;&lt;/code&gt;) instead of single ones (&lt;code&gt;&#39;&lt;/code&gt;) in the paths&lt;/li&gt;
-&lt;li&gt;check the modules, environment variables&lt;/li&gt;
-&lt;li&gt;check you are on the right node&lt;/li&gt;
-&lt;li&gt;check your environment against the configure options you passed
-(have a look at &lt;code&gt;configure --help&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;if you need to modify StarLab and you want to add your own flags,
-you need to comment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;  getia(b-&amp;gt;get_log_story(), &amp;quot;step_slow&amp;quot;,
-        b-&amp;gt;get_kira_counters()-&amp;gt;step_slow, nss);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;function call in &lt;code&gt;kira_counters.C&lt;/code&gt; otherwise you won&amp;rsquo;t be able to compile StarLab.&lt;/p&gt;
-
-&lt;h3 id=&#34;clusters:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Clusters&lt;/h3&gt;
-
-&lt;h4 id=&#34;eurora:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;EURORA&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;setup_sapporo.sh&lt;/code&gt;
-(if you want to compile sapporo using queues, or, load modules by hand if you want to
-compile interactively)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
-module load profile/advanced
-module load gnu/4.6.3
-module load boost/1.53.0--gnu--4.6.3
-module load cuda
-
-LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
-export LD_LIBRARY_PATH
-cd $HOME/slPack/sapporo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include/ -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc/ -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
-CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lcudart&amp;quot;
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;NVCC := /cineca/prod/compilers/cuda/5.0.35/none/bin/nvcc
-CUDAPATH    := /cineca/prod/compilers/cuda/5.0.35/none
-CUDASDKPATH := /cineca/prod/compilers/cuda/5.0.35/none/samples
-CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)/common/inc 
-BOOSTPATH := /cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
-CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -lcudart&amp;quot; 
-LIBS=&amp;quot;$CUDAINC $CUDALIB -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lboost_thread-mt -DNGB&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$HOME/slPack/sapporo/&#39;
-GRAPE_LIBS_=&#39;-lsapporo&#39;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;setup_starlab.sh.sh&lt;/code&gt;
-(if you want to compile sapporo using queues, or, load modules by hand if you want to
-compile interactively)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
-module load profile/advanced
-module load gnu/4.6.3
-module load boost/1.53.0--gnu--4.6.3
-module load cuda
-LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
-export LD_LIBRARY_PATH
-cd $HOME/slPack/starlab
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
-
-&lt;p&gt;Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
-system at the Swinburne University. Here how to do that.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log into the system and find yourself in the login node.&lt;/li&gt;
-&lt;li&gt;Clone the private repo / download the folders and unpack them like described before.&lt;/li&gt;
-&lt;li&gt;Then you need to log into one of the compile/test nodes from the head node: &lt;code&gt;ssh $USER@gstar001&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;load the right modules:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module load gcc/4.6.4
-module load boost/x86_64/gnu/1.51.0-gcc4.6
-module load cuda/4.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need that version of &lt;code&gt;gcc&lt;/code&gt; and &lt;code&gt;boost&lt;/code&gt; because of issues with boost threads in the default versions.
-Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
-&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
-and
-&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Make sure you have no &lt;code&gt;&#39;&lt;/code&gt; around your path, maybe, if you need, only &lt;code&gt;&amp;quot;&lt;/code&gt; otherwise &lt;code&gt;sapporo&lt;/code&gt; won&amp;rsquo;t compile.
-Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
-&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
-and
-&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have our private version you can
-* &lt;code&gt;cp ../scripts/g2/Makefile ./&lt;/code&gt;
-* &lt;code&gt;cp ../scripts/g2/compile.sh ./&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;otherwise try to modify them to have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CXX  := g++
-CC   := gcc
-NVCC := /usr/local/cuda-4.0/bin/nvcc
-CUDAINC := -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc 
-BOOSTINC := -I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6
-NVCCFLAGS := -O0 -g -D_DEBUG  -maxrregcount=64 $(CUDAINC) $(BOOSTINC) 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in the &lt;code&gt;Makefile&lt;/code&gt; and&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;flags=-DNGB
-
-CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc&amp;quot;
-CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
-CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
-
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in &lt;code&gt;compile.sh&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then run&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;make clean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bash compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No go the the starlab folder (&lt;code&gt;cd ../starlab&lt;/code&gt;) and fix the &lt;code&gt;configure&lt;/code&gt; file accordingly to this&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
-
-    grape6=no
-
-    for gl in $GRAPE_LIBS_; do
-    ##############################
-    ######      g2
-    ##############################
-    CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/&amp;quot;
-    CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
-    CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-    BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/&amp;quot;
-    BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-    BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
-    
-    LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
-        
-        
-    as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and the &lt;code&gt;local/grape.sh&lt;/code&gt; file to point to your sapporo installation.&lt;/p&gt;
-
-&lt;p&gt;If you have our version of StarLab, just copy the right files:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cp ../scripts/g2/configure ./&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cp ../scripts/g2/grape.sh ./local/&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Make sure again &lt;code&gt;grape.sh&lt;/code&gt; points to the right folder&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./configure --without-f77 --with-qt=no&lt;/code&gt; (if you want qt, load the modules and check the versions)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make clean &amp;amp;&amp;amp; make clean &amp;amp;&amp;amp; make clean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make &amp;amp;&amp;amp; make&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rm ./usr/bin/*&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;** Troubleshooting **&lt;/p&gt;
-
-&lt;p&gt;If you get this error (or some other error)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;make[2]: Entering directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
-/bin/sh ../../../libtool --preserve-dup-deps --mode=link gcc  -g -O2  -L/usr/lib64/qt-3.3/lib -o libgfx-2.la   win.lo draw.lo draw1.lo color.lo dialog.lo mcd.lo interface.lo termio.lo utility.lo simple.lo  -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc -L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib -lcudart -L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6 -lboost_system  -lboost_thread-mt -lpthread -DNGB
-ar cru .libs/libgfx-2.a  win.o draw.o draw1.o color.o dialog.o mcd.o interface.o termio.o utility.o simple.o
-ar: interface.o: No such file or directory
-make[2]: *** [libgfx-2.la] Error 1
-make[2]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
-make[1]: *** [clibs23] Error 2
-make[1]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx&#39;
-make: *** [libs] Error 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;when compiling may be you can try to &lt;code&gt;make&lt;/code&gt; and &lt;code&gt;make clean&lt;/code&gt; some times.&lt;br /&gt;
-Also remember that make clean is not working properly, so you need to &lt;code&gt;make clean&lt;/code&gt; more than once or delete the binaries by yourself.&lt;/p&gt;
-
-&lt;p&gt;If you have errors regarding no rules for &lt;code&gt;libxhdyn.la&lt;/code&gt;, probably you forgot to exclude
-some options from the configure, so run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt; or try &lt;code&gt;configure --help&lt;/code&gt;
-to check for other options.&lt;/p&gt;
-
-&lt;h3 id=&#34;additional-material:3362ac2b0400c3c64983ad8b2d9efef3&#34;&gt;Additional material&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Code units (coming soon&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;StarLab internals (really???)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/brunetto/slpack&#34;&gt;Our repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/brunetto/sltools&#34;&gt;Tools to easily manage SL runs (private too, sorry, ask me if you are interested)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools&#34;&gt;StarLab tools wiki&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

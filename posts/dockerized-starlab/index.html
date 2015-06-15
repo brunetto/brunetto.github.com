@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    `Dockerized Starlab` // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="How to dockerize and use a dockerized `Starlab`">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="`Dockerized Starlab`" />
+<meta property="og:description" content="How to dockerize and use a dockerized `Starlab`" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://brunettoziosi.eu/posts/dockerized-starlab/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://brunettoziosi.eu/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.svg">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes
+    </br>stuck on the Web!😃</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae/">CV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#create-a-docker-image:e7da96f04bfa3eab144a0265a4f6de5a">Create a Docker image</a></li>
+<li><a href="#run-a-starlab-container:e7da96f04bfa3eab144a0265a4f6de5a">Run a StarLab container</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/dockerized-starlab/">`Dockerized Starlab`</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>15</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jun</span> <span class="post-date-year">2015</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-programming" href="http://brunettoziosi.eu/categories/programming">Programming</a>
+				
+					<a class="post-category post-category-research" href="http://brunettoziosi.eu/categories/research">Research</a>
+				
+					<a class="post-category post-category-post" href="http://brunettoziosi.eu/categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f&title=%60Dockerized%20Starlab%60&summary=Once%20you%20have%20Docker%20installed%2c%20you%20may%20want%20to%20see%20it%20in%20action.%20Here%20I%20demonstrate%20how%20to%20use%20Docker%20in%20a%20slightly%20different%20way%20respect%20what%20you%20can%20find%20around%20%28AKA%20use%20Docker%20to%20set%20up%20a%20web-server%20or%20something%20similar%29.%20I%20think%20Docker%20is%20a%20great%20solution%20to%20deal%20with%20easiness%20of%20installation%20and%20reproducibility%20in%20science.%20LXD%20would%20be%20probable%20be%20better.%20LXD%20already%20provide%20unprivileged%20containers%20AND%20is%20more%20about%20a%20container%20containing%20more%20than%20an%20application%2c%20while%20Docker%20is%20based%20on%20the%20idea%20of%20one%20container%20for%20a%20single%20app.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=%60Dockerized%20Starlab%60&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<p>Once you have <a href="../docker-installation">Docker installed</a>, you may want to see it
+in action. Here I demonstrate how to use Docker in a slightly different way respect
+what you can find around (AKA use Docker to set up a web-server or something similar).</p>
+
+<p>I think Docker is a great solution to deal with easiness of installation and reproducibility
+in science. LXD would be probable be better. LXD already provide unprivileged containers
+AND is more about a container containing more than an application, while Docker is
+based on the idea of one container for a single app. However, I still have to try LXD.</p>
+
+<p>Here I will show you how to use Docker to install and run <a href="http://brunettoziosi.eu/posts/starlab-gpu-installation/">Starlab</a>.</p>
+
+<p>NB: nVidia (AKA the most annoying GPU producer in the world) drivers, in addition to be
+the worst Linux GPU drivers, require a system-dependent installation. This means that
+you can&rsquo;t just download the Docker image from <a href="https://registry.hub.docker.com/repos/brunetto/">my Docker registry</a> and run a container
+from it, but you need to download the <code>Dockerfile</code> and build the image on your own.
+You can use the image I provide ONLY if you run the non-GPU StarLab version.
+And to do this you need to have a loooot of time to wait for the simulations to finish.</p>
+
+<h2 id="create-a-docker-image:e7da96f04bfa3eab144a0265a4f6de5a">Create a Docker image</h2>
+
+<p>The image I&rsquo;m going to create contains:</p>
+
+<ul>
+<li><p>our modified StarLab version (it contains updated stellar evolution recipes), both GPU and non GPU version</p></li>
+
+<li><p>the same version with an <a href="http://adsabs.harvard.edu/abs/1991RMxAA..22..255A">Allen-Santillan</a> galactic tidal field,
+corrected for the non-inertial reference frame used in StarLab
+(at the moment this version is not working, probably because a problem in the timestep calculation, but I am working on it!)</p></li>
+</ul>
+
+<p>You can use the <a href="http://www.sns.ias.edu/~starlab/download/">public version</a> and correct the
+<code>Dockerfile</code>.</p>
+
+<p>It is possible to download and extract the StarLab sourced directly from the Internet but I
+prefer to have everything already in the folder.</p>
+
+<p>First of all, create a new empty folder and <code>cd</code> into it. Then, copy the StarLab sources
+and the docker file into that folder.
+Mine look like that:</p>
+
+<pre><code>starlabDocker.tar.gz
+					|-sapporo
+					|-starlab
+					|-starlabAS
+</code></pre>
+
+<p>where <code>starlabAS only contains the files that differ from the versio without the Allen-Santillan tidal field.</code></p>
+
+<p>Then, you need a <code>Dockerfile</code>. The <code>Dockerfile</code> tells Docker what it has to do
+in order to create your image. Which base images to use (if any), which packages to download and install and so on.
+Mine is :</p>
+
+<pre><code class="language-bash">FROM ubuntu:14.04
+
+MAINTAINER brunetto ziosi &lt;my email hehe&gt;
+
+# For the public version of StarLab4.4.4, see http://www.sns.ias.edu/~starlab/
+
+ENV DEBIAN_FRONTEND noninteractive
+
+ENV STARLAB_FILE starlabDocker.tar.gz
+
+# Copy StarLab bundle into the image
+COPY $STARLAB_FILE /
+
+# This has to be set by hand and MUST be the same of the host
+##############
+# longisland #
+##############
+# ENV CUDA_DRIVER 340.46
+# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+# ENV CUDA_TOOLKIT cuda_6.0.37_linux_64.run
+# ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/6_0/rel/installers/$CUDA_TOOLKIT
+##############
+#    uno     #
+##############
+# ENV CUDA_DRIVER 331.38
+# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+# ENV CUDA_TOOLKIT cuda_5.5.22_linux_64.run
+# ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/5_5/rel/installers/$CUDA_TOOLKIT
+##############
+#   spritz   #
+##############
+ENV CUDA_DRIVER 331.113
+ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+ENV CUDA_TOOLKIT cuda_5.5.22_linux_64.run
+ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/5_5/rel/installers/$CUDA_TOOLKIT
+################
+#  sfursat     #
+# to be tested #
+################
+# ENV CUDA_DRIVER 270.41.19
+# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
+# ENV CUDA_TOOLKIT ????
+# ENV CUDA_TOOLKIT_DOWNLOAD ????????
+
+# Update and install minimal and clean up packages
+RUN apt-get update --quiet &amp;&amp; apt-get install --yes \
+ --no-install-recommends --no-install-suggests \
+ build-essential module-init-tools wget libboost-all-dev   \
+&amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+
+# Install CUDA drivers
+RUN wget $CUDA_INSTALL -P /tmp --no-verbose \
+      &amp;&amp; chmod +x /tmp/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run \
+      &amp;&amp; /tmp/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run -s -N --no-kernel-module \
+      &amp;&amp; rm -rf /tmp/*
+
+# Install CUDA toolkit
+RUN wget $CUDA_TOOLKIT_DOWNLOAD &amp;&amp; chmod +x $CUDA_TOOLKIT \
+&amp;&amp; ./$CUDA_TOOLKIT -toolkit -toolkitpath=/usr/local/cuda-site -silent -override \
+&amp;&amp; rm $CUDA_TOOLKIT
+
+# Set env variables
+RUN echo &quot;PATH=$PATH:/usr/local/cuda-site/bin&quot; &gt;&gt; .bashrc          \
+&amp;&amp; echo &quot;LD_LIBRARY_PATH=/usr/local/cuda-site/lib64&quot; &gt;&gt; .bashrc   \
+&amp;&amp; . /.bashrc \
+&amp;&amp; ldconfig /usr/local/cuda-site/lib64
+
+# Install StarLab w/ and w/o GPU, w/ and w/o tidal fields
+RUN tar -xvf $STARLAB_FILE &amp;&amp; rm $STARLAB_FILE \
+&amp;&amp; cp -r starlab starlab-no-GPU               \
+&amp;&amp; cp -r starlab starlabAS-no-GPU             \
+&amp;&amp; cp -r starlab starlabAS-GPU                \
+&amp;&amp; mv starlab starlab-GPU
+
+# Tidal field version only has 5 files different, 
+# so we can copy them into a copy of the non TF version:
+
+# starlab/src/node/dyn/util/add_tidal.C
+# starlab/src/node/dyn/util/dyn_external.C
+# starlab/src/node/dyn/util/dyn_io.C
+# starlab/src/node/dyn/util/set_com.C
+# starlab/src/node/dyn/util/dyn_story.C
+
+RUN cp starlabAS/*.C starlabAS-no-GPU/src/node/dyn/util/ \
+&amp;&amp; cp starlabAS/*.C starlabAS-GPU/src/node/dyn/util/     \
+&amp;&amp; cp starlabAS/dyn.h starlabAS-no-GPU/include/          \
+&amp;&amp; cp starlabAS/dyn.h starlabAS-GPU/include/             \
+&amp;&amp; rm -rf starlabAS
+
+# Compile sapporo
+RUN cd sapporo/ &amp;&amp; make &amp;&amp; bash compile.sh &amp;&amp; cd ../
+
+# With and w/o GPU and w/ and w/o AS tidal fields
+RUN cd /starlab-GPU/ &amp;&amp; ./configure --with-f77=no &amp;&amp; make &amp;&amp; make install &amp;&amp; cd ../ \
+&amp;&amp; mv /starlab-GPU/usr/bin slbin-GPU &amp;&amp; rm -rf /starlab-GPU \
+&amp;&amp; cd /starlabAS-GPU/ &amp;&amp; ./configure --with-f77=no &amp;&amp; make &amp;&amp; make install &amp;&amp; cd ../ \
+&amp;&amp; mv /starlabAS-GPU/usr/bin slbinAS-GPU &amp;&amp; rm -rf /starlabAS-GPU \
+&amp;&amp; cd /starlab-no-GPU/ &amp;&amp; ./configure --with-f77=no --with-grape=no &amp;&amp; make &amp;&amp; make install &amp;&amp; cd ../ \
+&amp;&amp; mv /starlab-no-GPU/usr/bin slbin-no-GPU &amp;&amp; rm -rf /starlab-no-GPU \
+&amp;&amp; cd /starlabAS-no-GPU/ &amp;&amp; ./configure --with-f77=no --with-grape=no &amp;&amp; make &amp;&amp; make install &amp;&amp; cd ../ \
+&amp;&amp; mv /starlabAS-no-GPU/usr/bin slbinAS-no-GPU &amp;&amp; rm -rf /starlabAS-no-GPU
+
+# Default command.
+ENTRYPOINT [&quot;/bin/bash&quot;]
+</code></pre>
+
+<p>The first part of the <code>Dockerfile</code> specify to use <code>Ubuntu 14.04</code> as base image
+(a special version customized for Docker). Then it lists me as maintainer of the image.
+What follows are environment variables needed for the installation.
+<code>COPY</code> copy the Starlab sources from the host folder to the image <code>/</code> folder.
+After that I set the right variables needed to install the right CUDA drivers
+and libraries for each system.</p>
+
+<p>After setting the environment variables, the <code>RUN</code> command is used to launch
+the update of the system indexes and packages and the installations of the needed
+build tools.</p>
+
+<p>Then we can install the CUDA drivers and the CUDA libraries.</p>
+
+<p>Because Docker add a layer for each of the Docker commands used, I minimize the number of layers
+running more that one bash command chaining them with <code>&amp;&amp;</code>.</p>
+
+<p>The following steps are extract the sources, copy the files in the right places and compile
+sapporo and Starlab. Sapporo is the library that allow Starlab (developed for GRAPE) to run on the GPUs.</p>
+
+<p>The final line tells Docker that a container based on this image should start with /bin/bash active.</p>
+
+<p>To build the image just run</p>
+
+<pre><code class="language-bash">time docker build --force-rm=true -t &lt;your registry name&gt;/starlab-cuda-&lt;driver version&gt;:$(date +&quot;%Y%m%d&quot;) .
+</code></pre>
+
+<p>This is my build line containing</p>
+
+<ul>
+<li><code>time</code> command, just to know how log does it take to build the image</li>
+<li><code>docker build --force-rm=true</code> build the image removing intermediate layer</li>
+<li><code>-t</code> to tag the image you create with a name you like, I use my Dcoker Hub username,
+the name of the program I&rsquo;m dockerizing, if using cuda, the driver version and the build date,</li>
+<li><code>.</code> the final dot is not a typo, it tells Docker to build an image using the <code>Dockerfile</code>
+in the current folder.</li>
+</ul>
+
+<p>Let&rsquo;s assume that the container name is <code>me/starlab-cuda-340.46-6.0.37-2015-06-15</code>
+At the end of the process you can check if the image was successfully created (ok, you can do this also from the errors!)
+by running:</p>
+
+<pre><code class="language-bash">$ docker images
+
+REPOSITORY                                   TAG                 IMAGE ID            
+me/starlab-cuda-340.46-6.0.37-2015-06-15    20150615            b073d414323f        
+                                            CREATED             VIRTUAL SIZE
+                                            37 minutes ago      5.272 GB
+</code></pre>
+
+<h2 id="run-a-starlab-container:e7da96f04bfa3eab144a0265a4f6de5a">Run a StarLab container</h2>
+
+<p>Now that you created the image, it&rsquo;s time to run a container with it.
+To create and run a container based on your newly created image run:</p>
+
+<pre><code class="language-bash">$ docker run -ti --device /dev/nvidia0:/dev/nvidia0 \
+                 --device /dev/nvidia1:/dev/nvidia1 \
+                 --device /dev/nvidiactl:/dev/nvidiactl \
+                 --device /dev/nvidia-uvm:/dev/nvidia-uvm \
+                 -v       &lt;abs path to host folder&gt;:&lt;container folder&gt; \
+                          me/starlab-cuda-340.46-6.0.37-2015-06-15
+</code></pre>
+
+<p>where:</p>
+
+<ul>
+<li><code>docker run</code> is obvious</li>
+<li><code>-ti</code> means open a interactive pseudo tty (that is, more or less, give me a terminal inside the
+container, once started, where I can run commands)</li>
+<li><code>--device</code> specify which devices to attach; in this case I am connecting 2 CUDA GPUs
+and allow for the Unified Virtual Memory to be used (it works only from CUDA6)</li>
+<li><code>-v &lt;abs path to host folder&gt;:&lt;container folder&gt;</code> allow to share a folder between host and container</li>
+<li><code>me/starlab-cuda-340.46-6.0.37-2015-06-15</code> is the name of the image from which to create the container</li>
+</ul>
+
+<p>You can check by running:</p>
+
+<pre><code class="language-bash">docker ps [-a]
+
+CONTAINER ID        IMAGE                                              
+ccdffc10c680        me/starlab-cuda-340.46-6.0.37-2015-06-15   
+                     COMMAND             CREATED             
+                     &quot;/bin/bash&quot;         15 seconds ago    
+                     STATUS              PORTS               NAMES
+                     Up 15 seconds                           adoring_turing
+</code></pre>
+
+<p>The <code>-a</code> flags tells Docker to show you also the stopped containers. Note that the container
+has a random name given by Docker.</p>
+
+<p>It is also possible to directly run commands just after the container creation,
+for example:</p>
+
+<pre><code class="language-bash">$ time echo &quot;Hello world&quot;
+Hello world
+real    0m0.000s
+user    0m0.000s
+sys     0m0.000s
+
+$ time docker run ubuntu:14.04 /bin/echo 'Hello world'
+Hello world
+real    0m0.219s
+user    0m0.028s
+sys     0m0.005s
+</code></pre>
+
+<p>In this example, the second command ran into a docker container.</p>
+
+<p>We can do something better: we want a script that creates a container,
+start it, run some commands and then clean everything.</p>
+
+<p>This could be quite easy, but we are using StarLab, that makes heavy use of pipes.
+I found three solutions to get it works, the last being the better.</p>
+
+<p>The first attempt is something like this:</p>
+
+<pre><code class="language-bash">#!/bin/bash # shebang line to specify the interpreter
+
+set -x # set -x tells bash to echo the command is going to run
+
+# Create a docker container with devices and volumes and give it a name
+docker create --name sltest -i -t \
+--device /dev/nvidia0:/dev/nvidia0 \
+--device /dev/nvidia1:/dev/nvidia1 \
+--device /dev/nvidiactl:/dev/nvidiactl \
+--device /dev/nvidia-uvm:/dev/nvidia-uvm \
+me/starlab-cuda-340.46-6.0.37-2015-06-15
+
+# Start the container
+docker start sltest
+
+# Exec commands to create StarLab initial conditions
+(docker exec -i sltest /slbin/makeking -n 100 -w 5 -i -u ) &gt; makeking.out
+(docker exec -i sltest /slbin/makemass -f 8 -l 0.1 -u 40 ) &lt; makeking.out &gt; makemass.out
+(docker exec -i sltest /slbin/add_star -R 1 -Z 0.1       ) &lt; makemass.out &gt; add_star.out
+(docker exec -i sltest /slbin/scale    -R 1 -M 1         ) &lt; add_star.out &gt; ics.txt
+
+# Start kira: two ways, note the difference!!!
+(docker exec -i sltest /slbin/kira -t 3 -d 1 -D 1 -f 0 -n 10 -e 0 -B -b 1) &lt; ics.txt &gt; out.txt 2&gt; err.txt
+
+# Stop and delete the container
+docker stop sltest
+docker rm sltest
+</code></pre>
+
+<p>This example make use of the STDIN/ERR/OUT redirection, but does not always work
+very well.</p>
+
+<p>The second attempt, a little better is</p>
+
+<pre><code class="language-bash">#!/bin/bash # shebang line to specify the interpreter
+
+set -x # set -x tells bash to echo the command is going to run
+
+# Create env variables for the folders
+LOCAL_FOLDER=~/starlab-results
+DOCKER_FOLDER=/starlab-results
+
+# Create a docker container with devices and volumes and give it a name
+docker create --name sltest -i -t \
+--device /dev/nvidia0:/dev/nvidia0 \
+--device /dev/nvidia1:/dev/nvidia1 \
+--device /dev/nvidiactl:/dev/nvidiactl \
+--device /dev/nvidia-uvm:/dev/nvidia-uvm \
+-v $LOCAL_FOLDER:$OCKER_FOLDER \
+me/starlab-cuda-340.46-6.0.37-2015-06-15
+
+# Start the container
+docker start sltest
+
+# Exec commands to create StarLab initial conditions
+(docker exec -i sltest -c &quot;/slbin/makeking -n 100 -w 5 -i -u ) &gt; /starlab-results/makeking.out&quot;
+(docker exec -i sltest -c &quot;/slbin/makemass -f 8 -l 0.1 -u 40 ) &lt; /starlab-results/makeking.out &gt; /starlab-results/makemass.out&quot;
+(docker exec -i sltest -c &quot;/slbin/add_star -R 1 -Z 0.1       ) &lt; /starlab-results/makemass.out &gt; /starlab-results/add_star.out&quot;
+(docker exec -i sltest -c &quot;/slbin/scale    -R 1 -M 1         ) &lt; /starlab-results/add_star.out &gt; /starlab-results/ics.txt&quot;
+
+# Start kira: two ways, note the difference!!!
+docker exec -i sltest bash -c &quot;/slbin/kira -t 3 -d 1 -D 1 -f 0 \
+ -n 10 -e 0 -B -b 1 &lt; /starlab-results/ics.txt \
+ &gt; /starlab-results/out.txt 2&gt; /starlab-results/err.txt&quot;
+
+# Stop and delete the container
+docker stop sltest
+docker rm sltest
+</code></pre>
+
+<p>In this second example we make use of the internal container folder attached to a host system folder.
+We will found our files in <code>~/starlab-results</code>.</p>
+
+<p>However, the way I prefer is to make the container bash read a script in the
+exchange folder. To do this, we need two files.<br />
+The first create the container and launch the second, located into the exchange folder.</p>
+
+<pre><code class="language-bash">$ cat dockerized_starlab.sh
+
+#!/bin/bash
+set -x
+# Create a docker container with devices and volumes and give it a name
+CONTAINER_NAME=test-001
+
+docker create --name $CONTAINER_NAME -i -t \
+--device /dev/nvidia0:/dev/nvidia0 \
+--device /dev/nvidia1:/dev/nvidia1 \
+--device /dev/nvidiactl:/dev/nvidiactl \
+--device /dev/nvidia-uvm:/dev/nvidia-uvm \
+-v /home/ziosi/tests/$CONTAINER_NAME/results/:/sl-exchanges/ \
+me/starlab-cuda-340.46-6.0.37-2015-06-15
+
+# Start the container
+docker start $CONTAINER_NAME
+
+# Execute the script in the exchange folder
+docker exec -i $CONTAINER_NAME bash -c &quot;/sl-exchanges/run.sh&quot;
+
+docker stop $CONTAINER_NAME
+docker rm $CONTAINER_NAME
+</code></pre>
+
+<p>The second may contain the instructions to run StarLab commands:</p>
+
+<pre><code class="language-bash">#!/bin/bash
+set -x
+
+for RUN in $(ls create_*.sh); do
+	echo &quot;Run $RUN&quot;;
+	/slbin-GPU/makeking -n 1000 -w 5 -i -u  &gt; /sl-exchanges/makeking-$RUN.out;
+	/slbin-GPU/makemass -f 8  -l 0.1 -u 150 &lt; /sl-exchanges/makeking-$RUN.out &gt; /sl-exchanges/makemass-$RUN.out;
+	/slbin-GPU/add_star -R 1 -Z 0.10        &lt; /sl-exchanges/makemass-$RUN.out &gt; /sl-exchanges/add_star-$RUN.out;
+	/slbin-GPU/set_com -r 5 0 0 -v 0 1 0    &lt; /sl-exchanges/add_star-$RUN.out &gt; /sl-exchanges/set_com-$RUN.out;
+	/slbin-GPU/scale -R 1 -M 1  &lt; /sl-exchanges/set_com-$RUN.out &gt; /sl-exchanges/ics-$RUN.txt;
+	/slbin-GPU/kira -t 500 -d 1 -D 1 -f 0 -n 10 -e 0 -B -b 1 &lt; /sl-exchanges/ics-$RUN.txt &gt; /sl-exchanges/out-$RUN.txt 2&gt; /sl-exchanges/err-$RUN.txt;
+done
+</code></pre>
+
+<p>That&rsquo;s it!!</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f&title=%60Dockerized%20Starlab%60&summary=Once%20you%20have%20Docker%20installed%2c%20you%20may%20want%20to%20see%20it%20in%20action.%20Here%20I%20demonstrate%20how%20to%20use%20Docker%20in%20a%20slightly%20different%20way%20respect%20what%20you%20can%20find%20around%20%28AKA%20use%20Docker%20to%20set%20up%20a%20web-server%20or%20something%20similar%29.%20I%20think%20Docker%20is%20a%20great%20solution%20to%20deal%20with%20easiness%20of%20installation%20and%20reproducibility%20in%20science.%20LXD%20would%20be%20probable%20be%20better.%20LXD%20already%20provide%20unprivileged%20containers%20AND%20is%20more%20about%20a%20container%20containing%20more%20than%20an%20application%2c%20while%20Docker%20is%20based%20on%20the%20idea%20of%20one%20container%20for%20a%20single%20app.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=%60Dockerized%20Starlab%60&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdockerized-starlab%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-programming" href="http://brunettoziosi.eu/tags/programming">programming</a>,
+	                
+	                <a class="post-tag post-tag-golang" href="http://brunettoziosi.eu/tags/golang">golang</a>,
+	                
+	                <a class="post-tag post-tag-starlab" href="http://brunettoziosi.eu/tags/starlab">starlab</a>,
+	                
+	                <a class="post-tag post-tag-simulation" href="http://brunettoziosi.eu/tags/simulation">simulation</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/docker-installation/">Install Docker</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/pdf-manipulation/">PDF manipulation</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+</body>
+</html>
