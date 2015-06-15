@@ -1416,11 +1416,14 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
       <description>
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../stories/research/utils/starlab-gpu-old-guide.html&#34;&gt;Click here for the old guide!!!&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../pages/research/utils/starlab-gpu-old-guide&#34;&gt;Click here for the old guide!!!&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 2:&lt;/strong&gt; &lt;a href=&#34;../dockerized-starlab/&#34;&gt;new post&lt;/a&gt; about installing and using StarLab in a Docker container!!
+Less troubles, more reproducibility!!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; if you want to compile starlab &lt;strong&gt;without GPU support&lt;/strong&gt;, you only need to&lt;/p&gt;
 
