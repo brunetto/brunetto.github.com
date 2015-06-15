@@ -40,11 +40,10 @@ And to do this you need to have a loooot of time to wait for the simulations to 
 &lt;p&gt;The image I&amp;rsquo;m going to create contains:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;our modified StarLab version (it contains updated stellar evolution recipes), both GPU and non GPU version&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;the same version with an &lt;a href=&#34;http://adsabs.harvard.edu/abs/1991RMxAA..22..255A&#34;&gt;Allen-Santillan&lt;/a&gt; galactic tidal field,
+&lt;li&gt;our modified StarLab version (it contains updated stellar evolution recipes), both GPU and non GPU version&lt;/li&gt;
+&lt;li&gt;the same version with an &lt;a href=&#34;http://adsabs.harvard.edu/abs/1991RMxAA..22..255A&#34;&gt;Allen-Santillan&lt;/a&gt; galactic tidal field,
 corrected for the non-inertial reference frame used in StarLab
-(at the moment this version is not working, probably because a problem in the timestep calculation, but I am working on it!)&lt;/p&gt;&lt;/li&gt;
+(at the moment this version is not working, probably because a problem in the timestep calculation, but I am working on it!)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;You can use the &lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/&#34;&gt;public version&lt;/a&gt; and correct the
