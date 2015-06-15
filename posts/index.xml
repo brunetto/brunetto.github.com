@@ -63,7 +63,7 @@ Mine look like that:&lt;/p&gt;
 	|-starlabAS
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;where &lt;code&gt;starlabAS only contains the files that differ from the versio without the Allen-Santillan tidal field.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;code&gt;starlabAS&lt;/code&gt; only contains the files that differ from the versio without the Allen-Santillan tidal field.&lt;/p&gt;
 
 &lt;p&gt;Then, you need a &lt;code&gt;Dockerfile&lt;/code&gt;. The &lt;code&gt;Dockerfile&lt;/code&gt; tells Docker what it has to do
 in order to create your image. Which base images to use (if any), which packages to download and install and so on.
