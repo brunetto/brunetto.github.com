@@ -35,7 +35,7 @@ func main() {
 	
 	for _, inFileName = range inFiles {
 		width, height := getImageDimension(inFileName)
-		outFile.WriteString(`{{% galleryimage file="`+ inFileName +`" size="` + strconv.Itoa(width) + `x` + strconv.Itoa(height) + `" caption="" copyrightHolder="BrunettoZiosi" %}}`+"\n")
+		outFile.WriteString(`{{% galleryimage file="`+ inFileName +`" size="` + strconv.Itoa(width) + `x` + strconv.Itoa(height) + `" caption="" copyrightHolder=["BrunettoZiosi"](brunettoziosi.eu) %}}`+"\n")
 	}
 
 	outFile.WriteString(`{{< /gallery >}}`+"\n")
