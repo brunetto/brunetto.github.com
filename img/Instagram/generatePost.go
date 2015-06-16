@@ -26,7 +26,7 @@ func main() {
 		log.Fatal("Can't open post.md with error ", err)
 	}
 	defer outFile.Close()
-	outFile.WriteString(`{{< gallery title="Example gallery" >}}`+"\n")
+	outFile.WriteString(`{{< gallery title="" >}}`+"\n")
 	
 	
 	if inFiles, err = filepath.Glob("*.jpg"); err != nil {
@@ -35,7 +35,7 @@ func main() {
 	
 	for _, inFileName = range inFiles {
 		width, height := getImageDimension(inFileName)
-		outFile.WriteString(`{{% galleryimage file="`+ inFileName +`" size="` + strconv.Itoa(width) + `x` + strconv.Itoa(height) + `" caption="" copyrightHolder=["BrunettoZiosi"](brunettoziosi.eu) %}}`+"\n")
+		outFile.WriteString(`{{% galleryimage file="`+ inFileName +`" size="` + strconv.Itoa(width) + `x` + strconv.Itoa(height) + `" caption="" copyrightHolder=<a href="brunettoziosi.eu">BrunettoZiosi</a> %}}`+"\n")
 	}
 
 	outFile.WriteString(`{{< /gallery >}}`+"\n")
