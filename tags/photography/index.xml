@@ -1255,7 +1255,7 @@ To celebrate this event, I also learned how to post a gallery here!! 😁&lt;/p&
 &lt;style&gt;
     .gallery { float: right; }
     .gallery img { width: 100%; height: auto; }
-    .gallery figure { display: block; float: left; margin: 0 5px 5px 0; width: 300px; }
+    .gallery figure { display: block; float: left; margin: 0 5px 5px 0; width: 280px; }
     .gallery figcaption { display: none; }
     span[itemprop=&#34;copyrightHolder&#34;] { color : #888; float: right; }
     span[itemprop=&#34;copyrightHolder&#34;]:before { content: &#34;Foto: &#34;; }
