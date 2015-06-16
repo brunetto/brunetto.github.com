@@ -1,0 +1,88 @@
++++
+author = "Brunetto Ziosi"
+authorlink = "http://brunettoziosi.eu"
+categories = ["Programming", "Photography", "Post"]
+date = "2015-06-16T10:55:02+02:00"
+socialsharing = true
+tags = ["programming", "photoswipe", "photos", "photography", "gallery", "instagram"]
+title = "Instagram!!"
+description = "Instagram gallery"
+draft = false
+ptypes = "post"
+slug = "instagram"
+galleryprefix = ""
+galleryfolder = "../../img/Instagram"
+gallerythumbnail = "../../img/Instagram_thumb"
++++
+
+Eventually, I started using [Instagram](https://instagram.com/elbrunz/).    
+To celebrate this event, I also learned how to post a gallery here!! 😁
+
+This is my Instagram gallery, I don't know if I will update it or just leave it as it is now!!
+
+<!-- more -->
+
+{{< gallery title="" >}}
+{{% galleryimage file="IMG_20150605_163759.jpg" size="1185x1185" caption="Lantern, Venice, Summer 2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_164550.jpg" size="1205x1205" caption="Redentore's fireworks, Venice, Summer 2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_164850.jpg" size="1365x1365" caption="Me skydiving, Venice, Summer 2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_165248.jpg" size="1497x1497" caption="Hot coal for a homemade hardening kiln, knife workshop, Spettine (Italy) 2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_165526.jpg" size="1355x1355" caption="Ruins in L'Aquila, Summer 2011" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_165717.jpg" size="1429x1429" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_165809.jpg" size="1365x1365" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_165953.jpg" size="1205x1205" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170113.jpg" size="1365x1365" caption="@Parco San Giuliano, Venice" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170238.jpg" size="1365x1365" caption="@Parco San Giuliano, Venice" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170418.jpg" size="1365x1365" caption="Campo Imperatore, Abruzzo (Italy), ISA school, Summer 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170628.jpg" size="1211x1211" caption="Milky Way, Campo Imperatore, Abruzzo (Italy), ISA school, Summer 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170736.jpg" size="1363x1363" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170831.jpg" size="993x993" caption="Venus over the Sun, 2012, from Specola (Padova, ITaly)" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_170939.jpg" size="1262x1262" caption="22nd WSJ Sweden, Rinkaby camp at sunset, 2011" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171139.jpg" size="1726x1726" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171330.jpg" size="1365x1365" caption="Credencial, Camino del norte, Spain, 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171538.jpg" size="1538x1538" caption="Sunflowers, Camino del norte, Spain, 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171626.jpg" size="1249x1249" caption="Seagull, Camino del norte, Spain, 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171745.jpg" size="1365x1365" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171825.jpg" size="1363x1363" caption="Alleghe, New Years'a Eve, 2011-2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_171917.jpg" size="1028x1028" caption="@Parco San Giuliano, Venice" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172019.jpg" size="1794x1794" caption="Caparezza Live @ Sherwood Festival, Padova, Summer 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172125.jpg" size="1365x1365" caption="Towards Baita Rododendro, Cima Sappada, Winter 2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172222.jpg" size="1070x1070" caption="Towards Baita Rododendro, Cima Sappada, Winter 2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172324.jpg" size="1354x1354" caption="The sentinel, Asiago" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172504.jpg" size="1363x1363" caption="#BarbAndBarbedwire #BlackAndWhite" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172626.jpg" size="1365x1365" caption="❤, Asiago" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_172757.jpg" size="1363x1363" caption="Red Leaves, Melbourne, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173001.jpg" size="1365x1365" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173039.jpg" size="1365x1365" caption="Mall, Melbourne, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173210.jpg" size="1365x1365" caption="Duckass, Brisbane, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173349.jpg" size="1365x1365" caption="AngryBird, Gold Coast, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173554.jpg" size="1365x1365" caption="The Rocks, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173657.jpg" size="1354x1354" caption="Harbour Bridge, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_173818.jpg" size="1286x1286" caption="Fireworks, NYE, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174002.jpg" size="1151x1151" caption="Fireworks, NYE, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174044.jpg" size="956x956" caption="Viewfinder, Bradleys Head, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174219.jpg" size="1496x1496" caption="Fireworks, NYE, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174309.jpg" size="1340x1340" caption="Stairways to Heaven, Bradleys Head, Sydney, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174400.jpg" size="1365x1365" caption="Rain forest, Australia, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174500.jpg" size="1263x1263" caption="Apostoles, Great Ocean Road, Australia, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174627.jpg" size="1390x1390" caption="Sunset over the Melbourne Southbank from Princes Bridge, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_174706.jpg" size="1365x1365" caption="Colors on the Yarra River, Melbourne, Winter 2013-2014" copyrightHolder="BrunettoZiosi" %}}
+
+{{% galleryimage file="IMG_20150605_174931.jpg" size="1263x1263" caption="Clan Croce del Sud, Dolomiti del Brenta, Summer 2013" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175107.jpg" size="640x640" caption="Tovel lake, Summer 2013" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175244.jpg" size="1352x1352" caption="Starry night, Dolomiti del Brenta, Summer 2013" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175343.jpg" size="1365x1365" caption="Starry night, Dolomiti del Brenta, Summer 2013" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175449.jpg" size="1365x1365" caption="Rifugio Tuckett, Dolomiti del Brenta, Summer 2013" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175559.jpg" size="1536x1536" caption="Pompei, Summer 2013" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175715.jpg" size="676x676" caption="Lightpainting, Winter 2014-2015" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_175943.jpg" size="1704x1704" caption="Venice" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_181148.jpg" size="640x640" caption="Starry Bokeh" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_181344.jpg" size="902x902" caption="Misurina lake, Summer 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_181453.jpg" size="640x640" caption="Ladybug, Campo Imperatore, Summer 2012" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_181708.jpg" size="640x640" caption="" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_181817.jpg" size="640x640" caption="Giorgia's Wedding, Jesolo, Fall 2011" copyrightHolder="BrunettoZiosi" %}}
+{{% galleryimage file="IMG_20150605_181929.jpg" size="640x640" caption="Dirty deeds "100 Lives" event, Voodoochild pub, Summer 2011" copyrightHolder="BrunettoZiosi" %}}
+
+
+{{< /gallery >}}
+{{% galleryinit %}}
