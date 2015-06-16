@@ -193,6 +193,11 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
@@ -203,17 +208,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/moto/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -228,12 +223,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -243,12 +233,22 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/travels/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/travels/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -278,22 +278,22 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
-    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/master/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/research/master/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -343,12 +343,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -533,12 +533,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -578,12 +578,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
