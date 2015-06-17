@@ -22,27 +22,20 @@
 &lt;p&gt;In &lt;a href=&#34;http://samsaffron.com/archive/2013/11/07/discourse-in-a-docker-container&#34;&gt;short&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;An open source project to pack, ship and run any application as a lightweight container.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;An open source project to pack, ship and run any application as a lightweight container.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In practice Docker&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;povide an isolated sharable environment (dev and ship)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;allow to change dev env without messing-up the host OS&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ease an app installation&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;is based on lxc (linux containers) and Go&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;remove the need of a virtual machines, it can be used in a similar way but it is different → much more lightweight&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;is (quite) secure (everything is sandboxed), though I don&amp;rsquo;t like its process run as root&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;allow you to commit changes&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;is based on images and containers: templates and running instances (that lose memory on shutdown&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;povide an isolated sharable environment (dev and ship)&lt;/li&gt;
+&lt;li&gt;allow to change dev env without messing-up the host OS&lt;/li&gt;
+&lt;li&gt;ease an app installation&lt;/li&gt;
+&lt;li&gt;is based on lxc (linux containers) and Go&lt;/li&gt;
+&lt;li&gt;remove the need of a virtual machines, it can be used in a similar way but it is different → much more lightweight&lt;/li&gt;
+&lt;li&gt;is (quite) secure (everything is sandboxed), though I don&amp;rsquo;t like its process run as root&lt;/li&gt;
+&lt;li&gt;allow you to commit changes&lt;/li&gt;
+&lt;li&gt;is based on images and containers: templates and running instances (that lose memory on shutdown&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I don&amp;rsquo;t want to write an essay on Docker, just present it briefly and describe the
