@@ -414,6 +414,115 @@ simulations to be ran.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Starlab simulations with `sltoos`</title>
+      <link>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</link>
+      <pubDate>Wed, 03 Jun 2015 10:55:02 +0200</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</guid>
+      <description>&lt;p&gt;Create on or more simulation configuration(s), for example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+	&amp;quot;Runs&amp;quot;: 50,
+	&amp;quot;Comb&amp;quot;: 86, 
+	&amp;quot;Ncm&amp;quot; : 10000,
+	&amp;quot;Fpb&amp;quot; : 0.05,
+	&amp;quot;W&amp;quot;   : 3,
+	&amp;quot;Z&amp;quot;   : 0.10,
+	&amp;quot;Rv&amp;quot;: 5, 
+	&amp;quot;EndTime&amp;quot; : 500,
+	&amp;quot;Machine&amp;quot; : &amp;quot;yourCluster&amp;quot;,
+	&amp;quot;UserName&amp;quot; : &amp;quot;yourUserName&amp;quot;,
+	&amp;quot;PName&amp;quot;: &amp;quot;project&amp;quot;,  
+	&amp;quot;BinFolder&amp;quot;: &amp;quot;/home/yourUserName/bin/&amp;quot;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Runs&lt;/code&gt; is the number of random realizations you want to simulate&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Comb&lt;/code&gt; is the number that identify of this particoular parameter set&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ncm&lt;/code&gt; is the number of center of masses&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Fpb&lt;/code&gt; is the primordial binary fraction (how many stars are binaries at the beginning of the simulation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;W&lt;/code&gt; is the central adimensional potential&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Z&lt;/code&gt; is the metallicity in terms of the solar metallicity (only available in the Mapelli+2013 Starlab version)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Rv&lt;/code&gt; is the initial virial radius of the cluster&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EndTime&lt;/code&gt; preliminary timestep when to stop the simulation, you can resume it later&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Machine&lt;/code&gt; name of the machine you are running on&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UserName&lt;/code&gt; is your username on that machine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PName&lt;/code&gt; is the project your hours are accounted on&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BinFolder&lt;/code&gt; is the path where to find the binaries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools createICs -v -A
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now sltools will create a folder for each parameter combination, copy the configuration file inside and create
+as much script files as you need to create the iitial conditions.&lt;/p&gt;
+
+&lt;p&gt;Each file would resemble something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+set -xeu
+makeking -n 10000 -w 5 -i -u \
+| makemass -f 8  -l 0.1 -u 150 \
+| makesecondary -f 0.1 -q -l 0.1 \
+| add_star -R 1 -Z 0.10 \
+| scale -R 3 -M 1\
+| makebinary -f 2 -o 1 -l 1 -u 107836.09 \
+&amp;gt; ics-comb87-TFno-Rv3-NCM10000-fPB01-W5-Z010-run01-rnd00.txt
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can run the generated script with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for RUN in $(ls create_*.sh); do bash $RUN; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OR&lt;/p&gt;
+
+&lt;p&gt;you can run them using the docker container you can build starting from [this image]()
+or from this [Dockerfile]() or following &lt;a href=&#34;../dockerized-starlab&#34;&gt;these instructions&lt;/a&gt;. If you plan to use the GPUs the second method is recommendend
+since a GPU enable docker image is system-dependent (thank you nVidia&amp;hellip;).&lt;/p&gt;
+
+&lt;p&gt;Now you can upload your fresh ICs to the cluster of your choice.&lt;/p&gt;
+
+&lt;p&gt;Once everything is in its place, connect to the cluster and run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools css -A -m &amp;lt;machine&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to create the files needed to submit the jobs to the batch system.
+&lt;code&gt;machine&lt;/code&gt; is the name of the cluster. Until now only few clusters are
+recognized, because I need to set few parameters to match the system configuration.
+I&amp;rsquo;ll be glad to add your own machine, or maybe I&amp;rsquo;ll create a template system
+able to read from a configuration file.&lt;/p&gt;
+
+&lt;p&gt;Once the batch manager scripts are created, just run everything with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools pbsLaunch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and wait for the jobs to complete.
+When they finish, you can restart the simulations to make them run untile 100 Myr is
+reached. To do this, simply run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools relaunch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools relaunch -e &amp;lt;end-time&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to specify when the simulation should end.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Blog pages index generator</title>
       <link>http://brunettoziosi.eu/posts/blog-pages-index-generator/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
