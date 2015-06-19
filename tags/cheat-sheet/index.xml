@@ -46,7 +46,7 @@ is the stress-energy tensor.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$ \partial_\beta h_\alpha^\beta(\vec{x})-\frac{1}{2}\partial_\alpha h_\beta^\beta(\vec{x}) = 0\label{eq:gwpartialderivative}\tag{3}$$&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Equation &lt;code&gt;$\ref{eq:gwpartialderivative}$&lt;/code&gt; can be rewritten using the D&amp;rsquo;Alambert operator as&lt;/p&gt;
+&lt;p&gt;Equation &lt;code&gt;$\eqref{eq:gwpartialderivative}$&lt;/code&gt; can be rewritten using the D&amp;rsquo;Alambert operator as&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\square h_{\alpha\beta}(\vec{x}) = 0\label{eq:waveEquation}\tag{4}$$&lt;/code&gt;&lt;/p&gt;
 
@@ -72,7 +72,7 @@ at a distance &lt;code&gt;$r$&lt;/code&gt; from the observer)&lt;/p&gt;
 
 &lt;p&gt;where  &lt;code&gt;$t-r/c$&lt;/code&gt; is the delayed time and
 &lt;code&gt;$I^{ij}$&lt;/code&gt; second mass moment or moment of inertia, that is the quadrupole moment of the
-mass, &lt;code&gt;$I^{ij} \equiv \int \ud^3 x \rho(t, \vec{x})x^ix^j$&lt;/code&gt;.&lt;/p&gt;
+mass, &lt;code&gt;$I^{ij} \equiv \int {\rm d}^3 x \rho(t, \vec{x})x^ix^j$&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;gravitational-waves-from-binaries:35258ff8c8b1524d9e26a981d99b36be&#34;&gt;Gravitational waves from binaries&lt;/h3&gt;
 
