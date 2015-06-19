@@ -103,7 +103,7 @@ emitted during the inspiral of a DCOB depend.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$h\propto \left[\frac{m_{\rm chirp}}{{\rm M}_\odot}\right]^{5/3} \left[\frac{P_{\rm b}}{{\rm hours}}\right]^{-2/3} \left[\frac{r}{{\rm kpc}}\right]^{-1}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;At the &lt;strong&gt;ISCO&lt;/strong&gt; (innermos stable circular orbit) the strain bacome&lt;/p&gt;
+&lt;p&gt;At the &lt;strong&gt;ISCO&lt;/strong&gt; (innermos stable circular orbit) the strain become&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$h_{\rm ISCO} = \frac{G}{c^2}\frac{1}{r}\frac{m_1m_2}{m_1+m_2} \sim 2.47 \times 10^{-19}\frac{10^6 \,{\rm pc}}{r}\frac{m_1m_2}{m_1+m_2}5\,{\rm M}_\odot$$&lt;/code&gt;&lt;/p&gt;
 
@@ -128,15 +128,15 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\begin{aligned}\langle\frac{{\rm d} E}{{\rm d} t}\rangle &amp;amp;= -\frac{32}{5}\frac{G^4m_1^2m_2^2(m_1+m_2)}{c^5a^5(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:energyAverageEmissionRate}\\\langle\frac{{\rm d} L}{{\rm d} t}\rangle &amp;amp;= -\frac{32}{5}\frac{G^{7/2}m_1^2m_2^2(m_1+m_2)^{1/2}}{c^5a^{7/2}(1-e^2)^2}(1+\frac{7}{8}e^2)\label{eq:angularMomentumAverageEmissionRate}\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;$$\begin{aligned}\langle\frac{{\rm d} a}{{\rm d} t}\rangle &amp;amp;= -\frac{64}{5}\frac{G^3m_1m_2(m_1+m_2)}{c^5a^3(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:smaAverageVariation}\\\langle\frac{{\rm d} e}{{\rm d} t}\rangle &amp;amp;= -\frac{304}{15}e\frac{G^3m_1m_2(m_1+m_2)3}{c^5a^4(1-e^2)^{5/2}}(1+\frac{121}{304}e^2)\label{eq:eccAverageVariation}\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{aligned}\langle\frac{{\rm d} a}{{\rm d} t}\rangle &amp;amp;= -\frac{64}{5}\frac{G^3m_1m_2(m_1+m_2)}{c^5a^3(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:smaAverageVariation}\\\langle\frac{{\rm d} e}{{\rm d} t}\rangle &amp;amp;= -\frac{304}{15}e\frac{G^3m_1m_2(m_1+m_2)^3}{c^5a^4(1-e^2)^{5/2}}(1+\frac{121}{304}e^2)\label{eq:eccAverageVariation}\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;$$\label{eq:diffAOnE}\langle\frac{{\rm d} a}{{\rm d} e}\rangle = \frac{12}{19}\frac{a}{e}\frac{\left[1+\frac{73}{24}e^2 + \frac{36}{96}e^4\right]\right]{(1-e^2)\left[1+\frac{121}{304}e^2\right)\right]$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\label{eq:diffAOnE}\langle\frac{{\rm d} a}{{\rm d} e}\rangle = \frac{12}{19}\frac{a}{e}\frac{\left[1+\frac{73}{24}e^2 + \frac{36}{96}e^4\right]}{(1-e^2)\left[1+\frac{121}{304}e^2\right)\right]$$&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\langle\frac{{\rm d} a}{{\rm d} t}\rangle = -\frac{64}{5}\frac{G^3m_1^2m_2^2(m_1+m_2)}{c^5a^3}$$&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;and integrating from $a_0$ to $a$ and from $t=0$ to $t$ we obtain:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;$$\label{eq:AOfTZeroEcc}a(t) = (a_0^4-4Ct)^{1/4}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\label{eq:AOfTZeroEcc} a(t) = (a_0^4-4Ct)^{1/4}$$&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;with &lt;code&gt;$C = \frac{64}{5}\frac{G^3m_1^2m_2^2(m_1+m_2)}{c^5}$&lt;/code&gt;.&lt;/p&gt;
 
@@ -275,6 +275,8 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 
 &lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
 &lt;/p&gt;
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
 </description>
     </item>
     
