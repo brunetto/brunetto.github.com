@@ -60,7 +60,7 @@ is the stress-energy tensor.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$ h_{\alpha\beta}(\vec{x}) = \begin{pmatrix}h_+ &amp;amp; h_\times\\h_\times &amp;amp; -h_+\end{pmatrix}e^{i(kz-\omega t)}\label{eq:simplestSolution}\tag{5}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Considering a mass density, source of the gravitational waves, &lt;code&gt;$\ref{eq:waveEquation}$&lt;/code&gt; becomes&lt;/p&gt;
+&lt;p&gt;Considering a mass density, source of the gravitational waves, &lt;code&gt;$\eqref{eq:waveEquation}$&lt;/code&gt; becomes&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\square h_{\alpha\beta}(\vec{x}) = -\frac{16\pi G}{c^4}T_{\alpha\beta}\label{eq:notVacuumWaveEquation}\tag{6}$$&lt;/code&gt;&lt;/p&gt;
 

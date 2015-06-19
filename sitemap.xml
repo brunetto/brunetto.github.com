@@ -133,17 +133,17 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</loc>
-    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,12 +208,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -228,7 +228,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -238,12 +238,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -253,7 +253,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -288,7 +288,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -298,7 +298,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -323,12 +323,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,17 +348,17 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
-    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -543,12 +543,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
