@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Gravitational waves cheat sheet // Post It!
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Cheat sheet of my gravitational waves calculations for my PhD thesis">
+<meta name="keywords" content="">
+<meta name="author" content="Brunetto Ziosi">
+
+  <meta property="og:title" content="Gravitational waves cheat sheet" />
+<meta property="og:description" content="Cheat sheet of my gravitational waves calculations for my PhD thesis" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://brunettoziosi.eu/posts/gw-cheat-sheet/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://brunettoziosi.eu/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.svg">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">Post It!</h1>
+    <h2 class="brand-tagline">Sticky digital notes
+    </br>stuck on the Web!😃</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae/">CV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        
+      
+        
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#general-introduction:35258ff8c8b1524d9e26a981d99b36be">General introduction</a></li>
+<li><a href="#gravitational-waves-from-binaries:35258ff8c8b1524d9e26a981d99b36be">Gravitational waves from binaries</a></li>
+<li><a href="#utils:35258ff8c8b1524d9e26a981d99b36be">Utils</a>
+<ul>
+<li><a href="#chirp-mass:35258ff8c8b1524d9e26a981d99b36be">Chirp mass</a></li>
+<li><a href="#kepler:35258ff8c8b1524d9e26a981d99b36be">Kepler</a></li>
+<li><a href="#isco:35258ff8c8b1524d9e26a981d99b36be">ISCO</a></li>
+</ul></li>
+<li><a href="#images:35258ff8c8b1524d9e26a981d99b36be">Images</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/gw-cheat-sheet/">Gravitational waves cheat sheet</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>19</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jun</span> <span class="post-date-year">2015</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author" href="http://brunettoziosi.eu" target="">Brunetto Ziosi</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-research" href="http://brunettoziosi.eu/categories/research">Research</a>
+				
+					<a class="post-category post-category-post" href="http://brunettoziosi.eu/categories/post">Post</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f&title=Gravitational%20waves%20cheat%20sheet&summary=I%20would%20like%20to%20share%20few%20notes%2c%20a%20cheat%20sheet%2c%20about%20gravitational%20waves%20I%20put%20together%20while%20writing%20the%20chapter%20about%20gravitational%20waves%20of%20my%20PhD%20thesis%20and%20while%20preparing%20for%20the%20PhD%20school%20internal%20exam.%20It%20was%20useful%20to%20me%20to%20tidy%20up%20the%20mess%20of%20references%20and%20equations%20you%20may%20find%20around%20that%20never%20agree.%20Or%20that%20has%20a%20horrible%20notation%21%21%20Here%20the%20equations%2c%20below%20the%20images%20of%20the%20papers.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Gravitational%20waves%20cheat%20sheet&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<p>I would like to share few notes, a cheat sheet, about gravitational waves I
+put together while writing the chapter about gravitational waves of my PhD thesis
+and while preparing for the PhD school internal exam.
+It was useful to me to tidy up the mess of references and equations you may find around
+that never agree. Or that has a horrible notation!!</p>
+
+<!-- more -->
+
+<p>Here the equations, below the images of the papers.</p>
+
+<h3 id="general-introduction:35258ff8c8b1524d9e26a981d99b36be">General introduction</h3>
+
+<p>Consider a small perturbation of the flat cartedian metric</p>
+
+<p><code>$$g_{\alpha\beta}(\vec{x}) = \eta_{\alpha\beta} + h_{\alpha\beta}(\vec{x})\label{eq:perturbedMetric}\tag{1}$$</code></p>
+
+<p>where <code>$\eta_{_{\alpha\beta}}$</code> is the Minkowsky metric.<br />
+Consider the Einstein&rsquo;s equation</p>
+
+<p><code>$$R_{\alpha\beta}-\frac{1}{2}g_{\alpha\beta}R = \frac{8\pi G}{c^4}T_{\alpha\beta}\label{eq:EinsteinEquation}\tag{2}$$</code></p>
+
+<p>where <code>$R_{\alpha\beta}$</code> is the Ricci tensor, <code>$R$</code> is the scalar curvature and <code>$T_{\alpha\beta}$</code>
+is the stress-energy tensor.</p>
+
+<p>For the metric <code>$\eqref{eq:perturbedMetric}$</code> and in vacuum (<code>$T_{\alpha\beta}=0$</code>) equation
+$<code>\eqref{eq:EinsteinEquation}$</code> simply becomes</p>
+
+<p><code>$$ \partial_\beta h_\alpha^\beta(\vec{x})-\frac{1}{2}\partial_\alpha h_\beta^\beta(\vec{x}) = 0\label{eq:gwpartialderivative}\tag{3}$$</code>.</p>
+
+<p>Equation <code>$\ref{eq:gwpartialderivative}$</code> can be rewritten using the D&rsquo;Alambert operator as</p>
+
+<p><code>$$\square h_{\alpha\beta}(\vec{x}) = 0\label{eq:waveEquation}\tag{4}$$</code></p>
+
+<p>Where we recognize the wave equation</p>
+
+<p><code>$$\square \vec{u} = 0$$</code></p>
+
+<p>with <code>$\square = \frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\nabla^2 = \frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\frac{\partial^2}{\partial x^2}-\frac{\partial^2}{\partial y^2}-\frac{\partial^2}{\partial z^2}$</code></p>
+
+<p>The simplest solution has form</p>
+
+<p><code>$$ h_{\alpha\beta}(\vec{x}) = \begin{pmatrix}h_+ &amp; h_\times\\h_\times &amp; -h_+\end{pmatrix}e^{i(kz-\omega t)}\label{eq:simplestSolution}\tag{5}$$</code></p>
+
+<p>Considering a mass density, source of the gravitational waves, <code>$\ref{eq:waveEquation}$</code> becomes</p>
+
+<p><code>$$\square h_{\alpha\beta}(\vec{x}) = -\frac{16\pi G}{c^4}T_{\alpha\beta}\label{eq:notVacuumWaveEquation}\tag{6}$$</code></p>
+
+<p>With some simplifying assumptions, equation <code>$\eqref{eq:notVacuumWaveEquation}$</code>
+can be integrated and gives (if the source is a distribution of masses at rest,
+at a distance <code>$r$</code> from the observer)</p>
+
+<p><code>$$h^{ij}(t, \vec{x}) \sim \frac{2 G}{rc^4}\frac{{\rm d} ^2}{{\rm d} t^2}\left[I^{ij}(t-r/c)\right]$$</code></p>
+
+<p>where  <code>$t-r/c$</code> is the delayed time and
+<code>$I^{ij}$</code> second mass moment or moment of inertia, that is the quadrupole moment of the
+mass, <code>$I^{ij} \equiv \int \ud^3 x \rho(t, \vec{x})x^ix^j$</code>.</p>
+
+<h3 id="gravitational-waves-from-binaries:35258ff8c8b1524d9e26a981d99b36be">Gravitational waves from binaries</h3>
+
+<p>Assuming edge on observations (<code>$\theta = i = \frac{\pi}{2}\Rightarrow \cos(\theta) = 0$</code>) the wave polarization modes are given by:</p>
+
+<p><code>$$\begin{aligned}h_{+}(t, \theta, \phi, r) &amp;= \frac{1}{r}\frac{4G\mu\omega_{\rm orb}^2a^2}{c^4}\frac{1+\cos^2\theta}{2}\cos\left(2\omega_{\rm orb}t_{\rm ret}+\phi\right)\\h_{\times}(t, \theta, \phi, r) &amp;= \frac{1}{r}\frac{4G\mu\omega_{\rm orb}^2a^2}{c^4}\cos\theta\sin\left(2\omega_{\rm orb}t_{\rm ret}+\phi\right)\end{aligned}$$</code></p>
+
+<p>and the final <strong>strain</strong> (relative deformation caused by the gravitational wave) is</p>
+
+<p><code>$$h = \frac{4G}{c^4}\frac{\mu\omega_{\rm orb}^2a^2}{r}$$</code></p>
+
+<p>where <code>$a$</code> is the semi-major axis of the binary and <code>$r$</code> the distance source-observer.</p>
+
+<p>Substituting the semi-major axis we obtain</p>
+
+<p><code>$$h = \frac{4 G^2}{c^4}\frac{m_1m_2}{a r}$$</code></p>
+
+<p>while Substituting the angular frequency from Kepler equations we obtain</p>
+
+<p><code>$$h = \frac{4 G^{5/3}}{c^4} \frac{m_1m_2}{(m_1+m_2)^{1/3}}\omega_{\rm orb}^{2/3} = \frac{4 G^{5/3}}{c^4} m_{\rm chirp}^{5/3}\omega_{\rm orb}^{2/3}$$</code></p>
+
+<p>where
+<code>$$m_{\rm chirp} \equiv \left(\frac{m_1m_2}{m_1+m_2}\right)^{3/5}(m_1+m_2)^{2/5} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$$</code>
+is the chirp mass, a (not so) useful combination of the masses on which both the frequency and the strain of GWs
+emitted during the inspiral of a DCOB depend.</p>
+
+<p>A handy approximation is given by</p>
+
+<p><code>$$h\propto \left[\frac{m_{\rm chirp}}{{\rm M}_\odot}\right]^{5/3} \left[\frac{P_{\rm b}}{{\rm hours}}\right]^{-2/3} \left[\frac{r}{{\rm kpc}}\right]^{-1}$$</code></p>
+
+<p>At the <strong>ISCO</strong> (innermos stable circular orbit) the strain bacome</p>
+
+<p><code>$$h_{\rm ISCO} = \frac{G}{c^2}\frac{1}{r}\frac{m_1m_2}{m_1+m_2} \sim 2.47 \times 10^{-19}\frac{10^6 \,{\rm pc}}{r}\frac{m_1m_2}{m_1+m_2}5\,{\rm M}_\odot$$</code></p>
+
+<p>The <strong>radiated power</strong> is</p>
+
+<p><code>$$\begin{aligned}P &amp;= \frac{{\rm d}E_{\rm orb}}{{\rm d} t} = -\frac{{\rm d}}{{\rm d} t}\left[\frac{Gm_1m_2}{2a}\right] = \frac{Gm_1m_2}{2}\frac{1}{a^2}\frac{{\rm d}a}{{\rm d}t}=\\&amp;=\frac{32}{5}\frac{G^4}{c^5}\frac{1}{a^5}(m_1m_2)^2(m_1+m_2)\quad\text{from quadrupole formalism}\\&amp;=\frac{32}{5}\frac{c^5}{G}\left[\frac{Gm_{\rm chirp}\omega_{\rm GW}}{2c^3}\right]^{10/3}\end{aligned}$$</code></p>
+
+<p>from which we can derive</p>
+
+<p><code>$$\frac{{\rm d}\omega_{\rm GW}}{{\rm d}t} = \omega_{\rm GW}^{11/3}m_{\rm chirp}^{5/3}$$</code></p>
+
+<p>thet gives</p>
+
+<p><code>$$\omega_{\rm gw} = \left[\frac{64}{5\times2^{2/3}}\right]^{-3/8}\left[\frac{Gm_{\rm chirp}}{c^3}\right]^{-5/8}t_{\rm GW}^{-3/8}$$</code></p>
+
+<p>and (for circular orbits)</p>
+
+<p><code>$$t_{\rm GW}\sim\frac{5}{256}\frac{c^5}{G^3}\frac{a^4}{(m_1m_2)(m_1+m_2)}$$</code></p>
+
+<p>From <a href="http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B1224">Peters(1964)</a>
+we obtain more precise and general relations (~ 3.5PN):</p>
+
+<p><code>$$\begin{aligned}\langle\frac{{\rm d} E}{{\rm d} t}\rangle &amp;= -\frac{32}{5}\frac{G^4m_1^2m_2^2(m_1+m_2)}{c^5a^5(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:energyAverageEmissionRate}\\\langle\frac{{\rm d} L}{{\rm d} t}\rangle &amp;= -\frac{32}{5}\frac{G^{7/2}m_1^2m_2^2(m_1+m_2)^{1/2}}{c^5a^{7/2}(1-e^2)^2}(1+\frac{7}{8}e^2)\label{eq:angularMomentumAverageEmissionRate}\end{aligned}$$</code></p>
+
+<p><code>$$\begin{aligned}\langle\frac{{\rm d} a}{{\rm d} t}\rangle &amp;= -\frac{64}{5}\frac{G^3m_1m_2(m_1+m_2)}{c^5a^3(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:smaAverageVariation}\\\langle\frac{{\rm d} e}{{\rm d} t}\rangle &amp;= -\frac{304}{15}e\frac{G^3m_1m_2(m_1+m_2)3}{c^5a^4(1-e^2)^{5/2}}(1+\frac{121}{304}e^2)\label{eq:eccAverageVariation}\end{aligned}$$</code></p>
+
+<p><code>$$\label{eq:diffAOnE}\langle\frac{{\rm d} a}{{\rm d} e}\rangle = \frac{12}{19}\frac{a}{e}\frac{\left[1+\frac{73}{24}e^2 + \frac{36}{96}e^4\right]\right]{(1-e^2)\left[1+\frac{121}{304}e^2\right)\right]$$</code></p>
+
+<p><code>$$\langle\frac{{\rm d} a}{{\rm d} t}\rangle = -\frac{64}{5}\frac{G^3m_1^2m_2^2(m_1+m_2)}{c^5a^3}$$</code></p>
+
+<p>and integrating from $a_0$ to $a$ and from $t=0$ to $t$ we obtain:</p>
+
+<p><code>$$\label{eq:AOfTZeroEcc}a(t) = (a_0^4-4Ct)^{1/4}$$</code></p>
+
+<p>with <code>$C = \frac{64}{5}\frac{G^3m_1^2m_2^2(m_1+m_2)}{c^5}$</code>.</p>
+
+<p>Thus the system merges in a time</p>
+
+<p><code>$$\label{eq:tGWe0}t_{m\rm gr}(e\rightarrow 0) \sim \frac{a_0^4}{4C}$$</code></p>
+
+<p><code>$$t_{m\rm gr}(e\rightarrow 1) &amp;\sim 1.8\frac{5}{256} \frac{c^5}{G^3}\frac{a^4(1-e^2)^{7/2}}{(m_1m_2)(m_1+m_2)}\label{eq:tGWe1}$$</code></p>
+
+<p>Often a slightly different version is used in the literature:</p>
+
+<p><code>$$\label{eq:tGWliterature}t_{\rm GW} = \frac{5}{256} \frac{c^5}{G^3}\frac{a^4(1-e^2)^{7/2}}{(m_1m_2)(m_1+m_2)}$$</code></p>
+
+<p>In the same way, for the semi-major axis shrinking, we find</p>
+
+<p><code>$$\label{eq:AOfTAllEcc}a(t) = \left(a_0^4-4C\frac{t}{(1-e^2)^{7/2}}\right)^{1/4}$$</code></p>
+
+<h3 id="utils:35258ff8c8b1524d9e26a981d99b36be">Utils</h3>
+
+<h4 id="chirp-mass:35258ff8c8b1524d9e26a981d99b36be">Chirp mass</h4>
+
+<p><code>$$m_{\rm chirp} \equiv \left(\frac{m_1m_2}{m_1+m_2}\right)^{3/5}(m_1+m_2)^{2/5} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$$</code></p>
+
+<h4 id="kepler:35258ff8c8b1524d9e26a981d99b36be">Kepler</h4>
+
+<p><code>$$P = \frac{2\pi}{\omega} = \left[\frac{4\pi^2 a^3}{G(m_1+m_2)}\right]^{1/2}$$</code>
+<code>$$a = \frac{G(m_1+m_2)^{1/3}}{\omega_{\rm orb}^{2/3}}$$</code></p>
+
+<h4 id="isco:35258ff8c8b1524d9e26a981d99b36be">ISCO</h4>
+
+<p>Innermost Stable Circular Orbit (AKA LSO, Last Stable Orbit).</p>
+
+<p><code>$$\omega_{\rm ISCO} = \frac{2c^3}{6^{3/2}G}\frac{1}{m_1+m_2}$$</code>
+<code>$$a_{\rm ISCO} = 3\times\frac{2G(m_1+m_2)}{c^2}$$</code></p>
+
+<h3 id="images:35258ff8c8b1524d9e26a981d99b36be">Images</h3>
+
+<p><div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+ 
+
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/../../img/gw-cheat-sheet/gravitational-waves-from-compact-binaries-2_1.jpg" itemprop="contentUrl" data-size="2216x3064">
+      <img src="/../../img/gw-cheat-sheet_thumb/../../img/gw-cheat-sheet/gravitational-waves-from-compact-binaries-2_1.jpg" itemprop="thumbnail" alt="" />
+  </a>
+
+
+  <figcaption itemprop="caption description">
+    
+    <span itemprop="copyrightHolder">BrunettoZiosi</span>
+  </figcaption>
+</figure>
+
+ 
+
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/../../img/gw-cheat-sheet/gravitational-waves-from-compact-binaries-2_2.jpg" itemprop="contentUrl" data-size="2300x3200">
+      <img src="/../../img/gw-cheat-sheet_thumb/../../img/gw-cheat-sheet/gravitational-waves-from-compact-binaries-2_2.jpg" itemprop="thumbnail" alt="" />
+  </a>
+
+
+  <figcaption itemprop="caption description">
+    
+    <span itemprop="copyrightHolder">BrunettoZiosi</span>
+  </figcaption>
+</figure>
+
+
+<div class="title"></div>
+</div>
+
+<link rel="stylesheet" href="/css/photoswipe.css">
+<link rel="stylesheet" href="/css/default-skin/default-skin.css">
+<script src="/js/photoswipe.min.js"></script>
+<script src="/js/photoswipe-ui-default.min.js"></script>
+<script src="/js/initphotoswipe.js"></script>
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<style>
+    .gallery { float: right; }
+    .gallery img { width: 100%; height: auto; }
+    .gallery figure { display: block; float: left; margin: 0 5px 5px 0; width: 280px; }
+    .gallery figcaption { display: none; }
+    span[itemprop="copyrightHolder"] { color : #888; float: right; }
+    span[itemprop="copyrightHolder"]:before { content: "Foto: "; }
+</style>
+
+
+<script>initPhotoSwipeFromDOM('.gallery');</script>
+</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f&title=Gravitational%20waves%20cheat%20sheet&summary=I%20would%20like%20to%20share%20few%20notes%2c%20a%20cheat%20sheet%2c%20about%20gravitational%20waves%20I%20put%20together%20while%20writing%20the%20chapter%20about%20gravitational%20waves%20of%20my%20PhD%20thesis%20and%20while%20preparing%20for%20the%20PhD%20school%20internal%20exam.%20It%20was%20useful%20to%20me%20to%20tidy%20up%20the%20mess%20of%20references%20and%20equations%20you%20may%20find%20around%20that%20never%20agree.%20Or%20that%20has%20a%20horrible%20notation%21%21%20Here%20the%20equations%2c%20below%20the%20images%20of%20the%20papers.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Gravitational%20waves%20cheat%20sheet&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fgw-cheat-sheet%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-gravitational-waves" href="http://brunettoziosi.eu/tags/gravitational-waves">gravitational waves</a>,
+	                
+	                <a class="post-tag post-tag-gw" href="http://brunettoziosi.eu/tags/gw">gw</a>,
+	                
+	                <a class="post-tag post-tag-research" href="http://brunettoziosi.eu/tags/research">research</a>,
+	                
+	                <a class="post-tag post-tag-phd" href="http://brunettoziosi.eu/tags/phd">phd</a>,
+	                
+	                <a class="post-tag post-tag-cheat-sheet" href="http://brunettoziosi.eu/tags/cheat-sheet">cheat sheet</a>,
+	                
+	                <a class="post-tag post-tag-summary" href="http://brunettoziosi.eu/tags/summary">summary</a>,
+	                
+	                <a class="post-tag post-tag-phd-thesis" href="http://brunettoziosi.eu/tags/phd-thesis">phd thesis</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/docker-installation/">Install Docker</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+	<p>&copy; 2015 
+	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
+	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+    MathJax.Hub.Configured();
+    </script>
+</body>
+</html>
