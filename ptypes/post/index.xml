@@ -175,7 +175,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 
 &lt;h3 id=&#34;images:35258ff8c8b1524d9e26a981d99b36be&#34;&gt;Images&lt;/h3&gt;
 
-&lt;div style=&#34;width:100%&#34;&gt; 
+&lt;table style=&#34;width:100%&#34;&gt;
 
 &lt;div class=&#34;gallery&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
 
@@ -279,7 +279,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 &lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
 
 
-&lt;/div&gt;
+&lt;/table&gt;
     
 
 &lt;h3 id=&#34;references:35258ff8c8b1524d9e26a981d99b36be&#34;&gt;References&lt;/h3&gt;
