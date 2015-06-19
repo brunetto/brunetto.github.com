@@ -17,6 +17,8 @@
       <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>
 
+&lt;p&gt;&lt;a href=&#34;../../../../starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
