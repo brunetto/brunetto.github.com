@@ -144,7 +144,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\label{eq:tGWe0}t_{m\rm gr}(e\rightarrow 0) \sim \frac{a_0^4}{4C}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;$$t_{m\rm gr}(e\rightarrow 1) &amp;amp;\sim 1.8\frac{5}{256} \frac{c^5}{G^3}\frac{a^4(1-e^2)^{7/2}}{(m_1m_2)(m_1+m_2)}\label{eq:tGWe1}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$t_{m\rm gr}(e\rightarrow 1) \sim 1.8\frac{5}{256} \frac{c^5}{G^3}\frac{a^4(1-e^2)^{7/2}}{(m_1m_2)(m_1+m_2)}\label{eq:tGWe1}$$&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Often a slightly different version is used in the literature:&lt;/p&gt;
 
@@ -167,7 +167,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 
 &lt;h4 id=&#34;isco:35258ff8c8b1524d9e26a981d99b36be&#34;&gt;ISCO&lt;/h4&gt;
 
-&lt;p&gt;Innermost Stable Circular Orbit (AKA LSO, Last Stable Orbit).&lt;/p&gt;
+&lt;p&gt;At the innermost Stable Circular Orbit (AKA LSO, Last Stable Orbit):&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\omega_{\rm ISCO} = \frac{2c^3}{6^{3/2}G}\frac{1}{m_1+m_2}$$&lt;/code&gt;
 &lt;code&gt;$$a_{\rm ISCO} = 3\times\frac{2G(m_1+m_2)}{c^2}$$&lt;/code&gt;&lt;/p&gt;
@@ -276,7 +276,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 &lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;hr /&gt;
 </description>
     </item>
     
