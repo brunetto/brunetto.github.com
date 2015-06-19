@@ -84,7 +84,8 @@ mass, &lt;code&gt;$I^{ij} \equiv \int {\rm d}^3 x \rho(t, \vec{x})x^ix^j$&lt;/co
 
 &lt;p&gt;&lt;code&gt;$$h = \frac{4G}{c^4}\frac{\mu\omega_{\rm orb}^2a^2}{r}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;where &lt;code&gt;$a$&lt;/code&gt; is the semi-major axis of the binary and &lt;code&gt;$r$&lt;/code&gt; the distance source-observer.&lt;/p&gt;
+&lt;p&gt;where &lt;code&gt;$a$&lt;/code&gt; is the semi-major axis of the binary and &lt;code&gt;$r$&lt;/code&gt; the distance source-observer.
+$\omega&lt;em&gt;{\rm gw} = 2\omega&lt;/em&gt;{\rm orb}$.&lt;/p&gt;
 
 &lt;p&gt;Substituting the semi-major axis we obtain&lt;/p&gt;
 
@@ -97,7 +98,7 @@ mass, &lt;code&gt;$I^{ij} \equiv \int {\rm d}^3 x \rho(t, \vec{x})x^ix^j$&lt;/co
 &lt;p&gt;where
 &lt;code&gt;$$m_{\rm chirp} \equiv \left(\frac{m_1m_2}{m_1+m_2}\right)^{3/5}(m_1+m_2)^{2/5} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$$&lt;/code&gt;
 is the chirp mass, a (not so) useful combination of the masses on which both the frequency and the strain of GWs
-emitted during the inspiral of a DCOB depend.&lt;/p&gt;
+emitted during the inspiral of a DCOB (double compact object binary) depend.&lt;/p&gt;
 
 &lt;p&gt;A handy approximation is given by&lt;/p&gt;
 
