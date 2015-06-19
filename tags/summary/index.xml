@@ -42,7 +42,7 @@ Consider the Einstein&amp;rsquo;s equation&lt;/p&gt;
 is the stress-energy tensor.&lt;/p&gt;
 
 &lt;p&gt;For the metric &lt;code&gt;$\eqref{eq:perturbedMetric}$&lt;/code&gt; and in vacuum (&lt;code&gt;$T_{\alpha\beta}=0$&lt;/code&gt;) equation
-$&lt;code&gt;\eqref{eq:EinsteinEquation}$&lt;/code&gt; simply becomes&lt;/p&gt;
+&lt;code&gt;$\eqref{eq:EinsteinEquation}$&lt;/code&gt; simply becomes&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$ \partial_\beta h_\alpha^\beta(\vec{x})-\frac{1}{2}\partial_\alpha h_\beta^\beta(\vec{x}) = 0\label{eq:gwpartialderivative}\tag{3}$$&lt;/code&gt;.&lt;/p&gt;
 
