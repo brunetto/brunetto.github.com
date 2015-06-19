@@ -133,7 +133,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -143,7 +143,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,6 +208,11 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
@@ -218,17 +223,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -239,6 +234,11 @@
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -258,12 +258,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/venezia-instambul/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/venezia-instambul/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -293,12 +293,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -323,12 +323,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,12 +348,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -558,17 +558,17 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
+    <lastmod>2011-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</loc>
-    <lastmod>2011-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
