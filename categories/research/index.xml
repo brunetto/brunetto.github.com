@@ -18,10 +18,10 @@
       <description>
 
 &lt;p&gt;I would like to share few notes, a cheat sheet, about gravitational waves I
-put together while writing the chapter about gravitational waves of my PhD thesis
-and while preparing for the PhD school internal exam.
-It was useful to me to tidy up the mess of references and equations you may find around
-that never agree. Or that has a horrible notation!!&lt;/p&gt;
+put together while writing a chapter  of my PhD thesis
+and preparing for the PhD school internal exam.
+I did it to tidy up the mess of references and equations you may find around
+that never agree and has a terrible notation!!&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -2282,6 +2282,7 @@ to check for other options.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://bitbucket.org/michelis/slpack&#34;&gt;Our repo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/brunetto/sltools&#34;&gt;Tools to easily manage SL runs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools&#34;&gt;StarLab tools wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/tools/auto/&#34;&gt;Auto-built tools list&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
