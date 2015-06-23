@@ -87,11 +87,7 @@
     <div class="social-buttons">
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
-        
-      
-        
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
         
       
         
@@ -103,11 +99,15 @@
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
         
       
         
-        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
         
       
       
@@ -242,7 +242,7 @@ column of <code>camb_*_transfer_out_z0.dat</code>. You should use the last colum
 DM simulations represents with DM particles all the mass, included that of the
 baryons, so the initial power spectrum should be the total power spectrum.<br />
 If you want to understand better how CAMB works you can try to read the
-<a href="http://camb.info/readme.html" title="CAMB README">CAMB README</a>.</p>
+<a href="http://camb.info/readme.html">CAMB README</a>.</p>
 
 <p><strong>Initial power spectrum theory</strong></p>
 
@@ -250,28 +250,28 @@ If you want to understand better how CAMB works you can try to read the
 on your own. Maybe it is well-known and trivial, but for me it wasn&rsquo;t and,
 like many of the trivial and well-known things in (not only) cosmology,
 it&rsquo;s not easy to find anywhere.<br />
-So, the spectrum is defined as <code>$P(k) = A k^n T(k)^2$, where</code>$n$<code>is the 
-&quot;primordial spectral index&quot; and is taken near the unity. This is a 
-&quot;scale-fee&quot; spectrum.</code>$T(k)$<code>is the transfer function that give a 
-synthetic and parametric description of how the initial spectrum survive 
-to the microphysic.</code>$A=\left[\frac{D(z<em>{fin})}{D(z</em>{in})}\right]^2$<code>is the amplitude.    
-The normalization of the spectrum is given by the value of</code>$\sigma<em>8$<code>, 
-that is the mean square amplitude of the density field filtered on the scale 
-of 8 Mpc/h. This values comes from the '80s, when Peebles and others 
-(Davis &amp;amp; Peebles 1983) measured</code>$\sigma</em>{galaxies}$<code>and</code>$\sigma<em>{gal}(R=8)\sim1$<code>
-so they took that values as reference.    
-</code>$\sigma_8$<code>is defined by 
-</code>$\sigma^2&reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$<code>with</code>$R=8\mathrm{Mpc/h}$<code>and 
-</code>$\tilde W(kR)$<code>the Fourier transform of the window (filter) function, usually a top-hat in the positions space.    
-The last thing we need to know to obtain the spectrum is the value of the amplitude, 
-and it can be find by imposing its value so that</code>$\sigma_8$<code>has a certain (observed) value.    
-Because    
-</code>$$\sigma^2&reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR) = \int \mathrm{d}^3k Ak^nT^2(k))\tilde W(kR)$$<code>
-we have    
-</code>$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$<code>.    
-Usually</code>$A_0$<code>is calculated for</code>$\sigma_8=1$<code>and then scaled with 
-</code>$A = A_0\sigma^2</em>{8;obs}$<code>where</code>$\sigma_{8;obs}$<code>is the observed values for 
-</code>$\sigma_8$<code>. With the last observations we have</code>$\sigma_8 = 0.8118405$`.</p>
+So, the spectrum is defined as <code>$P(k) = A k^n T(k)^2$</code>, where <code>$n$</code> is the
+&ldquo;primordial spectral index&rdquo; and is taken near the unity. This is a
+&ldquo;scale-fee&rdquo; spectrum. <code>$T(k)$</code> is the transfer function that give a
+synthetic and parametric description of how the initial spectrum survive
+to the microphysic. <code>$A=\left[\frac{D(z_{fin})}{D(z_{in})}\right]^2$</code> is the amplitude.<br />
+The normalization of the spectrum is given by the value of <code>$\sigma_8$</code>,
+that is the mean square amplitude of the density field filtered on the scale
+of 8 Mpc/h. This values comes from the &lsquo;80s, when Peebles and others
+(Davis &amp; Peebles 1983) measured <code>$\sigma_{galaxies}$</code> and <code>$\sigma_{gal}(R=8)\sim1$</code>
+so they took that values as reference.<br />
+<code>$\sigma_8$</code> is defined by
+<code>$\sigma^2(R) = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$</code> with <code>$R=8\mathrm{Mpc/h}$</code> and
+<code>$\tilde W(kR)$</code> the Fourier transform of the window (filter) function, usually a top-hat in the positions space.<br />
+The last thing we need to know to obtain the spectrum is the value of the amplitude,
+and it can be find by imposing its value so that <code>$\sigma_8$</code> has a certain (observed) value.<br />
+Because<br />
+<code>$$\sigma^2(R) = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR) = \int \mathrm{d}^3k Ak^nT^2(k))\tilde W(kR)$$</code><br />
+we have<br />
+<code>$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$</code>.<br />
+Usually <code>$A_0$</code> is calculated for <code>$\sigma_8=1$</code> and then scaled with
+<code>$A = A_0\sigma^2_{8;obs}$</code> where <code>$\sigma_{8;obs}$</code> is the observed values for
+<code>$\sigma_8$</code>. With the last observations we have <code>$\sigma_8 = 0.8118405$</code>.</p>
 
 <p>Just to have an idea you can do these computation with a simple python code.
 The code below compare the computation done in Python with the values from
@@ -324,7 +324,7 @@ plt.savefig('camb_f90_py_check')
 
 <p>The result is this</p>
 
-<p><img src="../../files/mb_f90_py_check.png" alt="CAMB vs Python calculated initial power spectrum" /></p>
+<p><img src="../../files/camb_f90_py_check.png" alt="CAMB vs Python calculated initial power spectrum" /></p>
 
 <p>If you want you can check the power spectrum we have obtained by integrating it
 to find <code>$\sigma_8$</code>:</p>
@@ -435,7 +435,7 @@ installation of the FFTW so I didn&rsquo;t try it.</p>
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/posts/learning-c-from-simulations-3-c-horrors/">Learning C from simulations, #3: C horrors!</a>
+						<a class="paging-link" href="/posts/learning-c-from-simulations-1/">Learning C from simulations, #1</a>
 		            </div>
 		            
 

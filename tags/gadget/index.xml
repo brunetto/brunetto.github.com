@@ -71,7 +71,7 @@ column of &lt;code&gt;camb_*_transfer_out_z0.dat&lt;/code&gt;. You should use th
 DM simulations represents with DM particles all the mass, included that of the
 baryons, so the initial power spectrum should be the total power spectrum.&lt;br /&gt;
 If you want to understand better how CAMB works you can try to read the
-&lt;a href=&#34;http://camb.info/readme.html&#34; title=&#34;CAMB README&#34;&gt;CAMB README&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://camb.info/readme.html&#34;&gt;CAMB README&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Initial power spectrum theory&lt;/strong&gt;&lt;/p&gt;
 
@@ -79,28 +79,28 @@ If you want to understand better how CAMB works you can try to read the
 on your own. Maybe it is well-known and trivial, but for me it wasn&amp;rsquo;t and,
 like many of the trivial and well-known things in (not only) cosmology,
 it&amp;rsquo;s not easy to find anywhere.&lt;br /&gt;
-So, the spectrum is defined as &lt;code&gt;$P(k) = A k^n T(k)^2$, where&lt;/code&gt;$n$&lt;code&gt;is the 
-&amp;quot;primordial spectral index&amp;quot; and is taken near the unity. This is a 
-&amp;quot;scale-fee&amp;quot; spectrum.&lt;/code&gt;$T(k)$&lt;code&gt;is the transfer function that give a 
-synthetic and parametric description of how the initial spectrum survive 
-to the microphysic.&lt;/code&gt;$A=\left[\frac{D(z&lt;em&gt;{fin})}{D(z&lt;/em&gt;{in})}\right]^2$&lt;code&gt;is the amplitude.    
-The normalization of the spectrum is given by the value of&lt;/code&gt;$\sigma&lt;em&gt;8$&lt;code&gt;, 
-that is the mean square amplitude of the density field filtered on the scale 
-of 8 Mpc/h. This values comes from the &#39;80s, when Peebles and others 
-(Davis &amp;amp;amp; Peebles 1983) measured&lt;/code&gt;$\sigma&lt;/em&gt;{galaxies}$&lt;code&gt;and&lt;/code&gt;$\sigma&lt;em&gt;{gal}(R=8)\sim1$&lt;code&gt;
-so they took that values as reference.    
-&lt;/code&gt;$\sigma_8$&lt;code&gt;is defined by 
-&lt;/code&gt;$\sigma^2&amp;reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$&lt;code&gt;with&lt;/code&gt;$R=8\mathrm{Mpc/h}$&lt;code&gt;and 
-&lt;/code&gt;$\tilde W(kR)$&lt;code&gt;the Fourier transform of the window (filter) function, usually a top-hat in the positions space.    
-The last thing we need to know to obtain the spectrum is the value of the amplitude, 
-and it can be find by imposing its value so that&lt;/code&gt;$\sigma_8$&lt;code&gt;has a certain (observed) value.    
-Because    
-&lt;/code&gt;$$\sigma^2&amp;reg; = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR) = \int \mathrm{d}^3k Ak^nT^2(k))\tilde W(kR)$$&lt;code&gt;
-we have    
-&lt;/code&gt;$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$&lt;code&gt;.    
-Usually&lt;/code&gt;$A_0$&lt;code&gt;is calculated for&lt;/code&gt;$\sigma_8=1$&lt;code&gt;and then scaled with 
-&lt;/code&gt;$A = A_0\sigma^2&lt;/em&gt;{8;obs}$&lt;code&gt;where&lt;/code&gt;$\sigma_{8;obs}$&lt;code&gt;is the observed values for 
-&lt;/code&gt;$\sigma_8$&lt;code&gt;. With the last observations we have&lt;/code&gt;$\sigma_8 = 0.8118405$`.&lt;/p&gt;
+So, the spectrum is defined as &lt;code&gt;$P(k) = A k^n T(k)^2$&lt;/code&gt;, where &lt;code&gt;$n$&lt;/code&gt; is the
+&amp;ldquo;primordial spectral index&amp;rdquo; and is taken near the unity. This is a
+&amp;ldquo;scale-fee&amp;rdquo; spectrum. &lt;code&gt;$T(k)$&lt;/code&gt; is the transfer function that give a
+synthetic and parametric description of how the initial spectrum survive
+to the microphysic. &lt;code&gt;$A=\left[\frac{D(z_{fin})}{D(z_{in})}\right]^2$&lt;/code&gt; is the amplitude.&lt;br /&gt;
+The normalization of the spectrum is given by the value of &lt;code&gt;$\sigma_8$&lt;/code&gt;,
+that is the mean square amplitude of the density field filtered on the scale
+of 8 Mpc/h. This values comes from the &amp;lsquo;80s, when Peebles and others
+(Davis &amp;amp; Peebles 1983) measured &lt;code&gt;$\sigma_{galaxies}$&lt;/code&gt; and &lt;code&gt;$\sigma_{gal}(R=8)\sim1$&lt;/code&gt;
+so they took that values as reference.&lt;br /&gt;
+&lt;code&gt;$\sigma_8$&lt;/code&gt; is defined by
+&lt;code&gt;$\sigma^2(R) = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$&lt;/code&gt; with &lt;code&gt;$R=8\mathrm{Mpc/h}$&lt;/code&gt; and
+&lt;code&gt;$\tilde W(kR)$&lt;/code&gt; the Fourier transform of the window (filter) function, usually a top-hat in the positions space.&lt;br /&gt;
+The last thing we need to know to obtain the spectrum is the value of the amplitude,
+and it can be find by imposing its value so that &lt;code&gt;$\sigma_8$&lt;/code&gt; has a certain (observed) value.&lt;br /&gt;
+Because&lt;br /&gt;
+&lt;code&gt;$$\sigma^2(R) = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR) = \int \mathrm{d}^3k Ak^nT^2(k))\tilde W(kR)$$&lt;/code&gt;&lt;br /&gt;
+we have&lt;br /&gt;
+&lt;code&gt;$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$&lt;/code&gt;.&lt;br /&gt;
+Usually &lt;code&gt;$A_0$&lt;/code&gt; is calculated for &lt;code&gt;$\sigma_8=1$&lt;/code&gt; and then scaled with
+&lt;code&gt;$A = A_0\sigma^2_{8;obs}$&lt;/code&gt; where &lt;code&gt;$\sigma_{8;obs}$&lt;/code&gt; is the observed values for
+&lt;code&gt;$\sigma_8$&lt;/code&gt;. With the last observations we have &lt;code&gt;$\sigma_8 = 0.8118405$&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Just to have an idea you can do these computation with a simple python code.
 The code below compare the computation done in Python with the values from
@@ -153,7 +153,7 @@ plt.savefig(&#39;camb_f90_py_check&#39;)
 
 &lt;p&gt;The result is this&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../files/mb_f90_py_check.png&#34; alt=&#34;CAMB vs Python calculated initial power spectrum&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../files/camb_f90_py_check.png&#34; alt=&#34;CAMB vs Python calculated initial power spectrum&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want you can check the power spectrum we have obtained by integrating it
 to find &lt;code&gt;$\sigma_8$&lt;/code&gt;:&lt;/p&gt;
