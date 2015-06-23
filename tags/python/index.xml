@@ -1091,7 +1091,7 @@ displacement field, should be &lt;code&gt;Nmesh&lt;/code&gt; &lt;code&gt;$\geq$&
 determines the Nyquist frequency that the code assumes, &lt;code&gt;$k_{Nyquist} = 2\cdot PI/Box \cdot  Nsample/2$&lt;/code&gt; Normally,
 one chooses &lt;code&gt;Nsample&lt;/code&gt; such that &lt;code&gt;$Ntot =  Nsample^3$, where&lt;/code&gt;Ntot&lt;code&gt;is the total number 
 of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist 
-frequency of Nsample, so it&#39;s good if&lt;/code&gt;$Nmesh = 2\cdot Nsample$&lt;/li&gt;
+frequency of Nsample, so it&#39;s good if&lt;/code&gt;$Nmesh = 2\cdot Nsample$`&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ReNormalizeInputSpectrum&lt;/code&gt;: set it to 0 because we are going to use the previous
 spectrum that is already normalized, if you don&amp;rsquo;t remember this the code will have
 integration problems&lt;/li&gt;
