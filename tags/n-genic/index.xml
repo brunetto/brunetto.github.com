@@ -100,7 +100,7 @@ Because&lt;br /&gt;
 we have&lt;br /&gt;
 &lt;code&gt;$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$&lt;/code&gt;.&lt;br /&gt;
 Usually &lt;code&gt;$A_0$&lt;/code&gt; is calculated for &lt;code&gt;$\sigma_8=1$&lt;/code&gt; and then scaled with
-&lt;code&gt;$A = A_0\sigma^2_{8;obs}$&lt;/code&gt; where &lt;code&gt;$\sigma_{8;obs}$&lt;/code&gt; is the observed values for
+&lt;code&gt;$A = A_0\sigma^2_{\rm 8;obs}$&lt;/code&gt; where &lt;code&gt;$\sigma_{\rm 8;obs}$&lt;/code&gt; is the observed values for
 &lt;code&gt;$\sigma_8$&lt;/code&gt;. With the last observations we have &lt;code&gt;$\sigma_8 = 0.8118405$&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Just to have an idea you can do these computation with a simple python code.
@@ -184,10 +184,10 @@ We are interested in:&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;Nmesh&lt;/code&gt;: the size (=the number of nodes) of the FFT grid used to compute the
 displacement field, should be &lt;code&gt;Nmesh&lt;/code&gt; &lt;code&gt;$\geq$&lt;/code&gt; &lt;code&gt;Nsample&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Nsample&lt;/code&gt;: this is the maximum k that the code uses, i.e. this effectively
-determines the Nyquist frequency that the code assumes, &lt;code&gt;$k_{Nyquist} = 2\cdot PI/Box \cdot  Nsample/2$&lt;/code&gt; Normally,
-one chooses &lt;code&gt;Nsample&lt;/code&gt; such that &lt;code&gt;$Ntot =  Nsample^3$, where&lt;/code&gt;Ntot&lt;code&gt;is the total number 
-of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist 
-frequency of Nsample, so it&#39;s good if&lt;/code&gt;$Nmesh = 2\cdot Nsample$`&lt;/li&gt;
+determines the Nyquist frequency that the code assumes, &lt;code&gt;$k_{\rm Nyquist} = 2\cdot \pi/{\rm Box} \cdot  {\rm Nsample}/2$&lt;/code&gt; Normally,
+one chooses &lt;code&gt;Nsample&lt;/code&gt; such that &lt;code&gt;${\rm Ntot} =  {\rm Nsample}^3$&lt;/code&gt;, where &lt;code&gt;Ntot&lt;/code&gt; is the total number
+of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist
+frequency of Nsample, so it&amp;rsquo;s good if &lt;code&gt;${\rm Nmesh} = 2\cdot {\rm Nsample}$&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ReNormalizeInputSpectrum&lt;/code&gt;: set it to 0 because we are going to use the previous
 spectrum that is already normalized, if you don&amp;rsquo;t remember this the code will have
 integration problems&lt;/li&gt;
@@ -195,11 +195,11 @@ integration problems&lt;/li&gt;
 (for each dimension) to cover the number of particles you want to use.
 The glass file contains 4097 particles. Glass particles positions will be
 automatically stretched to cover the box dimension. When you download N-GenIC
-you find &lt;code&gt;$Nsample = 128$&lt;/code&gt; and &lt;code&gt;$TileFac = 8$, this is because the total number of 
-particles is&lt;/code&gt;$Ntot = Nsample^3 = 128^3=2097125$&lt;code&gt;and the number of glass particles 
-is&lt;/code&gt;$TileFac^3\cdot Nglass = 8^3\cdot 4096 = 2097125$. In practice, if you want to
+you find &lt;code&gt;${\rm Nsample} = 128$&lt;/code&gt; and &lt;code&gt;${\rm TileFac} = 8$&lt;/code&gt;, this is because the total number of
+particles is &lt;code&gt;${\rm Ntot} = {\rm Nsample}^3 = 128^3=2097125$&lt;/code&gt; and the number of glass particles
+is &lt;code&gt;${\rm TileFac}^3\cdot {\rm Nglass} = 8^3\cdot 4096 = 2097125$&lt;/code&gt;. In practice, if you want to
 know what &lt;code&gt;TileFac&lt;/code&gt; should be, and you have &lt;code&gt;Ntot&lt;/code&gt; particles in you simulation,
-&lt;code&gt;TileFac&lt;/code&gt; will be &lt;code&gt;$\frac{Ntot^{1/3}}{4096} = \frac{Nsample}{4096}$&lt;/code&gt;.&lt;/li&gt;
+&lt;code&gt;TileFac&lt;/code&gt; will be &lt;code&gt;$\frac{{\rm Ntot}^{1/3}}{4096} = \frac{{\rm Nsample}}{4096}$&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;WhichSpectrum&lt;/code&gt;: let you choose if you want to use an internal spectrum
 (calculated with a function) or the spectrum from CAMB&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;FileWithInputSpectrum&lt;/code&gt;: it&amp;rsquo;s, obviously, the name of the file containing the spectrum&lt;/li&gt;

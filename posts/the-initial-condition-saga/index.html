@@ -87,6 +87,10 @@
     <div class="social-buttons">
       
         
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
         <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
         
       
@@ -104,10 +108,6 @@
       
         
         <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
-        
-      
-        
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
         
       
       
@@ -271,7 +271,7 @@ Because<br />
 we have<br />
 <code>$$A_0 = \frac{s^2_R(R=8) }{ \int\mathrm{d}^3k\, k^n T^2(k) \tilde W(8*k)}$$</code>.<br />
 Usually <code>$A_0$</code> is calculated for <code>$\sigma_8=1$</code> and then scaled with
-<code>$A = A_0\sigma^2_{8;obs}$</code> where <code>$\sigma_{8;obs}$</code> is the observed values for
+<code>$A = A_0\sigma^2_{\rm 8;obs}$</code> where <code>$\sigma_{\rm 8;obs}$</code> is the observed values for
 <code>$\sigma_8$</code>. With the last observations we have <code>$\sigma_8 = 0.8118405$</code>.</p>
 
 <p>Just to have an idea you can do these computation with a simple python code.
@@ -355,10 +355,10 @@ We are interested in:</p>
 <li><code>Nmesh</code>: the size (=the number of nodes) of the FFT grid used to compute the
 displacement field, should be <code>Nmesh</code> <code>$\geq$</code> <code>Nsample</code></li>
 <li><code>Nsample</code>: this is the maximum k that the code uses, i.e. this effectively
-determines the Nyquist frequency that the code assumes, <code>$k_{Nyquist} = 2\cdot PI/Box \cdot  Nsample/2$</code> Normally,
-one chooses <code>Nsample</code> such that <code>$Ntot =  Nsample^3$, where</code>Ntot<code>is the total number 
-of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist 
-frequency of Nsample, so it's good if</code>$Nmesh = 2\cdot Nsample$`</li>
+determines the Nyquist frequency that the code assumes, <code>$k_{\rm Nyquist} = 2\cdot \pi/{\rm Box} \cdot  {\rm Nsample}/2$</code> Normally,
+one chooses <code>Nsample</code> such that <code>${\rm Ntot} =  {\rm Nsample}^3$</code>, where <code>Ntot</code> is the total number
+of particles. Because the grid sample the particles quantities, Nmesh sets the Nyquist
+frequency of Nsample, so it&rsquo;s good if <code>${\rm Nmesh} = 2\cdot {\rm Nsample}$</code></li>
 <li><code>ReNormalizeInputSpectrum</code>: set it to 0 because we are going to use the previous
 spectrum that is already normalized, if you don&rsquo;t remember this the code will have
 integration problems</li>
@@ -366,11 +366,11 @@ integration problems</li>
 (for each dimension) to cover the number of particles you want to use.
 The glass file contains 4097 particles. Glass particles positions will be
 automatically stretched to cover the box dimension. When you download N-GenIC
-you find <code>$Nsample = 128$</code> and <code>$TileFac = 8$, this is because the total number of 
-particles is</code>$Ntot = Nsample^3 = 128^3=2097125$<code>and the number of glass particles 
-is</code>$TileFac^3\cdot Nglass = 8^3\cdot 4096 = 2097125$. In practice, if you want to
+you find <code>${\rm Nsample} = 128$</code> and <code>${\rm TileFac} = 8$</code>, this is because the total number of
+particles is <code>${\rm Ntot} = {\rm Nsample}^3 = 128^3=2097125$</code> and the number of glass particles
+is <code>${\rm TileFac}^3\cdot {\rm Nglass} = 8^3\cdot 4096 = 2097125$</code>. In practice, if you want to
 know what <code>TileFac</code> should be, and you have <code>Ntot</code> particles in you simulation,
-<code>TileFac</code> will be <code>$\frac{Ntot^{1/3}}{4096} = \frac{Nsample}{4096}$</code>.</li>
+<code>TileFac</code> will be <code>$\frac{{\rm Ntot}^{1/3}}{4096} = \frac{{\rm Nsample}}{4096}$</code>.</li>
 <li><code>WhichSpectrum</code>: let you choose if you want to use an internal spectrum
 (calculated with a function) or the spectrum from CAMB</li>
 <li><code>FileWithInputSpectrum</code>: it&rsquo;s, obviously, the name of the file containing the spectrum</li>
