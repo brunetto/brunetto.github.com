@@ -203,12 +203,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/moto/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -219,6 +219,11 @@
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/moto/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -238,12 +243,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -253,17 +258,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/travels/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/venezia-instambul/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/travels/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -288,12 +288,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -318,12 +318,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,17 +348,17 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
-    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -558,12 +558,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -588,12 +588,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
