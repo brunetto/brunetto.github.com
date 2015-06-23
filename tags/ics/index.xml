@@ -84,11 +84,11 @@ So, the spectrum is defined as &lt;code&gt;$P(k) = A k^n T(k)^2$&lt;/code&gt;, w
 &amp;ldquo;primordial spectral index&amp;rdquo; and is taken near the unity. This is a
 &amp;ldquo;scale-fee&amp;rdquo; spectrum. &lt;code&gt;$T(k)$&lt;/code&gt; is the transfer function that give a
 synthetic and parametric description of how the initial spectrum survive
-to the microphysic. &lt;code&gt;$A=\left[\frac{D(z_{fin})}{D(z_{in})}\right]^2$&lt;/code&gt; is the amplitude.&lt;br /&gt;
+to the microphysic. &lt;code&gt;$A=\left[\frac{D(z_{\rm fin})}{D(z_{\rm in})}\right]^2$&lt;/code&gt; is the amplitude.&lt;br /&gt;
 The normalization of the spectrum is given by the value of &lt;code&gt;$\sigma_8$&lt;/code&gt;,
 that is the mean square amplitude of the density field filtered on the scale
 of 8 Mpc/h. This values comes from the &amp;lsquo;80s, when Peebles and others
-(Davis &amp;amp; Peebles 1983) measured &lt;code&gt;$\sigma_{galaxies}$&lt;/code&gt; and &lt;code&gt;$\sigma_{gal}(R=8)\sim1$&lt;/code&gt;
+(Davis &amp;amp; Peebles 1983) measured &lt;code&gt;$\sigma_{\rm galaxies}$&lt;/code&gt; and &lt;code&gt;$\sigma_{\rm gal}(R=8)\sim1$&lt;/code&gt;
 so they took that values as reference.&lt;br /&gt;
 &lt;code&gt;$\sigma_8$&lt;/code&gt; is defined by
 &lt;code&gt;$\sigma^2(R) = \frac{1}{(2\pi)^3}\int \mathrm{d}^3kP(k)\tilde W(kR)$&lt;/code&gt; with &lt;code&gt;$R=8\mathrm{Mpc/h}$&lt;/code&gt; and
@@ -182,7 +182,7 @@ We are interested in:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Nmesh&lt;/code&gt;: the size (=the number of nodes) of the FFT grid used to compute the
-displacement field, should be &lt;code&gt;Nmesh&lt;/code&gt; &lt;code&gt;$\geq$&amp;amp;nbsp;&lt;/code&gt;Nsample`&lt;/li&gt;
+displacement field, should be &lt;code&gt;Nmesh&lt;/code&gt; &lt;code&gt;$\geq$&lt;/code&gt; &lt;code&gt;Nsample&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Nsample&lt;/code&gt;: this is the maximum k that the code uses, i.e. this effectively
 determines the Nyquist frequency that the code assumes, &lt;code&gt;$k_{Nyquist} = 2\cdot PI/Box \cdot  Nsample/2$&lt;/code&gt; Normally,
 one chooses &lt;code&gt;Nsample&lt;/code&gt; such that &lt;code&gt;$Ntot =  Nsample^3$, where&lt;/code&gt;Ntot&lt;code&gt;is the total number 
