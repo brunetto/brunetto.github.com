@@ -326,7 +326,7 @@ $\delta_{lin}\sim1.686$.&lt;/p&gt;
 &lt;h2 id=&#34;installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
 
 &lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
-Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;amp;lt;archive name&amp;amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
+Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;lt;archive name&amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;goldbaum@~/Documents/code: cd gsl-1.9/
 goldbaum@~/Documents/code/gsl-1.9: ./configure
