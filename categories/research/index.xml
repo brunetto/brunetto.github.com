@@ -784,7 +784,8 @@ with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.
       <pubDate>Wed, 03 Jun 2015 10:55:02 +0200</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</guid>
-      <description>&lt;p&gt;Create on or more simulation configuration(s), for example&lt;/p&gt;
+      <description>&lt;p&gt;You can download sltools from &lt;a href=&#34;https://github.com/brunetto/sltools&#34;&gt;here&lt;/a&gt;.&lt;br /&gt;
+Then create one or more simulation configuration(s), for example&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
 	&amp;quot;Runs&amp;quot;: 50,
