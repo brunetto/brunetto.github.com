@@ -203,12 +203,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,12 +218,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/moto/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/moto/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/netherlands/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,12 +233,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -248,12 +248,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -273,12 +273,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/eating/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/cooking/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/cooking/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/eating/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -293,12 +293,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/bachelor/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -328,12 +328,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/videos/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/videos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,22 +348,22 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
-    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
-    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/tech/js-references/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -523,12 +523,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</loc>
+    <loc>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</loc>
     <lastmod>2011-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</loc>
+    <loc>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</loc>
     <lastmod>2011-12-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -543,12 +543,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
