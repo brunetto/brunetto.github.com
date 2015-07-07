@@ -6,8 +6,61 @@
     <description>Recent content on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://brunettoziosi.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What do you think about me?</title>
+      <link>http://brunettoziosi.eu/posts/what-do-you-think-about-me/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/what-do-you-think-about-me/</guid>
+      <description>&lt;p&gt;AKA &amp;ldquo;In 150 characters or fewer, tell us what makes you unique. Try to be creative and say something that will catch our eye!&amp;rdquo;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;These days I am struggling trying to (re)write a thesis decent enough to get a &lt;a href=&#34;../../pages/research/phd/&#34;&gt;PhD&lt;/a&gt;
+and different enough from my point of view to be accepted by my supervisor.&lt;/p&gt;
+
+&lt;p&gt;At the same time I am applying to an increasing number of jobs possibly matching
+my love for data exploration/visualization and programming. And no, I am (almost) not applying
+for post-docs anymore. It is a waste of time.&lt;br /&gt;
+However, every average job or post-doc application requires you to advertise yourself
+as much as possible so that your future employer can purchase you and be satisfied with his choice.&lt;/p&gt;
+
+&lt;p&gt;If you have read at least a pair of posts on this site (or a piece of my thesis),
+it would be obvious to you that writing is not among my very few qualities.
+And, as a result of my education, self-confidence and being proud of myself aren&amp;rsquo;t there either.
+On top of that, it is always difficult to have a fair opinion and to see what others
+see about ourselves.&lt;/p&gt;
+
+&lt;p&gt;Today a friend of mine was so kind to send me few words to describe me. They were amazingly
+accurate:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Tendenzialmente brontolone e negativo, riesco meglio ad esprimere quello penso
+e sono attraverso un codice che non a parole&amp;hellip;
+Sempre alla ricerca di nuovi stimoli, che siano un nuovo linguaggio di programmazione,
+una nuova app, o semplicemente una luce diversa con cui scattare una foto,
+non lasciatemi troppo a me stesso che mi deprimo, ma se debitamente sostenuto
+sono capace di grandi cose.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(&lt;em&gt;Basically grumpy and negative, I can express what I think and what I am better by coding than
+with words&amp;hellip; Always looking for new ideas, either a new programming language,
+a new app or simply a different light for a photo.
+Don&amp;rsquo;t leave me alone too much with myself because I&amp;rsquo;ll get down, but if
+properly supported I can do great things.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;(Thanks &lt;a href=&#34;https://plus.google.com/102539794582678678803/about&#34;&gt;Valentina&lt;/a&gt; &lt;a href=&#34;http://www.stsci.edu/~calvi/calvi/aboutme.html&#34;&gt;C.&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;This is really inspiring and helpful, thus, please, give me your &amp;ldquo;150 or fewer&amp;rdquo; (or more) words about
+me in the comments below!! Of course, this is an attempt to build a constructive discussion, so, please,
+don&amp;rsquo;t be stupid, aggressive or impolite.&lt;/p&gt;
+
+&lt;p&gt;b.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lorenzo negli stadi 2015</title>
@@ -3957,21 +4010,6 @@ and how to run them:&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;sudo iftop -i eth0&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;nmon&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>rsync like a pro</title>
-      <link>http://brunettoziosi.eu/posts/rsync-like-a-pro/</link>
-      <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/rsync-like-a-pro/</guid>
-      <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you need it, &lt;code&gt;-c&lt;/code&gt; flag will force files checksum to be sure they are the same or not. It takes a lot of time.&lt;/p&gt;
 </description>
     </item>
     
