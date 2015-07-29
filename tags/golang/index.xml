@@ -485,8 +485,8 @@ makeking -n 10000 -w 5 -i -u \
 
 &lt;p&gt;OR&lt;/p&gt;
 
-&lt;p&gt;you can run them using the docker container you can build starting from [this image]()
-or from this [Dockerfile]() or following &lt;a href=&#34;../dockerized-starlab&#34;&gt;these instructions&lt;/a&gt;. If you plan to use the GPUs the second method is recommendend
+&lt;p&gt;you can run them using the docker container you can build starting from &lt;a href=&#34;https://registry.hub.docker.com/u/brunetto/starlab-public-docker/&#34;&gt;this image&lt;/a&gt;
+or from this &lt;a href=&#34;https://github.com/brunetto/starlab-public-docker/blob/master/Dockerfile&#34;&gt;Dockerfile&lt;/a&gt; or following &lt;a href=&#34;../dockerized-starlab&#34;&gt;these instructions&lt;/a&gt;. If you plan to use the GPUs the second method is recommendend
 since a GPU enable docker image is system-dependent (thank you nVidia&amp;hellip;).&lt;/p&gt;
 
 &lt;p&gt;Now you can upload your fresh ICs to the cluster of your choice.&lt;/p&gt;
