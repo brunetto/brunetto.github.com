@@ -1318,6 +1318,109 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
     </item>
     
     <item>
+      <title>Install Docker</title>
+      <link>http://brunettoziosi.eu/posts/docker-installation/</link>
+      <pubDate>Tue, 16 Jun 2015 10:55:02 +0200</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/docker-installation/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-is-docker:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;What is Docker?&lt;/h2&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://samsaffron.com/archive/2013/11/07/discourse-in-a-docker-container&#34;&gt;short&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;An open source project to pack, ship and run any application as a lightweight container.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In practice Docker&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;povide an isolated sharable environment (dev and ship)&lt;/li&gt;
+&lt;li&gt;allow to change dev env without messing-up the host OS&lt;/li&gt;
+&lt;li&gt;ease an app installation&lt;/li&gt;
+&lt;li&gt;is based on lxc (linux containers) and Go&lt;/li&gt;
+&lt;li&gt;remove the need of a virtual machines, it can be used in a similar way but it is different → much more lightweight&lt;/li&gt;
+&lt;li&gt;is (quite) secure (everything is sandboxed), though I don&amp;rsquo;t like its process run as root&lt;/li&gt;
+&lt;li&gt;allow you to commit changes&lt;/li&gt;
+&lt;li&gt;is based on images and containers: templates and running instances (that lose memory on shutdown&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to write an essay on Docker, just present it briefly and describe the
+best (in my opinion) way to install it on *buntu. However, I think it is
+one of the solution (see also &lt;a href=&#34;http://www.ubuntu.com/cloud/tools/lxd&#34;&gt;LXD&lt;/a&gt; containers)
+science should look at when dealing with reproducibility, easiness, sharing and so on.&lt;/p&gt;
+
+&lt;h2 id=&#34;docker-installation:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Docker installation&lt;/h2&gt;
+
+&lt;p&gt;See also &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet#linux&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Add docker repository key to apt-key for package verification and add repository:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo sh -c &amp;quot;wget -qO- https://get.docker.io/gpg | apt-key add -&amp;quot;
+sudo sh -c &amp;quot;echo deb http://get.docker.io/ubuntu docker main\
+&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Install docker&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo aptitude update &amp;amp;&amp;amp; sudo aptitude install lxc-docker
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Avoid typing sudo everytime&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo groupadd docker
+sudo gpasswd -a ${USER} docker
+sudo service docker restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then logout and login again.&lt;/p&gt;
+
+&lt;p&gt;Allow memory limits: set /&lt;code&gt;etc/default/grub&lt;/code&gt; key &lt;code&gt;GRUB_CMDLINE_LINUX&lt;/code&gt; to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRUB_CMDLINE_LINUX=&amp;quot;cgroup_enable=memory swapaccount=1&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then update GRUB with &lt;code&gt;sudo update-grub&lt;/code&gt; and reboot.&lt;/p&gt;
+
+&lt;h2 id=&#34;useful-commands:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Useful commands&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;docker&lt;/code&gt; &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#attach&#34;&gt;attach&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#create&#34;&gt;create&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#exec&#34;&gt;exec&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#inspect&#34;&gt;inspect&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#logs&#34;&gt;logs&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#push&#34;&gt;push&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#pull&#34;&gt;pull&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#rm&#34;&gt;rm&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#rmi&#34;&gt;rmi&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#run&#34;&gt;run&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#start&#34;&gt;start&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#stop&#34;&gt;stop&lt;/a&gt;,
+&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#tag&#34;&gt;tag&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Inside a container, exit with &lt;code&gt;ctrl+p ctrl+q&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Attach to a running container with &lt;code&gt;docker attach &amp;lt;container name&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;other-resources:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Other resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://registry.hub.docker.com&#34;&gt;Registry/repository&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Docs: &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/&#34;&gt;command line&lt;/a&gt;, &lt;a href=&#34;http://docs.docker.com/&#34;&gt;all&lt;/a&gt;, &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet&#34;&gt;me&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/24702233/docker-container-and-memory-consumption&#34;&gt;Memory consumption&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://phusion.github.io/baseimage-docker/#intro&#34;&gt;Docker baseimages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Instagram!!</title>
       <link>http://brunettoziosi.eu/posts/instagram/</link>
       <pubDate>Tue, 16 Jun 2015 10:55:02 +0200</pubDate>
@@ -2830,109 +2933,6 @@ To celebrate this event, I also learned how to post a gallery here!! 😁&lt;/p&
     </item>
     
     <item>
-      <title>Install Docker</title>
-      <link>http://brunettoziosi.eu/posts/docker-installation/</link>
-      <pubDate>Tue, 16 Jun 2015 10:55:02 +0200</pubDate>
-      
-      <guid>http://brunettoziosi.eu/posts/docker-installation/</guid>
-      <description>
-
-&lt;h2 id=&#34;what-is-docker:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;What is Docker?&lt;/h2&gt;
-
-&lt;p&gt;In &lt;a href=&#34;http://samsaffron.com/archive/2013/11/07/discourse-in-a-docker-container&#34;&gt;short&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;An open source project to pack, ship and run any application as a lightweight container.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In practice Docker&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;povide an isolated sharable environment (dev and ship)&lt;/li&gt;
-&lt;li&gt;allow to change dev env without messing-up the host OS&lt;/li&gt;
-&lt;li&gt;ease an app installation&lt;/li&gt;
-&lt;li&gt;is based on lxc (linux containers) and Go&lt;/li&gt;
-&lt;li&gt;remove the need of a virtual machines, it can be used in a similar way but it is different → much more lightweight&lt;/li&gt;
-&lt;li&gt;is (quite) secure (everything is sandboxed), though I don&amp;rsquo;t like its process run as root&lt;/li&gt;
-&lt;li&gt;allow you to commit changes&lt;/li&gt;
-&lt;li&gt;is based on images and containers: templates and running instances (that lose memory on shutdown&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I don&amp;rsquo;t want to write an essay on Docker, just present it briefly and describe the
-best (in my opinion) way to install it on *buntu. However, I think it is
-one of the solution (see also &lt;a href=&#34;http://www.ubuntu.com/cloud/tools/lxd&#34;&gt;LXD&lt;/a&gt; containers)
-science should look at when dealing with reproducibility, easiness, sharing and so on.&lt;/p&gt;
-
-&lt;h2 id=&#34;docker-installation:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Docker installation&lt;/h2&gt;
-
-&lt;p&gt;See also &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet#linux&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Add docker repository key to apt-key for package verification and add repository:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo sh -c &amp;quot;wget -qO- https://get.docker.io/gpg | apt-key add -&amp;quot;
-sudo sh -c &amp;quot;echo deb http://get.docker.io/ubuntu docker main\
-&amp;gt; /etc/apt/sources.list.d/docker.list&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Install docker&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo aptitude update &amp;amp;&amp;amp; sudo aptitude install lxc-docker
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Avoid typing sudo everytime&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo groupadd docker
-sudo gpasswd -a ${USER} docker
-sudo service docker restart
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;then logout and login again.&lt;/p&gt;
-
-&lt;p&gt;Allow memory limits: set /&lt;code&gt;etc/default/grub&lt;/code&gt; key &lt;code&gt;GRUB_CMDLINE_LINUX&lt;/code&gt; to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRUB_CMDLINE_LINUX=&amp;quot;cgroup_enable=memory swapaccount=1&amp;quot;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;then update GRUB with &lt;code&gt;sudo update-grub&lt;/code&gt; and reboot.&lt;/p&gt;
-
-&lt;h2 id=&#34;useful-commands:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Useful commands&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;docker&lt;/code&gt; &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#attach&#34;&gt;attach&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#create&#34;&gt;create&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#exec&#34;&gt;exec&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#inspect&#34;&gt;inspect&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#logs&#34;&gt;logs&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#push&#34;&gt;push&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#pull&#34;&gt;pull&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#rm&#34;&gt;rm&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#rmi&#34;&gt;rmi&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#run&#34;&gt;run&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#start&#34;&gt;start&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#stop&#34;&gt;stop&lt;/a&gt;,
-&lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#tag&#34;&gt;tag&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Inside a container, exit with &lt;code&gt;ctrl+p ctrl+q&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Attach to a running container with &lt;code&gt;docker attach &amp;lt;container name&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;other-resources:b27a6dac77ac7c1c26ccb85a8fe76747&#34;&gt;Other resources&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://registry.hub.docker.com&#34;&gt;Registry/repository&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Docs: &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/&#34;&gt;command line&lt;/a&gt;, &lt;a href=&#34;http://docs.docker.com/&#34;&gt;all&lt;/a&gt;, &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet&#34;&gt;me&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/24702233/docker-container-and-memory-consumption&#34;&gt;Memory consumption&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://phusion.github.io/baseimage-docker/#intro&#34;&gt;Docker baseimages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Dockerized Starlab</title>
       <link>http://brunettoziosi.eu/posts/dockerized-starlab/</link>
       <pubDate>Mon, 15 Jun 2015 11:55:02 +0200</pubDate>
@@ -3554,7 +3554,7 @@ as part of the civil defense during the post earthquake in 2012.&lt;/p&gt;
 &lt;p&gt;Do you have any question or suggestion? &lt;a href=&#34;https://github.com/brunetto/brunetto.github.com/issues/new&#34;&gt;Drop me a line on &lt;/a&gt;!!&lt;br /&gt;
 Or, if you are not a github lover, &lt;a href=&#34;mailto:brunettoziosi@gmail.com&#34;&gt; write me a ✉ &lt;/a&gt;!!&lt;br /&gt;
 &lt;strike&gt;I&amp;rsquo;m currently available for hire, so make sure to check out my &lt;a href=&#34;http://brunettoziosi.eu/pages/curriculum-vitae/&#34;&gt;CV&lt;/a&gt;!!&lt;/strike&gt;&lt;br /&gt;
-I am now happily hired by &lt;a href=&#34;https://www.pixartprinting.it/&#34;&gt;Pixartprinting&lt;/a&gt;!! 😄&lt;/p&gt;
+I am now happily hired by &lt;a href=&#34;https://www.pixartprinting.it/&#34;&gt;Pixartprinting&lt;/a&gt; to work as full stack ERP developer!! 😄&lt;/p&gt;
 
 &lt;!--### My last tweet
 
