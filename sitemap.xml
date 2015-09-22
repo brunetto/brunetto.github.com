@@ -23,12 +23,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/docker-installation/</loc>
+    <loc>http://brunettoziosi.eu/posts/instagram/</loc>
     <lastmod>2015-06-16T10:55:02+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/instagram/</loc>
+    <loc>http://brunettoziosi.eu/posts/docker-installation/</loc>
     <lastmod>2015-06-16T10:55:02+02:00</lastmod>
   </url>
   
@@ -238,7 +238,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -249,16 +249,6 @@
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/routes/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -274,6 +264,16 @@
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/venezia-instambul/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -338,12 +338,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/videos/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/videos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -358,12 +358,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
-    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -373,7 +368,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/tech/golang-references/</loc>
+    <loc>http://brunettoziosi.eu/pages/tech/programming-links/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/tech/python-references/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -568,12 +568,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</loc>
     <lastmod>2011-11-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -593,12 +593,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</loc>
+    <loc>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
   </url>
   
