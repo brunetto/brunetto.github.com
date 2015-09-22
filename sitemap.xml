@@ -23,12 +23,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/instagram/</loc>
+    <loc>http://brunettoziosi.eu/posts/docker-installation/</loc>
     <lastmod>2015-06-16T10:55:02+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/docker-installation/</loc>
+    <loc>http://brunettoziosi.eu/posts/instagram/</loc>
     <lastmod>2015-06-16T10:55:02+02:00</lastmod>
   </url>
   
@@ -238,12 +238,22 @@
   </url>
   
   <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -264,16 +274,6 @@
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/venezia-instambul/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -493,12 +493,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</loc>
+    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</loc>
     <lastmod>2012-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</loc>
+    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</loc>
     <lastmod>2012-02-20T00:00:00+00:00</lastmod>
   </url>
   
