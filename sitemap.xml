@@ -143,7 +143,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,7 +153,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,12 +173,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/misc/goodies/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/Films/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/Films/</loc>
+    <loc>http://brunettoziosi.eu/pages/misc/goodies/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -213,17 +213,17 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/london/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/barcelona/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -238,22 +238,22 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
-    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -283,12 +283,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/cooking/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/eating/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/eating/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/cooking/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -298,12 +298,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/astrofelpa/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/astrocomputing/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -328,22 +328,22 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
-    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/pages/personal/multimedia/photos/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/pages/personal/multimedia/videos/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -493,12 +493,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</loc>
+    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</loc>
     <lastmod>2012-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</loc>
+    <loc>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</loc>
     <lastmod>2012-02-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -548,12 +548,12 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</loc>
+    <loc>http://brunettoziosi.eu/posts/python-logging/</loc>
     <lastmod>2011-11-17T00:00:00+00:00</lastmod>
   </url>
   
