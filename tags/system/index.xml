@@ -17,11 +17,11 @@
       <guid>http://brunettoziosi.eu/pages/tech/system/</guid>
       <description>
 
-&lt;h2 id=&#34;installed-software-from-repos:39&#34;&gt;Installed software (from repos)&lt;/h2&gt;
+&lt;h2 id=&#34;installed-software-from-repos:40&#34;&gt;Installed software (from repos)&lt;/h2&gt;
 
-&lt;h3 id=&#34;nvidia-and-cuda:39&#34;&gt;Nvidia and CUDA&lt;/h3&gt;
+&lt;h3 id=&#34;nvidia-and-cuda:40&#34;&gt;Nvidia and CUDA&lt;/h3&gt;
 
-&lt;h3 id=&#34;compilers:39&#34;&gt;Compilers&lt;/h3&gt;
+&lt;h3 id=&#34;compilers:40&#34;&gt;Compilers&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;gcc&lt;/li&gt;
@@ -29,14 +29,14 @@
 &lt;li&gt;gfortran&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;editors:39&#34;&gt;Editors&lt;/h3&gt;
+&lt;h3 id=&#34;editors:40&#34;&gt;Editors&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Kate&lt;/li&gt;
 &lt;li&gt;Emacs&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;terminals:39&#34;&gt;Terminals&lt;/h3&gt;
+&lt;h3 id=&#34;terminals:40&#34;&gt;Terminals&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ipython&lt;/li&gt;
@@ -44,7 +44,7 @@
 &lt;li&gt;terminator&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;python:39&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python:40&#34;&gt;Python&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Ipython&lt;/li&gt;
@@ -53,7 +53,7 @@
 &lt;li&gt;PyTables&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;graphics:39&#34;&gt;Graphics&lt;/h3&gt;
+&lt;h3 id=&#34;graphics:40&#34;&gt;Graphics&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Digikam&lt;/li&gt;
@@ -61,7 +61,7 @@
 &lt;li&gt;Gimp&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;multimedia:39&#34;&gt;Multimedia&lt;/h3&gt;
+&lt;h3 id=&#34;multimedia:40&#34;&gt;Multimedia&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;VLC&lt;/li&gt;
@@ -69,30 +69,30 @@
 &lt;li&gt;mencoder&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;other:39&#34;&gt;Other&lt;/h3&gt;
+&lt;h3 id=&#34;other:40&#34;&gt;Other&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;texlive&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;reistallation-cli:39&#34;&gt;Reistallation CLI&lt;/h3&gt;
+&lt;h3 id=&#34;reistallation-cli:40&#34;&gt;Reistallation CLI&lt;/h3&gt;
 
-&lt;h2 id=&#34;external-packages:39&#34;&gt;External packages&lt;/h2&gt;
+&lt;h2 id=&#34;external-packages:40&#34;&gt;External packages&lt;/h2&gt;
 
-&lt;h2 id=&#34;settings:39&#34;&gt;Settings&lt;/h2&gt;
+&lt;h2 id=&#34;settings:40&#34;&gt;Settings&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Inkscape: latex formulas (
 &lt;a href=&#34;http://pav.iki.fi/software/textext/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.timteatro.net/2010/08/05/textext-for-math-in-inkscape/&#34;&gt;here&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;bashrc:39&#34;&gt;.bashrc&lt;/h3&gt;
+&lt;h3 id=&#34;bashrc:40&#34;&gt;.bashrc&lt;/h3&gt;
 
-&lt;h3 id=&#34;inkscape:39&#34;&gt;Inkscape&lt;/h3&gt;
+&lt;h3 id=&#34;inkscape:40&#34;&gt;Inkscape&lt;/h3&gt;
 
-&lt;h3 id=&#34;git:39&#34;&gt;Git&lt;/h3&gt;
+&lt;h3 id=&#34;git:40&#34;&gt;Git&lt;/h3&gt;
 
-&lt;h3 id=&#34;go-lang:39&#34;&gt;Go(lang)&lt;/h3&gt;
+&lt;h3 id=&#34;go-lang:40&#34;&gt;Go(lang)&lt;/h3&gt;
 </description>
     </item>
     
@@ -104,7 +104,7 @@
       <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
       <description>
 
-&lt;h2 id=&#34;system:66&#34;&gt;System&lt;/h2&gt;
+&lt;h2 id=&#34;system:64&#34;&gt;System&lt;/h2&gt;
 
 &lt;p&gt;Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
  and a Ubuntu 13.04 Dell Laptop.&lt;br /&gt;
@@ -117,7 +117,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 &lt;li&gt;&lt;p&gt;System monitoring: htop, iotop, saidar&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;searching:66&#34;&gt;Searching&lt;/h2&gt;
+&lt;h2 id=&#34;searching:64&#34;&gt;Searching&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;grep -H &#39;&amp;lt;string&amp;gt;&#39; *.&amp;lt;ext&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -125,7 +125,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 &lt;li&gt;&lt;code&gt;sudo updatedb &amp;amp;&amp;amp; locate &amp;lt;nomefile&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;download:66&#34;&gt;Download&lt;/h2&gt;
+&lt;h2 id=&#34;download:64&#34;&gt;Download&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;download music from youtube&lt;/p&gt;
@@ -137,7 +137,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 ````python
 #!/usr/bin/env python&lt;/p&gt;
 
-&lt;h1 id=&#34;coding-utf8:66&#34;&gt;-&lt;em&gt;- coding: utf8 -&lt;/em&gt;-&lt;/h1&gt;&lt;/li&gt;
+&lt;h1 id=&#34;coding-utf8:64&#34;&gt;-&lt;em&gt;- coding: utf8 -&lt;/em&gt;-&lt;/h1&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;import os, time

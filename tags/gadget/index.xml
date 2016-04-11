@@ -32,7 +32,7 @@ The first things I have understood banging against them were:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;camb:100&#34;&gt;CAMB&lt;/h2&gt;
+&lt;h2 id=&#34;camb:102&#34;&gt;CAMB&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start with the
 &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&amp;quot; target&#34;&gt;main CAMB interface&lt;/a&gt;.
@@ -234,7 +234,7 @@ installation of the FFTW so I didn&amp;rsquo;t try it.&lt;/p&gt;
 
 &lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
 
-&lt;h2 id=&#34;installation-of-gsl-and-fftw:102&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:103&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
 
 &lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
 Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;lt;archive name&amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
@@ -271,7 +271,7 @@ Password:
 snip: lots of diagnostic output
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;play-with-gadget2:102&#34;&gt;Play with Gadget2&lt;/h2&gt;
+&lt;h2 id=&#34;play-with-gadget2:103&#34;&gt;Play with Gadget2&lt;/h2&gt;
 
 &lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
 To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;

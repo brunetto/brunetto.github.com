@@ -17,7 +17,7 @@
       <guid>http://brunettoziosi.eu/posts/docker-installation/</guid>
       <description>
 
-&lt;h2 id=&#34;what-is-docker:3&#34;&gt;What is Docker?&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-docker:2&#34;&gt;What is Docker?&lt;/h2&gt;
 
 &lt;p&gt;In &lt;a href=&#34;http://samsaffron.com/archive/2013/11/07/discourse-in-a-docker-container&#34;&gt;short&lt;/a&gt;:&lt;/p&gt;
 
@@ -43,7 +43,7 @@ best (in my opinion) way to install it on *buntu. However, I think it is
 one of the solution (see also &lt;a href=&#34;http://www.ubuntu.com/cloud/tools/lxd&#34;&gt;LXD&lt;/a&gt; containers)
 science should look at when dealing with reproducibility, easiness, sharing and so on.&lt;/p&gt;
 
-&lt;h2 id=&#34;docker-installation:3&#34;&gt;Docker installation&lt;/h2&gt;
+&lt;h2 id=&#34;docker-installation:2&#34;&gt;Docker installation&lt;/h2&gt;
 
 &lt;p&gt;See also &lt;a href=&#34;https://github.com/brunetto/docker-cheat-sheet#linux&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -76,7 +76,7 @@ sudo service docker restart
 
 &lt;p&gt;then update GRUB with &lt;code&gt;sudo update-grub&lt;/code&gt; and reboot.&lt;/p&gt;
 
-&lt;h2 id=&#34;useful-commands:3&#34;&gt;Useful commands&lt;/h2&gt;
+&lt;h2 id=&#34;useful-commands:2&#34;&gt;Useful commands&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;docker&lt;/code&gt; &lt;a href=&#34;https://docs.docker.com/reference/commandline/cli/#attach&#34;&gt;attach&lt;/a&gt;,
@@ -98,7 +98,7 @@ sudo service docker restart
 &lt;li&gt;&lt;p&gt;Attach to a running container with &lt;code&gt;docker attach &amp;lt;container name&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;other-resources:3&#34;&gt;Other resources&lt;/h2&gt;
+&lt;h2 id=&#34;other-resources:2&#34;&gt;Other resources&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://registry.hub.docker.com&#34;&gt;Registry/repository&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;

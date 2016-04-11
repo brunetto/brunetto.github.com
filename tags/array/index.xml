@@ -19,7 +19,7 @@
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
 
-&lt;h2 id=&#34;create:91&#34;&gt;Create&lt;/h2&gt;
+&lt;h2 id=&#34;create:90&#34;&gt;Create&lt;/h2&gt;
 
 &lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
 
@@ -48,7 +48,7 @@ f.close()
 
 &lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
 
-&lt;h2 id=&#34;remove-duplicates:91&#34;&gt;Remove duplicates&lt;/h2&gt;
+&lt;h2 id=&#34;remove-duplicates:90&#34;&gt;Remove duplicates&lt;/h2&gt;
 
 &lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
 
@@ -67,7 +67,7 @@ Out:
 	array([3, 2, 2, 4, 1, 5, 0]))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;recreate:91&#34;&gt;Recreate&lt;/h2&gt;
+&lt;h2 id=&#34;recreate:90&#34;&gt;Recreate&lt;/h2&gt;
 
 &lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
 To do this a possible solution is:&lt;/p&gt;

@@ -132,18 +132,18 @@
 <ul>
 <li>
 <ul>
-<li><a href="#header-files:90">Header files</a></li>
-<li><a href="#compile:90">Compile</a></li>
-<li><a href="#macros-preprocessor:90">MACROS &amp; preprocessor</a></li>
-<li><a href="#numbers:90">Numbers</a></li>
-<li><a href="#cast:90">Cast</a></li>
-<li><a href="#bool:90">Bool</a></li>
-<li><a href="#side-effect-and-short-circuit:90">Side effect and short-circuit</a></li>
-<li><a href="#ternary-operator:90">Ternary operator</a></li>
-<li><a href="#stack-and-heap:90">Stack and heap</a></li>
-<li><a href="#arrays:90">Arrays</a></li>
-<li><a href="#structs:90">Structs</a></li>
-<li><a href="#strings:90">Strings</a></li>
+<li><a href="#header-files:89">Header files</a></li>
+<li><a href="#compile:89">Compile</a></li>
+<li><a href="#macros-preprocessor:89">MACROS &amp; preprocessor</a></li>
+<li><a href="#numbers:89">Numbers</a></li>
+<li><a href="#cast:89">Cast</a></li>
+<li><a href="#bool:89">Bool</a></li>
+<li><a href="#side-effect-and-short-circuit:89">Side effect and short-circuit</a></li>
+<li><a href="#ternary-operator:89">Ternary operator</a></li>
+<li><a href="#stack-and-heap:89">Stack and heap</a></li>
+<li><a href="#arrays:89">Arrays</a></li>
+<li><a href="#structs:89">Structs</a></li>
+<li><a href="#strings:89">Strings</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -205,11 +205,11 @@
 
 <p>Here I would like to post some of the ideas, tricks, truths, and so on I&rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.</p>
 
-<h2 id="header-files:90">Header files</h2>
+<h2 id="header-files:89">Header files</h2>
 
 <p>They are one of the first annoying things I see in C/C++ languages. Two files for each &ldquo;module&rdquo;, two lines to be modified every times, &hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&rsquo;s code, you can share or download compiled code+header files and not all the sources.</p>
 
-<h2 id="compile:90">Compile</h2>
+<h2 id="compile:89">Compile</h2>
 
 <p>The easiest way to compile the sources and get the executable is</p>
 
@@ -234,7 +234,7 @@ A better way is to include some flags</p>
 <li><code>-o</code> to specify the output</li>
 </ul>
 
-<h2 id="macros-preprocessor:90">MACROS &amp; preprocessor</h2>
+<h2 id="macros-preprocessor:89">MACROS &amp; preprocessor</h2>
 
 <p>The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &ldquo;constant&rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it</p>
 
@@ -260,12 +260,12 @@ float a = PI;
 
 <p>Compiling with the <code>-E</code> flag you can view the result of the preprocessor action.</p>
 
-<h2 id="numbers:90">Numbers</h2>
+<h2 id="numbers:89">Numbers</h2>
 
 <p>Number variables are similar to those in other programming languages, but there&rsquo;s some peculiarities.<br />
 Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.</p>
 
-<h2 id="cast:90">Cast</h2>
+<h2 id="cast:89">Cast</h2>
 
 <p>It&rsquo;s possible to convert one type to some other type. For example,</p>
 
@@ -273,11 +273,11 @@ Integer dimension depends on the machine and on the compiler, on the contrary fl
 pippo = (float) k*1024L;
 </code></pre>
 
-<h2 id="bool:90">Bool</h2>
+<h2 id="bool:89">Bool</h2>
 
 <p>There aren&rsquo;t boolean variables, but 0 stands for <code>False</code> and any other non-zero value means <code>True</code>.</p>
 
-<h2 id="side-effect-and-short-circuit:90">Side effect and short-circuit</h2>
+<h2 id="side-effect-and-short-circuit:89">Side effect and short-circuit</h2>
 
 <p>Something like</p>
 
@@ -287,7 +287,7 @@ pippo = (float) k*1024L;
 <p>has indefinite result because it&rsquo;s not predictable the order of evaluation of operand/expression <code>k</code> and <code>++k</code>, and those expressions have <em>side effects</em> on the other expression involved in the result.<br />
 Logical operators <code>&amp;&amp;</code> and <code>||</code> instead are evaluated strictly from left to right. This is c<em>alled short-circuit evaluation</em> and the operators are synchronization points, just like &ldquo;;&rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.</p>
 
-<h2 id="ternary-operator:90">Ternary operator</h2>
+<h2 id="ternary-operator:89">Ternary operator</h2>
 
 <p>The ternary operator accept three arguments and has the form of</p>
 
@@ -352,11 +352,11 @@ Because the dereferencing operator has not the highest precedence, sometimes you
 pippo-&amp;gt;pluto
 </code></pre>
 
-<h2 id="stack-and-heap:90">Stack and heap</h2>
+<h2 id="stack-and-heap:89">Stack and heap</h2>
 
 <p>The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &ldquo;<em>memory leak</em>&rdquo;.</p>
 
-<h2 id="arrays:90">Arrays</h2>
+<h2 id="arrays:89">Arrays</h2>
 
 <p>There&rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;</p>
 
@@ -425,7 +425,7 @@ void array_destruction(float** ptr, int lenghty){
 
 <p>It&rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &ldquo;linearized&rdquo; row-major order so it&rsquo;s faster to &ldquo;run&rdquo; on the row index (that on the right-most one). This is known as <a href="http://en.wikipedia.org/wiki/Stride_of_an_array" target="_blank">stride one access</a>.</p>
 
-<h2 id="structs:90">Structs</h2>
+<h2 id="structs:89">Structs</h2>
 
 <p>An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:</p>
 
@@ -449,7 +449,7 @@ Tree smaller, larger; /* equivalently, this line could say
 
 <p>(From Cineca&rsquo;s slides)</p>
 
-<h2 id="strings:90">Strings</h2>
+<h2 id="strings:89">Strings</h2>
 
 <p>Strings are simply arrays of characters, usually terminated with the &ldquo;null&rdquo; character &ldquo;<code>&quot; to be able to use the string manipulation libraries (without &quot;</code>&rdquo; you should give the length of the string to the library, but they are not designed to do this).<br />
 Because of this, the two expression that follows are equivalent:</p>

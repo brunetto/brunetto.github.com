@@ -139,7 +139,7 @@ are more relevant on the formation and evolution of such binaries and how they i
 
 &lt;p&gt;&lt;a href=&#34;../GW-links&#34;&gt;GW useful links&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;phd-exams-and-courses:23&#34;&gt;PhD exams and courses&lt;/h2&gt;
+&lt;h2 id=&#34;phd-exams-and-courses:22&#34;&gt;PhD exams and courses&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
@@ -155,7 +155,7 @@ are more relevant on the formation and evolution of such binaries and how they i
 &lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;phd-schools-and-conferences:23&#34;&gt;PhD schools and conferences&lt;/h2&gt;
+&lt;h2 id=&#34;phd-schools-and-conferences:22&#34;&gt;PhD schools and conferences&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
@@ -174,6 +174,8 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 &lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../img/tyrion.png&#34; alt=&#34;tyryon_phd&#34; title=&#34;Tyrion PhD&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -189,7 +191,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:58&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:55&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -204,7 +206,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:58&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:55&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
@@ -290,7 +292,7 @@ test_gravity_N2ngb 900
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:58&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:55&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;change configure CUDA lines:
@@ -305,18 +307,18 @@ CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr
 CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:58&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:55&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:58&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:55&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
 &lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-&lt;h1 id=&#34;where-to-find-grape-libraries:58&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:55&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:58&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:55&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
 &lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 
@@ -409,7 +411,7 @@ quantum/relativistic/strange matters&lt;/li&gt;
       <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
-&lt;h2 id=&#34;phd-project-phd:74&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;phd-project-phd:71&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
 compact-object binaries&lt;/strong&gt;&lt;/p&gt;
@@ -424,7 +426,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 
 &lt;p&gt;More info &lt;a href=&#34;../phd&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;scientific-interests:74&#34;&gt;Scientific interests&lt;/h3&gt;
+&lt;h3 id=&#34;scientific-interests:71&#34;&gt;Scientific interests&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
@@ -434,7 +436,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 &lt;li&gt;big data analysis and visualization&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;master-thesis-master:74&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;master-thesis-master:71&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My master thesis involved developing a code to calculate the cross-correlation
 among the centers of dark matter haloes in cosmological simulations.
@@ -443,12 +445,12 @@ commonly preferred in literature to be able to catch the small features expected
 small scales. The code is, however, based on a KD-tree to reduce the time needed and
 run in parallel over multiple slices form the same simulation box.&lt;/p&gt;
 
-&lt;h2 id=&#34;bachelor-thesis-master:74&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;bachelor-thesis-master:71&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My bachelor thesis was about the use of optical vortexes (light beams with distorted
 wavefronts) in astrophysics.&lt;/p&gt;
 
-&lt;h2 id=&#34;useful-links:74&#34;&gt;Useful links&lt;/h2&gt;
+&lt;h2 id=&#34;useful-links:71&#34;&gt;Useful links&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,

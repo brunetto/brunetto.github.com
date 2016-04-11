@@ -29,7 +29,7 @@ blog with Python, Nikola and Git.&lt;/p&gt;
 &lt;li&gt; &lt;a href=&#34;http://cogumbreiro.blogspot.it/2013/05/how-to-install-git-subtree-in-ubuntu.html&#34;&gt;http://cogumbreiro.blogspot.it/2013/05/how-to-install-git-subtree-in-ubuntu.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;nikola:80&#34;&gt;Nikola&lt;/h2&gt;
+&lt;h2 id=&#34;nikola:79&#34;&gt;Nikola&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;first of all install some prerequisites:&lt;/p&gt;
@@ -91,7 +91,7 @@ add the search box, the disqus comments, if to use teasers and so on)&lt;/p&gt;&
 locally at &lt;a href=&#34;localhost:8000&#34;&gt;&lt;code&gt;localhost:8000&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;github:80&#34;&gt;GitHub&lt;/h2&gt;
+&lt;h2 id=&#34;github:79&#34;&gt;GitHub&lt;/h2&gt;
 
 &lt;p&gt;Now we want to deploy the blog on the blogging platform GitHub Pages.
 To do this you need a &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; account.&lt;br /&gt;
@@ -170,7 +170,7 @@ nikola deploy
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;google-authorship:80&#34;&gt;Google Authorship&lt;/h2&gt;
+&lt;h2 id=&#34;google-authorship:79&#34;&gt;Google Authorship&lt;/h2&gt;
 
 &lt;p&gt;It&amp;rsquo;s possible to let Google recognize and connect your contribution to the blog,
 that is, the posts will appear with your G+ profile photos and some information in the search results.&lt;/p&gt;
@@ -203,7 +203,7 @@ template folder from the parent theme folder to your theme and modify the templa
 &lt;li&gt;&lt;a href=&#34;https://support.google.com/plus/contact/page_verification&#34;&gt;Google+ page verification&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;cname-and-personal-domain:80&#34;&gt;CNAME and personal domain&lt;/h2&gt;
+&lt;h2 id=&#34;cname-and-personal-domain:79&#34;&gt;CNAME and personal domain&lt;/h2&gt;
 
 &lt;p&gt;If you have a personal domain you can let github serve that domain.
 In brief, following &lt;a href=&#34;http://blog.sathomas.me/post/custom-domains-with-github-pages&#34;&gt;this post&lt;/a&gt;
