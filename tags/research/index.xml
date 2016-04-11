@@ -946,7 +946,7 @@ g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CU
       <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
-&lt;h2 id=&#34;phd-project-phd:71&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;phd-project-phd:70&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
 compact-object binaries&lt;/strong&gt;&lt;/p&gt;
@@ -961,7 +961,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 
 &lt;p&gt;More info &lt;a href=&#34;../phd&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;scientific-interests:71&#34;&gt;Scientific interests&lt;/h3&gt;
+&lt;h3 id=&#34;scientific-interests:70&#34;&gt;Scientific interests&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
@@ -971,7 +971,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 &lt;li&gt;big data analysis and visualization&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;master-thesis-master:71&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;master-thesis-master:70&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My master thesis involved developing a code to calculate the cross-correlation
 among the centers of dark matter haloes in cosmological simulations.
@@ -980,12 +980,12 @@ commonly preferred in literature to be able to catch the small features expected
 small scales. The code is, however, based on a KD-tree to reduce the time needed and
 run in parallel over multiple slices form the same simulation box.&lt;/p&gt;
 
-&lt;h2 id=&#34;bachelor-thesis-master:71&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;bachelor-thesis-master:70&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My bachelor thesis was about the use of optical vortexes (light beams with distorted
 wavefronts) in astrophysics.&lt;/p&gt;
 
-&lt;h2 id=&#34;useful-links:71&#34;&gt;Useful links&lt;/h2&gt;
+&lt;h2 id=&#34;useful-links:70&#34;&gt;Useful links&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,
