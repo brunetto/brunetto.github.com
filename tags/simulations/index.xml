@@ -706,11 +706,11 @@ h5.root.group.name.read()
 
 &lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
 
-&lt;h2 id=&#34;the-ide:99&#34;&gt;The IDE&lt;/h2&gt;
+&lt;h2 id=&#34;the-ide:101&#34;&gt;The IDE&lt;/h2&gt;
 
 &lt;p&gt;When I write little pieces of code I usually find &lt;a href=&#34;http://kate-editor.org/&#34; target=&#34;_blank&#34; title=&#34;Kate Editor&#34;&gt;Kate&lt;/a&gt; comfortable enough but to explore projects like &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt; I prefer to use something like &lt;a href=&#34;http://kdevelop.org/&#34; target=&#34;_blank&#34; title=&#34;KDevelop&#34;&gt;KDevelop&lt;/a&gt; because it&amp;rsquo;s easier to manage where a variable is defined, declared and used. And it do this only by positioning the mouse on the variable name. If you put the mouse on a known function (from the standard library for example), KDevelop will open the documentation for you.&lt;/p&gt;
 
-&lt;h2 id=&#34;doxygen:99&#34;&gt;Doxygen&lt;/h2&gt;
+&lt;h2 id=&#34;doxygen:101&#34;&gt;Doxygen&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen&#34; target=&#34;_blank&#34; title=&#34;Doxygen&#34;&gt;Doxygen&lt;/a&gt; is a documentation system. It allows you to produce documentation for a project from the comments in the code. With no additional work you can &lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen/docblocks.html#specialblock&#34; target=&#34;_blank&#34; title=&#34;Comment in Doxigen&#34;&gt;comment&lt;/a&gt; your code and be ready to produce the documentation. In KDevelop Doxygen style for comments has a different (and nice) coloring.&lt;/p&gt;
 

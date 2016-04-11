@@ -19,11 +19,11 @@
 
 &lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
 
-&lt;h2 id=&#34;header-files:92&#34;&gt;Header files&lt;/h2&gt;
+&lt;h2 id=&#34;header-files:90&#34;&gt;Header files&lt;/h2&gt;
 
 &lt;p&gt;They are one of the first annoying things I see in C/C++ languages. Two files for each &amp;ldquo;module&amp;rdquo;, two lines to be modified every times, &amp;hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&amp;rsquo;s code, you can share or download compiled code+header files and not all the sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;compile:92&#34;&gt;Compile&lt;/h2&gt;
+&lt;h2 id=&#34;compile:90&#34;&gt;Compile&lt;/h2&gt;
 
 &lt;p&gt;The easiest way to compile the sources and get the executable is&lt;/p&gt;
 
@@ -48,7 +48,7 @@ A better way is to include some flags&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;-o&lt;/code&gt; to specify the output&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;macros-preprocessor:92&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
+&lt;h2 id=&#34;macros-preprocessor:90&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
 
 &lt;p&gt;The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &amp;ldquo;constant&amp;rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it&lt;/p&gt;
 
@@ -74,12 +74,12 @@ float a = PI;
 
 &lt;p&gt;Compiling with the &lt;code&gt;-E&lt;/code&gt; flag you can view the result of the preprocessor action.&lt;/p&gt;
 
-&lt;h2 id=&#34;numbers:92&#34;&gt;Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;numbers:90&#34;&gt;Numbers&lt;/h2&gt;
 
 &lt;p&gt;Number variables are similar to those in other programming languages, but there&amp;rsquo;s some peculiarities.&lt;br /&gt;
 Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.&lt;/p&gt;
 
-&lt;h2 id=&#34;cast:92&#34;&gt;Cast&lt;/h2&gt;
+&lt;h2 id=&#34;cast:90&#34;&gt;Cast&lt;/h2&gt;
 
 &lt;p&gt;It&amp;rsquo;s possible to convert one type to some other type. For example,&lt;/p&gt;
 
@@ -87,11 +87,11 @@ Integer dimension depends on the machine and on the compiler, on the contrary fl
 pippo = (float) k*1024L;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;bool:92&#34;&gt;Bool&lt;/h2&gt;
+&lt;h2 id=&#34;bool:90&#34;&gt;Bool&lt;/h2&gt;
 
 &lt;p&gt;There aren&amp;rsquo;t boolean variables, but 0 stands for &lt;code&gt;False&lt;/code&gt; and any other non-zero value means &lt;code&gt;True&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;side-effect-and-short-circuit:92&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
+&lt;h2 id=&#34;side-effect-and-short-circuit:90&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
 
 &lt;p&gt;Something like&lt;/p&gt;
 
@@ -101,7 +101,7 @@ pippo = (float) k*1024L;
 &lt;p&gt;has indefinite result because it&amp;rsquo;s not predictable the order of evaluation of operand/expression &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;++k&lt;/code&gt;, and those expressions have &lt;em&gt;side effects&lt;/em&gt; on the other expression involved in the result.&lt;br /&gt;
 Logical operators &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; and &lt;code&gt;||&lt;/code&gt; instead are evaluated strictly from left to right. This is c&lt;em&gt;alled short-circuit evaluation&lt;/em&gt; and the operators are synchronization points, just like &amp;ldquo;;&amp;rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.&lt;/p&gt;
 
-&lt;h2 id=&#34;ternary-operator:92&#34;&gt;Ternary operator&lt;/h2&gt;
+&lt;h2 id=&#34;ternary-operator:90&#34;&gt;Ternary operator&lt;/h2&gt;
 
 &lt;p&gt;The ternary operator accept three arguments and has the form of&lt;/p&gt;
 
@@ -166,11 +166,11 @@ Because the dereferencing operator has not the highest precedence, sometimes you
 pippo-&amp;amp;gt;pluto
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;stack-and-heap:92&#34;&gt;Stack and heap&lt;/h2&gt;
+&lt;h2 id=&#34;stack-and-heap:90&#34;&gt;Stack and heap&lt;/h2&gt;
 
 &lt;p&gt;The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&amp;rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &amp;ldquo;&lt;em&gt;memory leak&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;
 
-&lt;h2 id=&#34;arrays:92&#34;&gt;Arrays&lt;/h2&gt;
+&lt;h2 id=&#34;arrays:90&#34;&gt;Arrays&lt;/h2&gt;
 
 &lt;p&gt;There&amp;rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;&lt;/p&gt;
 
@@ -239,7 +239,7 @@ void array_destruction(float** ptr, int lenghty){
 
 &lt;p&gt;It&amp;rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &amp;ldquo;linearized&amp;rdquo; row-major order so it&amp;rsquo;s faster to &amp;ldquo;run&amp;rdquo; on the row index (that on the right-most one). This is known as &lt;a href=&#34;http://en.wikipedia.org/wiki/Stride_of_an_array&#34; target=&#34;_blank&#34;&gt;stride one access&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;structs:92&#34;&gt;Structs&lt;/h2&gt;
+&lt;h2 id=&#34;structs:90&#34;&gt;Structs&lt;/h2&gt;
 
 &lt;p&gt;An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:&lt;/p&gt;
 
@@ -263,7 +263,7 @@ Tree smaller, larger; /* equivalently, this line could say
 
 &lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
 
-&lt;h2 id=&#34;strings:92&#34;&gt;Strings&lt;/h2&gt;
+&lt;h2 id=&#34;strings:90&#34;&gt;Strings&lt;/h2&gt;
 
 &lt;p&gt;Strings are simply arrays of characters, usually terminated with the &amp;ldquo;null&amp;rdquo; character &amp;ldquo;&lt;code&gt;&amp;quot; to be able to use the string manipulation libraries (without &amp;quot;&lt;/code&gt;&amp;rdquo; you should give the length of the string to the library, but they are not designed to do this).&lt;br /&gt;
 Because of this, the two expression that follows are equivalent:&lt;/p&gt;
@@ -330,11 +330,11 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
 &lt;p&gt;I said that &lt;code&gt;$M^*$&lt;/code&gt; is the typical mass of a perturbation that, at the time we are looking, has the associated liner density contrast &lt;code&gt;$\delta(\mathbf{x})\sim1$, or, in the formalism of the excursion set, pass the barrier of &amp;amp;nbsp;$\delta_c=1.686$.     
 This means that we are looking for a perturbation with&lt;/code&gt;$\sigma\simeq1.686$` and trying to quantify the mass it contains.&lt;/p&gt;
 
-&lt;h2 id=&#34;sigma-and-r:95&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
+&lt;h2 id=&#34;sigma-and-r:97&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
 
 &lt;p&gt;First of all we need to find the radius of a perturbation whose &lt;code&gt;$\sigma$&lt;/code&gt; reached the value of 1.686. To do this we can use the &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/&#34; target=&#34;_blank&#34; title=&#34;The “Initial Conditions” saga&#34;&gt;code&lt;/a&gt; developed to manage the CAMB files in order to find the matter power spectrum and its normalization. Then we add few lines to &amp;ldquo;sample&amp;rdquo; the &lt;code&gt;$\sigma(R)$&lt;/code&gt; distribution and find the radius of the perturbation reaching the excursion set barrier for the collapse.&lt;/p&gt;
 
-&lt;h2 id=&#34;m:95&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;m:97&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;Once we have the radius for which &lt;code&gt;$\sigma = \delta_c$&lt;/code&gt; we need to know the mean density in the universe to find &lt;code&gt;$M^*$&lt;/code&gt; with:&lt;/p&gt;
 
@@ -629,7 +629,7 @@ The first things I have understood banging against them were:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;camb:102&#34;&gt;CAMB&lt;/h2&gt;
+&lt;h2 id=&#34;camb:100&#34;&gt;CAMB&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start with the
 &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&amp;quot; target&#34;&gt;main CAMB interface&lt;/a&gt;.
@@ -846,7 +846,7 @@ $\delta_{lin}\sim1.686$.&lt;/p&gt;
 
 &lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
 
-&lt;h2 id=&#34;installation-of-gsl-and-fftw:104&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:102&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
 
 &lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
 Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;lt;archive name&amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
@@ -883,7 +883,7 @@ Password:
 snip: lots of diagnostic output
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;play-with-gadget2:104&#34;&gt;Play with Gadget2&lt;/h2&gt;
+&lt;h2 id=&#34;play-with-gadget2:102&#34;&gt;Play with Gadget2&lt;/h2&gt;
 
 &lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
 To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;
@@ -1422,7 +1422,7 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
       <guid>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
       <description>
 
-&lt;h2 id=&#34;limitations:115&#34;&gt;Limitations&lt;/h2&gt;
+&lt;h2 id=&#34;limitations:116&#34;&gt;Limitations&lt;/h2&gt;
 
 &lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
 simulations. Let&amp;rsquo;s review these in detail.&lt;br /&gt;
@@ -1458,7 +1458,7 @@ velocities.&lt;br /&gt;
 Methods have been developed to take the missing &amp;ldquo;larger than the box&amp;rdquo; wave modes&lt;br /&gt;
 into account and we will have a look on these in a future post.&lt;/p&gt;
 
-&lt;h2 id=&#34;some-considerations:115&#34;&gt;Some considerations&lt;/h2&gt;
+&lt;h2 id=&#34;some-considerations:116&#34;&gt;Some considerations&lt;/h2&gt;
 
 &lt;p&gt;As we have seen (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-1-why-and-what.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #1: why and what?&#34;&gt;here&lt;/a&gt;) N-body cosmological simulations&lt;br /&gt;
 are useful to understand aspects of non-linear gravitational clustering,&lt;br /&gt;
@@ -1507,7 +1507,7 @@ some of this assumption can lead to improved predictions.&lt;/p&gt;
       <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
       <description>
 
-&lt;h3 id=&#34;equations-of-motion:116&#34;&gt;Equations of motion&lt;/h3&gt;
+&lt;h3 id=&#34;equations-of-motion:115&#34;&gt;Equations of motion&lt;/h3&gt;
 
 &lt;p&gt;Once we have learned how to calculate gravitational forces and decided which way is best for us, it&amp;rsquo;s time to move particles according to the force field.&lt;br /&gt;
 To have an idea of what happens we can look at a simplified version of the pp-method, where the new coordinates and velocities are expressed starting from the previous values:&lt;/p&gt;
@@ -1524,7 +1524,7 @@ $\mathbf{x}_i^{new}=\mathbf{x}_i^{old}+\mathbf{v}_i\Delta t$&lt;/p&gt;
 &lt;p&gt;Here $\mathbf{x}=\frac{\mathbf{r}}{a(t)}$ is the comoving coordinate of a particle, with $\mathbf{r}$ the physical coordinate; $\phi$ is the gravitational potential due to the density perturbations, $H_0$ the Hubble constant and $\Omega_0$ the density parameter at the present time. In real simulations these equations are modified changing variables to simplify the integration but the idea remain the same. They are valid for non-relativistic matter and on scales smaller than the Hubble radius $c/H_0$. The expansion of the universe act as a viscous force that opposes to the gravitational infall slowing down the growth of perturbations.&lt;br /&gt;
 Usually to integrate (read it as &amp;ldquo;to solve&amp;rdquo;!:P) the equations and obtain the new positions and velocities we use the Leap-Frog method because it minimizes the number of force evaluations. This is the most time consuming part of the code: Leap-Frog only requires one evaluation and the corresponding error is of the order of $\Delta t^3$. In this method positions and accelerations are computed at integer time steps and velocities at half time step: for example, positions are calculated at $t$ and velocities at $t+\Delta t/2$.&lt;/p&gt;
 
-&lt;h3 id=&#34;time-stepping:116&#34;&gt;Time stepping&lt;/h3&gt;
+&lt;h3 id=&#34;time-stepping:115&#34;&gt;Time stepping&lt;/h3&gt;
 
 &lt;p&gt;Choosing the simulation time step, that is the intervals between two calculation of positions and/or velocities, is crucial both for performances of the code and errors generation. Shorter time steps give smaller errors, but slow down the simulation.&lt;br /&gt;
 Time steps depend on the distribution of particles and may change during the evolution of the simulation. Use of individual time steps for each particle may speed up calculations, because we can tune the time step on for different particles, increasing the time resolution for particles in denser regions and decreasing it in low density regions. In this way larger $\Delta t$ are sufficient. When we decide the time step we have also to take care of the conservation of momentum and evolution of energy if it&amp;rsquo;s not conserved (it can evolve according to the Irvine-Layzer equation).&lt;br /&gt;

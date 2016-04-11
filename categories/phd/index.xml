@@ -189,7 +189,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:56&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:58&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -204,7 +204,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:56&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:58&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
@@ -290,7 +290,7 @@ test_gravity_N2ngb 900
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:56&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:58&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;change configure CUDA lines:
@@ -305,18 +305,18 @@ CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr
 CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:56&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:58&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:56&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:58&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
 &lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-&lt;h1 id=&#34;where-to-find-grape-libraries:56&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:58&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:56&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:58&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
 &lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 
@@ -350,15 +350,15 @@ g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CU
       <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
       <description>
 
-&lt;h3 id=&#34;license:57&#34;&gt;License&lt;/h3&gt;
+&lt;h3 id=&#34;license:56&#34;&gt;License&lt;/h3&gt;
 
 &lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; href=&#34;http://purl.org/dc/dcmitype/StillImage&#34; property=&#34;dct:title&#34; rel=&#34;dct:type&#34;&gt;AstroFelpa&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;BrunettoZiosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;Permissions beyond the scope of this license may be available at &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;www.brunettoziosi.eu/stories/research/astrofelpa.html&#34; rel=&#34;cc:morePermissions&#34;&gt;www.brunettoziosi.eu/stories/research/astrofelpa.html&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;shop-available-now:57&#34;&gt;Shop available now!!!&lt;/h3&gt;
+&lt;h3 id=&#34;shop-available-now:56&#34;&gt;Shop available now!!!&lt;/h3&gt;
 
 &lt;p&gt;You can purchase the t-shirt and other material from &lt;a href=&#34;http://astrophd.spreadshirt.it/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;astrop-h-d:57&#34;&gt;AstroP(h)D&lt;/h3&gt;
+&lt;h3 id=&#34;astrop-h-d:56&#34;&gt;AstroP(h)D&lt;/h3&gt;
 
 &lt;p&gt;AstroFelpa is an indipendent initiative with the purpose to represent
 the Padua astronomers and all their friends and supporters.&lt;br /&gt;
@@ -384,11 +384,11 @@ quantum/relativistic/strange matters&lt;/li&gt;
 
 &lt;p&gt;Then some new ideas!:P&lt;/p&gt;
 
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-keepcalmand-png-width-50-height-50:57&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/keepCalmAnd.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-keepcalmand-png-width-50-height-50:56&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/keepCalmAnd.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
 
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-gogo-png-width-50-height-50-br:57&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goGo.png&#34;width=&#34;50%&#34; height=&#34;50%&#34; &gt;&lt;/br&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-gogo-png-width-50-height-50-br:56&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goGo.png&#34;width=&#34;50%&#34; height=&#34;50%&#34; &gt;&lt;/br&gt;&lt;/h2&gt;
 
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-f77-png-width-50-height-50:57&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/f77.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-f77-png-width-50-height-50:56&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/f77.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goSM.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/p&gt;
 
@@ -409,7 +409,7 @@ quantum/relativistic/strange matters&lt;/li&gt;
       <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
-&lt;h2 id=&#34;phd-project-phd:73&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;phd-project-phd:74&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
 compact-object binaries&lt;/strong&gt;&lt;/p&gt;
@@ -424,7 +424,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 
 &lt;p&gt;More info &lt;a href=&#34;../phd&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;scientific-interests:73&#34;&gt;Scientific interests&lt;/h3&gt;
+&lt;h3 id=&#34;scientific-interests:74&#34;&gt;Scientific interests&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
@@ -434,7 +434,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 &lt;li&gt;big data analysis and visualization&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;master-thesis-master:73&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;master-thesis-master:74&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My master thesis involved developing a code to calculate the cross-correlation
 among the centers of dark matter haloes in cosmological simulations.
@@ -443,12 +443,12 @@ commonly preferred in literature to be able to catch the small features expected
 small scales. The code is, however, based on a KD-tree to reduce the time needed and
 run in parallel over multiple slices form the same simulation box.&lt;/p&gt;
 
-&lt;h2 id=&#34;bachelor-thesis-master:73&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;bachelor-thesis-master:74&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My bachelor thesis was about the use of optical vortexes (light beams with distorted
 wavefronts) in astrophysics.&lt;/p&gt;
 
-&lt;h2 id=&#34;useful-links:73&#34;&gt;Useful links&lt;/h2&gt;
+&lt;h2 id=&#34;useful-links:74&#34;&gt;Useful links&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,

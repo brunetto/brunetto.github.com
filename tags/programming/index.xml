@@ -4774,7 +4774,7 @@ ssh you@B # to check if it works
 &lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:20&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:22&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
@@ -4782,7 +4782,7 @@ ssh you@B # to check if it works
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;gaussian-processes-variograms-kriging:20&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:22&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 

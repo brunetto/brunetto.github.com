@@ -132,14 +132,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:56">To install CUDA you can try with the CUDA packages in the Ubuntu repositories.</a></li>
-<li><a href="#sapporo:56">Sapporo</a></li>
-<li><a href="#starlab:56">StarLab</a></li>
+<li><a href="#to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:58">To install CUDA you can try with the CUDA packages in the Ubuntu repositories.</a></li>
+<li><a href="#sapporo:58">Sapporo</a></li>
+<li><a href="#starlab:58">StarLab</a></li>
 </ul></li>
-<li><a href="#cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:56">CUDAINC=&ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&rdquo;</a></li>
-<li><a href="#cudalib-l-usr-local-cuda-5-0-lib64-lcudart:56">CUDALIB=&ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&rdquo;</a></li>
-<li><a href="#where-to-find-grape-libraries:56">Where to find GRAPE libraries:</a></li>
-<li><a href="#grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:56">GRAPE<em>LDFLAGS</em>=&lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&rsquo;</a></li>
+<li><a href="#cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:58">CUDAINC=&ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&rdquo;</a></li>
+<li><a href="#cudalib-l-usr-local-cuda-5-0-lib64-lcudart:58">CUDALIB=&ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&rdquo;</a></li>
+<li><a href="#where-to-find-grape-libraries:58">Where to find GRAPE libraries:</a></li>
+<li><a href="#grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:58">GRAPE<em>LDFLAGS</em>=&lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&rsquo;</a></li>
 </ul>
 </nav>
 		    </div>
@@ -186,7 +186,7 @@
 
 <p><a href="../../../../posts/starlab-gpu-installation">Click here for the <strong>new guide!!!</strong></a></p>
 
-<h2 id="to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:56">To install CUDA you can try with the CUDA packages in the Ubuntu repositories.</h2>
+<h2 id="to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:58">To install CUDA you can try with the CUDA packages in the Ubuntu repositories.</h2>
 
 <p>If they fail, you have to download CUDA from ****</p>
 
@@ -201,7 +201,7 @@
 
 <!-- TEASER_END -->
 
-<h2 id="sapporo:56">Sapporo</h2>
+<h2 id="sapporo:58">Sapporo</h2>
 
 <ul>
 <li><p>in setup_sapporo.sh change</p>
@@ -287,7 +287,7 @@ test_gravity_N2ngb 900
 <p>where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.</p>
 
-<h2 id="starlab:56">StarLab</h2>
+<h2 id="starlab:58">StarLab</h2>
 
 <ul>
 <li>change configure CUDA lines:
@@ -302,18 +302,18 @@ CUDAINC=&ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/inc
 CUDALIB=&ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&rdquo;</li>
 </ul>
 
-<h1 id="cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:56">CUDAINC=&ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&rdquo;</h1>
+<h1 id="cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:58">CUDAINC=&ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&rdquo;</h1>
 
-<h1 id="cudalib-l-usr-local-cuda-5-0-lib64-lcudart:56">CUDALIB=&ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&rdquo;</h1>
+<h1 id="cudalib-l-usr-local-cuda-5-0-lib64-lcudart:58">CUDALIB=&ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&rdquo;</h1>
 
 <p>LIBS1=&ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&rdquo;</p>
 
 <p>#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1</p>
 
-<h1 id="where-to-find-grape-libraries:56">Where to find GRAPE libraries:</h1>
+<h1 id="where-to-find-grape-libraries:58">Where to find GRAPE libraries:</h1>
 
-<h1 id="grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:56">GRAPE<em>LDFLAGS</em>=&lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&rsquo;</h1>
+<h1 id="grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:58">GRAPE<em>LDFLAGS</em>=&lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&rsquo;</h1>
 
 <p>GRAPE<em>LDFLAGS</em>=&lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&rsquo;</p>
 
