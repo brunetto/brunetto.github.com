@@ -23,7 +23,7 @@ few pages, or to shrink the size of the file without degradate the quality.&lt;/
 
 &lt;p&gt;Here are few trick I collected and post here to be able to find them.&lt;/p&gt;
 
-&lt;h2 id=&#34;print-two-pages-per-sheet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Print two pages per sheet&lt;/h2&gt;
+&lt;h2 id=&#34;print-two-pages-per-sheet:5&#34;&gt;Print two pages per sheet&lt;/h2&gt;
 
 &lt;p&gt;The first tricks comes from &lt;a href=&#34;http://0x2a.at/blog/2011/02/pdf_manipulation_on_the_cli/&#34;&gt;here&lt;/a&gt;
 and assume you have &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;&lt;code&gt;pdfjam&lt;/code&gt;&lt;/a&gt;
@@ -33,7 +33,7 @@ This is how you can produce a pdf with two pages per sheet:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x1 infile.pdf --landscape --outfile outfile.pdf
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;booklet:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Booklet&lt;/h2&gt;
+&lt;h2 id=&#34;booklet:5&#34;&gt;Booklet&lt;/h2&gt;
 
 &lt;p&gt;You can also print your pdf file as booklet. This means that the pages
 of your file are shuffled (and placed two per sheet) so that you can
@@ -45,7 +45,7 @@ a real book. The sommand is:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;pdfbook&lt;/code&gt; is part of &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;extract-or-join-pages:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Extract (or join) pages&lt;/h2&gt;
+&lt;h2 id=&#34;extract-or-join-pages:5&#34;&gt;Extract (or join) pages&lt;/h2&gt;
 
 &lt;p&gt;If you need to extrac some pages from your pdf file you can just run&lt;/p&gt;
 
@@ -59,7 +59,7 @@ a real book. The sommand is:&lt;/p&gt;
 
 &lt;p&gt;Obviously you need &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=pdftk&#34;&gt;&lt;code&gt;pdftk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;shrink-pdf-file-size:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Shrink pdf file size&lt;/h2&gt;
+&lt;h2 id=&#34;shrink-pdf-file-size:5&#34;&gt;Shrink pdf file size&lt;/h2&gt;
 
 &lt;p&gt;Sometiimes a pdf grows in size with no reason (apparently). It is possible to shrink it
 by reduce it to pdf defaults. You will need &lt;a href=&#34;http://www.ghostscript.com/&#34;&gt;&lt;code&gt;gs&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -77,7 +77,7 @@ doing it for you. In &lt;code&gt;.bashrc&lt;/code&gt; add&lt;/p&gt;
 
 &lt;p&gt;and run &lt;code&gt;. ~/.bashrc&lt;/code&gt; before running &lt;code&gt;pdfdefault infile.pdf outfile.pdf&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;two-pages-per-sheet-with-latex:1a99063f87f259b634426df7f0e7e8a1&#34;&gt;Two pages per sheet with latex&lt;/h2&gt;
+&lt;h2 id=&#34;two-pages-per-sheet-with-latex:5&#34;&gt;Two pages per sheet with latex&lt;/h2&gt;
 
 &lt;p&gt;It is possible, if you are writing something with pdf, to produce a pdf
 with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;

@@ -47,29 +47,23 @@ from the NVIDIA site:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;Download the &lt;a href=&#34;http://www.nvidia.com/object/linux-display-amd64-310.40-driver.html&#34;&gt;NVIDIA drivers&lt;/a&gt;
 and the &lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt;latest CUDA installers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;stop the X server with&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;stop the X server with&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo service lightdm stop
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;find them with&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;find them with&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;aptitude search &#39;~i&#39; | grep &amp;quot;nvidia\|cuda\|libcu&amp;quot; | grep -v &amp;quot;kwin\|cups\|curl&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and check they are the installed packages and there are no other packages&lt;/p&gt;
+&lt;p&gt;and check they are the installed packages and there are no other packages&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;remove them with&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;remove them with&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo aptitude --purge &amp;lt;packages names&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;blacklist all the modules that can interfere:&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;in /etc/modprobe.d/blacklist.conf insert&lt;/p&gt;&lt;/li&gt;
@@ -85,54 +79,44 @@ blacklist rivatv
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
-&lt;li&gt;in /etc/modprobe.d/blacklist-nouveau.conf insert&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;in /etc/modprobe.d/blacklist-nouveau.conf insert&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blacklist nouveau
 options nouveau modeset=0
 blacklist lbm-nouveau
 alias nouveau off
 alias lbm-nouveau off
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;in /etc/default/grub insert&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;in /etc/default/grub insert&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;quiet splash nomodeset&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;then run&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;then run&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo update-grub
 sudo update-initramfs -u
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;see also &lt;a href=&#34;http://blog.bloemsaat.com/2013/03/17/installing-cuda-on-ubuntu-13-04-raring-ringtail/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;install the drivers and then CUDA running the installers and following the
 instructions&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;in /etc/modprobe.d/nvidia-installer-disable-nouveau.conf the NVIDIA installer should insert&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;in /etc/modprobe.d/nvidia-installer-disable-nouveau.conf the NVIDIA installer should insert&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blacklist nouveau
 options nouveau modeset=0
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;install some more libs&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;install some more libs&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install freeglut3-dev libxi-dev libxmu-dev
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;reboot&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;reboot&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

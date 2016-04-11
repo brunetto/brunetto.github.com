@@ -74,11 +74,11 @@
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu">Home</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae/">CV</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae">CV</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages">Pages</a></li>
         
       </ul>
     </nav>
@@ -91,11 +91,7 @@
         
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
-        
-      
-        
-        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
         
       
         
@@ -103,11 +99,15 @@
         
       
         
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
         
       
       
@@ -132,9 +132,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create:d7d980b494195784336223544cb1380d">Create</a></li>
-<li><a href="#remove-duplicates:d7d980b494195784336223544cb1380d">Remove duplicates</a></li>
-<li><a href="#recreate:d7d980b494195784336223544cb1380d">Recreate</a></li>
+<li><a href="#create:91">Create</a></li>
+<li><a href="#remove-duplicates:91">Remove duplicates</a></li>
+<li><a href="#recreate:91">Recreate</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -198,7 +198,7 @@
 
 <p>I would like to &ldquo;pin&rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.</p>
 
-<h2 id="create:d7d980b494195784336223544cb1380d">Create</h2>
+<h2 id="create:91">Create</h2>
 
 <p>First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with <code>np.genfromtxt</code>. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.</p>
 
@@ -227,7 +227,7 @@ f.close()
 
 <p>The use of <code>StringIO</code> is necessary to convert the string containing the line read in a &ldquo;I/O&rdquo; object that <code>np.genfromtxt</code> can eat.</p>
 
-<h2 id="remove-duplicates:d7d980b494195784336223544cb1380d">Remove duplicates</h2>
+<h2 id="remove-duplicates:91">Remove duplicates</h2>
 
 <p>Consider the previous file, if there are duplicates row, <code>np.unique</code> can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.</p>
 
@@ -246,7 +246,7 @@ Out:
 	array([3, 2, 2, 4, 1, 5, 0]))
 </code></pre>
 
-<h2 id="recreate:d7d980b494195784336223544cb1380d">Recreate</h2>
+<h2 id="recreate:91">Recreate</h2>
 
 <p>Sometimes it&rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.<br />
 To do this a possible solution is:</p>
@@ -342,7 +342,7 @@ h5.close()
 		
 		</ul>
 	</div>
-	<p>&copy; 2015 
+	<p>&copy; 2016 
 	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
 	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
 </div>

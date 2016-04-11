@@ -86,11 +86,11 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
 &lt;p&gt;I said that &lt;code&gt;$M^*$&lt;/code&gt; is the typical mass of a perturbation that, at the time we are looking, has the associated liner density contrast &lt;code&gt;$\delta(\mathbf{x})\sim1$, or, in the formalism of the excursion set, pass the barrier of &amp;amp;nbsp;$\delta_c=1.686$.     
 This means that we are looking for a perturbation with&lt;/code&gt;$\sigma\simeq1.686$` and trying to quantify the mass it contains.&lt;/p&gt;
 
-&lt;h2 id=&#34;sigma-and-r:fc25179ded4233c0e9f8a261bf2b1314&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
+&lt;h2 id=&#34;sigma-and-r:96&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
 
 &lt;p&gt;First of all we need to find the radius of a perturbation whose &lt;code&gt;$\sigma$&lt;/code&gt; reached the value of 1.686. To do this we can use the &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/&#34; target=&#34;_blank&#34; title=&#34;The “Initial Conditions” saga&#34;&gt;code&lt;/a&gt; developed to manage the CAMB files in order to find the matter power spectrum and its normalization. Then we add few lines to &amp;ldquo;sample&amp;rdquo; the &lt;code&gt;$\sigma(R)$&lt;/code&gt; distribution and find the radius of the perturbation reaching the excursion set barrier for the collapse.&lt;/p&gt;
 
-&lt;h2 id=&#34;m:fc25179ded4233c0e9f8a261bf2b1314&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;m:96&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;Once we have the radius for which &lt;code&gt;$\sigma = \delta_c$&lt;/code&gt; we need to know the mean density in the universe to find &lt;code&gt;$M^*$&lt;/code&gt; with:&lt;/p&gt;
 
@@ -310,7 +310,7 @@ Most of this post is made by paragraphs from &lt;a href=&#34;http://en.wikipedia
 To improve performances and precision usually more chains are used, starting from different and well-separated points, for a single estimation and a convergence criterion define when to stop.&lt;br /&gt;
 The steady state, or the equilibrium distribution, if it exists, roughly is the combination of parameters, o the vector for the probabilities to be in one status, that emerge to be constant in the long term. This means that if the system (the chain) at some time has a probability vector &lt;code&gt;$q$&lt;/code&gt; for the next status, it will have probability vector &lt;code&gt;$q$&lt;/code&gt; forever. &lt;code&gt;$q$&lt;/code&gt; is an eigenvector of the transition matrix with eingenvalue 1.&lt;/p&gt;
 
-&lt;h2 id=&#34;markov-chain:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Markov chain&lt;/h2&gt;
+&lt;h2 id=&#34;markov-chain:99&#34;&gt;Markov chain&lt;/h2&gt;
 
 &lt;p&gt;A Markov chain is a random process (sequence of random variables) that satisfy the Markov property. Usually the term &amp;ldquo;Markov chain&amp;rdquo; is used to mean a Markov process which has a discrete (finite or countable) state-space defined on a discrete set times.&lt;br /&gt;
 nevertheless &amp;ldquo;time&amp;rdquo; can take continuous values and the use of the term in Monte Carlo Markov Chain (MCMC) refers to cases where the process is defined on a discrete time-set (discrete algorithm steps) and a continuous state space.&lt;/p&gt;
@@ -324,7 +324,7 @@ Formally, given a sequence of random variables &lt;code&gt;$X_1, X_2, X_3, \dots
 
 &lt;p&gt;The changes of state of the system are called transitions, and the probabilities associated with various state-changes are called transition probabilities. The set of all states and transition probabilities for a given step form the &lt;strong&gt;transition matrix&lt;/strong&gt; `$p_{ij}$. The transition matrices completely characterizes a Markov chain.&lt;/p&gt;
 
-&lt;h2 id=&#34;types-of-chains:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Types of chains&lt;/h2&gt;
+&lt;h2 id=&#34;types-of-chains:99&#34;&gt;Types of chains&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Time-homogeneous Markov chains&lt;/strong&gt; (or &lt;strong&gt;stationary Markov chains&lt;/strong&gt;) are processes where    &lt;code&gt;$Pr(X_{n+1}=x|X_n=y) = Pr(X_n=x|X_{n-1}=y)$&lt;/code&gt;    for all &lt;code&gt;$n$&lt;/code&gt;. The probability of the transition is independent of &lt;code&gt;$n$&lt;/code&gt;.&lt;/li&gt;
@@ -335,7 +335,7 @@ Formally, given a sequence of random variables &lt;code&gt;$X_1, X_2, X_3, \dots
 &lt;li&gt;&lt;code&gt;$Pr(X_n=x_n|X_{n-1}=x_{n-1}, X_{n-2}=x_{n-2}, \dots, X_{n-m}=x_{n-m}) = \sum_{r=1}^{m} f(x_n,x_{n-r},r)$&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;predictions:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Predictions&lt;/h2&gt;
+&lt;h2 id=&#34;predictions:99&#34;&gt;Predictions&lt;/h2&gt;
 
 &lt;p&gt;Since the system changes randomly, it is generally impossible to predict with certainty the state of a Markov chain at a given point in the future. However, the statistical properties of the system&amp;rsquo;s future can be predicted.&lt;br /&gt;
 The probability of going from state &lt;code&gt;$i$&lt;/code&gt; to state &lt;code&gt;$j$&lt;/code&gt; in &lt;code&gt;$n$&lt;/code&gt; time steps is&lt;br /&gt;
@@ -352,7 +352,7 @@ where &lt;code&gt;$S$&lt;/code&gt; is the state space of the Markov chain.&lt;br
 The marginal distribution &lt;code&gt;$Pr(X_n=x)$&lt;/code&gt; is the distribution over states at time &lt;code&gt;$n$&lt;/code&gt;. The initial distribution is &lt;code&gt;$Pr(X_0=x)$&lt;/code&gt;. The evolution of the process through one time step is described by&lt;br /&gt;
 &lt;code&gt;$ Pr(X_{n}=j) = \sum_{r in S} p_{rj} Pr(X_{n-1}=r) = \sum_{r in S} p_{rj}^{(n)} Pr(X_0=r).$&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;example-a-very-simple-weather-model:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Example: a very simple weather model&lt;/h2&gt;
+&lt;h2 id=&#34;example-a-very-simple-weather-model:99&#34;&gt;Example: a very simple weather model&lt;/h2&gt;
 
 &lt;p&gt;The probabilities of weather conditions (modeled as either rainy or sunny), given the weather on the preceding day,&lt;br /&gt;
 can be represented by a transition matrix:&lt;br /&gt;
@@ -365,7 +365,7 @@ be followed by another rainy day. The columns can be labelled &amp;ldquo;sunny&a
 followed by a day of type &lt;code&gt;$j$&lt;/code&gt;.&lt;br /&gt;
 Notice that the rows of &lt;code&gt;$P$&lt;/code&gt; sum to 1: this is because &lt;code&gt;$P$&lt;/code&gt; is a stochastic matrix.&lt;/p&gt;
 
-&lt;h2 id=&#34;predicting-the-weather:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Predicting the weather&lt;/h2&gt;
+&lt;h2 id=&#34;predicting-the-weather:99&#34;&gt;Predicting the weather&lt;/h2&gt;
 
 &lt;p&gt;The weather on day 0 is known to be sunny. This is represented by a vector in which the &amp;ldquo;sunny&amp;rdquo; entry is 100%, and the &amp;ldquo;rainy&amp;rdquo; entry is 0%:&lt;br /&gt;
 &lt;code&gt;$ \mathbf{x}^{(0)} = \begin{bmatrix} 1 &amp;amp; 0 \end{bmatrix}$&lt;/code&gt;&lt;br /&gt;
@@ -382,7 +382,7 @@ General rules for day &lt;code&gt;$n$&lt;/code&gt; are:&lt;br /&gt;
 &lt;div&gt;
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;steady-state-of-the-weather:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Steady state of the weather&lt;/h2&gt;
+&lt;h2 id=&#34;steady-state-of-the-weather:99&#34;&gt;Steady state of the weather&lt;/h2&gt;
 
 &lt;p&gt;In this example, predictions for the weather on more distant days are increasingly&lt;br /&gt;
 inaccurate and tend towards a steady state vector. This vector represents&lt;br /&gt;
@@ -407,14 +407,14 @@ and since they are a probability vector we know that&lt;br /&gt;
 &lt;code&gt;$ \begin{bmatrix} q_1 &amp;amp; q_2 \end{bmatrix} = \begin{bmatrix} 0.833 &amp;amp; 0.167 \end{bmatrix}$&lt;/code&gt;&lt;br /&gt;
 In conclusion, in the long term, 83% of days are sunny.&lt;/p&gt;
 
-&lt;h2 id=&#34;monte-carlo-markov-chain-mcmc:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Monte Carlo Markov Chain (MCMC)&lt;/h2&gt;
+&lt;h2 id=&#34;monte-carlo-markov-chain-mcmc:99&#34;&gt;Monte Carlo Markov Chain (MCMC)&lt;/h2&gt;
 
 &lt;p&gt;Markov chain Monte Carlo (MCMC) methods (which include random walk Monte Carlo methods) are a class of algorithms for sampling from probability distributions based on constructing a Markov chain that has the desired distribution as its equilibrium distribution. The state of the chain after a large number of steps is then used as a sample of the desired distribution. The quality of the sample improves as a function of the number of steps.&lt;br /&gt;
 Usually it is not hard to construct a Markov chain with the desired properties. The more difficult problem is to determine how many steps are needed to converge to the stationary distribution within an acceptable error. A good chain will have rapid mixing—the stationary distribution is reached quickly starting from an arbitrary position—described further under Markov chain mixing time.&lt;br /&gt;
 Typical use of MCMC sampling can only approximate the target distribution, as there is always some residual effect of the starting position. More sophisticated MCMC-based algorithms such as coupling from the past can produce exact samples, at the cost of additional computation and an unbounded (though finite in expectation) running time.&lt;br /&gt;
 The most common application of these algorithms is numerically calculating multi-dimensional integrals. In these methods, an ensemble of &amp;ldquo;walkers&amp;rdquo; moves around randomly. At each point where the walker steps, the integrand value at that point is counted towards the integral. The walker then may make a number of tentative steps around the area, looking for a place with reasonably high contribution to the integral to move into next. Random walk methods are a kind of random simulation or Monte Carlo method. However, whereas the random samples of the integrand used in a conventional Monte Carlo integration are statistically independent, those used in MCMC are correlated. A Markov chain is constructed in such a way as to have the integrand as its equilibrium distribution. Surprisingly, this is often easy to do.&lt;/p&gt;
 
-&lt;h2 id=&#34;random-walk-algorithms:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Random walk algorithms&lt;/h2&gt;
+&lt;h2 id=&#34;random-walk-algorithms:99&#34;&gt;Random walk algorithms&lt;/h2&gt;
 
 &lt;p&gt;Many Markov chain Monte Carlo methods move around the equilibrium distribution in relatively small steps, with no tendency for the steps to proceed in the same direction. These methods are easy to implement and analyze, but unfortunately it can take a long time for the walker to explore all of the space. The walker will often double back and cover ground already covered.  Here are some random walk MCMC methods:&lt;/p&gt;
 
@@ -425,7 +425,7 @@ The most common application of these algorithms is numerically calculating multi
 &lt;li&gt;Multiple-try Metropolis: A variation of the Metropolis–Hastings algorithm that allows multiple trials at each point. This allows the algorithm to generally take larger steps at each iteration, which helps combat problems intrinsic to large dimensional problems.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;avoiding-random-walks:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Avoiding random walks&lt;/h2&gt;
+&lt;h2 id=&#34;avoiding-random-walks:99&#34;&gt;Avoiding random walks&lt;/h2&gt;
 
 &lt;p&gt;More sophisticated algorithms use some method of preventing the walker from doubling back. These algorithms may be harder to implement, but may exhibit faster convergence (i.e. fewer steps for an accurate result).&lt;/p&gt;
 
@@ -436,7 +436,7 @@ The most common application of these algorithms is numerically calculating multi
 &lt;li&gt;Langevin MCMC and other methods that rely on the gradient (and possibly second derivative) of the log posterior avoid random walks by making proposals that are more likely to be in the direction of higher probability density.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;monte-carlo-markov-chain-in-cosmology-cmb-example:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Monte Carlo Markov chain in Cosmology: CMB example&lt;/h2&gt;
+&lt;h2 id=&#34;monte-carlo-markov-chain-in-cosmology-cmb-example:99&#34;&gt;Monte Carlo Markov chain in Cosmology: CMB example&lt;/h2&gt;
 
 &lt;p&gt;In some cases, mapping the likelihood or the posterior distribution can be very time-expensive, so a MCMC can be used to investigate the likelihood space. The MCMC generates random draws (simulations) from the posterior distribution that are a “fair” sample of the likelihood surface. A properly derived and implemented MCMC draws from the joint posterior density&lt;br /&gt;
 &lt;code&gt;$P(\alpha|x)$&lt;/code&gt; once it has converged to the stationary distribution. The primary consideration in&lt;br /&gt;
@@ -452,7 +452,7 @@ have converged. Using a MCMC that has not fully&lt;br /&gt;
 explored the likelihood surface for determining cosmological parameters will yield wrong&lt;br /&gt;
 results.&lt;/p&gt;
 
-&lt;h2 id=&#34;in-practice:8c95db763c57cc62a73786daf3f22e25&#34;&gt;In practice&lt;/h2&gt;
+&lt;h2 id=&#34;in-practice:99&#34;&gt;In practice&lt;/h2&gt;
 
 &lt;p&gt;Here are the necessary steps to run a simple MCMC for the CMB temperature power&lt;br /&gt;
 spectrum. It is straightforward to generalize these instructions to include the temperature-&lt;br /&gt;
@@ -464,16 +464,18 @@ to the posterior probability.&lt;/p&gt;
 &lt;li&gt;Start with a set of cosmological parameters &lt;code&gt;${\alpha_1}$&lt;/code&gt;, compute the &lt;code&gt;$Cl$&lt;/code&gt; and the likelihood    &lt;code&gt;$L_1 = L(Cl |Cl )$&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Take a random step in parameter space to obtain a new set of cosmological parameters    &lt;code&gt;${\alpha_2 }$&lt;/code&gt;. The probability distribution of the step is taken to be Gaussian in each direction    i with r.m.s given by &lt;code&gt;$\sigma_1$&lt;/code&gt; . We will refer below to σi as the “step size”. The choice of    the step size is important to optimize the chain efficiency&lt;/li&gt;
 &lt;li&gt;Compute the &lt;code&gt;$Cl$&lt;/code&gt; for the new set of cosmological parameters and their likelihood &lt;code&gt;$L_2$&lt;/code&gt;.    4.a) If &lt;code&gt;$L_2 /L_1 \geq 1$&lt;/code&gt;, “take the step” i.e. save the new set of cosmological parameters &lt;code&gt;${\alpha_2}$&lt;/code&gt;    as part of the chain, then go to step 2 after the substitution &lt;code&gt;${\alpha_1 } \rightarrow {\alpha2 }$&lt;/code&gt;.    4.b) If &lt;code&gt;$L_2 /L_1 &amp;lt; 1$&lt;/code&gt;, draw a random number x from a uniform distribution from 0 to 1. If    &lt;code&gt;$x \geq L_2 /L_1$&lt;/code&gt; “do not take the step”, i.e. save the parameter set &lt;code&gt;${\alpha_1 }$&lt;/code&gt; as part of the    chain and return to step 2. If `$x &amp;lt; L_2 /L_1$, “ take the step”, i.e. do as in 4.a).&lt;/li&gt;
-&lt;li&gt;For each cosmological model run four chains starting at randomly chosen, well-separated points in parameter space. When the convergence criterion is satisfied and    the chains have enough points to provide reasonable samples from the a posteriori    distributions (i.e. enough points to be able to reconstruct the 1- and 2-σ levels of the    marginalized likelihood for all the parameters) stop the chains.&lt;/li&gt;
+&lt;li&gt;For each cosmological model run four chains starting at randomly chosen, well-separated points in parameter space. When the convergence criterion is satisfied and    the chains have enough points to provide reasonable samples from the a posteriori    distributions (i.e. enough points to be able to reconstruct the 1- and 2-σ levels of the    marginalized likelihood for all the parameters) stop the chains.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;appendix:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Appendix&lt;/h2&gt;
+&lt;h2 id=&#34;appendix:99&#34;&gt;Appendix&lt;/h2&gt;
 
-&lt;h3 id=&#34;random-process:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Random process&lt;/h3&gt;
+&lt;h3 id=&#34;random-process:99&#34;&gt;Random process&lt;/h3&gt;
 
 &lt;p&gt;In probability theory, a stochastic process, or sometimes random process, is the counterpart to a deterministic process (or deterministic system). Instead of dealing with only one possible way the process might develop over time (as in the case, for example, of solutions of an ordinary differential equation), in a stochastic or random process there is some indeterminacy described by probability distributions. This means that even if the initial condition (or starting point) is known, there are many possibilities the process might go to, but some paths may be more probable and others less so.&lt;/p&gt;
 
-&lt;h3 id=&#34;bayesian-statistic-likelihood-priori-and-posteriori-distribution:8c95db763c57cc62a73786daf3f22e25&#34;&gt;Bayesian statistic, likelihood, priori and posteriori distribution&lt;/h3&gt;
+&lt;h3 id=&#34;bayesian-statistic-likelihood-priori-and-posteriori-distribution:99&#34;&gt;Bayesian statistic, likelihood, priori and posteriori distribution&lt;/h3&gt;
 
 &lt;p&gt;From &lt;a href=&#34;http://www.thphys.uni-heidelberg.de/~amendola/statistics-ws2011.html&#34;&gt;http://www.thphys.uni-heidelberg.de/~amendola/statistics-ws2011.html&lt;/a&gt;, to be completed.&lt;br /&gt;
 We have a theory and some data, the Bayesian approach says that&lt;/p&gt;
@@ -491,7 +493,7 @@ We have a theory and some data, the Bayesian approach says that&lt;/p&gt;
 
 &lt;p&gt;The prior distribution is often unknown but can be of two kind: it can come from previous experiments or it can be the exclusion of some regions of the parameter space. The final result strongly depends on it.&lt;/p&gt;
 
-&lt;h3 id=&#34;references:8c95db763c57cc62a73786daf3f22e25&#34;&gt;References&lt;/h3&gt;
+&lt;h3 id=&#34;references:99&#34;&gt;References&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.lorisbazzani.info/papers/old_projects/HMM_MPES.pdf&#34;&gt;http://www.lorisbazzani.info/papers/old_projects/HMM_MPES.pdf&lt;/a&gt;&lt;/li&gt;
@@ -596,7 +598,7 @@ The first things I have understood banging against them were:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;camb:62c9ecd742ba00d6577ca64643723f05&#34;&gt;CAMB&lt;/h2&gt;
+&lt;h2 id=&#34;camb:102&#34;&gt;CAMB&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start with the
 &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&amp;quot; target&#34;&gt;main CAMB interface&lt;/a&gt;.
@@ -813,7 +815,7 @@ $\delta_{lin}\sim1.686$.&lt;/p&gt;
 
 &lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
 
-&lt;h2 id=&#34;installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:104&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
 
 &lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
 Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;lt;archive name&amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
@@ -850,7 +852,7 @@ Password:
 snip: lots of diagnostic output
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;play-with-gadget2:b6a0a5ab44b8eeb8249d7bb237655d64&#34;&gt;Play with Gadget2&lt;/h2&gt;
+&lt;h2 id=&#34;play-with-gadget2:104&#34;&gt;Play with Gadget2&lt;/h2&gt;
 
 &lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
 To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;
@@ -1375,7 +1377,7 @@ is the same both in linear theory and in the Zel&amp;rsquo;dovich approximation 
 
 &lt;p&gt;Considering the last two possibilities, it&amp;rsquo;s worth noting that the former still has a lot of noise, and the second is better than the grid only for aesthetic reasons.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-initial-gravitational-potential:e7d3a1009e17d7d6009dfef83606ab41&#34;&gt;The initial gravitational potential&lt;/h2&gt;
+&lt;h2 id=&#34;the-initial-gravitational-potential:113&#34;&gt;The initial gravitational potential&lt;/h2&gt;
 
 &lt;p&gt;In standard cosmological models the initial perturbations density field is Gaussian. Since the linear evolution doesn&amp;rsquo;t modify the statistics of density fields except for evolving the amplitude of perturbations, and because the potential and the density contrast are linked by a linear relation, the gravitational potential is also a Gaussian random field, and such a field is completely described in terms of the power spectrum of density perturbations. The Fourier components of a Gaussian random field (both real and imaginary part) are random numbers with a normal distribution and variance proportional to the power spectrum at that wave number. Also the phase of this random numbers has to be random, and changing it the resulting field is completely different.
 We can generate the gravitational field in the Fourier space just using these properties and inverse transform it (or the force) to obtain the initial potential in real space. If we use adaptive mesh refinement codes we need Gaussian random fields with a variable resolution.&lt;/p&gt;
@@ -1400,37 +1402,37 @@ We can generate the gravitational field in the Fourier space just using these pr
 &lt;p&gt;In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
 Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.&lt;/p&gt;
 
-&lt;h3 id=&#34;direct-summation-pp-method:b4d5cf4d6678e662a616552bea757490&#34;&gt;Direct summation: PP method&lt;/h3&gt;
+&lt;h3 id=&#34;direct-summation-pp-method:114&#34;&gt;Direct summation: PP method&lt;/h3&gt;
 
 &lt;p&gt;The raw approach is to calculate forces between all pairs in the simulation. This works well for less than $10^3$. The number of pairs, and therefore the computational time, scales as $N^2$, so this method that is usually unacceptable given the number of particles in a simulation.&lt;br /&gt;
 It&amp;rsquo;s difficult to implement periodic boundary conditions in this method (because you have to manage it by hand) and the only convenient way to do this is to use the Ewald summation.&lt;br /&gt;
 This method is mostly used to test other methods.&lt;/p&gt;
 
-&lt;h3 id=&#34;tree-method:b4d5cf4d6678e662a616552bea757490&#34;&gt;Tree method&lt;/h3&gt;
+&lt;h3 id=&#34;tree-method:114&#34;&gt;Tree method&lt;/h3&gt;
 
 &lt;p&gt;The disadvantage of the pp-method comes from having to compute the interaction of any new particle with all the others. The tree method, on the contrary, approximate the force of a distant group of particles with the force exerted by only one particle, in the center of mass of the group, with mass equal the total mass of the group. In this way the computation scales as $N\log N$.&lt;br /&gt;
 To create the groups the particles are divided and arranged in a tree structure, that is, the initial volume is divided, and every resulting volume divided again. This procedure goes on until in the resulting volumes there&amp;rsquo;s only one particle. In this situation it&amp;rsquo;s very important the &amp;ldquo;cell acceptance criterion&amp;rdquo; that decide whether or not a cell is far enough to be used as it is or if it has to be divided into its subvolumes.&lt;br /&gt;
 The accuracy and the speed of this method can be improved storing some information about the particles in the volumes (such as moments of the mass distribution, usually the quadrupole).&lt;br /&gt;
 Moreover, close particles can share information about distant groups because the force is very similar, and the tree can be parallelized efficiently. However, it&amp;rsquo;s not so easy to consider periodic boundary conditions.&lt;/p&gt;
 
-&lt;h3 id=&#34;fast-multipole-method:b4d5cf4d6678e662a616552bea757490&#34;&gt;Fast multipole method&lt;/h3&gt;
+&lt;h3 id=&#34;fast-multipole-method:114&#34;&gt;Fast multipole method&lt;/h3&gt;
 
 &lt;p&gt;This method is an improved version of the tree method. It is based on including higher moments of the mass distribution in cells and some other optimizations. This method has a computational costs which scales as $N$.&lt;/p&gt;
 
 &lt;p&gt;However all these method has problems with the open boundary conditions and it&amp;rsquo;s difficult to adapt it to the cosmological needs. An extension of the tree method with explicit momentum conservation has been also developed.&lt;/p&gt;
 
-&lt;h3 id=&#34;particle-mesh-method:b4d5cf4d6678e662a616552bea757490&#34;&gt;Particle-mesh method&lt;/h3&gt;
+&lt;h3 id=&#34;particle-mesh-method:114&#34;&gt;Particle-mesh method&lt;/h3&gt;
 
 &lt;p&gt;This is the first method used extensively for cosmological simulations and the first used for simulation with order of $10^5$ particles. The PM method solve the Poisson equation (partial differential equation that links the gravitational field with the mass distribution) in the Fourier space, where it is a simple algebraic equation, using the FFT (Fast Fourier Transform) routine to change from coordinate space to the Fourier space and viceversa&amp;nbsp;. FFT requires to sample the functions at uniformly spaced points and here we use a grid (mesh). We compute density at the grid points using weight functions on the particles representing the density and velocity fields.&lt;br /&gt;
 The use of Fourier methods automatically include periodic boundary conditions without no additional effort (because of the nature of periodic function in the Fourier space) and the use of the mesh automatically soften the force at small scales (because of the interpolation needed to compute the gravitational field on the grid) but it underestimate the force at scales larger (toughly up to 3 times) than the softening length.&lt;br /&gt;
 This method is parallelized using parallel FFT and dividing the volume among the processors.&lt;br /&gt;
 Softening at the mesh scale give collisionless evolution but the code cannot resolve structure at scales smaller than the mesh scale, moreover the mesh makes the force anisotropic at small scales. This happens because the grid points don&amp;rsquo;t sample very well the filed on such small scales.&lt;/p&gt;
 
-&lt;h3 id=&#34;adaptive-mesh-refinement:b4d5cf4d6678e662a616552bea757490&#34;&gt;Adaptive-mesh refinement&lt;/h3&gt;
+&lt;h3 id=&#34;adaptive-mesh-refinement:114&#34;&gt;Adaptive-mesh refinement&lt;/h3&gt;
 
 &lt;p&gt;In AMR methods the mesh is refined in high density regions using a finer grid, but it&amp;rsquo;s important to pay attention to the conservation of momentum and angular momentum switching from a grid to another.&lt;/p&gt;
 
-&lt;h3 id=&#34;p3m-particle-particle-particle-mesh:b4d5cf4d6678e662a616552bea757490&#34;&gt;P3M: particle-particle+particle-mesh&lt;/h3&gt;
+&lt;h3 id=&#34;p3m-particle-particle-particle-mesh:114&#34;&gt;P3M: particle-particle+particle-mesh&lt;/h3&gt;
 
 &lt;p&gt;The idea is to add a correction to the force calculated with the PM method by using the PP method on the closest particles. The correction is assumed to be isotropic and depend only upon the distance. Usually it&amp;rsquo;s considered a distance of the order of 2 times the internode mesh distance. This method has been parallelized but with some problems, also because load balancing is quite difficult to achieve.&lt;/p&gt;
 
@@ -1443,7 +1445,7 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
 &lt;li&gt;P3M simulations slow down at late times when the distribution of particles becomes highly clustered because the short range force dominate the compute operations&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;tree-pm-tpm:b4d5cf4d6678e662a616552bea757490&#34;&gt;Tree+PM: TPM&lt;/h3&gt;
+&lt;h3 id=&#34;tree-pm-tpm:114&#34;&gt;Tree+PM: TPM&lt;/h3&gt;
 
 &lt;p&gt;Some hybrid codes has been developed trying to combine the PM and the Tree methods:&lt;/p&gt;
 

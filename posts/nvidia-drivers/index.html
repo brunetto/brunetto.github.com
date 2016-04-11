@@ -74,11 +74,11 @@
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu">Home</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae/">CV</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae">CV</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages">Pages</a></li>
         
       </ul>
     </nav>
@@ -91,11 +91,7 @@
         
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
-        
-      
-        
-        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
         
       
         
@@ -103,11 +99,15 @@
         
       
         
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
         
       
       
@@ -208,29 +208,23 @@ from the NVIDIA site:</p>
 <li><p>Download the <a href="http://www.nvidia.com/object/linux-display-amd64-310.40-driver.html">NVIDIA drivers</a>
 and the <a href="https://developer.nvidia.com/cuda-downloads">latest CUDA installers</a></p></li>
 
-<li><p>stop the X server with</p></li>
-</ul>
+<li><p>stop the X server with</p>
 
 <pre><code class="language-bash">sudo service lightdm stop
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>find them with<br /></li>
-</ul>
+<li><p>find them with</p>
 
 <pre><code class="language-bash">aptitude search '~i' | grep &quot;nvidia\|cuda\|libcu&quot; | grep -v &quot;kwin\|cups\|curl&quot;
 </code></pre>
 
-<p>and check they are the installed packages and there are no other packages</p>
+<p>and check they are the installed packages and there are no other packages</p></li>
 
-<ul>
-<li>remove them with<br /></li>
-</ul>
+<li><p>remove them with</p>
 
 <pre><code class="language-bash">sudo aptitude --purge &lt;packages names&gt;
-</code></pre>
+</code></pre></li>
 
-<ul>
 <li><p>blacklist all the modules that can interfere:</p></li>
 
 <li><p>in /etc/modprobe.d/blacklist.conf insert</p></li>
@@ -246,54 +240,44 @@ blacklist rivatv
 </code></pre>
 
 <ol>
-<li>in /etc/modprobe.d/blacklist-nouveau.conf insert</li>
-</ol>
+<li><p>in /etc/modprobe.d/blacklist-nouveau.conf insert</p>
 
 <pre><code class="language-bash">blacklist nouveau
 options nouveau modeset=0
 blacklist lbm-nouveau
 alias nouveau off
 alias lbm-nouveau off
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>in /etc/default/grub insert</li>
-</ol>
+<li><p>in /etc/default/grub insert</p>
 
 <pre><code class="language-bash">GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash nomodeset&quot;
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>then run</li>
-</ol>
+<li><p>then run</p>
 
 <pre><code class="language-bash">sudo update-grub
 sudo update-initramfs -u
-</code></pre>
+</code></pre></li>
 
-<ul>
 <li><p>see also <a href="http://blog.bloemsaat.com/2013/03/17/installing-cuda-on-ubuntu-13-04-raring-ringtail/">here</a></p></li>
 
 <li><p>install the drivers and then CUDA running the installers and following the
 instructions</p></li>
 
-<li><p>in /etc/modprobe.d/nvidia-installer-disable-nouveau.conf the NVIDIA installer should insert</p></li>
-</ul>
+<li><p>in /etc/modprobe.d/nvidia-installer-disable-nouveau.conf the NVIDIA installer should insert</p>
 
 <pre><code class="language-bash">blacklist nouveau
 options nouveau modeset=0
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>install some more libs</li>
-</ul>
+<li><p>install some more libs</p>
 
 <pre><code class="language-bash">sudo apt-get install freeglut3-dev libxi-dev libxmu-dev
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>reboot</li>
-</ul>
+<li><p>reboot</p></li>
+</ol>
 
 	
 			
@@ -324,7 +308,7 @@ options nouveau modeset=0
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/posts/agn-for-dummies/">AGN for Dummies</a>
+						<a class="paging-link" href="/pages/personal/scout/">Scout</a>
 		            </div>
 		            
 
@@ -366,7 +350,7 @@ options nouveau modeset=0
 		
 		</ul>
 	</div>
-	<p>&copy; 2015 
+	<p>&copy; 2016 
 	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
 	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
 </div>

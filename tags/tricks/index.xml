@@ -17,7 +17,7 @@
       <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
       <description>
 
-&lt;h2 id=&#34;system:72bac119edfbd0f2bc21b23acb9f5790&#34;&gt;System&lt;/h2&gt;
+&lt;h2 id=&#34;system:65&#34;&gt;System&lt;/h2&gt;
 
 &lt;p&gt;Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
  and a Ubuntu 13.04 Dell Laptop.&lt;br /&gt;
@@ -30,7 +30,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 &lt;li&gt;&lt;p&gt;System monitoring: htop, iotop, saidar&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;searching:72bac119edfbd0f2bc21b23acb9f5790&#34;&gt;Searching&lt;/h2&gt;
+&lt;h2 id=&#34;searching:65&#34;&gt;Searching&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;grep -H &#39;&amp;lt;string&amp;gt;&#39; *.&amp;lt;ext&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -38,62 +38,58 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 &lt;li&gt;&lt;code&gt;sudo updatedb &amp;amp;&amp;amp; locate &amp;lt;nomefile&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;download:72bac119edfbd0f2bc21b23acb9f5790&#34;&gt;Download&lt;/h2&gt;
+&lt;h2 id=&#34;download:65&#34;&gt;Download&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;download music from youtube&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;download music from youtube&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;youtube-dl --extract-audio --audio-format=mp3 &amp;lt;youtubeLink&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;for example:&lt;/p&gt;
+&lt;p&gt;for example:&lt;br /&gt;
+````python
+#!/usr/bin/env python&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
-# -*- coding: utf8 -*- 
-
-import os, time
-tt = time.time()
-inFileName = &amp;quot;videos.dat&amp;quot;
-inFile = open(inFileName, &#39;r&#39;)
-
-print &amp;quot;Start video download loop&amp;quot;
-print &amp;quot;Serial version, parallel is work in progress!:P&amp;quot;
-for line in inFile:
-	name, video = line.split(&#39;,&#39;)
-	print &amp;quot;========================================&amp;quot;
-	#print &amp;quot;Downloading &amp;quot;, name
-	print &amp;quot;========================================&amp;quot;
-	downloadCmd = &#39;youtube-dl --extract-audio --audio-format=mp3 &#39;+ videos
-	
-	#downloadCmd = &#39;youtube-dl -o ./videos/&#39;+name+&#39;.flv &amp;quot;&#39;+video+&#39;&amp;quot;&#39;
-	#os.system(downloadCmd)
-	#print &amp;quot;Converting to mp3...&amp;quot;
-	#convertCommand = &#39;avconv -i ./videos/&#39;+name+&#39;.flv ./mp3/&#39;+name+&#39;.mp3&#39;
-	#os.system(convertCommand)
-print &amp;quot;Done in &amp;quot;, time.time()-tt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;goodies:72bac119edfbd0f2bc21b23acb9f5790&#34;&gt;Goodies&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;visualize git history &lt;code&gt;gource ./ -o /dev/null&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;grab an image from the webcam with CLI VLC&lt;/li&gt;
+&lt;h1 id=&#34;coding-utf8:65&#34;&gt;-&lt;em&gt;- coding: utf8 -&lt;/em&gt;-&lt;/h1&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
+&lt;p&gt;import os, time
+tt = time.time()
+inFileName = &amp;ldquo;videos.dat&amp;rdquo;
+inFile = open(inFileName, &amp;lsquo;r&amp;rsquo;)&lt;/p&gt;
+
+&lt;p&gt;print &amp;ldquo;Start video download loop&amp;rdquo;
+print &amp;ldquo;Serial version, parallel is work in progress!:P&amp;rdquo;
+for line in inFile:
+	name, video = line.split(&amp;lsquo;,&amp;rsquo;)
+	print &amp;ldquo;========================================&amp;rdquo;
+	#print &amp;ldquo;Downloading &amp;ldquo;, name
+	print &amp;ldquo;========================================&amp;rdquo;
+	downloadCmd = &amp;lsquo;youtube-dl &amp;ndash;extract-audio &amp;ndash;audio-format=mp3 &amp;lsquo;+ videos&lt;/p&gt;
+
+&lt;p&gt;	#downloadCmd = &amp;lsquo;youtube-dl -o ./videos/&amp;rsquo;+name+&amp;lsquo;.flv &amp;ldquo;&amp;rsquo;+video+&amp;lsquo;&amp;rdquo;&amp;rsquo;
+	#os.system(downloadCmd)
+	#print &amp;ldquo;Converting to mp3&amp;hellip;&amp;rdquo;
+	#convertCommand = &amp;lsquo;avconv -i ./videos/&amp;rsquo;+name+&amp;lsquo;.flv ./mp3/&amp;rsquo;+name+&amp;lsquo;.mp3&amp;rsquo;
+	#os.system(convertCommand)
+print &amp;ldquo;Done in &amp;ldquo;, time.time()-tt&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+## Goodies
+
+* visualize git history `gource ./ -o /dev/null`
+* grab an image from the webcam with CLI VLC
+````bash
+cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
 /home/ziosi/Pictures/webcam --scene-prefix img$(date &#39;+%y%m%d%h%m%s&#39;) 
 --scene-format png vlc://quit --run-time=1
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;To see live output from the webcam:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; mplayer -tv driver=v4l2 -vo xv tv://
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
+&lt;li&gt;To see live output from the webcam:
+&lt;code&gt;bash
+mplayer -tv driver=v4l2 -vo xv tv://
+&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;To record from the webcam:
 &lt;code&gt;bash
 mencoder -oac mp3lame -ovc lavc -o foo.avi -tv driver=v4l2  tv://

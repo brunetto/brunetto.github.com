@@ -19,7 +19,7 @@
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.&lt;br /&gt;
 It&amp;rsquo;s also possible to navigate into a file graphically with &lt;a href=&#34;http://vitables.org/&#34; target=&#34;_blank&#34; title=&#34;ViTables homepage&#34;&gt;ViTables&lt;/a&gt;.&lt;br /&gt;
 Here I would like to present some of the features I use more often.&lt;br /&gt;
-&amp;lt;!&amp;ndash;TEASER_END&amp;ndash;&amp;gt;&lt;br /&gt;
+&lt;!--TEASER_END--&gt;&lt;br /&gt;
 Open, flush and close a file&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tables as tb

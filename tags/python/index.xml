@@ -386,7 +386,7 @@ I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&
 
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; new version &lt;a href=&#34;https://github.com/brunetto/fip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;python:a03aac959a8b7e6a11a32e871f3dca9a&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python:31&#34;&gt;Python&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
 import re, os, time
@@ -420,7 +420,7 @@ while True:
 	time.sleep(5)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;go:a03aac959a8b7e6a11a32e871f3dca9a&#34;&gt;Go&lt;/h3&gt;
+&lt;h3 id=&#34;go:31&#34;&gt;Go&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
 
@@ -533,14 +533,14 @@ func main() {
       <guid>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
       <description>
 
-&lt;h1 id=&#34;how-to-create-a-blog-with-github-and-pelican-python:651ade69f2264893e825a9f66a7802da&#34;&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h1&gt;
+&lt;h1 id=&#34;how-to-create-a-blog-with-github-and-pelican-python:90&#34;&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h1&gt;
 
 &lt;p&gt;###Suppose that you are curios about GitHub pages&amp;hellip; but I don&amp;rsquo;t understand their guide.&lt;br /&gt;
 ###And suppose that you don&amp;rsquo;t like Ruby but prefer Python&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;First of all create a repo named &lt;code&gt;youname.github.com&lt;/code&gt; on your GitHub account
 (ok, maybe, before this, you have to create a GitHub account!).&lt;br /&gt;
-&amp;lt;!&amp;ndash;TEASER_END&amp;ndash;&amp;gt;
+&lt;!--TEASER_END--&gt;
 Then set the remote origin locally with&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    # I use ssh because I can log in without a password saving my key at https://github.com/settings/ssh    
@@ -625,12 +625,12 @@ It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;linear-vs-logarithmic:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+&lt;h2 id=&#34;linear-vs-logarithmic:87&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
 
 &lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
 Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;from-one-to-the-other:22c59b26f192e65f682baafbd76fbd27&#34;&gt;From one to the other&lt;/h2&gt;
+&lt;h2 id=&#34;from-one-to-the-other:87&#34;&gt;From one to the other&lt;/h2&gt;
 
 &lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
 It can be easily computed as&lt;br /&gt;
@@ -639,7 +639,7 @@ From this it&amp;rsquo;s also straightforward to obtain the number of bins from 
 &lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
 Note that we choose the number of bins to be integer.&lt;/p&gt;
 
-&lt;h2 id=&#34;code:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code:87&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
 
@@ -710,7 +710,7 @@ def base_binning(inf, sup, n_bin=None, delta_bin=None):
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.&lt;br /&gt;
 It&amp;rsquo;s also possible to navigate into a file graphically with &lt;a href=&#34;http://vitables.org/&#34; target=&#34;_blank&#34; title=&#34;ViTables homepage&#34;&gt;ViTables&lt;/a&gt;.&lt;br /&gt;
 Here I would like to present some of the features I use more often.&lt;br /&gt;
-&amp;lt;!&amp;ndash;TEASER_END&amp;ndash;&amp;gt;&lt;br /&gt;
+&lt;!--TEASER_END--&gt;&lt;br /&gt;
 Open, flush and close a file&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tables as tb
@@ -797,7 +797,7 @@ h5.root.group.name.read()
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
 
-&lt;h2 id=&#34;create:d7d980b494195784336223544cb1380d&#34;&gt;Create&lt;/h2&gt;
+&lt;h2 id=&#34;create:91&#34;&gt;Create&lt;/h2&gt;
 
 &lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
 
@@ -826,7 +826,7 @@ f.close()
 
 &lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
 
-&lt;h2 id=&#34;remove-duplicates:d7d980b494195784336223544cb1380d&#34;&gt;Remove duplicates&lt;/h2&gt;
+&lt;h2 id=&#34;remove-duplicates:91&#34;&gt;Remove duplicates&lt;/h2&gt;
 
 &lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
 
@@ -845,7 +845,7 @@ Out:
 	array([3, 2, 2, 4, 1, 5, 0]))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;recreate:d7d980b494195784336223544cb1380d&#34;&gt;Recreate&lt;/h2&gt;
+&lt;h2 id=&#34;recreate:91&#34;&gt;Recreate&lt;/h2&gt;
 
 &lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
 To do this a possible solution is:&lt;/p&gt;
@@ -936,7 +936,7 @@ The first things I have understood banging against them were:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;camb:62c9ecd742ba00d6577ca64643723f05&#34;&gt;CAMB&lt;/h2&gt;
+&lt;h2 id=&#34;camb:102&#34;&gt;CAMB&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start with the
 &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&amp;quot; target&#34;&gt;main CAMB interface&lt;/a&gt;.

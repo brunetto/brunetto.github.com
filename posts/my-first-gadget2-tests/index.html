@@ -74,11 +74,11 @@
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu">Home</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae/">CV</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae">CV</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages">Pages</a></li>
         
       </ul>
     </nav>
@@ -91,11 +91,7 @@
         
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
-        
-      
-        
-        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
         
       
         
@@ -103,11 +99,15 @@
         
       
         
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
         
       
       
@@ -132,8 +132,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64">Installation of GSL and fftw</a></li>
-<li><a href="#play-with-gadget2:b6a0a5ab44b8eeb8249d7bb237655d64">Play with Gadget2</a></li>
+<li><a href="#installation-of-gsl-and-fftw:104">Installation of GSL and fftw</a></li>
+<li><a href="#play-with-gadget2:104">Play with Gadget2</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -195,7 +195,7 @@
 
 <p>This post is about my first experience with the cosmological simulation code <a href="http://www.mpa-garching.mpg.de/gadget/" title="Gadget2">Gadget2</a>. To start I followed the instructions found <a href="http://astrobites.com/2011/04/02/installing-and-running-gadget-2/">here</a>. All I&rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.</p>
 
-<h2 id="installation-of-gsl-and-fftw:b6a0a5ab44b8eeb8249d7bb237655d64">Installation of GSL and fftw</h2>
+<h2 id="installation-of-gsl-and-fftw:104">Installation of GSL and fftw</h2>
 
 <p>We can download Gadget <a href="http://www.mpa-garching.mpg.de/gadget/" title="Gadget download">here</a>, the GSL (GNU scientific library) <a href="http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz" title="GSL download">here</a> and the FFTW (fastest Fourier transform in the West library) <a href="http://www.fftw.org/fftw-2.1.5.tar.gz" title="FFTW download">here</a>. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).<br />
 Following the Astrobites suggestions let&rsquo;s decompress the archives with <code>tar -xzf &lt;archive name&gt;</code>. Now we can install the libraries following the Astrobites post:</p>
@@ -232,7 +232,7 @@ Password:
 snip: lots of diagnostic output
 </code></pre>
 
-<h2 id="play-with-gadget2:b6a0a5ab44b8eeb8249d7bb237655d64">Play with Gadget2</h2>
+<h2 id="play-with-gadget2:104">Play with Gadget2</h2>
 
 <p>Now it&rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.<br />
 To start with something easy, we will customize one of the examples given with the code, the &ldquo;galaxy&rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.</p>
@@ -551,7 +551,7 @@ print &quot;Done in &quot;+str(time.time()-t)+&quot; seconds.&quot;
 		
 		</ul>
 	</div>
-	<p>&copy; 2015 
+	<p>&copy; 2016 
 	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
 	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
 </div>

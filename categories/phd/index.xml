@@ -139,7 +139,7 @@ are more relevant on the formation and evolution of such binaries and how they i
 
 &lt;p&gt;&lt;a href=&#34;../GW-links&#34;&gt;GW useful links&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;phd-exams-and-courses:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD exams and courses&lt;/h2&gt;
+&lt;h2 id=&#34;phd-exams-and-courses:25&#34;&gt;PhD exams and courses&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
@@ -155,7 +155,7 @@ are more relevant on the formation and evolution of such binaries and how they i
 &lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;phd-schools-and-conferences:95fca24dc455c95430a659aa78ca2561&#34;&gt;PhD schools and conferences&lt;/h2&gt;
+&lt;h2 id=&#34;phd-schools-and-conferences:25&#34;&gt;PhD schools and conferences&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
@@ -189,7 +189,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:59&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -204,11 +204,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:59&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;in setup_sapporo.sh change&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
 &lt;/code&gt;&lt;/pre&gt;
@@ -218,12 +217,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;
+&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
-paths in&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
+paths in&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
 #/usr/local/cuda-5.0
@@ -235,11 +232,9 @@ BOOSTPATH := /usr/include/boost
 BOOSTINCLUDE := -I$(BOOSTPATH)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;
+&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
 &lt;/code&gt;&lt;/pre&gt;
@@ -254,25 +249,24 @@ BOOSTINCLUDE := -I$(BOOSTPATH)
 &lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;
+&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
-obtain something like&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/bin/rm -rf *.o *.cu_o libsapporo.a
+&lt;li&gt;&lt;p&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
+obtain something like
+````bash
+/bin/rm -rf *.o &lt;em&gt;.cu_o libsapporo.a
 /bin/rm -rf test_gravity_block test_gravity_N2ngb
 g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
 g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
 sapporo.cpp: In member function ‘int sapporo::open(int)’:
-sapporo.cpp:40:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
-sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
-sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:40:25: warning: ignoring return value of ‘char&lt;/em&gt; fgets(char&lt;em&gt;, int, FILE&lt;/em&gt;)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char&lt;em&gt;, int, FILE&lt;/em&gt;)’, declared with attribute warn_unused_result [-Wunused-result]
+sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char&lt;em&gt;, int, FILE&lt;/em&gt;)’, declared with attribute warn_unused_result [-Wunused-result]
 g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o
+g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
+&lt;p&gt;*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
  Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
 ar: creating libsapporo.a
 a - GPUWorker.o
@@ -280,14 +274,12 @@ a - sapporo.o
 a - send_fetch_data.o
 a - sapporoG6lib.o
 a - host_evaluate_gravity.cu_o
-ranlib libsapporo.a
-&lt;/code&gt;&lt;/pre&gt;
+ranlib libsapporo.a&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;to test the compilation run&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_N2ngb 900
+&lt;pre&gt;&lt;code&gt;
+* to test the compilation run 
+````bash 
+test_gravity_N2ngb 900
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;and&lt;/p&gt;
@@ -298,52 +290,50 @@ ranlib libsapporo.a
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:3cdfe2013ffbdc941d30732c89ec1c54&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:59&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;change configure CUDA lines:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
+&lt;li&gt;change configure CUDA lines:
+&lt;code&gt;bash
+CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
 CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
 LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;and change local/grape.sh&lt;/li&gt;
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;and change local/grape.sh
+````bash
+CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;rdquo;
+CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
-CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:59&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-# CUDAINC=&amp;quot;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;quot; 
-# CUDALIB=&amp;quot;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;quot; 
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:59&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
-LIBS1=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
+&lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
-#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1
+&lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
+g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-# Where to find GRAPE libraries:
-# GRAPE_LDFLAGS_=&#39;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&#39;
-GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&#39;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:59&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;run &lt;code&gt;make clean&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:59&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
-&lt;li&gt;&lt;p&gt;run &lt;code&gt;./configure --without-fortran&lt;/code&gt; (&lt;code&gt;--without-f77&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;code&gt;make&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;
+* run `make clean`
 
-&lt;li&gt;&lt;p&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+* run `./configure --without-fortran` (`--without-f77`)
 
-&lt;li&gt;&lt;p&gt;now you can find the &lt;code&gt;kira&lt;/code&gt; binary in &lt;code&gt;/usr/local/bin&lt;/code&gt; or&lt;code&gt;/usr/bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+* `make`
 
-&lt;li&gt;&lt;p&gt;run&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+* `make install`
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./kira -t 500 -d 1 -D 1 -b 1 \
+* now you can find the `kira` binary in `/usr/local/bin` or`/usr/bin`
+
+* run 
+````bash
+./kira -t 500 -d 1 -D 1 -b 1 \
              -n 10 -e 0.000 -B   \
 	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
 	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
@@ -360,15 +350,15 @@ GRAPE_LDFLAGS_=&#39;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_releas
       <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
       <description>
 
-&lt;h3 id=&#34;license:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;License&lt;/h3&gt;
+&lt;h3 id=&#34;license:56&#34;&gt;License&lt;/h3&gt;
 
 &lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; href=&#34;http://purl.org/dc/dcmitype/StillImage&#34; property=&#34;dct:title&#34; rel=&#34;dct:type&#34;&gt;AstroFelpa&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;BrunettoZiosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;Permissions beyond the scope of this license may be available at &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;www.brunettoziosi.eu/stories/research/astrofelpa.html&#34; rel=&#34;cc:morePermissions&#34;&gt;www.brunettoziosi.eu/stories/research/astrofelpa.html&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;shop-available-now:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;Shop available now!!!&lt;/h3&gt;
+&lt;h3 id=&#34;shop-available-now:56&#34;&gt;Shop available now!!!&lt;/h3&gt;
 
 &lt;p&gt;You can purchase the t-shirt and other material from &lt;a href=&#34;http://astrophd.spreadshirt.it/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;astrop-h-d:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;AstroP(h)D&lt;/h3&gt;
+&lt;h3 id=&#34;astrop-h-d:56&#34;&gt;AstroP(h)D&lt;/h3&gt;
 
 &lt;p&gt;AstroFelpa is an indipendent initiative with the purpose to represent
 the Padua astronomers and all their friends and supporters.&lt;br /&gt;
@@ -394,11 +384,11 @@ quantum/relativistic/strange matters&lt;/li&gt;
 
 &lt;p&gt;Then some new ideas!:P&lt;/p&gt;
 
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-keepcalmand-png-width-50-height-50:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/keepCalmAnd.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-keepcalmand-png-width-50-height-50:56&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/keepCalmAnd.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
 
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-gogo-png-width-50-height-50-br:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goGo.png&#34;width=&#34;50%&#34; height=&#34;50%&#34; &gt;&lt;/br&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-gogo-png-width-50-height-50-br:56&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goGo.png&#34;width=&#34;50%&#34; height=&#34;50%&#34; &gt;&lt;/br&gt;&lt;/h2&gt;
 
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-f77-png-width-50-height-50:350c1a291d3b5f16920d87f46d18f9f9&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/f77.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-f77-png-width-50-height-50:56&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/f77.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goSM.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/p&gt;
 
@@ -419,7 +409,7 @@ quantum/relativistic/strange matters&lt;/li&gt;
       <guid>http://brunettoziosi.eu/pages/research/research/</guid>
       <description>
 
-&lt;h2 id=&#34;phd-project-phd:42f623b3bad309d5d6619d450af47d40&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;phd-project-phd:73&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
 compact-object binaries&lt;/strong&gt;&lt;/p&gt;
@@ -434,7 +424,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 
 &lt;p&gt;More info &lt;a href=&#34;../phd&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;scientific-interests:42f623b3bad309d5d6619d450af47d40&#34;&gt;Scientific interests&lt;/h3&gt;
+&lt;h3 id=&#34;scientific-interests:73&#34;&gt;Scientific interests&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
@@ -444,7 +434,7 @@ gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
 &lt;li&gt;big data analysis and visualization&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;master-thesis-master:42f623b3bad309d5d6619d450af47d40&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;master-thesis-master:73&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My master thesis involved developing a code to calculate the cross-correlation
 among the centers of dark matter haloes in cosmological simulations.
@@ -453,12 +443,12 @@ commonly preferred in literature to be able to catch the small features expected
 small scales. The code is, however, based on a KD-tree to reduce the time needed and
 run in parallel over multiple slices form the same simulation box.&lt;/p&gt;
 
-&lt;h2 id=&#34;bachelor-thesis-master:42f623b3bad309d5d6619d450af47d40&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;bachelor-thesis-master:73&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;My bachelor thesis was about the use of optical vortexes (light beams with distorted
 wavefronts) in astrophysics.&lt;/p&gt;
 
-&lt;h2 id=&#34;useful-links:42f623b3bad309d5d6619d450af47d40&#34;&gt;Useful links&lt;/h2&gt;
+&lt;h2 id=&#34;useful-links:73&#34;&gt;Useful links&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,

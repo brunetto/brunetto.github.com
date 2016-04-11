@@ -74,11 +74,11 @@
       <ul class="nav-list">
         <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu">Home</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts/">Blog</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae/">CV</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae">CV</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/">Pages</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages">Pages</a></li>
         
       </ul>
     </nav>
@@ -91,11 +91,7 @@
         
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
-        
-      
-        
-        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
         
       
         
@@ -103,11 +99,15 @@
         
       
         
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        
+      
+        
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
         
       
       
@@ -132,11 +132,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#system:72bac119edfbd0f2bc21b23acb9f5790">System</a></li>
-<li><a href="#searching:72bac119edfbd0f2bc21b23acb9f5790">Searching</a></li>
-<li><a href="#download:72bac119edfbd0f2bc21b23acb9f5790">Download</a></li>
-<li><a href="#goodies:72bac119edfbd0f2bc21b23acb9f5790">Goodies</a></li>
+<li><a href="#system:65">System</a></li>
+<li><a href="#searching:65">Searching</a></li>
+<li><a href="#download:65">Download</a></li>
 </ul></li>
+<li><a href="#coding-utf8:65">-<em>- coding: utf8 -</em>-</a></li>
 </ul>
 </nav>
 		    </div>
@@ -175,7 +175,7 @@
 
             
 
-<h2 id="system:72bac119edfbd0f2bc21b23acb9f5790">System</h2>
+<h2 id="system:65">System</h2>
 
 <p>Now I&rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
  and a Ubuntu 13.04 Dell Laptop.<br />
@@ -188,7 +188,7 @@ See <a href="system.html">here</a> for a list of installed packages and settings
 <li><p>System monitoring: htop, iotop, saidar</p></li>
 </ul>
 
-<h2 id="searching:72bac119edfbd0f2bc21b23acb9f5790">Searching</h2>
+<h2 id="searching:65">Searching</h2>
 
 <ul>
 <li><code>grep -H '&lt;string&gt;' *.&lt;ext&gt;</code></li>
@@ -196,62 +196,58 @@ See <a href="system.html">here</a> for a list of installed packages and settings
 <li><code>sudo updatedb &amp;&amp; locate &lt;nomefile&gt;</code></li>
 </ul>
 
-<h2 id="download:72bac119edfbd0f2bc21b23acb9f5790">Download</h2>
+<h2 id="download:65">Download</h2>
 
 <ul>
-<li>download music from youtube</li>
-</ul>
+<li><p>download music from youtube</p>
 
 <pre><code class="language-bash">youtube-dl --extract-audio --audio-format=mp3 &lt;youtubeLink&gt;
 </code></pre>
 
-<p>for example:</p>
+<p>for example:<br />
+````python
+#!/usr/bin/env python</p>
 
-<pre><code class="language-python">#!/usr/bin/env python
-# -*- coding: utf8 -*- 
-
-import os, time
-tt = time.time()
-inFileName = &quot;videos.dat&quot;
-inFile = open(inFileName, 'r')
-
-print &quot;Start video download loop&quot;
-print &quot;Serial version, parallel is work in progress!:P&quot;
-for line in inFile:
-	name, video = line.split(',')
-	print &quot;========================================&quot;
-	#print &quot;Downloading &quot;, name
-	print &quot;========================================&quot;
-	downloadCmd = 'youtube-dl --extract-audio --audio-format=mp3 '+ videos
-	
-	#downloadCmd = 'youtube-dl -o ./videos/'+name+'.flv &quot;'+video+'&quot;'
-	#os.system(downloadCmd)
-	#print &quot;Converting to mp3...&quot;
-	#convertCommand = 'avconv -i ./videos/'+name+'.flv ./mp3/'+name+'.mp3'
-	#os.system(convertCommand)
-print &quot;Done in &quot;, time.time()-tt
-</code></pre>
-
-<h2 id="goodies:72bac119edfbd0f2bc21b23acb9f5790">Goodies</h2>
-
-<ul>
-<li>visualize git history <code>gource ./ -o /dev/null</code></li>
-<li>grab an image from the webcam with CLI VLC</li>
+<h1 id="coding-utf8:65">-<em>- coding: utf8 -</em>-</h1></li>
 </ul>
 
-<pre><code class="language-bash">cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
+<p>import os, time
+tt = time.time()
+inFileName = &ldquo;videos.dat&rdquo;
+inFile = open(inFileName, &lsquo;r&rsquo;)</p>
+
+<p>print &ldquo;Start video download loop&rdquo;
+print &ldquo;Serial version, parallel is work in progress!:P&rdquo;
+for line in inFile:
+	name, video = line.split(&lsquo;,&rsquo;)
+	print &ldquo;========================================&rdquo;
+	#print &ldquo;Downloading &ldquo;, name
+	print &ldquo;========================================&rdquo;
+	downloadCmd = &lsquo;youtube-dl &ndash;extract-audio &ndash;audio-format=mp3 &lsquo;+ videos</p>
+
+<p>	#downloadCmd = &lsquo;youtube-dl -o ./videos/&rsquo;+name+&lsquo;.flv &ldquo;&rsquo;+video+&lsquo;&rdquo;&rsquo;
+	#os.system(downloadCmd)
+	#print &ldquo;Converting to mp3&hellip;&rdquo;
+	#convertCommand = &lsquo;avconv -i ./videos/&rsquo;+name+&lsquo;.flv ./mp3/&rsquo;+name+&lsquo;.mp3&rsquo;
+	#os.system(convertCommand)
+print &ldquo;Done in &ldquo;, time.time()-tt</p>
+
+<pre><code>
+## Goodies
+
+* visualize git history `gource ./ -o /dev/null`
+* grab an image from the webcam with CLI VLC
+````bash
+cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
 /home/ziosi/Pictures/webcam --scene-prefix img$(date '+%y%m%d%h%m%s') 
 --scene-format png vlc://quit --run-time=1
 </code></pre>
 
 <ul>
-<li>To see live output from the webcam:</li>
-</ul>
-
-<pre><code class="language-bash"> mplayer -tv driver=v4l2 -vo xv tv://
-</code></pre>
-
-<ul>
+<li>To see live output from the webcam:
+<code>bash
+mplayer -tv driver=v4l2 -vo xv tv://
+</code></li>
 <li>To record from the webcam:
 <code>bash
 mencoder -oac mp3lame -ovc lavc -o foo.avi -tv driver=v4l2  tv://
@@ -278,14 +274,14 @@ mencoder -oac mp3lame -ovc lavc -o foo.avi -tv driver=v4l2  tv://
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/pages/tech/c-references/">C references</a>
+						<a class="paging-link" href="/pages/research/master/">Master</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/pages/personal/multimedia/Music/">Music</a>
+			            <a class="paging-link" href="/pages/tech/cpp-references/">C&#43;&#43; references</a>
 		            </div>
 		            
 	            </div>
@@ -320,7 +316,7 @@ mencoder -oac mp3lame -ovc lavc -o foo.avi -tv driver=v4l2  tv://
 		
 		</ul>
 	</div>
-	<p>&copy; 2015 
+	<p>&copy; 2016 
 	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
 	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
 </div>

@@ -183,7 +183,6 @@ using &lt;code&gt;reflect.TypeOf(variable)&lt;/code&gt;.&lt;/p&gt;
 The `os` package provides the tools to interact with the OS, so we can retrieve the process
 PID and the CLI arguments.        
     
-
 ````go
 	PID = os.Getpid()
 	log.Println(&amp;quot;Process PID is &amp;quot;, PID)	
@@ -306,7 +305,7 @@ I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&
 
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; new version &lt;a href=&#34;https://github.com/brunetto/fip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;python:a03aac959a8b7e6a11a32e871f3dca9a&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python:31&#34;&gt;Python&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
 import re, os, time
@@ -340,7 +339,7 @@ while True:
 	time.sleep(5)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;go:a03aac959a8b7e6a11a32e871f3dca9a&#34;&gt;Go&lt;/h3&gt;
+&lt;h3 id=&#34;go:31&#34;&gt;Go&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
 
@@ -501,7 +500,7 @@ echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.ba
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18435498/why-are-receivers-pass-by-value-in-go/18436251#18436251&#34;&gt;Why are receivers pass by value in Go?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;web-server:37888898512b69ee3a39b7d785691d7e&#34;&gt;Web Server&lt;/h3&gt;
+&lt;h3 id=&#34;web-server:66&#34;&gt;Web Server&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.joshsoftware.com/2014/03/12/learn-to-build-and-deploy-simple-go-web-apps-part-one/&#34;&gt;Learn to build and deploy simple Go Web Apps, Part One&lt;/a&gt;&lt;/li&gt;
@@ -512,7 +511,7 @@ echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.ba
 &lt;li&gt;&lt;a href=&#34;http://thechangelog.com/on-go-web-application-ecosystem/&#34;&gt;http://thechangelog.com/on-go-web-application-ecosystem/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;goroutines-and-pooling:37888898512b69ee3a39b7d785691d7e&#34;&gt;Goroutines and Pooling&lt;/h3&gt;
+&lt;h3 id=&#34;goroutines-and-pooling:66&#34;&gt;Goroutines and Pooling&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&#34;&gt;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&lt;/a&gt;&lt;/li&gt;
@@ -530,7 +529,7 @@ echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.ba
 &lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/waza.slide&#34;&gt;Concurrency is not Parallelism&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;efficiency:37888898512b69ee3a39b7d785691d7e&#34;&gt;Efficiency&lt;/h3&gt;
+&lt;h3 id=&#34;efficiency:66&#34;&gt;Efficiency&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://dennisforbes.ca/index.php/2013/07/23/the-most-powerful-feature-of-go-is-the-least-sexy&#34;&gt;The Most Powerful Feature of Go Is The Least Sexy&lt;/a&gt;&lt;/li&gt;

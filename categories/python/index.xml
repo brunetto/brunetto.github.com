@@ -397,12 +397,12 @@ It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;linear-vs-logarithmic:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+&lt;h2 id=&#34;linear-vs-logarithmic:87&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
 
 &lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
 Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;from-one-to-the-other:22c59b26f192e65f682baafbd76fbd27&#34;&gt;From one to the other&lt;/h2&gt;
+&lt;h2 id=&#34;from-one-to-the-other:87&#34;&gt;From one to the other&lt;/h2&gt;
 
 &lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
 It can be easily computed as&lt;br /&gt;
@@ -411,7 +411,7 @@ From this it&amp;rsquo;s also straightforward to obtain the number of bins from 
 &lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
 Note that we choose the number of bins to be integer.&lt;/p&gt;
 
-&lt;h2 id=&#34;code:22c59b26f192e65f682baafbd76fbd27&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code:87&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
 
@@ -482,7 +482,7 @@ def base_binning(inf, sup, n_bin=None, delta_bin=None):
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.&lt;br /&gt;
 It&amp;rsquo;s also possible to navigate into a file graphically with &lt;a href=&#34;http://vitables.org/&#34; target=&#34;_blank&#34; title=&#34;ViTables homepage&#34;&gt;ViTables&lt;/a&gt;.&lt;br /&gt;
 Here I would like to present some of the features I use more often.&lt;br /&gt;
-&amp;lt;!&amp;ndash;TEASER_END&amp;ndash;&amp;gt;&lt;br /&gt;
+&lt;!--TEASER_END--&gt;&lt;br /&gt;
 Open, flush and close a file&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tables as tb
@@ -569,7 +569,7 @@ h5.root.group.name.read()
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
 
-&lt;h2 id=&#34;create:d7d980b494195784336223544cb1380d&#34;&gt;Create&lt;/h2&gt;
+&lt;h2 id=&#34;create:91&#34;&gt;Create&lt;/h2&gt;
 
 &lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
 
@@ -598,7 +598,7 @@ f.close()
 
 &lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
 
-&lt;h2 id=&#34;remove-duplicates:d7d980b494195784336223544cb1380d&#34;&gt;Remove duplicates&lt;/h2&gt;
+&lt;h2 id=&#34;remove-duplicates:91&#34;&gt;Remove duplicates&lt;/h2&gt;
 
 &lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
 
@@ -617,7 +617,7 @@ Out:
 	array([3, 2, 2, 4, 1, 5, 0]))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;recreate:d7d980b494195784336223544cb1380d&#34;&gt;Recreate&lt;/h2&gt;
+&lt;h2 id=&#34;recreate:91&#34;&gt;Recreate&lt;/h2&gt;
 
 &lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
 To do this a possible solution is:&lt;/p&gt;
@@ -1241,7 +1241,7 @@ print &amp;quot;Done.&amp;quot;
       
       <guid>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</guid>
       <description>&lt;p&gt;One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at &lt;a href=&#34;http://www.decalage.info/&#34; target=&#34;_blank&#34; title=&#34;http://www.decalage.info&#34;&gt;&lt;a href=&#34;http://www.decalage.info&#34;&gt;http://www.decalage.info&lt;/a&gt;&lt;/a&gt;) a file parser to read a configuration file and the Python library &lt;a href=&#34;http://docs.python.org/dev/library/argparse.html&#34; target=&#34;_blank&#34; title=&#34;argparse&#34;&gt;argparse&lt;/a&gt; for the command line parsing. In addition I have modified the file parser and I&amp;rsquo;ve added a &amp;ldquo;variable container&amp;rdquo; object, inspired by some snippets found somewhere on the web.&lt;br /&gt;
-&amp;lt;!&amp;ndash; TEASER_END &amp;ndash;&amp;gt;
+&lt;!-- TEASER_END --&gt;
 I chose to first parse the configuration file and after the command line options: if it&amp;rsquo;s necessary the command line options will overwrite the file options.&lt;br /&gt;
 Let&amp;rsquo;s consider the code, fully commented.&lt;/p&gt;
 
