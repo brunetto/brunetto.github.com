@@ -2775,7 +2775,7 @@ from it, but you need to download the &lt;code&gt;Dockerfile&lt;/code&gt; and bu
 You can use the image I provide ONLY if you run the non-GPU StarLab version.
 And to do this you need to have a loooot of time to wait for the simulations to finish.&lt;/p&gt;
 
-&lt;h2 id=&#34;create-a-docker-image:3&#34;&gt;Create a Docker image&lt;/h2&gt;
+&lt;h2 id=&#34;create-a-docker-image:4&#34;&gt;Create a Docker image&lt;/h2&gt;
 
 &lt;p&gt;The image I&amp;rsquo;m going to create contains:&lt;/p&gt;
 
@@ -2963,7 +2963,7 @@ me/starlab-cuda-340.46-6.0.37-2015-06-15    20150615            b073d414323f
                                             37 minutes ago      5.272 GB
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;run-a-starlab-container:3&#34;&gt;Run a StarLab container&lt;/h2&gt;
+&lt;h2 id=&#34;run-a-starlab-container:4&#34;&gt;Run a StarLab container&lt;/h2&gt;
 
 &lt;p&gt;Now that you created the image, it&amp;rsquo;s time to run a container with it.
 To create and run a container based on your newly created image run:&lt;/p&gt;
@@ -3744,7 +3744,7 @@ ssh you@B # to check if it works
 &lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:20&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:19&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
@@ -3752,7 +3752,7 @@ ssh you@B # to check if it works
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;gaussian-processes-variograms-kriging:20&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:19&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 

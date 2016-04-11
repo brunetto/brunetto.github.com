@@ -2775,7 +2775,7 @@ from it, but you need to download the &lt;code&gt;Dockerfile&lt;/code&gt; and bu
 You can use the image I provide ONLY if you run the non-GPU StarLab version.
 And to do this you need to have a loooot of time to wait for the simulations to finish.&lt;/p&gt;
 
-&lt;h2 id=&#34;create-a-docker-image:3&#34;&gt;Create a Docker image&lt;/h2&gt;
+&lt;h2 id=&#34;create-a-docker-image:4&#34;&gt;Create a Docker image&lt;/h2&gt;
 
 &lt;p&gt;The image I&amp;rsquo;m going to create contains:&lt;/p&gt;
 
@@ -2963,7 +2963,7 @@ me/starlab-cuda-340.46-6.0.37-2015-06-15    20150615            b073d414323f
                                             37 minutes ago      5.272 GB
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;run-a-starlab-container:3&#34;&gt;Run a StarLab container&lt;/h2&gt;
+&lt;h2 id=&#34;run-a-starlab-container:4&#34;&gt;Run a StarLab container&lt;/h2&gt;
 
 &lt;p&gt;Now that you created the image, it&amp;rsquo;s time to run a container with it.
 To create and run a container based on your newly created image run:&lt;/p&gt;

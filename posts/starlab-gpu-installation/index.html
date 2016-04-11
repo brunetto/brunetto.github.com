@@ -132,28 +132,28 @@
 <ul>
 <li>
 <ul>
-<li><a href="#starlab:78">StarLab</a></li>
-<li><a href="#starlab-gpu:78">StarLab-GPU</a>
+<li><a href="#starlab:77">StarLab</a></li>
+<li><a href="#starlab-gpu:77">StarLab-GPU</a>
 <ul>
 <li>
 <ul>
-<li><a href="#download:78">Download</a></li>
+<li><a href="#download:77">Download</a></li>
 </ul></li>
-<li><a href="#sapporo:78">Sapporo</a></li>
-<li><a href="#starlab-1:78">StarLab</a></li>
-<li><a href="#run-starlab:78">Run StarLab</a>
+<li><a href="#sapporo:77">Sapporo</a></li>
+<li><a href="#starlab-1:77">StarLab</a></li>
+<li><a href="#run-starlab:77">Run StarLab</a>
 <ul>
-<li><a href="#initial-conditions:78">Initial Conditions</a></li>
-<li><a href="#launch:78">Launch</a></li>
-<li><a href="#tidal-fields:78">Tidal fields</a></li>
+<li><a href="#initial-conditions:77">Initial Conditions</a></li>
+<li><a href="#launch:77">Launch</a></li>
+<li><a href="#tidal-fields:77">Tidal fields</a></li>
 </ul></li>
-<li><a href="#known-issues-and-troubleshooting:78">Known issues and Troubleshooting</a></li>
-<li><a href="#clusters:78">Clusters</a>
+<li><a href="#known-issues-and-troubleshooting:77">Known issues and Troubleshooting</a></li>
+<li><a href="#clusters:77">Clusters</a>
 <ul>
-<li><a href="#eurora:78">EURORA</a></li>
-<li><a href="#green-ii-hpc-system-swinburne-university:78">Green II HPC system @ Swinburne University</a></li>
+<li><a href="#eurora:77">EURORA</a></li>
+<li><a href="#green-ii-hpc-system-swinburne-university:77">Green II HPC system @ Swinburne University</a></li>
 </ul></li>
-<li><a href="#additional-material:78">Additional material</a></li>
+<li><a href="#additional-material:77">Additional material</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -205,7 +205,7 @@
 		    	<div class="social-sharing">
 	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
 	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
-	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f&title=StarLab-GPU%20installation&summary=%3cul%3e%0a%3cli%3e%3ca%20href%3d%22..%2f..%2fpages%2fresearch%2futils%2fstarlab-gpu-old-guide%22%3eClick%20here%20for%20the%20old%20guide%21%21%21%3c%2fa%3e%3cbr%20%2f%3e%3c%2fli%3e%0a%3cli%3e2014%2f09%2f16%3a%20updated%20with%20installation%20instruction%20for%20g2%40Swinburne%20and%20some%20troubleshooting.%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%202%3a%3c%2fstrong%3e%20%3cstrong%3e%3ca%20href%3d%22..%2fdockerized-starlab%2f%22%3enew%20post%3c%2fa%3e%3c%2fstrong%3e%20about%20installing%20and%20using%20StarLab%20in%20a%20Docker%20container%21%21%0aLess%20troubles%2c%20more%20reproducibility%21%21%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%3a%3c%2fstrong%3e%20if%20you%20want%20to%20compile%20starlab%20%3cstrong%3ewithout%20GPU%20support%3c%2fstrong%3e%2c%20you%20only%20need%20to%3c%2fp%3e%0a%0a%3cul%3e%0a%3cli%3eignore%20the%20%26ldquo%3b%3ccode%3esapporo%3c%2fcode%3e%26rdquo%3b%20%20and%20%26ldquo%3b%3ccode%3eCUDA%3c%2fcode%3e%26rdquo%3b%20instructions%3c%2fli%3e%0a%3cli%3erename%20%3ccode%3estarlab%2flocal%2fgrape.sh%3c%2fcode%3e%20to%20%3ccode%3estarlab%2flocal%2f_grape.sh%3c%2fcode%3e%3c%2fli%3e%0a%3cli%3esubstitute%20%3ccode%3econfigure%20--without-f77%3c%2fcode%3e%20with%20%3ccode%3econfigure%20--with-grape%3dno%20--without-f77%3c%2fcode%3e%29%3c%2fli%3e%0a%3cli%3ein%20case%20you%20can%26rsquo%3bt%20%3ccode%3emake%3c%2fcode%3e%20succesfully%20may%20be%20you%20need%20to%20copy%20the%20folder%0a%3ccode%3estarlab%2fsrc%2fgfx%3c%2fcode%3e%20and%20do%20not%20make%20clean%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3eWell%2c%20probably%20you%20landed%20here%20searching%20information%20about%20StarLab%2c%20how%20to%0ainstall%20it%2c%20how%20to%20run%20it%2c%20how%20prevent%20it%20to%20harm%20your%20cat.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%201%3a%3c%2fstrong%3e%20I%20won%26rsquo%3bt%20promise%20anything%20about%20your%20cat%20but%20I%20will%20try%20to%20help%20you%20having%20a%0areasonable%20well%20running%20installation%20of%20StarLab.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%202%3a%3c%2fstrong%3e%20I%26rsquo%3bm%20not%20a%20programmer%2c%20I%26rsquo%3bm%20not%20a%20system%20administrator%20and%20I%20don%26rsquo%3bt%20even%0aknow%20how%20to%20program%20in%20CUDA%20%28yet%29.%20Maybe%20something%20here%20is%20wrong%20ore%20outdated.%0aI%26rsquo%3bm%20only%20giving%20you%20some%20of%20the%20experienced%20I%20collected%20in%20n%2b1%20times%20I%20installed%20StarLab.%0aNothin%20less%2c%20nothing%20more.%3cbr%20%2f%3e%0aAlso%20note%20that%20most%20of%20the%20knowledge%20I%20put%20here%20come%0afrom%20my%20%3ca%20href%3d%22http%3a%2f%2fweb.pd.astro.it%2fmapelli%2f%22%3esupervisor%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20also%20thanks%20Mario%20Spera%20for%20the%20usefull%20advices.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%203%3a%3c%2fstrong%3e%20StarLab%20still%20seems%20to%20%3cstrong%3ealways%3c%2fstrong%3e%20crash%20if%20you%20try%20to%20simulate%20a%20system%0awith%20more%20than%20~6000%20binaries.%3c%2fp%3e%0a%0a%3ch2%20id%3d%22starlab%3a78%22%3eStarLab%3c%2fh2%3e%0a%0a%3cp%3e%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eStarLab%3c%2fa%3e%20is%20%26ldquo%3bA%20Software%20Environment%20for%20Collisional%20Stellar%20Dynamics%26rdquo%3b.%0a%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eHere%3c%2fa%3e%20you%20can%20find%20useful%20information%20about%20it%20that%0ais%20not%20useful%20to%20rewrite%20here%2c%20so%20have%20a%20look%20and%20then%20come%20back%21%3a%29%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f&title=StarLab-GPU%20installation&summary=%3cul%3e%0a%3cli%3e%3ca%20href%3d%22..%2f..%2fpages%2fresearch%2futils%2fstarlab-gpu-old-guide%22%3eClick%20here%20for%20the%20old%20guide%21%21%21%3c%2fa%3e%3cbr%20%2f%3e%3c%2fli%3e%0a%3cli%3e2014%2f09%2f16%3a%20updated%20with%20installation%20instruction%20for%20g2%40Swinburne%20and%20some%20troubleshooting.%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%202%3a%3c%2fstrong%3e%20%3cstrong%3e%3ca%20href%3d%22..%2fdockerized-starlab%2f%22%3enew%20post%3c%2fa%3e%3c%2fstrong%3e%20about%20installing%20and%20using%20StarLab%20in%20a%20Docker%20container%21%21%0aLess%20troubles%2c%20more%20reproducibility%21%21%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%3a%3c%2fstrong%3e%20if%20you%20want%20to%20compile%20starlab%20%3cstrong%3ewithout%20GPU%20support%3c%2fstrong%3e%2c%20you%20only%20need%20to%3c%2fp%3e%0a%0a%3cul%3e%0a%3cli%3eignore%20the%20%26ldquo%3b%3ccode%3esapporo%3c%2fcode%3e%26rdquo%3b%20%20and%20%26ldquo%3b%3ccode%3eCUDA%3c%2fcode%3e%26rdquo%3b%20instructions%3c%2fli%3e%0a%3cli%3erename%20%3ccode%3estarlab%2flocal%2fgrape.sh%3c%2fcode%3e%20to%20%3ccode%3estarlab%2flocal%2f_grape.sh%3c%2fcode%3e%3c%2fli%3e%0a%3cli%3esubstitute%20%3ccode%3econfigure%20--without-f77%3c%2fcode%3e%20with%20%3ccode%3econfigure%20--with-grape%3dno%20--without-f77%3c%2fcode%3e%29%3c%2fli%3e%0a%3cli%3ein%20case%20you%20can%26rsquo%3bt%20%3ccode%3emake%3c%2fcode%3e%20succesfully%20may%20be%20you%20need%20to%20copy%20the%20folder%0a%3ccode%3estarlab%2fsrc%2fgfx%3c%2fcode%3e%20and%20do%20not%20make%20clean%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3eWell%2c%20probably%20you%20landed%20here%20searching%20information%20about%20StarLab%2c%20how%20to%0ainstall%20it%2c%20how%20to%20run%20it%2c%20how%20prevent%20it%20to%20harm%20your%20cat.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%201%3a%3c%2fstrong%3e%20I%20won%26rsquo%3bt%20promise%20anything%20about%20your%20cat%20but%20I%20will%20try%20to%20help%20you%20having%20a%0areasonable%20well%20running%20installation%20of%20StarLab.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%202%3a%3c%2fstrong%3e%20I%26rsquo%3bm%20not%20a%20programmer%2c%20I%26rsquo%3bm%20not%20a%20system%20administrator%20and%20I%20don%26rsquo%3bt%20even%0aknow%20how%20to%20program%20in%20CUDA%20%28yet%29.%20Maybe%20something%20here%20is%20wrong%20ore%20outdated.%0aI%26rsquo%3bm%20only%20giving%20you%20some%20of%20the%20experienced%20I%20collected%20in%20n%2b1%20times%20I%20installed%20StarLab.%0aNothin%20less%2c%20nothing%20more.%3cbr%20%2f%3e%0aAlso%20note%20that%20most%20of%20the%20knowledge%20I%20put%20here%20come%0afrom%20my%20%3ca%20href%3d%22http%3a%2f%2fweb.pd.astro.it%2fmapelli%2f%22%3esupervisor%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20also%20thanks%20Mario%20Spera%20for%20the%20usefull%20advices.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%203%3a%3c%2fstrong%3e%20StarLab%20still%20seems%20to%20%3cstrong%3ealways%3c%2fstrong%3e%20crash%20if%20you%20try%20to%20simulate%20a%20system%0awith%20more%20than%20~6000%20binaries.%3c%2fp%3e%0a%0a%3ch2%20id%3d%22starlab%3a77%22%3eStarLab%3c%2fh2%3e%0a%0a%3cp%3e%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eStarLab%3c%2fa%3e%20is%20%26ldquo%3bA%20Software%20Environment%20for%20Collisional%20Stellar%20Dynamics%26rdquo%3b.%0a%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eHere%3c%2fa%3e%20you%20can%20find%20useful%20information%20about%20it%20that%0ais%20not%20useful%20to%20rewrite%20here%2c%20so%20have%20a%20look%20and%20then%20come%20back%21%3a%29%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
 	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=StarLab-GPU%20installation&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
 </div>
 		    
@@ -253,13 +253,13 @@ I also thanks Mario Spera for the usefull advices.</p>
 <p><strong>DISCLAIMER 3:</strong> StarLab still seems to <strong>always</strong> crash if you try to simulate a system
 with more than ~6000 binaries.</p>
 
-<h2 id="starlab:78">StarLab</h2>
+<h2 id="starlab:77">StarLab</h2>
 
 <p><a href="http://www.sns.ias.edu/~starlab/">StarLab</a> is &ldquo;A Software Environment for Collisional Stellar Dynamics&rdquo;.
 <a href="http://www.sns.ias.edu/~starlab/">Here</a> you can find useful information about it that
 is not useful to rewrite here, so have a look and then come back!:)</p>
 
-<h2 id="starlab-gpu:78">StarLab-GPU</h2>
+<h2 id="starlab-gpu:77">StarLab-GPU</h2>
 
 <p>Welcome back!!<br />
 Next step: StarLab was designed to run on <a href="http://en.wikipedia.org/wiki/Gravity_Pipe">GRAPE</a>
@@ -279,7 +279,7 @@ the clusters I tested.</p>
 
 <p>Let&rsquo;s start!!</p>
 
-<h4 id="download:78">Download</h4>
+<h4 id="download:77">Download</h4>
 
 <p>Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
 You can try to check them using</p>
@@ -323,7 +323,7 @@ We will try to survive and to have the most standard installation we can.</p>
 <p><code>$SLPATH</code> should be the path where you put your StarLab installation.<br />
 I&rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.</p>
 
-<h3 id="sapporo:78">Sapporo</h3>
+<h3 id="sapporo:77">Sapporo</h3>
 
 <p>Enter in the sapporo folder, and to be sure to start a clean installation run
 <code>make clean</code>.
@@ -435,7 +435,7 @@ then test sapporo with</p>
 
 <p>Assuming <code>sapporo</code> is ready, let&rsquo;s move to starlab.</p>
 
-<h3 id="starlab-1:78">StarLab</h3>
+<h3 id="starlab-1:77">StarLab</h3>
 
 <p>In StarLab the relevant files you have to worry about are</p>
 
@@ -535,27 +535,27 @@ try to run <code>configure --with-f77=no --with-qt=no</code>; in case try to hav
 <code>configure --help</code></li>
 </ul>
 
-<h3 id="run-starlab:78">Run StarLab</h3>
+<h3 id="run-starlab:77">Run StarLab</h3>
 
 <p>Before run a simulation you need to create the initial conditions.</p>
 
-<h4 id="initial-conditions:78">Initial Conditions</h4>
+<h4 id="initial-conditions:77">Initial Conditions</h4>
 
 <p>StarLab is provided with few tools to help (really?) you in this task. A common
 way to create ICs for <a href="http://arxiv.org/abs/1404.7147">our simulations</a> is something like:</p>
 
 <p><code>&lt;ehm, I don't know if I can tell you, sorry man...:(&gt;</code></p>
 
-<h4 id="launch:78">Launch</h4>
+<h4 id="launch:77">Launch</h4>
 
 <p>StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
 you want to know about your simulations to STDERR, so, <code>&lt;ehm.... see ICs&gt;</code></p>
 
-<h4 id="tidal-fields:78">Tidal fields</h4>
+<h4 id="tidal-fields:77">Tidal fields</h4>
 
 <p>Be patience&hellip;</p>
 
-<h3 id="known-issues-and-troubleshooting:78">Known issues and Troubleshooting</h3>
+<h3 id="known-issues-and-troubleshooting:77">Known issues and Troubleshooting</h3>
 
 <p>If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.<br />
 Some of the things that can happen are:</p>
@@ -584,9 +584,9 @@ you need to comment</li>
 
 <p>function call in <code>kira_counters.C</code> otherwise you won&rsquo;t be able to compile StarLab.</p>
 
-<h3 id="clusters:78">Clusters</h3>
+<h3 id="clusters:77">Clusters</h3>
 
-<h4 id="eurora:78">EURORA</h4>
+<h4 id="eurora:77">EURORA</h4>
 
 <ul>
 <li>in <code>setup_sapporo.sh</code>
@@ -660,7 +660,7 @@ export LD_LIBRARY_PATH
 cd $HOME/slPack/starlab
 </code></pre>
 
-<h4 id="green-ii-hpc-system-swinburne-university:78">Green II HPC system @ Swinburne University</h4>
+<h4 id="green-ii-hpc-system-swinburne-university:77">Green II HPC system @ Swinburne University</h4>
 
 <p>Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
 system at the Swinburne University. Here how to do that.</p>
@@ -793,7 +793,7 @@ Also remember that make clean is not working properly, so you need to <code>make
 some options from the configure, so run <code>configure --with-f77=no --with-qt=no</code> or try <code>configure --help</code>
 to check for other options.</p>
 
-<h3 id="additional-material:78">Additional material</h3>
+<h3 id="additional-material:77">Additional material</h3>
 
 <ul>
 <li>Code units (coming soon&hellip;)</li>
@@ -809,7 +809,7 @@ to check for other options.</p>
 		    	<div class="social-sharing">
 	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
 	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
-	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f&title=StarLab-GPU%20installation&summary=%3cul%3e%0a%3cli%3e%3ca%20href%3d%22..%2f..%2fpages%2fresearch%2futils%2fstarlab-gpu-old-guide%22%3eClick%20here%20for%20the%20old%20guide%21%21%21%3c%2fa%3e%3cbr%20%2f%3e%3c%2fli%3e%0a%3cli%3e2014%2f09%2f16%3a%20updated%20with%20installation%20instruction%20for%20g2%40Swinburne%20and%20some%20troubleshooting.%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%202%3a%3c%2fstrong%3e%20%3cstrong%3e%3ca%20href%3d%22..%2fdockerized-starlab%2f%22%3enew%20post%3c%2fa%3e%3c%2fstrong%3e%20about%20installing%20and%20using%20StarLab%20in%20a%20Docker%20container%21%21%0aLess%20troubles%2c%20more%20reproducibility%21%21%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%3a%3c%2fstrong%3e%20if%20you%20want%20to%20compile%20starlab%20%3cstrong%3ewithout%20GPU%20support%3c%2fstrong%3e%2c%20you%20only%20need%20to%3c%2fp%3e%0a%0a%3cul%3e%0a%3cli%3eignore%20the%20%26ldquo%3b%3ccode%3esapporo%3c%2fcode%3e%26rdquo%3b%20%20and%20%26ldquo%3b%3ccode%3eCUDA%3c%2fcode%3e%26rdquo%3b%20instructions%3c%2fli%3e%0a%3cli%3erename%20%3ccode%3estarlab%2flocal%2fgrape.sh%3c%2fcode%3e%20to%20%3ccode%3estarlab%2flocal%2f_grape.sh%3c%2fcode%3e%3c%2fli%3e%0a%3cli%3esubstitute%20%3ccode%3econfigure%20--without-f77%3c%2fcode%3e%20with%20%3ccode%3econfigure%20--with-grape%3dno%20--without-f77%3c%2fcode%3e%29%3c%2fli%3e%0a%3cli%3ein%20case%20you%20can%26rsquo%3bt%20%3ccode%3emake%3c%2fcode%3e%20succesfully%20may%20be%20you%20need%20to%20copy%20the%20folder%0a%3ccode%3estarlab%2fsrc%2fgfx%3c%2fcode%3e%20and%20do%20not%20make%20clean%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3eWell%2c%20probably%20you%20landed%20here%20searching%20information%20about%20StarLab%2c%20how%20to%0ainstall%20it%2c%20how%20to%20run%20it%2c%20how%20prevent%20it%20to%20harm%20your%20cat.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%201%3a%3c%2fstrong%3e%20I%20won%26rsquo%3bt%20promise%20anything%20about%20your%20cat%20but%20I%20will%20try%20to%20help%20you%20having%20a%0areasonable%20well%20running%20installation%20of%20StarLab.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%202%3a%3c%2fstrong%3e%20I%26rsquo%3bm%20not%20a%20programmer%2c%20I%26rsquo%3bm%20not%20a%20system%20administrator%20and%20I%20don%26rsquo%3bt%20even%0aknow%20how%20to%20program%20in%20CUDA%20%28yet%29.%20Maybe%20something%20here%20is%20wrong%20ore%20outdated.%0aI%26rsquo%3bm%20only%20giving%20you%20some%20of%20the%20experienced%20I%20collected%20in%20n%2b1%20times%20I%20installed%20StarLab.%0aNothin%20less%2c%20nothing%20more.%3cbr%20%2f%3e%0aAlso%20note%20that%20most%20of%20the%20knowledge%20I%20put%20here%20come%0afrom%20my%20%3ca%20href%3d%22http%3a%2f%2fweb.pd.astro.it%2fmapelli%2f%22%3esupervisor%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20also%20thanks%20Mario%20Spera%20for%20the%20usefull%20advices.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%203%3a%3c%2fstrong%3e%20StarLab%20still%20seems%20to%20%3cstrong%3ealways%3c%2fstrong%3e%20crash%20if%20you%20try%20to%20simulate%20a%20system%0awith%20more%20than%20~6000%20binaries.%3c%2fp%3e%0a%0a%3ch2%20id%3d%22starlab%3a78%22%3eStarLab%3c%2fh2%3e%0a%0a%3cp%3e%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eStarLab%3c%2fa%3e%20is%20%26ldquo%3bA%20Software%20Environment%20for%20Collisional%20Stellar%20Dynamics%26rdquo%3b.%0a%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eHere%3c%2fa%3e%20you%20can%20find%20useful%20information%20about%20it%20that%0ais%20not%20useful%20to%20rewrite%20here%2c%20so%20have%20a%20look%20and%20then%20come%20back%21%3a%29%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f&title=StarLab-GPU%20installation&summary=%3cul%3e%0a%3cli%3e%3ca%20href%3d%22..%2f..%2fpages%2fresearch%2futils%2fstarlab-gpu-old-guide%22%3eClick%20here%20for%20the%20old%20guide%21%21%21%3c%2fa%3e%3cbr%20%2f%3e%3c%2fli%3e%0a%3cli%3e2014%2f09%2f16%3a%20updated%20with%20installation%20instruction%20for%20g2%40Swinburne%20and%20some%20troubleshooting.%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%202%3a%3c%2fstrong%3e%20%3cstrong%3e%3ca%20href%3d%22..%2fdockerized-starlab%2f%22%3enew%20post%3c%2fa%3e%3c%2fstrong%3e%20about%20installing%20and%20using%20StarLab%20in%20a%20Docker%20container%21%21%0aLess%20troubles%2c%20more%20reproducibility%21%21%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eUPDATE%3a%3c%2fstrong%3e%20if%20you%20want%20to%20compile%20starlab%20%3cstrong%3ewithout%20GPU%20support%3c%2fstrong%3e%2c%20you%20only%20need%20to%3c%2fp%3e%0a%0a%3cul%3e%0a%3cli%3eignore%20the%20%26ldquo%3b%3ccode%3esapporo%3c%2fcode%3e%26rdquo%3b%20%20and%20%26ldquo%3b%3ccode%3eCUDA%3c%2fcode%3e%26rdquo%3b%20instructions%3c%2fli%3e%0a%3cli%3erename%20%3ccode%3estarlab%2flocal%2fgrape.sh%3c%2fcode%3e%20to%20%3ccode%3estarlab%2flocal%2f_grape.sh%3c%2fcode%3e%3c%2fli%3e%0a%3cli%3esubstitute%20%3ccode%3econfigure%20--without-f77%3c%2fcode%3e%20with%20%3ccode%3econfigure%20--with-grape%3dno%20--without-f77%3c%2fcode%3e%29%3c%2fli%3e%0a%3cli%3ein%20case%20you%20can%26rsquo%3bt%20%3ccode%3emake%3c%2fcode%3e%20succesfully%20may%20be%20you%20need%20to%20copy%20the%20folder%0a%3ccode%3estarlab%2fsrc%2fgfx%3c%2fcode%3e%20and%20do%20not%20make%20clean%3c%2fli%3e%0a%3c%2ful%3e%0a%0a%3chr%20%2f%3e%0a%0a%3cp%3eWell%2c%20probably%20you%20landed%20here%20searching%20information%20about%20StarLab%2c%20how%20to%0ainstall%20it%2c%20how%20to%20run%20it%2c%20how%20prevent%20it%20to%20harm%20your%20cat.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%201%3a%3c%2fstrong%3e%20I%20won%26rsquo%3bt%20promise%20anything%20about%20your%20cat%20but%20I%20will%20try%20to%20help%20you%20having%20a%0areasonable%20well%20running%20installation%20of%20StarLab.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%202%3a%3c%2fstrong%3e%20I%26rsquo%3bm%20not%20a%20programmer%2c%20I%26rsquo%3bm%20not%20a%20system%20administrator%20and%20I%20don%26rsquo%3bt%20even%0aknow%20how%20to%20program%20in%20CUDA%20%28yet%29.%20Maybe%20something%20here%20is%20wrong%20ore%20outdated.%0aI%26rsquo%3bm%20only%20giving%20you%20some%20of%20the%20experienced%20I%20collected%20in%20n%2b1%20times%20I%20installed%20StarLab.%0aNothin%20less%2c%20nothing%20more.%3cbr%20%2f%3e%0aAlso%20note%20that%20most%20of%20the%20knowledge%20I%20put%20here%20come%0afrom%20my%20%3ca%20href%3d%22http%3a%2f%2fweb.pd.astro.it%2fmapelli%2f%22%3esupervisor%3c%2fa%3e.%3cbr%20%2f%3e%0aI%20also%20thanks%20Mario%20Spera%20for%20the%20usefull%20advices.%3c%2fp%3e%0a%0a%3cp%3e%3cstrong%3eDISCLAIMER%203%3a%3c%2fstrong%3e%20StarLab%20still%20seems%20to%20%3cstrong%3ealways%3c%2fstrong%3e%20crash%20if%20you%20try%20to%20simulate%20a%20system%0awith%20more%20than%20~6000%20binaries.%3c%2fp%3e%0a%0a%3ch2%20id%3d%22starlab%3a77%22%3eStarLab%3c%2fh2%3e%0a%0a%3cp%3e%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eStarLab%3c%2fa%3e%20is%20%26ldquo%3bA%20Software%20Environment%20for%20Collisional%20Stellar%20Dynamics%26rdquo%3b.%0a%3ca%20href%3d%22http%3a%2f%2fwww.sns.ias.edu%2f~starlab%2f%22%3eHere%3c%2fa%3e%20you%20can%20find%20useful%20information%20about%20it%20that%0ais%20not%20useful%20to%20rewrite%20here%2c%20so%20have%20a%20look%20and%20then%20come%20back%21%3a%29%3c%2fp%3e%0a}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
 	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=StarLab-GPU%20installation&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fstarlab-gpu-installation%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
 </div>
 		    

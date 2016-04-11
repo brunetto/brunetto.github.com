@@ -19,11 +19,11 @@
 
 &lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
 
-&lt;h2 id=&#34;header-files:89&#34;&gt;Header files&lt;/h2&gt;
+&lt;h2 id=&#34;header-files:88&#34;&gt;Header files&lt;/h2&gt;
 
 &lt;p&gt;They are one of the first annoying things I see in C/C++ languages. Two files for each &amp;ldquo;module&amp;rdquo;, two lines to be modified every times, &amp;hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&amp;rsquo;s code, you can share or download compiled code+header files and not all the sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;compile:89&#34;&gt;Compile&lt;/h2&gt;
+&lt;h2 id=&#34;compile:88&#34;&gt;Compile&lt;/h2&gt;
 
 &lt;p&gt;The easiest way to compile the sources and get the executable is&lt;/p&gt;
 
@@ -48,7 +48,7 @@ A better way is to include some flags&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;-o&lt;/code&gt; to specify the output&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;macros-preprocessor:89&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
+&lt;h2 id=&#34;macros-preprocessor:88&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
 
 &lt;p&gt;The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &amp;ldquo;constant&amp;rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it&lt;/p&gt;
 
@@ -74,12 +74,12 @@ float a = PI;
 
 &lt;p&gt;Compiling with the &lt;code&gt;-E&lt;/code&gt; flag you can view the result of the preprocessor action.&lt;/p&gt;
 
-&lt;h2 id=&#34;numbers:89&#34;&gt;Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;numbers:88&#34;&gt;Numbers&lt;/h2&gt;
 
 &lt;p&gt;Number variables are similar to those in other programming languages, but there&amp;rsquo;s some peculiarities.&lt;br /&gt;
 Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.&lt;/p&gt;
 
-&lt;h2 id=&#34;cast:89&#34;&gt;Cast&lt;/h2&gt;
+&lt;h2 id=&#34;cast:88&#34;&gt;Cast&lt;/h2&gt;
 
 &lt;p&gt;It&amp;rsquo;s possible to convert one type to some other type. For example,&lt;/p&gt;
 
@@ -87,11 +87,11 @@ Integer dimension depends on the machine and on the compiler, on the contrary fl
 pippo = (float) k*1024L;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;bool:89&#34;&gt;Bool&lt;/h2&gt;
+&lt;h2 id=&#34;bool:88&#34;&gt;Bool&lt;/h2&gt;
 
 &lt;p&gt;There aren&amp;rsquo;t boolean variables, but 0 stands for &lt;code&gt;False&lt;/code&gt; and any other non-zero value means &lt;code&gt;True&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;side-effect-and-short-circuit:89&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
+&lt;h2 id=&#34;side-effect-and-short-circuit:88&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
 
 &lt;p&gt;Something like&lt;/p&gt;
 
@@ -101,7 +101,7 @@ pippo = (float) k*1024L;
 &lt;p&gt;has indefinite result because it&amp;rsquo;s not predictable the order of evaluation of operand/expression &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;++k&lt;/code&gt;, and those expressions have &lt;em&gt;side effects&lt;/em&gt; on the other expression involved in the result.&lt;br /&gt;
 Logical operators &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; and &lt;code&gt;||&lt;/code&gt; instead are evaluated strictly from left to right. This is c&lt;em&gt;alled short-circuit evaluation&lt;/em&gt; and the operators are synchronization points, just like &amp;ldquo;;&amp;rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.&lt;/p&gt;
 
-&lt;h2 id=&#34;ternary-operator:89&#34;&gt;Ternary operator&lt;/h2&gt;
+&lt;h2 id=&#34;ternary-operator:88&#34;&gt;Ternary operator&lt;/h2&gt;
 
 &lt;p&gt;The ternary operator accept three arguments and has the form of&lt;/p&gt;
 
@@ -166,11 +166,11 @@ Because the dereferencing operator has not the highest precedence, sometimes you
 pippo-&amp;amp;gt;pluto
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;stack-and-heap:89&#34;&gt;Stack and heap&lt;/h2&gt;
+&lt;h2 id=&#34;stack-and-heap:88&#34;&gt;Stack and heap&lt;/h2&gt;
 
 &lt;p&gt;The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&amp;rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &amp;ldquo;&lt;em&gt;memory leak&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;
 
-&lt;h2 id=&#34;arrays:89&#34;&gt;Arrays&lt;/h2&gt;
+&lt;h2 id=&#34;arrays:88&#34;&gt;Arrays&lt;/h2&gt;
 
 &lt;p&gt;There&amp;rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;&lt;/p&gt;
 
@@ -239,7 +239,7 @@ void array_destruction(float** ptr, int lenghty){
 
 &lt;p&gt;It&amp;rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &amp;ldquo;linearized&amp;rdquo; row-major order so it&amp;rsquo;s faster to &amp;ldquo;run&amp;rdquo; on the row index (that on the right-most one). This is known as &lt;a href=&#34;http://en.wikipedia.org/wiki/Stride_of_an_array&#34; target=&#34;_blank&#34;&gt;stride one access&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;structs:89&#34;&gt;Structs&lt;/h2&gt;
+&lt;h2 id=&#34;structs:88&#34;&gt;Structs&lt;/h2&gt;
 
 &lt;p&gt;An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:&lt;/p&gt;
 
@@ -263,7 +263,7 @@ Tree smaller, larger; /* equivalently, this line could say
 
 &lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
 
-&lt;h2 id=&#34;strings:89&#34;&gt;Strings&lt;/h2&gt;
+&lt;h2 id=&#34;strings:88&#34;&gt;Strings&lt;/h2&gt;
 
 &lt;p&gt;Strings are simply arrays of characters, usually terminated with the &amp;ldquo;null&amp;rdquo; character &amp;ldquo;&lt;code&gt;&amp;quot; to be able to use the string manipulation libraries (without &amp;quot;&lt;/code&gt;&amp;rdquo; you should give the length of the string to the library, but they are not designed to do this).&lt;br /&gt;
 Because of this, the two expression that follows are equivalent:&lt;/p&gt;
@@ -330,11 +330,11 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
 &lt;p&gt;I said that &lt;code&gt;$M^*$&lt;/code&gt; is the typical mass of a perturbation that, at the time we are looking, has the associated liner density contrast &lt;code&gt;$\delta(\mathbf{x})\sim1$, or, in the formalism of the excursion set, pass the barrier of &amp;amp;nbsp;$\delta_c=1.686$.     
 This means that we are looking for a perturbation with&lt;/code&gt;$\sigma\simeq1.686$` and trying to quantify the mass it contains.&lt;/p&gt;
 
-&lt;h2 id=&#34;sigma-and-r:96&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
+&lt;h2 id=&#34;sigma-and-r:95&#34;&gt;&lt;code&gt;$\sigma$&lt;/code&gt; and R&lt;/h2&gt;
 
 &lt;p&gt;First of all we need to find the radius of a perturbation whose &lt;code&gt;$\sigma$&lt;/code&gt; reached the value of 1.686. To do this we can use the &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/the-initial-conditions-saga/&#34; target=&#34;_blank&#34; title=&#34;The “Initial Conditions” saga&#34;&gt;code&lt;/a&gt; developed to manage the CAMB files in order to find the matter power spectrum and its normalization. Then we add few lines to &amp;ldquo;sample&amp;rdquo; the &lt;code&gt;$\sigma(R)$&lt;/code&gt; distribution and find the radius of the perturbation reaching the excursion set barrier for the collapse.&lt;/p&gt;
 
-&lt;h2 id=&#34;m:96&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;m:95&#34;&gt;&lt;code&gt;$M^*$&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;Once we have the radius for which &lt;code&gt;$\sigma = \delta_c$&lt;/code&gt; we need to know the mean density in the universe to find &lt;code&gt;$M^*$&lt;/code&gt; with:&lt;/p&gt;
 
@@ -1317,7 +1317,7 @@ is the same both in linear theory and in the Zel&amp;rsquo;dovich approximation 
 
 &lt;p&gt;Considering the last two possibilities, it&amp;rsquo;s worth noting that the former still has a lot of noise, and the second is better than the grid only for aesthetic reasons.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-initial-gravitational-potential:111&#34;&gt;The initial gravitational potential&lt;/h2&gt;
+&lt;h2 id=&#34;the-initial-gravitational-potential:112&#34;&gt;The initial gravitational potential&lt;/h2&gt;
 
 &lt;p&gt;In standard cosmological models the initial perturbations density field is Gaussian. Since the linear evolution doesn&amp;rsquo;t modify the statistics of density fields except for evolving the amplitude of perturbations, and because the potential and the density contrast are linked by a linear relation, the gravitational potential is also a Gaussian random field, and such a field is completely described in terms of the power spectrum of density perturbations. The Fourier components of a Gaussian random field (both real and imaginary part) are random numbers with a normal distribution and variance proportional to the power spectrum at that wave number. Also the phase of this random numbers has to be random, and changing it the resulting field is completely different.
 We can generate the gravitational field in the Fourier space just using these properties and inverse transform it (or the force) to obtain the initial potential in real space. If we use adaptive mesh refinement codes we need Gaussian random fields with a variable resolution.&lt;/p&gt;

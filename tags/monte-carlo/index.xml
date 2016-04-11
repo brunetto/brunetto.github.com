@@ -24,7 +24,7 @@ Most of this post is made by paragraphs from &lt;a href=&#34;http://en.wikipedia
 To improve performances and precision usually more chains are used, starting from different and well-separated points, for a single estimation and a convergence criterion define when to stop.&lt;br /&gt;
 The steady state, or the equilibrium distribution, if it exists, roughly is the combination of parameters, o the vector for the probabilities to be in one status, that emerge to be constant in the long term. This means that if the system (the chain) at some time has a probability vector &lt;code&gt;$q$&lt;/code&gt; for the next status, it will have probability vector &lt;code&gt;$q$&lt;/code&gt; forever. &lt;code&gt;$q$&lt;/code&gt; is an eigenvector of the transition matrix with eingenvalue 1.&lt;/p&gt;
 
-&lt;h2 id=&#34;markov-chain:97&#34;&gt;Markov chain&lt;/h2&gt;
+&lt;h2 id=&#34;markov-chain:96&#34;&gt;Markov chain&lt;/h2&gt;
 
 &lt;p&gt;A Markov chain is a random process (sequence of random variables) that satisfy the Markov property. Usually the term &amp;ldquo;Markov chain&amp;rdquo; is used to mean a Markov process which has a discrete (finite or countable) state-space defined on a discrete set times.&lt;br /&gt;
 nevertheless &amp;ldquo;time&amp;rdquo; can take continuous values and the use of the term in Monte Carlo Markov Chain (MCMC) refers to cases where the process is defined on a discrete time-set (discrete algorithm steps) and a continuous state space.&lt;/p&gt;
@@ -38,7 +38,7 @@ Formally, given a sequence of random variables &lt;code&gt;$X_1, X_2, X_3, \dots
 
 &lt;p&gt;The changes of state of the system are called transitions, and the probabilities associated with various state-changes are called transition probabilities. The set of all states and transition probabilities for a given step form the &lt;strong&gt;transition matrix&lt;/strong&gt; `$p_{ij}$. The transition matrices completely characterizes a Markov chain.&lt;/p&gt;
 
-&lt;h2 id=&#34;types-of-chains:97&#34;&gt;Types of chains&lt;/h2&gt;
+&lt;h2 id=&#34;types-of-chains:96&#34;&gt;Types of chains&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Time-homogeneous Markov chains&lt;/strong&gt; (or &lt;strong&gt;stationary Markov chains&lt;/strong&gt;) are processes where    &lt;code&gt;$Pr(X_{n+1}=x|X_n=y) = Pr(X_n=x|X_{n-1}=y)$&lt;/code&gt;    for all &lt;code&gt;$n$&lt;/code&gt;. The probability of the transition is independent of &lt;code&gt;$n$&lt;/code&gt;.&lt;/li&gt;
@@ -49,7 +49,7 @@ Formally, given a sequence of random variables &lt;code&gt;$X_1, X_2, X_3, \dots
 &lt;li&gt;&lt;code&gt;$Pr(X_n=x_n|X_{n-1}=x_{n-1}, X_{n-2}=x_{n-2}, \dots, X_{n-m}=x_{n-m}) = \sum_{r=1}^{m} f(x_n,x_{n-r},r)$&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;predictions:97&#34;&gt;Predictions&lt;/h2&gt;
+&lt;h2 id=&#34;predictions:96&#34;&gt;Predictions&lt;/h2&gt;
 
 &lt;p&gt;Since the system changes randomly, it is generally impossible to predict with certainty the state of a Markov chain at a given point in the future. However, the statistical properties of the system&amp;rsquo;s future can be predicted.&lt;br /&gt;
 The probability of going from state &lt;code&gt;$i$&lt;/code&gt; to state &lt;code&gt;$j$&lt;/code&gt; in &lt;code&gt;$n$&lt;/code&gt; time steps is&lt;br /&gt;
@@ -66,7 +66,7 @@ where &lt;code&gt;$S$&lt;/code&gt; is the state space of the Markov chain.&lt;br
 The marginal distribution &lt;code&gt;$Pr(X_n=x)$&lt;/code&gt; is the distribution over states at time &lt;code&gt;$n$&lt;/code&gt;. The initial distribution is &lt;code&gt;$Pr(X_0=x)$&lt;/code&gt;. The evolution of the process through one time step is described by&lt;br /&gt;
 &lt;code&gt;$ Pr(X_{n}=j) = \sum_{r in S} p_{rj} Pr(X_{n-1}=r) = \sum_{r in S} p_{rj}^{(n)} Pr(X_0=r).$&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;example-a-very-simple-weather-model:97&#34;&gt;Example: a very simple weather model&lt;/h2&gt;
+&lt;h2 id=&#34;example-a-very-simple-weather-model:96&#34;&gt;Example: a very simple weather model&lt;/h2&gt;
 
 &lt;p&gt;The probabilities of weather conditions (modeled as either rainy or sunny), given the weather on the preceding day,&lt;br /&gt;
 can be represented by a transition matrix:&lt;br /&gt;
@@ -79,7 +79,7 @@ be followed by another rainy day. The columns can be labelled &amp;ldquo;sunny&a
 followed by a day of type &lt;code&gt;$j$&lt;/code&gt;.&lt;br /&gt;
 Notice that the rows of &lt;code&gt;$P$&lt;/code&gt; sum to 1: this is because &lt;code&gt;$P$&lt;/code&gt; is a stochastic matrix.&lt;/p&gt;
 
-&lt;h2 id=&#34;predicting-the-weather:97&#34;&gt;Predicting the weather&lt;/h2&gt;
+&lt;h2 id=&#34;predicting-the-weather:96&#34;&gt;Predicting the weather&lt;/h2&gt;
 
 &lt;p&gt;The weather on day 0 is known to be sunny. This is represented by a vector in which the &amp;ldquo;sunny&amp;rdquo; entry is 100%, and the &amp;ldquo;rainy&amp;rdquo; entry is 0%:&lt;br /&gt;
 &lt;code&gt;$ \mathbf{x}^{(0)} = \begin{bmatrix} 1 &amp;amp; 0 \end{bmatrix}$&lt;/code&gt;&lt;br /&gt;
@@ -96,7 +96,7 @@ General rules for day &lt;code&gt;$n$&lt;/code&gt; are:&lt;br /&gt;
 &lt;div&gt;
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;steady-state-of-the-weather:97&#34;&gt;Steady state of the weather&lt;/h2&gt;
+&lt;h2 id=&#34;steady-state-of-the-weather:96&#34;&gt;Steady state of the weather&lt;/h2&gt;
 
 &lt;p&gt;In this example, predictions for the weather on more distant days are increasingly&lt;br /&gt;
 inaccurate and tend towards a steady state vector. This vector represents&lt;br /&gt;
@@ -121,14 +121,14 @@ and since they are a probability vector we know that&lt;br /&gt;
 &lt;code&gt;$ \begin{bmatrix} q_1 &amp;amp; q_2 \end{bmatrix} = \begin{bmatrix} 0.833 &amp;amp; 0.167 \end{bmatrix}$&lt;/code&gt;&lt;br /&gt;
 In conclusion, in the long term, 83% of days are sunny.&lt;/p&gt;
 
-&lt;h2 id=&#34;monte-carlo-markov-chain-mcmc:97&#34;&gt;Monte Carlo Markov Chain (MCMC)&lt;/h2&gt;
+&lt;h2 id=&#34;monte-carlo-markov-chain-mcmc:96&#34;&gt;Monte Carlo Markov Chain (MCMC)&lt;/h2&gt;
 
 &lt;p&gt;Markov chain Monte Carlo (MCMC) methods (which include random walk Monte Carlo methods) are a class of algorithms for sampling from probability distributions based on constructing a Markov chain that has the desired distribution as its equilibrium distribution. The state of the chain after a large number of steps is then used as a sample of the desired distribution. The quality of the sample improves as a function of the number of steps.&lt;br /&gt;
 Usually it is not hard to construct a Markov chain with the desired properties. The more difficult problem is to determine how many steps are needed to converge to the stationary distribution within an acceptable error. A good chain will have rapid mixing—the stationary distribution is reached quickly starting from an arbitrary position—described further under Markov chain mixing time.&lt;br /&gt;
 Typical use of MCMC sampling can only approximate the target distribution, as there is always some residual effect of the starting position. More sophisticated MCMC-based algorithms such as coupling from the past can produce exact samples, at the cost of additional computation and an unbounded (though finite in expectation) running time.&lt;br /&gt;
 The most common application of these algorithms is numerically calculating multi-dimensional integrals. In these methods, an ensemble of &amp;ldquo;walkers&amp;rdquo; moves around randomly. At each point where the walker steps, the integrand value at that point is counted towards the integral. The walker then may make a number of tentative steps around the area, looking for a place with reasonably high contribution to the integral to move into next. Random walk methods are a kind of random simulation or Monte Carlo method. However, whereas the random samples of the integrand used in a conventional Monte Carlo integration are statistically independent, those used in MCMC are correlated. A Markov chain is constructed in such a way as to have the integrand as its equilibrium distribution. Surprisingly, this is often easy to do.&lt;/p&gt;
 
-&lt;h2 id=&#34;random-walk-algorithms:97&#34;&gt;Random walk algorithms&lt;/h2&gt;
+&lt;h2 id=&#34;random-walk-algorithms:96&#34;&gt;Random walk algorithms&lt;/h2&gt;
 
 &lt;p&gt;Many Markov chain Monte Carlo methods move around the equilibrium distribution in relatively small steps, with no tendency for the steps to proceed in the same direction. These methods are easy to implement and analyze, but unfortunately it can take a long time for the walker to explore all of the space. The walker will often double back and cover ground already covered.  Here are some random walk MCMC methods:&lt;/p&gt;
 
@@ -139,7 +139,7 @@ The most common application of these algorithms is numerically calculating multi
 &lt;li&gt;Multiple-try Metropolis: A variation of the Metropolis–Hastings algorithm that allows multiple trials at each point. This allows the algorithm to generally take larger steps at each iteration, which helps combat problems intrinsic to large dimensional problems.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;avoiding-random-walks:97&#34;&gt;Avoiding random walks&lt;/h2&gt;
+&lt;h2 id=&#34;avoiding-random-walks:96&#34;&gt;Avoiding random walks&lt;/h2&gt;
 
 &lt;p&gt;More sophisticated algorithms use some method of preventing the walker from doubling back. These algorithms may be harder to implement, but may exhibit faster convergence (i.e. fewer steps for an accurate result).&lt;/p&gt;
 
@@ -150,7 +150,7 @@ The most common application of these algorithms is numerically calculating multi
 &lt;li&gt;Langevin MCMC and other methods that rely on the gradient (and possibly second derivative) of the log posterior avoid random walks by making proposals that are more likely to be in the direction of higher probability density.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;monte-carlo-markov-chain-in-cosmology-cmb-example:97&#34;&gt;Monte Carlo Markov chain in Cosmology: CMB example&lt;/h2&gt;
+&lt;h2 id=&#34;monte-carlo-markov-chain-in-cosmology-cmb-example:96&#34;&gt;Monte Carlo Markov chain in Cosmology: CMB example&lt;/h2&gt;
 
 &lt;p&gt;In some cases, mapping the likelihood or the posterior distribution can be very time-expensive, so a MCMC can be used to investigate the likelihood space. The MCMC generates random draws (simulations) from the posterior distribution that are a “fair” sample of the likelihood surface. A properly derived and implemented MCMC draws from the joint posterior density&lt;br /&gt;
 &lt;code&gt;$P(\alpha|x)$&lt;/code&gt; once it has converged to the stationary distribution. The primary consideration in&lt;br /&gt;
@@ -166,7 +166,7 @@ have converged. Using a MCMC that has not fully&lt;br /&gt;
 explored the likelihood surface for determining cosmological parameters will yield wrong&lt;br /&gt;
 results.&lt;/p&gt;
 
-&lt;h2 id=&#34;in-practice:97&#34;&gt;In practice&lt;/h2&gt;
+&lt;h2 id=&#34;in-practice:96&#34;&gt;In practice&lt;/h2&gt;
 
 &lt;p&gt;Here are the necessary steps to run a simple MCMC for the CMB temperature power&lt;br /&gt;
 spectrum. It is straightforward to generalize these instructions to include the temperature-&lt;br /&gt;
@@ -183,13 +183,13 @@ to the posterior probability.&lt;/p&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;appendix:97&#34;&gt;Appendix&lt;/h2&gt;
+&lt;h2 id=&#34;appendix:96&#34;&gt;Appendix&lt;/h2&gt;
 
-&lt;h3 id=&#34;random-process:97&#34;&gt;Random process&lt;/h3&gt;
+&lt;h3 id=&#34;random-process:96&#34;&gt;Random process&lt;/h3&gt;
 
 &lt;p&gt;In probability theory, a stochastic process, or sometimes random process, is the counterpart to a deterministic process (or deterministic system). Instead of dealing with only one possible way the process might develop over time (as in the case, for example, of solutions of an ordinary differential equation), in a stochastic or random process there is some indeterminacy described by probability distributions. This means that even if the initial condition (or starting point) is known, there are many possibilities the process might go to, but some paths may be more probable and others less so.&lt;/p&gt;
 
-&lt;h3 id=&#34;bayesian-statistic-likelihood-priori-and-posteriori-distribution:97&#34;&gt;Bayesian statistic, likelihood, priori and posteriori distribution&lt;/h3&gt;
+&lt;h3 id=&#34;bayesian-statistic-likelihood-priori-and-posteriori-distribution:96&#34;&gt;Bayesian statistic, likelihood, priori and posteriori distribution&lt;/h3&gt;
 
 &lt;p&gt;From &lt;a href=&#34;http://www.thphys.uni-heidelberg.de/~amendola/statistics-ws2011.html&#34;&gt;http://www.thphys.uni-heidelberg.de/~amendola/statistics-ws2011.html&lt;/a&gt;, to be completed.&lt;br /&gt;
 We have a theory and some data, the Bayesian approach says that&lt;/p&gt;
@@ -207,7 +207,7 @@ We have a theory and some data, the Bayesian approach says that&lt;/p&gt;
 
 &lt;p&gt;The prior distribution is often unknown but can be of two kind: it can come from previous experiments or it can be the exclusion of some regions of the parameter space. The final result strongly depends on it.&lt;/p&gt;
 
-&lt;h3 id=&#34;references:97&#34;&gt;References&lt;/h3&gt;
+&lt;h3 id=&#34;references:96&#34;&gt;References&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.lorisbazzani.info/papers/old_projects/HMM_MPES.pdf&#34;&gt;http://www.lorisbazzani.info/papers/old_projects/HMM_MPES.pdf&lt;/a&gt;&lt;/li&gt;

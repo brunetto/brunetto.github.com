@@ -27,7 +27,7 @@ that never agree and has a terrible notation!!&lt;/p&gt;
 
 &lt;p&gt;Here the equations, below the images of the papers.&lt;/p&gt;
 
-&lt;h3 id=&#34;general-introduction:4&#34;&gt;General introduction&lt;/h3&gt;
+&lt;h3 id=&#34;general-introduction:3&#34;&gt;General introduction&lt;/h3&gt;
 
 &lt;p&gt;Consider a small perturbation of the flat cartedian metric&lt;/p&gt;
 
@@ -74,7 +74,7 @@ at a distance &lt;code&gt;$r$&lt;/code&gt; from the observer)&lt;/p&gt;
 &lt;code&gt;$I^{ij}$&lt;/code&gt; second mass moment or moment of inertia, that is the quadrupole moment of the
 mass, &lt;code&gt;$I^{ij} \equiv \int {\rm d}^3 x \rho(t, \vec{x})x^ix^j$&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;gravitational-waves-from-binaries:4&#34;&gt;Gravitational waves from binaries&lt;/h3&gt;
+&lt;h3 id=&#34;gravitational-waves-from-binaries:3&#34;&gt;Gravitational waves from binaries&lt;/h3&gt;
 
 &lt;p&gt;Assuming edge on observations (&lt;code&gt;$\theta = i = \frac{\pi}{2}\Rightarrow \cos(\theta) = 0$&lt;/code&gt;) the wave polarization modes are given by:&lt;/p&gt;
 
@@ -155,25 +155,25 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\label{eq:AOfTAllEcc}a(t) = \left(a_0^4-4C\frac{t}{(1-e^2)^{7/2}}\right)^{1/4}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;utils:4&#34;&gt;Utils&lt;/h3&gt;
+&lt;h3 id=&#34;utils:3&#34;&gt;Utils&lt;/h3&gt;
 
-&lt;h4 id=&#34;chirp-mass:4&#34;&gt;Chirp mass&lt;/h4&gt;
+&lt;h4 id=&#34;chirp-mass:3&#34;&gt;Chirp mass&lt;/h4&gt;
 
 &lt;p&gt;&lt;code&gt;$$m_{\rm chirp} \equiv \left(\frac{m_1m_2}{m_1+m_2}\right)^{3/5}(m_1+m_2)^{2/5} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;kepler:4&#34;&gt;Kepler&lt;/h4&gt;
+&lt;h4 id=&#34;kepler:3&#34;&gt;Kepler&lt;/h4&gt;
 
 &lt;p&gt;&lt;code&gt;$$P = \frac{2\pi}{\omega} = \left[\frac{4\pi^2 a^3}{G(m_1+m_2)}\right]^{1/2}$$&lt;/code&gt;
 &lt;code&gt;$$a = \frac{G(m_1+m_2)^{1/3}}{\omega_{\rm orb}^{2/3}}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;isco:4&#34;&gt;ISCO&lt;/h4&gt;
+&lt;h4 id=&#34;isco:3&#34;&gt;ISCO&lt;/h4&gt;
 
 &lt;p&gt;At the innermost Stable Circular Orbit (AKA LSO, Last Stable Orbit):&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$$\omega_{\rm ISCO} = \frac{2c^3}{6^{3/2}G}\frac{1}{m_1+m_2}$$&lt;/code&gt;
 &lt;code&gt;$$a_{\rm ISCO} = 3\times\frac{2G(m_1+m_2)}{c^2}$$&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;images:4&#34;&gt;Images&lt;/h3&gt;
+&lt;h3 id=&#34;images:3&#34;&gt;Images&lt;/h3&gt;
 
 &lt;table style=&#34;width:100%&#34;&gt;
 
@@ -284,7 +284,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 &lt;/table&gt;
     
 
-&lt;h3 id=&#34;references:4&#34;&gt;References&lt;/h3&gt;
+&lt;h3 id=&#34;references:3&#34;&gt;References&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Maggiore, M. (2008). Oxford University Press.&lt;/li&gt;
@@ -412,7 +412,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18435498/why-are-receivers-pass-by-value-in-go/18436251#18436251&#34;&gt;Why are receivers pass by value in Go?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;web-server:66&#34;&gt;Web Server&lt;/h3&gt;
+&lt;h3 id=&#34;web-server:68&#34;&gt;Web Server&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.joshsoftware.com/2014/03/12/learn-to-build-and-deploy-simple-go-web-apps-part-one/&#34;&gt;Learn to build and deploy simple Go Web Apps, Part One&lt;/a&gt;&lt;/li&gt;
@@ -423,7 +423,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://thechangelog.com/on-go-web-application-ecosystem/&#34;&gt;http://thechangelog.com/on-go-web-application-ecosystem/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;goroutines-and-pooling:66&#34;&gt;Goroutines and Pooling&lt;/h3&gt;
+&lt;h3 id=&#34;goroutines-and-pooling:68&#34;&gt;Goroutines and Pooling&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&#34;&gt;http://www.goinggo.net/2013/05/thread-pooling-in-go-programming.html?m=0&lt;/a&gt;&lt;/li&gt;
@@ -441,7 +441,7 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/waza.slide&#34;&gt;Concurrency is not Parallelism&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;efficiency:66&#34;&gt;Efficiency&lt;/h3&gt;
+&lt;h3 id=&#34;efficiency:68&#34;&gt;Efficiency&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://dennisforbes.ca/index.php/2013/07/23/the-most-powerful-feature-of-go-is-the-least-sexy&#34;&gt;The Most Powerful Feature of Go Is The Least Sexy&lt;/a&gt;&lt;/li&gt;
