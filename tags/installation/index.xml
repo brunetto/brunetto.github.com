@@ -75,7 +75,7 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:56&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -90,7 +90,7 @@ echo &amp;quot;export PATH=$PATH:$GOROOT/bin:$GOPATH/bin&amp;quot; &amp;gt;&amp;
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:56&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:54&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
@@ -176,7 +176,7 @@ test_gravity_N2ngb 900
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:56&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:54&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;change configure CUDA lines:
@@ -191,18 +191,18 @@ CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr
 CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:56&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:54&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:56&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:54&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
 &lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-&lt;h1 id=&#34;where-to-find-grape-libraries:56&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:54&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:56&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:54&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
 &lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 

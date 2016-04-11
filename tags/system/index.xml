@@ -104,7 +104,7 @@
       <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
       <description>
 
-&lt;h2 id=&#34;system:67&#34;&gt;System&lt;/h2&gt;
+&lt;h2 id=&#34;system:66&#34;&gt;System&lt;/h2&gt;
 
 &lt;p&gt;Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
  and a Ubuntu 13.04 Dell Laptop.&lt;br /&gt;
@@ -117,7 +117,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 &lt;li&gt;&lt;p&gt;System monitoring: htop, iotop, saidar&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;searching:67&#34;&gt;Searching&lt;/h2&gt;
+&lt;h2 id=&#34;searching:66&#34;&gt;Searching&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;grep -H &#39;&amp;lt;string&amp;gt;&#39; *.&amp;lt;ext&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -125,7 +125,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 &lt;li&gt;&lt;code&gt;sudo updatedb &amp;amp;&amp;amp; locate &amp;lt;nomefile&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;download:67&#34;&gt;Download&lt;/h2&gt;
+&lt;h2 id=&#34;download:66&#34;&gt;Download&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;download music from youtube&lt;/p&gt;
@@ -137,7 +137,7 @@ See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed p
 ````python
 #!/usr/bin/env python&lt;/p&gt;
 
-&lt;h1 id=&#34;coding-utf8:67&#34;&gt;-&lt;em&gt;- coding: utf8 -&lt;/em&gt;-&lt;/h1&gt;&lt;/li&gt;
+&lt;h1 id=&#34;coding-utf8:66&#34;&gt;-&lt;em&gt;- coding: utf8 -&lt;/em&gt;-&lt;/h1&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;import os, time

@@ -1238,7 +1238,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 &lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:20&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
+&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:21&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
@@ -1246,7 +1246,7 @@ if __name__ == &amp;quot;__main__&amp;quot;:
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;gaussian-processes-variograms-kriging:20&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
+&lt;h2 id=&#34;gaussian-processes-variograms-kriging:21&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
@@ -1400,7 +1400,7 @@ are more relevant on the formation and evolution of such binaries and how they i
 
 &lt;p&gt;&lt;a href=&#34;../GW-links&#34;&gt;GW useful links&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;phd-exams-and-courses:25&#34;&gt;PhD exams and courses&lt;/h2&gt;
+&lt;h2 id=&#34;phd-exams-and-courses:26&#34;&gt;PhD exams and courses&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
@@ -1416,7 +1416,7 @@ are more relevant on the formation and evolution of such binaries and how they i
 &lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;phd-schools-and-conferences:25&#34;&gt;PhD schools and conferences&lt;/h2&gt;
+&lt;h2 id=&#34;phd-schools-and-conferences:26&#34;&gt;PhD schools and conferences&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
@@ -1450,7 +1450,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:56&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -1465,7 +1465,7 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:56&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:54&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
@@ -1551,7 +1551,7 @@ test_gravity_N2ngb 900
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:56&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:54&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;change configure CUDA lines:
@@ -1566,18 +1566,18 @@ CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr
 CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:56&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:54&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:56&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:54&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
 &lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-&lt;h1 id=&#34;where-to-find-grape-libraries:56&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:54&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:56&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:54&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
 &lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 
@@ -1624,7 +1624,7 @@ also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/l
       <guid>http://brunettoziosi.eu/pages/research/bachelor/</guid>
       <description>
 
-&lt;h2 id=&#34;bachelor-degree-exams:59&#34;&gt;Bachelor Degree Exams&lt;/h2&gt;
+&lt;h2 id=&#34;bachelor-degree-exams:61&#34;&gt;Bachelor Degree Exams&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Mathematical analysis 1 &lt;a href=&#34;23&#34;&gt; &lt;/a&gt;&lt;/li&gt;
@@ -1807,13 +1807,13 @@ I also thanks Mario Spera for the usefull advices.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system
 with more than ~6000 binaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:74&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:76&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;StarLab&lt;/a&gt; is &amp;ldquo;A Software Environment for Collisional Stellar Dynamics&amp;rdquo;.
 &lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;Here&lt;/a&gt; you can find useful information about it that
 is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab-gpu:74&#34;&gt;StarLab-GPU&lt;/h2&gt;
+&lt;h2 id=&#34;starlab-gpu:76&#34;&gt;StarLab-GPU&lt;/h2&gt;
 
 &lt;p&gt;Welcome back!!&lt;br /&gt;
 Next step: StarLab was designed to run on &lt;a href=&#34;http://en.wikipedia.org/wiki/Gravity_Pipe&#34;&gt;GRAPE&lt;/a&gt;
@@ -1833,7 +1833,7 @@ the clusters I tested.&lt;/p&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start!!&lt;/p&gt;
 
-&lt;h4 id=&#34;download:74&#34;&gt;Download&lt;/h4&gt;
+&lt;h4 id=&#34;download:76&#34;&gt;Download&lt;/h4&gt;
 
 &lt;p&gt;Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
 You can try to check them using&lt;/p&gt;
@@ -1877,7 +1877,7 @@ We will try to survive and to have the most standard installation we can.&lt;/p&
 &lt;p&gt;&lt;code&gt;$SLPATH&lt;/code&gt; should be the path where you put your StarLab installation.&lt;br /&gt;
 I&amp;rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.&lt;/p&gt;
 
-&lt;h3 id=&#34;sapporo:74&#34;&gt;Sapporo&lt;/h3&gt;
+&lt;h3 id=&#34;sapporo:76&#34;&gt;Sapporo&lt;/h3&gt;
 
 &lt;p&gt;Enter in the sapporo folder, and to be sure to start a clean installation run
 &lt;code&gt;make clean&lt;/code&gt;.
@@ -1989,7 +1989,7 @@ then test sapporo with&lt;/p&gt;
 
 &lt;p&gt;Assuming &lt;code&gt;sapporo&lt;/code&gt; is ready, let&amp;rsquo;s move to starlab.&lt;/p&gt;
 
-&lt;h3 id=&#34;starlab-1:74&#34;&gt;StarLab&lt;/h3&gt;
+&lt;h3 id=&#34;starlab-1:76&#34;&gt;StarLab&lt;/h3&gt;
 
 &lt;p&gt;In StarLab the relevant files you have to worry about are&lt;/p&gt;
 
@@ -2089,27 +2089,27 @@ try to run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt;; in cas
 &lt;code&gt;configure --help&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;run-starlab:74&#34;&gt;Run StarLab&lt;/h3&gt;
+&lt;h3 id=&#34;run-starlab:76&#34;&gt;Run StarLab&lt;/h3&gt;
 
 &lt;p&gt;Before run a simulation you need to create the initial conditions.&lt;/p&gt;
 
-&lt;h4 id=&#34;initial-conditions:74&#34;&gt;Initial Conditions&lt;/h4&gt;
+&lt;h4 id=&#34;initial-conditions:76&#34;&gt;Initial Conditions&lt;/h4&gt;
 
 &lt;p&gt;StarLab is provided with few tools to help (really?) you in this task. A common
 way to create ICs for &lt;a href=&#34;http://arxiv.org/abs/1404.7147&#34;&gt;our simulations&lt;/a&gt; is something like:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;&amp;lt;ehm, I don&#39;t know if I can tell you, sorry man...:(&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;launch:74&#34;&gt;Launch&lt;/h4&gt;
+&lt;h4 id=&#34;launch:76&#34;&gt;Launch&lt;/h4&gt;
 
 &lt;p&gt;StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
 you want to know about your simulations to STDERR, so, &lt;code&gt;&amp;lt;ehm.... see ICs&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;tidal-fields:74&#34;&gt;Tidal fields&lt;/h4&gt;
+&lt;h4 id=&#34;tidal-fields:76&#34;&gt;Tidal fields&lt;/h4&gt;
 
 &lt;p&gt;Be patience&amp;hellip;&lt;/p&gt;
 
-&lt;h3 id=&#34;known-issues-and-troubleshooting:74&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
+&lt;h3 id=&#34;known-issues-and-troubleshooting:76&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
 
 &lt;p&gt;If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.&lt;br /&gt;
 Some of the things that can happen are:&lt;/p&gt;
@@ -2138,9 +2138,9 @@ you need to comment&lt;/li&gt;
 
 &lt;p&gt;function call in &lt;code&gt;kira_counters.C&lt;/code&gt; otherwise you won&amp;rsquo;t be able to compile StarLab.&lt;/p&gt;
 
-&lt;h3 id=&#34;clusters:74&#34;&gt;Clusters&lt;/h3&gt;
+&lt;h3 id=&#34;clusters:76&#34;&gt;Clusters&lt;/h3&gt;
 
-&lt;h4 id=&#34;eurora:74&#34;&gt;EURORA&lt;/h4&gt;
+&lt;h4 id=&#34;eurora:76&#34;&gt;EURORA&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;in &lt;code&gt;setup_sapporo.sh&lt;/code&gt;
@@ -2214,7 +2214,7 @@ export LD_LIBRARY_PATH
 cd $HOME/slPack/starlab
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:74&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
+&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:76&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
 
 &lt;p&gt;Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
 system at the Swinburne University. Here how to do that.&lt;/p&gt;
@@ -2347,7 +2347,7 @@ Also remember that make clean is not working properly, so you need to &lt;code&g
 some options from the configure, so run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt; or try &lt;code&gt;configure --help&lt;/code&gt;
 to check for other options.&lt;/p&gt;
 
-&lt;h3 id=&#34;additional-material:74&#34;&gt;Additional material&lt;/h3&gt;
+&lt;h3 id=&#34;additional-material:76&#34;&gt;Additional material&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Code units (coming soon&amp;hellip;)&lt;/li&gt;
