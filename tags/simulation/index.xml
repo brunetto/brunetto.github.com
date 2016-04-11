@@ -535,7 +535,7 @@ reached. To do this, simply run&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:59&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:56&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -550,7 +550,7 @@ reached. To do this, simply run&lt;/p&gt;
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:59&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:56&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
@@ -636,7 +636,7 @@ test_gravity_N2ngb 900
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:59&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:56&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;change configure CUDA lines:
@@ -651,18 +651,18 @@ CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr
 CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:59&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:56&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:59&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:56&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
 &lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-&lt;h1 id=&#34;where-to-find-grape-libraries:59&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:56&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:59&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:56&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
 &lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 
@@ -1054,7 +1054,7 @@ print &amp;quot;Done in &amp;quot;+str(time.time()-t)+&amp;quot; seconds.&amp;qu
       <guid>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
       <description>
 
-&lt;h2 id=&#34;limitations:115&#34;&gt;Limitations&lt;/h2&gt;
+&lt;h2 id=&#34;limitations:114&#34;&gt;Limitations&lt;/h2&gt;
 
 &lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
 simulations. Let&amp;rsquo;s review these in detail.&lt;br /&gt;
@@ -1090,7 +1090,7 @@ velocities.&lt;br /&gt;
 Methods have been developed to take the missing &amp;ldquo;larger than the box&amp;rdquo; wave modes&lt;br /&gt;
 into account and we will have a look on these in a future post.&lt;/p&gt;
 
-&lt;h2 id=&#34;some-considerations:115&#34;&gt;Some considerations&lt;/h2&gt;
+&lt;h2 id=&#34;some-considerations:114&#34;&gt;Some considerations&lt;/h2&gt;
 
 &lt;p&gt;As we have seen (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-1-why-and-what.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #1: why and what?&#34;&gt;here&lt;/a&gt;) N-body cosmological simulations&lt;br /&gt;
 are useful to understand aspects of non-linear gravitational clustering,&lt;br /&gt;

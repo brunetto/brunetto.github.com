@@ -533,7 +533,7 @@ func main() {
       <guid>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
       <description>
 
-&lt;h1 id=&#34;how-to-create-a-blog-with-github-and-pelican-python:90&#34;&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h1&gt;
+&lt;h1 id=&#34;how-to-create-a-blog-with-github-and-pelican-python:84&#34;&gt;How to create a blog with GitHub and Pelican (Python)&lt;/h1&gt;
 
 &lt;p&gt;###Suppose that you are curios about GitHub pages&amp;hellip; but I don&amp;rsquo;t understand their guide.&lt;br /&gt;
 ###And suppose that you don&amp;rsquo;t like Ruby but prefer Python&amp;hellip;&lt;/p&gt;
@@ -625,12 +625,12 @@ It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;linear-vs-logarithmic:87&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+&lt;h2 id=&#34;linear-vs-logarithmic:89&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
 
 &lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
 Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;from-one-to-the-other:87&#34;&gt;From one to the other&lt;/h2&gt;
+&lt;h2 id=&#34;from-one-to-the-other:89&#34;&gt;From one to the other&lt;/h2&gt;
 
 &lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
 It can be easily computed as&lt;br /&gt;
@@ -639,7 +639,7 @@ From this it&amp;rsquo;s also straightforward to obtain the number of bins from 
 &lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
 Note that we choose the number of bins to be integer.&lt;/p&gt;
 
-&lt;h2 id=&#34;code:87&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code:89&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
 
@@ -936,7 +936,7 @@ The first things I have understood banging against them were:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;camb:102&#34;&gt;CAMB&lt;/h2&gt;
+&lt;h2 id=&#34;camb:103&#34;&gt;CAMB&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start with the
 &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&amp;quot; target&#34;&gt;main CAMB interface&lt;/a&gt;.
