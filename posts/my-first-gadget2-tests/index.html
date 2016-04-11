@@ -132,8 +132,8 @@
 <ul>
 <li>
 <ul>
-<li><a href="#installation-of-gsl-and-fftw:102">Installation of GSL and fftw</a></li>
-<li><a href="#play-with-gadget2:102">Play with Gadget2</a></li>
+<li><a href="#installation-of-gsl-and-fftw:104">Installation of GSL and fftw</a></li>
+<li><a href="#play-with-gadget2:104">Play with Gadget2</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -195,7 +195,7 @@
 
 <p>This post is about my first experience with the cosmological simulation code <a href="http://www.mpa-garching.mpg.de/gadget/" title="Gadget2">Gadget2</a>. To start I followed the instructions found <a href="http://astrobites.com/2011/04/02/installing-and-running-gadget-2/">here</a>. All I&rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.</p>
 
-<h2 id="installation-of-gsl-and-fftw:102">Installation of GSL and fftw</h2>
+<h2 id="installation-of-gsl-and-fftw:104">Installation of GSL and fftw</h2>
 
 <p>We can download Gadget <a href="http://www.mpa-garching.mpg.de/gadget/" title="Gadget download">here</a>, the GSL (GNU scientific library) <a href="http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz" title="GSL download">here</a> and the FFTW (fastest Fourier transform in the West library) <a href="http://www.fftw.org/fftw-2.1.5.tar.gz" title="FFTW download">here</a>. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).<br />
 Following the Astrobites suggestions let&rsquo;s decompress the archives with <code>tar -xzf &lt;archive name&gt;</code>. Now we can install the libraries following the Astrobites post:</p>
@@ -232,7 +232,7 @@ Password:
 snip: lots of diagnostic output
 </code></pre>
 
-<h2 id="play-with-gadget2:102">Play with Gadget2</h2>
+<h2 id="play-with-gadget2:104">Play with Gadget2</h2>
 
 <p>Now it&rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.<br />
 To start with something easy, we will customize one of the examples given with the code, the &ldquo;galaxy&rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.</p>

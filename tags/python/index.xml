@@ -386,7 +386,7 @@ I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&
 
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; new version &lt;a href=&#34;https://github.com/brunetto/fip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;python:31&#34;&gt;Python&lt;/h3&gt;
+&lt;h3 id=&#34;python:32&#34;&gt;Python&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
 import re, os, time
@@ -420,7 +420,7 @@ while True:
 	time.sleep(5)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;go:31&#34;&gt;Go&lt;/h3&gt;
+&lt;h3 id=&#34;go:32&#34;&gt;Go&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
 
@@ -625,12 +625,12 @@ It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;linear-vs-logarithmic:89&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+&lt;h2 id=&#34;linear-vs-logarithmic:87&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
 
 &lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
 Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;from-one-to-the-other:89&#34;&gt;From one to the other&lt;/h2&gt;
+&lt;h2 id=&#34;from-one-to-the-other:87&#34;&gt;From one to the other&lt;/h2&gt;
 
 &lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
 It can be easily computed as&lt;br /&gt;
@@ -639,7 +639,7 @@ From this it&amp;rsquo;s also straightforward to obtain the number of bins from 
 &lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
 Note that we choose the number of bins to be integer.&lt;/p&gt;
 
-&lt;h2 id=&#34;code:89&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code:87&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
 
@@ -797,7 +797,7 @@ h5.root.group.name.read()
 
 &lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
 
-&lt;h2 id=&#34;create:90&#34;&gt;Create&lt;/h2&gt;
+&lt;h2 id=&#34;create:96&#34;&gt;Create&lt;/h2&gt;
 
 &lt;p&gt;First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with &lt;code&gt;np.genfromtxt&lt;/code&gt;. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.&lt;/p&gt;
 
@@ -826,7 +826,7 @@ f.close()
 
 &lt;p&gt;The use of &lt;code&gt;StringIO&lt;/code&gt; is necessary to convert the string containing the line read in a &amp;ldquo;I/O&amp;rdquo; object that &lt;code&gt;np.genfromtxt&lt;/code&gt; can eat.&lt;/p&gt;
 
-&lt;h2 id=&#34;remove-duplicates:90&#34;&gt;Remove duplicates&lt;/h2&gt;
+&lt;h2 id=&#34;remove-duplicates:96&#34;&gt;Remove duplicates&lt;/h2&gt;
 
 &lt;p&gt;Consider the previous file, if there are duplicates row, &lt;code&gt;np.unique&lt;/code&gt; can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.&lt;/p&gt;
 
@@ -845,7 +845,7 @@ Out:
 	array([3, 2, 2, 4, 1, 5, 0]))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;recreate:90&#34;&gt;Recreate&lt;/h2&gt;
+&lt;h2 id=&#34;recreate:96&#34;&gt;Recreate&lt;/h2&gt;
 
 &lt;p&gt;Sometimes it&amp;rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.&lt;br /&gt;
 To do this a possible solution is:&lt;/p&gt;
@@ -936,7 +936,7 @@ The first things I have understood banging against them were:&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;camb:103&#34;&gt;CAMB&lt;/h2&gt;
+&lt;h2 id=&#34;camb:102&#34;&gt;CAMB&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start with the
 &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&amp;quot; target&#34;&gt;main CAMB interface&lt;/a&gt;.

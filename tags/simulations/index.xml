@@ -56,13 +56,13 @@ I also thanks Mario Spera for the usefull advices.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system
 with more than ~6000 binaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:78&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:76&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;StarLab&lt;/a&gt; is &amp;ldquo;A Software Environment for Collisional Stellar Dynamics&amp;rdquo;.
 &lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;Here&lt;/a&gt; you can find useful information about it that
 is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab-gpu:78&#34;&gt;StarLab-GPU&lt;/h2&gt;
+&lt;h2 id=&#34;starlab-gpu:76&#34;&gt;StarLab-GPU&lt;/h2&gt;
 
 &lt;p&gt;Welcome back!!&lt;br /&gt;
 Next step: StarLab was designed to run on &lt;a href=&#34;http://en.wikipedia.org/wiki/Gravity_Pipe&#34;&gt;GRAPE&lt;/a&gt;
@@ -82,7 +82,7 @@ the clusters I tested.&lt;/p&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start!!&lt;/p&gt;
 
-&lt;h4 id=&#34;download:78&#34;&gt;Download&lt;/h4&gt;
+&lt;h4 id=&#34;download:76&#34;&gt;Download&lt;/h4&gt;
 
 &lt;p&gt;Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
 You can try to check them using&lt;/p&gt;
@@ -126,7 +126,7 @@ We will try to survive and to have the most standard installation we can.&lt;/p&
 &lt;p&gt;&lt;code&gt;$SLPATH&lt;/code&gt; should be the path where you put your StarLab installation.&lt;br /&gt;
 I&amp;rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.&lt;/p&gt;
 
-&lt;h3 id=&#34;sapporo:78&#34;&gt;Sapporo&lt;/h3&gt;
+&lt;h3 id=&#34;sapporo:76&#34;&gt;Sapporo&lt;/h3&gt;
 
 &lt;p&gt;Enter in the sapporo folder, and to be sure to start a clean installation run
 &lt;code&gt;make clean&lt;/code&gt;.
@@ -238,7 +238,7 @@ then test sapporo with&lt;/p&gt;
 
 &lt;p&gt;Assuming &lt;code&gt;sapporo&lt;/code&gt; is ready, let&amp;rsquo;s move to starlab.&lt;/p&gt;
 
-&lt;h3 id=&#34;starlab-1:78&#34;&gt;StarLab&lt;/h3&gt;
+&lt;h3 id=&#34;starlab-1:76&#34;&gt;StarLab&lt;/h3&gt;
 
 &lt;p&gt;In StarLab the relevant files you have to worry about are&lt;/p&gt;
 
@@ -338,27 +338,27 @@ try to run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt;; in cas
 &lt;code&gt;configure --help&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;run-starlab:78&#34;&gt;Run StarLab&lt;/h3&gt;
+&lt;h3 id=&#34;run-starlab:76&#34;&gt;Run StarLab&lt;/h3&gt;
 
 &lt;p&gt;Before run a simulation you need to create the initial conditions.&lt;/p&gt;
 
-&lt;h4 id=&#34;initial-conditions:78&#34;&gt;Initial Conditions&lt;/h4&gt;
+&lt;h4 id=&#34;initial-conditions:76&#34;&gt;Initial Conditions&lt;/h4&gt;
 
 &lt;p&gt;StarLab is provided with few tools to help (really?) you in this task. A common
 way to create ICs for &lt;a href=&#34;http://arxiv.org/abs/1404.7147&#34;&gt;our simulations&lt;/a&gt; is something like:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;&amp;lt;ehm, I don&#39;t know if I can tell you, sorry man...:(&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;launch:78&#34;&gt;Launch&lt;/h4&gt;
+&lt;h4 id=&#34;launch:76&#34;&gt;Launch&lt;/h4&gt;
 
 &lt;p&gt;StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
 you want to know about your simulations to STDERR, so, &lt;code&gt;&amp;lt;ehm.... see ICs&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;tidal-fields:78&#34;&gt;Tidal fields&lt;/h4&gt;
+&lt;h4 id=&#34;tidal-fields:76&#34;&gt;Tidal fields&lt;/h4&gt;
 
 &lt;p&gt;Be patience&amp;hellip;&lt;/p&gt;
 
-&lt;h3 id=&#34;known-issues-and-troubleshooting:78&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
+&lt;h3 id=&#34;known-issues-and-troubleshooting:76&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
 
 &lt;p&gt;If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.&lt;br /&gt;
 Some of the things that can happen are:&lt;/p&gt;
@@ -387,9 +387,9 @@ you need to comment&lt;/li&gt;
 
 &lt;p&gt;function call in &lt;code&gt;kira_counters.C&lt;/code&gt; otherwise you won&amp;rsquo;t be able to compile StarLab.&lt;/p&gt;
 
-&lt;h3 id=&#34;clusters:78&#34;&gt;Clusters&lt;/h3&gt;
+&lt;h3 id=&#34;clusters:76&#34;&gt;Clusters&lt;/h3&gt;
 
-&lt;h4 id=&#34;eurora:78&#34;&gt;EURORA&lt;/h4&gt;
+&lt;h4 id=&#34;eurora:76&#34;&gt;EURORA&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;in &lt;code&gt;setup_sapporo.sh&lt;/code&gt;
@@ -463,7 +463,7 @@ export LD_LIBRARY_PATH
 cd $HOME/slPack/starlab
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:78&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
+&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:76&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
 
 &lt;p&gt;Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
 system at the Swinburne University. Here how to do that.&lt;/p&gt;
@@ -596,7 +596,7 @@ Also remember that make clean is not working properly, so you need to &lt;code&g
 some options from the configure, so run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt; or try &lt;code&gt;configure --help&lt;/code&gt;
 to check for other options.&lt;/p&gt;
 
-&lt;h3 id=&#34;additional-material:78&#34;&gt;Additional material&lt;/h3&gt;
+&lt;h3 id=&#34;additional-material:76&#34;&gt;Additional material&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Code units (coming soon&amp;hellip;)&lt;/li&gt;
@@ -706,11 +706,11 @@ h5.root.group.name.read()
 
 &lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
 
-&lt;h2 id=&#34;the-ide:100&#34;&gt;The IDE&lt;/h2&gt;
+&lt;h2 id=&#34;the-ide:99&#34;&gt;The IDE&lt;/h2&gt;
 
 &lt;p&gt;When I write little pieces of code I usually find &lt;a href=&#34;http://kate-editor.org/&#34; target=&#34;_blank&#34; title=&#34;Kate Editor&#34;&gt;Kate&lt;/a&gt; comfortable enough but to explore projects like &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt; I prefer to use something like &lt;a href=&#34;http://kdevelop.org/&#34; target=&#34;_blank&#34; title=&#34;KDevelop&#34;&gt;KDevelop&lt;/a&gt; because it&amp;rsquo;s easier to manage where a variable is defined, declared and used. And it do this only by positioning the mouse on the variable name. If you put the mouse on a known function (from the standard library for example), KDevelop will open the documentation for you.&lt;/p&gt;
 
-&lt;h2 id=&#34;doxygen:100&#34;&gt;Doxygen&lt;/h2&gt;
+&lt;h2 id=&#34;doxygen:99&#34;&gt;Doxygen&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen&#34; target=&#34;_blank&#34; title=&#34;Doxygen&#34;&gt;Doxygen&lt;/a&gt; is a documentation system. It allows you to produce documentation for a project from the comments in the code. With no additional work you can &lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen/docblocks.html#specialblock&#34; target=&#34;_blank&#34; title=&#34;Comment in Doxigen&#34;&gt;comment&lt;/a&gt; your code and be ready to produce the documentation. In KDevelop Doxygen style for comments has a different (and nice) coloring.&lt;/p&gt;
 

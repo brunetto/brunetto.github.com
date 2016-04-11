@@ -132,9 +132,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create:90">Create</a></li>
-<li><a href="#remove-duplicates:90">Remove duplicates</a></li>
-<li><a href="#recreate:90">Recreate</a></li>
+<li><a href="#create:96">Create</a></li>
+<li><a href="#remove-duplicates:96">Remove duplicates</a></li>
+<li><a href="#recreate:96">Recreate</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -198,7 +198,7 @@
 
 <p>I would like to &ldquo;pin&rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.</p>
 
-<h2 id="create:90">Create</h2>
+<h2 id="create:96">Create</h2>
 
 <p>First, the creation of a structured array (an array composed of records made by different data types) array from a file too big to be read at once with <code>np.genfromtxt</code>. The new array will be stored in an HDF5 file, so this is a conversion from .csv to .h5 file.</p>
 
@@ -227,7 +227,7 @@ f.close()
 
 <p>The use of <code>StringIO</code> is necessary to convert the string containing the line read in a &ldquo;I/O&rdquo; object that <code>np.genfromtxt</code> can eat.</p>
 
-<h2 id="remove-duplicates:90">Remove duplicates</h2>
+<h2 id="remove-duplicates:96">Remove duplicates</h2>
 
 <p>Consider the previous file, if there are duplicates row, <code>np.unique</code> can help in removing them. Note that we use the first column to identify the duplicates and that the result will be sorted respect to this column.</p>
 
@@ -246,7 +246,7 @@ Out:
 	array([3, 2, 2, 4, 1, 5, 0]))
 </code></pre>
 
-<h2 id="recreate:90">Recreate</h2>
+<h2 id="recreate:96">Recreate</h2>
 
 <p>Sometimes it&rsquo;s useful to split a structured array in different arrays, manipulate them and recreate the structured array, or maybe you need to create a structured array from different arrays to fill a Pytables table.<br />
 To do this a possible solution is:</p>

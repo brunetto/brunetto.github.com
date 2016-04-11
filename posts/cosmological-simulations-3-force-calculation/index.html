@@ -134,13 +134,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#direct-summation-pp-method:117">Direct summation: PP method</a></li>
-<li><a href="#tree-method:117">Tree method</a></li>
-<li><a href="#fast-multipole-method:117">Fast multipole method</a></li>
-<li><a href="#particle-mesh-method:117">Particle-mesh method</a></li>
-<li><a href="#adaptive-mesh-refinement:117">Adaptive-mesh refinement</a></li>
-<li><a href="#p3m-particle-particle-particle-mesh:117">P3M: particle-particle+particle-mesh</a></li>
-<li><a href="#tree-pm-tpm:117">Tree+PM: TPM</a></li>
+<li><a href="#direct-summation-pp-method:114">Direct summation: PP method</a></li>
+<li><a href="#tree-method:114">Tree method</a></li>
+<li><a href="#fast-multipole-method:114">Fast multipole method</a></li>
+<li><a href="#particle-mesh-method:114">Particle-mesh method</a></li>
+<li><a href="#adaptive-mesh-refinement:114">Adaptive-mesh refinement</a></li>
+<li><a href="#p3m-particle-particle-particle-mesh:114">P3M: particle-particle+particle-mesh</a></li>
+<li><a href="#tree-pm-tpm:114">Tree+PM: TPM</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -202,37 +202,37 @@
 <p>In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
 Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.</p>
 
-<h3 id="direct-summation-pp-method:117">Direct summation: PP method</h3>
+<h3 id="direct-summation-pp-method:114">Direct summation: PP method</h3>
 
 <p>The raw approach is to calculate forces between all pairs in the simulation. This works well for less than $10^3$. The number of pairs, and therefore the computational time, scales as $N^2$, so this method that is usually unacceptable given the number of particles in a simulation.<br />
 It&rsquo;s difficult to implement periodic boundary conditions in this method (because you have to manage it by hand) and the only convenient way to do this is to use the Ewald summation.<br />
 This method is mostly used to test other methods.</p>
 
-<h3 id="tree-method:117">Tree method</h3>
+<h3 id="tree-method:114">Tree method</h3>
 
 <p>The disadvantage of the pp-method comes from having to compute the interaction of any new particle with all the others. The tree method, on the contrary, approximate the force of a distant group of particles with the force exerted by only one particle, in the center of mass of the group, with mass equal the total mass of the group. In this way the computation scales as $N\log N$.<br />
 To create the groups the particles are divided and arranged in a tree structure, that is, the initial volume is divided, and every resulting volume divided again. This procedure goes on until in the resulting volumes there&rsquo;s only one particle. In this situation it&rsquo;s very important the &ldquo;cell acceptance criterion&rdquo; that decide whether or not a cell is far enough to be used as it is or if it has to be divided into its subvolumes.<br />
 The accuracy and the speed of this method can be improved storing some information about the particles in the volumes (such as moments of the mass distribution, usually the quadrupole).<br />
 Moreover, close particles can share information about distant groups because the force is very similar, and the tree can be parallelized efficiently. However, it&rsquo;s not so easy to consider periodic boundary conditions.</p>
 
-<h3 id="fast-multipole-method:117">Fast multipole method</h3>
+<h3 id="fast-multipole-method:114">Fast multipole method</h3>
 
 <p>This method is an improved version of the tree method. It is based on including higher moments of the mass distribution in cells and some other optimizations. This method has a computational costs which scales as $N$.</p>
 
 <p>However all these method has problems with the open boundary conditions and it&rsquo;s difficult to adapt it to the cosmological needs. An extension of the tree method with explicit momentum conservation has been also developed.</p>
 
-<h3 id="particle-mesh-method:117">Particle-mesh method</h3>
+<h3 id="particle-mesh-method:114">Particle-mesh method</h3>
 
 <p>This is the first method used extensively for cosmological simulations and the first used for simulation with order of $10^5$ particles. The PM method solve the Poisson equation (partial differential equation that links the gravitational field with the mass distribution) in the Fourier space, where it is a simple algebraic equation, using the FFT (Fast Fourier Transform) routine to change from coordinate space to the Fourier space and viceversa&nbsp;. FFT requires to sample the functions at uniformly spaced points and here we use a grid (mesh). We compute density at the grid points using weight functions on the particles representing the density and velocity fields.<br />
 The use of Fourier methods automatically include periodic boundary conditions without no additional effort (because of the nature of periodic function in the Fourier space) and the use of the mesh automatically soften the force at small scales (because of the interpolation needed to compute the gravitational field on the grid) but it underestimate the force at scales larger (toughly up to 3 times) than the softening length.<br />
 This method is parallelized using parallel FFT and dividing the volume among the processors.<br />
 Softening at the mesh scale give collisionless evolution but the code cannot resolve structure at scales smaller than the mesh scale, moreover the mesh makes the force anisotropic at small scales. This happens because the grid points don&rsquo;t sample very well the filed on such small scales.</p>
 
-<h3 id="adaptive-mesh-refinement:117">Adaptive-mesh refinement</h3>
+<h3 id="adaptive-mesh-refinement:114">Adaptive-mesh refinement</h3>
 
 <p>In AMR methods the mesh is refined in high density regions using a finer grid, but it&rsquo;s important to pay attention to the conservation of momentum and angular momentum switching from a grid to another.</p>
 
-<h3 id="p3m-particle-particle-particle-mesh:117">P3M: particle-particle+particle-mesh</h3>
+<h3 id="p3m-particle-particle-particle-mesh:114">P3M: particle-particle+particle-mesh</h3>
 
 <p>The idea is to add a correction to the force calculated with the PM method by using the PP method on the closest particles. The correction is assumed to be isotropic and depend only upon the distance. Usually it&rsquo;s considered a distance of the order of 2 times the internode mesh distance. This method has been parallelized but with some problems, also because load balancing is quite difficult to achieve.</p>
 
@@ -245,7 +245,7 @@ Softening at the mesh scale give collisionless evolution but the code cannot res
 <li>P3M simulations slow down at late times when the distribution of particles becomes highly clustered because the short range force dominate the compute operations<br /></li>
 </ul>
 
-<h3 id="tree-pm-tpm:117">Tree+PM: TPM</h3>
+<h3 id="tree-pm-tpm:114">Tree+PM: TPM</h3>
 
 <p>Some hybrid codes has been developed trying to combine the PM and the Tree methods:</p>
 
