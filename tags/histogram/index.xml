@@ -22,12 +22,12 @@ It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;To be updated&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;linear-vs-logarithmic:88&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
+&lt;h2 id=&#34;linear-vs-logarithmic:89&#34;&gt;Linear vs logarithmic&lt;/h2&gt;
 
 &lt;p&gt;I live in a linear space. My advisor and a lot of other scientists live in a logarithmic space. It&amp;rsquo;s quite difficult to easily communicate, but trying to &amp;ldquo;mask&amp;rdquo; this difference life can be more peaceful.&lt;br /&gt;
 Hereafter I would like to thing about &amp;ldquo;equally spaced bins&amp;rdquo;. It&amp;rsquo;s not important if they are linearly or logarithmically equally spaced because you can take the same snippet of code and pass to it a logarithmic array, or logarithmic boundaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;from-one-to-the-other:88&#34;&gt;From one to the other&lt;/h2&gt;
+&lt;h2 id=&#34;from-one-to-the-other:89&#34;&gt;From one to the other&lt;/h2&gt;
 
 &lt;p&gt;Suppose you have an array.  How much will be the bin spacing to obtain &lt;code&gt;n_bin&lt;/code&gt; bins?&lt;br /&gt;
 It can be easily computed as&lt;br /&gt;
@@ -36,7 +36,7 @@ From this it&amp;rsquo;s also straightforward to obtain the number of bins from 
 &lt;code&gt;$n_{bin} = \lfloor(sup-inf)/\delta_{bin}\rfloor$&lt;/code&gt;&lt;br /&gt;
 Note that we choose the number of bins to be integer.&lt;/p&gt;
 
-&lt;h2 id=&#34;code:88&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code:89&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;Here some code to bin your arrays:&lt;/p&gt;
 

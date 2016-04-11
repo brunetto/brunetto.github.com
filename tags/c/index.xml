@@ -19,11 +19,11 @@
 
 &lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
 
-&lt;h2 id=&#34;header-files:91&#34;&gt;Header files&lt;/h2&gt;
+&lt;h2 id=&#34;header-files:92&#34;&gt;Header files&lt;/h2&gt;
 
 &lt;p&gt;They are one of the first annoying things I see in C/C++ languages. Two files for each &amp;ldquo;module&amp;rdquo;, two lines to be modified every times, &amp;hellip; but I have eventually obtained a reasonable justification for their existence. When you distribute your code, or download someone&amp;rsquo;s code, you can share or download compiled code+header files and not all the sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;compile:91&#34;&gt;Compile&lt;/h2&gt;
+&lt;h2 id=&#34;compile:92&#34;&gt;Compile&lt;/h2&gt;
 
 &lt;p&gt;The easiest way to compile the sources and get the executable is&lt;/p&gt;
 
@@ -48,7 +48,7 @@ A better way is to include some flags&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;-o&lt;/code&gt; to specify the output&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;macros-preprocessor:91&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
+&lt;h2 id=&#34;macros-preprocessor:92&#34;&gt;MACROS &amp;amp; preprocessor&lt;/h2&gt;
 
 &lt;p&gt;The preprocessor is a sort of automated text editor. It cut and paste piece of text in the sources files according to some simple rules. With it you can define &amp;ldquo;constant&amp;rdquo; values or simple functions (danger, can lead to unpredicted effects) across the whole source and make easy to change it&lt;/p&gt;
 
@@ -74,12 +74,12 @@ float a = PI;
 
 &lt;p&gt;Compiling with the &lt;code&gt;-E&lt;/code&gt; flag you can view the result of the preprocessor action.&lt;/p&gt;
 
-&lt;h2 id=&#34;numbers:91&#34;&gt;Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;numbers:92&#34;&gt;Numbers&lt;/h2&gt;
 
 &lt;p&gt;Number variables are similar to those in other programming languages, but there&amp;rsquo;s some peculiarities.&lt;br /&gt;
 Integer dimension depends on the machine and on the compiler, on the contrary floats and doubles are fixed by an international standard. For the rest you can find detailed description on every C books.&lt;/p&gt;
 
-&lt;h2 id=&#34;cast:91&#34;&gt;Cast&lt;/h2&gt;
+&lt;h2 id=&#34;cast:92&#34;&gt;Cast&lt;/h2&gt;
 
 &lt;p&gt;It&amp;rsquo;s possible to convert one type to some other type. For example,&lt;/p&gt;
 
@@ -87,11 +87,11 @@ Integer dimension depends on the machine and on the compiler, on the contrary fl
 pippo = (float) k*1024L;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;bool:91&#34;&gt;Bool&lt;/h2&gt;
+&lt;h2 id=&#34;bool:92&#34;&gt;Bool&lt;/h2&gt;
 
 &lt;p&gt;There aren&amp;rsquo;t boolean variables, but 0 stands for &lt;code&gt;False&lt;/code&gt; and any other non-zero value means &lt;code&gt;True&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;side-effect-and-short-circuit:91&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
+&lt;h2 id=&#34;side-effect-and-short-circuit:92&#34;&gt;Side effect and short-circuit&lt;/h2&gt;
 
 &lt;p&gt;Something like&lt;/p&gt;
 
@@ -101,7 +101,7 @@ pippo = (float) k*1024L;
 &lt;p&gt;has indefinite result because it&amp;rsquo;s not predictable the order of evaluation of operand/expression &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;++k&lt;/code&gt;, and those expressions have &lt;em&gt;side effects&lt;/em&gt; on the other expression involved in the result.&lt;br /&gt;
 Logical operators &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; and &lt;code&gt;||&lt;/code&gt; instead are evaluated strictly from left to right. This is c&lt;em&gt;alled short-circuit evaluation&lt;/em&gt; and the operators are synchronization points, just like &amp;ldquo;;&amp;rdquo;. At a synchronization point all the code before has to be already evaluated and the code after has not yet.&lt;/p&gt;
 
-&lt;h2 id=&#34;ternary-operator:91&#34;&gt;Ternary operator&lt;/h2&gt;
+&lt;h2 id=&#34;ternary-operator:92&#34;&gt;Ternary operator&lt;/h2&gt;
 
 &lt;p&gt;The ternary operator accept three arguments and has the form of&lt;/p&gt;
 
@@ -166,11 +166,11 @@ Because the dereferencing operator has not the highest precedence, sometimes you
 pippo-&amp;amp;gt;pluto
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;stack-and-heap:91&#34;&gt;Stack and heap&lt;/h2&gt;
+&lt;h2 id=&#34;stack-and-heap:92&#34;&gt;Stack and heap&lt;/h2&gt;
 
 &lt;p&gt;The stack is the automatic memory used for the function calls, their local variables and the automatic arrays. It&amp;rsquo;s managed automatically. The heap is the memory available to the user to define his variables. This has to be managed by the user so he has to deallocate the allocated memory and to keep track of the pointers (address). If you loose the pointer to some allocated memory this is lost until the end of the program and the memory can saturate. This is known as &amp;ldquo;&lt;em&gt;memory leak&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;
 
-&lt;h2 id=&#34;arrays:91&#34;&gt;Arrays&lt;/h2&gt;
+&lt;h2 id=&#34;arrays:92&#34;&gt;Arrays&lt;/h2&gt;
 
 &lt;p&gt;There&amp;rsquo;are basically two ways to create an array. First, you can create an automatic array in the stack memory, managed by the compiler. For this reason automatic arrays must be small and have to be defined at compile time, that means that you have to know and declare the dimension, for example;&lt;/p&gt;
 
@@ -239,7 +239,7 @@ void array_destruction(float** ptr, int lenghty){
 
 &lt;p&gt;It&amp;rsquo;s also important to keep in mind that arrays are contiguous memory blocks, and a multidimensional array is &amp;ldquo;linearized&amp;rdquo; row-major order so it&amp;rsquo;s faster to &amp;ldquo;run&amp;rdquo; on the row index (that on the right-most one). This is known as &lt;a href=&#34;http://en.wikipedia.org/wiki/Stride_of_an_array&#34; target=&#34;_blank&#34;&gt;stride one access&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;structs:91&#34;&gt;Structs&lt;/h2&gt;
+&lt;h2 id=&#34;structs:92&#34;&gt;Structs&lt;/h2&gt;
 
 &lt;p&gt;An array is a structure containing homogeneous data, if you need to put together different types of data you can use structs:&lt;/p&gt;
 
@@ -263,7 +263,7 @@ Tree smaller, larger; /* equivalently, this line could say
 
 &lt;p&gt;(From Cineca&amp;rsquo;s slides)&lt;/p&gt;
 
-&lt;h2 id=&#34;strings:91&#34;&gt;Strings&lt;/h2&gt;
+&lt;h2 id=&#34;strings:92&#34;&gt;Strings&lt;/h2&gt;
 
 &lt;p&gt;Strings are simply arrays of characters, usually terminated with the &amp;ldquo;null&amp;rdquo; character &amp;ldquo;&lt;code&gt;&amp;quot; to be able to use the string manipulation libraries (without &amp;quot;&lt;/code&gt;&amp;rdquo; you should give the length of the string to the library, but they are not designed to do this).&lt;br /&gt;
 Because of this, the two expression that follows are equivalent:&lt;/p&gt;
@@ -307,11 +307,11 @@ void strcpy(char s[], char *t) {
 
 &lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
 
-&lt;h2 id=&#34;the-ide:101&#34;&gt;The IDE&lt;/h2&gt;
+&lt;h2 id=&#34;the-ide:100&#34;&gt;The IDE&lt;/h2&gt;
 
 &lt;p&gt;When I write little pieces of code I usually find &lt;a href=&#34;http://kate-editor.org/&#34; target=&#34;_blank&#34; title=&#34;Kate Editor&#34;&gt;Kate&lt;/a&gt; comfortable enough but to explore projects like &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt; I prefer to use something like &lt;a href=&#34;http://kdevelop.org/&#34; target=&#34;_blank&#34; title=&#34;KDevelop&#34;&gt;KDevelop&lt;/a&gt; because it&amp;rsquo;s easier to manage where a variable is defined, declared and used. And it do this only by positioning the mouse on the variable name. If you put the mouse on a known function (from the standard library for example), KDevelop will open the documentation for you.&lt;/p&gt;
 
-&lt;h2 id=&#34;doxygen:101&#34;&gt;Doxygen&lt;/h2&gt;
+&lt;h2 id=&#34;doxygen:100&#34;&gt;Doxygen&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen&#34; target=&#34;_blank&#34; title=&#34;Doxygen&#34;&gt;Doxygen&lt;/a&gt; is a documentation system. It allows you to produce documentation for a project from the comments in the code. With no additional work you can &lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen/docblocks.html#specialblock&#34; target=&#34;_blank&#34; title=&#34;Comment in Doxigen&#34;&gt;comment&lt;/a&gt; your code and be ready to produce the documentation. In KDevelop Doxygen style for comments has a different (and nice) coloring.&lt;/p&gt;
 

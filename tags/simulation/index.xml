@@ -535,7 +535,7 @@ reached. To do this, simply run&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:54&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
+&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:57&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
 
 &lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
 
@@ -550,7 +550,7 @@ reached. To do this, simply run&lt;/p&gt;
 
 &lt;!-- TEASER_END --&gt;
 
-&lt;h2 id=&#34;sapporo:54&#34;&gt;Sapporo&lt;/h2&gt;
+&lt;h2 id=&#34;sapporo:57&#34;&gt;Sapporo&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
@@ -636,7 +636,7 @@ test_gravity_N2ngb 900
 &lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
 but the test fail if the number is less than ~800.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:54&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab:57&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;change configure CUDA lines:
@@ -651,18 +651,18 @@ CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr
 CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:54&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:57&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
 
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:54&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
+&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:57&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
 
 &lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
 g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
 
-&lt;h1 id=&#34;where-to-find-grape-libraries:54&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
+&lt;h1 id=&#34;where-to-find-grape-libraries:57&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
 
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:54&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:57&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
 
 &lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
 
@@ -765,7 +765,7 @@ Here a brief scheme on how the short range force calculation works on multiple p
 
 &lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
 
-&lt;h2 id=&#34;installation-of-gsl-and-fftw:104&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
+&lt;h2 id=&#34;installation-of-gsl-and-fftw:102&#34;&gt;Installation of GSL and fftw&lt;/h2&gt;
 
 &lt;p&gt;We can download Gadget &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget download&#34;&gt;here&lt;/a&gt;, the GSL (GNU scientific library) &lt;a href=&#34;http://mirror.rit.edu/gnu/gsl/gsl-1.9.tar.gz&#34; title=&#34;GSL download&#34;&gt;here&lt;/a&gt; and the FFTW (fastest Fourier transform in the West library) &lt;a href=&#34;http://www.fftw.org/fftw-2.1.5.tar.gz&#34; title=&#34;FFTW download&#34;&gt;here&lt;/a&gt;. We also need an MPI library (Open-MPI or MPICH, try install it using your package manager).&lt;br /&gt;
 Following the Astrobites suggestions let&amp;rsquo;s decompress the archives with &lt;code&gt;tar -xzf &amp;lt;archive name&amp;gt;&lt;/code&gt;. Now we can install the libraries following the Astrobites post:&lt;/p&gt;
@@ -802,7 +802,7 @@ Password:
 snip: lots of diagnostic output
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;play-with-gadget2:104&#34;&gt;Play with Gadget2&lt;/h2&gt;
+&lt;h2 id=&#34;play-with-gadget2:102&#34;&gt;Play with Gadget2&lt;/h2&gt;
 
 &lt;p&gt;Now it&amp;rsquo;s time to play with Gadget!:) In this code, for performance reasons, requires to specify some parameters at compile time while other can be set at run time, so that we have to customize the Makefile. This also imply that we should have separate binary files and directories for each simulation.&lt;br /&gt;
 To start with something easy, we will customize one of the examples given with the code, the &amp;ldquo;galaxy&amp;rdquo; one. It simulate the collision of two galaxies using 40000 DM particles for the haloes and 20000 baryonic particles for the disks.&lt;/p&gt;
