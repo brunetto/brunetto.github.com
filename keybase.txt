@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/brunettoziosi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://brunettoziosi.eu
+  * I am brunettoziosi (https://keybase.io/brunettoziosi) on keybase.
+  * I have a public key with fingerprint 77E4 54C2 5C06 492A 69EC  099D A2CE FC17 09CE BE24
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010176771e0bf15c367680b84d73c4d88fbe6b4bf50712a9ccbd5a069f475f49eb660a",
+            "fingerprint": "77e454c25c06492a69ec099da2cefc1709cebe24",
+            "host": "keybase.io",
+            "key_id": "a2cefc1709cebe24",
+            "kid": "010176771e0bf15c367680b84d73c4d88fbe6b4bf50712a9ccbd5a069f475f49eb660a",
+            "uid": "88e808d554ee7d640673faf4aa380b19",
+            "username": "brunettoziosi"
+        },
+        "service": {
+            "hostname": "brunettoziosi.eu",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468922908,
+    "expire_in": 157680000,
+    "prev": "16b01ddb1e4daab10b5bcb54152d717c51e3fd835c818db2756dbf2a22524176",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIqAnicrZJbbExBGMe3rrEIIkFpkNNIJG23Z87OnMuW9EK7pIg+4AHZnLmc9rS6
+Z+2eLVXVBhUUD6SRNnGpS7VSFepaEiqLCCUh0bomJLUS9wdpUGVOw5tH8zKZ+f7f
+b/7fPxMbO9TlTmhrLWhJTH7/LeFu56Goa8Xu/qQKAVu0XPBVCCVscGNrKIvYgRKT
+Cj5BBCJQZEUBTMQGQMQrK7IqYhVSxUsgVVUDMxlDbCBRAZKuEYIp0kVZM6CCDKgx
+LMuiLqQKhhksZOFQ2AzaHKsoDCJIJEREGWqSLmuMiJpGdYkwgwBF1AjDTIK8sciK
+OB3cHNYjzGNa/I4fAoP2/qH/z76jgzhVZaqoUoQgYwqVoSgrXkM3oK57ORVojjDC
+wkG9lHE1DkeDzLatDaYVMYXKVIGXykzCnHSdcf4l87Aoh4TClm0Raw2vFtl2yOc0
+2+UhR72O4cAfTgCbQcrz5A1lLBwxraDgA1xJbNMBAyirmiRpopoqsPUhM8wCpqNA
+TgR8Oc+wMo4EMhYBpRgwSHUdAxEjTDCCAElUAQpBgHkNqnoRUYFKsaQgmWJD0iUJ
+SZDHKziTrQ1agg9ym3ohR0bMwqBuR8NMqLxxfdUwV4LbNWL4EOefudyjxv/9fV2X
+Rg6klxx+1TP9c1epX+0kfTcWLMXxHdXzc+5k9dZ+uhwfWf8gZ1y0rb9jecuSdhSL
+xxKrfj7IbhgA2ecrsH9n34ypT4Ympmz3zNsrR/KOXe2unfir89yw/A81ZaHjafHn
+k2+tbu8vuJKbN3vXo8eZyy5Kp/Q0K/eL/83Lz3WxnqqjL8Db731dc2hTbb3naabn
+WNaBlDOna47POrWn23drk3JxWnJtXnnzhfxn6GtS65OMhVeezV2ZdfBqT0V68aUR
+9vVNjTe33Y7vf+ef+bB78eama+5FUzp6j+CS8ozij8WjG4z7bT1jVv+YM+mkuyj9
+3hZ/HctuLn3dVX1t34StWmPvRvNse9uJ3762T7I=
+=KUDQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brunettoziosi
+
+==================================================================
