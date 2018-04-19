@@ -7,139 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/films/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/films/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Films</title>
-      <link>http://brunettoziosi.eu/pages/personal/Films/</link>
+      <link>http://brunettoziosi.eu/pages/personal/films/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/Films/</guid>
-      <description>
-
-&lt;h2 id=&#34;to-see:33&#34;&gt;To see&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Pitch Perfect&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Tracks_(2013_film)&#34;&gt;Tracks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sin City&lt;/li&gt;
-&lt;li&gt;Mezzogiorno e mezzo di fuoco&lt;/li&gt;
-&lt;li&gt;Fahrenheit &lt;sup&gt;9&lt;/sup&gt;&amp;frasl;&lt;sub&gt;11&lt;/sub&gt;&lt;/li&gt;
-&lt;li&gt;Fahrenheit 451&lt;/li&gt;
-&lt;li&gt;Mission&lt;/li&gt;
-&lt;li&gt;Dune&lt;/li&gt;
-&lt;li&gt;Star Trek&lt;/li&gt;
-&lt;li&gt;Real Steel&lt;/li&gt;
-&lt;li&gt;Robot&amp;amp;Frank&lt;/li&gt;
-&lt;li&gt;Gravity&lt;/li&gt;
-&lt;li&gt;Redemption - Identità nascoste&lt;/li&gt;
-&lt;li&gt;Ender&amp;rsquo;s Game&lt;/li&gt;
-&lt;li&gt;Il grande Gatsby&lt;/li&gt;
-&lt;li&gt;Educazione siberiana&lt;/li&gt;
-&lt;li&gt;Hunger Games&lt;/li&gt;
-&lt;li&gt;Hunger Games: La ragazza di fuoco&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Memento_(film)&#34;&gt;Memento&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Aviator_(2004_film)&#34;&gt;The Aviator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;new-2014:33&#34;&gt;New 2014&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Transcendence_(2014_film)&#34;&gt;Transcendence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Interstellar_(film)&#34;&gt;Interstellar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)&#34;&gt;Guardians of the Galaxy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Jupiter_Ascending&#34;&gt;Jupiter Ascending&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Edge_of_Tomorrow_(film)&#34;&gt;Edge of Tomorrow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Lego_Movie&#34;&gt;The Lego Movie&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/RoboCop_(2014_film)&#34;&gt;RoboCop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Pompeii_(2014_film)&#34;&gt;Pompeii&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Noah_(film)&#34;&gt;Noah&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Monuments_Men&#34;&gt;The monuments men&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Captain_America:_The_Winter_Soldier&#34;&gt;The Winter soldier&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)&#34;&gt;The wolf of Wall Street&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/300:_Rise_of_an_Empire&#34;&gt;300: the rise of an Empire&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Sessions_(film)&#34;&gt;The Sessions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;nice:33&#34;&gt;Nice&lt;/h2&gt;
-
-&lt;h3 id=&#34;films:33&#34;&gt;Films&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The prestige&lt;/li&gt;
-&lt;li&gt;Eurotrip&lt;/li&gt;
-&lt;li&gt;Una pallottola spuntata&lt;/li&gt;
-&lt;li&gt;Kill Bill&lt;/li&gt;
-&lt;li&gt;Bastardi senza gloria&lt;/li&gt;
-&lt;li&gt;Balle spaziali&lt;/li&gt;
-&lt;li&gt;Robin hood un uomo in calzamaglia&lt;/li&gt;
-&lt;li&gt;Big fish&lt;/li&gt;
-&lt;li&gt;Mulin rouge&lt;/li&gt;
-&lt;li&gt;Full Metal Jacket&lt;/li&gt;
-&lt;li&gt;Indiana jones&lt;/li&gt;
-&lt;li&gt;I cento passi&lt;/li&gt;
-&lt;li&gt;Il cavaliere oscuro and the others Batman&amp;rsquo;s&lt;/li&gt;
-&lt;li&gt;Non ci resta che piangere&lt;/li&gt;
-&lt;li&gt;Il dottor stranamore&lt;/li&gt;
-&lt;li&gt;Mission impossible&lt;/li&gt;
-&lt;li&gt;Il Favoloso Mondo di Amélie&lt;/li&gt;
-&lt;li&gt;Il gladiatore&lt;/li&gt;
-&lt;li&gt;Inception&lt;/li&gt;
-&lt;li&gt;Into the wild&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;Uomo che volle farsi Re&lt;/li&gt;
-&lt;li&gt;Avatar&lt;/li&gt;
-&lt;li&gt;Le ali della libertà&lt;/li&gt;
-&lt;li&gt;Papillon&lt;/li&gt;
-&lt;li&gt;Babel&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;aereo più pazzo del mondo&lt;/li&gt;
-&lt;li&gt;Prova a prendermi&lt;/li&gt;
-&lt;li&gt;The butterfly effect&lt;/li&gt;
-&lt;li&gt;Il mistero di sleepy hollow&lt;/li&gt;
-&lt;li&gt;Vanilla sky&lt;/li&gt;
-&lt;li&gt;Forrest Gump&lt;/li&gt;
-&lt;li&gt;Matrix&lt;/li&gt;
-&lt;li&gt;Pirates of the Caribbean&lt;/li&gt;
-&lt;li&gt;Star Wars&lt;/li&gt;
-&lt;li&gt;300&lt;/li&gt;
-&lt;li&gt;Resident Evil&lt;/li&gt;
-&lt;li&gt;Io robot&lt;/li&gt;
-&lt;li&gt;L&amp;rsquo;uomo bicentenario&lt;/li&gt;
-&lt;li&gt;Wall-E&lt;/li&gt;
-&lt;li&gt;Il mondo dei replicanti&lt;/li&gt;
-&lt;li&gt;Pacific RIM&lt;/li&gt;
-&lt;li&gt;Elysium&lt;/li&gt;
-&lt;li&gt;Corpi da reato&lt;/li&gt;
-&lt;li&gt;Escape Plan - Fuga dall&amp;rsquo;inferno&lt;/li&gt;
-&lt;li&gt;After Earth&lt;/li&gt;
-&lt;li&gt;Lo Hobbit 1, 2 e 3&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Next_(2007_film)&#34;&gt;Next&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Family_Man&#34;&gt;The family man&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Lord_of_War&#34;&gt;Lord of War&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://it.wikipedia.org/wiki/L%27ultimo_dei_Templari_(film_2011)&#34;&gt;L&amp;rsquo;ultimo dei templari&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Le crociate&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://it.wikipedia.org/wiki/L%27apprendista_stregone_(film_2010)&#34;&gt;L&amp;rsquo;apprendista stregone&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;series:33&#34;&gt;Series&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/ncis/&#34;&gt;NCIS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;(Criminal Minds)[&lt;a href=&#34;http://serietvsubita.org/category/criminal-minds/&#34;&gt;http://serietvsubita.org/category/criminal-minds/&lt;/a&gt;]&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/csi/&#34;&gt;CSI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/suits/&#34;&gt;Suits&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/person-of-interest/&#34;&gt;Persons of interest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Jarod&lt;/li&gt;
-&lt;li&gt;The sentinel&lt;/li&gt;
-&lt;li&gt;Dr. House&lt;/li&gt;
-&lt;li&gt;Scrubs&lt;/li&gt;
-&lt;li&gt;Big bang theory&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/game-of-thrones/&#34;&gt;Game of thrones&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/masters-of-sex/&#34;&gt;Masters of sex&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/arrow/&#34;&gt;Arrow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://it.wikipedia.org/wiki/Alcatraz_(serie_televisiva)&#34;&gt;Alcatraz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://serietvsubita.org/category/fringe/&#34;&gt;Fringe&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://brunettoziosi.eu/pages/personal/films/</guid>
+      <description>To see  Pitch Perfect Tracks Sin City Mezzogiorno e mezzo di fuoco Fahrenheit 9&amp;frasl;11 Fahrenheit 451 Mission Dune Star Trek Real Steel Robot&amp;amp;Frank Gravity Redemption - Identità nascoste Ender&amp;rsquo;s Game Il grande Gatsby Educazione siberiana Hunger Games Hunger Games: La ragazza di fuoco Memento The Aviator  New 2014  Transcendence Interstellar Guardians of the Galaxy Jupiter Ascending Edge of Tomorrow The Lego Movie RoboCop Pompeii Noah The monuments men The Winter soldier The wolf of Wall Street 300: the rise of an Empire The Sessions  Nice Films  The prestige Eurotrip Una pallottola spuntata Kill Bill Bastardi senza gloria Balle spaziali Robin hood un uomo in calzamaglia Big fish Mulin rouge Full Metal Jacket Indiana jones I cento passi Il cavaliere oscuro and the others Batman&amp;rsquo;s Non ci resta che piangere Il dottor stranamore Mission impossible Il Favoloso Mondo di Amélie Il gladiatore Inception Into the wild L&amp;rsquo;Uomo che volle farsi Re Avatar Le ali della libertà Papillon Babel L&amp;rsquo;aereo più pazzo del mondo Prova a prendermi The butterfly effect Il mistero di sleepy hollow Vanilla sky Forrest Gump Matrix Pirates of the Caribbean Star Wars 300 Resident Evil Io robot L&amp;rsquo;uomo bicentenario Wall-E Il mondo dei replicanti Pacific RIM Elysium Corpi da reato Escape Plan - Fuga dall&amp;rsquo;inferno After Earth Lo Hobbit 1, 2 e 3 Next The family man Lord of War L&amp;rsquo;ultimo dei templari Le crociate L&amp;rsquo;apprendista stregone  Series  NCIS (Criminal Minds)[http://serietvsubita.</description>
     </item>
     
   </channel>

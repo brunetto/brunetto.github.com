@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Android</title>
@@ -15,53 +17,7 @@
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/android/</guid>
-      <description>
-
-&lt;h2 id=&#34;apps-i-use-or-like:35&#34;&gt;Apps I use or like&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Flashlight&lt;/li&gt;
-&lt;li&gt;ASTRO File Manager&lt;/li&gt;
-&lt;li&gt;Calendar&lt;/li&gt;
-&lt;li&gt;Cam Scanner&lt;/li&gt;
-&lt;li&gt;Chrome&lt;/li&gt;
-&lt;li&gt;Drive&lt;/li&gt;
-&lt;li&gt;Dropbox&lt;/li&gt;
-&lt;li&gt;Facebook&lt;/li&gt;
-&lt;li&gt;Foursquare&lt;/li&gt;
-&lt;li&gt;(GialloZafferano)(&lt;a href=&#34;https://play.google.com/store/apps/details?id=it.banzai.media.gzricette&#34;&gt;https://play.google.com/store/apps/details?id=it.banzai.media.gzricette&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Google+&lt;/li&gt;
-&lt;li&gt;gStrings&lt;/li&gt;
-&lt;li&gt;GZafferano&lt;/li&gt;
-&lt;li&gt;Hangouts&lt;/li&gt;
-&lt;li&gt;Keep&lt;/li&gt;
-&lt;li&gt;LectureNotes&lt;/li&gt;
-&lt;li&gt;Maps&lt;/li&gt;
-&lt;li&gt;Play Books&lt;/li&gt;
-&lt;li&gt;Play Music&lt;/li&gt;
-&lt;li&gt;Pocket&lt;/li&gt;
-&lt;li&gt;Runtastic&lt;/li&gt;
-&lt;li&gt;Trains Timetable&lt;/li&gt;
-&lt;li&gt;VLC&lt;/li&gt;
-&lt;li&gt;Whatsapp&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;settings:35&#34;&gt;Settings&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;set data usage warning to a low value&lt;/li&gt;
-&lt;li&gt;restrict background data for G+&lt;/li&gt;
-&lt;li&gt;restrict background data for Gallery&lt;/li&gt;
-&lt;li&gt;Turn off G+ photos sync&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;useful-links:35&#34;&gt;Useful links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.google.com/android/devicemanager&#34;&gt;Android Manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.google.com/settings/dashboard?hl=en&#34;&gt;Google Dashboard&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Apps I use or like  Flashlight ASTRO File Manager Calendar Cam Scanner Chrome Drive Dropbox Facebook Foursquare (GialloZafferano)(https://play.google.com/store/apps/details?id=it.banzai.media.gzricette) Google+ gStrings GZafferano Hangouts Keep LectureNotes Maps Play Books Play Music Pocket Runtastic Trains Timetable VLC Whatsapp  Settings  set data usage warning to a low value restrict background data for G+ restrict background data for Gallery Turn off G+ photos sync  Useful links  Android Manager Google Dashboard  </description>
     </item>
     
   </channel>

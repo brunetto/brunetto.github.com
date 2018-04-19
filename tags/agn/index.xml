@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/agn/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/agn/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>AGN for Dummies</title>
@@ -17,10 +19,7 @@
       <guid>http://brunettoziosi.eu/posts/agn-for-dummies/</guid>
       <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 
-&lt;p&gt;See the the &lt;a href=&#34;infographics-attempts.html&#34;&gt;other ones too&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;../../files/very_unified_model_bck.png&#34;&gt;&lt;img alt=&#34;AGN for Dummies&#34; src=&#34;../../files/very_unified_model_bck.png&#34; title=&#34;AGN for Dummies&#34; width=&#34;800&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

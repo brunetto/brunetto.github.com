@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Ssh keys exchange</title>
@@ -15,21 +17,10 @@
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/ssh-keys-exchange/</guid>
-      <description>&lt;p&gt;A superfast note on how to exchange ssh keys in order to connect without
-the need to remember a password.&lt;/p&gt;
-
-&lt;p&gt;On both the computer (&lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh-keygen
-ssh-copy-id -i you@B
-ssh you@B # to check if it works
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If it doesn&amp;rsquo;t work try:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cat .ssh/id_rsa.pub | ssh b@B &#39;cat &amp;gt;&amp;gt; .ssh/authorized_keys&#39;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>A superfast note on how to exchange ssh keys in order to connect without the need to remember a password.
+On both the computer (A and B):
+ssh-keygen ssh-copy-id -i you@B ssh you@B # to check if it works  If it doesn&amp;rsquo;t work try:
+cat .ssh/id_rsa.pub | ssh b@B &#39;cat &amp;gt;&amp;gt; .ssh/authorized_keys&#39;  </description>
     </item>
     
   </channel>

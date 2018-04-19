@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/videos/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/videos/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Videos</title>
@@ -15,27 +17,8 @@
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/personal/multimedia/videos/</guid>
-      <description>
-
-&lt;p&gt;Some links about videos&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;editors:73&#34;&gt;Editors&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;KDEnlive, my favourite&lt;/li&gt;
-&lt;li&gt;Cinelerra&lt;/li&gt;
-&lt;li&gt;LightWorks&lt;/li&gt;
-&lt;li&gt;Openshot&lt;/li&gt;
-&lt;li&gt;Avidemux&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;cli-tricks:73&#34;&gt;CLI tricks&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Convert (avcon, previously known as ffmpeg)&lt;/li&gt;
-&lt;li&gt;Slow down&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Some links about videos&amp;hellip;
+Editors  KDEnlive, my favourite Cinelerra LightWorks Openshot Avidemux  CLI tricks  Convert (avcon, previously known as ffmpeg) Slow down  </description>
     </item>
     
   </channel>

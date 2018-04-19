@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Nov 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Blog pages index generator</title>
@@ -25,104 +27,7 @@ deleted pages.&lt;/p&gt;
 
 &lt;p&gt;This is the first attempt, it could be better, but it works!&lt;/p&gt;
 
-&lt;p&gt;Filesystem walk from
-&lt;a href=&#34;http://stackoverflow.com/questions/12657365/extracting-directory-hierarchy-using-go-language&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
-
-import (
-	&amp;quot;path/filepath&amp;quot;
-	&amp;quot;fmt&amp;quot;
-	&amp;quot;log&amp;quot;
-	&amp;quot;os&amp;quot;
-	&amp;quot;strings&amp;quot;
-	&amp;quot;time&amp;quot;
-)
-
-func main() {
-	tGlob0 := time.Now()
-	
-	// Create output file
-	fOut, err := os.Create(&amp;quot;index.md&amp;quot;)
-	if err != nil {
-        panic(err)
-    }
-    defer fOut.Close()
-	
-	// Define and implement what to do with path pieces
-	visit := func(path string, info os.FileInfo, err error) error {
-		// Split dir path from file name
-		dir, file := filepath.Split(path)
-		// Init list line string
-		line := &amp;quot;&amp;quot;
-		// Init and compute the level of indentation based on dit level 
-		indent := &amp;quot;&amp;quot;
-		for i:=0; i &amp;lt; len(strings.Split(dir, &amp;quot;/&amp;quot;))-1; i++ {
-			indent = indent + &amp;quot;    &amp;quot;
-		}
-		// If I reach a new dir
-        if info.IsDir() {
-			// Ignore local dir (exit function)
-			if strings.Contains(path, &amp;quot;.&amp;quot;) {
-				return nil
-			}
-			// Create line for page with name == dirName
-            line = indent + &amp;quot;* [&amp;quot;+strings.Title(filepath.Base(path))+&amp;quot;](&amp;quot;+filepath.Join(path, filepath.Base(path)+&amp;quot;.html)&amp;quot;)+&amp;quot;\n&amp;quot;
-        // If I found a new file
-		} else {
-			// Only consider md files
-			if strings.HasSuffix(file, &amp;quot;md&amp;quot;){
-				fileBase := strings.TrimSuffix(file, &amp;quot;.md&amp;quot;)
-				// Ignore files with name == dirName
-				if fileBase == filepath.Base(dir) {
-					return nil
-				}
-				// Create line
-				linkName := strings.Replace(strings.Title(strings.Replace(fileBase, &amp;quot;-&amp;quot;, &amp;quot;_&amp;quot;, -1)), &amp;quot;_&amp;quot;, &amp;quot; &amp;quot;, -1)
-			    line = indent + &amp;quot;* [&amp;quot;+ linkName +&amp;quot;](&amp;quot;+filepath.Join(dir, strings.Replace(file, &amp;quot;.md&amp;quot;, &amp;quot;.html&amp;quot;, 1))+&amp;quot;)\n&amp;quot;
-			} else {	
-				return nil
-			}
-        }
-        // Print line to file
-//         fmt.Print(line)
-		if _, err = fOut.WriteString(line); err != nil {
-			log.Fatal(err)
-		}
-        return nil
-    }
-    
-    header := `&amp;lt;!-- 
-.. link: 
-.. description: 
-.. tags: 
-.. date: 2013/09/03 12:24:24
-.. title: for future references summary
-.. slug: index
---&amp;gt;
-
-* [Blog](../index.html)
-`
-    
-    if _, err = fOut.WriteString(header); err != nil {
-			log.Fatal(err)
-	}
-    
-    // Walk through folders
-	err = filepath.Walk(&amp;quot;./&amp;quot;, visit)
-    if err != nil {
-        log.Fatal(err)
-    }
-	
-
-	tGlob1 := time.Now()
-	fmt.Println()
-	log.Println(&amp;quot;Recreated pages index in &amp;quot;, tGlob1.Sub(tGlob0))
-} //END MAIN
-
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

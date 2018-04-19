@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/bachelor/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/bachelor/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Bachelor</title>
@@ -15,46 +17,7 @@
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/bachelor/</guid>
-      <description>
-
-&lt;h2 id=&#34;bachelor-degree-exams:59&#34;&gt;Bachelor Degree Exams&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Mathematical analysis 1 &lt;a href=&#34;23&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mathematical analysis 2 &lt;a href=&#34;20&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mathematical analysis 3 &lt;a href=&#34;21&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astronomy 1 (sperical astronomy, coordinates, &amp;hellip;) &lt;a href=&#34;29&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astronomy 2 (observational astronomy, photometry, &amp;hellip;) &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Historical astronomy &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics 1 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics 2 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics 3 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics lab 1 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics lab 2 &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Geometry &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Computer science&lt;/li&gt;
-&lt;li&gt;Scientific English&lt;/li&gt;
-&lt;li&gt;Descriptive statistics &lt;a href=&#34;20&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, &amp;hellip;) &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysics 2 (A: spectroscopy, B: stellar structure) &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Chemistry 1 &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Chemistry 2 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Analytical mechanics &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Complementary astrophysics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cosmology &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Plasma physics fundamentals &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Statistical inference 1B &lt;a href=&#34;18&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Principles of quantum mechanics &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Principles of (special) relativity &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Digital data analysis lab. (FSE)&lt;/li&gt;
-&lt;li&gt;Astronomy lab &lt;a href=&#34;30+&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mathematical methods &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Structure of matter 1 &lt;a href=&#34;18&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../files/ZiosiBachelorThesis.pdf&#34;&gt;Final thesis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Banner from &lt;a href=&#34;http://www.extremetech.com/&#34;&gt;http://www.extremetech.com/&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Bachelor Degree Exams  Mathematical analysis 1  Mathematical analysis 2  Mathematical analysis 3  Astronomy 1 (sperical astronomy, coordinates, &amp;hellip;)  Astronomy 2 (observational astronomy, photometry, &amp;hellip;)  Historical astronomy  Physics 1  Physics 2  Physics 3  Physics lab 1  Physics lab 2  Geometry  Computer science Scientific English Descriptive statistics  Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, &amp;hellip;)  Astrophysics 2 (A: spectroscopy, B: stellar structure)  Chemistry 1  Chemistry 2  Analytical mechanics  Complementary astrophysics  Cosmology  Plasma physics fundamentals  Statistical inference 1B  Principles of quantum mechanics  Principles of (special) relativity  Digital data analysis lab.</description>
     </item>
     
   </channel>

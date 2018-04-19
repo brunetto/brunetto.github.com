@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/upsidedown/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/upsidedown/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Toward Upsidedown</title>
@@ -15,59 +17,9 @@
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</guid>
-      <description>
-
-&lt;p&gt;&amp;hellip; Page filling in progress&amp;hellip; :)&lt;/p&gt;
-
-&lt;h2 id=&#34;official-countdown-to-our-upsidedown-adventure-in-ozzy:28&#34;&gt;Official countdown to our &amp;ldquo;UpsideDown&amp;rdquo; adventure in Ozzy&lt;/h2&gt;
-
-&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;
-&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;
-&lt;script src=&#34;countdown.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;application/javascript&#34;&gt;
-var myCountdown4 = new Countdown({
-                                    year: 2013,
-                                    month:12, 
-                                    day:12, 
-                                    hour: 11,
-                                    minute: 30,
-                                    width:500, 
-                                    height:100, 
-                                    rangeHi:&#34;month&#34;,
-                                    rangeLo:&#34;minute&#34;,
-                                    style:&#34;flip&#34;
-                                    });
-
-&lt;/script&gt;
-&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;h2 id=&#34;the-blog:28&#34;&gt;The blog&lt;/h2&gt;
-
-&lt;p&gt;You can follow our (little) adventure at&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://upsidedown.brunettoziosi.eu/&#34;&gt;The not so loved and not so updated blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://plus.google.com/u/0/111247854072185245270/posts&#34;&gt;Our more updated Google+ page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;the-trip:28&#34;&gt;The trip&lt;/h2&gt;
-
-&lt;h2 id=&#34;the-backpack:28&#34;&gt;The backpack&lt;/h2&gt;
-
-&lt;h2 id=&#34;travelling:28&#34;&gt;Travelling&lt;/h2&gt;
-
-&lt;h2 id=&#34;guides:28&#34;&gt;Guides&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lonelyplanet.com/australia&#34;&gt;Lonely Planet Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://shop.lonelyplanet.com/pacific/australia-travel-guide-16/&#34;&gt;Lonely planet guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;friends:28&#34;&gt;Friends&lt;/h2&gt;
-
-&lt;h2 id=&#34;tips-tricks:28&#34;&gt;Tips&amp;amp;Tricks&lt;/h2&gt;
-</description>
+      <description> &amp;hellip; Page filling in progress&amp;hellip; :)
+Official countdown to our &amp;ldquo;UpsideDown&amp;rdquo; adventure in Ozzy   var myCountdown4 = new Countdown({ year: 2013, month:12, day:12, hour: 11, minute: 30, width:500, height:100, rangeHi:&#34;month&#34;, rangeLo:&#34;minute&#34;, style:&#34;flip&#34; });    The blog You can follow our (little) adventure at
+ The not so loved and not so updated blog Our more updated Google+ page  The trip The backpack Travelling Guides  Lonely Planet Site Lonely planet guide  Friends Tips&amp;amp;Tricks </description>
     </item>
     
   </channel>

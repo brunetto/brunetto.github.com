@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Sep 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/gimp/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/gimp/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Easy and fast dust removal in Digikam&#43;Gimp</title>
@@ -21,37 +23,7 @@ But yesterday I&amp;rsquo;ve found a &lt;a href=&#34;http://dodonov.net/blog/200
 It was not exactly what I was searching for but it worked really well.&lt;br /&gt;
 The only thing to to it was to find a way to automatize the task.&lt;/p&gt;
 
-&lt;p&gt;After some thinking I&amp;rsquo;ve found this way:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;In Digikam, right-click on the photo and select &amp;ldquo;Open in Gimp&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;In Gimp:&lt;/li&gt;
-&lt;li&gt;Add a new transparent layer (reduce opacity to see the photo&amp;rsquo;s layer)&lt;/li&gt;
-&lt;li&gt;Paint on the spots with the brush (this will be our &amp;ldquo;mask&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;In the layer window select the new layer and click on &amp;ldquo;Alpha to selection&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;In the layer window selectthe photo&amp;rsquo;s layer&lt;/li&gt;
-&lt;li&gt;Ctrl+x to remove dust spot&lt;/li&gt;
-&lt;li&gt;Selection-&amp;gt;Grow selection&lt;/li&gt;
-&lt;li&gt;Filters-&amp;gt;Map-&amp;gt;Resynthetize&lt;/li&gt;
-&lt;li&gt;Save with postfix &amp;ldquo;_v1&amp;rdquo; (non destructive editing supported in Digikam)&lt;/li&gt;
-&lt;li&gt;Enjoy you photo:)
-
-
-
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;This is the result:&lt;/p&gt;
-
-&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;
-&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v1.jpg&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img alt=&#34;&#34; class=&#34;size-medium wp-image-886&#34; height=&#34;200&#34; src=&#34;../../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v1.jpg?w=300&#34; title=&#34;JAM-2011-07-27_08-07-Svezia-Jamboree-1432_v1&#34; width=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Image before dust removal&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;
-&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;../../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v2.jpg&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img alt=&#34;&#34; class=&#34;size-medium wp-image-887&#34; height=&#34;200&#34; src=&#34;../../files/jam-2011-07-27_08-07-svezia-jamboree-1432_v2.jpg?w=300&#34; title=&#34;JAM-2011-07-27_08-07-Svezia-Jamboree-1432_v2&#34; width=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Image after dust removal&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

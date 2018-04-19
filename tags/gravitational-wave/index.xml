@@ -7,34 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/gravitational-wave/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/gravitational-wave/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>GW links</title>
-      <link>http://brunettoziosi.eu/pages/research/GW-links/</link>
+      <link>http://brunettoziosi.eu/pages/research/gw-links/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/GW-links/</guid>
-      <description>&lt;p&gt;List of useful links about gravitational waves:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://rhcole.com/apps/GWplotter/&#34;&gt;Gravitational waves detector and sources interactive plot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.blackholehunter.org/&#34;&gt;Black hole hunter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ego-gw.it/&#34;&gt;EGO - European Gravitational Observatory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://wwwcascina.virgo.infn.it/&#34;&gt;VIRGO&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/&#34;&gt;LIGO - Laser Interferometer Gravitational Wave Observatory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ttps://www.elisascience.org&#34;&gt;eLISA - Evolved Laser Interferometer Space Antenna&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.auriga.lnl.infn.it/&#34;&gt;AURIGA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.minigrail.nl/&#34;&gt;MiniGRAIL - Gravitational Radiation Antenna In Leiden&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ipta4gw.org/&#34;&gt;IPTA - International Pulsar Timing Array&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.epta.eu.org/&#34;&gt;EPTA - The European Pulsar Timing Array&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/ebook/&#34;&gt;E-Book on gravitational wave detection&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/processing/&#34;&gt;Games for science teaching, outreach and research&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cplberry.com/&#34;&gt;Christopher Berry hompage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/MOBle/MatchedFiltering&#34;&gt;MatchedFiltering ipython notebook with wave amplitude&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/scientists/first2years/&#34;&gt;The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://brunettoziosi.eu/pages/research/gw-links/</guid>
+      <description>List of useful links about gravitational waves:
+ Gravitational waves detector and sources interactive plot Black hole hunter EGO - European Gravitational Observatory VIRGO LIGO - Laser Interferometer Gravitational Wave Observatory eLISA - Evolved Laser Interferometer Space Antenna AURIGA MiniGRAIL - Gravitational Radiation Antenna In Leiden IPTA - International Pulsar Timing Array EPTA - The European Pulsar Timing Array E-Book on gravitational wave detection Games for science teaching, outreach and research Christopher Berry hompage MatchedFiltering ipython notebook with wave amplitude The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo  </description>
     </item>
     
   </channel>

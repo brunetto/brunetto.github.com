@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jul 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/syncing/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/syncing/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>rsync like a pro</title>
@@ -15,13 +17,8 @@
       <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/rsync-like-a-pro/</guid>
-      <description>&lt;p&gt;To sync two folder on two different machines with a non-default ssh port:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you need it, &lt;code&gt;-c&lt;/code&gt; flag will force files checksum to be sure they are the same or not. It takes a lot of time.&lt;/p&gt;
-</description>
+      <description>To sync two folder on two different machines with a non-default ssh port:
+rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path  If you need it, -c flag will force files checksum to be sure they are the same or not. It takes a lot of time.</description>
     </item>
     
   </channel>

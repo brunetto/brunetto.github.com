@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/barcelona/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/barcelona/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Barcelona</title>
@@ -15,26 +17,7 @@
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/travels/barcelona/</guid>
-      <description>
-
-&lt;h2 id=&#34;sleeping:39&#34;&gt;Sleeping&lt;/h2&gt;
-
-&lt;h2 id=&#34;eating:39&#34;&gt;Eating&lt;/h2&gt;
-
-&lt;h2 id=&#34;visiting:39&#34;&gt;Visiting&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lapedrera.com/ca/home&#34;&gt;Casa Milà (La Pedreira)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bcnshop.barcelonaturisme.com/Casa-Batllo/_vf-SMlY1yItM-U_l9RgLJoJPG-BcW4K5Nh9zolHzbfH5imcNlIgKF1KW7ejhJF0m94CFmJFWkV23CZw-geYKSt_ijTftnwnlLA94DlflxQhLJkpOzNhGMQ&#34;&gt;Casa Batlló&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.parkguell.es/en/portada&#34;&gt;Park Guell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sagradafamilia.cat/&#34;&gt;Sagrada Familia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.barcelonaturisme.com/CosmoCaixa---Science-Museum/_vf-SMlY1yIuKQTV1aq49kJ1vCaP0kZsYXVFk1UnAXLGU44ObQsvC0A1YNGvKNoNnZY-BteS_eCY&#34;&gt;CosmoCaixa - Science Museum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.barcelonaturisme.com/Barceloneta-Beach/_3Ngb8YjSpL3U56ScBHOWcxpDev_Vr2xe_FRpDzZtWc7YtwAS4zcDc6Pih9txDiJq&#34;&gt;Barceloneta&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Gothic Quarter&lt;/li&gt;
-&lt;li&gt;Columbus Monument&lt;/li&gt;
-&lt;li&gt;La Rambla&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Sleeping Eating Visiting  Casa Milà (La Pedreira) Casa Batlló Park Guell Sagrada Familia CosmoCaixa - Science Museum Barceloneta Gothic Quarter Columbus Monument La Rambla  </description>
     </item>
     
   </channel>

@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>System</title>
@@ -15,85 +17,7 @@
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/system/</guid>
-      <description>
-
-&lt;h2 id=&#34;installed-software-from-repos:38&#34;&gt;Installed software (from repos)&lt;/h2&gt;
-
-&lt;h3 id=&#34;nvidia-and-cuda:38&#34;&gt;Nvidia and CUDA&lt;/h3&gt;
-
-&lt;h3 id=&#34;compilers:38&#34;&gt;Compilers&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;gcc&lt;/li&gt;
-&lt;li&gt;g++&lt;/li&gt;
-&lt;li&gt;gfortran&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;editors:38&#34;&gt;Editors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Kate&lt;/li&gt;
-&lt;li&gt;Emacs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;terminals:38&#34;&gt;Terminals&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ipython&lt;/li&gt;
-&lt;li&gt;konsole&lt;/li&gt;
-&lt;li&gt;terminator&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;python:38&#34;&gt;Python&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ipython&lt;/li&gt;
-&lt;li&gt;NumPy&lt;/li&gt;
-&lt;li&gt;SciPy&lt;/li&gt;
-&lt;li&gt;PyTables&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;graphics:38&#34;&gt;Graphics&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Digikam&lt;/li&gt;
-&lt;li&gt;Inkscape&lt;/li&gt;
-&lt;li&gt;Gimp&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;multimedia:38&#34;&gt;Multimedia&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VLC&lt;/li&gt;
-&lt;li&gt;avconv (ffmpeg)&lt;/li&gt;
-&lt;li&gt;mencoder&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;other:38&#34;&gt;Other&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;texlive&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;reistallation-cli:38&#34;&gt;Reistallation CLI&lt;/h3&gt;
-
-&lt;h2 id=&#34;external-packages:38&#34;&gt;External packages&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings:38&#34;&gt;Settings&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Inkscape: latex formulas (
-&lt;a href=&#34;http://pav.iki.fi/software/textext/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.timteatro.net/2010/08/05/textext-for-math-in-inkscape/&#34;&gt;here&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;bashrc:38&#34;&gt;.bashrc&lt;/h3&gt;
-
-&lt;h3 id=&#34;inkscape:38&#34;&gt;Inkscape&lt;/h3&gt;
-
-&lt;h3 id=&#34;git:38&#34;&gt;Git&lt;/h3&gt;
-
-&lt;h3 id=&#34;go-lang:38&#34;&gt;Go(lang)&lt;/h3&gt;
-</description>
+      <description> Installed software (from repos) Nvidia and CUDA Compilers  gcc g++ gfortran  Editors  Kate Emacs  Terminals  ipython konsole terminator  Python  Ipython NumPy SciPy PyTables  Graphics  Digikam Inkscape Gimp  Multimedia  VLC avconv (ffmpeg) mencoder  Other  texlive  Reistallation CLI External packages Settings  Inkscape: latex formulas ( here and here)  .bashrc Inkscape Git Go(lang) </description>
     </item>
     
     <item>
@@ -102,87 +26,11 @@
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
-      <description>
-
-&lt;h2 id=&#34;system:64&#34;&gt;System&lt;/h2&gt;
-
-&lt;p&gt;Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while)
- and a Ubuntu 13.04 Dell Laptop.&lt;br /&gt;
-See &lt;a href=&#34;system.html&#34;&gt;here&lt;/a&gt; for a list of installed packages and settings.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;in case of kwin problems
-&lt;code&gt;kquitapp plasma-desktop&lt;/code&gt; + in case, &lt;code&gt;plasma-desktop&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;System monitoring: htop, iotop, saidar&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;searching:64&#34;&gt;Searching&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;grep -H &#39;&amp;lt;string&amp;gt;&#39; *.&amp;lt;ext&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;grep -r &amp;quot;&amp;lt;strings&amp;gt;&amp;quot; ./&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo updatedb &amp;amp;&amp;amp; locate &amp;lt;nomefile&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;download:64&#34;&gt;Download&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;download music from youtube&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;youtube-dl --extract-audio --audio-format=mp3 &amp;lt;youtubeLink&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;for example:&lt;br /&gt;
-````python
-#!/usr/bin/env python&lt;/p&gt;
-
-&lt;h1 id=&#34;coding-utf8:64&#34;&gt;-&lt;em&gt;- coding: utf8 -&lt;/em&gt;-&lt;/h1&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;import os, time
-tt = time.time()
-inFileName = &amp;ldquo;videos.dat&amp;rdquo;
-inFile = open(inFileName, &amp;lsquo;r&amp;rsquo;)&lt;/p&gt;
-
-&lt;p&gt;print &amp;ldquo;Start video download loop&amp;rdquo;
-print &amp;ldquo;Serial version, parallel is work in progress!:P&amp;rdquo;
-for line in inFile:
-	name, video = line.split(&amp;lsquo;,&amp;rsquo;)
-	print &amp;ldquo;========================================&amp;rdquo;
-	#print &amp;ldquo;Downloading &amp;ldquo;, name
-	print &amp;ldquo;========================================&amp;rdquo;
-	downloadCmd = &amp;lsquo;youtube-dl &amp;ndash;extract-audio &amp;ndash;audio-format=mp3 &amp;lsquo;+ videos&lt;/p&gt;
-
-&lt;p&gt;	#downloadCmd = &amp;lsquo;youtube-dl -o ./videos/&amp;rsquo;+name+&amp;lsquo;.flv &amp;ldquo;&amp;rsquo;+video+&amp;lsquo;&amp;rdquo;&amp;rsquo;
-	#os.system(downloadCmd)
-	#print &amp;ldquo;Converting to mp3&amp;hellip;&amp;rdquo;
-	#convertCommand = &amp;lsquo;avconv -i ./videos/&amp;rsquo;+name+&amp;lsquo;.flv ./mp3/&amp;rsquo;+name+&amp;lsquo;.mp3&amp;rsquo;
-	#os.system(convertCommand)
-print &amp;ldquo;Done in &amp;ldquo;, time.time()-tt&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-## Goodies
-
-* visualize git history `gource ./ -o /dev/null`
-* grab an image from the webcam with CLI VLC
-````bash
-cvlc -I dummy v4l2:///dev/video1 --video-filter scene --no-audio --scene-path 
-/home/ziosi/Pictures/webcam --scene-prefix img$(date &#39;+%y%m%d%h%m%s&#39;) 
---scene-format png vlc://quit --run-time=1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;To see live output from the webcam:
-&lt;code&gt;bash
-mplayer -tv driver=v4l2 -vo xv tv://
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;To record from the webcam:
-&lt;code&gt;bash
-mencoder -oac mp3lame -ovc lavc -o foo.avi -tv driver=v4l2  tv://
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>System Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while) and a Ubuntu 13.04 Dell Laptop.
+See here for a list of installed packages and settings.
+ in case of kwin problems kquitapp plasma-desktop + in case, plasma-desktop
+ System monitoring: htop, iotop, saidar
+  Searching  grep -H &#39;&amp;lt;string&amp;gt;&#39; *.&amp;lt;ext&amp;gt; grep -r &amp;quot;&amp;lt;strings&amp;gt;&amp;quot; ./ sudo updatedb &amp;amp;&amp;amp; locate &amp;lt;nomefile&amp;gt;  Download  download music from youtube</description>
     </item>
     
   </channel>

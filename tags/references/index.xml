@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/references/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/references/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>C references</title>
@@ -24,11 +26,7 @@
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/cpp-references/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dehn.slu.edu/courses/spring08/180/transition.pdf&#34;&gt;A transition guide: Python to C++&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://users.aims.ac.za/~nneoma/cpp4py/cpptut.html&#34;&gt;A Brief Introduction to C++ for Python programmers&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> A transition guide: Python to C++ A Brief Introduction to C++ for Python programmers  </description>
     </item>
     
     <item>
@@ -37,75 +35,7 @@
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/programming-links/</guid>
-      <description>
-
-&lt;h2 id=&#34;my-system-tricks:72&#34;&gt;My system tricks&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;system-tricks.html&#34;&gt;Here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;go-lang:72&#34;&gt;Go(lang)&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://golang.org/&#34;&gt;Main site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://golangtutorials.blogspot.it/2011/05/table-of-contents.html&#34;&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.golang-book.com/&#34;&gt;Book&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/golang-nuts&#34;&gt;Go Mailing List&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://commandcenter.blogspot.it/2012/06/less-is-exponentially-more.html&#34;&gt;Why&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/golem/&#34;&gt;GoLEM: Go Launch on Every Machine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gonum&#34;&gt;Numerical Go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://plus.google.com/+golang/posts&#34;&gt;Go(lang) official G+ page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://plus.google.com/communities/102841007618944990081&#34;&gt;Go(lang) community on G+&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://plus.google.com/communities/115354877257015196825&#34;&gt;Go science community on G+&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;golang-references.html&#34;&gt;my Go references&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://talks.golang.org/2012/splash.article&#34;&gt;Go at Google: Language Design in the Service of Software Engineering&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;python:72&#34;&gt;Python&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ipython.org/&#34;&gt;Ipython&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://nbviewer.ipython.org/&#34;&gt;Ipython nbviewer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks&#34;&gt;A gallery of interesting IPython Notebooks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;python-references.html&#34;&gt;my Python references&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;versioning:72&#34;&gt;Versioning&lt;/h2&gt;
-
-&lt;h2 id=&#34;git:72&#34;&gt;Git&lt;/h2&gt;
-
-&lt;h2 id=&#34;blogging:72&#34;&gt;Blogging&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://nikola.ralsina.com.ar/&#34;&gt;Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damian.oquanta.info/&#34;&gt;Damian Avila Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://docs.getpelican.com/en/3.2/&#34;&gt;Pelikan&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://scriptogr.am/&#34;&gt;Scriptogr, Dropbox blogging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.sathomas.me/post/custom-domains-with-github-pages&#34;&gt;Custom domains with github pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;latex:72&#34;&gt;Latex&lt;/h2&gt;
-
-&lt;!--* https://www.writelatex.com/--&gt;
-
-&lt;h2 id=&#34;html-css-javascript:72&#34;&gt;HTML/CSS/javascript&lt;/h2&gt;
-
-&lt;h3 id=&#34;veusz:72&#34;&gt;Veusz&lt;/h3&gt;
-
-&lt;h2 id=&#34;c:72&#34;&gt;C&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;c-references.html&#34;&gt;my C references&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;c-1:72&#34;&gt;C++&lt;/h2&gt;
-
-&lt;h2 id=&#34;cuda:72&#34;&gt;CUDA&lt;/h2&gt;
-
-&lt;h2 id=&#34;smongo-supermongo:72&#34;&gt;SMongo/SuperMongo&lt;/h2&gt;
-</description>
+      <description> My system tricks  Here  Go(lang)  Main site Tutorial Book Go Mailing List Why GoLEM: Go Launch on Every Machine Numerical Go Go(lang) official G+ page Go(lang) community on G+ Go science community on G+ my Go references Go at Google: Language Design in the Service of Software Engineering  Python  Ipython Ipython nbviewer A gallery of interesting IPython Notebooks my Python references  Versioning Git Blogging  Nikola GitHub Pages Damian Avila Blog Pelikan Scriptogr, Dropbox blogging Custom domains with github pages  Latex HTML/CSS/javascript Veusz C  my C references  C++ CUDA SMongo/SuperMongo </description>
     </item>
     
     <item>
@@ -114,30 +44,13 @@
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/python-references/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md&#34;&gt;Super Python Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astropy.org/&#34;&gt;Astropy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://astrocompute.wordpress.com/&#34;&gt;Astrocompute&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astropython.org/&#34;&gt;Astropython&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://python4astronomers.github.io/&#34;&gt;Python4astronomers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Setup+for+Astronomy&#34;&gt;Astrobetter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://astlib.sourceforge.net/&#34;&gt;AstroLib&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://oneau.wordpress.com/2010/10/02/python-for-astronomy/&#34;&gt;Python for Astronomy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astroml.org/&#34;&gt;AstroML&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bellm.org/blog/2011/05/27/why-astronomers-should-program-in-python/&#34;&gt;Why Astronomers Should Program in Python&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://damianavila.github.io/scipy2013_talks/index.html#/&#34;&gt;Ipython presentations&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/urls/raw.github.com/ipython/ipython/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb&#34;&gt;Examples notebooks&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://scipy-lectures.github.io/&#34;&gt;Scipy lectures&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://slendrmeans.wordpress.com/2012/12/05/better-typography-for-ipython-notebooks/&#34;&gt;Better ipython typography&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jrjohansson/scientific-python-lectures&#34;&gt;Scientific computing in Python&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Super Python Guide Astropy Astrocompute Astropython Python4astronomers Astrobetter AstroLib Python for Astronomy AstroML Why Astronomers Should Program in Python
+ Ipython presentations
+ Examples notebooks
+ Scipy lectures
+ Better ipython typography
+ Scientific computing in Python
+  </description>
     </item>
     
   </channel>

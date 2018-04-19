@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/padding/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/padding/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Padding</title>
@@ -15,40 +17,10 @@
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/padding/</guid>
-      <description>&lt;p&gt;Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.&lt;br /&gt;
-I&amp;rsquo;ll take a note here:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;i=5
-printf &amp;quot;%03d\n&amp;quot; $i
-005
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Something similar in Python and Go:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;t = &amp;quot;test-&amp;quot;
-t.ljust(10, &#39;0&#39;) # rjust for right padding
-
-&#39;test-00000&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// LeftPad returns the string padded filling remaining left spaces to `length` with `pad`.
-import &amp;quot;log&amp;quot;
-import &amp;quot;strings&amp;quot;
-
-func LeftPad(str, pad string, length int) string {
-	var repeat int
-	if (length-len(str))%len(pad) != 0 {
-		log.Fatal(&amp;quot;Can&#39;t pad &amp;quot;, str, &amp;quot; with &amp;quot;, pad, &amp;quot; to length &amp;quot;, length)
-	} else {
-		repeat = (length - len(str)) / len(pad)
-	}
-	return strings.Repeat(pad, repeat) + str
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It is also possible to do this with &lt;code&gt;fmt&lt;/code&gt; but you still need to compute the number
-of char if you want to maintain the total number of printed char.&lt;/p&gt;
-</description>
+      <description>Ok, it&amp;rsquo;s the n-th time I search how to pad numbers in bash.
+I&amp;rsquo;ll take a note here:
+i=5 printf &amp;quot;%03d\n&amp;quot; $i 005  Something similar in Python and Go:
+t = &amp;quot;test-&amp;quot; t.ljust(10, &#39;0&#39;) # rjust for right padding &#39;test-00000&#39;  // LeftPad returns the string padded filling remaining left spaces to `length` with `pad`. import &amp;quot;log&amp;quot; import &amp;quot;strings&amp;quot; func LeftPad(str, pad string, length int) string { var repeat int if (length-len(str))%len(pad) !</description>
     </item>
     
   </channel>

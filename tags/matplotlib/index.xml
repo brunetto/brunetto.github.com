@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jun 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Latex together with matplotlib!</title>
@@ -15,21 +17,10 @@
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</guid>
-      <description>&lt;p&gt;Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.&lt;br /&gt;
-Everything you need is to add to your script&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from matplotlib import rc
-rc(&#39;font&#39;,**{&#39;family&#39;:&#39;sans-serif&#39;,&#39;sans-serif&#39;:[&#39;Helvetica&#39;]})
-## for Palatino and other serif fonts use:
-#rc(&#39;font&#39;,**{&#39;family&#39;:&#39;serif&#39;,&#39;serif&#39;:[&#39;Palatino&#39;]))
-rc(&#39;text&#39;, usetex=True)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and write you text label like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;label = r&#39;theoretical $f(nu)$&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.
+Everything you need is to add to your script
+from matplotlib import rc rc(&#39;font&#39;,**{&#39;family&#39;:&#39;sans-serif&#39;,&#39;sans-serif&#39;:[&#39;Helvetica&#39;]}) ## for Palatino and other serif fonts use: #rc(&#39;font&#39;,**{&#39;family&#39;:&#39;serif&#39;,&#39;serif&#39;:[&#39;Palatino&#39;])) rc(&#39;text&#39;, usetex=True)  and write you text label like
+label = r&#39;theoretical $f(nu)$&#39;)  </description>
     </item>
     
   </channel>

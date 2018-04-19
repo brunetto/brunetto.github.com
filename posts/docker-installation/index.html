@@ -41,7 +41,7 @@
   <link rel="shortcut icon" href="/favicon.svg">
 
   
-  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+  
 
     
   
@@ -54,6 +54,8 @@
   
 
   
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
   
 </head>
@@ -76,7 +78,7 @@
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae">CV</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu/cv">CV</a></li>
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages">Pages</a></li>
         
@@ -87,27 +89,27 @@
     <div class="social-buttons">
       
         
-        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fab fa-facebook-f'></i></a>
         
       
         
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fab fa-github'></i></a>
         
       
         
-        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fab fa-google-plus-g'></i></a>
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fab fa-instagram'></i></a>
         
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fab fa-linkedin-in'></i></a>
         
       
         
-        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fab fa-twitter'></i></a>
         
       
       
@@ -132,10 +134,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#what-is-docker:2">What is Docker?</a></li>
-<li><a href="#docker-installation:2">Docker installation</a></li>
-<li><a href="#useful-commands:2">Useful commands</a></li>
-<li><a href="#other-resources:2">Other resources</a></li>
+<li><a href="#what-is-docker">What is Docker?</a></li>
+<li><a href="#docker-installation">Docker installation</a></li>
+<li><a href="#useful-commands">Useful commands</a></li>
+<li><a href="#other-resources">Other resources</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -182,10 +184,10 @@
 
 			
 		    	<div class="social-sharing">
-	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
-	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
-	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f&title=Install%20Docker&summary=What%20is%20Docker%3f%20In%20short%3a%20%26ldquo%3bAn%20open%20source%20project%20to%20pack%2c%20ship%20and%20run%20any%20application%20as%20a%20lightweight%20container.%26rdquo%3b%20In%20practice%20Docker%20povide%20an%20isolated%20sharable%20environment%20%28dev%20and%20ship%29%20allow%20to%20change%20dev%20env%20without%20messing-up%20the%20host%20OS%20ease%20an%20app%20installation%20is%20based%20on%20lxc%20%28linux%20containers%29%20and%20Go%20remove%20the%20need%20of%20a%20virtual%20machines%2c%20it%20can%20be%20used%20in%20a%20similar%20way%20but%20it%20is%20different%20%e2%86%92%20much%20more%20lightweight%20is%20%28quite%29%20secure%20%28everything%20is%20sandboxed%29%2c%20though%20I%20don%26rsquo%3bt%20like%20its%20process%20run%20as%20root%20allow%20you%20to%20commit%20changes%20is%20based%20on%20images%20and%20containers%3a%20templates%20and%20running%20instances%20%28that%20lose%20memory%20on%20shutdown%20I%20don%26rsquo%3bt%20want%20to%20write%20an%20essay%20on%20Docker%2c%20just%20present%20it%20briefly%20and%20describe%20the%20best%20%28in%20my%20opinion%29%20way%20to%20install%20it%20on%20%2abuntu.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
-	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Install%20Docker&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fab fa-facebook-f"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fab fa-google-plus-g"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f&title=Install%20Docker&summary=What%20is%20Docker%3f%20In%20short%3a%0a%20%26ldquo%3bAn%20open%20source%20project%20to%20pack%2c%20ship%20and%20run%20any%20application%20as%20a%20lightweight%20container.%26rdquo%3b%0a%20In%20practice%20Docker%0a%20povide%20an%20isolated%20sharable%20environment%20%28dev%20and%20ship%29%20allow%20to%20change%20dev%20env%20without%20messing-up%20the%20host%20OS%20ease%20an%20app%20installation%20is%20based%20on%20lxc%20%28linux%20containers%29%20and%20Go%20remove%20the%20need%20of%20a%20virtual%20machines%2c%20it%20can%20be%20used%20in%20a%20similar%20way%20but%20it%20is%20different%20%e2%86%92%20much%20more%20lightweight%20is%20%28quite%29%20secure%20%28everything%20is%20sandboxed%29%2c%20though%20I%20don%26rsquo%3bt%20like%20its%20process%20run%20as%20root%20allow%20you%20to%20commit%20changes%20is%20based%20on%20images%20and%20containers%3a%20templates%20and%20running%20instances%20%28that%20lose%20memory%20on%20shutdown%20%20I%20don%26rsquo%3bt%20want%20to%20write%20an%20essay%20on%20Docker%2c%20just%20present%20it%20briefly%20and%20describe%20the%20best%20%28in%20my%20opinion%29%20way%20to%20install%20it%20on%20%2abuntu.}&source=Post%20It%21" target="_blank"><i class="fab fa-linkedin-in"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Install%20Docker&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fab fa-twitter"><span>Tweet</span></i></a>	
 </div>
 		    
 
@@ -193,7 +195,7 @@
 
             
 
-<h2 id="what-is-docker:2">What is Docker?</h2>
+<h2 id="what-is-docker">What is Docker?</h2>
 
 <p>In <a href="http://samsaffron.com/archive/2013/11/07/discourse-in-a-docker-container">short</a>:</p>
 
@@ -219,7 +221,7 @@ best (in my opinion) way to install it on *buntu. However, I think it is
 one of the solution (see also <a href="http://www.ubuntu.com/cloud/tools/lxd">LXD</a> containers)
 science should look at when dealing with reproducibility, easiness, sharing and so on.</p>
 
-<h2 id="docker-installation:2">Docker installation</h2>
+<h2 id="docker-installation">Docker installation</h2>
 
 <p>See also <a href="https://github.com/brunetto/docker-cheat-sheet#linux">here</a>.</p>
 
@@ -252,10 +254,10 @@ sudo service docker restart
 
 <p>then update GRUB with <code>sudo update-grub</code> and reboot.</p>
 
-<h2 id="useful-commands:2">Useful commands</h2>
+<h2 id="useful-commands">Useful commands</h2>
 
 <ul>
-<li><p><code>docker</code> <a href="https://docs.docker.com/reference/commandline/cli/#attach">attach</a>,
+<li><code>docker</code> <a href="https://docs.docker.com/reference/commandline/cli/#attach">attach</a>,
 <a href="https://docs.docker.com/reference/commandline/cli/#create">create</a>,
 <a href="https://docs.docker.com/reference/commandline/cli/#exec">exec</a>,
 <a href="https://docs.docker.com/reference/commandline/cli/#inspect">inspect</a>,
@@ -267,32 +269,27 @@ sudo service docker restart
 <a href="https://docs.docker.com/reference/commandline/cli/#run">run</a>,
 <a href="https://docs.docker.com/reference/commandline/cli/#start">start</a>,
 <a href="https://docs.docker.com/reference/commandline/cli/#stop">stop</a>,
-<a href="https://docs.docker.com/reference/commandline/cli/#tag">tag</a></p></li>
-
-<li><p>Inside a container, exit with <code>ctrl+p ctrl+q</code></p></li>
-
-<li><p>Attach to a running container with <code>docker attach &lt;container name&gt;</code></p></li>
+<a href="https://docs.docker.com/reference/commandline/cli/#tag">tag</a></li>
+<li>Inside a container, exit with <code>ctrl+p ctrl+q</code></li>
+<li>Attach to a running container with <code>docker attach &lt;container name&gt;</code></li>
 </ul>
 
-<h2 id="other-resources:2">Other resources</h2>
+<h2 id="other-resources">Other resources</h2>
 
 <ul>
-<li><p><a href="https://registry.hub.docker.com">Registry/repository</a></p></li>
-
-<li><p>Docs: <a href="https://docs.docker.com/reference/commandline/cli/">command line</a>, <a href="http://docs.docker.com/">all</a>, <a href="https://github.com/brunetto/docker-cheat-sheet">me</a></p></li>
-
-<li><p><a href="http://stackoverflow.com/questions/24702233/docker-container-and-memory-consumption">Memory consumption</a></p></li>
-
-<li><p><a href="http://phusion.github.io/baseimage-docker/#intro">Docker baseimages</a></p></li>
+<li><a href="https://registry.hub.docker.com">Registry/repository</a></li>
+<li>Docs: <a href="https://docs.docker.com/reference/commandline/cli/">command line</a>, <a href="http://docs.docker.com/">all</a>, <a href="https://github.com/brunetto/docker-cheat-sheet">me</a></li>
+<li><a href="http://stackoverflow.com/questions/24702233/docker-container-and-memory-consumption">Memory consumption</a></li>
+<li><a href="http://phusion.github.io/baseimage-docker/#intro">Docker baseimages</a></li>
 </ul>
 
 	
 			
 		    	<div class="social-sharing">
-	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
-	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
-	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f&title=Install%20Docker&summary=What%20is%20Docker%3f%20In%20short%3a%20%26ldquo%3bAn%20open%20source%20project%20to%20pack%2c%20ship%20and%20run%20any%20application%20as%20a%20lightweight%20container.%26rdquo%3b%20In%20practice%20Docker%20povide%20an%20isolated%20sharable%20environment%20%28dev%20and%20ship%29%20allow%20to%20change%20dev%20env%20without%20messing-up%20the%20host%20OS%20ease%20an%20app%20installation%20is%20based%20on%20lxc%20%28linux%20containers%29%20and%20Go%20remove%20the%20need%20of%20a%20virtual%20machines%2c%20it%20can%20be%20used%20in%20a%20similar%20way%20but%20it%20is%20different%20%e2%86%92%20much%20more%20lightweight%20is%20%28quite%29%20secure%20%28everything%20is%20sandboxed%29%2c%20though%20I%20don%26rsquo%3bt%20like%20its%20process%20run%20as%20root%20allow%20you%20to%20commit%20changes%20is%20based%20on%20images%20and%20containers%3a%20templates%20and%20running%20instances%20%28that%20lose%20memory%20on%20shutdown%20I%20don%26rsquo%3bt%20want%20to%20write%20an%20essay%20on%20Docker%2c%20just%20present%20it%20briefly%20and%20describe%20the%20best%20%28in%20my%20opinion%29%20way%20to%20install%20it%20on%20%2abuntu.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
-	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Install%20Docker&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fab fa-facebook-f"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fab fa-google-plus-g"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f&title=Install%20Docker&summary=What%20is%20Docker%3f%20In%20short%3a%0a%20%26ldquo%3bAn%20open%20source%20project%20to%20pack%2c%20ship%20and%20run%20any%20application%20as%20a%20lightweight%20container.%26rdquo%3b%0a%20In%20practice%20Docker%0a%20povide%20an%20isolated%20sharable%20environment%20%28dev%20and%20ship%29%20allow%20to%20change%20dev%20env%20without%20messing-up%20the%20host%20OS%20ease%20an%20app%20installation%20is%20based%20on%20lxc%20%28linux%20containers%29%20and%20Go%20remove%20the%20need%20of%20a%20virtual%20machines%2c%20it%20can%20be%20used%20in%20a%20similar%20way%20but%20it%20is%20different%20%e2%86%92%20much%20more%20lightweight%20is%20%28quite%29%20secure%20%28everything%20is%20sandboxed%29%2c%20though%20I%20don%26rsquo%3bt%20like%20its%20process%20run%20as%20root%20allow%20you%20to%20commit%20changes%20is%20based%20on%20images%20and%20containers%3a%20templates%20and%20running%20instances%20%28that%20lose%20memory%20on%20shutdown%20%20I%20don%26rsquo%3bt%20want%20to%20write%20an%20essay%20on%20Docker%2c%20just%20present%20it%20briefly%20and%20describe%20the%20best%20%28in%20my%20opinion%29%20way%20to%20install%20it%20on%20%2abuntu.}&source=Post%20It%21" target="_blank"><i class="fab fa-linkedin-in"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Install%20Docker&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fdocker-installation%2f" target="_blank"><i class="fab fa-twitter"><span>Tweet</span></i></a>	
 </div>
 		    
 
@@ -357,7 +354,7 @@ sudo service docker restart
 		
 		</ul>
 	</div>
-	<p>&copy; 2016 
+	<p>&copy; 2018 
 	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
 	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
 </div>
@@ -376,7 +373,7 @@ sudo service docker restart
 	
 
   
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
     <script type="text/javascript">
     
     MathJax.Hub.Config({

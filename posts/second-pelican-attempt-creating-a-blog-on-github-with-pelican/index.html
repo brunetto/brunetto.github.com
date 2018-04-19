@@ -41,7 +41,7 @@
   <link rel="shortcut icon" href="/favicon.svg">
 
   
-  <link href="" rel="alternate" type="application/rss+xml" title="Post It!" />
+  
 
     
   
@@ -54,6 +54,8 @@
   
 
   
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
   
 </head>
@@ -76,7 +78,7 @@
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/posts">Blog</a></li>
         
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages/curriculum-vitae">CV</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://brunettoziosi.eu/cv">CV</a></li>
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/pages">Pages</a></li>
         
@@ -87,27 +89,27 @@
     <div class="social-buttons">
       
         
-        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fa fa-facebook'></i></a>
+        <a href="http://www.facebook.com/brunettoziosi" target="_blank"><i class='fab fa-facebook-f'></i></a>
         
       
         
-        <a href="http://www.github.com/brunetto" target="_blank"><i class='fa fa-github'></i></a>
+        <a href="http://www.github.com/brunetto" target="_blank"><i class='fab fa-github'></i></a>
         
       
         
-        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fa fa-google-plus'></i></a>
+        <a href="http://plus.google.com/&#43;BrunettoZiosi" target="_blank"><i class='fab fa-google-plus-g'></i></a>
         
       
         
-        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fa fa-instagram'></i></a>
+        <a href="https://instagram.com/elbrunz/" target="_blank"><i class='fab fa-instagram'></i></a>
         
       
         
-        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fa fa-linkedin'></i></a>
+        <a href="http://www.linkedin.com/in/brunettoziosi" target="_blank"><i class='fab fa-linkedin-in'></i></a>
         
       
         
-        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fa fa-twitter'></i></a>
+        <a href="http://www.twitter.com/brunettoziosi" target="_blank"><i class='fab fa-twitter'></i></a>
         
       
       
@@ -130,7 +132,14 @@
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
 <ul>
-<li><a href="#how-to-create-a-blog-with-github-and-pelican-python:83">How to create a blog with GitHub and Pelican (Python)</a></li>
+<li><a href="#how-to-create-a-blog-with-github-and-pelican-python">How to create a blog with GitHub and Pelican (Python)</a>
+<ul>
+<li>
+<ul>
+<li><a href="#suppose-that-you-are-curios-about-github-pages-but-i-don-t-understand-their-guide">Suppose that you are curios about GitHub pages&hellip; but I don&rsquo;t understand their guide.</a></li>
+<li><a href="#and-suppose-that-you-don-t-like-ruby-but-prefer-python">And suppose that you don&rsquo;t like Ruby but prefer Python&hellip;</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 		    </div>
@@ -178,10 +187,10 @@
 
 			
 		    	<div class="social-sharing">
-	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
-	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
-	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f&title=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&summary=How%20to%20create%20a%20blog%20with%20GitHub%20and%20Pelican%20%28Python%29%20%23%23%23Suppose%20that%20you%20are%20curios%20about%20GitHub%20pages%26hellip%3b%20but%20I%20don%26rsquo%3bt%20understand%20their%20guide.%20%23%23%23And%20suppose%20that%20you%20don%26rsquo%3bt%20like%20Ruby%20but%20prefer%20Python%26hellip%3b%20First%20of%20all%20create%20a%20repo%20named%20youname.github.com%20on%20your%20GitHub%20account%20%28ok%2c%20maybe%2c%20before%20this%2c%20you%20have%20to%20create%20a%20GitHub%20account%21%29.%20Then%20set%20the%20remote%20origin%20locally%20with%20%23%20I%20use%20ssh%20because%20I%20can%20log%20in%20without%20a%20password%20saving%20my%20key%20at%20https%3a%2f%2fgithub.com%2fsettings%2fssh%20git%20remote%20add%20origin%20ssh%3a%2f%2fgit%40github.com%2fyourname%2fyourname.github.com.git%20Now%20you%20can%20follow%20the%20excellent%20guide%20by%20Martin.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
-	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fab fa-facebook-f"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fab fa-google-plus-g"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f&title=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&summary=How%20to%20create%20a%20blog%20with%20GitHub%20and%20Pelican%20%28Python%29%20Suppose%20that%20you%20are%20curios%20about%20GitHub%20pages%26hellip%3b%20but%20I%20don%26rsquo%3bt%20understand%20their%20guide.%20And%20suppose%20that%20you%20don%26rsquo%3bt%20like%20Ruby%20but%20prefer%20Python%26hellip%3b%20First%20of%20all%20create%20a%20repo%20named%20youname.github.com%20on%20your%20GitHub%20account%20%28ok%2c%20maybe%2c%20before%20this%2c%20you%20have%20to%20create%20a%20GitHub%20account%21%29.%0a%20Then%20set%20the%20remote%20origin%20locally%20with%0a%23%20I%20use%20ssh%20because%20I%20can%20log%20in%20without%20a%20password%20saving%20my%20key%20at%20https%3a%2f%2fgithub.}&source=Post%20It%21" target="_blank"><i class="fab fa-linkedin-in"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fab fa-twitter"><span>Tweet</span></i></a>	
 </div>
 		    
 
@@ -189,10 +198,11 @@
 
             
 
-<h1 id="how-to-create-a-blog-with-github-and-pelican-python:83">How to create a blog with GitHub and Pelican (Python)</h1>
+<h1 id="how-to-create-a-blog-with-github-and-pelican-python">How to create a blog with GitHub and Pelican (Python)</h1>
 
-<p>###Suppose that you are curios about GitHub pages&hellip; but I don&rsquo;t understand their guide.<br />
-###And suppose that you don&rsquo;t like Ruby but prefer Python&hellip;</p>
+<h3 id="suppose-that-you-are-curios-about-github-pages-but-i-don-t-understand-their-guide">Suppose that you are curios about GitHub pages&hellip; but I don&rsquo;t understand their guide.</h3>
+
+<h3 id="and-suppose-that-you-don-t-like-ruby-but-prefer-python">And suppose that you don&rsquo;t like Ruby but prefer Python&hellip;</h3>
 
 <p>First of all create a repo named <code>youname.github.com</code> on your GitHub account
 (ok, maybe, before this, you have to create a GitHub account!).<br />
@@ -246,10 +256,10 @@ following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipyth
 	
 			
 		    	<div class="social-sharing">
-	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
-	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
-	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f&title=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&summary=How%20to%20create%20a%20blog%20with%20GitHub%20and%20Pelican%20%28Python%29%20%23%23%23Suppose%20that%20you%20are%20curios%20about%20GitHub%20pages%26hellip%3b%20but%20I%20don%26rsquo%3bt%20understand%20their%20guide.%20%23%23%23And%20suppose%20that%20you%20don%26rsquo%3bt%20like%20Ruby%20but%20prefer%20Python%26hellip%3b%20First%20of%20all%20create%20a%20repo%20named%20youname.github.com%20on%20your%20GitHub%20account%20%28ok%2c%20maybe%2c%20before%20this%2c%20you%20have%20to%20create%20a%20GitHub%20account%21%29.%20Then%20set%20the%20remote%20origin%20locally%20with%20%23%20I%20use%20ssh%20because%20I%20can%20log%20in%20without%20a%20password%20saving%20my%20key%20at%20https%3a%2f%2fgithub.com%2fsettings%2fssh%20git%20remote%20add%20origin%20ssh%3a%2f%2fgit%40github.com%2fyourname%2fyourname.github.com.git%20Now%20you%20can%20follow%20the%20excellent%20guide%20by%20Martin.}&source=Post%20It%21" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
-	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fab fa-facebook-f"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fab fa-google-plus-g"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f&title=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&summary=How%20to%20create%20a%20blog%20with%20GitHub%20and%20Pelican%20%28Python%29%20Suppose%20that%20you%20are%20curios%20about%20GitHub%20pages%26hellip%3b%20but%20I%20don%26rsquo%3bt%20understand%20their%20guide.%20And%20suppose%20that%20you%20don%26rsquo%3bt%20like%20Ruby%20but%20prefer%20Python%26hellip%3b%20First%20of%20all%20create%20a%20repo%20named%20youname.github.com%20on%20your%20GitHub%20account%20%28ok%2c%20maybe%2c%20before%20this%2c%20you%20have%20to%20create%20a%20GitHub%20account%21%29.%0a%20Then%20set%20the%20remote%20origin%20locally%20with%0a%23%20I%20use%20ssh%20because%20I%20can%20log%20in%20without%20a%20password%20saving%20my%20key%20at%20https%3a%2f%2fgithub.}&source=Post%20It%21" target="_blank"><i class="fab fa-linkedin-in"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Second%20Pelican%20attempt%3a%20creating%20a%20blog%20on%20GitHub%20with%20Pelican&url=http%3a%2f%2fbrunettoziosi.eu%2fposts%2fsecond-pelican-attempt-creating-a-blog-on-github-with-pelican%2f" target="_blank"><i class="fab fa-twitter"><span>Tweet</span></i></a>	
 </div>
 		    
 
@@ -314,7 +324,7 @@ following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipyth
 		
 		</ul>
 	</div>
-	<p>&copy; 2016 
+	<p>&copy; 2018 
 	<a href="https://plus.google.com/117554238100031566866?rel=author">Brunetto Ziosi</a>. All rights reserved. </br>
 	Theme by <a href="https://github.com/tmaiaroto/hugo-redlounge">Tom Maiaroto</a>, Generated (with ❤) using <a href="http://gohugo.io/">Hugo.</a></p>
 </div>
@@ -333,7 +343,7 @@ following the <a href="http://danielfrg.github.com/blog/2013/03/08/pelican-ipyth
 	
 
   
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
     <script type="text/javascript">
     
     MathJax.Hub.Config({

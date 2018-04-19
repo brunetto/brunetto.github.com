@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/drivers/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/drivers/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Nvidia drivers</title>
@@ -19,105 +21,7 @@
 several problems.&lt;br /&gt;
 Here I try to summarize some useful step.&lt;/p&gt;
 
-&lt;p&gt;First of all try to install the distribution packages, likely something like:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;libcublas4                      - NVIDIA CUDA BLAS runtime library&lt;/li&gt;
-&lt;li&gt;libcudart4                      - NVIDIA CUDA runtime library&lt;/li&gt;
-&lt;li&gt;libcufft4                       - NVIDIA CUDA FFT runtime library&lt;/li&gt;
-&lt;li&gt;libcurand4                      - NVIDIA CUDA Random Numbers Generation runt&lt;/li&gt;
-&lt;li&gt;libcusparse4                    - NVIDIA CUDA Sparse Matrix runtime library&lt;/li&gt;
-&lt;li&gt;nvidia-common                   - Find obsolete NVIDIA drivers&lt;/li&gt;
-&lt;li&gt;nvidia-compute-profiler         - NVIDIA Compute Visual Profiler&lt;/li&gt;
-&lt;li&gt;nvidia-cuda-dev                 - NVIDIA CUDA development files&lt;/li&gt;
-&lt;li&gt;nvidia-cuda-doc                 - NVIDIA CUDA and OpenCL documentation&lt;/li&gt;
-&lt;li&gt;nvidia-cuda-gdb                 - NVIDIA CUDA GDB&lt;/li&gt;
-&lt;li&gt;nvidia-cuda-toolkit             - NVIDIA CUDA toolkit&lt;/li&gt;
-&lt;li&gt;nvidia-current                  - Transitional package for nvidia-current&lt;/li&gt;
-&lt;li&gt;nvidia-current-updates          - Transitional package for nvidia-current-up&lt;/li&gt;
-&lt;li&gt;nvidia-opencl-dev               - NVIDIA OpenCL development files&lt;/li&gt;
-&lt;li&gt;nvidia-settings                 - Transitional package for nvidia-settings&lt;/li&gt;
-&lt;li&gt;nvidia-settings-updates         - Transitional package for nvidia-settings-u&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If this fails, ty remove all the installed packages and driver and install that
-from the NVIDIA site:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Download the &lt;a href=&#34;http://www.nvidia.com/object/linux-display-amd64-310.40-driver.html&#34;&gt;NVIDIA drivers&lt;/a&gt;
-and the &lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt;latest CUDA installers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;stop the X server with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo service lightdm stop
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;find them with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;aptitude search &#39;~i&#39; | grep &amp;quot;nvidia\|cuda\|libcu&amp;quot; | grep -v &amp;quot;kwin\|cups\|curl&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and check they are the installed packages and there are no other packages&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;remove them with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo aptitude --purge &amp;lt;packages names&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;blacklist all the modules that can interfere:&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;in /etc/modprobe.d/blacklist.conf insert&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blacklist amd76x_edac
-blacklist vga16fb
-blacklist nouveau
-blacklist lbm-nouveau
-blacklist rivafb
-blacklist nvidiafb
-blacklist rivatv
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;in /etc/modprobe.d/blacklist-nouveau.conf insert&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blacklist nouveau
-options nouveau modeset=0
-blacklist lbm-nouveau
-alias nouveau off
-alias lbm-nouveau off
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;in /etc/default/grub insert&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;quiet splash nomodeset&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;then run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo update-grub
-sudo update-initramfs -u
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;see also &lt;a href=&#34;http://blog.bloemsaat.com/2013/03/17/installing-cuda-on-ubuntu-13-04-raring-ringtail/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;install the drivers and then CUDA running the installers and following the
-instructions&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;in /etc/modprobe.d/nvidia-installer-disable-nouveau.conf the NVIDIA installer should insert&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blacklist nouveau
-options nouveau modeset=0
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;install some more libs&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install freeglut3-dev libxi-dev libxmu-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;reboot&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

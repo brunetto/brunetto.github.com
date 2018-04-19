@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 May 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/vector-image/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/vector-image/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PhD students&#39; Journal Clubs and Sozi</title>
@@ -18,15 +20,7 @@
       <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
 I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;ve also ported my first JC presentation (that on my PhD project) to Inkscape but loosing part of the beauty of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX)&#34; target=&#34;_blank&#34;&gt;Beamer&lt;/a&gt; original theme.&lt;/p&gt;
-
-&lt;p&gt;These are the two presentations. Right click and &amp;ldquo;Open in new tab&amp;rdquo; will let you able to view the presentations, navigatin with left and right arrows. Mid-click to view the summary and up/down arrow to navigate without any effect.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../files/first_JC_with_proposal.svg&#34;&gt;PhD project presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../files/2012-05-07-Atacama_telescope_constrain_on_primordial_power_spectrum.svg&#34;&gt;JC on the ACT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

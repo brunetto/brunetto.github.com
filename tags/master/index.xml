@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/master/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/master/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Master</title>
@@ -15,33 +17,7 @@
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/master/</guid>
-      <description>
-
-&lt;h2 id=&#34;master-degree-exams:62&#34;&gt;Master Degree Exams&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Astroparticle physics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;General relativity &lt;a href=&#34;30+&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;High anergy astrophysics &lt;a href=&#34;29&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Galactic astrophysics 1 &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stellar and planetary astrophysics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Theoretical astrophysics 1 &lt;a href=&#34;24&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Numerical computing &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Complemetary mathematics &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cosmology &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Elementary particle physics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Structure of matter 2 &lt;a href=&#34;21&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysical lab 1 &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysical lab 2 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;OO programming &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cosmological structure formation &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Photometric and spectroscopic digital analysis lab. (FSE)&lt;/li&gt;
-&lt;li&gt;Internship: Technical characterization of the Astrophysical Observatory of Asiago&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../files/ZiosiMasterThesis.pdf&#34;&gt;Final thesis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Banner from &lt;a href=&#34;http://www.mpa-garching.mpg.de/galform/millennium-II/Images/&#34;&gt;http://www.mpa-garching.mpg.de&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Master Degree Exams  Astroparticle physics  General relativity  High anergy astrophysics  Galactic astrophysics 1  Stellar and planetary astrophysics  Theoretical astrophysics 1  Numerical computing  Complemetary mathematics  Cosmology  Elementary particle physics  Structure of matter 2  Astrophysical lab 1  Astrophysical lab 2  OO programming  Cosmological structure formation  Photometric and spectroscopic digital analysis lab. (FSE) Internship: Technical characterization of the Astrophysical Observatory of Asiago Final thesis  Banner from http://www.</description>
     </item>
     
   </channel>

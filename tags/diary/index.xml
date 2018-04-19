@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Mar 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/diary/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/diary/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Create your own Wikipedia</title>
@@ -18,77 +20,7 @@
       <description>&lt;p&gt;I was trying to find a tool to keep track of my activities (mainly), work activities. I&amp;rsquo;ve given a chance to some &amp;ldquo;diary&amp;rdquo; software but I was not convinced. I was lingering on using text files but it was not a solution. So I decided to try &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt;. And it was perfect!!!&lt;br /&gt;
 Now I&amp;rsquo;m going to describe the installation on an Ubuntu 11.10 with the repos packages.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Packages installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;First, install&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mediawiki&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Apache2&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mysql-server&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mysql-admin&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mysql-common&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mysql-client&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;php5&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Imagemagick&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Latex&lt;/code&gt;, if you want to display math&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;with Synaptic, Aptitude or whatever you want. In principle installing mediawiki all the rest will be installed as a dependence (except for &lt;code&gt;Latex&lt;/code&gt;). Once you have installed all the packages you need to modify&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/etc/apache2/conf.d/mediawiki.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;removing the comment (#) before&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Alias /mediawiki /var/lib/mediawiki
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and then to restart Apache with&lt;br /&gt;
-````bash sudo /etc/init.d/apache2 restart&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    
-&amp;lt;strong&amp;gt;Database&amp;lt;/strong&amp;gt;    
-    
-Start a root mysql prompt with    
-````bash
-mysql -u root -p
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and create a database for your wiki:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CREATE DATABASE dbname;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then create a user with permissions for this database&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRANT ALL ON dbname.* TO &#39;user&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(pay attention to the &amp;ldquo;&amp;lsquo;&amp;rdquo;).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wiki installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Go to &lt;code&gt;http://localhost/mediawiki&lt;/code&gt; and follow the instructions!:)&lt;br /&gt;
-To be able to upload files and images you have to modify values in &lt;code&gt;/etc/mediawiki/LocalSettings.php&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;XML dump&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To obtain a XMP backup of your wiki you can run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;php /var/lib/mediawiki/maintenance/dumpBackup.php --full &amp;gt; $bck_path/$(date +&amp;quot;%F&amp;quot;)-wiki_bck.xml
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note that &lt;code&gt;dumpBackup.php&lt;/code&gt; works if you write into the database login where required.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Main references:&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://framaulo.blogspot.com/2008/06/installare-ed-utilizzare-mediawiki-su.html&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://framaulo.blogspot.com/2008/06/installare-ed-utilizzare-mediawiki-su.html&#34;&gt;http://framaulo.blogspot.com/2008/06/installare-ed-utilizzare-mediawiki-su.html&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ealmuno.com/2009/11/06/creare-database-in-mysql/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.ealmuno.com/2009/11/06/creare-database-in-mysql/&#34;&gt;http://www.ealmuno.com/2009/11/06/creare-database-in-mysql/&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ubuntuguide.org/wiki/MediaWiki_tips&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://ubuntuguide.org/wiki/MediaWiki_tips&#34;&gt;http://ubuntuguide.org/wiki/MediaWiki_tips&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/london/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/london/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>London</title>
@@ -15,43 +17,7 @@
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/travels/london/</guid>
-      <description>
-
-&lt;h2 id=&#34;sleeping:44&#34;&gt;Sleeping&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.piccadillyhotel.net/&#34;&gt;Piccadilly Backpackers&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;eating:44&#34;&gt;Eating&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.delaziz.co.uk/&#34;&gt;Del Aziz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.latasca.com/james-street/&#34;&gt;La Tasca&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;visiting:44&#34;&gt;Visiting&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Purchase a &lt;a href=&#34;http://www.londonpass.it/&#34;&gt;London Pass&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.visitlondon.com/traveller-information/getting-around-london/london-maps-and-guides/london-planner&#34;&gt;London Planner&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;London Bridge&lt;/li&gt;
-&lt;li&gt;Tower of London&lt;/li&gt;
-&lt;li&gt;Windsor Castle&lt;/li&gt;
-&lt;li&gt;Kew Gardens&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.royalparks.org.uk/parks/hyde-park&#34;&gt;Hyde Park&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;Westminster Abbey&lt;/li&gt;
-&lt;li&gt;St. Paul’s Cathedral&lt;/li&gt;
-&lt;li&gt;Eton College&lt;/li&gt;
-&lt;li&gt;Shakespeare&amp;rsquo;s Globe Theatre&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.royal.gov.uk/theroyalresidences/buckinghampalace/buckinghampalace.aspx&#34;&gt;Buckingham Palace&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.royal.gov.uk/royaleventsandceremonies/changingtheguard/overview.aspx&#34;&gt;Changing the Guard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;National Gallery&lt;/li&gt;
-&lt;li&gt;London Eye&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.hamleys.com/&#34;&gt;Hamleys Toys&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.harrods.com/&#34;&gt;Harrods&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Sleeping  Piccadilly Backpackers  Eating  Del Aziz La Tasca  Visiting  Purchase a London Pass London Planner London Bridge Tower of London Windsor Castle Kew Gardens Hyde Park, Westminster Abbey St. Paul’s Cathedral Eton College Shakespeare&amp;rsquo;s Globe Theatre Buckingham Palace Changing the Guard National Gallery London Eye Hamleys Toys Harrods  </description>
     </item>
     
   </channel>

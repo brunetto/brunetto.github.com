@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Gravitational waves cheat sheet</title>
@@ -15,284 +17,9 @@
       <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/gw-cheat-sheet/</guid>
-      <description>
-
-&lt;p&gt;I would like to share few notes, a cheat sheet, about gravitational waves I
-put together while writing a chapter  of my PhD thesis
-and preparing for the PhD school internal exam.
-I did it to tidy up the mess of references and equations you may find around
-that never agree and has a terrible notation!!&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;Here the equations, below the images of the papers.&lt;/p&gt;
-
-&lt;h3 id=&#34;general-introduction:3&#34;&gt;General introduction&lt;/h3&gt;
-
-&lt;p&gt;Consider a small perturbation of the flat cartedian metric&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$g_{\alpha\beta}(\vec{x}) = \eta_{\alpha\beta} + h_{\alpha\beta}(\vec{x})\label{eq:perturbedMetric}\tag{1}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;where &lt;code&gt;$\eta_{_{\alpha\beta}}$&lt;/code&gt; is the Minkowsky metric.&lt;br /&gt;
-Consider the Einstein&amp;rsquo;s equation&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$R_{\alpha\beta}-\frac{1}{2}g_{\alpha\beta}R = \frac{8\pi G}{c^4}T_{\alpha\beta}\label{eq:EinsteinEquation}\tag{2}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;where &lt;code&gt;$R_{\alpha\beta}$&lt;/code&gt; is the Ricci tensor, &lt;code&gt;$R$&lt;/code&gt; is the scalar curvature and &lt;code&gt;$T_{\alpha\beta}$&lt;/code&gt;
-is the stress-energy tensor.&lt;/p&gt;
-
-&lt;p&gt;For the metric &lt;code&gt;$\eqref{eq:perturbedMetric}$&lt;/code&gt; and in vacuum (&lt;code&gt;$T_{\alpha\beta}=0$&lt;/code&gt;) equation
-&lt;code&gt;$\eqref{eq:EinsteinEquation}$&lt;/code&gt; simply becomes&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$ \partial_\beta h_\alpha^\beta(\vec{x})-\frac{1}{2}\partial_\alpha h_\beta^\beta(\vec{x}) = 0\label{eq:gwpartialderivative}\tag{3}$$&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Equation &lt;code&gt;$\eqref{eq:gwpartialderivative}$&lt;/code&gt; can be rewritten using the D&amp;rsquo;Alambert operator as&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\square h_{\alpha\beta}(\vec{x}) = 0\label{eq:waveEquation}\tag{4}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Where we recognize the wave equation&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\square \vec{u} = 0$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;with &lt;code&gt;$\square = \frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\nabla^2 = \frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\frac{\partial^2}{\partial x^2}-\frac{\partial^2}{\partial y^2}-\frac{\partial^2}{\partial z^2}$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The simplest solution has form&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$ h_{\alpha\beta}(\vec{x}) = \begin{pmatrix}h_+ &amp;amp; h_\times\\h_\times &amp;amp; -h_+\end{pmatrix}e^{i(kz-\omega t)}\label{eq:simplestSolution}\tag{5}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Considering a mass density, source of the gravitational waves, &lt;code&gt;$\eqref{eq:waveEquation}$&lt;/code&gt; becomes&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\square h_{\alpha\beta}(\vec{x}) = -\frac{16\pi G}{c^4}T_{\alpha\beta}\label{eq:notVacuumWaveEquation}\tag{6}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;With some simplifying assumptions, equation &lt;code&gt;$\eqref{eq:notVacuumWaveEquation}$&lt;/code&gt;
-can be integrated and gives (if the source is a distribution of masses at rest,
-at a distance &lt;code&gt;$r$&lt;/code&gt; from the observer)&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$h^{ij}(t, \vec{x}) \sim \frac{2 G}{rc^4}\frac{{\rm d} ^2}{{\rm d} t^2}\left[I^{ij}(t-r/c)\right]$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;where  &lt;code&gt;$t-r/c$&lt;/code&gt; is the delayed time and
-&lt;code&gt;$I^{ij}$&lt;/code&gt; second mass moment or moment of inertia, that is the quadrupole moment of the
-mass, &lt;code&gt;$I^{ij} \equiv \int {\rm d}^3 x \rho(t, \vec{x})x^ix^j$&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;gravitational-waves-from-binaries:3&#34;&gt;Gravitational waves from binaries&lt;/h3&gt;
-
-&lt;p&gt;Assuming edge on observations (&lt;code&gt;$\theta = i = \frac{\pi}{2}\Rightarrow \cos(\theta) = 0$&lt;/code&gt;) the wave polarization modes are given by:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\begin{aligned}h_{+}(t, \theta, \phi, r) &amp;amp;= \frac{1}{r}\frac{4G\mu\omega_{\rm orb}^2a^2}{c^4}\frac{1+\cos^2\theta}{2}\cos\left(2\omega_{\rm orb}t_{\rm ret}+\phi\right)\\h_{\times}(t, \theta, \phi, r) &amp;amp;= \frac{1}{r}\frac{4G\mu\omega_{\rm orb}^2a^2}{c^4}\cos\theta\sin\left(2\omega_{\rm orb}t_{\rm ret}+\phi\right)\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and the final &lt;strong&gt;strain&lt;/strong&gt; (relative deformation caused by the gravitational wave) is&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$h = \frac{4G}{c^4}\frac{\mu\omega_{\rm orb}^2a^2}{r}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;where &lt;code&gt;$a$&lt;/code&gt; is the semi-major axis of the binary and &lt;code&gt;$r$&lt;/code&gt; the distance source-observer.
-$\omega&lt;em&gt;{\rm gw} = 2\omega&lt;/em&gt;{\rm orb}$.&lt;/p&gt;
-
-&lt;p&gt;Substituting the semi-major axis we obtain&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$h = \frac{4 G^2}{c^4}\frac{m_1m_2}{a r}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;while Substituting the angular frequency from Kepler equations we obtain&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$h = \frac{4 G^{5/3}}{c^4} \frac{m_1m_2}{(m_1+m_2)^{1/3}}\omega_{\rm orb}^{2/3} = \frac{4 G^{5/3}}{c^4} m_{\rm chirp}^{5/3}\omega_{\rm orb}^{2/3}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;where
-&lt;code&gt;$$m_{\rm chirp} \equiv \left(\frac{m_1m_2}{m_1+m_2}\right)^{3/5}(m_1+m_2)^{2/5} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$$&lt;/code&gt;
-is the chirp mass, a (not so) useful combination of the masses on which both the frequency and the strain of GWs
-emitted during the inspiral of a DCOB (double compact object binary) depend.&lt;/p&gt;
-
-&lt;p&gt;A handy approximation is given by&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$h\propto \left[\frac{m_{\rm chirp}}{{\rm M}_\odot}\right]^{5/3} \left[\frac{P_{\rm b}}{{\rm hours}}\right]^{-2/3} \left[\frac{r}{{\rm kpc}}\right]^{-1}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;At the &lt;strong&gt;ISCO&lt;/strong&gt; (innermos stable circular orbit) the strain become&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$h_{\rm ISCO} = \frac{G}{c^2}\frac{1}{r}\frac{m_1m_2}{m_1+m_2} \sim 2.47 \times 10^{-19}\frac{10^6 \,{\rm pc}}{r}\frac{m_1m_2}{m_1+m_2}5\,{\rm M}_\odot$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;radiated power&lt;/strong&gt; is&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\begin{aligned}P &amp;amp;= \frac{{\rm d}E_{\rm orb}}{{\rm d} t} = -\frac{{\rm d}}{{\rm d} t}\left[\frac{Gm_1m_2}{2a}\right] = \frac{Gm_1m_2}{2}\frac{1}{a^2}\frac{{\rm d}a}{{\rm d}t}=\\&amp;amp;=\frac{32}{5}\frac{G^4}{c^5}\frac{1}{a^5}(m_1m_2)^2(m_1+m_2)\quad\text{from quadrupole formalism}\\&amp;amp;=\frac{32}{5}\frac{c^5}{G}\left[\frac{Gm_{\rm chirp}\omega_{\rm GW}}{2c^3}\right]^{10/3}\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;from which we can derive&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\frac{{\rm d}\omega_{\rm GW}}{{\rm d}t} = \omega_{\rm GW}^{11/3}m_{\rm chirp}^{5/3}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;thet gives&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\omega_{\rm gw} = \left[\frac{64}{5\times2^{2/3}}\right]^{-3/8}\left[\frac{Gm_{\rm chirp}}{c^3}\right]^{-5/8}t_{\rm GW}^{-3/8}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and (for circular orbits)&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$t_{\rm GW}\sim\frac{5}{256}\frac{c^5}{G^3}\frac{a^4}{(m_1m_2)(m_1+m_2)}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;From &lt;a href=&#34;http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B1224&#34;&gt;Peters(1964)&lt;/a&gt;
-we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\begin{aligned}\langle\frac{{\rm d} E}{{\rm d} t}\rangle &amp;amp;= -\frac{32}{5}\frac{G^4m_1^2m_2^2(m_1+m_2)}{c^5a^5(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:energyAverageEmissionRate}\\\langle\frac{{\rm d} L}{{\rm d} t}\rangle &amp;amp;= -\frac{32}{5}\frac{G^{7/2}m_1^2m_2^2(m_1+m_2)^{1/2}}{c^5a^{7/2}(1-e^2)^2}(1+\frac{7}{8}e^2)\label{eq:angularMomentumAverageEmissionRate}\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\begin{aligned}\langle\frac{{\rm d} a}{{\rm d} t}\rangle &amp;amp;= -\frac{64}{5}\frac{G^3m_1m_2(m_1+m_2)}{c^5a^3(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right)\label{eq:smaAverageVariation}\\\langle\frac{{\rm d} e}{{\rm d} t}\rangle &amp;amp;= -\frac{304}{15}e\frac{G^3m_1m_2(m_1+m_2)^3}{c^5a^4(1-e^2)^{5/2}}(1+\frac{121}{304}e^2)\label{eq:eccAverageVariation}\end{aligned}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\label{eq:diffAOnE}\langle\frac{{\rm d} a}{{\rm d} e}\rangle = \frac{12}{19}\frac{a}{e}\frac{\left[1+\frac{73}{24}e^2 + \frac{36}{96}e^4\right]}{(1-e^2)\left[1+\frac{121}{304}e^2\right]}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\langle\frac{{\rm d} a}{{\rm d} t}\rangle = -\frac{64}{5}\frac{G^3m_1^2m_2^2(m_1+m_2)}{c^5a^3}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and integrating from $a_0$ to $a$ and from $t=0$ to $t$ we obtain:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\label{eq:AOfTZeroEcc} a(t) = (a_0^4-4Ct)^{1/4}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;with &lt;code&gt;$C = \frac{64}{5}\frac{G^3m_1^2m_2^2(m_1+m_2)}{c^5}$&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thus the system merges in a time&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\label{eq:tGWe0}t_{m\rm gr}(e\rightarrow 0) \sim \frac{a_0^4}{4C}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$t_{m\rm gr}(e\rightarrow 1) \sim 1.8\frac{5}{256} \frac{c^5}{G^3}\frac{a^4(1-e^2)^{7/2}}{(m_1m_2)(m_1+m_2)}\label{eq:tGWe1}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Often a slightly different version is used in the literature:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\label{eq:tGWliterature}t_{\rm GW} = \frac{5}{256} \frac{c^5}{G^3}\frac{a^4(1-e^2)^{7/2}}{(m_1m_2)(m_1+m_2)}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;In the same way, for the semi-major axis shrinking, we find&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\label{eq:AOfTAllEcc}a(t) = \left(a_0^4-4C\frac{t}{(1-e^2)^{7/2}}\right)^{1/4}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;utils:3&#34;&gt;Utils&lt;/h3&gt;
-
-&lt;h4 id=&#34;chirp-mass:3&#34;&gt;Chirp mass&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;$$m_{\rm chirp} \equiv \left(\frac{m_1m_2}{m_1+m_2}\right)^{3/5}(m_1+m_2)^{2/5} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;kepler:3&#34;&gt;Kepler&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;$$P = \frac{2\pi}{\omega} = \left[\frac{4\pi^2 a^3}{G(m_1+m_2)}\right]^{1/2}$$&lt;/code&gt;
-&lt;code&gt;$$a = \frac{G(m_1+m_2)^{1/3}}{\omega_{\rm orb}^{2/3}}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;isco:3&#34;&gt;ISCO&lt;/h4&gt;
-
-&lt;p&gt;At the innermost Stable Circular Orbit (AKA LSO, Last Stable Orbit):&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$$\omega_{\rm ISCO} = \frac{2c^3}{6^{3/2}G}\frac{1}{m_1+m_2}$$&lt;/code&gt;
-&lt;code&gt;$$a_{\rm ISCO} = 3\times\frac{2G(m_1+m_2)}{c^2}$$&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;images:3&#34;&gt;Images&lt;/h3&gt;
-
-&lt;table style=&#34;width:100%&#34;&gt;
-
-&lt;div class=&#34;gallery&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
-
- 
-
-
-&lt;figure itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-  &lt;a href=&#34;http://brunettoziosi.eu/../../img/gw-cheat-sheet/gravitational-waves-from-compact-binaries-2_1.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;2216x3064&#34;&gt;
-      &lt;img src=&#34;http://brunettoziosi.eu/../../img/gw-cheat-sheet_thumb/gravitational-waves-from-compact-binaries-2_1.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;&#34; /&gt;
-
-  &lt;/a&gt;
-
-
-  &lt;figcaption itemprop=&#34;caption description&#34;&gt;
-    
-    &lt;span itemprop=&#34;copyrightHolder&#34;&gt;BrunettoZiosi&lt;/span&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
- 
-
-
-&lt;figure itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-  &lt;a href=&#34;http://brunettoziosi.eu/../../img/gw-cheat-sheet/gravitational-waves-from-compact-binaries-2_2.jpg&#34; itemprop=&#34;contentUrl&#34; data-size=&#34;2300x3200&#34;&gt;
-      &lt;img src=&#34;http://brunettoziosi.eu/../../img/gw-cheat-sheet_thumb/gravitational-waves-from-compact-binaries-2_2.jpg&#34; itemprop=&#34;thumbnail&#34; alt=&#34;&#34; /&gt;
-
-  &lt;/a&gt;
-
-
-  &lt;figcaption itemprop=&#34;caption description&#34;&gt;
-    
-    &lt;span itemprop=&#34;copyrightHolder&#34;&gt;BrunettoZiosi&lt;/span&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-
-&lt;div class=&#34;title&#34;&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;link rel=&#34;stylesheet&#34; href=&#34;http://brunettoziosi.eu/css/photoswipe.css&#34;&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;http://brunettoziosi.eu/css/default-skin/default-skin.css&#34;&gt;
-&lt;script src=&#34;http://brunettoziosi.eu/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://brunettoziosi.eu/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://brunettoziosi.eu/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
-
-
-
-&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
-
-&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
-
-&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
-    
-    &lt;div class=&#34;pswp__container&#34;&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
-    &lt;div class=&#34;pswp__top-bar&#34;&gt;
-      
-      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
-      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
-      
-      
-      &lt;div class=&#34;pswp__preloader&#34;&gt;
-        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
-          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
-            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
-      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
-    &lt;/button&gt;
-    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
-    &lt;/button&gt;
-    &lt;div class=&#34;pswp__caption&#34;&gt;
-      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;style&gt;
-    .gallery { float: right; }
-    .gallery img { width: 100%; height: auto; }
-    .gallery figure { display: block; float: left; margin: 0 5px 5px 0; width: 250px; }  
-    .gallery figcaption { display: none; }
-    span[itemprop=&#34;copyrightHolder&#34;] { color : #888; float: right; }
-    span[itemprop=&#34;copyrightHolder&#34;]:before { content: &#34;Foto: &#34;; }
-&lt;/style&gt;
-
-
-&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
-
-
-&lt;/table&gt;
-    
-
-&lt;h3 id=&#34;references:3&#34;&gt;References&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Maggiore, M. (2008). Oxford University Press.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B1224&#34;&gt;Peters(1964)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/ONDE_GRAV_STELLE_BUCHINERI/AA2013_14/dispense.pdf&#34;&gt;General relativity lectures@Roma1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.astro.umd.edu/~miller/teaching/&#34;&gt;Cole Miller lectures&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I would like to share few notes, a cheat sheet, about gravitational waves I put together while writing a chapter of my PhD thesis and preparing for the PhD school internal exam. I did it to tidy up the mess of references and equations you may find around that never agree and has a terrible notation!!
+Here the equations, below the images of the papers.
+General introduction Consider a small perturbation of the flat cartedian metric</description>
     </item>
     
     <item>
@@ -301,402 +28,8 @@ we obtain more precise and general relations (~ 3.5PN):&lt;/p&gt;
       <pubDate>Mon, 15 Jun 2015 11:55:02 +0200</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/dockerized-starlab/</guid>
-      <description>
-
-&lt;p&gt;Once you have &lt;a href=&#34;../docker-installation&#34;&gt;Docker installed&lt;/a&gt;, you may want to see it
-in action. Here I demonstrate how to use Docker in a slightly different way respect
-what you can find around (AKA use Docker to set up a web-server or something similar).&lt;/p&gt;
-
-&lt;p&gt;I think Docker is a great solution to deal with easiness of installation and reproducibility
-in science. LXD would be probable be better. LXD already provide unprivileged containers
-AND is more about a container containing more than an application, while Docker is
-based on the idea of one container for a single app. However, I still have to try LXD.&lt;/p&gt;
-
-&lt;p&gt;Here I will show you how to use Docker to install and run &lt;a href=&#34;http://brunettoziosi.eu/posts/starlab-gpu-installation/&#34;&gt;Starlab&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;NB: nVidia (AKA the most annoying GPU producer in the world) drivers, in addition to be
-the worst Linux GPU drivers, require a system-dependent installation. This means that
-you can&amp;rsquo;t just download the Docker image from &lt;a href=&#34;https://registry.hub.docker.com/repos/brunetto/&#34;&gt;my Docker registry&lt;/a&gt; and run a container
-from it, but you need to download the &lt;code&gt;Dockerfile&lt;/code&gt; and build the image on your own.
-You can use the image I provide ONLY if you run the non-GPU StarLab version.
-And to do this you need to have a loooot of time to wait for the simulations to finish.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-docker-image:4&#34;&gt;Create a Docker image&lt;/h2&gt;
-
-&lt;p&gt;The image I&amp;rsquo;m going to create contains:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;our modified StarLab version (it contains updated stellar evolution recipes), both GPU and non GPU version&lt;/li&gt;
-&lt;li&gt;the same version with an &lt;a href=&#34;http://adsabs.harvard.edu/abs/1991RMxAA..22..255A&#34;&gt;Allen-Santillan&lt;/a&gt; galactic tidal field,
-corrected for the non-inertial reference frame used in StarLab
-(at the moment this version is not working, probably because a problem in the timestep calculation, but I am working on it!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can use the &lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/&#34;&gt;public version&lt;/a&gt; and correct the
-&lt;code&gt;Dockerfile&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;It is possible to download and extract the StarLab sourced directly from the Internet but I
-prefer to have everything already in the folder.&lt;/p&gt;
-
-&lt;p&gt;First of all, create a new empty folder and &lt;code&gt;cd&lt;/code&gt; into it. Then, copy the StarLab sources
-and the docker file into that folder.
-Mine looks like that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;starlabDocker.tar.gz
-	|-sapporo
-	|-starlab
-	|-starlabAS
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where &lt;code&gt;starlabAS&lt;/code&gt; only contains the files that differ from the versio without the Allen-Santillan tidal field.&lt;/p&gt;
-
-&lt;p&gt;Then, you need a &lt;code&gt;Dockerfile&lt;/code&gt;. The &lt;code&gt;Dockerfile&lt;/code&gt; tells Docker what it has to do
-in order to create your image. Which base images to use (if any), which packages to download and install and so on.
-Mine is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;FROM ubuntu:14.04
-
-MAINTAINER brunetto ziosi &amp;lt;my email hehe&amp;gt;
-
-# For the public version of StarLab4.4.4, see http://www.sns.ias.edu/~starlab/
-
-ENV DEBIAN_FRONTEND noninteractive
-
-ENV STARLAB_FILE starlabDocker.tar.gz
-
-# Copy StarLab bundle into the image
-COPY $STARLAB_FILE /
-
-# This has to be set by hand and MUST be the same of the host
-##############
-# longisland #
-##############
-# ENV CUDA_DRIVER 340.46
-# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
-# ENV CUDA_TOOLKIT cuda_6.0.37_linux_64.run
-# ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/6_0/rel/installers/$CUDA_TOOLKIT
-##############
-#    uno     #
-##############
-# ENV CUDA_DRIVER 331.38
-# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
-# ENV CUDA_TOOLKIT cuda_5.5.22_linux_64.run
-# ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/5_5/rel/installers/$CUDA_TOOLKIT
-##############
-#   spritz   #
-##############
-ENV CUDA_DRIVER 331.113
-ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
-ENV CUDA_TOOLKIT cuda_5.5.22_linux_64.run
-ENV CUDA_TOOLKIT_DOWNLOAD http://developer.download.nvidia.com/compute/cuda/5_5/rel/installers/$CUDA_TOOLKIT
-################
-#  sfursat     #
-# to be tested #
-################
-# ENV CUDA_DRIVER 270.41.19
-# ENV CUDA_INSTALL http://us.download.nvidia.com/XFree86/Linux-x86_64/${CUDA_DRIVER}/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run
-# ENV CUDA_TOOLKIT ????
-# ENV CUDA_TOOLKIT_DOWNLOAD ????????
-
-# Update and install minimal and clean up packages
-RUN apt-get update --quiet &amp;amp;&amp;amp; apt-get install --yes \
- --no-install-recommends --no-install-suggests \
- build-essential module-init-tools wget libboost-all-dev   \
-&amp;amp;&amp;amp; apt-get clean &amp;amp;&amp;amp; rm -rf /var/lib/apt/lists/*
-
-# Install CUDA drivers
-RUN wget $CUDA_INSTALL -P /tmp --no-verbose \
-      &amp;amp;&amp;amp; chmod +x /tmp/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run \
-      &amp;amp;&amp;amp; /tmp/NVIDIA-Linux-x86_64-${CUDA_DRIVER}.run -s -N --no-kernel-module \
-      &amp;amp;&amp;amp; rm -rf /tmp/*
-
-# Install CUDA toolkit
-RUN wget $CUDA_TOOLKIT_DOWNLOAD &amp;amp;&amp;amp; chmod +x $CUDA_TOOLKIT \
-&amp;amp;&amp;amp; ./$CUDA_TOOLKIT -toolkit -toolkitpath=/usr/local/cuda-site -silent -override \
-&amp;amp;&amp;amp; rm $CUDA_TOOLKIT
-
-# Set env variables
-RUN echo &amp;quot;PATH=$PATH:/usr/local/cuda-site/bin&amp;quot; &amp;gt;&amp;gt; .bashrc          \
-&amp;amp;&amp;amp; echo &amp;quot;LD_LIBRARY_PATH=/usr/local/cuda-site/lib64&amp;quot; &amp;gt;&amp;gt; .bashrc   \
-&amp;amp;&amp;amp; . /.bashrc \
-&amp;amp;&amp;amp; ldconfig /usr/local/cuda-site/lib64
-
-# Install StarLab w/ and w/o GPU, w/ and w/o tidal fields
-RUN tar -xvf $STARLAB_FILE &amp;amp;&amp;amp; rm $STARLAB_FILE \
-&amp;amp;&amp;amp; cp -r starlab starlab-no-GPU               \
-&amp;amp;&amp;amp; cp -r starlab starlabAS-no-GPU             \
-&amp;amp;&amp;amp; cp -r starlab starlabAS-GPU                \
-&amp;amp;&amp;amp; mv starlab starlab-GPU
-
-# Tidal field version only has 5 files different, 
-# so we can copy them into a copy of the non TF version:
-
-# starlab/src/node/dyn/util/add_tidal.C
-# starlab/src/node/dyn/util/dyn_external.C
-# starlab/src/node/dyn/util/dyn_io.C
-# starlab/src/node/dyn/util/set_com.C
-# starlab/src/node/dyn/util/dyn_story.C
-
-RUN cp starlabAS/*.C starlabAS-no-GPU/src/node/dyn/util/ \
-&amp;amp;&amp;amp; cp starlabAS/*.C starlabAS-GPU/src/node/dyn/util/     \
-&amp;amp;&amp;amp; cp starlabAS/dyn.h starlabAS-no-GPU/include/          \
-&amp;amp;&amp;amp; cp starlabAS/dyn.h starlabAS-GPU/include/             \
-&amp;amp;&amp;amp; rm -rf starlabAS
-
-# Compile sapporo
-RUN cd sapporo/ &amp;amp;&amp;amp; make &amp;amp;&amp;amp; bash compile.sh &amp;amp;&amp;amp; cd ../
-
-# With and w/o GPU and w/ and w/o AS tidal fields
-RUN cd /starlab-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
-&amp;amp;&amp;amp; mv /starlab-GPU/usr/bin slbin-GPU &amp;amp;&amp;amp; rm -rf /starlab-GPU \
-&amp;amp;&amp;amp; cd /starlabAS-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
-&amp;amp;&amp;amp; mv /starlabAS-GPU/usr/bin slbinAS-GPU &amp;amp;&amp;amp; rm -rf /starlabAS-GPU \
-&amp;amp;&amp;amp; cd /starlab-no-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no --with-grape=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
-&amp;amp;&amp;amp; mv /starlab-no-GPU/usr/bin slbin-no-GPU &amp;amp;&amp;amp; rm -rf /starlab-no-GPU \
-&amp;amp;&amp;amp; cd /starlabAS-no-GPU/ &amp;amp;&amp;amp; ./configure --with-f77=no --with-grape=no &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd ../ \
-&amp;amp;&amp;amp; mv /starlabAS-no-GPU/usr/bin slbinAS-no-GPU &amp;amp;&amp;amp; rm -rf /starlabAS-no-GPU
-
-# Default command.
-ENTRYPOINT [&amp;quot;/bin/bash&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The first part of the &lt;code&gt;Dockerfile&lt;/code&gt; specify to use &lt;code&gt;Ubuntu 14.04&lt;/code&gt; as base image
-(a special version customized for Docker). Then it lists me as maintainer of the image.
-What follows are environment variables needed for the installation.
-&lt;code&gt;COPY&lt;/code&gt; copy the Starlab sources from the host folder to the image &lt;code&gt;/&lt;/code&gt; folder.
-After that I set the right variables needed to install the right CUDA drivers
-and libraries for each system.&lt;/p&gt;
-
-&lt;p&gt;After setting the environment variables, the &lt;code&gt;RUN&lt;/code&gt; command is used to launch
-the update of the system indexes and packages and the installations of the needed
-build tools.&lt;/p&gt;
-
-&lt;p&gt;Then we can install the CUDA drivers and the CUDA libraries.&lt;/p&gt;
-
-&lt;p&gt;Because Docker add a layer for each of the Docker commands used, I minimize the number of layers
-running more that one bash command chaining them with &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The following steps are extract the sources, copy the files in the right places and compile
-sapporo and Starlab. Sapporo is the library that allow Starlab (developed for GRAPE) to run on the GPUs.&lt;/p&gt;
-
-&lt;p&gt;The final line tells Docker that a container based on this image should start with /bin/bash active.&lt;/p&gt;
-
-&lt;p&gt;To build the image just run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;time docker build --force-rm=true -t &amp;lt;your registry name&amp;gt;/starlab-cuda-&amp;lt;driver version&amp;gt;:$(date +&amp;quot;%Y%m%d&amp;quot;) .
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is my build line containing&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;time&lt;/code&gt; command, just to know how log does it take to build the image&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker build --force-rm=true&lt;/code&gt; build the image removing intermediate layer&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-t&lt;/code&gt; to tag the image you create with a name you like, I use my Dcoker Hub username,
-the name of the program I&amp;rsquo;m dockerizing, if using cuda, the driver version and the build date,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.&lt;/code&gt; the final dot is not a typo, it tells Docker to build an image using the &lt;code&gt;Dockerfile&lt;/code&gt;
-in the current folder.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let&amp;rsquo;s assume that the container name is &lt;code&gt;me/starlab-cuda-340.46-6.0.37-2015-06-15&lt;/code&gt;
-At the end of the process you can check if the image was successfully created (ok, you can do this also from the errors!)
-by running:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ docker images
-
-REPOSITORY                                   TAG                 IMAGE ID            
-me/starlab-cuda-340.46-6.0.37-2015-06-15    20150615            b073d414323f        
-                                            CREATED             VIRTUAL SIZE
-                                            37 minutes ago      5.272 GB
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;run-a-starlab-container:4&#34;&gt;Run a StarLab container&lt;/h2&gt;
-
-&lt;p&gt;Now that you created the image, it&amp;rsquo;s time to run a container with it.
-To create and run a container based on your newly created image run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ docker run -ti --device /dev/nvidia0:/dev/nvidia0 \
-                 --device /dev/nvidia1:/dev/nvidia1 \
-                 --device /dev/nvidiactl:/dev/nvidiactl \
-                 --device /dev/nvidia-uvm:/dev/nvidia-uvm \
-                 -v       &amp;lt;abs path to host folder&amp;gt;:&amp;lt;container folder&amp;gt; \
-                          me/starlab-cuda-340.46-6.0.37-2015-06-15
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;docker run&lt;/code&gt; is obvious&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-ti&lt;/code&gt; means open a interactive pseudo tty (that is, more or less, give me a terminal inside the
-container, once started, where I can run commands)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--device&lt;/code&gt; specify which devices to attach; in this case I am connecting 2 CUDA GPUs
-and allow for the Unified Virtual Memory to be used (it works only from CUDA6)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-v &amp;lt;abs path to host folder&amp;gt;:&amp;lt;container folder&amp;gt;&lt;/code&gt; allow to share a folder between host and container&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;me/starlab-cuda-340.46-6.0.37-2015-06-15&lt;/code&gt; is the name of the image from which to create the container&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can check by running:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps [-a]
-
-CONTAINER ID        IMAGE                                              
-ccdffc10c680        me/starlab-cuda-340.46-6.0.37-2015-06-15   
-                     COMMAND             CREATED             
-                     &amp;quot;/bin/bash&amp;quot;         15 seconds ago    
-                     STATUS              PORTS               NAMES
-                     Up 15 seconds                           adoring_turing
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;-a&lt;/code&gt; flags tells Docker to show you also the stopped containers. Note that the container
-has a random name given by Docker.&lt;/p&gt;
-
-&lt;p&gt;It is also possible to directly run commands just after the container creation,
-for example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ time echo &amp;quot;Hello world&amp;quot;
-Hello world
-real    0m0.000s
-user    0m0.000s
-sys     0m0.000s
-
-$ time docker run ubuntu:14.04 /bin/echo &#39;Hello world&#39;
-Hello world
-real    0m0.219s
-user    0m0.028s
-sys     0m0.005s
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In this example, the second command ran into a docker container.&lt;/p&gt;
-
-&lt;p&gt;We can do something better: we want a script that creates a container,
-start it, run some commands and then clean everything.&lt;/p&gt;
-
-&lt;p&gt;This could be quite easy, but we are using StarLab, that makes heavy use of pipes.
-I found three solutions to get it works, the last being the better.&lt;/p&gt;
-
-&lt;p&gt;The first attempt is something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash # shebang line to specify the interpreter
-
-set -x # set -x tells bash to echo the command is going to run
-
-# Create a docker container with devices and volumes and give it a name
-docker create --name sltest -i -t \
---device /dev/nvidia0:/dev/nvidia0 \
---device /dev/nvidia1:/dev/nvidia1 \
---device /dev/nvidiactl:/dev/nvidiactl \
---device /dev/nvidia-uvm:/dev/nvidia-uvm \
-me/starlab-cuda-340.46-6.0.37-2015-06-15
-
-# Start the container
-docker start sltest
-
-# Exec commands to create StarLab initial conditions
-(docker exec -i sltest /slbin/makeking -n 100 -w 5 -i -u ) &amp;gt; makeking.out
-(docker exec -i sltest /slbin/makemass -f 8 -l 0.1 -u 40 ) &amp;lt; makeking.out &amp;gt; makemass.out
-(docker exec -i sltest /slbin/add_star -R 1 -Z 0.1       ) &amp;lt; makemass.out &amp;gt; add_star.out
-(docker exec -i sltest /slbin/scale    -R 1 -M 1         ) &amp;lt; add_star.out &amp;gt; ics.txt
-
-# Start kira
-(docker exec -i sltest /slbin/kira -t 3 -d 1 -D 1 -f 0 -n 10 -e 0 -B -b 1) &amp;lt; ics.txt &amp;gt; out.txt 2&amp;gt; err.txt
-
-# Stop and delete the container
-docker stop sltest
-docker rm sltest
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This example make use of the STDIN/ERR/OUT redirection, but does not always work
-very well.&lt;/p&gt;
-
-&lt;p&gt;The second attempt, a little better is&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash 
-set -x 
-
-# Create env variables for the folders
-LOCAL_FOLDER=~/starlab-results
-DOCKER_FOLDER=/starlab-results
-
-# Create a docker container with devices and volumes and give it a name
-docker create --name sltest -i -t \
---device /dev/nvidia0:/dev/nvidia0 \
---device /dev/nvidia1:/dev/nvidia1 \
---device /dev/nvidiactl:/dev/nvidiactl \
---device /dev/nvidia-uvm:/dev/nvidia-uvm \
--v $LOCAL_FOLDER:$DOCKER_FOLDER \
-me/starlab-cuda-340.46-6.0.37-2015-06-15
-
-# Start the container
-docker start sltest
-
-# Exec commands to create StarLab initial conditions
-(docker exec -i sltest -c &amp;quot;/slbin/makeking -n 100 -w 5 -i -u ) &amp;gt; $DOCKER_FOLDER/makeking.out&amp;quot;
-(docker exec -i sltest -c &amp;quot;/slbin/makemass -f 8 -l 0.1 -u 40 ) &amp;lt; $DOCKER_FOLDER/makeking.out &amp;gt; $DOCKER_FOLDER/makemass.out&amp;quot;
-(docker exec -i sltest -c &amp;quot;/slbin/add_star -R 1 -Z 0.1       ) &amp;lt; $DOCKER_FOLDER/makemass.out &amp;gt; $DOCKER_FOLDER/add_star.out&amp;quot;
-(docker exec -i sltest -c &amp;quot;/slbin/scale    -R 1 -M 1         ) &amp;lt; $DOCKER_FOLDER/add_star.out &amp;gt; $DOCKER_FOLDER/ics.txt&amp;quot;
-
-# Start kira
-docker exec -i sltest bash -c &amp;quot;/slbin/kira -t 3 -d 1 -D 1 -f 0 \
- -n 10 -e 0 -B -b 1 &amp;lt; $DOCKER_FOLDER/ics.txt \
- &amp;gt; $DOCKER_FOLDER/out.txt 2&amp;gt; $DOCKER_FOLDER/err.txt&amp;quot;
-
-# Stop and delete the container
-docker stop sltest
-docker rm sltest
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In this second example we make use of the internal container folder attached to a host system folder.
-We will found our files in &lt;code&gt;~/starlab-results&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;However, the way I prefer is to make the container bash read a script in the
-exchange folder. To do this, we need two files.&lt;br /&gt;
-The first create the container and launch the second, located into the exchange folder.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat dockerized_starlab.sh
-
-#!/bin/bash
-set -x
-# Create a docker container with devices and volumes and give it a name
-CONTAINER_NAME=test-001
-
-docker create --name $CONTAINER_NAME -i -t \
---device /dev/nvidia0:/dev/nvidia0 \
---device /dev/nvidia1:/dev/nvidia1 \
---device /dev/nvidiactl:/dev/nvidiactl \
---device /dev/nvidia-uvm:/dev/nvidia-uvm \
--v /home/ziosi/tests/$CONTAINER_NAME/results/:/sl-exchanges/ \
-me/starlab-cuda-340.46-6.0.37-2015-06-15
-
-# Start the container
-docker start $CONTAINER_NAME
-
-# Execute the script in the exchange folder
-docker exec -i $CONTAINER_NAME bash -c &amp;quot;/sl-exchanges/run.sh&amp;quot;
-
-docker stop $CONTAINER_NAME
-docker rm $CONTAINER_NAME
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The second may contain the instructions to run StarLab commands:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
-set -x
-
-for RUN in $(ls create_*.sh); do
-	echo &amp;quot;Run $RUN&amp;quot;;
-	/slbin-GPU/makeking -n 1000 -w 5 -i -u  &amp;gt; /sl-exchanges/makeking-$RUN.out;
-	/slbin-GPU/makemass -f 8  -l 0.1 -u 150 &amp;lt; /sl-exchanges/makeking-$RUN.out &amp;gt; /sl-exchanges/makemass-$RUN.out;
-	/slbin-GPU/add_star -R 1 -Z 0.10        &amp;lt; /sl-exchanges/makemass-$RUN.out &amp;gt; /sl-exchanges/add_star-$RUN.out;
-	/slbin-GPU/set_com -r 5 0 0 -v 0 1 0    &amp;lt; /sl-exchanges/add_star-$RUN.out &amp;gt; /sl-exchanges/set_com-$RUN.out;
-	/slbin-GPU/scale -R 1 -M 1  &amp;lt; /sl-exchanges/set_com-$RUN.out &amp;gt; /sl-exchanges/ics-$RUN.txt;
-	/slbin-GPU/kira -t 500 -d 1 -D 1 -f 0 -n 10 -e 0 -B -b 1 &amp;lt; /sl-exchanges/ics-$RUN.txt &amp;gt; /sl-exchanges/out-$RUN.txt 2&amp;gt; /sl-exchanges/err-$RUN.txt;
-done
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where I take advantage of the fact that I wrote a script to loop over different
-simulations to be ran.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s it!!&lt;/p&gt;
-</description>
+      <description>Once you have Docker installed, you may want to see it in action. Here I demonstrate how to use Docker in a slightly different way respect what you can find around (AKA use Docker to set up a web-server or something similar).
+I think Docker is a great solution to deal with easiness of installation and reproducibility in science. LXD would be probable be better. LXD already provide unprivileged containers AND is more about a container containing more than an application, while Docker is based on the idea of one container for a single app.</description>
     </item>
     
     <item>
@@ -705,79 +38,11 @@ simulations to be ran.&lt;/p&gt;
       <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/pdf-manipulation/</guid>
-      <description>
-
-&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
+      <description>&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
 on the fly. For example, I want to print them two-pages per sheet, or to extract
 few pages, or to shrink the size of the file without degradate the quality.&lt;/p&gt;
 
-&lt;p&gt;Here are few trick I collected and post here to be able to find them.&lt;/p&gt;
-
-&lt;h2 id=&#34;print-two-pages-per-sheet:5&#34;&gt;Print two pages per sheet&lt;/h2&gt;
-
-&lt;p&gt;The first tricks comes from &lt;a href=&#34;http://0x2a.at/blog/2011/02/pdf_manipulation_on_the_cli/&#34;&gt;here&lt;/a&gt;
-and assume you have &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;&lt;code&gt;pdfjam&lt;/code&gt;&lt;/a&gt;
-installed.
-This is how you can produce a pdf with two pages per sheet:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfjam --nup 2x1 infile.pdf --landscape --outfile outfile.pdf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;booklet:5&#34;&gt;Booklet&lt;/h2&gt;
-
-&lt;p&gt;You can also print your pdf file as booklet. This means that the pages
-of your file are shuffled (and placed two per sheet) so that you can
-join them with a clip or some glue or strings in the middle just like
-a real book. The sommand is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdfbook --short-edge infile.pdf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;pdfbook&lt;/code&gt; is part of &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;extract-or-join-pages:5&#34;&gt;Extract (or join) pages&lt;/h2&gt;
-
-&lt;p&gt;If you need to extrac some pages from your pdf file you can just run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile.pdf cat &amp;lt;first_page&amp;gt;-&amp;lt;last_page&amp;gt; output outfile.pdf 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To join pdf files, instead, run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pdftk infile1.pdf infile2.pdf infile3.pdf cat output outfile.pdf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Obviously you need &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=pdftk&#34;&gt;&lt;code&gt;pdftk&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;shrink-pdf-file-size:5&#34;&gt;Shrink pdf file size&lt;/h2&gt;
-
-&lt;p&gt;Sometiimes a pdf grows in size with no reason (apparently). It is possible to shrink it
-by reduce it to pdf defaults. You will need &lt;a href=&#34;http://www.ghostscript.com/&#34;&gt;&lt;code&gt;gs&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The command you need to run is&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=outfile.pdf infile.pdf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It can be quite difficult to remember, so you can create a bash alias for a function
-doing it for you. In &lt;code&gt;.bashrc&lt;/code&gt; add&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias pdfdefault=&#39;function _pdfdefault() { gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$2 $1;}; _pdfdefault&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and run &lt;code&gt;. ~/.bashrc&lt;/code&gt; before running &lt;code&gt;pdfdefault infile.pdf outfile.pdf&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;two-pages-per-sheet-with-latex:5&#34;&gt;Two pages per sheet with latex&lt;/h2&gt;
-
-&lt;p&gt;It is possible, if you are writing something with pdf, to produce a pdf
-with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this case just add, at the beginning of your latex document&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{pgfpages}
-\pgfpagesuselayout{2 on 1}[a4paper], landscape]
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -786,108 +51,10 @@ with two pages per sheet without needing to run &lt;code&gt;pdfjam&lt;/code&gt;.
       <pubDate>Wed, 03 Jun 2015 10:55:02 +0200</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</guid>
-      <description>&lt;p&gt;You can download sltools from &lt;a href=&#34;https://github.com/brunetto/sltools&#34;&gt;here&lt;/a&gt;.&lt;br /&gt;
-Then create one or more simulation configuration(s), for example&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-	&amp;quot;Runs&amp;quot;: 50,
-	&amp;quot;Comb&amp;quot;: 86, 
-	&amp;quot;Ncm&amp;quot; : 10000,
-	&amp;quot;Fpb&amp;quot; : 0.05,
-	&amp;quot;W&amp;quot;   : 3,
-	&amp;quot;Z&amp;quot;   : 0.10,
-	&amp;quot;Rv&amp;quot;: 5, 
-	&amp;quot;EndTime&amp;quot; : 500,
-	&amp;quot;Machine&amp;quot; : &amp;quot;yourCluster&amp;quot;,
-	&amp;quot;UserName&amp;quot; : &amp;quot;yourUserName&amp;quot;,
-	&amp;quot;PName&amp;quot;: &amp;quot;project&amp;quot;,  
-	&amp;quot;BinFolder&amp;quot;: &amp;quot;/home/yourUserName/bin/&amp;quot;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Runs&lt;/code&gt; is the number of random realizations you want to simulate&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Comb&lt;/code&gt; is the number that identify of this particoular parameter set&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ncm&lt;/code&gt; is the number of center of masses&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Fpb&lt;/code&gt; is the primordial binary fraction (how many stars are binaries at the beginning of the simulation&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;W&lt;/code&gt; is the central adimensional potential&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Z&lt;/code&gt; is the metallicity in terms of the solar metallicity (only available in the Mapelli+2013 Starlab version)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Rv&lt;/code&gt; is the initial virial radius of the cluster&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EndTime&lt;/code&gt; preliminary timestep when to stop the simulation, you can resume it later&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Machine&lt;/code&gt; name of the machine you are running on&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;UserName&lt;/code&gt; is your username on that machine&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PName&lt;/code&gt; is the project your hours are accounted on&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;BinFolder&lt;/code&gt; is the path where to find the binaries&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools createICs -v -A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now sltools will create a folder for each parameter combination, copy the configuration file inside and create
-as much script files as you need to create the iitial conditions.&lt;/p&gt;
-
-&lt;p&gt;Each file would resemble something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
-set -xeu
-makeking -n 10000 -w 5 -i -u \
-| makemass -f 8  -l 0.1 -u 150 \
-| makesecondary -f 0.1 -q -l 0.1 \
-| add_star -R 1 -Z 0.10 \
-| scale -R 3 -M 1\
-| makebinary -f 2 -o 1 -l 1 -u 107836.09 \
-&amp;gt; ics-comb87-TFno-Rv3-NCM10000-fPB01-W5-Z010-run01-rnd00.txt
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you can run the generated script with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for RUN in $(ls create_*.sh); do bash $RUN; done
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;OR&lt;/p&gt;
-
-&lt;p&gt;you can run them using the docker container you can build starting from &lt;a href=&#34;https://registry.hub.docker.com/u/brunetto/starlab-public-docker/&#34;&gt;this image&lt;/a&gt;
-or from this &lt;a href=&#34;https://github.com/brunetto/starlab-public-docker/blob/master/Dockerfile&#34;&gt;Dockerfile&lt;/a&gt; or following &lt;a href=&#34;../dockerized-starlab&#34;&gt;these instructions&lt;/a&gt;. If you plan to use the GPUs the second method is recommendend
-since a GPU enable docker image is system-dependent (thank you nVidia&amp;hellip;).&lt;/p&gt;
-
-&lt;p&gt;Now you can upload your fresh ICs to the cluster of your choice.&lt;/p&gt;
-
-&lt;p&gt;Once everything is in its place, connect to the cluster and run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools css -A -m &amp;lt;machine&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to create the files needed to submit the jobs to the batch system.
-&lt;code&gt;machine&lt;/code&gt; is the name of the cluster. Until now only few clusters are
-recognized, because I need to set few parameters to match the system configuration.
-I&amp;rsquo;ll be glad to add your own machine, or maybe I&amp;rsquo;ll create a template system
-able to read from a configuration file.&lt;/p&gt;
-
-&lt;p&gt;Once the batch manager scripts are created, just run everything with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools pbsLaunch
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and wait for the jobs to complete.
-When they finish, you can restart the simulations to make them run untile 100 Myr is
-reached. To do this, simply run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools relaunch
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sltools relaunch -e &amp;lt;end-time&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to specify when the simulation should end.&lt;/p&gt;
-</description>
+      <description>You can download sltools from here.
+Then create one or more simulation configuration(s), for example
+{ &amp;quot;Runs&amp;quot;: 50, &amp;quot;Comb&amp;quot;: 86, &amp;quot;Ncm&amp;quot; : 10000, &amp;quot;Fpb&amp;quot; : 0.05, &amp;quot;W&amp;quot; : 3, &amp;quot;Z&amp;quot; : 0.10, &amp;quot;Rv&amp;quot;: 5, &amp;quot;EndTime&amp;quot; : 500, &amp;quot;Machine&amp;quot; : &amp;quot;yourCluster&amp;quot;, &amp;quot;UserName&amp;quot; : &amp;quot;yourUserName&amp;quot;, &amp;quot;PName&amp;quot;: &amp;quot;project&amp;quot;, &amp;quot;BinFolder&amp;quot;: &amp;quot;/home/yourUserName/bin/&amp;quot; }  where
+ Runs is the number of random realizations you want to simulate Comb is the number that identify of this particoular parameter set Ncm is the number of center of masses Fpb is the primordial binary fraction (how many stars are binaries at the beginning of the simulation W is the central adimensional potential Z is the metallicity in terms of the solar metallicity (only available in the Mapelli+2013 Starlab version) Rv is the initial virial radius of the cluster EndTime preliminary timestep when to stop the simulation, you can resume it later Machine name of the machine you are running on UserName is your username on that machine PName is the project your hours are accounted on BinFolder is the path where to find the binaries  The run</description>
     </item>
     
     <item>
@@ -902,8 +69,7 @@ I wrote a small presentation to update my collegues and it become a in-progress 
 useful in our everyday work. This presentation aims of acting both as a showcase of what can help us and as a cheat sheet.
 You can find it after the break.&lt;/p&gt;
 
-&lt;iframe src=&#34;http://rawgit.com/brunetto/my-public-talks/master/2014-12-cinecaBigData/index.html&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;&lt;/iframe&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -918,312 +84,7 @@ I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produce
 perfect &lt;code&gt;pdf&lt;/code&gt; plots, but sometimes Matplotlib it&amp;rsquo;s faster for producing just
 a draft plot to inspect data!&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
-# -*- coding: utf8 -*- 
-
-from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
-import time
-import numpy as np
-import veusz.embed as ve
-
-def sm_hist(data, delta=5, n_bin=None, range_=None):
-	dataMin = np.floor(data.min())
-	dataMax = np.ceil(data.max())
-	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
-	range_ = (dataMin, dataMin + n_bin * delta)
-	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
-	return counts, bin_edges
-	
-def sm_hist2(data, delta=5):
-	dataMin = np.floor(data.min())
-	dataMax = np.ceil(data.max())
-	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
-	idxs = ((data  - dataMin) / delta).astype(int)
-	counts = np.zeros(n_bin) 
-	bin_edges = np.arange(dataMin, dataMax+2, delta)
-	for idx in idxs:
-		counts[idx] += 1
-	counts = np.hstack((np.array([0]), counts, np.array([0])))
-	bin_edges = np.hstack((bin_edges[0], bin_edges, bin_edges[-1]))
-	return counts, bin_edges
-
-def plotFunc(inpath=&amp;quot;./&amp;quot;, outpath=&amp;quot;./&amp;quot;):
-	font = &amp;quot;Times New Roman&amp;quot;
-	colors = [u&#39;blue&#39;, u&#39;green&#39;]
-	xmin = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
-	xmax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
-	ymin = [&amp;quot;auto&amp;quot;, 0]
-	ymax = [&amp;quot;auto&amp;quot;, &amp;quot;auto&amp;quot;]
-	
-	xData = np.arange(100) 
-	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
-	
-	figure = ve.Embedded(&amp;quot;Window_1&amp;quot;)
-	page = figure.Root.Add(&#39;page&#39;, width = &#39;30cm&#39;, height=&#39;15cm&#39;)
-	grid = page.Add(&#39;grid&#39;, autoadd = False, rows = 1, columns = 2,
-						scaleRows=[0.2],
-						topMargin=&#39;1cm&#39;,
-						bottomMargin=&#39;1cm&#39;
-						)
-	graphList = []
-	
-	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;scatter&amp;quot;, autoadd=False, 
-							hide = False, 
-							Border__width = &#39;2pt&#39;,
-							leftMargin = &#39;0.6cm&#39;,
-							rightMargin = &#39;0.4cm&#39;,
-							topMargin = &#39;0.5cm&#39;,
-							bottomMargin = &#39;1cm&#39;,
-							))
-	
-	graphList.append(grid.Add(&#39;graph&#39;, name=&amp;quot;hist&amp;quot;, autoadd=False, 
-							hide = False, 
-							Border__width = &#39;2pt&#39;,
-							leftMargin = &#39;2cm&#39;,
-							rightMargin = &#39;0.4cm&#39;,
-							topMargin = &#39;0.5cm&#39;,
-							bottomMargin = &#39;1cm&#39;,
-							))
-	
-	for i in range(len(graphList)):
-		graphList[i].Add(&#39;axis&#39;, name=&#39;x&#39;, label = &amp;quot;x&amp;quot;,
-								min = xmin[i],
-								max = xmax[i],
-								log = False,
-								Label__size = &#39;25pt&#39;,
-								Label__font = font,
-								TickLabels__size = &#39;17pt&#39;,
-								TickLabels__format = u&#39;Auto&#39;,
-								MajorTicks__width = &#39;2pt&#39;,
-								MajorTicks__length = &#39;10pt&#39;,
-								MinorTicks__width = &#39;1pt&#39;,
-								MinorTicks__length = &#39;6pt&#39;
-							)
-		graphList[i].Add(&#39;axis&#39;, name=&#39;y&#39;, label = &amp;quot;y&amp;quot;, 
-								direction = &#39;vertical&#39;,
-								min = ymin[i],
-								max = ymax[i],
-								log = False,
-								autoRange = u&#39;+5%&#39;,
-								Label__size = &#39;25pt&#39;,
-								Label__font = font,
-								TickLabels__size = &#39;20pt&#39;,
-								TickLabels__format = u&#39;Auto&#39;,
-								MajorTicks__width = &#39;2pt&#39;,
-								MajorTicks__length = &#39;10pt&#39;,
-								MinorTicks__width = &#39;1pt&#39;,
-								MinorTicks__length = &#39;6pt&#39;
-							)
-	
-	graphList[0].Add(&#39;xy&#39;, key=&amp;quot;scatterPlotKey&amp;quot;, name=&#39;scatterPlotName&#39;,
-						marker = u&#39;circle&#39;,
-						MarkerFill__color = colors[0],
-						markerSize = u&#39;3pt&#39;, 
-						)
-
-	xDataName = &amp;quot;xScatterData&amp;quot;
-	yDataName = &amp;quot;yScatterData&amp;quot;
-	figure.SetData(xDataName, xData)
-	figure.SetData(yDataName, yData)
-	graphList[0].scatterPlotName.xData.val = xDataName
-	graphList[0].scatterPlotName.yData.val = yDataName
-	
-	
-	counts, bin_edges = sm_hist2(yData, delta=5)
-	
-	graphList[1].Add(&#39;xy&#39;, key=&amp;quot;histPlotKey&amp;quot;, name=&#39;histPlotName&#39;,
-						xData = bin_edges,
-						yData = counts,
-						marker = &#39;none&#39;,
-						PlotLine__steps = u&#39;left&#39;,
-						PlotLine__color = colors[1],
-						PlotLine__style = u&amp;quot;solid&amp;quot;,
-						PlotLine__width = u&#39;3&#39;,
-						FillBelow__color = colors[1],
-						FillBelow__style = &amp;quot;forward 2&amp;quot;,
-						FillBelow__hide = False,
-						FillBelow__transparency = 70,
-						#FillBelow__backtransparency = 50,
-						FillBelow__linewidth = &#39;1pt&#39;,
-						FillBelow__linestyle = &#39;solid&#39;,
-						FillBelow__backcolor = &amp;quot;white&amp;quot;,
-						FillBelow__backhide = True,
-						Label__posnHorz = &#39;right&#39;,
-						Label__size = &#39;14pt&#39;, 
-						Label__color = &#39;black&#39;
-						)
-
-	histKey = graphList[1].Add(&#39;key&#39;, autoadd=False, 
-						horzPosn = &#39;left&#39;,
-						vertPosn = &#39;top&#39;,
-						Text__font = font,
-						Text__size = &#39;15&#39;,
-						Border__width = &#39;1.5pt&#39;
-						)
-	
-	end = raw_input(&amp;quot;Press any key to finish...&amp;quot;)
-	
-	figure.Save(&amp;quot;example.vsz&amp;quot;)
-	figure.Export(&amp;quot;example.png&amp;quot;, backcolor=&#39;#ffffff&#39;)
-	figure.Export(&amp;quot;example.pdf&amp;quot;)
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-	inpath = &amp;quot;./&amp;quot;
-	outpath = &#39;./&#39;
-	tt = time.time()
-	plotFunc(inpath, outpath)
-	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../files/example.png&#34; alt=&#34;Veusz plot&#34; title=&#34;Veusz plot&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
-# -*- coding: utf8 -*- 
-
-from __future__ import division # no more &amp;quot;zero&amp;quot; integer division bugs!:P
-import time
-import numpy as np
-import matplotlib.pylab as plt
-import matplotlib.font_manager as font_manager
-
-# SM like style
-params = {&#39;backend&#39;: &#39;png&#39;,
-		&#39;font.family&#39;: &amp;quot;serif&amp;quot;,
-		&#39;font.size&#39;: 25,
-		&#39;axes.labelsize&#39;: 35,
-		#&#39;text.fontsize&#39;: 30,
-		&#39;legend.fontsize&#39;: 30,
-		&#39;xtick.labelsize&#39;: 28,
-		&#39;xtick.major.size&#39;: 20.0,
-		&#39;xtick.major.width&#39;: 3.0,
-		&#39;xtick.minor.size&#39;: 12.0,
-		&#39;xtick.minor.width&#39;: 2,
-		&#39;ytick.labelsize&#39;: 28,
-		&#39;ytick.major.size&#39;: 20.0,
-		&#39;ytick.major.width&#39;: 3.0,
-		&#39;ytick.minor.size&#39;: 12.0,
-		&#39;ytick.minor.width&#39;: 2,
-		#&#39;text.usetex&#39;: True,
-		&#39;axes.linewidth&#39;: 3.0,
-		&#39;lines.linewidth&#39;: 2,
-		&#39;lines.markersize&#39;: 15,
-		&#39;axes.grid&#39;: False,
-		&#39;grid&#39;: {&#39;color&#39;:&#39;gray&#39;, &#39;linestyle&#39;:&#39;-&#39;, &#39;linewidth&#39;:1},
-		&#39;figure.figsize&#39;: (10,10),
-		&#39;figure.subplot.left&#39;: 0.15,  # the left side of the subplots of the figure
-		&#39;figure.subplot.right&#39;   : 0.95,    # the right side of the subplots of the figure
-		&#39;figure.subplot.bottom&#39;  : 0.12,   # the bottom of the subplots of the figure
-		&#39;figure.subplot.top&#39;     : 0.92,    # the top of the subplots of the figure
-		&#39;figure.subplot.wspace&#39;  : 0.2,    # the amount of width reserved for blank space between subplots
-		&#39;figure.subplot.hspace&#39;  : 0.2,    # the amount of height reserved for white space between subplots
-		&#39;figure.figsize&#39;: (12, 12)
-           }
-plt.rcParams.update(params)
-	
-def sm_hist(data, delta=5, n_bin=None, range_=None):
-	dataMin = np.floor(data.min())
-	dataMax = np.ceil(data.max())
-	n_bin = np.ceil(1.*(dataMax-dataMin) / delta)
-	range_ = (dataMin, dataMin + n_bin * delta)
-	counts, bin_edges = np.histogram(data, n_bin, range_, density = False)
-	# These two lines double the points let you make the histogram
-	counts = np.ravel(zip(counts,counts)) 
-	bin_edges = np.ravel(zip(bin_edges,bin_edges))
-	counts = np.hstack((np.array([0]), counts, np.array([0])))
-	return counts, bin_edges
-	
-	
-def sm_hist2(data, delta=5):
-	dataMin = np.floor(data.min())
-	dataMax = np.ceil(data.max())
-	n_bin = np.ceil(1.*(dataMax-dataMin) / delta) + 1
-	idxs = ((data  - dataMin) / delta).astype(int)
-	counts = np.zeros(n_bin) 
-	bin_edges = np.arange(dataMin, dataMax+delta, delta)
-	for idx in idxs:
-		counts[idx] += 1
-	print counts
-	# These two lines double the points let you make the histogram
-	counts = np.ravel(zip(counts,counts)) 
-	bin_edges = np.ravel(zip(bin_edges,bin_edges))
-	counts = np.hstack((np.array([0]), counts))
-	bin_edges = np.hstack((bin_edges, bin_edges[-1]))
-	return counts, bin_edges
-
-def singlePlotScatter(xData, yData, nRows, nCols, x0, y0, rowspan, colspan):
-	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
-	ax.set_xlabel(&amp;quot;x label&amp;quot;)
-	ax.set_ylabel(&amp;quot;y label&amp;quot;)
-	ax.set_xscale(&amp;quot;linear&amp;quot;)
-	ax.set_yscale(&amp;quot;linear&amp;quot;)
-	ax.set_title(&amp;quot;Plot title&amp;quot;)
-	ax.title.set_y(1.02) # adjust title position
-	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
-	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
-	ax.plot(xData, yData, 
-			color = &amp;quot;green&amp;quot;, 
-			markeredgewidth = 0.8, 
-			linestyle = &#39;-&#39;, 
-			linewidth = 2,
-			marker = &#39;o&#39;, 
-			markersize = 1, 
-			label = &amp;quot;label&amp;quot;)
-	return ax
-
-def singlePlotHist(yData, nRows, nCols, x0, y0, rowspan, colspan):
-	ax = plt.subplot2grid((nRows,nCols), (x0,y0), rowspan, colspan)
-	ax.set_xlabel(&amp;quot;x label&amp;quot;)
-	ax.set_ylabel(&amp;quot;y label&amp;quot;)
-	ax.set_xscale(&amp;quot;linear&amp;quot;)
-	ax.set_yscale(&amp;quot;linear&amp;quot;)
-	ax.set_title(&amp;quot;Plot title&amp;quot;)
-	ax.title.set_y(1.02) # adjust title position
-	ax.xaxis.grid(True, which=&amp;quot;both&amp;quot;)
-	ax.yaxis.grid(True, which=&amp;quot;major&amp;quot;)
-	counts, bin_edges = sm_hist2(yData, delta = 10)
-	ax.set_ylim((0, 1.2*counts.max()))
-	
-	ax.plot(bin_edges, counts, 
-				color = &amp;quot;blue&amp;quot;,
-				alpha = 0.8,
-				linewidth = 2,
-				antialiased = True,
-				zorder = 3 
-				)
-	ax.fill(bin_edges, counts, 
-				alpha = 0.5,
-				hatch = &amp;quot;/&amp;quot;,
-				edgecolor = &amp;quot;blue&amp;quot;,
-				facecolor = &amp;quot;white&amp;quot;,
-				antialiased = True, 
-				label = &amp;quot;whatever you want&amp;quot;
-				)
-	ax.legend(loc=&#39;upper left&#39;, numpoints = 1, prop=font_manager.FontProperties(size=18)).draw_frame(False)
-
-	return ax
-
-if __name__ == &amp;quot;__main__&amp;quot;:
-	tt = time.time()
-	xData = np.arange(100) 
-	yData = np.random.randint(0, 100, size=100) + np.sin(np.arange(100))
-	
-	fig = plt.figure()
-	fig.suptitle(&amp;quot;Figure title&amp;quot;)
-	axs = []
-	nPlots = 2
-	
-	axs.append(singlePlotScatter(xData, yData, nRows=1, nCols=2, x0=0, y0=0, rowspan=1, colspan=1))
-	axs.append(singlePlotHist(yData, nRows=1, nCols=2, x0=0, y0=1, rowspan=1, colspan=1))
-	
-	fig.set_size_inches(20, 10)
-	plt.savefig(&amp;quot;./grid.png&amp;quot;, dpi=100)
-	plt.close(fig)
-	
-	print &amp;quot;Done in &amp;quot;, time.time()-tt, &amp;quot; seconds.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../files/grid.png&#34; alt=&#34;Matplotlib plot&#34; title=&#34;Mathplotlib plot&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1232,87 +93,25 @@ if __name__ == &amp;quot;__main__&amp;quot;:
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
-      <description>
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://scikit-learn.org/stable/modules/linear_model.html&#34;&gt;SciKit Generalized Linear Models&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;linear-least-squares-fits-with-errors-in-both-coordinates:19&#34;&gt;Linear least-squares fits with errors in both coordinates.&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jordanperr/PH291-Dual-Axis-Error-Calculation&#34;&gt;PH291-Dual-Axis-Error-Calculation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://idlastro.gsfc.nasa.gov/ftp/pro/math/fitexy.pro&#34;&gt;IDL function&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://libraries.maine.edu/Spatial/gisweb/spatdb/acsm/ac94053.html&#34;&gt;Weighted least-squares curve fitting with errors in all variables&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;gaussian-processes-variograms-kriging:19&#34;&gt;Gaussian processes / variograms / Kriging&lt;/h2&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34;&gt;http://www.ambhas.com/tools/html/krige_8py_source.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&#34;&gt;http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/?p=409&#34;&gt;http://blog.technokrat.nl/?p=409&lt;/a&gt; (qui usano la versione R in python)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/pull/14&#34;&gt;https://github.com/scikit-learn/scikit-learn/pull/14&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&#34;&gt;http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb&lt;/a&gt; (gaussian processes è il nome ufficiale e generico degli algoritmi tipo quelli di krige)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&#34;&gt;http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&#34;&gt;http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.gaussianprocess.org/&#34;&gt;http://www.gaussianprocess.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pygpr.sourceforge.net/&#34;&gt;http://pygpr.sourceforge.net/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&#34;&gt;http://sysbio.mrc-bsu.cam.ac.uk/group/images/6/6f/Infpy_gp.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&#34;&gt;https://code.google.com/p/python-in-hydrology/source/browse/trunk/codes/foo/krig_example.py?r=9&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.enthought.com/services/training/geophysics&#34;&gt;https://www.enthought.com/services/training/geophysics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ambhas.com/books/python-in-hydrology/book.html&#34;&gt;http://ambhas.com/books/python-in-hydrology/book.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&#34;&gt;http://www.astroml.org/book_figures/chapter8/fig_gp_example.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&#34;&gt;https://github.com/astroML/astroML/blob/master/book_figures/chapter8/fig_gp_mu_z.py&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&#34;&gt;http://books.google.it/books?id=2fM8AQAAQBAJ&amp;amp;pg=PA539&amp;amp;lpg=PA539&amp;amp;dq=astroml+variogram&amp;amp;source=bl&amp;amp;ots=_9Pq65sDwK&amp;amp;sig=IU2yqsREt7hze9xjKx3rBrUb5aA&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=S40GU5OsGsnStAbM54CYAw&amp;amp;ved=0CCoQ6AEwAA#v=onepage&amp;amp;q=astroml%20variogram&amp;amp;f=false&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&#34;&gt;http://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/stober/4964727&#34;&gt;https://gist.github.com/stober/4964727&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>SciKit Generalized Linear Models  Linear least-squares fits with errors in both coordinates.  PH291-Dual-Axis-Error-Calculation IDL function Weighted least-squares curve fitting with errors in all variables
+Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige_8py_source.html
+ http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56
+ http://blog.technokrat.nl/?p=409 (qui usano la versione R in python)
+ https://github.com/scikit-learn/scikit-learn/pull/14
+ http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section5_1-Gaussian-Processes.ipynb (gaussian processes è il nome ufficiale e generico degli algoritmi tipo quelli di krige)
+ http://girs.googlecode.com/svn/trunk/maths/kriging/kriging.py
+ http://scikit-learn.org/0.11/auto_examples/gaussian_process/plot_gp_regression.html
+ http://www.gaussianprocess.org/</description>
     </item>
     
     <item>
       <title>GW links</title>
-      <link>http://brunettoziosi.eu/pages/research/GW-links/</link>
+      <link>http://brunettoziosi.eu/pages/research/gw-links/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/GW-links/</guid>
-      <description>&lt;p&gt;List of useful links about gravitational waves:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://rhcole.com/apps/GWplotter/&#34;&gt;Gravitational waves detector and sources interactive plot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.blackholehunter.org/&#34;&gt;Black hole hunter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ego-gw.it/&#34;&gt;EGO - European Gravitational Observatory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://wwwcascina.virgo.infn.it/&#34;&gt;VIRGO&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/&#34;&gt;LIGO - Laser Interferometer Gravitational Wave Observatory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ttps://www.elisascience.org&#34;&gt;eLISA - Evolved Laser Interferometer Space Antenna&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.auriga.lnl.infn.it/&#34;&gt;AURIGA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.minigrail.nl/&#34;&gt;MiniGRAIL - Gravitational Radiation Antenna In Leiden&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ipta4gw.org/&#34;&gt;IPTA - International Pulsar Timing Array&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.epta.eu.org/&#34;&gt;EPTA - The European Pulsar Timing Array&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/ebook/&#34;&gt;E-Book on gravitational wave detection&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.gwoptics.org/processing/&#34;&gt;Games for science teaching, outreach and research&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cplberry.com/&#34;&gt;Christopher Berry hompage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/MOBle/MatchedFiltering&#34;&gt;MatchedFiltering ipython notebook with wave amplitude&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ligo.org/scientists/first2years/&#34;&gt;The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://brunettoziosi.eu/pages/research/gw-links/</guid>
+      <description>List of useful links about gravitational waves:
+ Gravitational waves detector and sources interactive plot Black hole hunter EGO - European Gravitational Observatory VIRGO LIGO - Laser Interferometer Gravitational Wave Observatory eLISA - Evolved Laser Interferometer Space Antenna AURIGA MiniGRAIL - Gravitational Radiation Antenna In Leiden IPTA - International Pulsar Timing Array EPTA - The European Pulsar Timing Array E-Book on gravitational wave detection Games for science teaching, outreach and research Christopher Berry hompage MatchedFiltering ipython notebook with wave amplitude The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo  </description>
     </item>
     
     <item>
@@ -1321,123 +120,8 @@ if __name__ == &amp;quot;__main__&amp;quot;:
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
-compact-object binaries&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;My PhD project is devoted to improving our knowledge on the demographics
-and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH),
-neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters.
-The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources.
-Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General
-Relativity: while indirect confirmations of GWs came from observations of pulsar
-binaries, a direct detection of GWs is still missing.
-Mergers of binaries
-are among the most promising sources of GWs in the frequency range that will be
-explored by Advanced Virgo and LIGO (~10-10000 Hz).&lt;/p&gt;
-
-&lt;p&gt;My research focus on three main fronts:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;the impact of dynamics and metallicity on
-the formation and evolution of double compact-object binaries&lt;/li&gt;
-&lt;li&gt;the effects
-of a tidal field on the evolution of star clusters and on the
-demography of DCO binaries inside them,&lt;/li&gt;
-&lt;li&gt;the changes in the DCO binaries demography
-considering different initial structural properties of the clusters (mass, concentration,
-primordial binaries fraction, density, &amp;hellip;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To investigate the impact of dynamics and metallicity on double compact-object binaries demography,
-I analyzed 600 random realizations of a young dense star cluster at different metallicities.
-I was interested in the binary orbital properties, lifetimes, number of exchanges and coalescence timescales
-(the time a binary need to merge only because of gravitational wave emission).
-We chose young and dense star cluster as environment in which to study DCO binaries
-because they are the preferential
-environment for star formation (Lada &amp;amp; Lada, 2003) and gravitational interactions are efficient in exchanging
-energy on short times.&lt;/p&gt;
-
-&lt;p&gt;My results, published in Ziosi et al. (2014), confirm that the cluster dynamics
-favours the formation of BH-BH binaries and were tested against the literature.&lt;/p&gt;
-
-&lt;p&gt;The results I obtained, however, stand on two critical assumptions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I assumed that the
-star cluster would life unpeturbed for 100 Myr but after that time they should be
-dissolved into the galactic disc because of the host galaxy tidal field&lt;/li&gt;
-&lt;li&gt;I only simulated random realizations of a single star cluster model.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both the assumptions can heavily affect estimations on the demography of the DCO binaries
-and the two other parts of my project are devoted to overcome these limitations.&lt;br /&gt;
-To face the first issue I implemented in the code
-a numerical recipe (the one proposed in Allen &amp;amp; Santillan, 1991) to accurately include the host galaxy gravitational tidal field.
-I am now testing the new tidal field. As soon as it is proved to
-be reliable I will study the effect of the disk component on the life
-of the star clusters and on the DCO binaries dynamics and demography.
-In particoular, it is interesting the case in which the cluster is not on a circoular orbit
-coplanar with the galactic disk but on an eccentric and inclined one.
-In this case the potential changes rapidly with the time and the effect on the cluster can be
-remarkable (see Madrid et al., 2014).&lt;/p&gt;
-
-&lt;p&gt;Regarding the second issue, it is necessary to quantify the effect of initial
-structural properties of the cluster on the double compact-object binaries population.
-First of all, cluster structural properties can affect double compact-object binaries demography&lt;br /&gt;
-because they influence the dynamical interactions rate among binaries, exchanges included,
-and the cluster surviving time to the tidal field.
-Then, analysing a a wide spectrum of different clusters we would be able to
-better calibrate the results on the real population of clusters in our galaxy and
-in the galaxies at distances smaller than the LIGO/Virgo horizon.
-To this purpose, I am running tens of simulations spanning a wide range of initial
-structural properties.  All the simulations make havy use of HPC hardware (GPU clusters) and
-I built the necessary computational tools to run, manage and analyze all these simulations.
-As soon as the simulations are finished, I will explore the results to understand the behaviour of the different clusters.
-This would make us able to highlight which aspects of the star clusters
-are more relevant on the formation and evolution of such binaries and how they impact on them.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;../GW-links&#34;&gt;GW useful links&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;phd-exams-and-courses:23&#34;&gt;PhD exams and courses&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Galaxy formation (Dr. Poggianti)&lt;/li&gt;
-&lt;li&gt;High energy astrophysics (Prof Franceschini)&lt;/li&gt;
-&lt;li&gt;Extrasolar planets (Dr. Claudi)&lt;/li&gt;
-&lt;li&gt;Scientific projects management (Dr. Farinato)&lt;/li&gt;
-&lt;li&gt;Galaxy Archeology (Prof. Saglia)&lt;/li&gt;
-&lt;li&gt;Nucleosynthesis in the early galaxy (Prof. Sneden)&lt;/li&gt;
-&lt;li&gt;Collisional dynamics in stellar systems (Dr. Mapelli)&lt;/li&gt;
-&lt;li&gt;Supernovae (Dr. Pastorello)&lt;/li&gt;
-&lt;li&gt;Astronomia X (Dr. Zampieri)&lt;/li&gt;
-&lt;li&gt;Paper writing (Prof. Sneden)&lt;/li&gt;
-&lt;li&gt;Gravitional lensing (Dr. Giocoli)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;phd-schools-and-conferences:23&#34;&gt;PhD schools and conferences&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/conference/GPU2014/&#34;&gt;Perspectives of GPU computing in Physics and Astrophysics&lt;/a&gt;, Dep. of Physics of Sapienza - Rome, 15-17 Semptember 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiRomaGPU&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sexten-cfa.eu/conferences/2014/details/42-stellar-n-body-dynamics&#34;&gt;Stellar N-body Dynamics&lt;/a&gt;, Sport &amp;amp; Kurhotel at Bad Moos - Sexten (Italy), 8-12 September 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiSestoNBody.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://members.aei.mpg.de/amaro-seoane/astro-gr-rome&#34;&gt;Astro-GR@Rome&lt;/a&gt;, Rome - Monteporzio Catone, 14-18 July 2014&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.astro.uni-bonn.de/~sambaran/DS2014/&#34;&gt;MODEST 14 - The dance of stars: dense stellar systems from infant to old&lt;/a&gt;, Bad Honnef Physics Center (Germany), 2-6 June 2014, &lt;a href=&#34;../../files/Presentations/2014-ZiosiMODEST14.pdf&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/W2.html&#34;&gt;Dynamics &amp;amp; Kinetic theory of self-gravitating systems Workshop&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 4-8 November 2013&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/P3.html&#34;&gt;Galactic Dynamics Seminar&lt;/a&gt; @ &lt;a href=&#34;http://uma.ensta-paristech.fr/conf/gravasco/home.html&#34;&gt;Gravasco IHP trimester &amp;ldquo;N body gravitational
-dynamical systems From N=2 to infinity&amp;hellip;&amp;rdquo;&lt;/a&gt;, Paris, 21th October-1st November 2013, &lt;a href=&#34;../../files/Presentations/2013-11-08-Gravasco-Ziosi_NO_appendix.pdf&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Workshop on High Performance Scientific Computing, Strategic Research Project AACSE, 19 Semptember 2013 @ Departement of Information Engineering, Padua&lt;/li&gt;
-&lt;li&gt;PhD Summer School on High Performance Scientific Computing, Strategic Research Project AACSE, 16-18 Semptember 2013 @ Departement of Information Engineering, Padua, [Presentation]()&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://agenda.infn.it/conferenceDisplay.py?confId=5719&#34;&gt;INFN School Of Statistics, 3-7 June 2013, Vietri sul Mare (SA)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.roma1.infn.it/teongrav/VESF/SCHOOL2013_WEBSITE/Vesf_School.html&#34;&gt;School on Gravitational Waves, neutrinos
-and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 10-15 April 2013, Monteporzio Catone (Rome)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mpia.de/imprs-hd/SummerSchools/2012/&#34;&gt;IMPRS Summer School on Computational Astrophysics&lt;/a&gt;, 10-14 September 2012, Heidelberg, Germany&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://isa2012.oa-teramo.inaf.it/index.php/home&#34;&gt;International School of Astrophysics on the Fundamental Cosmic distance scale and the Transient Sky&lt;/a&gt;, 11-15 June 2012, Teramo, Italy, [Presentation]()&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cineca.it/it/content/summer-school-parallel-computing&#34;&gt;Summer School of Parallel Computing&lt;/a&gt;, 2-13 July 2012 @ CINECA&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../img/tyrion.png&#34; alt=&#34;tyrion_phd&#34; title=&#34;Tyrion PhD&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>The impact of stellar evolution and dynamics on the formation of compact-object binaries
+My PhD project is devoted to improving our knowledge on the demographics and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH), neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters. The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources. Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General Relativity: while indirect confirmations of GWs came from observations of pulsar binaries, a direct detection of GWs is still missing.</description>
     </item>
     
     <item>
@@ -1446,163 +130,10 @@ and multiwavelenght e.m. observations: the new frontier of Astronomy&lt;/a&gt;, 
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
-      <description>
-
-&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;../../../../posts/starlab-gpu-installation&#34;&gt;Click here for the &lt;strong&gt;new guide!!!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;to-install-cuda-you-can-try-with-the-cuda-packages-in-the-ubuntu-repositories:57&#34;&gt;To install CUDA you can try with the CUDA packages in the Ubuntu repositories.&lt;/h2&gt;
-
-&lt;p&gt;If they fail, you have to download CUDA from ****&lt;/p&gt;
-
-&lt;p&gt;To locate the CUDA files you can try:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudaart&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- TEASER_END --&gt;
-
-&lt;h2 id=&#34;sapporo:57&#34;&gt;Sapporo&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;in setup_sapporo.sh change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda-5.0/:/usr/local/cuda-5.0/samples/common/inc:/usr/include/boost/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(installation of the binary drivers from the NVIDIA site) to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export LD_LIBRARY_PATH=/usr/include/:/usr/lib/nvidia-cuda-toolkit/include/:/usr/include/boost/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(ubuntu CUDA distro packages)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;in Makefile put the right path in &lt;code&gt;NVCC := /usr/bin/nvcc&lt;/code&gt; and be sure to have the right
-paths in&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAPATH    := /usr/include/
-#/usr/local/cuda-5.0
-CUDASDKPATH := /usr/lib/nvidia-cuda-toolkit/include/
-#/usr/local/cuda-5.0/samples/common/inc
-CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)
-# RE - added these path/includes (added to NVCCFLAGS and CXXFLAGS, too)
-BOOSTPATH := /usr/include/boost 
-BOOSTINCLUDE := -I$(BOOSTPATH)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;the commented path refers to the binary installation from the NVIDIA site.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Launch &lt;code&gt;bash ./setup_sapporo.sh&lt;/code&gt; and if you get&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;host_evaluate_gravity.cu:3: fatal error: multithreading.h: No such file or directory
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;puth &lt;code&gt;multithreading.h&lt;/code&gt; in the sapporo folder and then in &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;multithreading.h&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;quot;multithreading.h&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;so c++ can find the header in the current directory.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;if all is going right, by running again &lt;code&gt;bash setup_sapporo.sh&lt;/code&gt; you should
-obtain something like
-````bash
-/bin/rm -rf *.o &lt;em&gt;.cu_o libsapporo.a
-/bin/rm -rf test_gravity_block test_gravity_N2ngb
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost    -c -o GPUWorker.o GPUWorker.cc
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporo.cpp -o sapporo.o
-sapporo.cpp: In member function ‘int sapporo::open(int)’:
-sapporo.cpp:40:25: warning: ignoring return value of ‘char&lt;/em&gt; fgets(char&lt;em&gt;, int, FILE&lt;/em&gt;)’, declared with attribute warn_unused_result [-Wunused-result]
-sapporo.cpp:42:25: warning: ignoring return value of ‘char* fgets(char&lt;em&gt;, int, FILE&lt;/em&gt;)’, declared with attribute warn_unused_result [-Wunused-result]
-sapporo.cpp:67:24: warning: ignoring return value of ‘char* fgets(char&lt;em&gt;, int, FILE&lt;/em&gt;)’, declared with attribute warn_unused_result [-Wunused-result]
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c send_fetch_data.cpp -o send_fetch_data.o
-g++ -O3 -DNGB -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c sapporoG6lib.cpp -o sapporoG6lib.o&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;*/usr/bin/nvcc -O0 -g -D_DEBUG  -maxrregcount=64 -I/usr/include//include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost  -c host_evaluate_gravity.cu -o host_evaluate_gravity.cu_o
- Iar qv libsapporo.a GPUWorker.o sapporo.o send_fetch_data.o sapporoG6lib.o host_evaluate_gravity.cu_o
-ar: creating libsapporo.a
-a - GPUWorker.o
-a - sapporo.o
-a - send_fetch_data.o
-a - sapporoG6lib.o
-a - host_evaluate_gravity.cu_o
-ranlib libsapporo.a&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-* to test the compilation run 
-````bash 
-test_gravity_N2ngb 900
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;test_gravity_block 900
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where 900 is the number of particles involved in the test. You can choose the number you prefer
-but the test fail if the number is less than ~800.&lt;/p&gt;
-
-&lt;h2 id=&#34;starlab:57&#34;&gt;StarLab&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;change configure CUDA lines:
-&lt;code&gt;bash
-CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;quot; 
-CUDALIB=&amp;quot;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;quot;
-LIBS=&amp;quot;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;quot;
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;and change local/grape.sh
-````bash
-CUDAINC=&amp;ldquo;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/ -I/usr/include/boost&amp;rdquo;
-CUDALIB=&amp;ldquo;-L/usr/libx86_64-linux-gnu/ -lcudart&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;cudainc-i-usr-local-cuda-5-0-include-i-usr-local-cuda-5-0-samples-common-inc-i-usr-include-boost:57&#34;&gt;CUDAINC=&amp;ldquo;-I/usr/local/cuda-5.0/include -I/usr/local/cuda-5.0/samples/common/inc -I/usr/include/boost&amp;rdquo;&lt;/h1&gt;
-
-&lt;h1 id=&#34;cudalib-l-usr-local-cuda-5-0-lib64-lcudart:57&#34;&gt;CUDALIB=&amp;ldquo;-L/usr/local/cuda-5.0/lib64/ -lcudart&amp;rdquo;&lt;/h1&gt;
-
-&lt;p&gt;LIBS1=&amp;ldquo;$CUDAINC $CUDALIB -lboost_system -lboost_thread -lpthread -DNGB&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;#g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $LIBS1&lt;/p&gt;
-
-&lt;h1 id=&#34;where-to-find-grape-libraries:57&#34;&gt;Where to find GRAPE libraries:&lt;/h1&gt;
-
-&lt;h1 id=&#34;grape-ldflags-l-home-mapelli-micmap-programmi-sapporo161-release:57&#34;&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/mapelli/MICMAP/programmi/sapporo161_release/&amp;rsquo;&lt;/h1&gt;
-
-&lt;p&gt;GRAPE&lt;em&gt;LDFLAGS&lt;/em&gt;=&amp;lsquo;-L/home/ziosi/Code/Mapelli/starlab/sapporo/sapporo161_release&amp;rsquo;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-* run `make clean`
-
-* run `./configure --without-fortran` (`--without-f77`)
-
-* `make`
-
-* `make install`
-
-* now you can find the `kira` binary in `/usr/local/bin` or`/usr/bin`
-
-* run 
-````bash
-./kira -t 500 -d 1 -D 1 -b 1 \
-             -n 10 -e 0.000 -B   \
-	 &amp;lt;  cineca95_bin_N5000_frac01_W5_Z001_IC.txt \
-	 &amp;gt; new_cineca95_bin_N5000_frac01_W5_Z001.txt \
-	 2&amp;gt; ew_cineca95_bin_N5000_frac01_W5_Z001.txt
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Click here for the new guide!!!
+To install CUDA you can try with the CUDA packages in the Ubuntu repositories. If they fail, you have to download CUDA from ****
+To locate the CUDA files you can try:
+ locate cuda | grep nvcc locate cuda | grep include locate cuda | grep include | grep toolkit (for the SDK files of the new release) locate cuda | grep lib | grep cudaart  Sapporo  in setup_sapporo.</description>
     </item>
     
     <item>
@@ -1611,11 +142,7 @@ g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CU
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/astrocomputing/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro&#34;&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt;
-also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Frequentism and Bayesianism: A Practical Introduction also here  </description>
     </item>
     
     <item>
@@ -1624,46 +151,7 @@ also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/l
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/bachelor/</guid>
-      <description>
-
-&lt;h2 id=&#34;bachelor-degree-exams:59&#34;&gt;Bachelor Degree Exams&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Mathematical analysis 1 &lt;a href=&#34;23&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mathematical analysis 2 &lt;a href=&#34;20&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mathematical analysis 3 &lt;a href=&#34;21&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astronomy 1 (sperical astronomy, coordinates, &amp;hellip;) &lt;a href=&#34;29&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astronomy 2 (observational astronomy, photometry, &amp;hellip;) &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Historical astronomy &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics 1 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics 2 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics 3 &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics lab 1 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Physics lab 2 &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Geometry &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Computer science&lt;/li&gt;
-&lt;li&gt;Scientific English&lt;/li&gt;
-&lt;li&gt;Descriptive statistics &lt;a href=&#34;20&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, &amp;hellip;) &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysics 2 (A: spectroscopy, B: stellar structure) &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Chemistry 1 &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Chemistry 2 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Analytical mechanics &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Complementary astrophysics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cosmology &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Plasma physics fundamentals &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Statistical inference 1B &lt;a href=&#34;18&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Principles of quantum mechanics &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Principles of (special) relativity &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Digital data analysis lab. (FSE)&lt;/li&gt;
-&lt;li&gt;Astronomy lab &lt;a href=&#34;30+&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mathematical methods &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Structure of matter 1 &lt;a href=&#34;18&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../files/ZiosiBachelorThesis.pdf&#34;&gt;Final thesis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Banner from &lt;a href=&#34;http://www.extremetech.com/&#34;&gt;http://www.extremetech.com/&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Bachelor Degree Exams  Mathematical analysis 1  Mathematical analysis 2  Mathematical analysis 3  Astronomy 1 (sperical astronomy, coordinates, &amp;hellip;)  Astronomy 2 (observational astronomy, photometry, &amp;hellip;)  Historical astronomy  Physics 1  Physics 2  Physics 3  Physics lab 1  Physics lab 2  Geometry  Computer science Scientific English Descriptive statistics  Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, &amp;hellip;)  Astrophysics 2 (A: spectroscopy, B: stellar structure)  Chemistry 1  Chemistry 2  Analytical mechanics  Complementary astrophysics  Cosmology  Plasma physics fundamentals  Statistical inference 1B  Principles of quantum mechanics  Principles of (special) relativity  Digital data analysis lab.</description>
     </item>
     
     <item>
@@ -1672,33 +160,7 @@ also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/l
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/master/</guid>
-      <description>
-
-&lt;h2 id=&#34;master-degree-exams:62&#34;&gt;Master Degree Exams&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Astroparticle physics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;General relativity &lt;a href=&#34;30+&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;High anergy astrophysics &lt;a href=&#34;29&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Galactic astrophysics 1 &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stellar and planetary astrophysics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Theoretical astrophysics 1 &lt;a href=&#34;24&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Numerical computing &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Complemetary mathematics &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cosmology &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Elementary particle physics &lt;a href=&#34;30&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Structure of matter 2 &lt;a href=&#34;21&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysical lab 1 &lt;a href=&#34;26&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Astrophysical lab 2 &lt;a href=&#34;28&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;OO programming &lt;a href=&#34;27&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Cosmological structure formation &lt;a href=&#34;25&#34;&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Photometric and spectroscopic digital analysis lab. (FSE)&lt;/li&gt;
-&lt;li&gt;Internship: Technical characterization of the Astrophysical Observatory of Asiago&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../files/ZiosiMasterThesis.pdf&#34;&gt;Final thesis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Banner from &lt;a href=&#34;http://www.mpa-garching.mpg.de/galform/millennium-II/Images/&#34;&gt;http://www.mpa-garching.mpg.de&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Master Degree Exams  Astroparticle physics  General relativity  High anergy astrophysics  Galactic astrophysics 1  Stellar and planetary astrophysics  Theoretical astrophysics 1  Numerical computing  Complemetary mathematics  Cosmology  Elementary particle physics  Structure of matter 2  Astrophysical lab 1  Astrophysical lab 2  OO programming  Cosmological structure formation  Photometric and spectroscopic digital analysis lab. (FSE) Internship: Technical characterization of the Astrophysical Observatory of Asiago Final thesis  Banner from http://www.</description>
     </item>
     
     <item>
@@ -1707,59 +169,9 @@ also &lt;a href=&#34;../../../files/FreqBayes.ipynb&#34;&gt;here&lt;/a&gt;&lt;/l
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/research/</guid>
-      <description>
-
-&lt;h2 id=&#34;phd-project-phd:70&#34;&gt;&lt;a href=&#34;../phd&#34;&gt;PhD Project&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;The impact of stellar evolution and dynamics on the formation of
-compact-object binaries&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;During my PhD I was part of &lt;a href=&#34;http://web.pd.astro.it/mapelli/group.html&#34;&gt;Dr. Mapelli&amp;rsquo;s research group&lt;/a&gt; working
-on N-body simulations of young and dense star clusters in order to
-understand the impact of stellar evolution and dynamics on the formation and evolution
-of compact-object (neutron stars and black holes) binary systems.&lt;br /&gt;
-These objects are thought to be the best candidates to produce gravitational
-waves observable in the near future with the second-generation ground-based
-gravitational wave interferometers Advanced Ligo and Virgo.&lt;/p&gt;
-
-&lt;p&gt;More info &lt;a href=&#34;../phd&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;scientific-interests:70&#34;&gt;Scientific interests&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;dynamics of black holes and neutron stars in star clusters&lt;/li&gt;
-&lt;li&gt;direct-summation N-body simulations in star clusters&lt;/li&gt;
-&lt;li&gt;gravitational waves in the frequency range of Advanced VIRGO and LIGO&lt;/li&gt;
-&lt;li&gt;stellar and binary evolution&lt;/li&gt;
-&lt;li&gt;big data analysis and visualization&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;master-thesis-master:70&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Master Thesis&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;My master thesis involved developing a code to calculate the cross-correlation
-among the centers of dark matter haloes in cosmological simulations.
-We wanted to do that &amp;ldquo;brute-force&amp;rdquo; in coordinate space instead of adopting the Fourier transform method
-commonly preferred in literature to be able to catch the small features expected at
-small scales. The code is, however, based on a KD-tree to reduce the time needed and
-run in parallel over multiple slices form the same simulation box.&lt;/p&gt;
-
-&lt;h2 id=&#34;bachelor-thesis-master:70&#34;&gt;&lt;a href=&#34;../master&#34;&gt;Bachelor Thesis&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;My bachelor thesis was about the use of optical vortexes (light beams with distorted
-wavefronts) in astrophysics.&lt;/p&gt;
-
-&lt;h2 id=&#34;useful-links:70&#34;&gt;Useful links&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://adsabs.harvard.edu/abstract_service.html&#34;&gt;Nasa ADS&lt;/a&gt;,
-&lt;a href=&#34;http://labs.adsabs.harvard.edu/wiki/doku.php&#34;&gt;Lab version&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv.org&lt;/a&gt;, &lt;a href=&#34;http://arxiv.org/list/astro-ph/new&#34;&gt;new astro* papers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.unipd.it/&#34;&gt;University of Padua&lt;/a&gt;,
-&lt;a href=&#34;http://www.unipd.it/scuole/scienze&#34;&gt;Science School&lt;/a&gt;,
-&lt;a href=&#34;http://www.dfa.unipd.it/&#34;&gt;Department of Physics and Astronomy&lt;/a&gt;,
-&lt;a href=&#34;http://www.dfa.unipd.it/index.php?id=112&#34;&gt;Building&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>PhD Project The impact of stellar evolution and dynamics on the formation of compact-object binaries
+During my PhD I was part of Dr. Mapelli&amp;rsquo;s research group working on N-body simulations of young and dense star clusters in order to understand the impact of stellar evolution and dynamics on the formation and evolution of compact-object (neutron stars and black holes) binary systems.
+These objects are thought to be the best candidates to produce gravitational waves observable in the near future with the second-generation ground-based gravitational wave interferometers Advanced Ligo and Virgo.</description>
     </item>
     
     <item>
@@ -1768,9 +180,7 @@ wavefronts) in astrophysics.&lt;/p&gt;
       <pubDate>Tue, 20 Aug 2013 09:34:11 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/starlab-gpu-installation/</guid>
-      <description>
-
-&lt;ul&gt;
+      <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../../pages/research/utils/starlab-gpu-old-guide&#34;&gt;Click here for the old guide!!!&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;2014/09/16: updated with installation instruction for g2@Swinburne and some troubleshooting.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1809,557 +219,461 @@ I also thanks Mario Spera for the usefull advices.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISCLAIMER 3:&lt;/strong&gt; StarLab still seems to &lt;strong&gt;always&lt;/strong&gt; crash if you try to simulate a system
 with more than ~6000 binaries.&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab:77&#34;&gt;StarLab&lt;/h2&gt;
+&lt;h2 id=&#34;starlab&#34;&gt;StarLab&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;StarLab&lt;/a&gt; is &amp;ldquo;A Software Environment for Collisional Stellar Dynamics&amp;rdquo;.
 &lt;a href=&#34;http://www.sns.ias.edu/~starlab/&#34;&gt;Here&lt;/a&gt; you can find useful information about it that
 is not useful to rewrite here, so have a look and then come back!:)&lt;/p&gt;
 
-&lt;h2 id=&#34;starlab-gpu:77&#34;&gt;StarLab-GPU&lt;/h2&gt;
-
-&lt;p&gt;Welcome back!!&lt;br /&gt;
-Next step: StarLab was designed to run on &lt;a href=&#34;http://en.wikipedia.org/wiki/Gravity_Pipe&#34;&gt;GRAPE&lt;/a&gt;
-but thanks to the &lt;a href=&#34;http://castle.strw.leidenuniv.nl/software/sapporo.html&#34;&gt;Sapporo&lt;/a&gt;
-library you can run it on GPUs.&lt;/p&gt;
-
-&lt;p&gt;Now we will try to install a GPU-ready version of StarLab. To be honest, we run
-a &lt;strong&gt;private&lt;/strong&gt; version of StarLab for GPU with some customizations (if you are interested,
-see &lt;a href=&#34;http://arxiv.org/abs/1211.6441&#34;&gt;Mapelli et al. 2013&lt;/a&gt;; &lt;a href=&#34;http://arxiv.org/abs/1301.4227&#34;&gt;Mapelli &amp;amp; Bressan 2013&lt;/a&gt;).&lt;br /&gt;
-Unfortunately you can&amp;rsquo;t download it now, but I hope the differences in the installation
-process are negligible. Ask us if you are interested in our version of StarLab.&lt;br /&gt;
-Because I&amp;rsquo;m not sure about what you will find in the public version os Sapporo and StarLab,
-I will show my version of the relevant files you need to install everything.
-The installation is done on a Ubuntu 14.04 workstation so change them accordingly to
-your OS. I will also provide some examples on what you need to install StarLab on
-the clusters I tested.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s start!!&lt;/p&gt;
-
-&lt;h4 id=&#34;download:77&#34;&gt;Download&lt;/h4&gt;
-
-&lt;p&gt;Be sure you have boost libraries, nVidia driver and CUDA correctly installed.
-You can try to check them using&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep nvcc&lt;/code&gt; (cuda compiler)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep include | grep toolkit&lt;/code&gt; (for the SDK files of the new release)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | grep lib | grep cudart&lt;/code&gt; (CUDA runtime)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | boost lib&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;locate cuda | boost include&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It could be also useful to have a copy of the old CUDA SDK. Yes, I know, it&amp;rsquo;s a mess,
-but it&amp;rsquo;s not my fault!:P&lt;/p&gt;
-
-&lt;p&gt;Download&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/download/starlab.tar.gz&#34;&gt;StarLab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://castle.strw.leidenuniv.nl/documents/Sapporo/sapporo161.tgz&#34;&gt;Sapporo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and decompress the archives with &lt;code&gt;tar -xvf archiveName&lt;/code&gt;.&lt;br /&gt;
-Try to have the following folder tree:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_CUDA-5.0_Samples&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/NVIDIA/NVIDIA_GPU_Computing_SDK&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/sapporo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$SLPATH/slpack/starlab&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The NVIDIA folder is optional, but I would suggest to have with you alle the NVIDIA
-file you can find, soon or later you will need them. CUDA is continuosly changing,
-SDK is not toolkit, dependencies are different and broken between different versions.
-We will try to survive and to have the most standard installation we can.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$SLPATH&lt;/code&gt; should be the path where you put your StarLab installation.&lt;br /&gt;
-I&amp;rsquo;m not sure about what you will find in the public version of StarLab and Sapporo.&lt;/p&gt;
-
-&lt;h3 id=&#34;sapporo:77&#34;&gt;Sapporo&lt;/h3&gt;
-
-&lt;p&gt;Enter in the sapporo folder, and to be sure to start a clean installation run
-&lt;code&gt;make clean&lt;/code&gt;.
-Here you need to find:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;compile.sh&lt;/code&gt; is the script StarLab will run later to decide if you are worthy of
-its presence in your computer. If &lt;code&gt;compile.sh&lt;/code&gt; fail, StarLab won&amp;rsquo;t install.&lt;/p&gt;
-
-&lt;p&gt;You also need to find somewhere (= in an old CUDA SKD?)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cutil.h&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;multithreading.h&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and to copy them in this folder.&lt;br /&gt;
-If you are not able to find them, ask me, I have copies of those files.&lt;/p&gt;
-
-&lt;p&gt;Open &lt;code&gt;host_evaluate_gravity.cu&lt;/code&gt; and change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;lt;cutil.h&amp;gt;
-#include &amp;lt;multithreading.h&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;quot;cutil.h&amp;quot;
-#include &amp;quot;multithreading.h&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is to make Sapporo read the local version of &lt;code&gt;cutil.h&lt;/code&gt; and &lt;code&gt;multithreading.h&lt;/code&gt;
-in case your CUDA version does not support them anymore.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s time to fix a bug (thanks Mario):
-in &lt;code&gt;sapporo.cpp&lt;/code&gt; change&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
-		nCUDAdevices = how_many;
-    } else {
-		fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
-		fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
-		//Set original_how_many to a positive number so we get assigned different devices
-		//incase the devices are not in compute exclusive mode.
-		original_how_many = 1;
-  }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;		fprintf(stderr, &amp;quot;\n&amp;quot;);
-		nCUDAdevices = how_many;
-		fclose(fd); // thanks Mario Spera, without this SL will crash after a while if using sapporo.config
-  } else {
-    fprintf(stderr,&amp;quot; sapporo::open - no config file is found \n&amp;quot;);
-    fprintf(stderr,&amp;quot;  using all %d CUDA device(s), nj_max= %d\n&amp;quot;, nCUDAdevices, nj_max);
-    //Set original_how_many to a positive number so we get assigned different devices
-    //incase the devices are not in compute exclusive mode.
-    original_how_many = 1;
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;so the &lt;code&gt;sapporo.config&lt;/code&gt; file can be close and won&amp;rsquo;t crash your run.&lt;/p&gt;
-
-&lt;p&gt;Now open &lt;code&gt;Makefile&lt;/code&gt; and fit&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Makefile&#34;&gt;CXX  := g++
-CC   := gcc
-NVCC := /usr/bin/nvcc
-CUDAPATH    := /usr/include/
-CUDAINCLUDE := -I$(CUDAPATH) 
-BOOSTPATH := /usr/include/boost 
-BOOSTINCLUDE := -I$(BOOSTPATH)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to your case.&lt;br /&gt;
-Open &lt;code&gt;compile.sh&lt;/code&gt; and be sure to have something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/sh
-
-flags=-DNGB
-
-CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
-CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-BOOSTINC=&amp;quot;-I/usr/include/boost&amp;quot;
-BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
-
-
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Try to compile with &lt;code&gt;make&lt;/code&gt;. If it works, try to tun &lt;code&gt;bash compile.sh&lt;/code&gt;. If this works too,
-then test sapporo with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;./test_gravity_block 800&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Be aware that a number (of particles) too small would crash the tests.&lt;/p&gt;
-
-&lt;p&gt;Assuming &lt;code&gt;sapporo&lt;/code&gt; is ready, let&amp;rsquo;s move to starlab.&lt;/p&gt;
-
-&lt;h3 id=&#34;starlab-1:77&#34;&gt;StarLab&lt;/h3&gt;
-
-&lt;p&gt;In StarLab the relevant files you have to worry about are&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sbin/sqrt.c&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;local/grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Rename &lt;code&gt;sbin/sqrt.c&lt;/code&gt; to &lt;code&gt;sbin/sqrt.C&lt;/code&gt; otherwise
-you could have linker problems again the C math library.&lt;br /&gt;
-Now open &lt;code&gt;configure&lt;/code&gt; and search for CUDA. Probably you won&amp;rsquo;t find anything.&lt;br /&gt;
-Search for &lt;code&gt;Check all named libraries for g6_open&lt;/code&gt;, you should find something like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
-
-    grape6=no
-
-    for gl in $GRAPE_LIBS_; do
-        as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-echo &amp;quot;$as_me:$LINENO: checking for g6_open_ in -l${gl/-l/}&amp;quot; &amp;gt;&amp;amp;5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;modify it to include boost and CUDA like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for gl in $GRAPE_LIBS_; do
-	CUDAINC=&amp;quot;-I/usr/include -I/usr/lib/nvidia-cuda-toolkit/include/&amp;quot;
-	CUDALIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-	CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-	BOOSTINC=&amp;quot;-I/usr/include/boost/&amp;quot;
-	BOOSTLIB=&amp;quot;-L/usr/lib/x86_64-linux-gnu/&amp;quot;
-	BOOSTFLAG=&amp;quot;-lboost_system -lboost_thread -lpthread&amp;quot;
-	
-	LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
-		
-	as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Be sure to always use double quotes and to terminate the paths to folders with a slash (&lt;code&gt;/&lt;/code&gt;),
-some machines are quite choosy.&lt;/p&gt;
-
-&lt;p&gt;Last edit is on &lt;code&gt;local/grape.sh&lt;/code&gt; to let StarLab know where your sapporo installation is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$SLPATH/slpack/sapporo&#39;
-GRAPE_LIBS_=&#39;-lsapporo&#39;
-# For now, define this as `yes&#39; for the AMD64 boxes only, `no&#39; otherwise.
-OLD_READ_NEIGHBOUR_LIST=no
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Before compiling, if you want, you can check also &lt;code&gt;sapporo/sapporo.config&lt;/code&gt;.&lt;br /&gt;
-Inside you will find something like that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;524288
--1
-0
-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where 524288 should be the maximum number of particles you can handle, -1 the number
-of CUDA devices to use (-1 means all? maybe&amp;hellip;), 0 and 1 are the GPU number you want to use.&lt;br /&gt;
-Recent CUDA seems to be smart enought to understand where to run without having to specify
-(but look after your cat!!!).&lt;/p&gt;
-
-&lt;p&gt;Alright!! If you managed to reach this point, very good. Last three commands. In the
-&lt;code&gt;starlab&lt;/code&gt; folder run&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;configure --with-f77=no&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;go out for a walk&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When running configure, avoid the &lt;code&gt;--without-option&lt;/code&gt; version of an option, prefer
-&lt;code&gt;--with-option=no&lt;/code&gt;, it&amp;rsquo;s safer.&lt;/p&gt;
-
-&lt;p&gt;If you recompile StarLab AND/OR Sapporo, type &lt;code&gt;make clean&lt;/code&gt; two times. delete the files in
-&lt;code&gt;starlab/usr/bin&lt;/code&gt;, turn around 3 times, touch your nose and type &lt;code&gt;make&lt;/code&gt; two times. Then
-&lt;code&gt;make install&lt;/code&gt; again.&lt;br /&gt;
-No, &lt;code&gt;make clean&lt;/code&gt; and &lt;code&gt;make&lt;/code&gt; are not enought to update your object
-files or binaries.&lt;/p&gt;
-
-&lt;p&gt;Depending on your environment, if you run into problems, be sure that:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;you loaded the correct modules (if you are in a cluster for examples&lt;/li&gt;
-&lt;li&gt;you are into the right node (some machine let you compile your code on a
-node that is not the login node)&lt;/li&gt;
-&lt;li&gt;if you encounter strange messages regarding missing rules for missing files,
-for example &lt;code&gt;libxhdyn.la&lt;/code&gt; or something regarding &lt;code&gt;gfx&lt;/code&gt;-something, may be tou need to
-tune your config file to exclude, for example, the X/Qt/&amp;hellip; libraries, in case
-try to run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt;; in case try to have a look at
-&lt;code&gt;configure --help&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;run-starlab:77&#34;&gt;Run StarLab&lt;/h3&gt;
-
-&lt;p&gt;Before run a simulation you need to create the initial conditions.&lt;/p&gt;
-
-&lt;h4 id=&#34;initial-conditions:77&#34;&gt;Initial Conditions&lt;/h4&gt;
-
-&lt;p&gt;StarLab is provided with few tools to help (really?) you in this task. A common
-way to create ICs for &lt;a href=&#34;http://arxiv.org/abs/1404.7147&#34;&gt;our simulations&lt;/a&gt; is something like:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;ehm, I don&#39;t know if I can tell you, sorry man...:(&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;launch:77&#34;&gt;Launch&lt;/h4&gt;
-
-&lt;p&gt;StarLab read ICs from the STDIN, write the output snapshots to STDOUT and everything
-you want to know about your simulations to STDERR, so, &lt;code&gt;&amp;lt;ehm.... see ICs&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;tidal-fields:77&#34;&gt;Tidal fields&lt;/h4&gt;
-
-&lt;p&gt;Be patience&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;known-issues-and-troubleshooting:77&#34;&gt;Known issues and Troubleshooting&lt;/h3&gt;
-
-&lt;p&gt;If StarLab did not kill your cat in a horrile way, then, it can still ruin your life.&lt;br /&gt;
-Some of the things that can happen are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;you can find binaries with eccentricity greater than one (StarLab does
-not update some binaries after they are disrupted? flybyes seen as binaries? don&amp;rsquo;t know)&lt;/li&gt;
-&lt;li&gt;StarLab can crash if you try to simulate a number of centers of mass greater than
-5*10^4 together with a fraction of primordial binaries &amp;gt;=0.1&lt;/li&gt;
-&lt;li&gt;boost problems? check the correct flags for your version (choose among some combination of
-&lt;code&gt;-lboost_system, -lboost_system-mt, -lboost_thread, -lpthread&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;check you put all the &lt;code&gt;_&lt;/code&gt;, &amp;ldquo;-I&amp;rdquo;, &amp;ldquo;-l&amp;rdquo;, &amp;ldquo;-L&amp;rdquo; in the right places&lt;/li&gt;
-&lt;li&gt;check all the libraries paths&lt;/li&gt;
-&lt;li&gt;check for double quotes (&lt;code&gt;&amp;quot;&lt;/code&gt;) instead of single ones (&lt;code&gt;&#39;&lt;/code&gt;) in the paths&lt;/li&gt;
-&lt;li&gt;check the modules, environment variables&lt;/li&gt;
-&lt;li&gt;check you are on the right node&lt;/li&gt;
-&lt;li&gt;check your environment against the configure options you passed
-(have a look at &lt;code&gt;configure --help&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;if you need to modify StarLab and you want to add your own flags,
-you need to comment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;  getia(b-&amp;gt;get_log_story(), &amp;quot;step_slow&amp;quot;,
-        b-&amp;gt;get_kira_counters()-&amp;gt;step_slow, nss);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;function call in &lt;code&gt;kira_counters.C&lt;/code&gt; otherwise you won&amp;rsquo;t be able to compile StarLab.&lt;/p&gt;
-
-&lt;h3 id=&#34;clusters:77&#34;&gt;Clusters&lt;/h3&gt;
-
-&lt;h4 id=&#34;eurora:77&#34;&gt;EURORA&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;setup_sapporo.sh&lt;/code&gt;
-(if you want to compile sapporo using queues, or, load modules by hand if you want to
-compile interactively)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
-module load profile/advanced
-module load gnu/4.6.3
-module load boost/1.53.0--gnu--4.6.3
-module load cuda
-
-LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
-export LD_LIBRARY_PATH
-cd $HOME/slPack/sapporo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include/ -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc/ -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
-CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lcudart&amp;quot;
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB -lboost_thread-mt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;Makefile&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;NVCC := /cineca/prod/compilers/cuda/5.0.35/none/bin/nvcc
-CUDAPATH    := /cineca/prod/compilers/cuda/5.0.35/none
-CUDASDKPATH := /cineca/prod/compilers/cuda/5.0.35/none/samples
-CUDAINCLUDE := -I$(CUDAPATH)/include -I$(CUDASDKPATH)/common/inc 
-BOOSTPATH := /cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;configure&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CUDAINC=&amp;quot;-I/cineca/prod/compilers/cuda/5.0.35/none/include -I/cineca/prod/compilers/cuda/5.0.35/none/samples/common/inc -I/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/include/&amp;quot;
-CUDALIB=&amp;quot;-L/cineca/prod/compilers/cuda/5.0.35/none/lib64 -lcudart&amp;quot; 
-LIBS=&amp;quot;$CUDAINC $CUDALIB -L/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib -lboost_thread-mt -DNGB&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;grape.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRAPE_LDFLAGS_=&#39;-L$HOME/slPack/sapporo/&#39;
-GRAPE_LIBS_=&#39;-lsapporo&#39;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;setup_starlab.sh.sh&lt;/code&gt;
-(if you want to compile sapporo using queues, or, load modules by hand if you want to
-compile interactively)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module purge
-module load profile/advanced
-module load gnu/4.6.3
-module load boost/1.53.0--gnu--4.6.3
-module load cuda
-LD_LIBRARY_PATH=/cineca/prod/compilers/cuda/5.0.35/none/lib64:/cineca/prod/libraries/boost/1.53.0/gnu--4.6.3/lib
-export LD_LIBRARY_PATH
-cd $HOME/slPack/starlab
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;green-ii-hpc-system-swinburne-university:77&#34;&gt;Green II HPC system @ Swinburne University&lt;/h4&gt;
-
-&lt;p&gt;Thanks to prof. Jarrod Hurley I was able to test the installation of StarLab on the Green II HPC
-system at the Swinburne University. Here how to do that.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log into the system and find yourself in the login node.&lt;/li&gt;
-&lt;li&gt;Clone the private repo / download the folders and unpack them like described before.&lt;/li&gt;
-&lt;li&gt;Then you need to log into one of the compile/test nodes from the head node: &lt;code&gt;ssh $USER@gstar001&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;load the right modules:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;module load gcc/4.6.4
-module load boost/x86_64/gnu/1.51.0-gcc4.6
-module load cuda/4.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need that version of &lt;code&gt;gcc&lt;/code&gt; and &lt;code&gt;boost&lt;/code&gt; because of issues with boost threads in the default versions.
-Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
-&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
-and
-&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Make sure you have no &lt;code&gt;&#39;&lt;/code&gt; around your path, maybe, if you need, only &lt;code&gt;&amp;quot;&lt;/code&gt; otherwise &lt;code&gt;sapporo&lt;/code&gt; won&amp;rsquo;t compile.
-Just in case, check that the paths in the &lt;code&gt;Makefile&lt;/code&gt; and &lt;code&gt;compile.h&lt;/code&gt; agree with that shown in&lt;br /&gt;
-&lt;code&gt;module show boost/x86_64/gnu/1.51.0-gcc4.6&lt;/code&gt;
-and
-&lt;code&gt;module show cuda&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have our private version you can
-* &lt;code&gt;cp ../scripts/g2/Makefile ./&lt;/code&gt;
-* &lt;code&gt;cp ../scripts/g2/compile.sh ./&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;otherwise try to modify them to have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CXX  := g++
-CC   := gcc
-NVCC := /usr/local/cuda-4.0/bin/nvcc
-CUDAINC := -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc 
-BOOSTINC := -I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6
-NVCCFLAGS := -O0 -g -D_DEBUG  -maxrregcount=64 $(CUDAINC) $(BOOSTINC) 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in the &lt;code&gt;Makefile&lt;/code&gt; and&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;flags=-DNGB
-
-CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc&amp;quot;
-CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
-CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
-
-g++ -O3 $flags -g -o test_gravity_block test_gravity_block.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-g++ -O3 $flags -g -o test_gravity_N2ngb test_gravity_N2ngb.cpp -L. -lsapporo $CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in &lt;code&gt;compile.sh&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then run&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;make clean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bash compile.sh&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No go the the starlab folder (&lt;code&gt;cd ../starlab&lt;/code&gt;) and fix the &lt;code&gt;configure&lt;/code&gt; file accordingly to this&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#   Check all named libraries for g6_open() (GRAPE-6).
-
-    grape6=no
-
-    for gl in $GRAPE_LIBS_; do
-    ##############################
-    ######      g2
-    ##############################
-    CUDAINC=&amp;quot;-I/usr/local/cuda-4.0/include/ -I/usr/local/cuda-4.0/C/common/inc/&amp;quot;
-    CUDALIB=&amp;quot;-L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib&amp;quot;
-    CUDAFLAG=&amp;quot;-lcudart&amp;quot;
-    BOOSTINC=&amp;quot;-I/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6/&amp;quot;
-    BOOSTLIB=&amp;quot;-L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6&amp;quot;
-    BOOSTFLAG=&amp;quot;-lboost_system  -lboost_thread-mt -lpthread&amp;quot;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
-    LIBS=&amp;quot;$CUDAINC $CUDALIB $CUDAFLAG $BOOSTINC $BOOSTLIB $BOOSTFLAG -DNGB&amp;quot;
-        
-        
-    as_ac_Lib=`echo &amp;quot;ac_cv_lib_${gl/-l/}&#39;&#39;_g6_open_&amp;quot; | $as_tr_sh`
+    <item>
+      <title>AGN for Dummies</title>
+      <link>http://brunettoziosi.eu/posts/agn-for-dummies/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/agn-for-dummies/</guid>
+      <description>&lt;p&gt;Another infographic attempt from one of my PhD exams!&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Latex together with matplotlib!</title>
+      <link>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</guid>
+      <description>Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.
+Everything you need is to add to your script
+from matplotlib import rc rc(&#39;font&#39;,**{&#39;family&#39;:&#39;sans-serif&#39;,&#39;sans-serif&#39;:[&#39;Helvetica&#39;]}) ## for Palatino and other serif fonts use: #rc(&#39;font&#39;,**{&#39;family&#39;:&#39;serif&#39;,&#39;serif&#39;:[&#39;Palatino&#39;])) rc(&#39;text&#39;, usetex=True)  and write you text label like
+label = r&#39;theoretical $f(nu)$&#39;)  </description>
+    </item>
+    
+    <item>
+      <title>Essential guide to binning</title>
+      <link>http://brunettoziosi.eu/posts/essential-guide-to-binning/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/essential-guide-to-binning/</guid>
+      <description>&lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
+It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HDF5 in Python: PyTables</title>
+      <link>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</guid>
+      <description>HDF5 is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.
+Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.
+It&amp;rsquo;s also possible to navigate into a file graphically with ViTables.
+Here I would like to present some of the features I use more often.</description>
+    </item>
+    
+    <item>
+      <title>Learning not to hate C: things worth nothing</title>
+      <link>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <description>&lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
+      <link>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <description>&lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PhD students&#39; Journal Clubs and Sozi</title>
+      <link>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</link>
+      <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
+I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Parameter space parallel exploration in Python</title>
+      <link>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</link>
+      <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</guid>
+      <description>&lt;p&gt;Today a friend of mine ask me how to quickly and easily parallelize a parameter space exploration in his code. &amp;ldquo;Quickly and easily&amp;rdquo; means &amp;ldquo;do not try to use &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-monte-carlo-markov-chain/&#34; target=&#34;_blank&#34; title=&#34;PhD question #3: Monte Carlo Markov chain&#34;&gt;MCMC&lt;/a&gt; or something similar!!!&amp;ldquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Infographics attempts!</title>
+      <link>http://brunettoziosi.eu/posts/infographics-attempts/</link>
+      <pubDate>Mon, 23 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/infographics-attempts/</guid>
+      <description>&lt;p&gt;Recently I am interested in &lt;a href=&#34;http://en.wikipedia.org/wiki/Information_graphics&#34; target=&#34;_blank&#34; title=&#34;Infographics on wikipedia&#34;&gt;infographics&lt;/a&gt; (check also &lt;a href=&#34;http://www.coolinfographics.com/&#34; target=&#34;_blank&#34; title=&#34;Coolinfographics&#34;&gt;this&lt;/a&gt;) and if it can help communicating science. There are also two interesting projects related to this, &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi homepage&#34;&gt;Prezi&lt;/a&gt; and &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi homepage&#34;&gt;Sozi&lt;/a&gt;. I&amp;rsquo;m not an artist but I want to try to change my way of communicating and to save lectures notes. This is my first attempt, the first lesson of the Astroparticles course for PhD students! It is not really &amp;ldquo;graphic&amp;rdquo;, but it&amp;rsquo;s my first step!:P&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PhD question #4: calculate the value of M*</title>
+      <link>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</guid>
+      <description>&lt;p&gt;Some post ago &lt;a href=&#34;phd-question-1-m.html&#34;&gt;I&amp;rsquo;ve written about M*&lt;/a&gt;, the typical non-linear mass collapsing at the redshift we are considering. Now I have to find a value for it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Create your own Wikipedia</title>
+      <link>http://brunettoziosi.eu/posts/create-your-own-wikipedia/</link>
+      <pubDate>Mon, 26 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/create-your-own-wikipedia/</guid>
+      <description>&lt;p&gt;I was trying to find a tool to keep track of my activities (mainly), work activities. I&amp;rsquo;ve given a chance to some &amp;ldquo;diary&amp;rdquo; software but I was not convinced. I was lingering on using text files but it was not a solution. So I decided to try &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt;. And it was perfect!!!&lt;br /&gt;
+Now I&amp;rsquo;m going to describe the installation on an Ubuntu 11.10 with the repos packages.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PhD question #3: Monte Carlo Markov chain</title>
+      <link>http://brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain/</link>
+      <pubDate>Thu, 15 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/phd-question-3-monte-carlo-markov-chain/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-1-latexm_latex/&#34; target=&#34;_blank&#34; title=&#34;PhD question #1: M*&#34;&gt;&lt;/a&gt; and &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-2-spherical-collapse/&#34; target=&#34;_blank&#34; title=&#34;PhD question #2: spherical collapse&#34;&gt;&lt;/a&gt;, in this post I write about the Monte Carlo Markov chain. This post is the Wordpress transposition of a page in my private and local Mediawiki installation, so maybe has not a perfect structure and look&amp;amp;feel. Also, the Latex formulas embedded in &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34; target=&#34;_blank&#34; title=&#34;Mediawiki homepage&#34;&gt;Mediawiki&lt;/a&gt; and &lt;a href=&#34;http://wordpress.com/&#34; target=&#34;_blank&#34; title=&#34;Wordpress homepage&#34;&gt;Wordpress&lt;/a&gt; look horrible.&lt;br /&gt;
+Most of this post is made by paragraphs from &lt;a href=&#34;http://en.wikipedia.org/wiki/Main_Page&#34; target=&#34;_blank&#34; title=&#34;Wikipedia homepage&#34;&gt;Wikipedia&lt;/a&gt; and from &lt;a href=&#34;http://arxiv.org/abs/0712.3028&#34; target=&#34;_blank&#34; title=&#34;Licia Verde&#39;s article page&#34;&gt;A practical guide to Basic Statistical Techniques for Data Analysis in Cosmology&lt;/a&gt; by &lt;a href=&#34;http://icc.ub.edu/~liciaverde/Home%20Page.html&#34; target=&#34;_blank&#34; title=&#34;Licia Verde homepage&#34;&gt;Licia Verde&lt;/a&gt; that I rearranged or try to explain and summarize.&lt;/p&gt;
+
+&lt;p&gt;Essentially you can think a Markov chain as a set of states of physical system, or a series of values, depending on some parameters, in which every step/status depends only on the present status and not on the past. A Monte Carlo Markov chain is a Markov chain that proceeds trying random steps and tends to converge to an equilibrium that should be the best set of parameters we are looking for.&lt;br /&gt;
+To improve performances and precision usually more chains are used, starting from different and well-separated points, for a single estimation and a convergence criterion define when to stop.&lt;br /&gt;
+The steady state, or the equilibrium distribution, if it exists, roughly is the combination of parameters, o the vector for the probabilities to be in one status, that emerge to be constant in the long term. This means that if the system (the chain) at some time has a probability vector &lt;code&gt;$q$&lt;/code&gt; for the next status, it will have probability vector &lt;code&gt;$q$&lt;/code&gt; forever. &lt;code&gt;$q$&lt;/code&gt; is an eigenvector of the transition matrix with eingenvalue 1.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
+Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Learning C from simulations, #1</title>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</guid>
+      <description>&lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Learning C from simulations, #3: C horrors!</title>
+      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-3-c-horrors/</guid>
+      <description>Yeah, this is post #3! Post #2 is &amp;ldquo;work in progress&amp;rdquo; and it will be on FFTs!
+Today I was trying to understand what this piece of code do:
+for(i = 0; i &amp;lt; Nmesh / 2; i++) { for(j = 0; j &amp;lt; i; j++) seedtable[i * Nmesh + j] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i + 1; j++) seedtable[j * Nmesh + i] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i; j++) seedtable[(Nmesh - 1 - i) * Nmesh + j] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i + 1; j++) seedtable[(Nmesh - 1 - j) * Nmesh + i] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i; j++) seedtable[i * Nmesh + (Nmesh - 1 - j)] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i + 1; j++) seedtable[j * Nmesh + (Nmesh - 1 - i)] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i; j++) seedtable[(Nmesh - 1 - i) * Nmesh + (Nmesh - 1 - j)] = 0x7fffffff * gsl_rng_uniform(random_generator); for(j = 0; j &amp;lt; i + 1; j++) seedtable[(Nmesh - 1 - j) * Nmesh + (Nmesh - 1 - i)] = 0x7fffffff * gsl_rng_uniform(random_generator); }  It&amp;rsquo;s a piece of the source of N-GenIC, Springel&amp;rsquo;s ICs generator for Gadget2.</description>
+    </item>
+    
+    <item>
+      <title>The initial condition saga</title>
+      <link>http://brunettoziosi.eu/posts/the-initial-condition-saga/</link>
+      <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/the-initial-condition-saga/</guid>
+      <description>&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
+The first things I have understood banging against them were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Gadget requires initial conditions (ICs) generate by (for example) N-GenIC&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;N-GenIC requires an initial power spectrum from CMBFast that is no longer used&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CMBeasy should substitute CMBFast but it doesn&amp;rsquo;t, it only works for CMB anisotropies&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CAMB should substitute CMBFast&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;the &lt;a href=&#34;http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm&#34;&gt;CAMB interface&lt;/a&gt; is terrible and not very well documentated&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PhD question #2: spherical collapse</title>
+      <link>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</link>
+      <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</guid>
+      <description>With this post I would like to collect and present in a simple and consistent form some of the various analytical derivation of the spherical collapse model, in particular the challenge was to find how to obtain the famous $\delta_{lin}\sim1.686$.
+Here you can find a pdf file with the analytic computation.</description>
+    </item>
+    
+    <item>
+      <title>My first Gadget2 tests</title>
+      <link>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</link>
+      <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</guid>
+      <description>&lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GIF2 files Python reader</title>
+      <link>http://brunettoziosi.eu/posts/gif2-files-python-reader/</link>
+      <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/gif2-files-python-reader/</guid>
+      <description>I create this script on the basis of the code to read the Millennium II data (the same used here) provided by Mike Boylan-Kolchin. Being allowed to read the Fortran code to write and read the GIF2 files I could adapt this script to exactly fit this problem.
+import numpy as np import sys class head: def __init__(self, fname): import types bo_mark=&#39;&amp;gt;&#39; # start by reading in header: if type(fname) is types.</description>
+    </item>
+    
+    <item>
+      <title>GIF2 substructures coordinates correction</title>
+      <link>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</link>
+      <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</guid>
+      <description>I used this script to change the coordinates of the substructures in the GIF2 simulation output from the center of mass coordinates to the global ones. The substructures were stored in our server in files referring to the index of the halo to which they belong and their coordinates were respect to the center of the halo. For each halo this script read the subhaloes center of mass coordinates in kpc and change them to global coordinates in Mpc managing the periodic boundary conditions .</description>
+    </item>
+    
+    <item>
+      <title>From .csv to HDF5 in Python</title>
+      <link>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</link>
+      <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</guid>
+      <description>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &amp;hellip;). To the library presentation and documentation, for now refers, to the site.
+I used it a lot during my master thesis to manage the dataset from the Millennium database.
+Here I provide a brief review of how I used it to store data obtained in .</description>
+    </item>
+    
+    <item>
+      <title>From binaries to HDF5 using Python</title>
+      <link>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</link>
+      <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</guid>
+      <description>&lt;p&gt;I have used this script to convert the Millennium II data from the unformatted fortran binary formato to the DF5 one.&lt;br /&gt;
+The core of the script is a module (&lt;code&gt;modified_read_snapshots&lt;/code&gt;) built on the basis of a script kindly provided by &lt;a href=&#34;http://mbk.ps.uci.edu/index.html&#34; target=&#34;_blank&#34; title=&#34;Mike Boylan-Kolchin&#34;&gt;Mike Boylan-Kolchin&lt;/a&gt; from the group that perform the Millennium II simulation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #6: adding gas!</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas/</link>
+      <pubDate>Tue, 29 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas/</guid>
+      <description>&lt;p&gt;As we have seen, cosmological N-body simulations consider only gravitational interactions. This is good for large scale distribution of matter such as galaxy distribution or cluster formation, but if we are interested in smaller details we have to add gas physics.&lt;br /&gt;
+There are two main approaches, completely different one from the other.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python slicing, rebinning and indexing</title>
+      <link>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</link>
+      <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</guid>
+      <description>&lt;p&gt;During my master thesis I had to manage a lot of (different) data from GIF and GIF2 projects, Millimillennium, Millenium and Millennium 2 simulations and so on. Sometimes there were the need to sort, divide or rearrange these dataset.&lt;br /&gt;
+Here some examples.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python CLI and configuration file parser</title>
+      <link>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</link>
+      <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</guid>
+      <description>One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at http://www.decalage.info) a file parser to read a configuration file and the Python library argparse for the command line parsing. In addition I have modified the file parser and I&amp;rsquo;ve added a &amp;ldquo;variable container&amp;rdquo; object, inspired by some snippets found somewhere on the web.</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #5: initial conditions!</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</link>
+      <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #3: force calculation!</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</link>
+      <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</guid>
+      <description>&lt;p&gt;In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
+Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #7: Limitations and some considerations</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
+      <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
+      <description>&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+
+&lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
+simulations. Let&amp;rsquo;s review these in detail.&lt;br /&gt;
+First, we can consider a simulation composed of a finite box in a bigger space but to represent a real system, this box shouldn&amp;rsquo;t be isolated so we use the periodic boundary conditions (&lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/cosmological-simulations-2-how.html&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #2: how?&#34;&gt;here&lt;/a&gt;). This means that all the space around the box is filled with images of the box itself: a particle that leaves the box from one side will come in&lt;br /&gt;
+from the opposite side.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations: #4: Moving the particles!</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <description>&lt;h3 id=&#34;equations-of-motion&#34;&gt;Equations of motion&lt;/h3&gt;
+
+&lt;p&gt;Once we have learned how to calculate gravitational forces and decided which way is best for us, it&amp;rsquo;s time to move particles according to the force field.&lt;br /&gt;
+To have an idea of what happens we can look at a simplified version of the pp-method, where the new coordinates and velocities are expressed starting from the previous values:&lt;/p&gt;
+
+&lt;p&gt;$\mathbf{v}_i^{new}=\mathbf{v}_i^{old}+\frac{\mathbf{F}_i}{m_i}\Delta t$
+$\mathbf{x}_i^{new}=\mathbf{x}_i^{old}+\mathbf{v}_i\Delta t$&lt;/p&gt;
+
+&lt;p&gt;More in general we start from the Newtonian equation of motion for a set of particles interacting only through gravity, in particular we consider the Euler and Poisson equations. We express these in comoving coordinates because in this way we can focus on density and velocity perturbations, while the expansion of the universe is included in the scale factor $a$ (obtained from the Friedmann equations):&lt;/p&gt;
+
+&lt;p&gt;$\frac{\mathrm{d}^2\mathbf{x}}{\mathrm{d}t^2}+2\frac{\mathrm{d}a/\mathrm{d}t}{a}\frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}=-\frac{1}{a^2}\nabla_x\phi$&lt;/p&gt;
+
+&lt;p&gt;$\nabla_x^2\phi=4\pi Ga^2\bar \rho\delta = \frac{3}{2}H_0^2\Omega_0\frac{\delta}{a}$&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PhD question #1: M*</title>
+      <link>http://brunettoziosi.eu/posts/phd-question-1-m/</link>
+      <pubDate>Fri, 11 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/phd-question-1-m/</guid>
+      <description>&lt;p&gt;In parallel with the series &amp;ldquo;Cosmological simulations&amp;rdquo; I&amp;rsquo;m starting now another
+series of posts about cosmology, astro/physics and related arguments.
+It may happen that your PhD advisor ask you a question about something and you
+are supposed to know the answer&amp;hellip; but you don&amp;rsquo;t! Or it may happen that you have
+to pass an admittance/qualification exam to enter your PhD student career on
+general astrophysical knowledge but you can&amp;rsquo;t even remember some arguments exist!
+Because of these consideration and for my remembrance I will &amp;nbsp;write
+down some of these questions and I will try to answer.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Loadleveler quick howto</title>
+      <link>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</link>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</guid>
+      <description>&lt;p&gt;Some useful commands to manage jobs with IBM &lt;code&gt;loadleveler&lt;/code&gt; (&lt;code&gt;ll&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) &amp;ldquo;test_run.cmd&amp;rdquo;. With this file you tell &lt;code&gt;ll&lt;/code&gt; what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
+It would look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+# @ initialdir = /path-to-your-folder
+# @ job_name = test_run
+# @ output = test_run.$(jobid).out
+# @ error = test_run.$(jobid).err
+# @ notification = error
+# @ class = long
+# @ total_tasks = 20
+# @ job_type = parallel
+# @ queue
+
+ulimit -s 65536
+
+python ./start.py
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and the &lt;code&gt;local/grape.sh&lt;/code&gt; file to point to your sapporo installation.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python parallel job manager</title>
+      <link>http://brunettoziosi.eu/posts/python-parallel-job-manager/</link>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/python-parallel-job-manager/</guid>
+      <description>&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think&amp;hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &amp;hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.&lt;/p&gt;
 
-&lt;p&gt;If you have our version of StarLab, just copy the right files:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #1: why and what?</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</guid>
+      <description>&lt;p&gt;This is the first of a series of posts dedicated to cosmological simulations!&lt;br /&gt;
+&lt;br /&gt;
+I do this because, as stressed by my PhD advisor,
+I need to practice in explaining in a clear way specialized knowledge and in
+linking it with its background and motivations. Also I would like to keep track
+of my progress and of what I&amp;rsquo;m learning!&lt;br /&gt;
+&lt;br /&gt;
+So, let&amp;rsquo;s start with &amp;ldquo;Why we need cosmological simulations? What are they?&amp;rdquo;!&lt;br /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cp ../scripts/g2/configure ./&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cp ../scripts/g2/grape.sh ./local/&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cosmological simulations #2: how?</title>
+      <link>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s try now to understand how simulations can be set up.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Make sure again &lt;code&gt;grape.sh&lt;/code&gt; points to the right folder&lt;/p&gt;
+&lt;p&gt;First of all note that dark matter density dominates over ordinary (baryonic) matter at all times and we expect that ordinary matter follows the gravity of dark matter on large scales, so we can start considering only dark matter in our simulation.&lt;br /&gt;
+Moreover, cosmological simulations differ from other N-body simulations because they should to be able to manage comoving coordinates, i.e. coordinates that expand with the universe, since the universe is expanding.&lt;br /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./configure --without-f77 --with-qt=no&lt;/code&gt; (if you want qt, load the modules and check the versions)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make clean &amp;amp;&amp;amp; make clean &amp;amp;&amp;amp; make clean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make &amp;amp;&amp;amp; make&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rm ./usr/bin/*&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;make install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;** Troubleshooting **&lt;/p&gt;
-
-&lt;p&gt;If you get this error (or some other error)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;make[2]: Entering directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
-/bin/sh ../../../libtool --preserve-dup-deps --mode=link gcc  -g -O2  -L/usr/lib64/qt-3.3/lib -o libgfx-2.la   win.lo draw.lo draw1.lo color.lo dialog.lo mcd.lo interface.lo termio.lo utility.lo simple.lo  -I/usr/local/cuda-4.0/include -I/usr/local/cuda-4.0/C/common/inc -L/usr/local/cuda-4.0/lib64 -L/usr/local/cuda-4.0/lib:/usr/local/cuda-4.0/C/lib -lcudart -L/usr/local/x86_64/gnu/boost-1.51.0-gcc4.6 -lboost_system  -lboost_thread-mt -lpthread -DNGB
-ar cru .libs/libgfx-2.a  win.o draw.o draw1.o color.o dialog.o mcd.o interface.o termio.o utility.o simple.o
-ar: interface.o: No such file or directory
-make[2]: *** [libgfx-2.la] Error 1
-make[2]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx/lux&#39;
-make[1]: *** [clibs23] Error 2
-make[1]: Leaving directory `/mnt/home/bziosi/slpack/starlab/src/gfx&#39;
-make: *** [libs] Error 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;when compiling may be you can try to &lt;code&gt;make&lt;/code&gt; and &lt;code&gt;make clean&lt;/code&gt; some times.&lt;br /&gt;
-Also remember that make clean is not working properly, so you need to &lt;code&gt;make clean&lt;/code&gt; more than once or delete the binaries by yourself.&lt;/p&gt;
-
-&lt;p&gt;If you have errors regarding no rules for &lt;code&gt;libxhdyn.la&lt;/code&gt;, probably you forgot to exclude
-some options from the configure, so run &lt;code&gt;configure --with-f77=no --with-qt=no&lt;/code&gt; or try &lt;code&gt;configure --help&lt;/code&gt;
-to check for other options.&lt;/p&gt;
-
-&lt;h3 id=&#34;additional-material:77&#34;&gt;Additional material&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Code units (coming soon&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;StarLab internals (TODO)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/michelis/slpack&#34;&gt;Our repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/brunetto/sltools&#34;&gt;Tools to easily manage SL runs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.science.uva.nl/sites/modesta/wiki/index.php/Starlab_tools&#34;&gt;StarLab tools wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sns.ias.edu/~starlab/tools/auto/&#34;&gt;Auto-built tools list&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

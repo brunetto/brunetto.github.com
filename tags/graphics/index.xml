@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Cool Websites</title>
@@ -15,30 +17,16 @@
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/tech/coolwebsites/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/holman/left&#34;&gt;https://github.com/holman/left&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&#34;&gt;http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&#34;&gt;http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://html5up.net/&#34;&gt;http://html5up.net/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> https://github.com/holman/left http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html http://html5up.net/  </description>
     </item>
     
     <item>
       <title>Poster Making</title>
-      <link>http://brunettoziosi.eu/pages/research/posterMaking/</link>
+      <link>http://brunettoziosi.eu/pages/research/postermaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/posterMaking/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/tips/academic/posterdesign&#34;&gt;http://colinpurrington.com/tips/academic/posterdesign&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&#34;&gt;http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&#34;&gt;http://www.bioinformaticszen.com/post/genotype-from-phenotype/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://zachholman.com/posts/slide-design-for-developers/&#34;&gt;http://zachholman.com/posts/slide-design-for-developers/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.colormatters.com/color-and-design/basic-color-theory&#34;&gt;http://www.colormatters.com/color-and-design/basic-color-theory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://f1000.com/posters/browse?docTypeSearch=Poster&#34;&gt;http://f1000.com/posters/browse?docTypeSearch=Poster&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://brunettoziosi.eu/pages/research/postermaking/</guid>
+      <description> http://colinpurrington.com/tips/academic/posterdesign http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf http://www.bioinformaticszen.com/post/genotype-from-phenotype/ http://zachholman.com/posts/slide-design-for-developers/ http://www.colormatters.com/color-and-design/basic-color-theory http://f1000.com/posters/browse?docTypeSearch=Poster  </description>
     </item>
     
     <item>
@@ -47,57 +35,12 @@
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
-      <description>
-
-&lt;h3 id=&#34;license:55&#34;&gt;License&lt;/h3&gt;
-
-&lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; href=&#34;http://purl.org/dc/dcmitype/StillImage&#34; property=&#34;dct:title&#34; rel=&#34;dct:type&#34;&gt;AstroFelpa&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;BrunettoZiosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;Permissions beyond the scope of this license may be available at &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;www.brunettoziosi.eu/stories/research/astrofelpa.html&#34; rel=&#34;cc:morePermissions&#34;&gt;www.brunettoziosi.eu/stories/research/astrofelpa.html&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;shop-available-now:55&#34;&gt;Shop available now!!!&lt;/h3&gt;
-
-&lt;p&gt;You can purchase the t-shirt and other material from &lt;a href=&#34;http://astrophd.spreadshirt.it/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;astrop-h-d:55&#34;&gt;AstroP(h)D&lt;/h3&gt;
-
-&lt;p&gt;AstroFelpa is an indipendent initiative with the purpose to represent
-the Padua astronomers and all their friends and supporters.&lt;br /&gt;
-AstroP(h)D was born within the astronomy PhD students community of Padua but
-also covers all the astro-workers of the University and the Observatory.&lt;br /&gt;
-The draw tries to bring together most of the fields we are working on:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Specola&amp;rdquo; is our headquarter and our symbol&lt;/li&gt;
-&lt;li&gt;The stars all around the picture for all of us working on stellar evolution and both observational
-and numerical approaches are included, as anyone working on every kind of star cluster&lt;/li&gt;
-&lt;li&gt;The Saturn shape remembers all the (exo-)planets guys&lt;/li&gt;
-&lt;li&gt;HST is for all of us working on satellites and technology&lt;/li&gt;
-&lt;li&gt;Galactic and extragalactic researchers, cosmologists and darkmatterists have
-the galaxy surrounded by a dark matter halo&lt;/li&gt;
-&lt;li&gt;The reduced Planck constant is for who is working on spectroscopy and high energy or other
-quantum/relativistic/strange matters&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This are the AstroP(h)D and supporters versions for the sweatshirt and the T-shirt.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../files/AstroFelpa/AstroFelpa.png&#34; alt=&#34;AstroFelpe&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then some new ideas!:P&lt;/p&gt;
-
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-keepcalmand-png-width-50-height-50:55&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/keepCalmAnd.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
-
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-gogo-png-width-50-height-50-br:55&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goGo.png&#34;width=&#34;50%&#34; height=&#34;50%&#34; &gt;&lt;/br&gt;&lt;/h2&gt;
-
-&lt;h2 id=&#34;img-alt-astrofelpe-src-files-astrofelpa-f77-png-width-50-height-50:55&#34;&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/f77.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt=&#34;AstroFelpe&#34; src=&#34;../../../files/AstroFelpa/goSM.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;&gt;&lt;/p&gt;
-
-&lt;!--![AstroFelpe](../../files/AstroFelpa/keepCalmAnd.png) 
-![AstroFelpe](../../files/AstroFelpa/goGo.png) 
-![AstroFelpe](../../files/AstroFelpa/f77.png)   
-![AstroFelpe](../../files/AstroFelpa/goSM.png)    --&gt;
-
-&lt;p&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&#34;http://purl.org/dc/terms/&#34; href=&#34;http://purl.org/dc/dcmitype/StillImage&#34; property=&#34;dct:title&#34; rel=&#34;dct:type&#34;&gt;AstroFelpa&lt;/span&gt; by &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;brunettoziosi.eu&#34; property=&#34;cc:attributionName&#34; rel=&#34;cc:attributionURL&#34;&gt;BrunettoZiosi&lt;/a&gt; is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US&#34;&gt;Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License&lt;/a&gt;.&lt;br /&gt;Permissions beyond the scope of this license may be available at &lt;a xmlns:cc=&#34;http://creativecommons.org/ns#&#34; href=&#34;www.brunettoziosi.eu/pages/research/astrofelpa.html&#34; rel=&#34;cc:morePermissions&#34;&gt;www.brunettoziosi.eu/pages/research/astrofelpa.html&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>License 
+AstroFelpa by BrunettoZiosi is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+Permissions beyond the scope of this license may be available at www.brunettoziosi.eu/stories/research/astrofelpa.html.
+Shop available now!!! You can purchase the t-shirt and other material from here
+AstroP(h)D AstroFelpa is an indipendent initiative with the purpose to represent the Padua astronomers and all their friends and supporters.
+AstroP(h)D was born within the astronomy PhD students community of Padua but also covers all the astro-workers of the University and the Observatory.</description>
     </item>
     
   </channel>

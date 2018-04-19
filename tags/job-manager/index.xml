@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Nov 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/job-manager/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/job-manager/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Loadleveler quick howto</title>
@@ -36,20 +38,7 @@ ulimit -s 65536
 python ./start.py
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;After that you can submit your job with &lt;code&gt;llsubmit test_run.cmd&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Other useful commands are&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;llq -u $USER&lt;/code&gt;: Return information about your jobs only in the queues&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;llq -l &amp;amp;lt;job&amp;amp;gt;&lt;/code&gt;: Return detailed information about the specific&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;llq -s &amp;amp;lt;job&amp;amp;gt;&lt;/code&gt;: Return information about why the job remains queued&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;llcancel &amp;amp;lt;job&amp;amp;gt;&lt;/code&gt;: Cancel a job from the queues, either it is waiting or running&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;llstatus&lt;/code&gt;: Return information about the status of the machine&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Reference&lt;/em&gt;: &lt;a href=&#34;http://hpc.cineca.it/content/batch-scheduler-loadleveler&#34; target=&#34;_blank&#34; title=&#34;Cineca LoadLeveler howto&#34;&gt;Cineca LoadLeveler howto&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://brunettoziosi.eu/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://brunettoziosi.eu/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Imagemagick &#43; pcal = calendar</title>
@@ -15,61 +17,8 @@
       <pubDate>Sat, 18 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/imagemagick-pcal-calendar/</guid>
-      <description>&lt;p&gt;This is the first version of the script I&amp;rsquo;ve created to make a calendar with photos using pcal and Imagemagik. It needs some folder and a &amp;ldquo;ps-type&amp;rdquo; font (here ChickenScratchAOE), but I think it&amp;rsquo;s quite easy to understand. I have created some of the files, such as &amp;ldquo;copertina&amp;rdquo;, before, using Gimp.&lt;/p&gt;
-
-&lt;!-- TEASER_END --&gt;    
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
-
-# Parameters
-footnote = &amp;quot;...&amp;quot;
-
-# Create ps calendar files and convert them to pdf
-echo &amp;quot;Create pdf files of months...&amp;quot;
-j=0
-for i in $(cat mesi.txt); do
-  j=$(echo &amp;quot;$j + 1&amp;quot; | bc);
-  pcal -f santi.txt -E -m -B -F monday -o ../mesi/$i.ps -P a4 -b all -t ChickenScratchAOE -d ChickenScratchAOE -C &amp;quot;$footnote&amp;quot; -a it $j 2011 1;
-  ps2pdf ../mesi/$i.ps ../mesi/$i.pdf;
-done
-echo &amp;quot;Done.&amp;quot;
-
-# Desaturate and resize the images for the months background
-# and put them with opacity 25% on a white canvas. 
-echo &amp;quot;Preparing background images...&amp;quot;
-for i in $(cat mesi.txt); do
-  convert ../immagini/$i.JPG -resize 3508x2480\! -colorspace Gray ../immagini/sfondi-bw/bw-$i.png; composite -dissolve 25% ../immagini/sfondi-bw/bw-$i.png ../immagini/sfondo.png ../immagini/sfondi-bw/diss/bw-diss-$i.png;
-done
-echo &amp;quot;Done.&amp;quot;
-
-# Convert months to png to remove the white background
-echo &amp;quot;Converting months to png...&amp;quot;
-for i in $(cat mesi.txt); do
-  convert -density 500 ../mesi/$i.pdf -transparent white ../mesi/mesi-png/$i.png;
-done
-echo &amp;quot;Done.&amp;quot;
-
-# Combine png months and backgrounds
-# converting them back to pdf
-echo &amp;quot;Combining png months and backgrounds...&amp;quot;
-for i in $(cat mesi.txt); do
- composite ../mesi/mesi-png/$i.png -resize 5847x4132 ../immagini/sfondi-bw/diss/bw-diss-$i.png ../mesi/mesi-finali/finale-$i.pdf
-done
-echo &amp;quot;Done.&amp;quot;
-
-# Resize photos to have smaller files
-echo &amp;quot;Resizeing photos and convert to pdf...&amp;quot;
-for i in $(cat mesi.txt); do
- convert ../immagini/$i.JPG -resize 3508x2480 ../immagini/pdf/$i.pdf;
-done
-echo &amp;quot;Done.&amp;quot;
-
-#uniamo il tutto
-echo &amp;quot;Combine all...&amp;quot;
-pdftk ../copertina/copertina.pdf ../immagini/pdf/Gennaio.pdf ../mesi/mesi-finali/finale-Gennaio.pdf ../immagini/pdf/Febbraio.pdf ../mesi/mesi-finali/finale-Febbraio.pdf ../immagini/pdf/Marzo.pdf ../mesi/mesi-finali/finale-Marzo.pdf ../immagini/pdf/Aprile.pdf ../mesi/mesi-finali/finale-Aprile.pdf ../immagini/pdf/Maggio.pdf ../mesi/mesi-finali/finale-Maggio.pdf ../immagini/pdf/Giugno.pdf ../mesi/mesi-finali/finale-Giugno.pdf ../immagini/pdf/Luglio.pdf ../mesi/mesi-finali/finale-Luglio.pdf ../immagini/pdf/Agosto.pdf ../mesi/mesi-finali/finale-Agosto.pdf ../immagini/pdf/Settembre.pdf ../mesi/mesi-finali/finale-Settembre.pdf ../immagini/pdf/Ottobre.pdf ../mesi/mesi-finali/finale-Ottobre.pdf ../immagini/pdf/Novembre.pdf ../mesi/mesi-finali/finale-Novembre.pdf ../immagini/pdf/Dicembre.pdf ../mesi/mesi-finali/finale-Dicembre.pdf ../copertina/quarta.pdf cat output ../calendario-finale.pdf
-echo &amp;quot;Done.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>This is the first version of the script I&amp;rsquo;ve created to make a calendar with photos using pcal and Imagemagik. It needs some folder and a &amp;ldquo;ps-type&amp;rdquo; font (here ChickenScratchAOE), but I think it&amp;rsquo;s quite easy to understand. I have created some of the files, such as &amp;ldquo;copertina&amp;rdquo;, before, using Gimp.
+#!/bin/bash # Parameters footnote = &amp;quot;...&amp;quot; # Create ps calendar files and convert them to pdf echo &amp;quot;Create pdf files of months.</description>
     </item>
     
   </channel>
