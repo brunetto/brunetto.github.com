@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://brunettoziosi.eu/</loc>
-    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://brunettoziosi.eu/posts/what-do-you-think-about-me/</loc>
@@ -97,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/posterMaking/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/postermaking/</loc>
     <lastmod>2014-05-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -117,7 +113,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/research/GW-links/</loc>
+    <loc>http://brunettoziosi.eu/pages/research/gw-links/</loc>
     <lastmod>2013-10-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -172,7 +168,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/Films/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/films/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -342,7 +338,7 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/pages/personal/multimedia/Music/</loc>
+    <loc>http://brunettoziosi.eu/pages/personal/multimedia/music/</loc>
     <lastmod>2013-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -609,6 +605,1194 @@
   <url>
     <loc>http://brunettoziosi.eu/posts/subfile-package-for-latex/</loc>
     <lastmod>2011-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/agn/</loc>
+    <lastmod>2013-08-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/alternatives/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/android/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/aresearch/</loc>
+    <lastmod>2012-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/array/</loc>
+    <lastmod>2012-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/astro/physics/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/astrocomputing/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/astrofelpa/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/astroparticle/</loc>
+    <lastmod>2012-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/atacama/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/australia/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/bachelor/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/backup/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/barcelona/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/bash/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/batch/</loc>
+    <lastmod>2011-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/big-data/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/binning/</loc>
+    <lastmod>2012-05-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/blog/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/blogging/</loc>
+    <lastmod>2013-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/blogging/</loc>
+    <lastmod>2013-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/c/</loc>
+    <lastmod>2012-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/calendar/</loc>
+    <lastmod>2012-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/camb/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/camino-de-santiago/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/</loc>
+    <lastmod>2013-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cheat-sheet/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cli/</loc>
+    <lastmod>2015-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cluster/</loc>
+    <lastmod>2013-10-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/containers/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cooking/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cosmic-structure/</loc>
+    <lastmod>2012-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cosmology/</loc>
+    <lastmod>2012-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/curriculum/</loc>
+    <lastmod>2013-08-16T23:40:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/cv/</loc>
+    <lastmod>2013-08-16T23:40:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/data-analysis/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/data-visualization/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/diary/</loc>
+    <lastmod>2012-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/digikam/</loc>
+    <lastmod>2012-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/docker/</loc>
+    <lastmod>2015-06-16T10:55:02+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/domain-decomposition/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/drivers/</loc>
+    <lastmod>2013-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/dust/</loc>
+    <lastmod>2012-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/dust-removal/</loc>
+    <lastmod>2012-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/dust-spot/</loc>
+    <lastmod>2012-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/eating/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/eating/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/films/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/fit/</loc>
+    <lastmod>2014-01-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/for-dummies/</loc>
+    <lastmod>2013-08-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gadget/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gadget2/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gallery/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gear/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gimp/</loc>
+    <lastmod>2012-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/go/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/go/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/golang/</loc>
+    <lastmod>2015-06-15T11:55:02+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/goodies/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gpu/</loc>
+    <lastmod>2013-08-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/graphics/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/graphics/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gravitational-wave/</loc>
+    <lastmod>2013-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gravitational-waves/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/guthub-pages/</loc>
+    <lastmod>2013-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/gw/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/hdf5/</loc>
+    <lastmod>2012-05-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/histogram/</loc>
+    <lastmod>2012-05-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/ics/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/imagemagick/</loc>
+    <lastmod>2012-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/infographics/</loc>
+    <lastmod>2013-08-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/initial-conditions/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/inkscape/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/instagram/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/installation/</loc>
+    <lastmod>2014-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/installation-instructions/</loc>
+    <lastmod>2015-06-16T10:55:02+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/integrator/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/interior-design/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/ip/</loc>
+    <lastmod>2013-09-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/ipython/</loc>
+    <lastmod>2013-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/jacascript/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/jc/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/job-manager/</loc>
+    <lastmod>2011-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/journal-club/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/languages/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/latex/</loc>
+    <lastmod>2015-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/leapfrog/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/life-hacks/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/lifestyle/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/linux/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/list/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/london/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/markov-chain/</loc>
+    <lastmod>2012-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/mask/</loc>
+    <lastmod>2012-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/master/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/master-thesis/</loc>
+    <lastmod>2011-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/matplotlib/</loc>
+    <lastmod>2012-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/mediawiki/</loc>
+    <lastmod>2012-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/millennium/</loc>
+    <lastmod>2011-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/mirror/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/misc/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/misc/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/monitoring/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/monte-carlo/</loc>
+    <lastmod>2012-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/moto/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/mpi/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/music/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/n-body/</loc>
+    <lastmod>2013-08-20T09:34:11+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/n-genic/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/nerding/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/netherlands/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/network/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/nikola/</loc>
+    <lastmod>2013-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/notes/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/numerical/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/nvidia/</loc>
+    <lastmod>2013-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/opinion/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/ozzy/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/padding/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/ptypes/page/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/page/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/pages/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/parallel/</loc>
+    <lastmod>2011-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/pcal/</loc>
+    <lastmod>2012-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/pdf/</loc>
+    <lastmod>2015-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/pelikan/</loc>
+    <lastmod>2013-03-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/personal/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/personal/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/phd/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/phd/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/phd-comics/</loc>
+    <lastmod>2013-08-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/phd-thesis/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/photography/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/photography/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/photos/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/photoswipe/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/pm/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/ptypes/post/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/post/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/postermaking/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/posts/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/power-spectrum/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/presentaiton/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/prezi/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/programming/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/programming/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/ptypes/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/pytables/</loc>
+    <lastmod>2012-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/python/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/python/</loc>
+    <lastmod>2014-09-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/queue-manager/</loc>
+    <lastmod>2011-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/quote/</loc>
+    <lastmod>2013-08-14T17:26:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/reference/</loc>
+    <lastmod>2013-09-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/references/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/referennce/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/remark/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/research/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/research/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/restaurants/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/route/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/rsync/</loc>
+    <lastmod>2014-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/scout/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/scout/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/sed/</loc>
+    <lastmod>2014-09-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/simulation/</loc>
+    <lastmod>2015-06-15T11:55:02+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/simulations/</loc>
+    <lastmod>2013-08-20T09:34:11+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/slideshow/</loc>
+    <lastmod>2015-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/sozi/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/springel/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/ssh/</loc>
+    <lastmod>2014-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/starlab/</loc>
+    <lastmod>2015-06-15T11:55:02+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/summary/</loc>
+    <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/svg/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/syncing/</loc>
+    <lastmod>2014-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/system/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/system/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/</loc>
+    <lastmod>2013-08-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/tech/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/telescope/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/time-step/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/timelapses/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/travel/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/travel/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/tree/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/treepm/</loc>
+    <lastmod>2012-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/tricks/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/upsidedown/</loc>
+    <lastmod>2013-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/vector-image/</loc>
+    <lastmod>2012-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/videos/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/vitae/</loc>
+    <lastmod>2013-08-16T23:40:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/web/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/website/</loc>
+    <lastmod>2013-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/wikimedia/</loc>
+    <lastmod>2012-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/wikipedia/</loc>
+    <lastmod>2012-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/wish/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/tags/wishlist/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/work/</loc>
+    <lastmod>2013-08-16T23:40:58+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
