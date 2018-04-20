@@ -354,7 +354,7 @@ blog with Python, Nikola and Git.&lt;/p&gt;
       <pubDate>Fri, 08 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
-      <description>How to create a blog with GitHub and Pelican (Python) Suppose that you are curios about GitHub pages&amp;hellip; but I don&amp;rsquo;t understand their guide. And suppose that you don&amp;rsquo;t like Ruby but prefer Python&amp;hellip; First of all create a repo named youname.github.com on your GitHub account (ok, maybe, before this, you have to create a GitHub account!).
+      <description>Suppose that you are curios about GitHub pages&amp;hellip; but I don&amp;rsquo;t understand their guide. And suppose that you don&amp;rsquo;t like Ruby but prefer Python&amp;hellip; First of all create a repo named youname.github.com on your GitHub account (ok, maybe, before this, you have to create a GitHub account!).
  Then set the remote origin locally with
 # I use ssh because I can log in without a password saving my key at https://github.</description>
     </item>

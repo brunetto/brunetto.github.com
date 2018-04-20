@@ -229,11 +229,11 @@ void_files = 0
 <pre><code class="language-python">for i in xrange(files_num):
     print &quot;Loop &quot;, i, &quot; di &quot;, files_num 
     sub_file = &quot;cm/Sub.3.&quot;+'%07d'%int(haloes[i,0])+&quot;.053.gv&quot;
-    ````
-    
-open the related substructures file     
-````python
-try:
+</code></pre>
+
+<p>open the related substructures file</p>
+
+<pre><code class="language-python">try:
         sub_coord = np.genfromtxt(sub_file, dtype='float', usecols=(8, 9, 10))
         file_check = True
     except:
