@@ -129,7 +129,8 @@ There are two main approaches, completely different one from the other.&lt;/p&gt
       <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</guid>
-      <description></description>
+      <description>After we had a look on why we need cosmological simulations, what they are and how they are performed, it&amp;rsquo;s time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.
+Usually, for a cosmological simulation, all the fields are linear so we can use linear theory to compute them. In linear theory the density contrast evolves as a combination of a growing and a decaying mode, but only the first survives, so we can set the initial system considering only the growing mode, and because until linearity is verified the density field and velocities are related to the gravitational potential we only need to generate the gravitational field and with it we can produce density and velocity fields.</description>
     </item>
     
     <item>
