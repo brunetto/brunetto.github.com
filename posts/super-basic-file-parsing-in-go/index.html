@@ -234,26 +234,26 @@ for <code>tGlob0</code> and <code>tGlob1</code>. If you want to know the type of
 create it by assignement and then inspect its type with the reflect package,
 using <code>reflect.TypeOf(variable)</code>.</p>
 
-<pre><code class="language-go">    var inPath string
-    var prefix string
-    var searchString string
-    var outFile string
-    var inFiles []string
-    var inFile string
-    var extString []string
-    var ext string
-    var PID int 
-    var (fileStruct *os.File
-    fOut *os.File)
-    var err error
-    var fZip *gzip.Reader
-    var nReader *bufio.Reader
-    var read_line string
+<pre><code class="language-go">	var inPath string
+	var prefix string
+	var searchString string
+	var outFile string
+	var inFiles []string
+	var inFile string
+	var extString []string
+	var ext string
+	var PID int 
+	var (fileStruct *os.File
+	fOut *os.File)
+	var err error
+	var fZip *gzip.Reader
+	var nReader *bufio.Reader
+	var read_line string
 ```        
 
 The `os` package provides the tools to interact with the OS, so we can retrieve the process
 PID and the CLI arguments.        
-    
+	
 ````go
 	PID = os.Getpid()
 	log.Println(&quot;Process PID is &quot;, PID)	

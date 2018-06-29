@@ -722,13 +722,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/blogging/</loc>
+    <loc>http://brunettoziosi.eu/tags/blogging/</loc>
     <lastmod>2013-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/blogging/</loc>
+    <loc>http://brunettoziosi.eu/categories/blogging/</loc>
     <lastmod>2013-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -878,13 +878,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/eating/</loc>
+    <loc>http://brunettoziosi.eu/tags/eating/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/eating/</loc>
+    <loc>http://brunettoziosi.eu/categories/eating/</loc>
     <lastmod>2013-08-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -938,13 +938,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/go/</loc>
+    <loc>http://brunettoziosi.eu/tags/go/</loc>
     <lastmod>2014-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/go/</loc>
+    <loc>http://brunettoziosi.eu/categories/go/</loc>
     <lastmod>2014-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -968,13 +968,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/graphics/</loc>
+    <loc>http://brunettoziosi.eu/tags/graphics/</loc>
     <lastmod>2014-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/graphics/</loc>
+    <loc>http://brunettoziosi.eu/categories/graphics/</loc>
     <lastmod>2014-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1208,13 +1208,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/misc/</loc>
+    <loc>http://brunettoziosi.eu/tags/misc/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/misc/</loc>
+    <loc>http://brunettoziosi.eu/categories/misc/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1364,26 +1364,26 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/personal/</loc>
-    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://brunettoziosi.eu/tags/personal/</loc>
     <lastmod>2015-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/phd/</loc>
-    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
+    <loc>http://brunettoziosi.eu/categories/personal/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://brunettoziosi.eu/tags/phd/</loc>
     <lastmod>2015-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://brunettoziosi.eu/categories/phd/</loc>
+    <lastmod>2014-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1400,13 +1400,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/photography/</loc>
+    <loc>http://brunettoziosi.eu/tags/photography/</loc>
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/photography/</loc>
+    <loc>http://brunettoziosi.eu/categories/photography/</loc>
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1478,13 +1478,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/programming/</loc>
+    <loc>http://brunettoziosi.eu/tags/programming/</loc>
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/programming/</loc>
+    <loc>http://brunettoziosi.eu/categories/programming/</loc>
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1502,14 +1502,14 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/python/</loc>
-    <lastmod>2014-09-29T00:00:00+00:00</lastmod>
+    <loc>http://brunettoziosi.eu/tags/python/</loc>
+    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/python/</loc>
-    <lastmod>2014-12-12T00:00:00+00:00</lastmod>
+    <loc>http://brunettoziosi.eu/categories/python/</loc>
+    <lastmod>2014-09-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1550,13 +1550,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/research/</loc>
+    <loc>http://brunettoziosi.eu/tags/research/</loc>
     <lastmod>2015-06-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/research/</loc>
+    <loc>http://brunettoziosi.eu/categories/research/</loc>
     <lastmod>2015-06-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1580,13 +1580,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/scout/</loc>
+    <loc>http://brunettoziosi.eu/tags/scout/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/scout/</loc>
+    <loc>http://brunettoziosi.eu/categories/scout/</loc>
     <lastmod>2013-08-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1658,14 +1658,14 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/system/</loc>
-    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+    <loc>http://brunettoziosi.eu/tags/system/</loc>
+    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/system/</loc>
-    <lastmod>2013-08-26T00:00:00+00:00</lastmod>
+    <loc>http://brunettoziosi.eu/categories/system/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1700,13 +1700,13 @@
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/categories/travel/</loc>
+    <loc>http://brunettoziosi.eu/tags/travel/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://brunettoziosi.eu/tags/travel/</loc>
+    <loc>http://brunettoziosi.eu/categories/travel/</loc>
     <lastmod>2013-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
