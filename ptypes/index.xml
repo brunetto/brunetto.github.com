@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ptypes on Post It!</title>
-    <link>http://brunettoziosi.eu/ptypes/</link>
+    <link>http://brunettoziosi.com/ptypes/</link>
     <description>Recent content in Ptypes on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/ptypes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/ptypes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Page</title>
-      <link>http://brunettoziosi.eu/ptypes/page/</link>
+      <link>http://brunettoziosi.com/ptypes/page/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/ptypes/page/</guid>
+      <guid>http://brunettoziosi.com/ptypes/page/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Post</title>
-      <link>http://brunettoziosi.eu/ptypes/post/</link>
+      <link>http://brunettoziosi.com/ptypes/post/</link>
       <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/ptypes/post/</guid>
+      <guid>http://brunettoziosi.com/ptypes/post/</guid>
       <description></description>
     </item>
     

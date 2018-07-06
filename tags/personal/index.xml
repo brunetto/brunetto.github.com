@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/personal/</link>
+    <link>http://brunettoziosi.com/tags/personal/</link>
     <description>Recent content in Personal on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What do you think about me?</title>
-      <link>http://brunettoziosi.eu/posts/what-do-you-think-about-me/</link>
+      <link>http://brunettoziosi.com/posts/what-do-you-think-about-me/</link>
       <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/what-do-you-think-about-me/</guid>
+      <guid>http://brunettoziosi.com/posts/what-do-you-think-about-me/</guid>
       <description>AKA &amp;ldquo;In 150 characters or fewer, tell us what makes you unique. Try to be creative and say something that will catch our eye!&amp;rdquo;
 These days I am struggling trying to (re)write a thesis decent enough to get a PhD and different enough from my point of view to be accepted by my supervisor.
 At the same time I am applying to an increasing number of jobs possibly matching my love for data exploration/visualization and programming.</description>

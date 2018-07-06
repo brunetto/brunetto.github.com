@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>References on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/references/</link>
+    <link>http://brunettoziosi.com/tags/references/</link>
     <description>Recent content in References on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/references/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/references/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C references</title>
-      <link>http://brunettoziosi.eu/pages/tech/c-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/c-references/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/c-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/c-references/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43; references</title>
-      <link>http://brunettoziosi.eu/pages/tech/cpp-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/cpp-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/cpp-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/cpp-references/</guid>
       <description> A transition guide: Python to C++ A Brief Introduction to C++ for Python programmers  </description>
     </item>
     
     <item>
       <title>Programming Links</title>
-      <link>http://brunettoziosi.eu/pages/tech/programming-links/</link>
+      <link>http://brunettoziosi.com/pages/tech/programming-links/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/programming-links/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/programming-links/</guid>
       <description> My system tricks  Here  Go(lang)  Main site Tutorial Book Go Mailing List Why GoLEM: Go Launch on Every Machine Numerical Go Go(lang) official G+ page Go(lang) community on G+ Go science community on G+ my Go references Go at Google: Language Design in the Service of Software Engineering  Python  Ipython Ipython nbviewer A gallery of interesting IPython Notebooks my Python references  Versioning Git Blogging  Nikola GitHub Pages Damian Avila Blog Pelikan Scriptogr, Dropbox blogging Custom domains with github pages  Latex HTML/CSS/javascript Veusz C  my C references  C++ CUDA SMongo/SuperMongo </description>
     </item>
     
     <item>
       <title>Python references</title>
-      <link>http://brunettoziosi.eu/pages/tech/python-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/python-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/python-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/python-references/</guid>
       <description> Super Python Guide Astropy Astrocompute Astropython Python4astronomers Astrobetter AstroLib Python for Astronomy AstroML Why Astronomers Should Program in Python
  Ipython presentations
  Examples notebooks

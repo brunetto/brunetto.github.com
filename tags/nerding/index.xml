@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nerding on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/nerding/</link>
+    <link>http://brunettoziosi.com/tags/nerding/</link>
     <description>Recent content in Nerding on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/nerding/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/nerding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Things that you can not do without</title>
-      <link>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</link>
+      <link>http://brunettoziosi.com/posts/things-that-you-can-not-do-without/</link>
       <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/things-that-you-can-not-do-without/</guid>
+      <guid>http://brunettoziosi.com/posts/things-that-you-can-not-do-without/</guid>
       <description>A little list of essential tools:
  git GitHub and GitHub Pages possibly with Nikola or Hugo Bitbucket Dropbox (possibly with git repos inside, see here for problems) Mega with linux sync ipython ipython Notebook with GitHub and nbviewer Inkscape Kate Go Veusz Keep JuiceSSH Docker, Rocket (see also why Rocket)  </description>
     </item>
     
     <item>
       <title>Change a line in all of your files at once</title>
-      <link>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <link>http://brunettoziosi.com/posts/change-a-line-in-all-of-your-files-at-once/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <guid>http://brunettoziosi.com/posts/change-a-line-in-all-of-your-files-at-once/</guid>
       <description>Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.
 With sed it is super-easy:
 sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39; *.txt  </description>
@@ -34,10 +34,10 @@ sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39;
     
     <item>
       <title>Blogging with Nikola &#43; Ipython &#43; Git(Hub)</title>
-      <link>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</link>
+      <link>http://brunettoziosi.com/posts/blogging-with-nikola-ipython-github/</link>
       <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</guid>
+      <guid>http://brunettoziosi.com/posts/blogging-with-nikola-ipython-github/</guid>
       <description>&lt;p&gt;After a lot of different attempts now it seems that I&amp;rsquo;m able to run a static
 blog with Python, Nikola and Git.&lt;/p&gt;
 

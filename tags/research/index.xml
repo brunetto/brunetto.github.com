@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/research/</link>
+    <link>http://brunettoziosi.com/tags/research/</link>
     <description>Recent content in Research on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gravitational waves cheat sheet</title>
-      <link>http://brunettoziosi.eu/posts/gw-cheat-sheet/</link>
+      <link>http://brunettoziosi.com/posts/gw-cheat-sheet/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/gw-cheat-sheet/</guid>
+      <guid>http://brunettoziosi.com/posts/gw-cheat-sheet/</guid>
       <description>I would like to share few notes, a cheat sheet, about gravitational waves I put together while writing a chapter of my PhD thesis and preparing for the PhD school internal exam. I did it to tidy up the mess of references and equations you may find around that never agree and has a terrible notation!!
 Here the equations, below the images of the papers.
 General introduction Consider a small perturbation of the flat cartedian metric</description>
@@ -24,10 +24,10 @@ General introduction Consider a small perturbation of the flat cartedian metric<
     
     <item>
       <title>PDF manipulation</title>
-      <link>http://brunettoziosi.eu/posts/pdf-manipulation/</link>
+      <link>http://brunettoziosi.com/posts/pdf-manipulation/</link>
       <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/pdf-manipulation/</guid>
+      <guid>http://brunettoziosi.com/posts/pdf-manipulation/</guid>
       <description>&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
 on the fly. For example, I want to print them two-pages per sheet, or to extract
 few pages, or to shrink the size of the file without degradate the quality.&lt;/p&gt;
@@ -37,10 +37,10 @@ few pages, or to shrink the size of the file without degradate the quality.&lt;/
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.com/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.com/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -52,10 +52,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>Python plot examples</title>
-      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.com/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.com/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -67,10 +67,10 @@ a draft plot to inspect data!&lt;/p&gt;
     
     <item>
       <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/research/fit/</link>
+      <link>http://brunettoziosi.com/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.com/pages/research/fit/</guid>
       <description>SciKit Generalized Linear Models  Linear least-squares fits with errors in both coordinates.  PH291-Dual-Axis-Error-Calculation IDL function Weighted least-squares curve fitting with errors in all variables
 Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige_8py_source.html
  http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56
@@ -84,10 +84,10 @@ Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>Click here for the new guide!!!
 To install CUDA you can try with the CUDA packages in the Ubuntu repositories. If they fail, you have to download CUDA from ****
 To locate the CUDA files you can try:
@@ -96,10 +96,10 @@ To locate the CUDA files you can try:
     
     <item>
       <title>Research</title>
-      <link>http://brunettoziosi.eu/pages/research/research/</link>
+      <link>http://brunettoziosi.com/pages/research/research/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/research/</guid>
+      <guid>http://brunettoziosi.com/pages/research/research/</guid>
       <description>PhD Project The impact of stellar evolution and dynamics on the formation of compact-object binaries
 During my PhD I was part of Dr. Mapelli&amp;rsquo;s research group working on N-body simulations of young and dense star clusters in order to understand the impact of stellar evolution and dynamics on the formation and evolution of compact-object (neutron stars and black holes) binary systems.
 These objects are thought to be the best candidates to produce gravitational waves observable in the near future with the second-generation ground-based gravitational wave interferometers Advanced Ligo and Virgo.</description>
@@ -107,10 +107,10 @@ These objects are thought to be the best candidates to produce gravitational wav
     
     <item>
       <title>From .csv to HDF5 in Python</title>
-      <link>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</link>
+      <link>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</guid>
       <description>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &amp;hellip;). To the library presentation and documentation, for now refers, to the site.
 I used it a lot during my master thesis to manage the dataset from the Millennium database.
 Here I provide a brief review of how I used it to store data obtained in .</description>
@@ -118,10 +118,10 @@ Here I provide a brief review of how I used it to store data obtained in .</desc
     
     <item>
       <title>Python slicing, rebinning and indexing</title>
-      <link>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</link>
+      <link>http://brunettoziosi.com/posts/python-slicing-rebinning-and-indexing/</link>
       <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</guid>
+      <guid>http://brunettoziosi.com/posts/python-slicing-rebinning-and-indexing/</guid>
       <description>&lt;p&gt;During my master thesis I had to manage a lot of (different) data from GIF and GIF2 projects, Millimillennium, Millenium and Millennium 2 simulations and so on. Sometimes there were the need to sort, divide or rearrange these dataset.&lt;br /&gt;
 Here some examples.&lt;/p&gt;
 
@@ -130,10 +130,10 @@ Here some examples.&lt;/p&gt;
     
     <item>
       <title>Python CLI and configuration file parser</title>
-      <link>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</link>
+      <link>http://brunettoziosi.com/posts/python-cli-and-configuration-file-parser/</link>
       <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</guid>
+      <guid>http://brunettoziosi.com/posts/python-cli-and-configuration-file-parser/</guid>
       <description>One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at http://www.decalage.info) a file parser to read a configuration file and the Python library argparse for the command line parsing. In addition I have modified the file parser and I&amp;rsquo;ve added a &amp;ldquo;variable container&amp;rdquo; object, inspired by some snippets found somewhere on the web.</description>
     </item>
     

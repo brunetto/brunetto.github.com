@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page on Post It!</title>
-    <link>http://brunettoziosi.eu/ptypes/page/</link>
+    <link>http://brunettoziosi.com/ptypes/page/</link>
     <description>Recent content in Page on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/ptypes/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/ptypes/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cool Websites</title>
-      <link>http://brunettoziosi.eu/pages/tech/coolwebsites/</link>
+      <link>http://brunettoziosi.com/pages/tech/coolwebsites/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/coolwebsites/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/coolwebsites/</guid>
       <description> https://github.com/holman/left http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html http://html5up.net/  </description>
     </item>
     
     <item>
       <title>Poster Making</title>
-      <link>http://brunettoziosi.eu/pages/research/postermaking/</link>
+      <link>http://brunettoziosi.com/pages/research/postermaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/postermaking/</guid>
+      <guid>http://brunettoziosi.com/pages/research/postermaking/</guid>
       <description> http://colinpurrington.com/tips/academic/posterdesign http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf http://www.bioinformaticszen.com/post/genotype-from-phenotype/ http://zachholman.com/posts/slide-design-for-developers/ http://www.colormatters.com/color-and-design/basic-color-theory http://f1000.com/posters/browse?docTypeSearch=Poster  </description>
     </item>
     
     <item>
       <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/research/fit/</link>
+      <link>http://brunettoziosi.com/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.com/pages/research/fit/</guid>
       <description>SciKit Generalized Linear Models  Linear least-squares fits with errors in both coordinates.  PH291-Dual-Axis-Error-Calculation IDL function Weighted least-squares curve fitting with errors in all variables
 Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige_8py_source.html
  http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56
@@ -48,39 +48,39 @@ Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige
     
     <item>
       <title>GW links</title>
-      <link>http://brunettoziosi.eu/pages/research/gw-links/</link>
+      <link>http://brunettoziosi.com/pages/research/gw-links/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/gw-links/</guid>
+      <guid>http://brunettoziosi.com/pages/research/gw-links/</guid>
       <description>List of useful links about gravitational waves:
  Gravitational waves detector and sources interactive plot Black hole hunter EGO - European Gravitational Observatory VIRGO LIGO - Laser Interferometer Gravitational Wave Observatory eLISA - Evolved Laser Interferometer Space Antenna AURIGA MiniGRAIL - Gravitational Radiation Antenna In Leiden IPTA - International Pulsar Timing Array EPTA - The European Pulsar Timing Array E-Book on gravitational wave detection Games for science teaching, outreach and research Christopher Berry hompage MatchedFiltering ipython notebook with wave amplitude The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo  </description>
     </item>
     
     <item>
       <title>PhD Project</title>
-      <link>http://brunettoziosi.eu/pages/research/phd/</link>
+      <link>http://brunettoziosi.com/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
+      <guid>http://brunettoziosi.com/pages/research/phd/</guid>
       <description>The impact of stellar evolution and dynamics on the formation of compact-object binaries
 My PhD project is devoted to improving our knowledge on the demographics and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH), neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters. The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources. Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General Relativity: while indirect confirmations of GWs came from observations of pulsar binaries, a direct detection of GWs is still missing.</description>
     </item>
     
     <item>
       <title>Create a cluster with Ubuntu</title>
-      <link>http://brunettoziosi.eu/pages/tech/create-a-cluster/</link>
+      <link>http://brunettoziosi.com/pages/tech/create-a-cluster/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/create-a-cluster/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/create-a-cluster/</guid>
       <description> http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape http://www.tomshw.it/forum/linux-e-altri-sistemi-operativi/118105-realizzare-un-cluster-con-ubuntu-server.html http://byobu.info/article/Building_a_simple_Beowulf_cluster_with_Ubuntu/ http://www.stevekelly.eu/cluster.shtml https://apps.ubuntu.com/cat/applications/precise/system-config-cluster/ http://www.ubuntu.com/cloud/build-a-cloud http://www.ubuntu.com/download/cloud/install-ubuntu-cloud http://www.ubuntu.com/server http://www.eucalyptus.com/participate http://www.ubuntu.com/cloud  </description>
     </item>
     
     <item>
       <title>Git references</title>
-      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/git-references/</guid>
       <description> Ignoring files How to use GIT (easy) Good vs Bad Git usage Git Book Git tutorial
  Untrack files
   git rm --cached file   Remove files from all the repo history  git filter-branch -f --index-filter &#39;git rm --cached --ignore-unmatch filename&#39; HEAD   force a push  git push origin master --force  </description>
@@ -88,29 +88,29 @@ My PhD project is devoted to improving our knowledge on the demographics and the
     
     <item>
       <title>G&#43; UpsideDown page backup</title>
-      <link>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</link>
+      <link>http://brunettoziosi.com/pages/travels/australia/blog-backup/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/australia/blog-backup/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/australia/blog-backup/</guid>
       <description>2014-01-18 Australian Playlist
 Ecco, condividiamo con voi la &amp;quot;playlist&amp;quot; con le canzoni che ci hanno accompagnato in momenti diversi di questo viaggio in Australia.. non è una playlist esaustiva, ma un buon riassunto.. che fosse il viaggio sulla Great Ocean Road, le pulizie di casa, o qualche canzone messa su da Nicola, in futuro riascoltando questa playlist saremo di nuovo là&amp;hellip; buon ascolto! PS_ se qualche link non funzionasse, postiamo i titoli: 1.</description>
     </item>
     
     <item>
       <title>G&#43; UpsideDown page mirror</title>
-      <link>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</link>
+      <link>http://brunettoziosi.com/pages/travels/australia/blog-mirror/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/australia/blog-mirror/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/australia/blog-mirror/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Toward Upsidedown</title>
-      <link>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</link>
+      <link>http://brunettoziosi.com/pages/travels/australia/toward-upsidedown/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/australia/toward-upsidedown/</guid>
       <description> &amp;hellip; Page filling in progress&amp;hellip; :)
 Official countdown to our &amp;ldquo;UpsideDown&amp;rdquo; adventure in Ozzy   var myCountdown4 = new Countdown({ year: 2013, month:12, day:12, hour: 11, minute: 30, width:500, height:100, rangeHi:&#34;month&#34;, rangeLo:&#34;minute&#34;, style:&#34;flip&#34; });    The blog You can follow our (little) adventure at
  The not so loved and not so updated blog Our more updated Google+ page  The trip The backpack Travelling Guides  Lonely Planet Site Lonely planet guide  Friends Tips&amp;amp;Tricks </description>
@@ -118,128 +118,128 @@ Official countdown to our &amp;ldquo;UpsideDown&amp;rdquo; adventure in Ozzy   v
     
     <item>
       <title>Films</title>
-      <link>http://brunettoziosi.eu/pages/personal/films/</link>
+      <link>http://brunettoziosi.com/pages/personal/films/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/films/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/films/</guid>
       <description>To see  Pitch Perfect Tracks Sin City Mezzogiorno e mezzo di fuoco Fahrenheit 9&amp;frasl;11 Fahrenheit 451 Mission Dune Star Trek Real Steel Robot&amp;amp;Frank Gravity Redemption - Identità nascoste Ender&amp;rsquo;s Game Il grande Gatsby Educazione siberiana Hunger Games Hunger Games: La ragazza di fuoco Memento The Aviator  New 2014  Transcendence Interstellar Guardians of the Galaxy Jupiter Ascending Edge of Tomorrow The Lego Movie RoboCop Pompeii Noah The monuments men The Winter soldier The wolf of Wall Street 300: the rise of an Empire The Sessions  Nice Films  The prestige Eurotrip Una pallottola spuntata Kill Bill Bastardi senza gloria Balle spaziali Robin hood un uomo in calzamaglia Big fish Mulin rouge Full Metal Jacket Indiana jones I cento passi Il cavaliere oscuro and the others Batman&amp;rsquo;s Non ci resta che piangere Il dottor stranamore Mission impossible Il Favoloso Mondo di Amélie Il gladiatore Inception Into the wild L&amp;rsquo;Uomo che volle farsi Re Avatar Le ali della libertà Papillon Babel L&amp;rsquo;aereo più pazzo del mondo Prova a prendermi The butterfly effect Il mistero di sleepy hollow Vanilla sky Forrest Gump Matrix Pirates of the Caribbean Star Wars 300 Resident Evil Io robot L&amp;rsquo;uomo bicentenario Wall-E Il mondo dei replicanti Pacific RIM Elysium Corpi da reato Escape Plan - Fuga dall&amp;rsquo;inferno After Earth Lo Hobbit 1, 2 e 3 Next The family man Lord of War L&amp;rsquo;ultimo dei templari Le crociate L&amp;rsquo;apprendista stregone  Series  NCIS (Criminal Minds)[http://serietvsubita.</description>
     </item>
     
     <item>
       <title>Goodies</title>
-      <link>http://brunettoziosi.eu/pages/misc/goodies/</link>
+      <link>http://brunettoziosi.com/pages/misc/goodies/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/misc/goodies/</guid>
+      <guid>http://brunettoziosi.com/pages/misc/goodies/</guid>
       <description> Illegal prime number (link 1, link 2)  </description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>http://brunettoziosi.eu/pages/tech/android/</link>
+      <link>http://brunettoziosi.com/pages/tech/android/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/android/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/android/</guid>
       <description> Apps I use or like  Flashlight ASTRO File Manager Calendar Cam Scanner Chrome Drive Dropbox Facebook Foursquare (GialloZafferano)(https://play.google.com/store/apps/details?id=it.banzai.media.gzricette) Google+ gStrings GZafferano Hangouts Keep LectureNotes Maps Play Books Play Music Pocket Runtastic Trains Timetable VLC Whatsapp  Settings  set data usage warning to a low value restrict background data for G+ restrict background data for Gallery Turn off G+ photos sync  Useful links  Android Manager Google Dashboard  </description>
     </item>
     
     <item>
       <title>Interior Design</title>
-      <link>http://brunettoziosi.eu/pages/personal/interior-design/</link>
+      <link>http://brunettoziosi.com/pages/personal/interior-design/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/interior-design/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/interior-design/</guid>
       <description> Pallets inspiration Finestre tetto Mini appartamento in legno  </description>
     </item>
     
     <item>
       <title>Languages</title>
-      <link>http://brunettoziosi.eu/pages/misc/languages/</link>
+      <link>http://brunettoziosi.com/pages/misc/languages/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/misc/languages/</guid>
+      <guid>http://brunettoziosi.com/pages/misc/languages/</guid>
       <description> The end of a concern lasted for years: link to Accademia della Crusca European language joke  </description>
     </item>
     
     <item>
       <title>Sites Making Notes</title>
-      <link>http://brunettoziosi.eu/pages/tech/sites-making-notes/</link>
+      <link>http://brunettoziosi.com/pages/tech/sites-making-notes/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/sites-making-notes/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/sites-making-notes/</guid>
       <description> Google webmaster tools Google+ authoring Google authoring answer Authoring verification G+ pages site verification answer   </description>
     </item>
     
     <item>
       <title>System</title>
-      <link>http://brunettoziosi.eu/pages/tech/system/</link>
+      <link>http://brunettoziosi.com/pages/tech/system/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/system/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/system/</guid>
       <description> Installed software (from repos) Nvidia and CUDA Compilers  gcc g++ gfortran  Editors  Kate Emacs  Terminals  ipython konsole terminator  Python  Ipython NumPy SciPy PyTables  Graphics  Digikam Inkscape Gimp  Multimedia  VLC avconv (ffmpeg) mencoder  Other  texlive  Reistallation CLI External packages Settings  Inkscape: latex formulas ( here and here)  .bashrc Inkscape Git Go(lang) </description>
     </item>
     
     <item>
       <title>Barcelona</title>
-      <link>http://brunettoziosi.eu/pages/travels/barcelona/</link>
+      <link>http://brunettoziosi.com/pages/travels/barcelona/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/barcelona/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/barcelona/</guid>
       <description> Sleeping Eating Visiting  Casa Milà (La Pedreira) Casa Batlló Park Guell Sagrada Familia CosmoCaixa - Science Museum Barceloneta Gothic Quarter Columbus Monument La Rambla  </description>
     </item>
     
     <item>
       <title>Camino de Santiago</title>
-      <link>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</link>
+      <link>http://brunettoziosi.com/pages/travels/camino-de-santiago/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/camino-de-santiago/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/camino-de-santiago/</guid>
       <description>Ciao a tutti! :) In Italia sono le 16.00 di sabato 14, qui a Sydney sono (+10hrs) le 02.00 di domenica ormai..e dopo la prima nottata fuori in un locale, siamo stati ufficialmente promossi da Nicola e Linda per aver passato tutta la giornata in piedi nonostante i giorni di viaggio e il jet leg!! :) Siamo arrivati a Melbourne Tullamarine alle 09.30 di ieri, 14 dicembre, dopo un totale di 22h30 di volo e uno scalo di 10 ore a Shanghai.</description>
     </item>
     
     <item>
       <title>Dolomiti di Brenta (Lago di Tovel)</title>
-      <link>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</link>
+      <link>http://brunettoziosi.com/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/routes/dolomiti-di-brenta-lago-di-tovel/</guid>
       <description>Note Anno: 2013 Partecipanti: 17 persone Periodo: dal 3 al 9 Agosto 2013 Condizioni atmosferiche: ottime, non ha mai piovuto Cartina di riferimento: Tabacco 053 – DOLOMITI DI BRENTA (1: 25.000) Difficoltà: medio - alta
 Giorno 1 Partenza da Chirignago ore 6.30 con due furgoni a noleggio. Arrivo al lago di Tovel in circa 3 ore e 30. Per salire fino al lago c’è una strada a pedaggio, ci hanno fatto pagare circa 15 euro a furgone anche se non ci siamo fermati nel parcheggio con i mezzi.</description>
     </item>
     
     <item>
       <title>Italia-Austria</title>
-      <link>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</link>
+      <link>http://brunettoziosi.com/pages/travels/routes/italia-austria/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/routes/italia-austria/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/routes/italia-austria/</guid>
       <description>Note Giorno 1 Si parte da 1004 m.: si attraversa il fiume T. Cordevole e lo si risale fino a Cima Canale (1250 m.) dove si pranza (c&amp;rsquo;è acqua); durante il cammino sulla nostra destra possiamo ammirare il M. Rinaldo (2473 m.). Nel pomeriggio attraversiamo la Val Visdende, risalendo sempre il fiume, sino ad arrivare a Malga Chivion (1745 m.) ove si passa la notte (c&amp;rsquo;è acqua). ATTENZIONE AI FUOCHI E ALLE TENDE: LA FORESTALE PASSA SEMPRE.</description>
     </item>
     
     <item>
       <title>London</title>
-      <link>http://brunettoziosi.eu/pages/travels/london/</link>
+      <link>http://brunettoziosi.com/pages/travels/london/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/london/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/london/</guid>
       <description> Sleeping  Piccadilly Backpackers  Eating  Del Aziz La Tasca  Visiting  Purchase a London Pass London Planner London Bridge Tower of London Windsor Castle Kew Gardens Hyde Park, Westminster Abbey St. Paul’s Cathedral Eton College Shakespeare&amp;rsquo;s Globe Theatre Buckingham Palace Changing the Guard National Gallery London Eye Hamleys Toys Harrods  </description>
     </item>
     
     <item>
       <title>Monte Rosa-Cervino</title>
-      <link>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</link>
+      <link>http://brunettoziosi.com/pages/travels/routes/monte-rosa-cervino/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/routes/monte-rosa-cervino/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/routes/monte-rosa-cervino/</guid>
       <description>Note  Anno: 2003 Giorni: 7; Orari andata treno : treno alle 00.15 da Mestre - arrivo alle 8.52 a Point Saint Martin; Orari andata autobus: ore 9.20 da Point Saint Martin a Gressoney - Chemonal (partenza altavia n. 1) durata del tragitto 1h circa. Acqua: sempre presente in abbondanza.  Giorno 1 Si parte dall&amp;rsquo;imbocco dell&amp;rsquo;altavia n°1 e la si segue per circa 300 m. di dislivello fino a raggiungere Alpenzù grande dove ci si ferma per pranzare.</description>
     </item>
     
     <item>
       <title>Monti Lattari</title>
-      <link>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</link>
+      <link>http://brunettoziosi.com/pages/travels/routes/monti-lattari/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/routes/monti-lattari/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/routes/monti-lattari/</guid>
       <description>Note Partenza da Mestre alle 0.15 del 10/08/02, arrivo a Napoli alle 9.59 Ritorno da Cava dei Tirreni alle 21.07 del 16/08/02, arrivo a Mestre alle 7.59 Costo del viaggio: 70 euro circa a testa
 Giorno 1 SORRENTO Arrivo in Treno alla Stazione. Nello zaino serve il rifornimento per la colazione in treno, il pranzo,la cena a Marina di Crapolla, e la colazione della seconda mattina.
 Si procede a piedi verso la LOCALITÀ S.</description>
@@ -247,76 +247,76 @@ Si procede a piedi verso la LOCALITÀ S.</description>
     
     <item>
       <title>Moto</title>
-      <link>http://brunettoziosi.eu/pages/travels/moto/</link>
+      <link>http://brunettoziosi.com/pages/travels/moto/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/moto/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/moto/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Netherlands</title>
-      <link>http://brunettoziosi.eu/pages/travels/netherlands/</link>
+      <link>http://brunettoziosi.com/pages/travels/netherlands/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/netherlands/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/netherlands/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Routes</title>
-      <link>http://brunettoziosi.eu/pages/travels/routes/routes/</link>
+      <link>http://brunettoziosi.com/pages/travels/routes/routes/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/routes/routes/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/routes/routes/</guid>
       <description>Raccolta di alcune routes della Branca R/S del gruppo scout AGESCI Chirignago 1
  Monti Lattari, Sentiero degli dei, Costiera Amalfitana Dolomiti di Brenta (Lago di Tovel) Italia - Austria Sasso Lungo - Sasso Piatto Monte Rosa - Cervino  </description>
     </item>
     
     <item>
       <title>Sasso Lungo-Sasso piatto</title>
-      <link>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</link>
+      <link>http://brunettoziosi.com/pages/travels/routes/sasso-lungo-sasso-piatto/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/routes/sasso-lungo-sasso-piatto/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/routes/sasso-lungo-sasso-piatto/</guid>
       <description>Note  CARTINE: Tabacco 2 – 5 – 6 AUTOBUS: Dolomiti Bus Anno: 2004  Giorno 1 Autobus da Mestre a Corvara.
 Prendiamo da Corvara - Pescosta il sentiero (4 – 7), da Merscia (1554 m.) fino al lago di Ciampei (2173 m.) nei pressi del lago si dorme la prima notte (Attenzione: il lago è praticamente tutto secco, scendete dal sentiero sulla spianata e andata sul lato opposto a destra, lì trovate una bella cascata, dove c’è l’acqua da bere e dei bellissimi posti per le tende)</description>
     </item>
     
     <item>
       <title>Travels</title>
-      <link>http://brunettoziosi.eu/pages/travels/travels/</link>
+      <link>http://brunettoziosi.com/pages/travels/travels/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/travels/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/travels/</guid>
       <description>Work in progress&amp;hellip;
 Ideas  Paris-London by bike  Travels&amp;amp;Holidays  Gargano (x n, Vieste, Peschici, &amp;hellip;) 1996 Egitto, Giordania, Israele 1997 Portugal 1999 - Israele 1999-12_2000-01 - Angola, Luanda 2001 - Croatia (x n) 2002 - Greece 2002-08 and ???? - Landshut, Medieval Festival 2002 - England (school) 2003 - Corsica 2003 - England (school) Barcelona 2004 - Barcelona (school trip) London Netherlands (Breda, Amsterdam, Rotterdam) 2004-08 - Kenya, Nairobi - Ol Moran - Isiolo 2005 - GMG Koln 2005-07 - Spain, Camino de Santiago (Burgos -&amp;gt; Santiago de Compostela) 2010?</description>
     </item>
     
     <item>
       <title>Venezia - Instambul</title>
-      <link>http://brunettoziosi.eu/pages/travels/venezia-instambul/</link>
+      <link>http://brunettoziosi.com/pages/travels/venezia-instambul/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/venezia-instambul/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/venezia-instambul/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wish List</title>
-      <link>http://brunettoziosi.eu/pages/personal/wish-list/</link>
+      <link>http://brunettoziosi.com/pages/personal/wish-list/</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/wish-list/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/wish-list/</guid>
       <description>Photography  Batterie Patona per la Canon 70D oppure queste Lexar Scheda di Memoria SDXC, 1000x, 64GB (presa anche non da Amazon visto che quelle di Amazon sembrano avere problemi) Hoya HMC Filtro NDX8 67mm Treppiede Manfrotto MKBFRA4-BH Kit Traveller or here or MKBFRC4-BH (carbon version) Canon 70D + 18-135 stm Mirrorless? GoPro Hero 3 Black Edition Camera Clip 2 Flash Sony QX1 (this is the detachable lenses version) or Olympus Air A01  Sport  Maschera, boccaglio e pinne Rollerblade&amp;amp;protezioni  Travel  Zaino Osprey Aether 70 e/o trolley (questo?</description>
     </item>
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>Click here for the new guide!!!
 To install CUDA you can try with the CUDA packages in the Ubuntu repositories. If they fail, you have to download CUDA from ****
 To locate the CUDA files you can try:
@@ -325,10 +325,10 @@ To locate the CUDA files you can try:
     
     <item>
       <title>AstroFelpa</title>
-      <link>http://brunettoziosi.eu/pages/research/astrofelpa/</link>
+      <link>http://brunettoziosi.com/pages/research/astrofelpa/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
+      <guid>http://brunettoziosi.com/pages/research/astrofelpa/</guid>
       <description>License 
 AstroFelpa by BrunettoZiosi is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 Permissions beyond the scope of this license may be available at www.brunettoziosi.eu/stories/research/astrofelpa.html.
@@ -339,46 +339,46 @@ AstroP(h)D was born within the astronomy PhD students community of Padua but als
     
     <item>
       <title>Astrocomputing &amp; Astrostatistics</title>
-      <link>http://brunettoziosi.eu/pages/research/astrocomputing/</link>
+      <link>http://brunettoziosi.com/pages/research/astrocomputing/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/astrocomputing/</guid>
+      <guid>http://brunettoziosi.com/pages/research/astrocomputing/</guid>
       <description> Frequentism and Bayesianism: A Practical Introduction also here  </description>
     </item>
     
     <item>
       <title>Bachelor</title>
-      <link>http://brunettoziosi.eu/pages/research/bachelor/</link>
+      <link>http://brunettoziosi.com/pages/research/bachelor/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/bachelor/</guid>
+      <guid>http://brunettoziosi.com/pages/research/bachelor/</guid>
       <description>Bachelor Degree Exams  Mathematical analysis 1  Mathematical analysis 2  Mathematical analysis 3  Astronomy 1 (sperical astronomy, coordinates, &amp;hellip;)  Astronomy 2 (observational astronomy, photometry, &amp;hellip;)  Historical astronomy  Physics 1  Physics 2  Physics 3  Physics lab 1  Physics lab 2  Geometry  Computer science Scientific English Descriptive statistics  Astrophysics 1 (Galactic masses, local standard of rest, velocities, observations, &amp;hellip;)  Astrophysics 2 (A: spectroscopy, B: stellar structure)  Chemistry 1  Chemistry 2  Analytical mechanics  Complementary astrophysics  Cosmology  Plasma physics fundamentals  Statistical inference 1B  Principles of quantum mechanics  Principles of (special) relativity  Digital data analysis lab.</description>
     </item>
     
     <item>
       <title>C references</title>
-      <link>http://brunettoziosi.eu/pages/tech/c-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/c-references/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/c-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/c-references/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cooking</title>
-      <link>http://brunettoziosi.eu/pages/personal/cooking/</link>
+      <link>http://brunettoziosi.com/pages/personal/cooking/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/cooking/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/cooking/</guid>
       <description> Piadine rucola, stracchino, pomodorini e crudo/arrosto  </description>
     </item>
     
     <item>
       <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/personal/eating/</link>
+      <link>http://brunettoziosi.com/pages/personal/eating/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/eating/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/eating/</guid>
       <description>&lt;p&gt;An evolving list of great places were we (my girlfriend and I) ate or we want to try!!&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -386,28 +386,28 @@ AstroP(h)D was born within the astronomy PhD students community of Padua but als
     
     <item>
       <title>Life hakcs</title>
-      <link>http://brunettoziosi.eu/pages/personal/life-hacks/</link>
+      <link>http://brunettoziosi.com/pages/personal/life-hacks/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/life-hacks/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/life-hacks/</guid>
       <description> 99 Life hacks Fake it till you make it Self-fulfilling prophecy http://buzzly.org/le-46-soluzioni-ingegnose-per-rendere-la-vita-di-qualsiasi-essere-umano-piu-semplice/  </description>
     </item>
     
     <item>
       <title>Master</title>
-      <link>http://brunettoziosi.eu/pages/research/master/</link>
+      <link>http://brunettoziosi.com/pages/research/master/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/master/</guid>
+      <guid>http://brunettoziosi.com/pages/research/master/</guid>
       <description>Master Degree Exams  Astroparticle physics  General relativity  High anergy astrophysics  Galactic astrophysics 1  Stellar and planetary astrophysics  Theoretical astrophysics 1  Numerical computing  Complemetary mathematics  Cosmology  Elementary particle physics  Structure of matter 2  Astrophysical lab 1  Astrophysical lab 2  OO programming  Cosmological structure formation  Photometric and spectroscopic digital analysis lab. (FSE) Internship: Technical characterization of the Astrophysical Observatory of Asiago Final thesis  Banner from http://www.</description>
     </item>
     
     <item>
       <title>System tricks</title>
-      <link>http://brunettoziosi.eu/pages/tech/system-tricks/</link>
+      <link>http://brunettoziosi.com/pages/tech/system-tricks/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/system-tricks/</guid>
       <description>System Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while) and a Ubuntu 13.04 Dell Laptop.
 See here for a list of installed packages and settings.
  in case of kwin problems kquitapp plasma-desktop + in case, plasma-desktop
@@ -417,65 +417,65 @@ See here for a list of installed packages and settings.
     
     <item>
       <title>C&#43;&#43; references</title>
-      <link>http://brunettoziosi.eu/pages/tech/cpp-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/cpp-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/cpp-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/cpp-references/</guid>
       <description> A transition guide: Python to C++ A Brief Introduction to C++ for Python programmers  </description>
     </item>
     
     <item>
       <title>Go(lang) references</title>
-      <link>http://brunettoziosi.eu/pages/tech/golang-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/golang-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/golang-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/golang-references/</guid>
       <description>Go installation from source Regex Tutorial Cookbook Tutorial 2 Examples http://golang.org/ http://golangtutorials.blogspot.it/2011/05/table-of-contents.html http://www.golang-book.com/ Why it was creates https://groups.google.com/forum/#!forum/golang-nuts https://code.google.com/p/golem/ https://github.com/gonum https://plus.google.com/+golang/posts https://plus.google.com/communities/115354877257015196825 Progress bar Advanced logging Zen Slide What Python developers need to know before migrating to Go(lang) Why I’m not leaving Python for Go Golang for Python programmers Go for Pythonistas Go by example Going Go The Go Programming Language, or: Why all C-like languages except one suck.</description>
     </item>
     
     <item>
       <title>JavaScript references</title>
-      <link>http://brunettoziosi.eu/pages/tech/js-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/js-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/js-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/js-references/</guid>
       <description> Crockford on javascript  </description>
     </item>
     
     <item>
       <title>Music</title>
-      <link>http://brunettoziosi.eu/pages/personal/multimedia/music/</link>
+      <link>http://brunettoziosi.com/pages/personal/multimedia/music/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/multimedia/music/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/multimedia/music/</guid>
       <description> Instruments Techs  Ubuntu/Linux and music Yamaha Keyboard and Ubuntu  Links  bmp database jog.fm  </description>
     </item>
     
     <item>
       <title>Photos</title>
-      <link>http://brunettoziosi.eu/pages/personal/multimedia/photos/</link>
+      <link>http://brunettoziosi.com/pages/personal/multimedia/photos/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/multimedia/photos/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/multimedia/photos/</guid>
       <description>Some links regarding the world of photography&amp;hellip;
 Photographers Professional  Juza Photo Sigfrido Corradi Sigfrido Corradi blog Garry Jonathan Besler Anton Jankovoy  Lincoln Harrison, on Flickr, personal site Peter Greig Sébastien GABORIT Javier Pérez Caleb Charland Nicola Bernardi Aaron J. Goen  Lightpainting  10 Amazing Light Painting Photographers You Should Start Following Right Now tackyshack, on Flickr, Jan Leonardo Hannu Huhtamo Trevor Williams Light Junkies Flickr group Dana Maltby Brian Matthew Hart Janne Parviainen Patrick Rochon, RedBull collaboration Michael Ross Dennis Calvert  Amateur  Enrico Prenna Giorgio Ruberti  Sites  Flickr 500px  Interesting  Se I Grandi Fotografi Postassero Sui Forum Great Photographers on the Internet, Part II  Strangeness etc.</description>
     </item>
     
     <item>
       <title>Programming Links</title>
-      <link>http://brunettoziosi.eu/pages/tech/programming-links/</link>
+      <link>http://brunettoziosi.com/pages/tech/programming-links/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/programming-links/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/programming-links/</guid>
       <description> My system tricks  Here  Go(lang)  Main site Tutorial Book Go Mailing List Why GoLEM: Go Launch on Every Machine Numerical Go Go(lang) official G+ page Go(lang) community on G+ Go science community on G+ my Go references Go at Google: Language Design in the Service of Software Engineering  Python  Ipython Ipython nbviewer A gallery of interesting IPython Notebooks my Python references  Versioning Git Blogging  Nikola GitHub Pages Damian Avila Blog Pelikan Scriptogr, Dropbox blogging Custom domains with github pages  Latex HTML/CSS/javascript Veusz C  my C references  C++ CUDA SMongo/SuperMongo </description>
     </item>
     
     <item>
       <title>Python references</title>
-      <link>http://brunettoziosi.eu/pages/tech/python-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/python-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/python-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/python-references/</guid>
       <description> Super Python Guide Astropy Astrocompute Astropython Python4astronomers Astrobetter AstroLib Python for Astronomy AstroML Why Astronomers Should Program in Python
  Ipython presentations
  Examples notebooks
@@ -487,10 +487,10 @@ Photographers Professional  Juza Photo Sigfrido Corradi Sigfrido Corradi blog Ga
     
     <item>
       <title>Research</title>
-      <link>http://brunettoziosi.eu/pages/research/research/</link>
+      <link>http://brunettoziosi.com/pages/research/research/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/research/</guid>
+      <guid>http://brunettoziosi.com/pages/research/research/</guid>
       <description>PhD Project The impact of stellar evolution and dynamics on the formation of compact-object binaries
 During my PhD I was part of Dr. Mapelli&amp;rsquo;s research group working on N-body simulations of young and dense star clusters in order to understand the impact of stellar evolution and dynamics on the formation and evolution of compact-object (neutron stars and black holes) binary systems.
 These objects are thought to be the best candidates to produce gravitational waves observable in the near future with the second-generation ground-based gravitational wave interferometers Advanced Ligo and Virgo.</description>
@@ -498,29 +498,29 @@ These objects are thought to be the best candidates to produce gravitational wav
     
     <item>
       <title>Timelapses</title>
-      <link>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</link>
+      <link>http://brunettoziosi.com/pages/personal/multimedia/timelapses/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/multimedia/timelapses/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/multimedia/timelapses/</guid>
       <description> My equipment  Canon 30D, on Canon site, wikipedia, DPReview and JuzaPhoto Joby Gorillapod Focus + Ballhead X DSLR Neoprene Sleeve JYC Wireless Remote controller and timer  Shot Mount  KDEnlive ffmpeg/mencoder  Examples  Venice Budino making  </description>
     </item>
     
     <item>
       <title>Videos</title>
-      <link>http://brunettoziosi.eu/pages/personal/multimedia/videos/</link>
+      <link>http://brunettoziosi.com/pages/personal/multimedia/videos/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/multimedia/videos/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/multimedia/videos/</guid>
       <description> Some links about videos&amp;hellip;
 Editors  KDEnlive, my favourite Cinelerra LightWorks Openshot Avidemux  CLI tricks  Convert (avcon, previously known as ffmpeg) Slow down  </description>
     </item>
     
     <item>
       <title>Scout</title>
-      <link>http://brunettoziosi.eu/pages/personal/scout/</link>
+      <link>http://brunettoziosi.com/pages/personal/scout/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/scout/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/scout/</guid>
       <description>Work in progress
 My scout life
  1993 - 1996 Lupetti (VdB: Caracoi) 1996 - 2000 Reparto (CE: ) 2000 - 2002 Noviziato (CM: Val Visdende, Monti Lattari) 2002 - 2005 Clan (Campi: Lourdes, Dolomiti di Brenta, GMG Colonia) 2004 - 2005 RS in servizio in LC 2005 Partenza (Zianigo) 2005 - 2010 Aiuto Capo Reparto (CE: ) 2009 CFM (Costigiola) 2010 Stage Tracce del Wild (Foreste Casentinesi) 2010 CFA (Val Codera, Colico) 2010 - 2011 Aiuto Capo Clan 2010-04-10_11 Campetto di specializzazione di Astronomia (Asiago) 2010-06-12_13 Campetto di specializzazione di Natura (Padova) 2010-10-02_03 - Bracciano, FIS Jamboree meeting 2011 - 2013 Capo Clan 2011 - Bari, Staff Jamboree 2011-05-09 - Venezia, PapaDay 2011-07-27_08-09 - Sweden, Rinkaby, 22nd WSJ Jamboree (Summer/Vimmerby sub-camp) 2011 - Route Altavia dei Silenzi (AV 6) 2012 - Nomina a Capo 2012 - Forum nazionale R/S - Lancio route nazionale (Brescia) 2012 - Route Cammino Inglese (Ferrol -&amp;gt; Santiago de Compostela) 2012-07-28_08-04 - Finale Emilia, Emergenza terremoto EmiRo, servizio con PC (magazzino centrale Finale Emilia) 2009-04-18_19 Convegno Regionale Santa Maria di Piave 2013-04-13_14 Convegno Regionale Cerea Assemblee di zona 2013 Route Dolomiti di Brenta  </description>
@@ -528,19 +528,19 @@ My scout life
     
     <item>
       <title>My favourite PhD Comics</title>
-      <link>http://brunettoziosi.eu/pages/personal/my-favourite-phd-comics/</link>
+      <link>http://brunettoziosi.com/pages/personal/my-favourite-phd-comics/</link>
       <pubDate>Sat, 17 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/my-favourite-phd-comics/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/my-favourite-phd-comics/</guid>
       <description> PhD Comics Archive Most Popular Marriage vs PhD Motivation Level Thesis Outline The Thesis repulsor field The Thesis title Your computer desktop Ninjas vs Professors Desk entropy &amp;ldquo;Final&amp;rdquo;.doc  </description>
     </item>
     
     <item>
       <title>Curriculum vitae</title>
-      <link>http://brunettoziosi.eu/pages/curriculum-vitae/</link>
+      <link>http://brunettoziosi.com/pages/curriculum-vitae/</link>
       <pubDate>Fri, 16 Aug 2013 23:40:58 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/curriculum-vitae/</guid>
+      <guid>http://brunettoziosi.com/pages/curriculum-vitae/</guid>
       <description>Short PDF version here
 Personal information First name Brunetto Marco
 Last name Ziosi Address via Ivancich n.17, 30174, Chirignago (VE)
@@ -558,10 +558,10 @@ Design, build and ship Go micro-services on AWS.</description>
     
     <item>
       <title>My favourite quotes</title>
-      <link>http://brunettoziosi.eu/pages/personal/my-favourite-quotes/</link>
+      <link>http://brunettoziosi.com/pages/personal/my-favourite-quotes/</link>
       <pubDate>Wed, 14 Aug 2013 17:26:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/my-favourite-quotes/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/my-favourite-quotes/</guid>
       <description>Try again, fail again, fail better.
 [Samuel Beckett]
  Tell me and I&amp;rsquo;ll forget, show me and I may remember, involve me and I&amp;rsquo;ll understand.

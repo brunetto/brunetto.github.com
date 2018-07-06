@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cosmology on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/cosmology/</link>
+    <link>http://brunettoziosi.com/tags/cosmology/</link>
     <description>Recent content in Cosmology on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/cosmology/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/cosmology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Learning not to hate C: things worth nothing</title>
-      <link>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <link>http://brunettoziosi.com/posts/learning-not-to-hate-c-things-worth-nothing/</link>
       <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <guid>http://brunettoziosi.com/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
       <description>&lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>PhD students&#39; Journal Clubs and Sozi</title>
-      <link>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</link>
+      <link>http://brunettoziosi.com/posts/phd-students-journal-clubs-and-sozi/</link>
       <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/phd-students-journal-clubs-and-sozi/</guid>
+      <guid>http://brunettoziosi.com/posts/phd-students-journal-clubs-and-sozi/</guid>
       <description>&lt;p&gt;Some times ago I have been intrigued by &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/infographics-attempts/&#34; title=&#34;Infographics attempts!&#34;&gt;infographics&lt;/a&gt; and different ways of communicating. The first software that catchad my attention was &lt;a href=&#34;http://prezi.com/&#34; target=&#34;_blank&#34; title=&#34;Prezi Homepage&#34;&gt;Prezi&lt;/a&gt; but its technology (Flash) and the fact that it&amp;rsquo;s no opensource and has a lot of limitations let me move to &lt;a href=&#34;http://sozi.baierouge.fr/wiki/en:welcome&#34; target=&#34;_blank&#34; title=&#34;Sozi Homepage&#34;&gt;Sozi&lt;/a&gt;, an &lt;a href=&#34;http://inkscape.org/&#34; target=&#34;_blank&#34; title=&#34;Inkscape Homepage&#34;&gt;Inkscape&lt;/a&gt; extension.&lt;br /&gt;
 I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal Club, that is a meeting for PhD students and other researchers and professors taking place every Monday. It&amp;rsquo;s purpose is to let us practice on making lectures and to be up to date with recent development in other research areas.&lt;/p&gt;
 
@@ -36,10 +36,10 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
     
     <item>
       <title>PhD question #4: calculate the value of M*</title>
-      <link>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</link>
+      <link>http://brunettoziosi.com/posts/phd-question-4-calculate-the-value-of-m/</link>
       <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/phd-question-4-calculate-the-value-of-m/</guid>
+      <guid>http://brunettoziosi.com/posts/phd-question-4-calculate-the-value-of-m/</guid>
       <description>&lt;p&gt;Some post ago &lt;a href=&#34;phd-question-1-m.html&#34;&gt;I&amp;rsquo;ve written about M*&lt;/a&gt;, the typical non-linear mass collapsing at the redshift we are considering. Now I have to find a value for it.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -47,10 +47,10 @@ I&amp;rsquo;ve tried it in making my presentation for the PhD students Journal C
     
     <item>
       <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
       <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
 Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
 
@@ -59,10 +59,10 @@ Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#3
     
     <item>
       <title>The initial condition saga</title>
-      <link>http://brunettoziosi.eu/posts/the-initial-condition-saga/</link>
+      <link>http://brunettoziosi.com/posts/the-initial-condition-saga/</link>
       <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/the-initial-condition-saga/</guid>
+      <guid>http://brunettoziosi.com/posts/the-initial-condition-saga/</guid>
       <description>&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
 The first things I have understood banging against them were:&lt;/p&gt;
 
@@ -83,20 +83,20 @@ The first things I have understood banging against them were:&lt;/p&gt;
     
     <item>
       <title>PhD question #2: spherical collapse</title>
-      <link>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</link>
+      <link>http://brunettoziosi.com/posts/phd-question-2-spherical-collapse/</link>
       <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/phd-question-2-spherical-collapse/</guid>
+      <guid>http://brunettoziosi.com/posts/phd-question-2-spherical-collapse/</guid>
       <description>With this post I would like to collect and present in a simple and consistent form some of the various analytical derivation of the spherical collapse model, in particular the challenge was to find how to obtain the famous $\delta_{lin}\sim1.686$.
 Here you can find a pdf file with the analytic computation.</description>
     </item>
     
     <item>
       <title>My first Gadget2 tests</title>
-      <link>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</link>
+      <link>http://brunettoziosi.com/posts/my-first-gadget2-tests/</link>
       <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</guid>
+      <guid>http://brunettoziosi.com/posts/my-first-gadget2-tests/</guid>
       <description>&lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -104,19 +104,19 @@ Here you can find a pdf file with the analytic computation.</description>
     
     <item>
       <title>GIF2 substructures coordinates correction</title>
-      <link>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</link>
+      <link>http://brunettoziosi.com/posts/gif2-substructures-coordinates-correction/</link>
       <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</guid>
+      <guid>http://brunettoziosi.com/posts/gif2-substructures-coordinates-correction/</guid>
       <description>I used this script to change the coordinates of the substructures in the GIF2 simulation output from the center of mass coordinates to the global ones. The substructures were stored in our server in files referring to the index of the halo to which they belong and their coordinates were respect to the center of the halo. For each halo this script read the subhaloes center of mass coordinates in kpc and change them to global coordinates in Mpc managing the periodic boundary conditions .</description>
     </item>
     
     <item>
       <title>Cosmological simulations #6: adding gas!</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-6-adding-gas/</link>
       <pubDate>Tue, 29 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-6-adding-gas/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-6-adding-gas/</guid>
       <description>&lt;p&gt;As we have seen, cosmological N-body simulations consider only gravitational interactions. This is good for large scale distribution of matter such as galaxy distribution or cluster formation, but if we are interested in smaller details we have to add gas physics.&lt;br /&gt;
 There are two main approaches, completely different one from the other.&lt;/p&gt;
 
@@ -125,20 +125,20 @@ There are two main approaches, completely different one from the other.&lt;/p&gt
     
     <item>
       <title>Cosmological simulations #5: initial conditions!</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-5-initial-conditions/</link>
       <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-5-initial-conditions/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-5-initial-conditions/</guid>
       <description>After we had a look on why we need cosmological simulations, what they are and how they are performed, it&amp;rsquo;s time to learn more about the preparation of a simulation, in particular what are initial conditions and how we build them.
 Usually, for a cosmological simulation, all the fields are linear so we can use linear theory to compute them. In linear theory the density contrast evolves as a combination of a growing and a decaying mode, but only the first survives, so we can set the initial system considering only the growing mode, and because until linearity is verified the density field and velocities are related to the gravitational potential we only need to generate the gravitational field and with it we can produce density and velocity fields.</description>
     </item>
     
     <item>
       <title>Cosmological simulations #3: force calculation!</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-3-force-calculation/</link>
       <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-3-force-calculation/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-3-force-calculation/</guid>
       <description>&lt;p&gt;In the previous posts we wrote about cosmological simulations, why we need them, how they are performed and which are the important things to care about.
 Now we are ready to learn the algorithms developed to compute gravitational forces between the particles.&lt;/p&gt;
 
@@ -147,10 +147,10 @@ Now we are ready to learn the algorithms developed to compute gravitational forc
     
     <item>
       <title>Cosmological simulations #7: Limitations and some considerations</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
       <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
       <description>&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
 
 &lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
@@ -163,10 +163,10 @@ from the opposite side.&lt;/p&gt;
     
     <item>
       <title>Cosmological simulations: #4: Moving the particles!</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-4-moving-the-particles/</link>
       <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-4-moving-the-particles/</guid>
       <description>&lt;h3 id=&#34;equations-of-motion&#34;&gt;Equations of motion&lt;/h3&gt;
 
 &lt;p&gt;Once we have learned how to calculate gravitational forces and decided which way is best for us, it&amp;rsquo;s time to move particles according to the force field.&lt;br /&gt;
@@ -186,10 +186,10 @@ $\mathbf{x}_i^{new}=\mathbf{x}_i^{old}+\mathbf{v}_i\Delta t$&lt;/p&gt;
     
     <item>
       <title>PhD question #1: M*</title>
-      <link>http://brunettoziosi.eu/posts/phd-question-1-m/</link>
+      <link>http://brunettoziosi.com/posts/phd-question-1-m/</link>
       <pubDate>Fri, 11 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/phd-question-1-m/</guid>
+      <guid>http://brunettoziosi.com/posts/phd-question-1-m/</guid>
       <description>&lt;p&gt;In parallel with the series &amp;ldquo;Cosmological simulations&amp;rdquo; I&amp;rsquo;m starting now another
 series of posts about cosmology, astro/physics and related arguments.
 It may happen that your PhD advisor ask you a question about something and you
@@ -204,10 +204,10 @@ down some of these questions and I will try to answer.&lt;br /&gt;&lt;/p&gt;
     
     <item>
       <title>Cosmological simulations #1: why and what?</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-1-why-and-what/</link>
       <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-1-why-and-what/</guid>
       <description>&lt;p&gt;This is the first of a series of posts dedicated to cosmological simulations!&lt;br /&gt;
 &lt;br /&gt;
 I do this because, as stressed by my PhD advisor,
@@ -222,10 +222,10 @@ So, let&amp;rsquo;s start with &amp;ldquo;Why we need cosmological simulations? 
     
     <item>
       <title>Cosmological simulations #2: how?</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-2-how/</link>
       <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-2-how/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s try now to understand how simulations can be set up.&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 

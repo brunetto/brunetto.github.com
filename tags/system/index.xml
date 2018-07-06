@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/system/</link>
+    <link>http://brunettoziosi.com/tags/system/</link>
     <description>Recent content in System on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/system/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>System</title>
-      <link>http://brunettoziosi.eu/pages/tech/system/</link>
+      <link>http://brunettoziosi.com/pages/tech/system/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/system/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/system/</guid>
       <description> Installed software (from repos) Nvidia and CUDA Compilers  gcc g++ gfortran  Editors  Kate Emacs  Terminals  ipython konsole terminator  Python  Ipython NumPy SciPy PyTables  Graphics  Digikam Inkscape Gimp  Multimedia  VLC avconv (ffmpeg) mencoder  Other  texlive  Reistallation CLI External packages Settings  Inkscape: latex formulas ( here and here)  .bashrc Inkscape Git Go(lang) </description>
     </item>
     
     <item>
       <title>System tricks</title>
-      <link>http://brunettoziosi.eu/pages/tech/system-tricks/</link>
+      <link>http://brunettoziosi.com/pages/tech/system-tricks/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/system-tricks/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/system-tricks/</guid>
       <description>System Now I&amp;rsquo;m working on a Ubuntu 12.04 LTS Dell workstation (it has been 13.04 for a while) and a Ubuntu 13.04 Dell Laptop.
 See here for a list of installed packages and settings.
  in case of kwin problems kquitapp plasma-desktop + in case, plasma-desktop

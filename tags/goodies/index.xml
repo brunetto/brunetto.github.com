@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goodies on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/goodies/</link>
+    <link>http://brunettoziosi.com/tags/goodies/</link>
     <description>Recent content in Goodies on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/goodies/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/goodies/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Goodies</title>
-      <link>http://brunettoziosi.eu/pages/misc/goodies/</link>
+      <link>http://brunettoziosi.com/pages/misc/goodies/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/misc/goodies/</guid>
+      <guid>http://brunettoziosi.com/pages/misc/goodies/</guid>
       <description> Illegal prime number (link 1, link 2)  </description>
     </item>
     

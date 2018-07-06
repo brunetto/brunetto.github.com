@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reference on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/reference/</link>
+    <link>http://brunettoziosi.com/tags/reference/</link>
     <description>Recent content in Reference on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Sep 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/reference/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git references</title>
-      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/git-references/</guid>
       <description> Ignoring files How to use GIT (easy) Good vs Bad Git usage Git Book Git tutorial
  Untrack files
   git rm --cached file   Remove files from all the repo history  git filter-branch -f --index-filter &#39;git rm --cached --ignore-unmatch filename&#39; HEAD   force a push  git push origin master --force  </description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Go(lang) references</title>
-      <link>http://brunettoziosi.eu/pages/tech/golang-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/golang-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/golang-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/golang-references/</guid>
       <description>Go installation from source Regex Tutorial Cookbook Tutorial 2 Examples http://golang.org/ http://golangtutorials.blogspot.it/2011/05/table-of-contents.html http://www.golang-book.com/ Why it was creates https://groups.google.com/forum/#!forum/golang-nuts https://code.google.com/p/golem/ https://github.com/gonum https://plus.google.com/+golang/posts https://plus.google.com/communities/115354877257015196825 Progress bar Advanced logging Zen Slide What Python developers need to know before migrating to Go(lang) Why I’m not leaving Python for Go Golang for Python programmers Go for Pythonistas Go by example Going Go The Go Programming Language, or: Why all C-like languages except one suck.</description>
     </item>
     

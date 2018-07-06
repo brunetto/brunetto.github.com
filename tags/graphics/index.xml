@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphics on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/graphics/</link>
+    <link>http://brunettoziosi.com/tags/graphics/</link>
     <description>Recent content in Graphics on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cool Websites</title>
-      <link>http://brunettoziosi.eu/pages/tech/coolwebsites/</link>
+      <link>http://brunettoziosi.com/pages/tech/coolwebsites/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/coolwebsites/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/coolwebsites/</guid>
       <description> https://github.com/holman/left http://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing.html http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html http://html5up.net/  </description>
     </item>
     
     <item>
       <title>Poster Making</title>
-      <link>http://brunettoziosi.eu/pages/research/postermaking/</link>
+      <link>http://brunettoziosi.com/pages/research/postermaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/postermaking/</guid>
+      <guid>http://brunettoziosi.com/pages/research/postermaking/</guid>
       <description> http://colinpurrington.com/tips/academic/posterdesign http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf http://www.bioinformaticszen.com/post/genotype-from-phenotype/ http://zachholman.com/posts/slide-design-for-developers/ http://www.colormatters.com/color-and-design/basic-color-theory http://f1000.com/posters/browse?docTypeSearch=Poster  </description>
     </item>
     
     <item>
       <title>AstroFelpa</title>
-      <link>http://brunettoziosi.eu/pages/research/astrofelpa/</link>
+      <link>http://brunettoziosi.com/pages/research/astrofelpa/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
+      <guid>http://brunettoziosi.com/pages/research/astrofelpa/</guid>
       <description>License 
 AstroFelpa by BrunettoZiosi is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 Permissions beyond the scope of this license may be available at www.brunettoziosi.eu/stories/research/astrofelpa.html.

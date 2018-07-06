@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheat Sheet on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/cheat-sheet/</link>
+    <link>http://brunettoziosi.com/tags/cheat-sheet/</link>
     <description>Recent content in Cheat Sheet on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gravitational waves cheat sheet</title>
-      <link>http://brunettoziosi.eu/posts/gw-cheat-sheet/</link>
+      <link>http://brunettoziosi.com/posts/gw-cheat-sheet/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/gw-cheat-sheet/</guid>
+      <guid>http://brunettoziosi.com/posts/gw-cheat-sheet/</guid>
       <description>I would like to share few notes, a cheat sheet, about gravitational waves I put together while writing a chapter of my PhD thesis and preparing for the PhD school internal exam. I did it to tidy up the mess of references and equations you may find around that never agree and has a terrible notation!!
 Here the equations, below the images of the papers.
 General introduction Consider a small perturbation of the flat cartedian metric</description>
@@ -24,10 +24,10 @@ General introduction Consider a small perturbation of the flat cartedian metric<
     
     <item>
       <title>Git references</title>
-      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/git-references/</guid>
       <description> Ignoring files How to use GIT (easy) Good vs Bad Git usage Git Book Git tutorial
  Untrack files
   git rm --cached file   Remove files from all the repo history  git filter-branch -f --index-filter &#39;git rm --cached --ignore-unmatch filename&#39; HEAD   force a push  git push origin master --force  </description>
@@ -35,46 +35,46 @@ General introduction Consider a small perturbation of the flat cartedian metric<
     
     <item>
       <title>C references</title>
-      <link>http://brunettoziosi.eu/pages/tech/c-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/c-references/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/c-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/c-references/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43; references</title>
-      <link>http://brunettoziosi.eu/pages/tech/cpp-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/cpp-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/cpp-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/cpp-references/</guid>
       <description> A transition guide: Python to C++ A Brief Introduction to C++ for Python programmers  </description>
     </item>
     
     <item>
       <title>Go(lang) references</title>
-      <link>http://brunettoziosi.eu/pages/tech/golang-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/golang-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/golang-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/golang-references/</guid>
       <description>Go installation from source Regex Tutorial Cookbook Tutorial 2 Examples http://golang.org/ http://golangtutorials.blogspot.it/2011/05/table-of-contents.html http://www.golang-book.com/ Why it was creates https://groups.google.com/forum/#!forum/golang-nuts https://code.google.com/p/golem/ https://github.com/gonum https://plus.google.com/+golang/posts https://plus.google.com/communities/115354877257015196825 Progress bar Advanced logging Zen Slide What Python developers need to know before migrating to Go(lang) Why I’m not leaving Python for Go Golang for Python programmers Go for Pythonistas Go by example Going Go The Go Programming Language, or: Why all C-like languages except one suck.</description>
     </item>
     
     <item>
       <title>JavaScript references</title>
-      <link>http://brunettoziosi.eu/pages/tech/js-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/js-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/js-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/js-references/</guid>
       <description> Crockford on javascript  </description>
     </item>
     
     <item>
       <title>Python references</title>
-      <link>http://brunettoziosi.eu/pages/tech/python-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/python-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/python-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/python-references/</guid>
       <description> Super Python Guide Astropy Astrocompute Astropython Python4astronomers Astrobetter AstroLib Python for Astronomy AstroML Why Astronomers Should Program in Python
  Ipython presentations
  Examples notebooks

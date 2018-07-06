@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogging on Post It!</title>
-    <link>http://brunettoziosi.eu/categories/blogging/</link>
+    <link>http://brunettoziosi.com/categories/blogging/</link>
     <description>Recent content in Blogging on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blogging with Nikola &#43; Ipython &#43; Git(Hub)</title>
-      <link>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</link>
+      <link>http://brunettoziosi.com/posts/blogging-with-nikola-ipython-github/</link>
       <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</guid>
+      <guid>http://brunettoziosi.com/posts/blogging-with-nikola-ipython-github/</guid>
       <description>&lt;p&gt;After a lot of different attempts now it seems that I&amp;rsquo;m able to run a static
 blog with Python, Nikola and Git.&lt;/p&gt;
 
@@ -25,10 +25,10 @@ blog with Python, Nikola and Git.&lt;/p&gt;
     
     <item>
       <title>Second Pelican attempt: creating a blog on GitHub with Pelican</title>
-      <link>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</link>
+      <link>http://brunettoziosi.com/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</link>
       <pubDate>Fri, 08 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
+      <guid>http://brunettoziosi.com/posts/second-pelican-attempt-creating-a-blog-on-github-with-pelican/</guid>
       <description>Suppose that you are curios about GitHub pages&amp;hellip; but I don&amp;rsquo;t understand their guide. And suppose that you don&amp;rsquo;t like Ruby but prefer Python&amp;hellip; First of all create a repo named youname.github.com on your GitHub account (ok, maybe, before this, you have to create a GitHub account!).
  Then set the remote origin locally with
 # I use ssh because I can log in without a password saving my key at https://github.</description>

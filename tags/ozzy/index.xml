@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ozzy on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/ozzy/</link>
+    <link>http://brunettoziosi.com/tags/ozzy/</link>
     <description>Recent content in Ozzy on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Sep 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/ozzy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/ozzy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Toward Upsidedown</title>
-      <link>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</link>
+      <link>http://brunettoziosi.com/pages/travels/australia/toward-upsidedown/</link>
       <pubDate>Sat, 07 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/travels/australia/toward-upsidedown/</guid>
+      <guid>http://brunettoziosi.com/pages/travels/australia/toward-upsidedown/</guid>
       <description> &amp;hellip; Page filling in progress&amp;hellip; :)
 Official countdown to our &amp;ldquo;UpsideDown&amp;rdquo; adventure in Ozzy   var myCountdown4 = new Countdown({ year: 2013, month:12, day:12, hour: 11, minute: 30, width:500, height:100, rangeHi:&#34;month&#34;, rangeLo:&#34;minute&#34;, style:&#34;flip&#34; });    The blog You can follow our (little) adventure at
  The not so loved and not so updated blog Our more updated Google+ page  The trip The backpack Travelling Guides  Lonely Planet Site Lonely planet guide  Friends Tips&amp;amp;Tricks </description>

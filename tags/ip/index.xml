@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ip on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/ip/</link>
+    <link>http://brunettoziosi.com/tags/ip/</link>
     <description>Recent content in Ip on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Sep 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/ip/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/ip/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Check external ip</title>
-      <link>http://brunettoziosi.eu/posts/check-external-ip/</link>
+      <link>http://brunettoziosi.com/posts/check-external-ip/</link>
       <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/check-external-ip/</guid>
+      <guid>http://brunettoziosi.com/posts/check-external-ip/</guid>
       <description>&lt;p&gt;This is the first attempt to check the external ip of a linux box.
 This means, for example, the public ip address of our modem if we are connected
 to the home Wi-Fi.&lt;br /&gt;

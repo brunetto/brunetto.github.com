@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Post It!</title>
-    <link>http://brunettoziosi.eu/categories/python/</link>
+    <link>http://brunettoziosi.com/categories/python/</link>
     <description>Recent content in Python on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/categories/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python plot examples</title>
-      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.com/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.com/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -28,10 +28,10 @@ a draft plot to inspect data!&lt;/p&gt;
     
     <item>
       <title>Python references</title>
-      <link>http://brunettoziosi.eu/pages/tech/python-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/python-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/python-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/python-references/</guid>
       <description> Super Python Guide Astropy Astrocompute Astropython Python4astronomers Astrobetter AstroLib Python for Astronomy AstroML Why Astronomers Should Program in Python
  Ipython presentations
  Examples notebooks
@@ -43,10 +43,10 @@ a draft plot to inspect data!&lt;/p&gt;
     
     <item>
       <title>Latex together with matplotlib!</title>
-      <link>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</link>
+      <link>http://brunettoziosi.com/posts/latex-together-with-matplotlib/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</guid>
+      <guid>http://brunettoziosi.com/posts/latex-together-with-matplotlib/</guid>
       <description>Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.
 Everything you need is to add to your script
 from matplotlib import rc rc(&#39;font&#39;,**{&#39;family&#39;:&#39;sans-serif&#39;,&#39;sans-serif&#39;:[&#39;Helvetica&#39;]}) ## for Palatino and other serif fonts use: #rc(&#39;font&#39;,**{&#39;family&#39;:&#39;serif&#39;,&#39;serif&#39;:[&#39;Palatino&#39;])) rc(&#39;text&#39;, usetex=True)  and write you text label like
@@ -55,10 +55,10 @@ label = r&#39;theoretical $f(nu)$&#39;)  </description>
     
     <item>
       <title>Essential guide to binning</title>
-      <link>http://brunettoziosi.eu/posts/essential-guide-to-binning/</link>
+      <link>http://brunettoziosi.com/posts/essential-guide-to-binning/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/essential-guide-to-binning/</guid>
+      <guid>http://brunettoziosi.com/posts/essential-guide-to-binning/</guid>
       <description>&lt;p&gt;Often I found myself fighting against data binning, trying to understand the relation between linear and logarithmic bins and how to create the bin starting from the bins number or the bins spacing.&lt;br /&gt;
 It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
 
@@ -67,10 +67,10 @@ It&amp;rsquo;s time to write down some consideration and snippet!&lt;/p&gt;
     
     <item>
       <title>HDF5 in Python: PyTables</title>
-      <link>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</link>
+      <link>http://brunettoziosi.com/posts/hdf5-in-python-pytables/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</guid>
+      <guid>http://brunettoziosi.com/posts/hdf5-in-python-pytables/</guid>
       <description>HDF5 is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.
 It&amp;rsquo;s also possible to navigate into a file graphically with ViTables.
@@ -79,10 +79,10 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>Create, recreate and remove duplicates in array manipulation, obviously in Python!:)</title>
-      <link>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
+      <link>http://brunettoziosi.com/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</link>
       <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/create-recreate-and-remove-duplicates-in-array-manipulation-obviously-in-python/</guid>
       <description>&lt;p&gt;I would like to &amp;ldquo;pin&amp;rdquo; here a pair of quick solution to everyday problems I encounter manipulating arrays.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -90,10 +90,10 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>Parameter space parallel exploration in Python</title>
-      <link>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</link>
+      <link>http://brunettoziosi.com/posts/parameter-space-parallel-exploration-in-python/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/parameter-space-parallel-exploration-in-python/</guid>
       <description>&lt;p&gt;Today a friend of mine ask me how to quickly and easily parallelize a parameter space exploration in his code. &amp;ldquo;Quickly and easily&amp;rdquo; means &amp;ldquo;do not try to use &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-monte-carlo-markov-chain/&#34; target=&#34;_blank&#34; title=&#34;PhD question #3: Monte Carlo Markov chain&#34;&gt;MCMC&lt;/a&gt; or something similar!!!&amp;ldquo;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -101,29 +101,29 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>GIF2 files Python reader</title>
-      <link>http://brunettoziosi.eu/posts/gif2-files-python-reader/</link>
+      <link>http://brunettoziosi.com/posts/gif2-files-python-reader/</link>
       <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/gif2-files-python-reader/</guid>
+      <guid>http://brunettoziosi.com/posts/gif2-files-python-reader/</guid>
       <description>I create this script on the basis of the code to read the Millennium II data (the same used here) provided by Mike Boylan-Kolchin. Being allowed to read the Fortran code to write and read the GIF2 files I could adapt this script to exactly fit this problem.
 import numpy as np import sys class head: def __init__(self, fname): import types bo_mark=&#39;&amp;gt;&#39; # start by reading in header: if type(fname) is types.</description>
     </item>
     
     <item>
       <title>GIF2 substructures coordinates correction</title>
-      <link>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</link>
+      <link>http://brunettoziosi.com/posts/gif2-substructures-coordinates-correction/</link>
       <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/gif2-substructures-coordinates-correction/</guid>
+      <guid>http://brunettoziosi.com/posts/gif2-substructures-coordinates-correction/</guid>
       <description>I used this script to change the coordinates of the substructures in the GIF2 simulation output from the center of mass coordinates to the global ones. The substructures were stored in our server in files referring to the index of the halo to which they belong and their coordinates were respect to the center of the halo. For each halo this script read the subhaloes center of mass coordinates in kpc and change them to global coordinates in Mpc managing the periodic boundary conditions .</description>
     </item>
     
     <item>
       <title>From .csv to HDF5 in Python</title>
-      <link>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</link>
+      <link>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</guid>
       <description>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &amp;hellip;). To the library presentation and documentation, for now refers, to the site.
 I used it a lot during my master thesis to manage the dataset from the Millennium database.
 Here I provide a brief review of how I used it to store data obtained in .</description>
@@ -131,10 +131,10 @@ Here I provide a brief review of how I used it to store data obtained in .</desc
     
     <item>
       <title>From binaries to HDF5 using Python</title>
-      <link>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</link>
+      <link>http://brunettoziosi.com/posts/from-binaries-to-hdf5-using-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</guid>
+      <guid>http://brunettoziosi.com/posts/from-binaries-to-hdf5-using-python/</guid>
       <description>&lt;p&gt;I have used this script to convert the Millennium II data from the unformatted fortran binary formato to the DF5 one.&lt;br /&gt;
 The core of the script is a module (&lt;code&gt;modified_read_snapshots&lt;/code&gt;) built on the basis of a script kindly provided by &lt;a href=&#34;http://mbk.ps.uci.edu/index.html&#34; target=&#34;_blank&#34; title=&#34;Mike Boylan-Kolchin&#34;&gt;Mike Boylan-Kolchin&lt;/a&gt; from the group that perform the Millennium II simulation.&lt;/p&gt;
 
@@ -143,10 +143,10 @@ The core of the script is a module (&lt;code&gt;modified_read_snapshots&lt;/code
     
     <item>
       <title>Python slicing, rebinning and indexing</title>
-      <link>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</link>
+      <link>http://brunettoziosi.com/posts/python-slicing-rebinning-and-indexing/</link>
       <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</guid>
+      <guid>http://brunettoziosi.com/posts/python-slicing-rebinning-and-indexing/</guid>
       <description>&lt;p&gt;During my master thesis I had to manage a lot of (different) data from GIF and GIF2 projects, Millimillennium, Millenium and Millennium 2 simulations and so on. Sometimes there were the need to sort, divide or rearrange these dataset.&lt;br /&gt;
 Here some examples.&lt;/p&gt;
 
@@ -155,19 +155,19 @@ Here some examples.&lt;/p&gt;
     
     <item>
       <title>Python CLI and configuration file parser</title>
-      <link>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</link>
+      <link>http://brunettoziosi.com/posts/python-cli-and-configuration-file-parser/</link>
       <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</guid>
+      <guid>http://brunettoziosi.com/posts/python-cli-and-configuration-file-parser/</guid>
       <description>One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at http://www.decalage.info) a file parser to read a configuration file and the Python library argparse for the command line parsing. In addition I have modified the file parser and I&amp;rsquo;ve added a &amp;ldquo;variable container&amp;rdquo; object, inspired by some snippets found somewhere on the web.</description>
     </item>
     
     <item>
       <title>Python logging</title>
-      <link>http://brunettoziosi.eu/posts/python-logging/</link>
+      <link>http://brunettoziosi.com/posts/python-logging/</link>
       <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-logging/</guid>
+      <guid>http://brunettoziosi.com/posts/python-logging/</guid>
       <description>&lt;p&gt;After I had a &lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/python-parallel-job-manager.html&#34; target=&#34;_blank&#34; title=&#34;Python parallel job manager&#34;&gt;Python parallel job&amp;nbsp;manager&lt;/a&gt; I realize that all the attempts I have done to log what happen in my code weren&amp;rsquo;t satisfying. It was not comfortable to manage every output when I want to change something and it was impossible to switch off some of logs without changing the code. The Python logging library is a great piece of code that permits to personalize most of the aspect of the logging in a program but maintaining a standard and comfortable interface. It also allows an easy management of many different outputs (file, screen, &amp;hellip;) and different levels of logging (error, info, &amp;hellip;) indipendent one from each other. It also allows to handle the logging of the imported modules.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -175,10 +175,10 @@ Here some examples.&lt;/p&gt;
     
     <item>
       <title>Python parallel job manager</title>
-      <link>http://brunettoziosi.eu/posts/python-parallel-job-manager/</link>
+      <link>http://brunettoziosi.com/posts/python-parallel-job-manager/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-parallel-job-manager/</guid>
+      <guid>http://brunettoziosi.com/posts/python-parallel-job-manager/</guid>
       <description>&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think&amp;hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &amp;hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

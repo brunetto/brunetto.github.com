@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/programming/</link>
+    <link>http://brunettoziosi.com/tags/programming/</link>
     <description>Recent content in Programming on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jul 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lorenzo negli stadi 2015</title>
-      <link>http://brunettoziosi.eu/posts/lorenzo2015/</link>
+      <link>http://brunettoziosi.com/posts/lorenzo2015/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/lorenzo2015/</guid>
+      <guid>http://brunettoziosi.com/posts/lorenzo2015/</guid>
       <description>My photos from &amp;ldquo;Lorenzo negli stadi 2015&amp;rdquo; tour by Jovanotti!!!
 Update: 2015/07/23: Ok, I definitely need to change the gallery, but let me submit defend my thesis and I will surprise you!! :D
  ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi    ©BrunettoZiosi                                 .</description>
@@ -24,10 +24,10 @@ Update: 2015/07/23: Ok, I definitely need to change the gallery, but let me subm
     
     <item>
       <title>Instagram!!</title>
-      <link>http://brunettoziosi.eu/posts/instagram/</link>
+      <link>http://brunettoziosi.com/posts/instagram/</link>
       <pubDate>Tue, 16 Jun 2015 10:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/instagram/</guid>
+      <guid>http://brunettoziosi.com/posts/instagram/</guid>
       <description>Eventually, I started using Instagram.
 To celebrate this event, I also learned how to post a gallery here!! 😁
 Below you can ❤ my Instagram gallery!!!
@@ -36,10 +36,10 @@ Below you can ❤ my Instagram gallery!!!
     
     <item>
       <title>Install Docker</title>
-      <link>http://brunettoziosi.eu/posts/docker-installation/</link>
+      <link>http://brunettoziosi.com/posts/docker-installation/</link>
       <pubDate>Tue, 16 Jun 2015 10:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/docker-installation/</guid>
+      <guid>http://brunettoziosi.com/posts/docker-installation/</guid>
       <description>What is Docker? In short:
  &amp;ldquo;An open source project to pack, ship and run any application as a lightweight container.&amp;rdquo;
  In practice Docker
@@ -48,20 +48,20 @@ Below you can ❤ my Instagram gallery!!!
     
     <item>
       <title>Dockerized Starlab</title>
-      <link>http://brunettoziosi.eu/posts/dockerized-starlab/</link>
+      <link>http://brunettoziosi.com/posts/dockerized-starlab/</link>
       <pubDate>Mon, 15 Jun 2015 11:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/dockerized-starlab/</guid>
+      <guid>http://brunettoziosi.com/posts/dockerized-starlab/</guid>
       <description>Once you have Docker installed, you may want to see it in action. Here I demonstrate how to use Docker in a slightly different way respect what you can find around (AKA use Docker to set up a web-server or something similar).
 I think Docker is a great solution to deal with easiness of installation and reproducibility in science. LXD would be probable be better. LXD already provide unprivileged containers AND is more about a container containing more than an application, while Docker is based on the idea of one container for a single app.</description>
     </item>
     
     <item>
       <title>PDF manipulation</title>
-      <link>http://brunettoziosi.eu/posts/pdf-manipulation/</link>
+      <link>http://brunettoziosi.com/posts/pdf-manipulation/</link>
       <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/pdf-manipulation/</guid>
+      <guid>http://brunettoziosi.com/posts/pdf-manipulation/</guid>
       <description>&lt;p&gt;It happens, from time to time, that I find myself looking for a way to manipulate PDF
 on the fly. For example, I want to print them two-pages per sheet, or to extract
 few pages, or to shrink the size of the file without degradate the quality.&lt;/p&gt;
@@ -71,10 +71,10 @@ few pages, or to shrink the size of the file without degradate the quality.&lt;/
     
     <item>
       <title>Starlab simulations with `sltoos`</title>
-      <link>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</link>
+      <link>http://brunettoziosi.com/posts/starlab-simulations-with-sltools/</link>
       <pubDate>Wed, 03 Jun 2015 10:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</guid>
+      <guid>http://brunettoziosi.com/posts/starlab-simulations-with-sltools/</guid>
       <description>You can download sltools from here.
 Then create one or more simulation configuration(s), for example
 { &amp;quot;Runs&amp;quot;: 50, &amp;quot;Comb&amp;quot;: 86, &amp;quot;Ncm&amp;quot; : 10000, &amp;quot;Fpb&amp;quot; : 0.05, &amp;quot;W&amp;quot; : 3, &amp;quot;Z&amp;quot; : 0.10, &amp;quot;Rv&amp;quot;: 5, &amp;quot;EndTime&amp;quot; : 500, &amp;quot;Machine&amp;quot; : &amp;quot;yourCluster&amp;quot;, &amp;quot;UserName&amp;quot; : &amp;quot;yourUserName&amp;quot;, &amp;quot;PName&amp;quot;: &amp;quot;project&amp;quot;, &amp;quot;BinFolder&amp;quot;: &amp;quot;/home/yourUserName/bin/&amp;quot; }  where
@@ -83,10 +83,10 @@ Then create one or more simulation configuration(s), for example
     
     <item>
       <title>Not only Big Data</title>
-      <link>http://brunettoziosi.eu/posts/not-only-big-data/</link>
+      <link>http://brunettoziosi.com/posts/not-only-big-data/</link>
       <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/not-only-big-data/</guid>
+      <guid>http://brunettoziosi.com/posts/not-only-big-data/</guid>
       <description>&lt;p&gt;Recently I&amp;rsquo;ve been at a &lt;a href=&#34;http://www.cineca.it/en&#34;&gt;Cineca&lt;/a&gt; workshop focused on tools to deal with big data analysis.
 We had a taste of MapReduce/Hadoop/Spark and friends and we used Docker.
 I wrote a small presentation to update my collegues and it become a in-progress presentation of the tools I think are
@@ -98,10 +98,10 @@ You can find it after the break.&lt;/p&gt;
     
     <item>
       <title>Python plot examples</title>
-      <link>http://brunettoziosi.eu/posts/python-plot-examples/</link>
+      <link>http://brunettoziosi.com/posts/python-plot-examples/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-plot-examples/</guid>
+      <guid>http://brunettoziosi.com/posts/python-plot-examples/</guid>
       <description>&lt;p&gt;Two examples on how to make plots with &lt;a href=&#34;http://home.gna.org/veusz&#34;&gt;Veusz&lt;/a&gt; and
 &lt;a href=&#34;http://matplotlib.org&#34;&gt;Matplotlib&lt;/a&gt;.&lt;br /&gt;
 I prefer Veusz because it&amp;rsquo;s easier to configure, modify and it produces
@@ -113,10 +113,10 @@ a draft plot to inspect data!&lt;/p&gt;
     
     <item>
       <title>Change a line in all of your files at once</title>
-      <link>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <link>http://brunettoziosi.com/posts/change-a-line-in-all-of-your-files-at-once/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <guid>http://brunettoziosi.com/posts/change-a-line-in-all-of-your-files-at-once/</guid>
       <description>Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.
 With sed it is super-easy:
 sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39; *.txt  </description>
@@ -124,30 +124,30 @@ sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39;
     
     <item>
       <title>Linux network monitoring</title>
-      <link>http://brunettoziosi.eu/posts/network-monitoring/</link>
+      <link>http://brunettoziosi.com/posts/network-monitoring/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/network-monitoring/</guid>
+      <guid>http://brunettoziosi.com/posts/network-monitoring/</guid>
       <description>A list of programs to monitor your network connection and find out which process is eating bandwith and how to run them:
  sudo nethogs eth0 lsof -i -n -P sudo iftop -i eth0 nmon  </description>
     </item>
     
     <item>
       <title>rsync like a pro</title>
-      <link>http://brunettoziosi.eu/posts/rsync-like-a-pro/</link>
+      <link>http://brunettoziosi.com/posts/rsync-like-a-pro/</link>
       <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/rsync-like-a-pro/</guid>
+      <guid>http://brunettoziosi.com/posts/rsync-like-a-pro/</guid>
       <description>To sync two folder on two different machines with a non-default ssh port:
 rsync -avuh --progress --stats --rsh=&#39;ssh -p&amp;lt;your-ssh-port&amp;gt;&#39; user@source:path user@dest:path  If you need it, -c flag will force files checksum to be sure they are the same or not. It takes a lot of time.</description>
     </item>
     
     <item>
       <title>Ssh keys exchange</title>
-      <link>http://brunettoziosi.eu/posts/ssh-keys-exchange/</link>
+      <link>http://brunettoziosi.com/posts/ssh-keys-exchange/</link>
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/ssh-keys-exchange/</guid>
+      <guid>http://brunettoziosi.com/posts/ssh-keys-exchange/</guid>
       <description>A superfast note on how to exchange ssh keys in order to connect without the need to remember a password.
 On both the computer (A and B):
 ssh-keygen ssh-copy-id -i you@B ssh you@B # to check if it works  If it doesn&amp;rsquo;t work try:
@@ -156,10 +156,10 @@ cat .ssh/id_rsa.pub | ssh b@B &#39;cat &amp;gt;&amp;gt; .ssh/authorized_keys&#39
     
     <item>
       <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/research/fit/</link>
+      <link>http://brunettoziosi.com/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.com/pages/research/fit/</guid>
       <description>SciKit Generalized Linear Models  Linear least-squares fits with errors in both coordinates.  PH291-Dual-Axis-Error-Calculation IDL function Weighted least-squares curve fitting with errors in all variables
 Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige_8py_source.html
  http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56
@@ -173,10 +173,10 @@ Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige
     
     <item>
       <title>Blog pages index generator</title>
-      <link>http://brunettoziosi.eu/posts/blog-pages-index-generator/</link>
+      <link>http://brunettoziosi.com/posts/blog-pages-index-generator/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/blog-pages-index-generator/</guid>
+      <guid>http://brunettoziosi.com/posts/blog-pages-index-generator/</guid>
       <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
 &lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
 pages of this blog!
@@ -192,19 +192,19 @@ deleted pages.&lt;/p&gt;
     
     <item>
       <title>Create a cluster with Ubuntu</title>
-      <link>http://brunettoziosi.eu/pages/tech/create-a-cluster/</link>
+      <link>http://brunettoziosi.com/pages/tech/create-a-cluster/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/create-a-cluster/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/create-a-cluster/</guid>
       <description> http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape http://www.tomshw.it/forum/linux-e-altri-sistemi-operativi/118105-realizzare-un-cluster-con-ubuntu-server.html http://byobu.info/article/Building_a_simple_Beowulf_cluster_with_Ubuntu/ http://www.stevekelly.eu/cluster.shtml https://apps.ubuntu.com/cat/applications/precise/system-config-cluster/ http://www.ubuntu.com/cloud/build-a-cloud http://www.ubuntu.com/download/cloud/install-ubuntu-cloud http://www.ubuntu.com/server http://www.eucalyptus.com/participate http://www.ubuntu.com/cloud  </description>
     </item>
     
     <item>
       <title>Git references</title>
-      <link>http://brunettoziosi.eu/pages/tech/git-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/git-references/</link>
       <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/git-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/git-references/</guid>
       <description> Ignoring files How to use GIT (easy) Good vs Bad Git usage Git Book Git tutorial
  Untrack files
   git rm --cached file   Remove files from all the repo history  git filter-branch -f --index-filter &#39;git rm --cached --ignore-unmatch filename&#39; HEAD   force a push  git push origin master --force  </description>
@@ -212,10 +212,10 @@ deleted pages.&lt;/p&gt;
     
     <item>
       <title>Latex conditional compilation</title>
-      <link>http://brunettoziosi.eu/posts/latex-conditional-compilation/</link>
+      <link>http://brunettoziosi.com/posts/latex-conditional-compilation/</link>
       <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/latex-conditional-compilation/</guid>
+      <guid>http://brunettoziosi.com/posts/latex-conditional-compilation/</guid>
       <description>It&amp;rsquo;s a long time I&amp;rsquo;m looking for a way to conditional-compiling my Beamer presentation in order to decide on the fly if I want to print an handout version of the presentation.
  Inside the .tex file you have to write
 \ifdefined\HANDOUT \setbeameroption{show notes} %un-comment to see the notes \usepackage{pgfpages} \pgfpagesuselayout{8 on 1}[a4paper]%, landscape] \fi  where the pgfpages package is used to print 8 slide per page.
@@ -224,10 +224,10 @@ Before this if you want you can put \newcommand*{\HANDOUT}{}% to decide in the s
     
     <item>
       <title>Super-basic file parsing in Go</title>
-      <link>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</link>
+      <link>http://brunettoziosi.com/posts/super-basic-file-parsing-in-go/</link>
       <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</guid>
+      <guid>http://brunettoziosi.com/posts/super-basic-file-parsing-in-go/</guid>
       <description>&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix
 searching for the lines containing a certain string.&lt;/p&gt;
 
@@ -236,10 +236,10 @@ searching for the lines containing a certain string.&lt;/p&gt;
     
     <item>
       <title>Go installation from source</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-4-moving-the-particles/</link>
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-4-moving-the-particles/</guid>
       <description>Summary of the Go installation instruction from source as presented in:
  Go installation Go installation from source Write Go code   The installation path will be /usr/local/go and the workspace in $HOME/Code/go
 cd /usr/local hg clone -u release https://code.google.com/p/go cd go/src ./all.bash echo &amp;quot;export PATH=$PATH:/usr/local/go/bin&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc  </description>
@@ -247,19 +247,19 @@ cd /usr/local hg clone -u release https://code.google.com/p/go cd go/src ./all.b
     
     <item>
       <title>System</title>
-      <link>http://brunettoziosi.eu/pages/tech/system/</link>
+      <link>http://brunettoziosi.com/pages/tech/system/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/system/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/system/</guid>
       <description> Installed software (from repos) Nvidia and CUDA Compilers  gcc g++ gfortran  Editors  Kate Emacs  Terminals  ipython konsole terminator  Python  Ipython NumPy SciPy PyTables  Graphics  Digikam Inkscape Gimp  Multimedia  VLC avconv (ffmpeg) mencoder  Other  texlive  Reistallation CLI External packages Settings  Inkscape: latex formulas ( here and here)  .bashrc Inkscape Git Go(lang) </description>
     </item>
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>Click here for the new guide!!!
 To install CUDA you can try with the CUDA packages in the Ubuntu repositories. If they fail, you have to download CUDA from ****
 To locate the CUDA files you can try:
@@ -268,46 +268,46 @@ To locate the CUDA files you can try:
     
     <item>
       <title>Astrocomputing &amp; Astrostatistics</title>
-      <link>http://brunettoziosi.eu/pages/research/astrocomputing/</link>
+      <link>http://brunettoziosi.com/pages/research/astrocomputing/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/astrocomputing/</guid>
+      <guid>http://brunettoziosi.com/pages/research/astrocomputing/</guid>
       <description> Frequentism and Bayesianism: A Practical Introduction also here  </description>
     </item>
     
     <item>
       <title>C&#43;&#43; references</title>
-      <link>http://brunettoziosi.eu/pages/tech/cpp-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/cpp-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/cpp-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/cpp-references/</guid>
       <description> A transition guide: Python to C++ A Brief Introduction to C++ for Python programmers  </description>
     </item>
     
     <item>
       <title>JavaScript references</title>
-      <link>http://brunettoziosi.eu/pages/tech/js-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/js-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/js-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/js-references/</guid>
       <description> Crockford on javascript  </description>
     </item>
     
     <item>
       <title>Programming Links</title>
-      <link>http://brunettoziosi.eu/pages/tech/programming-links/</link>
+      <link>http://brunettoziosi.com/pages/tech/programming-links/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/programming-links/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/programming-links/</guid>
       <description> My system tricks  Here  Go(lang)  Main site Tutorial Book Go Mailing List Why GoLEM: Go Launch on Every Machine Numerical Go Go(lang) official G+ page Go(lang) community on G+ Go science community on G+ my Go references Go at Google: Language Design in the Service of Software Engineering  Python  Ipython Ipython nbviewer A gallery of interesting IPython Notebooks my Python references  Versioning Git Blogging  Nikola GitHub Pages Damian Avila Blog Pelikan Scriptogr, Dropbox blogging Custom domains with github pages  Latex HTML/CSS/javascript Veusz C  my C references  C++ CUDA SMongo/SuperMongo </description>
     </item>
     
     <item>
       <title>Nvidia drivers</title>
-      <link>http://brunettoziosi.eu/posts/nvidia-drivers/</link>
+      <link>http://brunettoziosi.com/posts/nvidia-drivers/</link>
       <pubDate>Mon, 19 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/nvidia-drivers/</guid>
+      <guid>http://brunettoziosi.com/posts/nvidia-drivers/</guid>
       <description>&lt;p&gt;If you need to install the NVIDIA drivers in your linux box you can encounter
 several problems.&lt;br /&gt;
 Here I try to summarize some useful step.&lt;/p&gt;
@@ -317,20 +317,20 @@ Here I try to summarize some useful step.&lt;/p&gt;
     
     <item>
       <title>Imagemagick &#43; pcal = calendar</title>
-      <link>http://brunettoziosi.eu/posts/imagemagick-pcal-calendar/</link>
+      <link>http://brunettoziosi.com/posts/imagemagick-pcal-calendar/</link>
       <pubDate>Sat, 18 Aug 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/imagemagick-pcal-calendar/</guid>
+      <guid>http://brunettoziosi.com/posts/imagemagick-pcal-calendar/</guid>
       <description>This is the first version of the script I&amp;rsquo;ve created to make a calendar with photos using pcal and Imagemagik. It needs some folder and a &amp;ldquo;ps-type&amp;rdquo; font (here ChickenScratchAOE), but I think it&amp;rsquo;s quite easy to understand. I have created some of the files, such as &amp;ldquo;copertina&amp;rdquo;, before, using Gimp.
 #!/bin/bash # Parameters footnote = &amp;quot;...&amp;quot; # Create ps calendar files and convert them to pdf echo &amp;quot;Create pdf files of months.</description>
     </item>
     
     <item>
       <title>Latex together with matplotlib!</title>
-      <link>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</link>
+      <link>http://brunettoziosi.com/posts/latex-together-with-matplotlib/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/latex-together-with-matplotlib/</guid>
+      <guid>http://brunettoziosi.com/posts/latex-together-with-matplotlib/</guid>
       <description>Sometimes you need to label your plot with math expression or Greek letters and ASCII is not enough.
 Everything you need is to add to your script
 from matplotlib import rc rc(&#39;font&#39;,**{&#39;family&#39;:&#39;sans-serif&#39;,&#39;sans-serif&#39;:[&#39;Helvetica&#39;]}) ## for Palatino and other serif fonts use: #rc(&#39;font&#39;,**{&#39;family&#39;:&#39;serif&#39;,&#39;serif&#39;:[&#39;Palatino&#39;])) rc(&#39;text&#39;, usetex=True)  and write you text label like
@@ -339,10 +339,10 @@ label = r&#39;theoretical $f(nu)$&#39;)  </description>
     
     <item>
       <title>HDF5 in Python: PyTables</title>
-      <link>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</link>
+      <link>http://brunettoziosi.com/posts/hdf5-in-python-pytables/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</guid>
+      <guid>http://brunettoziosi.com/posts/hdf5-in-python-pytables/</guid>
       <description>HDF5 is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.
 It&amp;rsquo;s also possible to navigate into a file graphically with ViTables.
@@ -351,10 +351,10 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>Learning not to hate C: things worth nothing</title>
-      <link>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</link>
+      <link>http://brunettoziosi.com/posts/learning-not-to-hate-c-things-worth-nothing/</link>
       <pubDate>Mon, 21 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
+      <guid>http://brunettoziosi.com/posts/learning-not-to-hate-c-things-worth-nothing/</guid>
       <description>&lt;p&gt;Here I would like to post some of the ideas, tricks, truths, and so on I&amp;rsquo;ve learned during the two-days course at the computing center. Two intense days of base C-programming full immersion, far beyond the flat and boring (and unuseful) orthodoxy you can find in a book.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -362,10 +362,10 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>Parameter space parallel exploration in Python</title>
-      <link>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</link>
+      <link>http://brunettoziosi.com/posts/parameter-space-parallel-exploration-in-python/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/parameter-space-parallel-exploration-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/parameter-space-parallel-exploration-in-python/</guid>
       <description>&lt;p&gt;Today a friend of mine ask me how to quickly and easily parallelize a parameter space exploration in his code. &amp;ldquo;Quickly and easily&amp;rdquo; means &amp;ldquo;do not try to use &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/phd-question-3-monte-carlo-markov-chain/&#34; target=&#34;_blank&#34; title=&#34;PhD question #3: Monte Carlo Markov chain&#34;&gt;MCMC&lt;/a&gt; or something similar!!!&amp;ldquo;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -373,19 +373,19 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>Never never never...</title>
-      <link>http://brunettoziosi.eu/posts/never-never-never/</link>
+      <link>http://brunettoziosi.com/posts/never-never-never/</link>
       <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/never-never-never/</guid>
+      <guid>http://brunettoziosi.com/posts/never-never-never/</guid>
       <description>&amp;hellip; never forget that the result of the &amp;ldquo;integer&amp;rdquo; division 4&amp;frasl;3 is equal to 1 instead of 1.333333333&amp;hellip; in, I think, almost all programming languages. This is because it&amp;rsquo;s the division between two integers. Only in Python3 it will give what we expect. It&amp;rsquo;s a detail, and I usually remember it and I write 4./3 (4. is of type &amp;ldquo;float&amp;rdquo;), but this time I forget it, and I have obtained wrong results for a week.</description>
     </item>
     
     <item>
       <title>Learning C from simulations, #1</title>
-      <link>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</link>
+      <link>http://brunettoziosi.com/posts/learning-c-from-simulations-1/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/learning-c-from-simulations-1/</guid>
+      <guid>http://brunettoziosi.com/posts/learning-c-from-simulations-1/</guid>
       <description>&lt;p&gt;Coming from the beauty of Python, now I have to learn C/C++ again (after the course some semesters ago!:P) because of my work. I&amp;rsquo;m doing this working with the simulation code Gadget2 and the ICs (initial conditions) generator N-GenIC. Here I would like to pin the serious and less serious things I&amp;rsquo;m learning for my and maybe other&amp;rsquo;s usefulness and fun!&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -393,20 +393,20 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>GIF2 files Python reader</title>
-      <link>http://brunettoziosi.eu/posts/gif2-files-python-reader/</link>
+      <link>http://brunettoziosi.com/posts/gif2-files-python-reader/</link>
       <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/gif2-files-python-reader/</guid>
+      <guid>http://brunettoziosi.com/posts/gif2-files-python-reader/</guid>
       <description>I create this script on the basis of the code to read the Millennium II data (the same used here) provided by Mike Boylan-Kolchin. Being allowed to read the Fortran code to write and read the GIF2 files I could adapt this script to exactly fit this problem.
 import numpy as np import sys class head: def __init__(self, fname): import types bo_mark=&#39;&amp;gt;&#39; # start by reading in header: if type(fname) is types.</description>
     </item>
     
     <item>
       <title>From .csv to HDF5 in Python</title>
-      <link>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</link>
+      <link>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</guid>
       <description>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &amp;hellip;). To the library presentation and documentation, for now refers, to the site.
 I used it a lot during my master thesis to manage the dataset from the Millennium database.
 Here I provide a brief review of how I used it to store data obtained in .</description>
@@ -414,10 +414,10 @@ Here I provide a brief review of how I used it to store data obtained in .</desc
     
     <item>
       <title>Python slicing, rebinning and indexing</title>
-      <link>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</link>
+      <link>http://brunettoziosi.com/posts/python-slicing-rebinning-and-indexing/</link>
       <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-slicing-rebinning-and-indexing/</guid>
+      <guid>http://brunettoziosi.com/posts/python-slicing-rebinning-and-indexing/</guid>
       <description>&lt;p&gt;During my master thesis I had to manage a lot of (different) data from GIF and GIF2 projects, Millimillennium, Millenium and Millennium 2 simulations and so on. Sometimes there were the need to sort, divide or rearrange these dataset.&lt;br /&gt;
 Here some examples.&lt;/p&gt;
 
@@ -426,19 +426,19 @@ Here some examples.&lt;/p&gt;
     
     <item>
       <title>Python CLI and configuration file parser</title>
-      <link>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</link>
+      <link>http://brunettoziosi.com/posts/python-cli-and-configuration-file-parser/</link>
       <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-cli-and-configuration-file-parser/</guid>
+      <guid>http://brunettoziosi.com/posts/python-cli-and-configuration-file-parser/</guid>
       <description>One of the first things I needed writing the code for my thesis was the ability to read options and parameters both from a configuration file and from the command line. After some attempts I have found (at http://www.decalage.info) a file parser to read a configuration file and the Python library argparse for the command line parsing. In addition I have modified the file parser and I&amp;rsquo;ve added a &amp;ldquo;variable container&amp;rdquo; object, inspired by some snippets found somewhere on the web.</description>
     </item>
     
     <item>
       <title>Python logging</title>
-      <link>http://brunettoziosi.eu/posts/python-logging/</link>
+      <link>http://brunettoziosi.com/posts/python-logging/</link>
       <pubDate>Thu, 17 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-logging/</guid>
+      <guid>http://brunettoziosi.com/posts/python-logging/</guid>
       <description>&lt;p&gt;After I had a &lt;a href=&#34;http://brunettoziosi.blogspot.it/2011/11/python-parallel-job-manager.html&#34; target=&#34;_blank&#34; title=&#34;Python parallel job manager&#34;&gt;Python parallel job&amp;nbsp;manager&lt;/a&gt; I realize that all the attempts I have done to log what happen in my code weren&amp;rsquo;t satisfying. It was not comfortable to manage every output when I want to change something and it was impossible to switch off some of logs without changing the code. The Python logging library is a great piece of code that permits to personalize most of the aspect of the logging in a program but maintaining a standard and comfortable interface. It also allows an easy management of many different outputs (file, screen, &amp;hellip;) and different levels of logging (error, info, &amp;hellip;) indipendent one from each other. It also allows to handle the logging of the imported modules.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -446,10 +446,10 @@ Here some examples.&lt;/p&gt;
     
     <item>
       <title>Loadleveler quick howto</title>
-      <link>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</link>
+      <link>http://brunettoziosi.com/posts/loadleveler-quick-howto/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</guid>
+      <guid>http://brunettoziosi.com/posts/loadleveler-quick-howto/</guid>
       <description>&lt;p&gt;Some useful commands to manage jobs with IBM &lt;code&gt;loadleveler&lt;/code&gt; (&lt;code&gt;ll&lt;/code&gt;).&lt;/p&gt;
 
 &lt;p&gt;First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) &amp;ldquo;test_run.cmd&amp;rdquo;. With this file you tell &lt;code&gt;ll&lt;/code&gt; what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.
@@ -476,10 +476,10 @@ python ./start.py
     
     <item>
       <title>Python parallel job manager</title>
-      <link>http://brunettoziosi.eu/posts/python-parallel-job-manager/</link>
+      <link>http://brunettoziosi.com/posts/python-parallel-job-manager/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/python-parallel-job-manager/</guid>
+      <guid>http://brunettoziosi.com/posts/python-parallel-job-manager/</guid>
       <description>&lt;p&gt;The final version of the code for my master thesis was the most embarrassing parallel code you can think&amp;hellip; just a serial code to be run on different slices of the dataset. I choose this solution because it permits to manage the different resources (memory, processors, &amp;hellip;) on the different machines available without any restriction. Moreover, this solution has no communication between the processes, with better performances and all the processes are independent, so it minimize the damages due to any failure.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

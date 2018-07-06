@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fit on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/fit/</link>
+    <link>http://brunettoziosi.com/tags/fit/</link>
     <description>Recent content in Fit on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jan 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/fit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/fit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Eating</title>
-      <link>http://brunettoziosi.eu/pages/research/fit/</link>
+      <link>http://brunettoziosi.com/pages/research/fit/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/fit/</guid>
+      <guid>http://brunettoziosi.com/pages/research/fit/</guid>
       <description>SciKit Generalized Linear Models  Linear least-squares fits with errors in both coordinates.  PH291-Dual-Axis-Error-Calculation IDL function Weighted least-squares curve fitting with errors in all variables
 Gaussian processes / variograms / Kriging http://www.ambhas.com/tools/html/krige_8py_source.html
  http://hpgl.aoizora.org/index.php?option=com_content&amp;amp;view=article&amp;amp;id=47&amp;amp;Itemid=56

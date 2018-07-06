@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/golang/</link>
+    <link>http://brunettoziosi.com/tags/golang/</link>
     <description>Recent content in Golang on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jun 2015 11:55:02 +0200</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dockerized Starlab</title>
-      <link>http://brunettoziosi.eu/posts/dockerized-starlab/</link>
+      <link>http://brunettoziosi.com/posts/dockerized-starlab/</link>
       <pubDate>Mon, 15 Jun 2015 11:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/dockerized-starlab/</guid>
+      <guid>http://brunettoziosi.com/posts/dockerized-starlab/</guid>
       <description>Once you have Docker installed, you may want to see it in action. Here I demonstrate how to use Docker in a slightly different way respect what you can find around (AKA use Docker to set up a web-server or something similar).
 I think Docker is a great solution to deal with easiness of installation and reproducibility in science. LXD would be probable be better. LXD already provide unprivileged containers AND is more about a container containing more than an application, while Docker is based on the idea of one container for a single app.</description>
     </item>
     
     <item>
       <title>Starlab simulations with `sltoos`</title>
-      <link>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</link>
+      <link>http://brunettoziosi.com/posts/starlab-simulations-with-sltools/</link>
       <pubDate>Wed, 03 Jun 2015 10:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</guid>
+      <guid>http://brunettoziosi.com/posts/starlab-simulations-with-sltools/</guid>
       <description>You can download sltools from here.
 Then create one or more simulation configuration(s), for example
 { &amp;quot;Runs&amp;quot;: 50, &amp;quot;Comb&amp;quot;: 86, &amp;quot;Ncm&amp;quot; : 10000, &amp;quot;Fpb&amp;quot; : 0.05, &amp;quot;W&amp;quot; : 3, &amp;quot;Z&amp;quot; : 0.10, &amp;quot;Rv&amp;quot;: 5, &amp;quot;EndTime&amp;quot; : 500, &amp;quot;Machine&amp;quot; : &amp;quot;yourCluster&amp;quot;, &amp;quot;UserName&amp;quot; : &amp;quot;yourUserName&amp;quot;, &amp;quot;PName&amp;quot;: &amp;quot;project&amp;quot;, &amp;quot;BinFolder&amp;quot;: &amp;quot;/home/yourUserName/bin/&amp;quot; }  where
@@ -35,10 +35,10 @@ Then create one or more simulation configuration(s), for example
     
     <item>
       <title>Blog pages index generator</title>
-      <link>http://brunettoziosi.eu/posts/blog-pages-index-generator/</link>
+      <link>http://brunettoziosi.com/posts/blog-pages-index-generator/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/blog-pages-index-generator/</guid>
+      <guid>http://brunettoziosi.com/posts/blog-pages-index-generator/</guid>
       <description>&lt;p&gt;Since some time I was looking for a way to automatically generate an
 &lt;a href=&#34;../stories/index.html&#34;&gt;index&lt;/a&gt; for the
 pages of this blog!
@@ -54,10 +54,10 @@ deleted pages.&lt;/p&gt;
     
     <item>
       <title>Super-basic file parsing in Go</title>
-      <link>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</link>
+      <link>http://brunettoziosi.com/posts/super-basic-file-parsing-in-go/</link>
       <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/super-basic-file-parsing-in-go/</guid>
+      <guid>http://brunettoziosi.com/posts/super-basic-file-parsing-in-go/</guid>
       <description>&lt;p&gt;I want to parse all the files in a folder starting with a certain prefix
 searching for the lines containing a certain string.&lt;/p&gt;
 
@@ -66,10 +66,10 @@ searching for the lines containing a certain string.&lt;/p&gt;
     
     <item>
       <title>Check external ip</title>
-      <link>http://brunettoziosi.eu/posts/check-external-ip/</link>
+      <link>http://brunettoziosi.com/posts/check-external-ip/</link>
       <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/check-external-ip/</guid>
+      <guid>http://brunettoziosi.com/posts/check-external-ip/</guid>
       <description>&lt;p&gt;This is the first attempt to check the external ip of a linux box.
 This means, for example, the public ip address of our modem if we are connected
 to the home Wi-Fi.&lt;br /&gt;
@@ -82,10 +82,10 @@ I will try to do this in Python and Go. Of course these are raw attempts.&lt;/p&
     
     <item>
       <title>Go installation from source</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-4-moving-the-particles/</link>
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-4-moving-the-particles/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-4-moving-the-particles/</guid>
       <description>Summary of the Go installation instruction from source as presented in:
  Go installation Go installation from source Write Go code   The installation path will be /usr/local/go and the workspace in $HOME/Code/go
 cd /usr/local hg clone -u release https://code.google.com/p/go cd go/src ./all.bash echo &amp;quot;export PATH=$PATH:/usr/local/go/bin&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc echo &amp;quot;export GOPATH=$HOME/Code/go/&amp;quot; &amp;gt;&amp;gt; $HOME/.bashrc  </description>
@@ -93,10 +93,10 @@ cd /usr/local hg clone -u release https://code.google.com/p/go cd go/src ./all.b
     
     <item>
       <title>Go(lang) references</title>
-      <link>http://brunettoziosi.eu/pages/tech/golang-references/</link>
+      <link>http://brunettoziosi.com/pages/tech/golang-references/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/golang-references/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/golang-references/</guid>
       <description>Go installation from source Regex Tutorial Cookbook Tutorial 2 Examples http://golang.org/ http://golangtutorials.blogspot.it/2011/05/table-of-contents.html http://www.golang-book.com/ Why it was creates https://groups.google.com/forum/#!forum/golang-nuts https://code.google.com/p/golem/ https://github.com/gonum https://plus.google.com/+golang/posts https://plus.google.com/communities/115354877257015196825 Progress bar Advanced logging Zen Slide What Python developers need to know before migrating to Go(lang) Why I’m not leaving Python for Go Golang for Python programmers Go for Pythonistas Go by example Going Go The Go Programming Language, or: Why all C-like languages except one suck.</description>
     </item>
     

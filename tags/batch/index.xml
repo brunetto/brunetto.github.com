@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Batch on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/batch/</link>
+    <link>http://brunettoziosi.com/tags/batch/</link>
     <description>Recent content in Batch on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Nov 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/batch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/batch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Loadleveler quick howto</title>
-      <link>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</link>
+      <link>http://brunettoziosi.com/posts/loadleveler-quick-howto/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/loadleveler-quick-howto/</guid>
+      <guid>http://brunettoziosi.com/posts/loadleveler-quick-howto/</guid>
       <description>&lt;p&gt;Some useful commands to manage jobs with IBM &lt;code&gt;loadleveler&lt;/code&gt; (&lt;code&gt;ll&lt;/code&gt;).&lt;/p&gt;
 
 &lt;p&gt;First of all you need to write a script with some configuration options and the job to be submitted. You can call it (for example) &amp;ldquo;test_run.cmd&amp;rdquo;. With this file you tell &lt;code&gt;ll&lt;/code&gt; what you want to submit, the type of the queue, the directories you need, what you want to be logged and where, the number of parallel tasks and so on.

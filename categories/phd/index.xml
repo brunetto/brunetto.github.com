@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phd on Post It!</title>
-    <link>http://brunettoziosi.eu/categories/phd/</link>
+    <link>http://brunettoziosi.com/categories/phd/</link>
     <description>Recent content in Phd on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/categories/phd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/categories/phd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Poster Making</title>
-      <link>http://brunettoziosi.eu/pages/research/postermaking/</link>
+      <link>http://brunettoziosi.com/pages/research/postermaking/</link>
       <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/postermaking/</guid>
+      <guid>http://brunettoziosi.com/pages/research/postermaking/</guid>
       <description> http://colinpurrington.com/tips/academic/posterdesign http://colinpurrington.com/wp-content/uploads/2011/09/scientific-poster-advice-purrington.pdf http://www.bioinformaticszen.com/post/genotype-from-phenotype/ http://zachholman.com/posts/slide-design-for-developers/ http://www.colormatters.com/color-and-design/basic-color-theory http://f1000.com/posters/browse?docTypeSearch=Poster  </description>
     </item>
     
     <item>
       <title>GW links</title>
-      <link>http://brunettoziosi.eu/pages/research/gw-links/</link>
+      <link>http://brunettoziosi.com/pages/research/gw-links/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/gw-links/</guid>
+      <guid>http://brunettoziosi.com/pages/research/gw-links/</guid>
       <description>List of useful links about gravitational waves:
  Gravitational waves detector and sources interactive plot Black hole hunter EGO - European Gravitational Observatory VIRGO LIGO - Laser Interferometer Gravitational Wave Observatory eLISA - Evolved Laser Interferometer Space Antenna AURIGA MiniGRAIL - Gravitational Radiation Antenna In Leiden IPTA - International Pulsar Timing Array EPTA - The European Pulsar Timing Array E-Book on gravitational wave detection Games for science teaching, outreach and research Christopher Berry hompage MatchedFiltering ipython notebook with wave amplitude The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo  </description>
     </item>
     
     <item>
       <title>PhD Project</title>
-      <link>http://brunettoziosi.eu/pages/research/phd/</link>
+      <link>http://brunettoziosi.com/pages/research/phd/</link>
       <pubDate>Thu, 31 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/phd/</guid>
+      <guid>http://brunettoziosi.com/pages/research/phd/</guid>
       <description>The impact of stellar evolution and dynamics on the formation of compact-object binaries
 My PhD project is devoted to improving our knowledge on the demographics and the properties of double compact-objects (DCO) binaries, i.e. black hole-black hole (BH-BH), neutron star-neutron star (NS-NS) and neutron star-black hole (NS-BH) binaries, inside young dense star clusters. The goal is to derive accurate predictions for the ground-based Advanced Virgo/LIGO gravitational wave detectors sources. Gravitational waves (GWs) are among the ``most wanted&amp;rdquo; predictions of General Relativity: while indirect confirmations of GWs came from observations of pulsar binaries, a direct detection of GWs is still missing.</description>
     </item>
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>Click here for the new guide!!!
 To install CUDA you can try with the CUDA packages in the Ubuntu repositories. If they fail, you have to download CUDA from ****
 To locate the CUDA files you can try:
@@ -54,10 +54,10 @@ To locate the CUDA files you can try:
     
     <item>
       <title>AstroFelpa</title>
-      <link>http://brunettoziosi.eu/pages/research/astrofelpa/</link>
+      <link>http://brunettoziosi.com/pages/research/astrofelpa/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/astrofelpa/</guid>
+      <guid>http://brunettoziosi.com/pages/research/astrofelpa/</guid>
       <description>License 
 AstroFelpa by BrunettoZiosi is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 Permissions beyond the scope of this license may be available at www.brunettoziosi.eu/stories/research/astrofelpa.html.
@@ -68,10 +68,10 @@ AstroP(h)D was born within the astronomy PhD students community of Padua but als
     
     <item>
       <title>Research</title>
-      <link>http://brunettoziosi.eu/pages/research/research/</link>
+      <link>http://brunettoziosi.com/pages/research/research/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/research/</guid>
+      <guid>http://brunettoziosi.com/pages/research/research/</guid>
       <description>PhD Project The impact of stellar evolution and dynamics on the formation of compact-object binaries
 During my PhD I was part of Dr. Mapelli&amp;rsquo;s research group working on N-body simulations of young and dense star clusters in order to understand the impact of stellar evolution and dynamics on the formation and evolution of compact-object (neutron stars and black holes) binary systems.
 These objects are thought to be the best candidates to produce gravitational waves observable in the near future with the second-generation ground-based gravitational wave interferometers Advanced Ligo and Virgo.</description>
@@ -79,10 +79,10 @@ These objects are thought to be the best candidates to produce gravitational wav
     
     <item>
       <title>My favourite PhD Comics</title>
-      <link>http://brunettoziosi.eu/pages/personal/my-favourite-phd-comics/</link>
+      <link>http://brunettoziosi.com/pages/personal/my-favourite-phd-comics/</link>
       <pubDate>Sat, 17 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/my-favourite-phd-comics/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/my-favourite-phd-comics/</guid>
       <description> PhD Comics Archive Most Popular Marriage vs PhD Motivation Level Thesis Outline The Thesis repulsor field The Thesis title Your computer desktop Ninjas vs Professors Desk entropy &amp;ldquo;Final&amp;rdquo;.doc  </description>
     </item>
     

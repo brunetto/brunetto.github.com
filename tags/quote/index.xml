@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quote on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/quote/</link>
+    <link>http://brunettoziosi.com/tags/quote/</link>
     <description>Recent content in Quote on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Aug 2013 17:26:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/quote/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/quote/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My favourite quotes</title>
-      <link>http://brunettoziosi.eu/pages/personal/my-favourite-quotes/</link>
+      <link>http://brunettoziosi.com/pages/personal/my-favourite-quotes/</link>
       <pubDate>Wed, 14 Aug 2013 17:26:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/personal/my-favourite-quotes/</guid>
+      <guid>http://brunettoziosi.com/pages/personal/my-favourite-quotes/</guid>
       <description>Try again, fail again, fail better.
 [Samuel Beckett]
  Tell me and I&amp;rsquo;ll forget, show me and I may remember, involve me and I&amp;rsquo;ll understand.

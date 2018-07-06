@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hdf5 on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/hdf5/</link>
+    <link>http://brunettoziosi.com/tags/hdf5/</link>
     <description>Recent content in Hdf5 on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 May 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/hdf5/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/hdf5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HDF5 in Python: PyTables</title>
-      <link>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</link>
+      <link>http://brunettoziosi.com/posts/hdf5-in-python-pytables/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/hdf5-in-python-pytables/</guid>
+      <guid>http://brunettoziosi.com/posts/hdf5-in-python-pytables/</guid>
       <description>HDF5 is a wonderful file format you can use to put into tons of data with easy, without the need to think about endianess, binary formats and so on.
 Pytables is an extremely optimized library built on top of HDF5 capabilities to make even simpler the use of this type of file.
 It&amp;rsquo;s also possible to navigate into a file graphically with ViTables.
@@ -25,10 +25,10 @@ Here I would like to present some of the features I use more often.</description
     
     <item>
       <title>From .csv to HDF5 in Python</title>
-      <link>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</link>
+      <link>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/from-csv-to-hdf5-in-python/</guid>
+      <guid>http://brunettoziosi.com/posts/from-csv-to-hdf5-in-python/</guid>
       <description>PyTables is a Python library that provide a simple but really useful interface to manage the HDF5 files with some other interesting features (compression, optimizations, &amp;hellip;). To the library presentation and documentation, for now refers, to the site.
 I used it a lot during my master thesis to manage the dataset from the Millennium database.
 Here I provide a brief review of how I used it to store data obtained in .</description>
@@ -36,10 +36,10 @@ Here I provide a brief review of how I used it to store data obtained in .</desc
     
     <item>
       <title>From binaries to HDF5 using Python</title>
-      <link>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</link>
+      <link>http://brunettoziosi.com/posts/from-binaries-to-hdf5-using-python/</link>
       <pubDate>Fri, 02 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/from-binaries-to-hdf5-using-python/</guid>
+      <guid>http://brunettoziosi.com/posts/from-binaries-to-hdf5-using-python/</guid>
       <description>&lt;p&gt;I have used this script to convert the Millennium II data from the unformatted fortran binary formato to the DF5 one.&lt;br /&gt;
 The core of the script is a module (&lt;code&gt;modified_read_snapshots&lt;/code&gt;) built on the basis of a script kindly provided by &lt;a href=&#34;http://mbk.ps.uci.edu/index.html&#34; target=&#34;_blank&#34; title=&#34;Mike Boylan-Kolchin&#34;&gt;Mike Boylan-Kolchin&lt;/a&gt; from the group that perform the Millennium II simulation.&lt;/p&gt;
 

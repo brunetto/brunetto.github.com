@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/notes/</link>
+    <link>http://brunettoziosi.com/tags/notes/</link>
     <description>Recent content in Notes on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sites Making Notes</title>
-      <link>http://brunettoziosi.eu/pages/tech/sites-making-notes/</link>
+      <link>http://brunettoziosi.com/pages/tech/sites-making-notes/</link>
       <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/tech/sites-making-notes/</guid>
+      <guid>http://brunettoziosi.com/pages/tech/sites-making-notes/</guid>
       <description> Google webmaster tools Google+ authoring Google authoring answer Authoring verification G+ pages site verification answer   </description>
     </item>
     

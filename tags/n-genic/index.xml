@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>N Genic on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/n-genic/</link>
+    <link>http://brunettoziosi.com/tags/n-genic/</link>
     <description>Recent content in N Genic on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Jan 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/n-genic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/n-genic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The initial condition saga</title>
-      <link>http://brunettoziosi.eu/posts/the-initial-condition-saga/</link>
+      <link>http://brunettoziosi.com/posts/the-initial-condition-saga/</link>
       <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/the-initial-condition-saga/</guid>
+      <guid>http://brunettoziosi.com/posts/the-initial-condition-saga/</guid>
       <description>&lt;p&gt;If reading the previous posts on N-body simulations you have though that initial conditions are a little and easy task, you were wrong! And me with you!&lt;br /&gt;
 The first things I have understood banging against them were:&lt;/p&gt;
 

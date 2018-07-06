@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work on Post It!</title>
-    <link>http://brunettoziosi.eu/categories/work/</link>
+    <link>http://brunettoziosi.com/categories/work/</link>
     <description>Recent content in Work on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2013 23:40:58 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/categories/work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/categories/work/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Curriculum vitae</title>
-      <link>http://brunettoziosi.eu/pages/curriculum-vitae/</link>
+      <link>http://brunettoziosi.com/pages/curriculum-vitae/</link>
       <pubDate>Fri, 16 Aug 2013 23:40:58 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/curriculum-vitae/</guid>
+      <guid>http://brunettoziosi.com/pages/curriculum-vitae/</guid>
       <description>Short PDF version here
 Personal information First name Brunetto Marco
 Last name Ziosi Address via Ivancich n.17, 30174, Chirignago (VE)

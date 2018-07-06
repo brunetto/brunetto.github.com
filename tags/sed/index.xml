@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sed on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/sed/</link>
+    <link>http://brunettoziosi.com/tags/sed/</link>
     <description>Recent content in Sed on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/sed/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/sed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Change a line in all of your files at once</title>
-      <link>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</link>
+      <link>http://brunettoziosi.com/posts/change-a-line-in-all-of-your-files-at-once/</link>
       <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/change-a-line-in-all-of-your-files-at-once/</guid>
+      <guid>http://brunettoziosi.com/posts/change-a-line-in-all-of-your-files-at-once/</guid>
       <description>Sometimes you need to change a single line in a lot of files. May be you made a mistake in your configuration files or you want to change the number of initial conditions to be generated automatically.
 With sed it is super-easy:
 sed -i &#39;s/&amp;quot;Runs&amp;quot;: 10,/&amp;quot;Runs&amp;quot;: 50,/g&#39; *.txt  </description>

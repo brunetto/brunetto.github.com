@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simulation on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/simulation/</link>
+    <link>http://brunettoziosi.com/tags/simulation/</link>
     <description>Recent content in Simulation on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jun 2015 11:55:02 +0200</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dockerized Starlab</title>
-      <link>http://brunettoziosi.eu/posts/dockerized-starlab/</link>
+      <link>http://brunettoziosi.com/posts/dockerized-starlab/</link>
       <pubDate>Mon, 15 Jun 2015 11:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/dockerized-starlab/</guid>
+      <guid>http://brunettoziosi.com/posts/dockerized-starlab/</guid>
       <description>Once you have Docker installed, you may want to see it in action. Here I demonstrate how to use Docker in a slightly different way respect what you can find around (AKA use Docker to set up a web-server or something similar).
 I think Docker is a great solution to deal with easiness of installation and reproducibility in science. LXD would be probable be better. LXD already provide unprivileged containers AND is more about a container containing more than an application, while Docker is based on the idea of one container for a single app.</description>
     </item>
     
     <item>
       <title>Starlab simulations with `sltoos`</title>
-      <link>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</link>
+      <link>http://brunettoziosi.com/posts/starlab-simulations-with-sltools/</link>
       <pubDate>Wed, 03 Jun 2015 10:55:02 +0200</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/starlab-simulations-with-sltools/</guid>
+      <guid>http://brunettoziosi.com/posts/starlab-simulations-with-sltools/</guid>
       <description>You can download sltools from here.
 Then create one or more simulation configuration(s), for example
 { &amp;quot;Runs&amp;quot;: 50, &amp;quot;Comb&amp;quot;: 86, &amp;quot;Ncm&amp;quot; : 10000, &amp;quot;Fpb&amp;quot; : 0.05, &amp;quot;W&amp;quot; : 3, &amp;quot;Z&amp;quot; : 0.10, &amp;quot;Rv&amp;quot;: 5, &amp;quot;EndTime&amp;quot; : 500, &amp;quot;Machine&amp;quot; : &amp;quot;yourCluster&amp;quot;, &amp;quot;UserName&amp;quot; : &amp;quot;yourUserName&amp;quot;, &amp;quot;PName&amp;quot;: &amp;quot;project&amp;quot;, &amp;quot;BinFolder&amp;quot;: &amp;quot;/home/yourUserName/bin/&amp;quot; }  where
@@ -35,10 +35,10 @@ Then create one or more simulation configuration(s), for example
     
     <item>
       <title>StarLab (GPU) old guide</title>
-      <link>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</link>
+      <link>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</link>
       <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/utils/starlab-gpu-old-guide/</guid>
+      <guid>http://brunettoziosi.com/pages/research/utils/starlab-gpu-old-guide/</guid>
       <description>Click here for the new guide!!!
 To install CUDA you can try with the CUDA packages in the Ubuntu repositories. If they fail, you have to download CUDA from ****
 To locate the CUDA files you can try:
@@ -47,10 +47,10 @@ To locate the CUDA files you can try:
     
     <item>
       <title>Cosmological simulations #9: Gadget-2 (N-body part)</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-9-gadget-2-n-body-part/</link>
       <pubDate>Mon, 20 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-9-gadget-2-n-body-part/</guid>
       <description>&lt;p&gt;Here I would like to do a brief presentation of the main features of Gadget-2.&lt;br /&gt;
 Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#34;_blank&#34; title=&#34;Gadget2 homepage&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/my-first-gadget2-tests/&#34; target=&#34;_blank&#34; title=&#34;My first Gadget-2 tests&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2005.09655.x/abstract;jsessionid=DED86CDB5CD8A572F3631F0C42828086.d01t03&#34; target=&#34;_blank&#34; title=&#34;Gadget-2 paper&#34;&gt;here&lt;/a&gt;) is a cosmological simulation code developed primarily by &lt;a href=&#34;http://www.mpa-garching.mpg.de/~volker/&#34; target=&#34;_blank&#34; title=&#34;Volker Springel&#39;s homepage&#34;&gt;Volker Springel&lt;/a&gt;. It is a &lt;a href=&#34;http://www.brunettoziosi.eu/blog/wordpress/cosmological-simulations-3-calculating-the-force/&#34; target=&#34;_blank&#34; title=&#34;Cosmological simulations #3: force calculation!&#34;&gt;TreePM&lt;/a&gt; code so it splits forces between long-range (PM part) and short-range (tree part using multipole expansion to approximate the force of distant particles groups).&lt;/p&gt;
 
@@ -59,10 +59,10 @@ Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#3
     
     <item>
       <title>My first Gadget2 tests</title>
-      <link>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</link>
+      <link>http://brunettoziosi.com/posts/my-first-gadget2-tests/</link>
       <pubDate>Sat, 07 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/my-first-gadget2-tests/</guid>
+      <guid>http://brunettoziosi.com/posts/my-first-gadget2-tests/</guid>
       <description>&lt;p&gt;This post is about my first experience with the cosmological simulation code &lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; title=&#34;Gadget2&#34;&gt;Gadget2&lt;/a&gt;. To start I followed the instructions found &lt;a href=&#34;http://astrobites.com/2011/04/02/installing-and-running-gadget-2/&#34;&gt;here&lt;/a&gt;. All I&amp;rsquo;m going to write refers to an Ubuntu/Kubuntu 11.10 installation.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -70,10 +70,10 @@ Gadget-2 (&lt;a href=&#34;http://www.mpa-garching.mpg.de/gadget/&#34; target=&#3
     
     <item>
       <title>Cosmological simulations #7: Limitations and some considerations</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-7-limitations-and-some-considerations/</link>
       <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-7-limitations-and-some-considerations/</guid>
       <description>&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
 
 &lt;p&gt;In the previous posts we encountered some of the limitations of cosmological&lt;br /&gt;
@@ -86,10 +86,10 @@ from the opposite side.&lt;/p&gt;
     
     <item>
       <title>Cosmological simulations #1: why and what?</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-1-why-and-what/</link>
       <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-1-why-and-what/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-1-why-and-what/</guid>
       <description>&lt;p&gt;This is the first of a series of posts dedicated to cosmological simulations!&lt;br /&gt;
 &lt;br /&gt;
 I do this because, as stressed by my PhD advisor,
@@ -104,10 +104,10 @@ So, let&amp;rsquo;s start with &amp;ldquo;Why we need cosmological simulations? 
     
     <item>
       <title>Cosmological simulations #2: how?</title>
-      <link>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</link>
+      <link>http://brunettoziosi.com/posts/cosmological-simulations-2-how/</link>
       <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/posts/cosmological-simulations-2-how/</guid>
+      <guid>http://brunettoziosi.com/posts/cosmological-simulations-2-how/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s try now to understand how simulations can be set up.&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 

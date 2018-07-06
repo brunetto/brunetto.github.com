@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Astrocomputing on Post It!</title>
-    <link>http://brunettoziosi.eu/tags/astrocomputing/</link>
+    <link>http://brunettoziosi.com/tags/astrocomputing/</link>
     <description>Recent content in Astrocomputing on Post It!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://brunettoziosi.eu/tags/astrocomputing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://brunettoziosi.com/tags/astrocomputing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Astrocomputing &amp; Astrostatistics</title>
-      <link>http://brunettoziosi.eu/pages/research/astrocomputing/</link>
+      <link>http://brunettoziosi.com/pages/research/astrocomputing/</link>
       <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://brunettoziosi.eu/pages/research/astrocomputing/</guid>
+      <guid>http://brunettoziosi.com/pages/research/astrocomputing/</guid>
       <description> Frequentism and Bayesianism: A Practical Introduction also here  </description>
     </item>
     
